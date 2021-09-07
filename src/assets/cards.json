@@ -17061,6 +17061,9 @@
       "retro",
       "universal"
     ],
+    "resources": [
+      "infinity"
+    ],
     "control": 5,
     "difficulty": 2,
     "block_modifier": 2,
