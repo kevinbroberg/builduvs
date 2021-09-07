@@ -5,7 +5,7 @@
     <div>
       <div class="card_image"> <!-- TODO onclick detail popup / dialog / lightbox -->
         <img class="preview mini_image"
-          :src="getImage()"
+          :src="image"
           :alt="data.name" @click="increment()"
           />
       </div>
@@ -68,12 +68,13 @@ export default {
       } 
     },
     data() {
-      return { 
+      return {
+          image: null
       }
     },
     methods: {
       async getImage() { // async because lighthouse told me my initial page load was glacial slow waiting for images to render
-        // require('images/card_images/' + this.data.asset);
+        this.image = require('assets/images/card_images/' + this.data.asset);
       },
       isCharacter() {
         return this.data['type'] == 'character'

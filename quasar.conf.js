@@ -71,8 +71,10 @@ module.exports = configure(function (ctx) {
         chain.module
           .rule('images')
           .use('url-loader')
+          .loader('url-loader')
           .tap(options => {
               options.limit = 0;
+              options.name = 'img/[path][name].[ext]'
               return options;
           });
       },
