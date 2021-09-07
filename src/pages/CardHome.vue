@@ -281,6 +281,8 @@ export default {
 }
 </script>
 
+// the 3.0.0-alpha tarball isn't minified
+<style src="vue-multiselect/dist/vue-multiselect.css"></style>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
   #app {
