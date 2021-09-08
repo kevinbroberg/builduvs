@@ -4,16 +4,16 @@ export function increment(state, card, pile = state.deck) {
   let max = card.limit || 4;
   count = count >= max ? max : count + 1;
   // TODO autosideboard
-  Vue.set(pile, card.asset, { ...card, qty: count });
+  pile[card.asset] = { ...card, qty: count}
 }
 // TODO sideboard
 export function decrement(state, card, pile = state.deck) {
   let qtyObj = pile[card.asset] || { qty: 1 };
   let count = qtyObj.qty - 1;
   if (count > 0) {
-    Vue.set(pile, card.asset, { ...card, qty: count });
+    pile[card.asset] = { ...card, qty: count }
   } else {
-    Vue.delete(pile, card.asset);
+    pile.delete(card.asset)
   }
 }
 export function send2Board(state, card) {
@@ -25,15 +25,15 @@ export function send2Main(state, card) {
   this.increment(state, card, state.deck);
 }
 export function markMain(state, card) {
-  Vue.set(state.mainCharacter, card);
+  state.mainCharacter = card
 }
 export function remove(state, card, pile = state.deck) {
-  Vue.delete(pile, card.asset);
+  pile.delete(card.asset)
 }
 export function setQty(state, card, qty, pile = state.deck) {
   let max = card.limit || 4;
   let min = 0;
   qty = qty > max ? max : qty;
   qty = qty < min ? min : qty;
-  Vue.set(pile, card.asset, { ...card, qty: qty });
+  pile[card.asset] = { ...card, qty: qty }
 }
