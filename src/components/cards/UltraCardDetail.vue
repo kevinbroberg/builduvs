@@ -1,44 +1,45 @@
 <template>
-  <div class="card" 
+  <q-card class="ultra-card row" flat
   onmouseover="//preview('$extension', '$padded_numero');"
   >
     <div>
-      <div class="card_image"> <!-- TODO onclick detail popup / dialog / lightbox -->
-        <img class="preview mini_image"
-          :src="image"
+      <q-card-section horizontal class="card_image"> <!-- TODO onclick detail popup / dialog / lightbox -->
+        <q-img
+          :fit="'contain'"
+          :loading="'lazy'"
+          style="height: 600; width: 300px"
+          :src="require('assets/images/card_images/' + this.data.asset)"
           :alt="data.name" @click="increment()"
           />
-      </div>
-      <div class="card_infos">
-        <!-- UFSUltra had a timer to render -->
-        <!-- TODO colorbox; it should have easy click buttons for each quantity! -->
-        <div class="card_title"> <!-- TODO onclick detail popup / dialog / lightbox -->
-            <h1>{{data.name}}</h1>
-            <div class="card-important-info">
-                <span class="label" :class="'card-list-' + data.type">{{data.type}}</span><br />
-                {{data.rarity || ""}}
-            </div>
-        </div>
-        <div class="card_division cd1">
-            <Elements v-bind:card=data />
+      </q-card-section>
+      <q-card-section horizontal>
+        <q-card-section>
+          <h2>{{data.name}}</h2>
+        </q-card-section>
+        <q-card-section class="card_division cd1">
+            <Elements v-bind:card="data" />
             {{data.difficulty}} Difficulty {{data.control}} Control<br />
-            <BlockData v-bind:card=data />
-            <AttackData v-bind:card=data />
+            <BlockData v-bind:card="data" />
+            <AttackData v-bind:card="data" />
             <div class="ischaracter" v-if="isCharacter()" >
-                Handsize : {{data['hand_size']}} <br />
-                Vitality : {{data['vitality']}} <br />
+              Handsize : {{data['hand_size']}} <br />
+              Vitality : {{data['vitality']}} <br />
             </div>
             <span v-if="myQty > 0" class="badge badge-success">Quantity in Deck {{myQty}}</span>
-        </div>
-        <div class="card_division cd2"> <!-- TODO onclick detail popup / dialog / lightbox -->
-            <h4>{{(data.keywords ? data.keywords : []).join(' - ')}}</h4>
-            {{data.text ||"Missing text"}}<br />
-        </div>
-
-      </div>
+          </q-card-section>
+        </q-card-section>
+        
+        <q-card-section class="card_division cd2"> <!-- TODO onclick detail popup / dialog / lightbox -->
+          <h4>{{(data.keywords ? data.keywords : []).join(' - ')}}</h4>
+          <h6>{{data.text ||"Missing text"}}</h6><br />
+        </q-card-section>
+        <q-card-section class="card-important-info">
+          <span class="label" :class="'card-list-' + data.type">{{data.type}}</span><br />
+          {{data.rarity || ""}}
+        </q-card-section>
     </div>
     <div class="clear"></div>
-  </div>
+  </q-card>
 </template>
 
 <script>
@@ -57,9 +58,6 @@ export default {
       data: Object
       // should I store the image locally rather than setting it on the data? is this fucky somehow?
     },
-    created() {
-      this.getImage()
-    },
     computed: {
       myQty() {
         // let card = this.$store.state.deck[this.data.asset]
@@ -67,15 +65,7 @@ export default {
         return card ? card.qty : 0
       } 
     },
-    data() {
-      return {
-          image: null
-      }
-    },
     methods: {
-      async getImage() { // async because lighthouse told me my initial page load was glacial slow waiting for images to render
-        this.image = require('assets/images/card_images/' + this.data.asset);
-      },
       isCharacter() {
         return this.data['type'] == 'character'
       },
@@ -250,12 +240,12 @@ img.ci-micro_image
     margin : 0;
 }
 
-.card
+.ultra-card
 {
 	clear : both;
 	border : 1px solid #989DB3;
 	padding-top : 3px;
-	width : 870px;
+	/* width : 870px; */
 }
 
 .odd

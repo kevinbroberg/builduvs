@@ -1,6 +1,7 @@
 <template>
   <div class="scroll">
     <q-infinite-scroll @load="addMore" :offset="250">
+      <!-- TODO use QList and QListItem -->
       <UltraCardDetail
         v-for="(card, index) in scrolledCards"
         :key="index"
