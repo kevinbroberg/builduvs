@@ -17,7 +17,7 @@
 
       <q-tabs align="left">
         <q-route-tab to="/" label="Search" />
-        <q-route-tab to="/deck" label="Deck" />
+        <!-- <q-route-tab to="/deck" label="Deck" /> -->
         <q-route-tab to="/load" label="Deck loader" />
       </q-tabs>
     </q-header>

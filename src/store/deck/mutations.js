@@ -30,6 +30,9 @@ export function markMain(state, card) {
 export function remove(state, card, pile = state.deck) {
   pile.delete(card.asset)
 }
+export function nuke(state, pile = state.deck) {
+  pile = []
+}
 export function setQty(state, card, qty, pile = state.deck) {
   let max = card.limit || 4;
   let min = 0;
