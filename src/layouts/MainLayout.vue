@@ -12,7 +12,7 @@
           BuildUVS
         </q-toolbar-title>
 
-        <q-btn dense flat round icon="menu" @click="toggleRightDrawer" />
+        <q-btn dense flat round icon="info" @click="toggleRightDrawer" />
       </q-toolbar>
 
       <q-tabs align="left">
@@ -23,10 +23,12 @@
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" side="left" behavior="mobile" elevated>
+      <!-- list of decks -->
       <!-- drawer content -->
     </q-drawer>
 
-    <q-drawer show-if-above v-model="rightDrawerOpen" side="right" elevated>
+    <q-drawer v-model="rightDrawerOpen" side="right" elevated>
+      <!-- show-if-above -->
       <!-- drawer content -->
     </q-drawer>
 
