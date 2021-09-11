@@ -1,6 +1,6 @@
 <template>
   <div id="scroll-target-id">
-    <q-infinite-scroll @load="addMore" :offset="100" :scroll-target="'scroll-target-id'">
+    <q-infinite-scroll @load="addMore" :offset="500" :scroll-target="'scroll-target-id'">
       <!-- TODO use QList and QListItem -->
       <UltraCardDetail
         v-for="(card, i) in scrolledCards"
@@ -40,9 +40,8 @@ export default {
   },
   methods: {
     addMore(index, done) {
-      console.log("more")
       this.scrollLimit = index + 1;
-      setTimeout(done, 1)
+      done()
     },
   },
   props: ["filteredCards"],
