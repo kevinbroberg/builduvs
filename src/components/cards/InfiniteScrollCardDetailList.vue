@@ -1,10 +1,10 @@
 <template>
-  <div class="scroll">
-    <q-infinite-scroll @load="addMore" :offset="250" :scroll-target="'scroll'">
+  <div id="scroll-target-id">
+    <q-infinite-scroll @load="addMore" :offset="100" :scroll-target="'scroll-target-id'">
       <!-- TODO use QList and QListItem -->
       <UltraCardDetail
-        v-for="(card, index) in scrolledCards"
-        :key="index"
+        v-for="(card, i) in scrolledCards"
+        :key="i"
         :data="card"
       />
       <template v-slot:loading>
@@ -26,7 +26,7 @@ export default {
   },
   data() {
     return {
-      scrollLimit: 3,
+      scrollLimit: 0,
       scrollPageSize: 10,
     };
   },
@@ -40,8 +40,9 @@ export default {
   },
   methods: {
     addMore(index, done) {
-      this.scrollLimit = index;
-      done()
+      console.log("more")
+      this.scrollLimit = index + 1;
+      setTimeout(done, 1)
     },
   },
   props: ["filteredCards"],
