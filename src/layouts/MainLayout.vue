@@ -1,3 +1,17 @@
+<script setup>
+  import { ref } from 'vue'
+  import DeckLoader from 'components/deckloader/DeckLoader.vue'
+  const leftDrawerOpen = ref(false)
+  const rightDrawerOpen = ref(false)
+
+  function toggleLeftDrawer () {
+    leftDrawerOpen.value = !leftDrawerOpen.value
+  }
+  function toggleRightDrawer () {
+    rightDrawerOpen.value = !rightDrawerOpen.value
+  }
+</script>
+
 <template>
   <q-layout view="hhr lpR fFf">
 
@@ -28,8 +42,7 @@
     </q-drawer>
 
     <q-drawer v-model="rightDrawerOpen" side="right" elevated>
-      <!-- show-if-above -->
-      <!-- drawer content -->
+      <DeckLoader />
     </q-drawer>
 
     <q-page-container>
@@ -38,26 +51,3 @@
 
   </q-layout>
 </template>
-
-<script>
-import { ref } from 'vue'
-
-export default {
-  setup () {
-    const leftDrawerOpen = ref(false)
-    const rightDrawerOpen = ref(false)
-
-    return {
-      leftDrawerOpen,
-      toggleLeftDrawer () {
-        leftDrawerOpen.value = !leftDrawerOpen.value
-      },
-
-      rightDrawerOpen,
-      toggleRightDrawer () {
-        rightDrawerOpen.value = !rightDrawerOpen.value
-      }
-    }
-  }
-}
-</script>
