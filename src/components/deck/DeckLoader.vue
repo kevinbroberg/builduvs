@@ -2,9 +2,7 @@
   <div id="deckLoader">
     <q-btn @click="loadDeck" v-if="showInputComponents" label="Load"/>
 
-    <!-- <FileReader @fileLoaded="text = $event"></FileReader> -->
     <q-file filled v-model="fileModel" @change="deck2Text($event)" label="Upload deck"/>
-    <!-- TODO how tf am i supposed to style this for mobile? -->
     <q-input filled autogrow v-model="text" v-if="showInputComponents"
       @fileLoaded="showTextLoadDeck($event)" />
     
@@ -12,7 +10,6 @@
 </template>
 
 <script>
-// import FileReader from "./FileReader";
 import cards from 'assets/cards.json'
 export default {
   name: "DeckLoader",
