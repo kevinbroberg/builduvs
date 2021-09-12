@@ -1,8 +1,10 @@
 <script setup>
   import { ref } from 'vue'
-  import DeckLoader from 'components/deckloader/DeckLoader.vue'
+  import DeckLoader from 'components/deck/DeckLoader.vue'
+  import DeckView from 'components/deck/DeckView.vue'
   const leftDrawerOpen = ref(false)
   const rightDrawerOpen = ref(false)
+
 
   function toggleLeftDrawer () {
     leftDrawerOpen.value = !leftDrawerOpen.value
@@ -42,7 +44,8 @@
     </q-drawer>
 
     <q-drawer v-model="rightDrawerOpen" side="right" elevated>
-      <DeckLoader />
+      <!-- <DeckLoader /> -->
+      <component :is="DeckView" />
     </q-drawer>
 
     <q-page-container>

@@ -9,7 +9,7 @@ const routes = [
         props: (route) => ({ query: route.query }),
       },
       // { path: 'deck', component: () => import('../views/DeckDataGrid.vue') },
-      { path: 'load', component: () => import('../components/deckloader/DeckLoader.vue') },
+      // { path: 'load', component: () => import('../components/deckloader/DeckLoader.vue') },
       // { path: 'about', component: () => import('../views/About.vue') },
     ],
   },
