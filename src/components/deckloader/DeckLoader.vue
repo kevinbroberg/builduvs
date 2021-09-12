@@ -1,35 +1,74 @@
 <template>
-  <div id="deckLoader">      
-    <button @click="loadDeck" v-if="deckChanged" type="button">Load Deck</button>
-    <FileReader @fileLoaded="text = $event"></FileReader>
-    <br/>
+  <div id="deckLoader">
+    <q-btn @click="loadDeck" v-if="showInputComponents" label="Load"/>
+
+    <!-- <FileReader @fileLoaded="text = $event"></FileReader> -->
+    <q-file filled v-model="fileModel" @change="deck2Text($event)" label="Upload deck"/>
     <!-- TODO how tf am i supposed to style this for mobile? -->
-    <textarea v-model="text" @input='deckChanged = true' @fileLoaded="showTextLoadDeck($event)" rows=20 cols=100></textarea>
+    <q-input filled autogrow v-model="text" v-if="showInputComponents"
+      @fileLoaded="showTextLoadDeck($event)" />
     
   </div>
 </template>
 
 <script>
-import FileReader from "./FileReader";
+// import FileReader from "./FileReader";
 import cards from 'assets/cards.json'
 export default {
   name: "DeckLoader",
   data() {
-      return {
-          text: '',
-          deckChanged: false
-      }
+    return {
+      text: '',
+      fileModel: null,
+      deckChanged: false
+    }
   },
-  components: { FileReader },
-  created() {
-    this.text = Object.values(this.$store.state.deck.deck).map(c => '' + c.qty + ' ' + c.name).join('\n')
+  computed: {
+    showInputComponents() { return !!this.text }
   },
   methods: {
     showTextLoadDeck(ev) {
       this.text = ev
       this.loadDeck()
     },
+    tts2Text(input) {
+      try {
+        // Python implementation:
+        // contained = data["ObjectStates"][0]
+        // cards = [card["Nickname"].lower() for card in contained["ContainedObjects"]]
+        // deck = ["{} {}".format(qty, name) for name, qty in Counter(cards).items()]
+        let myson = JSON.parse(input)
+        let contained = myson["ObjectStates"][0]["ContainedObjects"]
+        console.log(contained)
+        function reducer(prev, card) {
+          let name = card["Nickname"].toLowerCase()
+          prev[name] = 1 + (prev[name] || 0)
+          return prev
+        }
+        const deck = contained.reduce(reducer, {})
+        return Object.keys(deck).map( name => `${deck[name]} ${name}`).join('\n')
+      } catch (err) {
+        console.log(err)
+        return ''
+      }
+    },
+    deck2Text(event) {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      console.log(file)
+
+      if (file.type == 'application/json') {
+        // attempt to read as a tabletop simulator deck
+        reader.onload = e => this.text = this.tts2Text(e.target.result);
+      } else {
+        reader.onload = e => this.text = e.target.result;
+      }      
+      reader.readAsText(file);
+    },
     loadDeck() {
+      // clear the previous contents
+      this.$store.commit('deck/nuke')
+
       let regex = /^\s*(\d+)x?\)? (.*?)\s*$/
       let sideboard = /^\s*sideboard\s*$/i
 
@@ -38,8 +77,6 @@ export default {
         .split('\n')
         .map(s => s.match(regex))
         .filter(i => i)
-      // clear the previous contents
-      this.$store.commit('deck/nuke')
       for (let idx in main) {
         let match = main[idx]
         let qty = Number.parseInt(match[1])
@@ -61,7 +98,7 @@ export default {
         }
       }
 
-      this.deckChanged = false
+      this.text = ''
     }
   }
 };
