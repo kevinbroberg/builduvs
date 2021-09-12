@@ -613,29 +613,6 @@ h1 {
   display: none;
 }
 
-.type_card_character {
-  /* background-color : #485693;*/
-}
-
-.type_card_attack {
-  /*background-color : #d25421;*/
-}
-
-.type_card_foundation {
-  /* background-color : #b6a7a0; */
-}
-
-.type_card_asset {
-  /*background-color : #a3bf75;*/
-}
-
-.type_card_action {
-  /*background-color : #7e9cc0;*/
-}
-
-.type_card_side {
-}
-
 .card-list {
   border: 1px outset graytext;
   border-radius: 4px 4px 4px 4px;
