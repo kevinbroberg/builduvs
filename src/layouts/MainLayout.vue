@@ -3,14 +3,19 @@
   import DeckLoader from 'components/deck/DeckLoader.vue'
   import DeckView from 'components/deck/DeckView.vue'
   const leftDrawerOpen = ref(false)
-  const rightDrawerOpen = ref(false)
-
+  const deckViewOpen = ref(false)
+  const deckLoadOpen = ref(false)
 
   function toggleLeftDrawer () {
     leftDrawerOpen.value = !leftDrawerOpen.value
   }
-  function toggleRightDrawer () {
-    rightDrawerOpen.value = !rightDrawerOpen.value
+  function toggleDeckView () {
+    deckViewOpen.value = !deckViewOpen.value
+    deckLoadOpen.value = false
+  }
+  function toggleDeckLoad () {
+    deckLoadOpen.value = !deckLoadOpen.value
+    deckViewOpen.value = false
   }
 </script>
 
@@ -28,24 +33,30 @@
           BuildUVS
         </q-toolbar-title>
 
-        <q-btn dense flat round icon="info" @click="toggleRightDrawer" />
+        <q-btn dense flat round icon="file_upload" @click="toggleDeckLoad">
+          <q-tooltip>Load a deck from file or with text input</q-tooltip>
+        </q-btn>
+        <q-btn dense flat round icon="description" @click="toggleDeckView" >
+          <q-tooltip>View current deck</q-tooltip>
+        </q-btn>
       </q-toolbar>
 
-      <q-tabs align="left">
-        <q-route-tab to="/" label="Search" />
+      <!-- <q-tabs align="left"> -->
+        <!-- <q-route-tab to="/" label="Search" /> -->
         <!-- <q-route-tab to="/deck" label="Deck" /> -->
-        <q-route-tab to="/load" label="Deck loader" />
-      </q-tabs>
+        <!-- <q-route-tab to="/load" label="Deck loader" /> -->
+      <!-- </q-tabs> -->
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" side="left" behavior="mobile" elevated>
-      <!-- list of decks -->
-      <!-- drawer content -->
     </q-drawer>
 
-    <q-drawer v-model="rightDrawerOpen" side="right" elevated>
-      <!-- <DeckLoader /> -->
-      <component :is="DeckView" />
+    <q-drawer v-model="deckViewOpen" side="right" elevated>
+      <DeckView />
+    </q-drawer>
+    
+    <q-drawer v-model="deckLoadOpen" side="right" elevated>
+      <DeckLoader />
     </q-drawer>
 
     <q-page-container>
