@@ -1,9 +1,12 @@
 <template>
   <div id="deckLoader">
-    <q-btn @click="loadDeck" v-if="showInputComponents" label="Load"/>
-
-    <q-file filled v-model="fileModel" @change="deck2Text($event)" label="Upload deck"/>
-    <q-input filled autogrow v-model="text" v-if="showInputComponents"
+    <q-btn @click="loadDeck" v-if="showInputComponents" label="Finalize deck">
+      <q-tooltip>Loads the deck from text into this app</q-tooltip>
+    </q-btn>
+    <q-file filled v-model="fileModel" @change="deck2Text($event)" label="Upload deck">
+      <q-tooltip>Loads a text or TTS.json deck into the text area below</q-tooltip>
+    </q-file>
+    <q-input outlined autogrow type="textarea" v-model="text" placeholder="Enter deck as text"
       @fileLoaded="showTextLoadDeck($event)" />
     
   </div>
@@ -82,7 +85,6 @@ export default {
         let actualCard = null
         for (let key in cards) { 
           if (cards[key].name.toLowerCase() == match[2].toLowerCase()) { // TODO better case insensitive
-            console.log(`Found an actual match! ${cards[key]}`)
             actualCard = cards[key]
             break;
           }
@@ -92,6 +94,8 @@ export default {
           for(let i = 0 ; i < qty; ++i) {
             this.$store.commit('deck/increment', actualCard)
           }
+        } else {
+          console.log(`Missed ${key}`)
         }
       }
 
