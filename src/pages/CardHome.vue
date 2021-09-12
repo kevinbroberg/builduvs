@@ -1,6 +1,6 @@
 <template>
   <div id="app">    
-    <div id="options">
+    <div id="options"> <!-- TODO Use a QList here-->
       <div>
         <multiselect v-model="nameSelection" :options="nameOptions"
           tag-placeholder="Search with this name (or regex!)" :taggable="true" @tag="addNameTag"
@@ -137,7 +137,7 @@ export default {
             // TODO just don't show the button unless they meet this criteria? Show a different one instead?
             alert('200 card limit for bulk add. Please set more filters')
         } else {
-            this.filteredCards.forEach(c => this.$store.commit('increment', c))
+            this.filteredCards.forEach(c => this.$store.commit('deck/increment', c))
         }
     },
     initialCap([first, ...rest]) { // I LOVE destructuring but this has bad edge case handling
