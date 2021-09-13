@@ -1,7 +1,7 @@
 <template>
-<div class="elements">
+<span class="elements">
   <img v-for="elem in card.resources" v-bind:key=elem :src="pic(elem)" :alt=elem /> <br/>
-</div>
+</span>
 </template>
 
 <script>
