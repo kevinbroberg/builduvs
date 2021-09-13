@@ -1,4 +1,9 @@
 export function increment(state, card, pile = state.deck) {
+  
+  if (card.type == 'character' && !state.mainCharacter) {
+    markMain(state, card)
+    return
+  } 
   let qtyObj = pile[card.asset] || { qty: 0 };
   let count = qtyObj.qty;
   let max = card.limit || 4;
@@ -30,8 +35,10 @@ export function markMain(state, card) {
 export function remove(state, card, pile = state.deck) {
   pile.delete(card.asset)
 }
-export function nuke(state, pile = state.deck) {
-  pile = []
+export function nuke(state) {
+  console.log(`Nuking ${state.deck.length} cards`)
+  state.deck = {}
+  console.log(`Nuked, with ${state.deck.length} cards left`)
 }
 export function setQty(state, card, qty, pile = state.deck) {
   let max = card.limit || 4;

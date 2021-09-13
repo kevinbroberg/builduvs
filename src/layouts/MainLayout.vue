@@ -17,6 +17,12 @@
     deckLoadOpen.value = !deckLoadOpen.value
     deckViewOpen.value = false
   }
+
+  import { useStore } from 'vuex';
+  const store = useStore()
+  function deck2clipboard() {
+    navigator.clipboard.writeText(store.getters['deck/getDeckText'])
+  }
 </script>
 
 <template>
@@ -28,11 +34,15 @@
 
         <q-toolbar-title>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
+            <!-- TODO make a SVG -->
+            <img src="icons\icon-128x128.png">
           </q-avatar>
           BuildUVS
         </q-toolbar-title>
 
+        <q-btn dense flat round icon="content_copy" @click="deck2clipboard">
+          <q-tooltip>Copy your deck to the clipboard as text</q-tooltip>
+        </q-btn>
         <q-btn dense flat round icon="file_upload" @click="toggleDeckLoad">
           <q-tooltip>Load a deck from file or with text input</q-tooltip>
         </q-btn>
