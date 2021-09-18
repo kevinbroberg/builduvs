@@ -18,7 +18,8 @@ export function decrement(state, card, pile = state.deck) {
   if (count > 0) {
     pile[card.asset] = { ...card, qty: count }
   } else {
-    pile.delete(card.asset)
+    delete pile[card.asset]
+    // if (state.mainCharacter == card) { state.mainCharacter = ''}
   }
 }
 export function send2Board(state, card) {
@@ -33,12 +34,13 @@ export function markMain(state, card) {
   state.mainCharacter = card
 }
 export function remove(state, card, pile = state.deck) {
-  pile.delete(card.asset)
+  delete pile[card.asset]
 }
 export function nuke(state) {
-  console.log(`Nuking ${state.deck.length} cards`)
+  // console.log(`Nuking ${state.deck.length} cards`)
   state.deck = {}
-  console.log(`Nuked, with ${state.deck.length} cards left`)
+  state.mainCharacter = ''
+  // console.log(`Nuked, with ${state.deck.length} cards left`)
 }
 export function setQty(state, card, qty, pile = state.deck) {
   let max = card.limit || 4;
