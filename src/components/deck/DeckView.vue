@@ -4,11 +4,18 @@
   const store = useStore()
   const deck = computed(() => store.getters['deck/getDeckList'] )
   const mainChar = computed(() => store.getters['deck/getMain'])
+
+  const increment = ev => store.commit('deck/increment', ev)
+  const decrement = ev => store.commit('deck/decrement', ev)
+
   const simple = "Simple", type = "Types", symbol = "Symbols"
   const partitionOptions = [simple, type, symbol]
   const howPartition = ref(type)
 
   function combinations(list) {
+    if (!list) {
+      return [[]]
+    }
     if (list.length == 1) {
       return [list, []]
     }
@@ -32,13 +39,9 @@
   function symbolPartition() {
     // TODO use an Elements component for the label
     let groups = combinations(mainChar.value.resources)
-    console.log(groups)
-
     let parts = groups.map(g => {
       return { key: g, label: g ? g : "No Symbols", cards: []}
     } )
-    console.log(parts)
-    console.log(parts)
     deck.value.forEach( card => {
       // every resource in the partition must have a matching resource in at least one of the cards
       let index = parts.findIndex(part => part.key.every( resource => card.resources.some( cr => cr == resource)))
@@ -86,15 +89,16 @@
     <div v-for="partition in partitions" :key="partition.key">
       <q-separator/>
       <q-item-label header>{{partition.label}}</q-item-label>
-      <q-item v-for="card in partition.cards" :key="card.asset">
+      <q-item v-for="card in partition.cards" :key="card.asset" no-wrap>
         <q-item-section avatar>
             <q-avatar>
-            <!-- TODO zoom into just the card art here -->
-            <img :src="require(`assets/images/card_images/${card.asset}`)">
+              <!-- TODO zoom into just the card art here -->
+              <img :src="require(`assets/images/card_images/${card.asset}`)" @click="increment(card)" />
+              
             </q-avatar>  
         </q-item-section>
         <q-item-section>
-            <q-item-label lines="1">{{card.qty}} {{card.name}}</q-item-label>
+            <q-item-label lines="1"><q-btn flat round no-margin icon="remove" @click="decrement(card)"/> {{card.qty}} {{card.name}}</q-item-label>            
         </q-item-section>
       </q-item>
     </div>
