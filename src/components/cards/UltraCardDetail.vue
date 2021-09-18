@@ -75,9 +75,6 @@ export default {
 
     function increment() {
       $store.commit("deck/increment", props.data);
-      if (isCharacter()) {
-        $store.commit("deck/markMain", props.data);
-      }
     }
 
     function decrement() {
