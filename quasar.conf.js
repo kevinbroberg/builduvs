@@ -136,16 +136,14 @@ module.exports = configure(function (ctx) {
     // https://v2.quasar.dev/quasar-cli/developing-pwa/configuring-pwa
     pwa: {
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
-      workboxOptions: {
-        // TODO there really ought to be something I'm supposed to put here, right?
-      }, // only for GenerateSW
+      workboxOptions: {}, // only for GenerateSW
 
       // for the custom service worker ONLY (/src-pwa/custom-service-worker.[js|ts])
       // if using workbox in InjectManifest mode
-      // chainWebpackCustomSW (chain) {
-      //   chain.plugin('eslint-webpack-plugin')
-      //     .use(ESLintPlugin, [{ extensions: [ 'js' ] }])
-      // },
+      chainWebpackCustomSW (chain) {
+        chain.plugin('eslint-webpack-plugin')
+          .use(ESLintPlugin, [{ extensions: [ 'js' ] }])
+      },
 
       manifest: {
         name: `BuildUVS`,

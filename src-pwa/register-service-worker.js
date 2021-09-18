@@ -16,24 +16,11 @@ register(process.env.SERVICE_WORKER_FILE, {
   },
 
   registered (/* registration */) {
-    console.log('Service worker has been registered.')
-    // https://jakearchibald.com/2014/offline-cookbook/
-    // self.addEventListener('fetch', (event) => {
-    //   event.respondWith(async function() {
-    //     const cache = await caches.open('builduvs-images');
-    //     const cachedResponse = await cache.match(event.request);
-    //     if (cachedResponse) return cachedResponse;
-    //     const networkResponse = await fetch(event.request);
-    //     event.waitUntil(
-    //       cache.put(event.request, networkResponse.clone())
-    //     );
-    //     return networkResponse;
-    //   }());
-    // });
+    // console.log('Service worker has been registered.')
   },
 
   cached (/* registration */) {
-    console.log('Content has been cached for offline use.')
+    // console.log('Content has been cached for offline use.')
   },
 
   updatefound (/* registration */) {
@@ -45,7 +32,7 @@ register(process.env.SERVICE_WORKER_FILE, {
   },
 
   offline () {
-    console.log('No internet connection found. App is running in offline mode.')
+    // console.log('No internet connection found. App is running in offline mode.')
   },
 
   error (/* err */) {
