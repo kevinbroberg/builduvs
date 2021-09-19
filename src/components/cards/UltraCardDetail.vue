@@ -4,7 +4,7 @@
     flat
     onmouseover="//preview('$extension', '$padded_numero');"
   >
-    <div>
+
       <q-card-section class="card_image" @click="increment()">
         <!-- TODO onclick detail popup / dialog / lightbox -->
         <q-img
@@ -45,8 +45,7 @@
         ><br />
         {{ data.rarity || "" }}
       </q-card-section>
-    </div>
-    <div class="clear"></div>
+      <q-separator />
   </q-card>
 </template>
 
