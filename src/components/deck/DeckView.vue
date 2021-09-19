@@ -8,8 +8,8 @@
   const increment = ev => store.commit('deck/increment', ev)
   const decrement = ev => store.commit('deck/decrement', ev)
 
-  const simple = "Simple", type = "Types", symbol = "Symbols"
-  const partitionOptions = [simple, type, symbol]
+  const simple = "Simple", type = "Types", symbol = "Symbols", control = "Control"
+  const partitionOptions = [simple, type, symbol, control]
   const howPartition = ref(type)
 
   function combinations(list) {
@@ -32,9 +32,25 @@
 
   import Elements from 'components/cards/detail/Elements.vue'
 
+  function arbitraryPartition(funk, contents = deck.value) {
+    let parts = new Set([...contents.map(funk)])
+    console.log(parts)
+    return [...parts].map(me => ({key: me, label: me, cards: contents.filter(c => funk(c) == me)})
+    )
+  }
+  function symbolPartition() {
+    let mainResources = mainChar.value.resources
+    return arbitraryPartition(card => 
+      card.resources.filter(resource => mainResources.includes(resource)).sort().toString()
+    )
+  }
+  function controlPartition() {
+    return arbitraryPartition(card => card.control)
+  }
   function simplePartition() {
     return [{'key': 'all', 'label': 'Deck', 'cards': deck.value}]
   }
+  /*
   // TODO this is the kind of thing unit tests are good for
   function symbolPartition() {
     // TODO use an Elements component for the label
@@ -52,6 +68,7 @@
     })
     return parts
   }
+  */
   function typePartition() {
     let types = new Set([...deck.value.map(card => card.type)])
     return [...types].map(me => {
@@ -65,6 +82,8 @@
           return typePartition()
         case symbol:
           return symbolPartition()
+        case control:
+          return controlPartition()
         case simple:
         default:
           return simplePartition()
@@ -73,7 +92,7 @@
 </script>
 
 <template>
-  <q-select :options="partitionOptions" v-model="howPartition"/>
+  <q-select filled label="Partition" stack-label :options="partitionOptions" v-model="howPartition"/>
 
   <q-item-section avatar v-if="mainChar">
       <q-avatar>
@@ -93,12 +112,13 @@
         <q-item-section avatar>
             <q-avatar>
               <!-- TODO zoom into just the card art here -->
+              <!-- TODO onmouseover fade out and display an "add" icon -->
               <img :src="require(`assets/images/card_images/${card.asset}`)" @click="increment(card)" />
               
             </q-avatar>  
         </q-item-section>
         <q-item-section>
-            <q-item-label lines="1"><q-btn flat round no-margin icon="remove" @click="decrement(card)"/> {{card.qty}} {{card.name}}</q-item-label>            
+            <q-item-label lines="2"><q-btn flat round no-margin icon="remove" @click="decrement(card)"/> {{card.qty}} {{card.name}}</q-item-label>            
         </q-item-section>
       </q-item>
     </div>
