@@ -12,40 +12,23 @@
   const partitionOptions = [simple, type, symbol, control]
   const howPartition = ref(type)
 
-  function combinations(list) {
-    if (!list) {
-      return [[]]
-    }
-    if (list.length == 1) {
-      return [list, []]
-    }
-    let result = [[...list]]
-    
-    function nless1(_, idx, original) {
-      return [...original.slice(0, idx), ...original.slice(idx + 1)]
-    }
-    result.push(...list.map(nless1)) // length 2 sublists
-    list.forEach(e => result.push([e])) // length 1
-    result.push([[]]) // length 0
-    return result
-  }
 
   import Elements from 'components/cards/detail/Elements.vue'
 
-  function arbitraryPartition(funk, contents = deck.value) {
+  function arbitraryPartition(funk) {
+    let contents = deck.value
     let parts = new Set([...contents.map(funk)])
+    console.log("Partition results")
     console.log(parts)
     return [...parts].map(me => ({key: me, label: me, cards: contents.filter(c => funk(c) == me)})
     )
   }
-  function symbolPartition() {
+  function matchSymbols(card) {
     let mainResources = mainChar.value.resources
-    return arbitraryPartition(card => 
-      card.resources.filter(resource => mainResources.includes(resource)).sort().toString()
-    )
+    return card.resources.filter(resource => mainResources.includes(resource))
   }
-  function controlPartition() {
-    return arbitraryPartition(card => card.control)
+  function symbolPartition() {
+    return arbitraryPartition(card => matchSymbols(card).sort().toString())
   }
   function simplePartition() {
     return [{'key': 'all', 'label': 'Deck', 'cards': deck.value}]
@@ -69,21 +52,15 @@
     return parts
   }
   */
-  function typePartition() {
-    let types = new Set([...deck.value.map(card => card.type)])
-    return [...types].map(me => {
-      return {'key': me, 'label': me, 'cards': deck.value.filter(card => card.type === me)}
-    })
-  }
   
   const partitions = computed(() => {
     switch(howPartition.value) {
         case type:
-          return typePartition()
+          return arbitraryPartition(card => card.type)
         case symbol:
           return symbolPartition()
         case control:
-          return controlPartition()
+          return arbitraryPartition(card => card.control)
         case simple:
         default:
           return simplePartition()
@@ -107,7 +84,8 @@
   <q-list bordered>
     <div v-for="partition in partitions" :key="partition.key">
       <q-separator/>
-      <q-item-label header>{{partition.label}}</q-item-label>
+      <!-- <q-item-label v-if="howPartition == symbol" header><Elements :card=partition.cards[0] /></q-item-label> -->
+      <q-item-label header>{{partition.label}}</q-item-label> <!-- v-else -->
       <q-item v-for="card in partition.cards" :key="card.asset" no-wrap>
         <q-item-section avatar>
             <q-avatar>
