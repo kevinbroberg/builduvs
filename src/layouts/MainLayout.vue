@@ -39,7 +39,9 @@
   const history = ref([])
   function nameChange(value) {
     store.commit('filter/updateName', value)
-    history.value.push(value)
+    if(value) {
+      history.value.push(value)
+    }
   }
 </script>
 
