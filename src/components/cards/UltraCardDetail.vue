@@ -17,9 +17,9 @@
       </q-card-section>
       <q-card-section horizontal>
         <q-card-section>
-          <h2>{{ data.name }}</h2>
+          <h3>{{ data.name }}</h3>
         </q-card-section>
-        <q-card-section >
+        <q-card-section q-mr-md>
           <span class="label" :class="'card-list-' + data.type">{{data.type}}</span><br />
           <Elements v-bind:resources="data.resources" /> <br />
           {{ data.difficulty }} Difficulty {{ data.control }} Control<br />
