@@ -1,6 +1,6 @@
 <template>
 <span class="elements">
-  <img v-for="elem in card.resources" v-bind:key=elem :src="pic(elem)" :alt=elem /> <br/>
+  <img v-for="elem in resources" v-bind:key=elem :src="pic(elem)" :alt=elem /> <br/>
 </span>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
     name: "Elements",
     props: {
-      card: Object
+      resources: Object
     },
     methods: {
         pic(s) {

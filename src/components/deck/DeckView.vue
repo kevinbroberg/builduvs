@@ -78,13 +78,13 @@
       </q-avatar>  
   </q-item-section>
   <q-item-section>
-      <q-item-label lines="1">{{mainChar.name}} <Elements :card=mainChar /></q-item-label>
+      <q-item-label lines="1">{{mainChar.name}} <Elements :card=mainChar.resources /></q-item-label>
   </q-item-section>
 
   <q-list bordered>
     <div v-for="partition in partitions" :key="partition.key">
       <q-separator/>
-      <!-- <q-item-label v-if="howPartition == symbol" header><Elements :card=partition.cards[0] /></q-item-label> -->
+      <!-- <q-item-label v-if="howPartition == symbol" header><Elements :card=partition.cards[0].resources /></q-item-label> -->
       <q-item-label header>{{partition.label}}</q-item-label> <!-- v-else -->
       <q-item v-for="card in partition.cards" :key="card.asset" no-wrap>
         <q-item-section avatar>
