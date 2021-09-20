@@ -5,17 +5,26 @@
   const leftDrawerOpen = ref(false)
   const deckViewOpen = ref(false)
   const deckLoadOpen = ref(false)
-
+  const rightDrawerOpen = ref(false)
+  // const rightDrawerOpen = computed(deckViewOpen.value || deckLoadOpen.value) // but this crashed the app
+  
   function toggleLeftDrawer () {
     leftDrawerOpen.value = !leftDrawerOpen.value
   }
   function toggleDeckView () {
     deckViewOpen.value = !deckViewOpen.value
     deckLoadOpen.value = false
+    if (rightDrawerOpen.value != deckViewOpen.value) {
+      rightDrawerOpen.value = deckViewOpen.value
+    }
   }
   function toggleDeckLoad () {
     deckLoadOpen.value = !deckLoadOpen.value
     deckViewOpen.value = false
+    
+    if (rightDrawerOpen.value != deckLoadOpen.value) {
+      rightDrawerOpen.value = deckLoadOpen.value
+    }
   }
 
   import { useStore } from 'vuex';
@@ -59,14 +68,12 @@
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" side="left" behavior="mobile" elevated>
+      <h4 style='text-align: center'>Deck listing will go here once implemented</h4>
     </q-drawer>
 
-    <q-drawer v-model="deckViewOpen" side="right" elevated>
-      <DeckView />
-    </q-drawer>
-    
-    <q-drawer v-model="deckLoadOpen" side="right" elevated>
-      <DeckLoader />
+    <q-drawer v-model="rightDrawerOpen" side="right" elevated>
+      <DeckView v-if="deckViewOpen" />
+      <DeckLoader v-if="deckLoadOpen" />
     </q-drawer>
 
     <q-page-container>
