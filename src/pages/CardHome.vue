@@ -2,47 +2,38 @@
   <div id="app">
     <div id="options"> <!-- TODO Use a QList here-->
       <div>
-        <multiselect v-model="selectedSymbols" :options="symbolOptions" :multiple="true" :close-on-select="false" :customLabel="initialCap"
-            :clear-on-select="false" :searchable="false" placeholder="Filter by symbol">
-        </multiselect>
+        <body>Symbols. AND across lines, OR within a line</body>
+        <q-option-group v-model="selectedSymbols" :options="groupOptions(symbolOptions)" 
+          inline multiple dense type="checkbox"/>
+        <q-separator />
+        <q-option-group v-model="selectedSymbols2" :options="groupOptions(symbolOptions)" 
+          inline multiple dense type="checkbox"/>
+        <q-separator />
+        <q-option-group v-model="selectedSymbols3" :options="groupOptions(symbolOptions)" 
+          inline multiple dense type="checkbox"/>
       </div>
       <div>
-        <multiselect v-model="selectedSymbols2" :options="symbolOptions" :multiple="true" :close-on-select="false" :customLabel="initialCap"
-            :clear-on-select="false" :searchable="false" placeholder="Filter by symbol">
-        </multiselect>
+        <q-option-group v-model="selectedTypes" :options="groupOptions(typeOptions)" 
+          inline multiple dense type="checkbox"/>
+        <q-option-group v-model="selectedFormats" :options="groupOptions(formatOptions)" 
+          inline multiple dense type="checkbox"/>
       </div>
       <div>
-        <multiselect v-model="selectedSymbols3" :options="symbolOptions" :multiple="true" :close-on-select="false" :customLabel="initialCap"
-            :clear-on-select="false" :searchable="false" placeholder="Filter by symbol">
-        </multiselect>
+        <q-select v-model="selectedOrigins" :options="originOptions" standout dense stack-label 
+          use-chips multiple label="Filter by expansion">
+        </q-select>
       </div>
       <div>
-        <multiselect @close="selectedOrigins = $event" v-model="indirectOrigins" :options="originOptions" :multiple="true" :close-on-select="false"
-            :clear-on-select="false" :searchable="true" placeholder="Filter by set">
-        </multiselect>
+        <q-select v-model="selectedKeywords" :options="keywordOptions" standout dense stack-label 
+          use-chips multiple use-input clearable 
+          new-value-mode="add" placeholder="Filter by keywords">
+        </q-select>
       </div>
       <div>
-        <multiselect v-model="selectedTypes" :options="typeOptions" :multiple="true" :close-on-select="false" :customLabel="initialCap"
-            :clear-on-select="false" :searchable="true" placeholder="Filter by card type">
-        </multiselect>
-      </div>
-      <div>
-        <multiselect @close="selectedKeywords = $event" v-model="indirectKeywords" :options="keywordOptions" :multiple="true" :close-on-select="false"
-            tag-placeholder="Search keywords" :taggable="true" @tag="addKeywordTag"
-            :clear-on-select="false" :searchable="true" placeholder="Filter by keyword">
-        </multiselect>
-      </div>
-      <div>
-        <multiselect v-model="textSelection" :options="textOptions"
-          tag-placeholder="Search for text" :taggable="true" @tag="addTextTag"
-          :close-on-select="true" :clear-on-select="false"
-          :searchable="true" placeholder="Filter by text">
-        </multiselect>
-      </div>
-      <div>
-        <multiselect v-model="selectedFormats" :options="formatOptions" :multiple="true" :close-on-select="false" :customLabel="initialCap"
-            :clear-on-select="false" :searchable="true" placeholder="Filter by format">
-        </multiselect>
+        <q-select v-model="textSelection" :options="textOptions" standout dense 
+          use-input clearable 
+          new-value-mode="add" label="Filter by text">
+        </q-select>
       </div>
       <button v-if="resultsCount > 200" type="button">{{resultsCount}} Cards in Search</button>
       <button v-if="resultsCount <= 200" @click="addAllToDeck" type="button">Add All {{resultsCount}} Cards to your Deck</button>
@@ -55,13 +46,11 @@
 
 <script>
 import InfiniteScrollCardDetailList from 'components/cards/InfiniteScrollCardDetailList'
-import Multiselect from 'vue-multiselect'
 import cards from 'assets/cards.json'
 
 export default {
   name: 'Home',
   components: {
-    Multiselect,
     InfiniteScrollCardDetailList
   },
   props: ["query"],
@@ -84,9 +73,6 @@ export default {
       selectedTypes:   this.query.selectedTypes     ? JSON.parse(this.query.selectedTypes) : [],
       selectedKeywords: this.query.selectedKeywords ? JSON.parse(this.query.selectedKeywords) : [],
       selectedFormats: this.query.selectedFormats   ? JSON.parse(this.query.selectedFormats) : ["standard"],
-      // don't immediately filter these after another selection
-      indirectOrigins: [],
-      indirectKeywords: [],
       nameTags: [],
       keywordTags: [],
       textTags: [],
@@ -94,6 +80,7 @@ export default {
     }
   },
   computed: {
+    symbolGroupOptions() { return this.symbolOptions.map(o => ({ value: o, label: this.initialCap(o) })) },
     filteredCards() {
       return this.$store.getters['filter/filteredCards'].filter(card => this.allFiltersMatch(card))
     },
@@ -101,8 +88,7 @@ export default {
       return this.filteredCards.length
     },
     typeOptions() {
-      // not reactive at all
-      return [...new Set(this.cardData.map(card => card.type))].sort()
+      return [...new Set(this.filteredCards.map(card => card.type))].sort()
     },
     nameOptions() {
       return [...this.nameTags, ...this.filteredCards.map(c => c.name)]
@@ -114,15 +100,14 @@ export default {
       return [...new Set(this.filteredCards.map(card => card.formats).flat())]
     },
     keywordOptions() {
-      // indirected - doesn't immediately update on changes
       return [...this.keywordTags, ...new Set(this.filteredCards.map(card => card.keywords).flat())].sort()
     },
     originOptions() {
-      // indirected - doesn't immediately update on changes
       return [...new Set(this.filteredCards.map(card => card.extension))]
     },
   },
   methods: {
+    groupOptions(list) { return list.map(o => ({ value: o, label: this.initialCap(o) })) },
     stripQuotes(str) {
       if (str.charAt(0) === '"' && str.charAt(str.length -1) === '"') {
           return str.substr(1,str.length -2)
@@ -191,22 +176,6 @@ export default {
           return true
         }
     },
-    addTextTag(newTag) {
-      let tag = {
-        name: newTag,
-        code: Math.floor((Math.random() * 10000000))
-      }
-      this.textTags.push(tag)
-      this.textSelection = newTag
-    },
-    addKeywordTag(newTag) {
-      let tag = {
-        name: newTag,
-        code: Math.floor((Math.random() * 10000000))
-      }
-      this.keywordTags.push(tag)
-      this.selectedKeywords.push(newTag)
-    },
     textFilter(card) {
       if (this.textSelection && this.textSelection.length > 0) {
         if (this.textSelection == "NONE") {
@@ -223,7 +192,9 @@ export default {
     },
     keywordFilter(card) {
       if (this.selectedKeywords && this.selectedKeywords.length > 0) {
-        return card.keywords && card.keywords.some(cardKeyword => this.selectedKeywords.some(choice => cardKeyword.includes(choice)))
+        return card.keywords && card.keywords.some(cardKeyword => 
+          this.selectedKeywords.some(choice => 
+            cardKeyword.includes(choice)))
       } else {
         return true
       }
@@ -248,6 +219,7 @@ export default {
                      this.textFilter,
                      this.typeMatchFilter,
                      this.formatMatchFilter,
+                     this.keywordFilter,
                     //  this.$store.getters['filter/nameFilter'],
                      ]
       return filters.every(f => {
@@ -263,8 +235,6 @@ export default {
 }
 </script>
 
-// the 3.0.0-alpha tarball isn't minified
-<style src="vue-multiselect/dist/vue-multiselect.css"></style>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
   #app {
