@@ -87,9 +87,12 @@ export function textFilter(state) {
     }
 }
 
-const filters = [originFilter,
+const filters = [
+    
     nameFilter,
-    keywordFilter,
+    // caller reverted
+    // originFilter,
+    // keywordFilter,
 
     // not implemented
     // symbolFilterGenerator(''), // PUKE
