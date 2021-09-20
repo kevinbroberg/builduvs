@@ -11,28 +11,36 @@
         <q-separator />
         <q-option-group v-model="selectedSymbols3" :options="groupOptions(symbolOptions)" 
           inline multiple dense type="checkbox"/>
-      </div>
-      <div>
+        <q-separator />
         <q-option-group v-model="selectedTypes" :options="groupOptions(typeOptions)" 
           inline multiple dense type="checkbox"/>
+        <q-separator />
         <q-option-group v-model="selectedFormats" :options="groupOptions(formatOptions)" 
+          inline multiple dense type="checkbox"/>
+        <q-separator />
+        <body>Difficulty</body>
+        <q-option-group v-model="selectedDifficulty" :options="numberOptions(difficulties)" 
+          inline multiple dense type="checkbox"/>
+        <q-separator />
+        <body>Control</body>
+        <q-option-group v-model="selectedControl" :options="numberOptions(controls)" 
           inline multiple dense type="checkbox"/>
       </div>
       <div>
         <q-select v-model="selectedOrigins" :options="originOptions" standout dense stack-label 
-          use-chips multiple label="Filter by expansion">
+          use-chips multiple label="Search expansions">
         </q-select>
       </div>
       <div>
         <q-select v-model="selectedKeywords" :options="keywordOptions" standout dense stack-label 
           use-chips multiple use-input clearable 
-          new-value-mode="add" placeholder="Filter by keywords">
+          new-value-mode="add" placeholder="Search keywords">
         </q-select>
       </div>
       <div>
         <q-select v-model="textSelection" :options="textOptions" standout dense 
           use-input clearable 
-          new-value-mode="add" label="Filter by text">
+          new-value-mode="add" label="Search text">
         </q-select>
       </div>
       <button v-if="resultsCount > 200" type="button">{{resultsCount}} Cards in Search</button>
@@ -73,6 +81,8 @@ export default {
       selectedTypes:   this.query.selectedTypes     ? JSON.parse(this.query.selectedTypes) : [],
       selectedKeywords: this.query.selectedKeywords ? JSON.parse(this.query.selectedKeywords) : [],
       selectedFormats: this.query.selectedFormats   ? JSON.parse(this.query.selectedFormats) : ["standard"],
+      selectedDifficulty: [],
+      selectedControl: [],
       nameTags: [],
       keywordTags: [],
       textTags: [],
@@ -80,12 +90,17 @@ export default {
     }
   },
   computed: {
-    symbolGroupOptions() { return this.symbolOptions.map(o => ({ value: o, label: this.initialCap(o) })) },
     filteredCards() {
       return this.$store.getters['filter/filteredCards'].filter(card => this.allFiltersMatch(card))
     },
     resultsCount() {
       return this.filteredCards.length
+    },
+    difficulties() {
+      return [...new Set(this.filteredCards.map(card => card.difficulty))].sort()
+    },
+    controls() {
+      return [...new Set(this.filteredCards.map(card => card.control))].sort()
     },
     typeOptions() {
       return [...new Set(this.filteredCards.map(card => card.type))].sort()
@@ -108,6 +123,7 @@ export default {
   },
   methods: {
     groupOptions(list) { return list.map(o => ({ value: o, label: this.initialCap(o) })) },
+    numberOptions(list) { return list.map(n => ({ value: n, label: n.toString() })) },
     stripQuotes(str) {
       if (str.charAt(0) === '"' && str.charAt(str.length -1) === '"') {
           return str.substr(1,str.length -2)
@@ -168,6 +184,20 @@ export default {
         return true
       }
     },
+    difficultyFilter(card) {
+      if (this.selectedDifficulty && this.selectedDifficulty.length > 0) {
+        return this.selectedDifficulty.includes(card.difficulty)
+      } else {
+        return true
+      }
+    },
+    controlFilter(card) {
+      if (this.selectedControl && this.selectedControl.length > 0) {
+        return this.selectedControl.includes(card.control)
+      } else {
+        return true
+      }
+    },
     formatMatchFilter(card) {
         if (this.selectedFormats && this.selectedFormats.length > 0) {
           return card.formats &&
@@ -213,6 +243,8 @@ export default {
     allFiltersMatch(card) {
       let filters = [
                      this.originMatchFilter,
+                     this.difficultyFilter,
+                     this.controlFilter,
                      this.symbolFilterGenerator(this.selectedSymbols),
                      this.symbolFilterGenerator(this.selectedSymbols2),
                      this.symbolFilterGenerator(this.selectedSymbols3),
