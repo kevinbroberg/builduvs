@@ -78,7 +78,7 @@
       </q-avatar>  
   </q-item-section>
   <q-item-section>
-      <q-item-label lines="1">{{mainChar.name}} <Elements :card=mainChar.resources /></q-item-label>
+      <q-item-label lines="1">{{mainChar.name}} <Elements :resources="mainChar.resources" /></q-item-label>
   </q-item-section>
 
   <q-list bordered>

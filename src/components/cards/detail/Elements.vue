@@ -1,6 +1,7 @@
 <template>
 <span class="elements">
-  <img v-for="elem in resources" v-bind:key=elem :src="pic(elem)" :alt=elem /> <br/>
+  <q-icon v-for="element in resources" v-bind:key="element" :alt="element" 
+    :name="'img:' + pic(element)" />
 </span>
 </template>
 

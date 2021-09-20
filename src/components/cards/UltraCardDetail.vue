@@ -20,7 +20,7 @@
           <h2>{{ data.name }}</h2>
         </q-card-section>
         <q-card-section class="card_division">
-          <Elements v-bind:resources="data.resources" />
+          <Elements v-bind:resources="data.resources" /> <br />
           {{ data.difficulty }} Difficulty {{ data.control }} Control<br />
           <BlockData v-bind:card="data" />
           <AttackData v-bind:card="data" />
