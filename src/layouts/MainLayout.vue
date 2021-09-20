@@ -1,13 +1,17 @@
 <script setup>
   import { ref } from 'vue'
+  import { useStore } from 'vuex';
   import DeckLoader from 'components/deck/DeckLoader.vue'
   import DeckView from 'components/deck/DeckView.vue'
+
+  const store = useStore()
+
   const leftDrawerOpen = ref(false)
   const deckViewOpen = ref(false)
   const deckLoadOpen = ref(false)
   const rightDrawerOpen = ref(false)
   // const rightDrawerOpen = computed(deckViewOpen.value || deckLoadOpen.value) // but this crashed the app
-  
+
   function toggleLeftDrawer () {
     leftDrawerOpen.value = !leftDrawerOpen.value
   }
@@ -21,16 +25,21 @@
   function toggleDeckLoad () {
     deckLoadOpen.value = !deckLoadOpen.value
     deckViewOpen.value = false
-    
+
     if (rightDrawerOpen.value != deckLoadOpen.value) {
       rightDrawerOpen.value = deckLoadOpen.value
     }
   }
 
-  import { useStore } from 'vuex';
-  const store = useStore()
   function deck2clipboard() {
     navigator.clipboard.writeText(store.getters['deck/getDeckText'])
+  }
+
+  const search = ref('')
+  const history = ref([])
+  function nameChange(value) {
+    store.commit('filter/updateName', value)
+    history.value.push(value)
   }
 </script>
 
@@ -48,7 +57,11 @@
           </q-avatar>
           BuildUVS
         </q-toolbar-title>
-
+        <!-- <q-input dark dense standout v-model="search" input-class="text-right"  -->
+          <!-- @new-value="addNameTag" -->
+        <q-select v-model="search" :options=history use-input standout dense clearable
+          new-value-mode="add" label="Search by name"
+          @update:model-value="nameChange" class="q-ml-md" />
         <q-btn dense flat round icon="content_copy" @click="deck2clipboard">
           <q-tooltip>Copy your deck to the clipboard as text</q-tooltip>
         </q-btn>

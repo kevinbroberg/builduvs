@@ -1,13 +1,6 @@
 <template>
-  <div id="app">    
+  <div id="app">
     <div id="options"> <!-- TODO Use a QList here-->
-      <div>
-        <multiselect v-model="nameSelection" :options="nameOptions"
-          tag-placeholder="Search with this name (or regex!)" :taggable="true" @tag="addNameTag"
-          :close-on-select="true" :clear-on-select="false"
-          :searchable="true" placeholder="Filter by name">
-        </multiselect>
-      </div>
       <div>
         <multiselect v-model="selectedSymbols" :options="symbolOptions" :multiple="true" :close-on-select="false" :customLabel="initialCap"
             :clear-on-select="false" :searchable="false" placeholder="Filter by symbol">
@@ -24,7 +17,7 @@
         </multiselect>
       </div>
       <div>
-        <multiselect @close="selectedOrigins = $event" v-model="indirectOrigins" :options="originOptions" :multiple="true" :close-on-select="false" 
+        <multiselect @close="selectedOrigins = $event" v-model="indirectOrigins" :options="originOptions" :multiple="true" :close-on-select="false"
             :clear-on-select="false" :searchable="true" placeholder="Filter by set">
         </multiselect>
       </div>
@@ -72,6 +65,10 @@ export default {
     InfiniteScrollCardDetailList
   },
   props: ["query"],
+  created() {
+    // TODO push up
+    this.$store.commit('filter/handleQuery', this.query)
+  },
   data() {
     return {
       // just straight nonreactive, would need to be indirected otherwise
@@ -82,7 +79,7 @@ export default {
       selectedSymbols: this.query.selectedSymbols   ? JSON.parse(this.query.selectedSymbols) : [],
       selectedSymbols2: this.query.selectedSymbols2 ? JSON.parse(this.query.selectedSymbols2) : [],
       selectedSymbols3: this.query.selectedSymbols3 ? JSON.parse(this.query.selectedSymbols3) : [],
-      
+
       selectedOrigins: this.query.selectedOrigins   ? JSON.parse(this.query.selectedOrigins) : [],
       selectedTypes:   this.query.selectedTypes     ? JSON.parse(this.query.selectedTypes) : [],
       selectedKeywords: this.query.selectedKeywords ? JSON.parse(this.query.selectedKeywords) : [],
@@ -98,7 +95,7 @@ export default {
   },
   computed: {
     filteredCards() {
-      return this.cardData.filter(card => this.allFiltersMatch(card))
+      return this.$store.getters['filter/filteredCards'].filter(card => this.allFiltersMatch(card))
     },
     resultsCount() {
       return this.filteredCards.length
@@ -153,7 +150,7 @@ export default {
             "selectedTypes",
             "selectedKeywords",
             "selectedFormats"]
-        let queryStr = fields.map(field => this[field] && this[field].length > 0 ? 
+        let queryStr = fields.map(field => this[field] && this[field].length > 0 ?
                                   field + "=" + JSON.stringify(this[field]) : "")
             .filter(val => val.length > 0)
             .join("&")
@@ -163,7 +160,7 @@ export default {
         await navigator.clipboard.writeText(filterLink)
     },
     // all methods below relate to filtering
-    symbolFilterGenerator(selections) { 
+    symbolFilterGenerator(selections) {
       return (card) => {
         if (selections && selections.length > 0) {
           return card.resources.some(sym => selections.includes(sym.toLowerCase()))
@@ -188,19 +185,11 @@ export default {
     },
     formatMatchFilter(card) {
         if (this.selectedFormats && this.selectedFormats.length > 0) {
-          return card.formats && 
+          return card.formats &&
             card.formats.some(format => this.selectedFormats.includes(format))
         } else {
           return true
         }
-    },
-    addNameTag(newTag) {
-      let tag = {
-        name: newTag,
-        code: Math.floor((Math.random() * 10000000))
-      }
-      this.nameTags.push(tag)
-      this.nameSelection = newTag
     },
     addTextTag(newTag) {
       let tag = {
@@ -217,16 +206,6 @@ export default {
       }
       this.keywordTags.push(tag)
       this.selectedKeywords.push(newTag)
-    },
-    nameFilter(card) {
-      if (this.nameSelection && this.nameSelection.length > 0) {
-        let frontanchor = this.nameSelection.startsWith('^') ? '^' : '.*'
-        let backanchor = this.nameSelection.endsWith('$') ? '$' : '.*'
-        const regex = new RegExp(frontanchor + this.nameSelection + backanchor, 'i')
-        return regex.test(card.name)
-      } else {
-        return true
-      }
     },
     textFilter(card) {
       if (this.textSelection && this.textSelection.length > 0) {
@@ -263,16 +242,15 @@ export default {
     allFiltersMatch(card) {
       let filters = [
                      this.originMatchFilter,
-                     this.symbolFilterGenerator(this.selectedSymbols), 
-                     this.symbolFilterGenerator(this.selectedSymbols2), 
+                     this.symbolFilterGenerator(this.selectedSymbols),
+                     this.symbolFilterGenerator(this.selectedSymbols2),
                      this.symbolFilterGenerator(this.selectedSymbols3),
-                     this.nameFilter,
                      this.textFilter,
                      this.typeMatchFilter,
                      this.formatMatchFilter,
-                     this.keywordFilter,
+                    //  this.$store.getters['filter/nameFilter'],
                      ]
-      return filters.every(function(f) {
+      return filters.every(f => {
         try {
             return f(card)
         } catch (e) {
@@ -296,6 +274,6 @@ export default {
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
-    
+
   }
 </style>
