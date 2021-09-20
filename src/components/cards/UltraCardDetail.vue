@@ -19,7 +19,8 @@
         <q-card-section>
           <h2>{{ data.name }}</h2>
         </q-card-section>
-        <q-card-section class="card_division">
+        <q-card-section >
+          <span class="label" :class="'card-list-' + data.type">{{data.type}}</span><br />
           <Elements v-bind:resources="data.resources" /> <br />
           {{ data.difficulty }} Difficulty {{ data.control }} Control<br />
           <BlockData v-bind:card="data" />
@@ -28,23 +29,18 @@
             Handsize : {{ data["hand_size"] }} <br />
             Vitality : {{ data["vitality"] }} <br />
           </div>
+        {{ data.rarity || "" }}
           <span v-if="myQty > 0" class="badge badge-success">Quantity in Deck {{ myQty }}</span>
         </q-card-section>
       </q-card-section>
 
-      <q-card-section class="card_division">
+      <q-card-section >
         <!-- TODO onclick detail popup / dialog / lightbox -->
         <h4>{{ (data.keywords ? data.keywords : []).join(" - ") }}</h4>
         <h6>{{ data.text || "Missing text" }}</h6>
         <br />
       </q-card-section>
-      <q-card-section class="card-important-info">
-        <span class="label" :class="'card-list-' + data.type">{{
-          data.type
-        }}</span
-        ><br />
-        {{ data.rarity || "" }}
-      </q-card-section>
+      
       <q-separator />
   </q-card>
 </template>
@@ -128,15 +124,8 @@ body {
 #options > div {
   margin: 10px 0px;
 }
-.card-important-info {
-  float: right;
-  margin-right: 0px;
-  font-weight: bold;
-  font-size: 16px;
-  text-align: right;
-}
 .card-list-character {
-  background-color: #485693;
+  background-color: #98a6e3;
 }
 .card-list-foundation {
   background-color: #b6a7a0;
