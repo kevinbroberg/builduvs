@@ -8,8 +8,8 @@
   const increment = ev => store.commit('deck/increment', ev)
   const decrement = ev => store.commit('deck/decrement', ev)
 
-  const simple = "Simple", type = "Types", symbol = "Symbols", control = "Control"
-  const partitionOptions = [simple, type, symbol, control]
+  const simple = "Simple", type = "Types", symbol = "Symbols", difficulty = "Difficulty", control = "Control"
+  const partitionOptions = [simple, type, symbol, difficulty, control]
   const howPartition = ref(type)
 
 
@@ -61,6 +61,8 @@
           return symbolPartition()
         case control:
           return arbitraryPartition(card => card.control)
+        case difficulty:
+          return arbitraryPartition(card => card.difficulty)
         case simple:
         default:
           return simplePartition()
