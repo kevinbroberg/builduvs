@@ -1,0 +1,1272 @@
+[
+  {
+    "name": "All Might1",
+    "asset": "mha/All Might1.png",
+    "resources": [
+      "all",
+      "good",
+      "earth"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Detroit Smash",
+    "asset": "mha/Detroit Smash.png",
+    "resources": [
+      "all",
+      "good",
+      "earth"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Missouri Smash",
+    "asset": "mha/Missouri Smash.png",
+    "resources": [
+      "all",
+      "good",
+      "earth"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Smash",
+    "asset": "mha/Smash.png",
+    "resources": [
+      "all",
+      "good",
+      "earth"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Texas Smash",
+    "asset": "mha/Texas Smash.png",
+    "resources": [
+      "all",
+      "good",
+      "earth"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Celebrity Status",
+    "asset": "mha/Celebrity Status.png",
+    "resources": [
+      "all",
+      "good",
+      "earth"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "It Can't Be Fixed",
+    "asset": "mha/It Can't Be Fixed.png",
+    "resources": [
+      "all",
+      "good",
+      "earth"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Pull No Punches",
+    "asset": "mha/Pull No Punches.png",
+    "resources": [
+      "all",
+      "good",
+      "earth"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "You're So Obvious",
+    "asset": "mha/You're So Obvious.png",
+    "resources": [
+      "all",
+      "good",
+      "earth"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Tomura Shigaraki1",
+    "asset": "mha/Tomura Shigaraki1.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Evil Gaze",
+    "asset": "mha/Evil Gaze.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Corrosion Lunge",
+    "asset": "mha/Corrosion Lunge.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Decaying Grip",
+    "asset": "mha/Decaying Grip.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Touch of Decay",
+    "asset": "mha/Touch of Decay.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Turn to Dust",
+    "asset": "mha/Turn to Dust.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Keen Observation",
+    "asset": "mha/Keen Observation.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Nervous Habit",
+    "asset": "mha/Nervous Habit.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Villainous Entrance",
+    "asset": "mha/Villainous Entrance.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Tenya Ida1",
+    "asset": "mha/Tenya Ida1.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Engine Rush",
+    "asset": "mha/Engine Rush.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Flying Thruster Kick",
+    "asset": "mha/Flying Thruster Kick.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Recipro Burst",
+    "asset": "mha/Recipro Burst.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Recipro Extend",
+    "asset": "mha/Recipro Extend.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Calling for Backup",
+    "asset": "mha/Calling for Backup.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Fulfilled My Duty",
+    "asset": "mha/Fulfilled My Duty.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Heroic Lineage",
+    "asset": "mha/Heroic Lineage.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Natural Leader",
+    "asset": "mha/Natural Leader.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Ochaco Uraraka1",
+    "asset": "mha/Ochaco Uraraka1.png",
+    "resources": [
+      "air",
+      "chaos",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Home Run Comet",
+    "asset": "mha/Home Run Comet.png",
+    "resources": [
+      "air",
+      "chaos",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Meteor Shower",
+    "asset": "mha/Meteor Shower.png",
+    "resources": [
+      "air",
+      "chaos",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Zero Gravity Capture",
+    "asset": "mha/Zero Gravity Capture.png",
+    "resources": [
+      "air",
+      "chaos",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Zero Gravity Lift",
+    "asset": "mha/Zero Gravity Lift.png",
+    "resources": [
+      "air",
+      "chaos",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Ecouraging Training Partner",
+    "asset": "mha/Ecouraging Training Partner.png",
+    "resources": [
+      "air",
+      "chaos",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Infinite Potential",
+    "asset": "mha/Infinite Potential.png",
+    "resources": [
+      "air",
+      "chaos",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Release",
+    "asset": "mha/Release.png",
+    "resources": [
+      "air",
+      "chaos",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Wealthy Aspriations",
+    "asset": "mha/Wealthy Aspriations.png",
+    "resources": [
+      "air",
+      "chaos",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Tsuyu Asui1",
+    "asset": "mha/Tsuyu Asui1.png",
+    "resources": [
+      "air",
+      "life",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "200 Meter Tongue Strike",
+    "asset": "mha/200 Meter Tongue Strike.png",
+    "resources": [
+      "air",
+      "life",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Frog Kick",
+    "asset": "mha/Frog Kick.png",
+    "resources": [
+      "air",
+      "life",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Frog Lashing",
+    "asset": "mha/Frog Lashing.png",
+    "resources": [
+      "air",
+      "life",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Tongue Smack",
+    "asset": "mha/Tongue Smack.png",
+    "resources": [
+      "air",
+      "life",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Amphibious",
+    "asset": "mha/Amphibious.png",
+    "resources": [
+      "air",
+      "life",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Observant Student",
+    "asset": "mha/Observant Student.png",
+    "resources": [
+      "air",
+      "life",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Rescue Completed",
+    "asset": "mha/Rescue Completed.png",
+    "resources": [
+      "air",
+      "life",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Wall Cling",
+    "asset": "mha/Wall Cling.png",
+    "resources": [
+      "air",
+      "life",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Yuga Aoyama1",
+    "asset": "mha/Yuga Aoyama1.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Tres Chic Cape",
+    "asset": "mha/Tres Chic Cape.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Instant Shining Finish",
+    "asset": "mha/Instant Shining Finish.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Navel Laser Beam",
+    "asset": "mha/Navel Laser Beam.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Navel Laser Charge",
+    "asset": "mha/Navel Laser Charge.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Panache Shining Navel Blast",
+    "asset": "mha/Panache Shining Navel Blast.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Glamorous",
+    "asset": "mha/Glamorous.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Someone With Style",
+    "asset": "mha/Someone With Style.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Tight Lipped",
+    "asset": "mha/Tight Lipped.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Izuku Midoriya1",
+    "asset": "mha/Izuku Midoriya1.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Apsiring Punch",
+    "asset": "mha/Apsiring Punch.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Delaware Smash",
+    "asset": "mha/Delaware Smash.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Determined Victory Smash",
+    "asset": "mha/Determined Victory Smash.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Future Charge",
+    "asset": "mha/Future Charge.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Heroic Strike",
+    "asset": "mha/Heroic Strike.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Reverse Throw",
+    "asset": "mha/Reverse Throw.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Setup Strike",
+    "asset": "mha/Setup Strike.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Velocity Punch ",
+    "asset": "mha/Velocity Punch .png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Bonds of Friendship",
+    "asset": "mha/Bonds of Friendship.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Gift From Mom",
+    "asset": "mha/Gift From Mom.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Good Impression",
+    "asset": "mha/Good Impression.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Note Taking",
+    "asset": "mha/Note Taking.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Passing the Torch",
+    "asset": "mha/Passing the Torch.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Planning Ahead",
+    "asset": "mha/Planning Ahead.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Recovery Girl's Kiss",
+    "asset": "mha/Recovery Girl's Kiss.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Rigorous Training",
+    "asset": "mha/Rigorous Training.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Self Sacrifice",
+    "asset": "mha/Self Sacrifice.png",
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Katsuki Bakugo1",
+    "asset": "mha/Katsuki Bakugo1.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Blast Rush Turbo",
+    "asset": "mha/Blast Rush Turbo.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Exloding Pride",
+    "asset": "mha/Exloding Pride.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Howitzer Impact",
+    "asset": "mha/Howitzer Impact.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Instant Explosive Release",
+    "asset": "mha/Instant Explosive Release.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Long-Lasting Explosion",
+    "asset": "mha/Long-Lasting Explosion.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Monster Blast",
+    "asset": "mha/Monster Blast.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Point Blank Incineration",
+    "asset": "mha/Point Blank Incineration.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Signature Right Swing",
+    "asset": "mha/Signature Right Swing.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Aggressive Temper",
+    "asset": "mha/Aggressive Temper.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Agitation",
+    "asset": "mha/Agitation.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Arrogant Disposition",
+    "asset": "mha/Arrogant Disposition.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Burst Speed",
+    "asset": "mha/Burst Speed.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Capabilites",
+    "asset": "mha/Capabilites.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Encouragement",
+    "asset": "mha/Encouragement.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "In Danger",
+    "asset": "mha/In Danger.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Latent Skill",
+    "asset": "mha/Latent Skill.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Let's Fight Bad Guys",
+    "asset": "mha/Let's Fight Bad Guys.png",
+    "resources": [
+      "death",
+      "evil",
+      "fire"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Shoto Todoroki",
+    "asset": "mha/Shoto Todoroki.png",
+    "resources": [
+      "fire",
+      "chaos",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Massive Flash Freeze",
+    "asset": "mha/Massive Flash Freeze.png",
+    "resources": [
+      "fire",
+      "chaos",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Precise Control",
+    "asset": "mha/Precise Control.png",
+    "resources": [
+      "fire",
+      "chaos",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Ice Storm",
+    "asset": "mha/Ice Storm.png",
+    "resources": [
+      "fire",
+      "chaos",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Frozen",
+    "asset": "mha/Frozen.png",
+    "resources": [
+      "fire",
+      "chaos",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Self Assured",
+    "asset": "mha/Self Assured.png",
+    "resources": [
+      "fire",
+      "chaos",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Frigid Heatwave",
+    "asset": "mha/Frigid Heatwave.png",
+    "resources": [
+      "fire",
+      "chaos",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Giant Ice Wall",
+    "asset": "mha/Giant Ice Wall.png",
+    "resources": [
+      "fire",
+      "chaos",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Irrefutable Force of Nature",
+    "asset": "mha/Irrefutable Force of Nature.png",
+    "resources": [
+      "fire",
+      "chaos",
+      "water"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Eijiro Kirshima",
+    "asset": "mha/Eijiro Kirshima.png",
+    "resources": [
+      "earth",
+      "void",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Hardened Frenzy",
+    "asset": "mha/Hardened Frenzy.png",
+    "resources": [
+      "earth",
+      "void",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Manly Passionate Guy",
+    "asset": "mha/Manly Passionate Guy.png",
+    "resources": [
+      "earth",
+      "void",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Hardened Chop",
+    "asset": "mha/Hardened Chop.png",
+    "resources": [
+      "earth",
+      "void",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Coordinated Effort",
+    "asset": "mha/Coordinated Effort.png",
+    "resources": [
+      "earth",
+      "void",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Resistance",
+    "asset": "mha/Resistance.png",
+    "resources": [
+      "earth",
+      "void",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  },
+  {
+    "name": "Go Beyond!",
+    "asset": "mha/Go Beyond!.jpg",
+    "resources": [
+      "infinity"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ]
+  }
+]

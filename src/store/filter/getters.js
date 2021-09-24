@@ -1,5 +1,5 @@
 
-import cards from 'assets/cards.json'
+import { cards } from 'assets/card_provider.js'
 
 export function nameFilter(state) {
     let val = state.nameSelection

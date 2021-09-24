@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import cards from 'assets/cards.json'
+import { cards } from 'assets/card_provider.js'
 export default {
   name: "DeckLoader",
   data() {
