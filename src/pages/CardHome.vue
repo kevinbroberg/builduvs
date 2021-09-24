@@ -32,12 +32,14 @@
         </q-select>
       </div>
       <div>
+        <!-- @update:model-value="addKeywordTag" -->
         <q-select v-model="selectedKeywords" :options="keywordOptions" standout dense stack-label 
           use-chips multiple use-input clearable 
           new-value-mode="add" placeholder="Search keywords">
         </q-select>
       </div>
       <div>
+        <!-- @update:model-value="addTextTag" -->
         <q-select v-model="textSelection" :options="textOptions" standout dense 
           use-input clearable 
           new-value-mode="add" label="Search text">
@@ -54,7 +56,7 @@
 
 <script>
 import InfiniteScrollCardDetailList from 'components/cards/InfiniteScrollCardDetailList'
-import cards from 'assets/cards.json'
+import { cards } from 'assets/card_provider.js'
 
 export default {
   name: 'Home',
@@ -83,10 +85,9 @@ export default {
       selectedFormats: this.query.selectedFormats   ? JSON.parse(this.query.selectedFormats) : ["standard"],
       selectedDifficulty: [],
       selectedControl: [],
-      nameTags: [],
       keywordTags: [],
       textTags: [],
-      cardData: cards
+      cardData: cards // why do i need to reassign this 🤔
     }
   },
   computed: {
@@ -106,13 +107,13 @@ export default {
       return [...new Set(this.filteredCards.map(card => card.type))].sort()
     },
     nameOptions() {
-      return [...this.nameTags, ...this.filteredCards.map(c => c.name)]
+      return [...this.filteredCards.map(c => c.name)]
     },
     textOptions() {
       return ["NONE", ...this.textTags, ...new Set(this.filteredCards.map(c => c.text))]
     },
     formatOptions() {
-      return [...new Set(this.filteredCards.map(card => card.formats).flat())]
+      return [...new Set(this.cardData.map(card => card.formats).flat())]
     },
     keywordOptions() {
       return [...this.keywordTags, ...new Set(this.filteredCards.map(card => card.keywords).flat())].sort()
@@ -122,8 +123,8 @@ export default {
     },
   },
   methods: {
-    groupOptions(list) { return list.map(o => ({ value: o, label: this.initialCap(o) })) },
-    numberOptions(list) { return list.map(n => ({ value: n, label: n.toString() })) },
+    groupOptions(list) { return list.map(o => ({ value: o, label: o && this.initialCap(o) })) },
+    numberOptions(list) { return list.map(n => ({ value: n, label: n && n.toString() })) },
     stripQuotes(str) {
       if (str.charAt(0) === '"' && str.charAt(str.length -1) === '"') {
           return str.substr(1,str.length -2)
@@ -142,7 +143,8 @@ export default {
       return first.toUpperCase() + rest.join('')
     },
     async copyFilterLink() {
-        let fields = ["nameSelection",
+        let fields = [
+          // "nameSelection", // TODO it was moved out of this component
             "textSelection",
             "selectedSymbols",
             "selectedSymbols2",
