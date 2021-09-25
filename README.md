@@ -1,6 +1,7 @@
 # BuildUVS (builduvs)
 
 A deck building tool for the Universus and My Hero Academia card game
+[![Netlify Status](https://api.netlify.com/api/v1/badges/938b1331-2875-4850-9d08-e7ac62f03ede/deploy-status)](https://app.netlify.com/sites/awesome-keller-a3b498/deploys)
 
 ## Install the dependencies
 ```bash
