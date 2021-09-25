@@ -123,8 +123,9 @@ export default {
     },
   },
   methods: {
-    groupOptions(list) { return list.map(o => ({ value: o, label: o && this.initialCap(o) })) },
-    numberOptions(list) { return list.map(n => ({ value: n, label: n.toString() })) }, // TODO not durable against undefined inputs!
+    // The "undefined" workaround is not very good; the checkboxes don't function
+    groupOptions(list) { return list.map(o => ({ value: o, label: o == undefined ? "Undefined" : this.initialCap(o) })) },
+    numberOptions(list) { return list.map(n => ({ value: n, label: n == undefined ? "Undefined" : n.toString() })) },
     stripQuotes(str) {
       if (str.charAt(0) === '"' && str.charAt(str.length -1) === '"') {
           return str.substr(1,str.length -2)
