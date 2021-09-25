@@ -26,8 +26,8 @@ export default {
   },
   data() {
     return {
-      scrollLimit: 0,
-      scrollPageSize: 10,
+      scrollLimit: 1,
+      scrollPageSize: 5,
     };
   },
   computed: {
@@ -45,6 +45,12 @@ export default {
     },
   },
   props: ["filteredCards"],
+  watch: {
+    filteredCards: function(_, __) {
+      console.log("Resetting scroll to prevent terrible slowdowns rendering tons of cards")
+      this.scrollLimit = 1
+    }
+  }
 };
 </script>
 
