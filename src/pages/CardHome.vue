@@ -87,7 +87,7 @@ export default {
       selectedControl: [],
       keywordTags: [],
       textTags: [],
-      cardData: cards // why do i need to reassign this 🤔
+      cardData: cards // why do i need to reassign this 🤔 also of questionable merit since I do an end-run around to the store's filtered cards...
     }
   },
   computed: {
@@ -104,7 +104,7 @@ export default {
       return [...new Set(this.filteredCards.map(card => card.control))].sort()
     },
     typeOptions() {
-      return [...new Set(this.filteredCards.map(card => card.type))].sort()
+      return [...new Set(this.cardData.map(card => card.type))].sort()
     },
     nameOptions() {
       return [...this.filteredCards.map(c => c.name)]
@@ -225,9 +225,10 @@ export default {
     },
     keywordFilter(card) {
       if (this.selectedKeywords && this.selectedKeywords.length > 0) {
-        return card.keywords && card.keywords.some(cardKeyword => 
-          this.selectedKeywords.some(choice => 
-            cardKeyword.includes(choice)))
+        let tlc = s => s.toLowerCase() // i tried alternatives and rather dislike this, but it works
+        let choices = this.selectedKeywords.map(tlc)
+        let keys = card.keywords?.map(tlc)
+        return keys?.some(key => choices.some(choice => key.includes(choice)))
       } else {
         return true
       }
@@ -255,7 +256,7 @@ export default {
                      this.typeMatchFilter,
                      this.formatMatchFilter,
                      this.keywordFilter,
-                    //  this.$store.getters['filter/nameFilter'],
+                    //  this.$store.getters['filter/nameFilter'], // already done upstream
                      ]
       return filters.every(f => {
         try {

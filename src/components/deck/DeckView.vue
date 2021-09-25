@@ -20,7 +20,7 @@
     let parts = new Set([...contents.map(funk)])
     console.log("Partition results")
     console.log(parts)
-    return [...parts].map(me => ({key: me, label: me, cards: contents.filter(c => funk(c) == me)})
+    return parts.map(me => ({key: me, label: me, cards: contents.filter(c => funk(c) == me)})
     )
   }
   function matchSymbols(card) {
