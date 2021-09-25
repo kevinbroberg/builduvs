@@ -47,7 +47,8 @@ export default {
   props: ["filteredCards"],
   watch: {
     filteredCards: function(_, __) {
-      console.log("Resetting scroll to prevent terrible slowdowns rendering tons of cards")
+      // page froze up if user scrolled down then removed filters, as the page tried to render 100s of new cards
+      console.log("Resetting scroll after search results changed")
       this.scrollLimit = 1
     }
   }
