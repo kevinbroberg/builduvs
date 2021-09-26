@@ -50,7 +50,7 @@
 
     <q-header reveal elevated class="bg-primary text-white" height-hint="98">
       <q-toolbar>
-        <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
+        <!-- <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" /> -->
 
         <q-toolbar-title>
           <q-avatar>
@@ -63,7 +63,7 @@
           <!-- @new-value="addNameTag" -->
         <q-select v-model="search" :options=history use-input standout dense clearable
           new-value-mode="add" label="Search by name"
-          @update:model-value="nameChange" class="q-ml-md" />
+          @update:model-value="nameChange" class="q-ml-sm" />
         <q-btn dense flat round icon="content_copy" @click="deck2clipboard">
           <q-tooltip>Copy your deck to the clipboard as text</q-tooltip>
         </q-btn>
