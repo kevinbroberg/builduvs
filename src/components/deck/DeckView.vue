@@ -18,9 +18,8 @@
   function arbitraryPartition(funk) {
     let contents = deck.value
     let parts = new Set([...contents.map(funk)])
-    console.log("Partition results")
-    console.log(parts)
-    return parts.map(me => ({key: me, label: me, cards: contents.filter(c => funk(c) == me)})
+    // coerce the Set back into a List
+    return [...parts].map(me => ({key: me, label: me, cards: contents.filter(c => funk(c) == me)})
     )
   }
   function matchSymbols(card) {
