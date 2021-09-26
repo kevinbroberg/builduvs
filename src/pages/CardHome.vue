@@ -3,44 +3,44 @@
     <div id="options"> <!-- TODO Use a QList here-->
       <div>
         <body>Symbols. AND across lines, OR within a line</body>
-        <q-option-group v-model="selectedSymbols" :options="groupOptions(symbolOptions)" 
+        <q-option-group v-model="selections.symbols" :options="groupOptions(symbolOptions)" 
           inline multiple dense type="checkbox"/>
         <q-separator />
-        <q-option-group v-model="selectedSymbols2" :options="groupOptions(symbolOptions)" 
+        <q-option-group v-model="selections.symbols2" :options="groupOptions(symbolOptions)" 
           inline multiple dense type="checkbox"/>
         <q-separator />
-        <q-option-group v-model="selectedSymbols3" :options="groupOptions(symbolOptions)" 
+        <q-option-group v-model="selections.symbols3" :options="groupOptions(symbolOptions)" 
           inline multiple dense type="checkbox"/>
         <q-separator />
-        <q-option-group v-model="selectedTypes" :options="groupOptions(typeOptions)" 
+        <q-option-group v-model="selections.types" :options="groupOptions(typeOptions)" 
           inline multiple dense type="checkbox"/>
         <q-separator />
-        <q-option-group v-model="selectedFormats" :options="groupOptions(formatOptions)" 
+        <q-option-group v-model="selections.formats" :options="groupOptions(formatOptions)" 
           inline multiple dense type="checkbox"/>
         <q-separator />
         <body>Difficulty</body>
-        <q-option-group v-model="selectedDifficulty" :options="numberOptions(difficulties)" 
+        <q-option-group v-model="selections.difficulty" :options="numberOptions(difficulties)" 
           inline multiple dense type="checkbox"/>
         <q-separator />
         <body>Control</body>
-        <q-option-group v-model="selectedControl" :options="numberOptions(controls)" 
+        <q-option-group v-model="selections.control" :options="numberOptions(controls)" 
           inline multiple dense type="checkbox"/>
       </div>
       <div>
-        <q-select v-model="selectedOrigins" :options="originOptions" standout dense stack-label 
-          use-chips multiple label="Search expansions">
+        <q-select v-model="selections.extensions" :options="originOptions" standout dense stack-label 
+          use-chips multiple label="Search extensions">
         </q-select>
       </div>
       <div>
         <!-- @update:model-value="addKeywordTag" -->
-        <q-select v-model="selectedKeywords" :options="keywordOptions" standout dense stack-label 
+        <q-select v-model="selections.keywords" :options="keywordOptions" standout dense stack-label 
           use-chips multiple use-input clearable 
           new-value-mode="add" placeholder="Search keywords">
         </q-select>
       </div>
       <div>
         <!-- @update:model-value="addTextTag" -->
-        <q-select v-model="textSelection" :options="textOptions" standout dense 
+        <q-select v-model="selections.text" :options="textOptions" standout dense 
           use-input clearable 
           new-value-mode="add" label="Search text">
         </q-select>
@@ -50,13 +50,13 @@
       <button @click="clearFilters" type="button">Clear Filters</button>
       <button @click="copyFilterLink" type="button">Copy Link to These Filters</button>
     </div>
-    <InfiniteScrollCardDetailList v-bind:filteredCards="filteredCards"/>
+    <InfiniteScrollCardDetailList />
   </div>
 </template>
 
 <script>
 import InfiniteScrollCardDetailList from 'components/cards/InfiniteScrollCardDetailList'
-import { cards } from 'assets/card_provider.js'
+import * as provider from 'assets/card_provider.js'
 
 export default {
   name: 'Home',
@@ -70,203 +70,63 @@ export default {
   },
   data() {
     return {
-      // just straight nonreactive, would need to be indirected otherwise
       symbolOptions: ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "infinity", "life", "order", "void", "water"],
-      // selections. quote-stripping from https://stackoverflow.com/questions/19156148/i-want-to-remove-double-quotes-from-a-string
-      nameSelection: this.query.nameSelection       ? this.stripQuotes(this.query.nameSelection) : '',
-      textSelection: this.query.textSelection       ? this.stripQuotes(this.query.textSelection) : '',
-      selectedSymbols: this.query.selectedSymbols   ? JSON.parse(this.query.selectedSymbols) : [],
-      selectedSymbols2: this.query.selectedSymbols2 ? JSON.parse(this.query.selectedSymbols2) : [],
-      selectedSymbols3: this.query.selectedSymbols3 ? JSON.parse(this.query.selectedSymbols3) : [],
-
-      selectedOrigins: this.query.selectedOrigins   ? JSON.parse(this.query.selectedOrigins) : [],
-      selectedTypes:   this.query.selectedTypes     ? JSON.parse(this.query.selectedTypes) : [],
-      selectedKeywords: this.query.selectedKeywords ? JSON.parse(this.query.selectedKeywords) : [],
-      selectedFormats: this.query.selectedFormats   ? JSON.parse(this.query.selectedFormats) : ["standard"],
-      selectedDifficulty: [],
-      selectedControl: [],
       keywordTags: [],
       textTags: [],
-      cardData: cards // why do i need to reassign this 🤔 also of questionable merit since I do an end-run around to the store's filtered cards...
+      selections: provider.selections,
     }
   },
   computed: {
-    filteredCards() {
-      return this.$store.getters['filter/filteredCards'].filter(card => this.allFiltersMatch(card))
-    },
     resultsCount() {
-      return this.filteredCards.length
+      return provider.filteredCards.value.length
     },
     difficulties() {
-      return [...new Set(this.filteredCards.map(card => card.difficulty))].sort()
+      return [...new Set(provider.filteredCards.value.map(card => card.difficulty))].sort()
     },
     controls() {
-      return [...new Set(this.filteredCards.map(card => card.control))].sort()
+      return [...new Set(provider.filteredCards.value.map(card => card.control))].sort()
     },
     typeOptions() {
-      return [...new Set(this.cardData.map(card => card.type))].sort()
+      return [...new Set(provider.cards.map(card => card.type))].sort()
     },
     nameOptions() {
-      return [...this.filteredCards.map(c => c.name)]
+      return [...provider.filteredCards.value.map(c => c.name)]
     },
     textOptions() {
-      return ["NONE", ...this.textTags, ...new Set(this.filteredCards.map(c => c.text))]
+      return ["NONE", ...this.textTags, ...new Set(provider.filteredCards.value.map(c => c.text))]
     },
     formatOptions() {
-      return [...new Set(this.cardData.map(card => card.formats).flat())]
+      return [...new Set(provider.cards.map(card => card.formats).flat())]
     },
     keywordOptions() {
-      return [...this.keywordTags, ...new Set(this.filteredCards.map(card => card.keywords).flat())].sort()
+      return [...this.keywordTags, ...new Set(provider.filteredCards.value.map(card => card.keywords).flat())].sort()
     },
     originOptions() {
-      return [...new Set(this.filteredCards.map(card => card.extension))]
+      return [...new Set(provider.filteredCards.value.map(card => card.extension))]
     },
   },
   methods: {
     // The "undefined" workaround is not very good; the checkboxes don't function
     groupOptions(list) { return list.map(o => ({ value: o, label: o == undefined ? "Undefined" : this.initialCap(o) })) },
     numberOptions(list) { return list.map(n => ({ value: n, label: n == undefined ? "Undefined" : n.toString() })) },
-    stripQuotes(str) {
-      if (str.charAt(0) === '"' && str.charAt(str.length -1) === '"') {
-          return str.substr(1,str.length -2)
-      }
-      return str
-    },
     addAllToDeck() {
-        if (this.filteredCards.length > 200) {
+        if (provider.filteredCards.value.length > 200) {
             // TODO just don't show the button unless they meet this criteria? Show a different one instead?
             alert('200 card limit for bulk add. Please set more filters')
         } else {
-            this.filteredCards.forEach(c => this.$store.commit('deck/increment', c))
+            provider.filteredCards.value.forEach(c => this.$store.commit('deck/increment', c))
         }
     },
-    initialCap([first, ...rest]) { // I LOVE destructuring but this has bad edge case handling
+    initialCap([first, ...rest]) { // I LOVE destructuring but this handles edge cases badly
       return first.toUpperCase() + rest.join('')
     },
     async copyFilterLink() {
-        let fields = [
-          // "nameSelection", // TODO it was moved out of this component
-            "textSelection",
-            "selectedSymbols",
-            "selectedSymbols2",
-            "selectedSymbols3",
-            "selectedOrigins",
-            "selectedTypes",
-            "selectedKeywords",
-            "selectedFormats"]
-        let queryStr = fields.map(field => this[field] && this[field].length > 0 ?
-                                  field + "=" + JSON.stringify(this[field]) : "")
-            .filter(val => val.length > 0)
-            .join("&")
-
-        let filterLink = location.origin + "/#" + this.$route.path + '?' + queryStr // TODO this looks sus
-
+        let filterLink = location.origin + this.$route.path + '?' + provider.getFilterPath()
         await navigator.clipboard.writeText(filterLink)
     },
-    // all methods below relate to filtering
-    symbolFilterGenerator(selections) {
-      return (card) => {
-        if (selections && selections.length > 0) {
-          return card.resources.some(sym => selections.includes(sym.toLowerCase()))
-        } else {
-          return true
-        }
-      }
-    },
-    originMatchFilter(card) {
-      if (this.selectedOrigins && this.selectedOrigins.length > 0) {
-        return this.selectedOrigins.includes(card.extension)
-      } else {
-        return true
-      }
-    },
-    typeMatchFilter(card) {
-      if (this.selectedTypes && this.selectedTypes.length > 0) {
-        return this.selectedTypes.includes(card.type)
-      } else {
-        return true
-      }
-    },
-    difficultyFilter(card) {
-      if (this.selectedDifficulty && this.selectedDifficulty.length > 0) {
-        return this.selectedDifficulty.includes(card.difficulty)
-      } else {
-        return true
-      }
-    },
-    controlFilter(card) {
-      if (this.selectedControl && this.selectedControl.length > 0) {
-        return this.selectedControl.includes(card.control)
-      } else {
-        return true
-      }
-    },
-    formatMatchFilter(card) {
-        if (this.selectedFormats && this.selectedFormats.length > 0) {
-          return card.formats &&
-            card.formats.some(format => this.selectedFormats.includes(format))
-        } else {
-          return true
-        }
-    },
-    textFilter(card) {
-      if (this.textSelection && this.textSelection.length > 0) {
-        if (this.textSelection == "NONE") {
-          return !card.text
-        } else {
-            let frontanchor = this.textSelection.startsWith('^') ? '^' : '.*'
-            let backanchor = this.textSelection.endsWith('$') ? '$' : '.*'
-            const regex = new RegExp(frontanchor + this.textSelection + backanchor, 'i')
-            return regex.test(card.text)
-        }
-      } else {
-        return true
-      }
-    },
-    keywordFilter(card) {
-      if (this.selectedKeywords && this.selectedKeywords.length > 0) {
-        let tlc = s => s.toLowerCase() // i tried alternatives and rather dislike this, but it works
-        let choices = this.selectedKeywords.map(tlc)
-        let keys = card.keywords?.map(tlc)
-        return keys?.some(key => choices.some(choice => key.includes(choice)))
-      } else {
-        return true
-      }
-    },
     clearFilters() {
-      this.nameSelection = ''
-      this.textSelection = ''
-      this.selectedSymbols = []
-      this.selectedSymbols2 = []
-      this.selectedSymbols3 = []
-      this.selectedOrigins = []
-      this.selectedTypes = []
-      this.selectedFormats = []
-      this.selectedKeywords = []
+      provider.initializeSelections()
     },
-    allFiltersMatch(card) {
-      let filters = [
-                     this.originMatchFilter,
-                     this.difficultyFilter,
-                     this.controlFilter,
-                     this.symbolFilterGenerator(this.selectedSymbols),
-                     this.symbolFilterGenerator(this.selectedSymbols2),
-                     this.symbolFilterGenerator(this.selectedSymbols3),
-                     this.textFilter,
-                     this.typeMatchFilter,
-                     this.formatMatchFilter,
-                     this.keywordFilter,
-                    //  this.$store.getters['filter/nameFilter'], // already done upstream
-                     ]
-      return filters.every(f => {
-        try {
-            return f(card)
-        } catch (e) {
-            console.error('Error on ' + card.name + ': ' + e.message)
-            return false
-        }
-      })
-    }
   }
 }
 </script>

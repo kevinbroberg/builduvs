@@ -18,6 +18,7 @@
 
 <script>
 import UltraCardDetail from "./UltraCardDetail.vue";
+import { filteredCards } from "assets/card_provider.js";
 
 export default {
   name: "InfiniteScrollCardDetailList",
@@ -26,6 +27,7 @@ export default {
   },
   data() {
     return {
+      filteredCards: filteredCards,
       scrollLimit: 1,
       scrollPageSize: 5,
     };
@@ -44,7 +46,6 @@ export default {
       done()
     },
   },
-  props: ["filteredCards"],
   watch: {
     filteredCards: function(_, __) {
       // page froze up if user scrolled down then removed filters, as the page tried to render 100s of new cards

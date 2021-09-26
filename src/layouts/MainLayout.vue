@@ -1,6 +1,7 @@
 <script setup>
   import { ref } from 'vue'
   import { useStore } from 'vuex';
+  import * as provider from 'assets/card_provider.js'
   import DeckLoader from 'components/deck/DeckLoader.vue'
   import DeckView from 'components/deck/DeckView.vue'
 
@@ -35,7 +36,7 @@
     navigator.clipboard.writeText(store.getters['deck/getDeckText'])
   }
 
-  const search = ref('')
+  const selections = provider.selections
   const history = ref([])
   function nameChange(value) {
     store.commit('filter/updateName', value)
@@ -61,7 +62,7 @@
         </q-toolbar-title>
         <!-- <q-input dark dense standout v-model="search" input-class="text-right"  -->
           <!-- @new-value="addNameTag" -->
-        <q-select v-model="search" :options=history use-input standout dense clearable
+        <q-select v-model="selections.name" :options=history use-input standout dense clearable
           new-value-mode="add" label="Search by name"
           @update:model-value="nameChange" class="q-ml-sm" />
         <q-btn dense flat round icon="content_copy" @click="deck2clipboard">
