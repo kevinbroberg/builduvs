@@ -65,8 +65,7 @@ export default {
   },
   props: ["query"],
   created() {
-    // TODO push up
-    this.$store.commit('filter/handleQuery', this.query)
+    provider.handleQuery(this.query)
   },
   data() {
     return {

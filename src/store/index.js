@@ -2,7 +2,6 @@ import { store } from 'quasar/wrappers'
 import { createStore } from 'vuex'
 
 import deck from './deck'
-import filter from './filter'
 /*
  * If not building with SSR mode, you can
  * directly export the Store instantiation;
@@ -15,8 +14,7 @@ import filter from './filter'
 export default store(function (/* { ssrContext } */) {
   const Store = createStore({
     modules: {
-      deck, 
-      filter
+      deck
     },
 
     // enable strict mode (adds overhead!)
