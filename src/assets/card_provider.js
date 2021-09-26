@@ -11,8 +11,7 @@ export function initializeSelections() {
         text:  '', 
         symbols:  [], 
         symbols2:  [], 
-        symbols3:  [], 
-        
+        symbols3:  [],
         extensions:  [], 
         types:     [], 
         keywords:  [], 
@@ -173,6 +172,8 @@ export function handleQuery(query) {
         types:      query.types    ? JSON.parse(query.types)    : selections.value.types,
         keywords:   query.keywords ? JSON.parse(query.keywords) : selections.value.keywords,
         formats:    query.formats  ? JSON.parse(query.formats)  : selections.value.formats,
+        difficulty: query.difficulty ? JSON.parse(query.difficulty) : selections.value.difficulty,
+        control: query.control ? JSON.parse(query.control) : selections.value.control,
     }
     selections.value = queries
 }
