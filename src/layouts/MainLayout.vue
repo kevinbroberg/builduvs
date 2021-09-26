@@ -1,9 +1,9 @@
 <script setup>
   import { ref } from 'vue'
   import { useStore } from 'vuex';
-  import * as provider from 'assets/card_provider.js'
   import DeckLoader from 'components/deck/DeckLoader.vue'
   import DeckView from 'components/deck/DeckView.vue'
+  import NamePicker from 'components/filter/NamePicker.vue'
 
   const store = useStore()
 
@@ -36,14 +36,6 @@
     navigator.clipboard.writeText(store.getters['deck/getDeckText'])
   }
 
-  const selections = provider.selections
-  const history = ref([])
-  function nameChange(value) {
-    store.commit('filter/updateName', value)
-    if(value) {
-      history.value.push(value)
-    }
-  }
 </script>
 
 <template>
@@ -62,9 +54,7 @@
         </q-toolbar-title>
         <!-- <q-input dark dense standout v-model="search" input-class="text-right"  -->
           <!-- @new-value="addNameTag" -->
-        <q-select v-model="selections.name" :options=history use-input standout dense clearable
-          new-value-mode="add" label="Search by name"
-          @update:model-value="nameChange" class="q-ml-sm" />
+        <NamePicker />
         <q-btn dense flat round icon="content_copy" @click="deck2clipboard">
           <q-tooltip>Copy your deck to the clipboard as text</q-tooltip>
         </q-btn>
