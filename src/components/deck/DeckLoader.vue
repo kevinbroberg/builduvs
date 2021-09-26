@@ -57,7 +57,7 @@ function replaceVuexDeck() {
   let splitDecks = decks.map(d => d.split('\n').map(s => s.match(regex)).filter(i => i))
   console.log(splitDecks)
   proc(splitDecks[0], (card) => $store.commit('deck/increment', card))
-  proc(splitDecks[1], (card) => $store.commit('deck/increment', [card, $store.state.deck.side]))
+  proc(splitDecks[1], (card) => $store.commit('deck/incrementSide', card))
   function proc(deck, action) {
     for (let idx in deck) {
       let match = deck[idx]

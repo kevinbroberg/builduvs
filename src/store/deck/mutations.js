@@ -3,12 +3,18 @@ export function increment(state, card) {
     setFace(state, card)
     return
   } 
-  let qtyObj = state.deck[card.asset] || { qty: 0 };
-  let count = qtyObj.qty;
+  let count = state.deck[card.asset]?.qty || 0
   let max = card.limit || 4;
   count = count >= max ? max : count + 1;
   // TODO autosideboard
   state.deck[card.asset] = { ...card, qty: count}
+}
+export function incrementSide(state, card) {
+  let count = state.side[card.asset]?.qty || 0
+  let max = card.limit || 4;
+  count = count >= max ? max : count + 1;
+  // TODO observe sum of main+side when incrementing
+  state.side[card.asset] = { ...card, qty: count}
 }
 // TODO sideboard
 export function decrement(state, card) {
