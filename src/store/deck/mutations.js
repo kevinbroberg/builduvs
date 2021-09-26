@@ -1,27 +1,48 @@
-export function increment(state, card, pile = state.deck) {
-  
-  if (card.type == 'character' && !state.mainCharacter) {
-    markMain(state, card)
+export function increment(state, card) {
+  if (card.type == 'character' && !state.face) {
+    setFace(state, card)
     return
   } 
-  let qtyObj = pile[card.asset] || { qty: 0 };
+  let qtyObj = state.deck[card.asset] || { qty: 0 };
   let count = qtyObj.qty;
   let max = card.limit || 4;
   count = count >= max ? max : count + 1;
   // TODO autosideboard
-  pile[card.asset] = { ...card, qty: count}
+  state.deck[card.asset] = { ...card, qty: count}
 }
 // TODO sideboard
-export function decrement(state, card, pile = state.deck) {
-  let qtyObj = pile[card.asset] || { qty: 1 };
+export function decrement(state, card) {
+  let qtyObj = state.deck[card.asset] || { qty: 1 };
   let count = qtyObj.qty - 1;
   if (count > 0) {
-    pile[card.asset] = { ...card, qty: count }
+    state.deck[card.asset] = { ...card, qty: count }
   } else {
-    delete pile[card.asset]
-    // if (state.mainCharacter == card) { state.mainCharacter = ''}
+    delete state.deck[card.asset]
+    if (state.face == card) { state.face = undefined}
   }
 }
+export function setFace(state, card) {
+  state.face = card
+}
+export function remove(state, card) {
+  delete state.deck[card.asset]
+}
+export function nuke(state) {
+  // console.log(`Nuking ${state.deck.length} cards`)
+  state.deck = {}
+  state.side = {}
+  state.face = undefined
+  // console.log(`Nuked, with ${state.deck.length} cards left`)
+}
+export function setQty(state, card, qty) {
+  let max = card.limit || 4;
+  let min = 0;
+  qty = qty > max ? max : qty;
+  qty = qty < min ? min : qty;
+  state.deck[card.asset] = { ...card, qty: qty }
+}
+
+// TODO limit this duplication of code
 export function send2Board(state, card) {
   this.decrement(state, card, state.deck);
   this.increment(state, card, state.side);
@@ -29,23 +50,4 @@ export function send2Board(state, card) {
 export function send2Main(state, card) {
   this.decrement(state, card, state.side);
   this.increment(state, card, state.deck);
-}
-export function markMain(state, card) {
-  state.mainCharacter = card
-}
-export function remove(state, card, pile = state.deck) {
-  delete pile[card.asset]
-}
-export function nuke(state) {
-  // console.log(`Nuking ${state.deck.length} cards`)
-  state.deck = {}
-  state.mainCharacter = ''
-  // console.log(`Nuked, with ${state.deck.length} cards left`)
-}
-export function setQty(state, card, qty, pile = state.deck) {
-  let max = card.limit || 4;
-  let min = 0;
-  qty = qty > max ? max : qty;
-  qty = qty < min ? min : qty;
-  pile[card.asset] = { ...card, qty: qty }
 }
