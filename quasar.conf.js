@@ -133,55 +133,56 @@ module.exports = configure(function (ctx) {
       ]
     },
 
+    // TODO implement with InjectManifest. As-is, this maybe speeds things up a teenie bit while also ruining user experience after changes
     // https://v2.quasar.dev/quasar-cli/developing-pwa/configuring-pwa
-    pwa: {
-      workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
-      workboxOptions: {}, // only for GenerateSW
+    // pwa: {
+    //   workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
+    //   workboxOptions: {}, // only for GenerateSW
 
-      // for the custom service worker ONLY (/src-pwa/custom-service-worker.[js|ts])
-      // if using workbox in InjectManifest mode
-      chainWebpackCustomSW (chain) {
-        chain.plugin('eslint-webpack-plugin')
-          .use(ESLintPlugin, [{ extensions: [ 'js' ] }])
-      },
+    //   // for the custom service worker ONLY (/src-pwa/custom-service-worker.[js|ts])
+    //   // if using workbox in InjectManifest mode
+    //   chainWebpackCustomSW (chain) {
+    //     chain.plugin('eslint-webpack-plugin')
+    //       .use(ESLintPlugin, [{ extensions: [ 'js' ] }])
+    //   },
 
-      manifest: {
-        name: `BuildUVS`,
-        short_name: `BuildUVS`,
-        description: `A deck building tool for the Universus and My Hero Academia card game`,
-        display: 'standalone',
-        orientation: 'portrait',
-        background_color: '#ffffff',
-        theme_color: '#027be3',
-        icons: [
-          {
-            src: 'icons/icon-128x128.png',
-            sizes: '128x128',
-            type: 'image/png'
-          },
-          {
-            src: 'icons/icon-192x192.png',
-            sizes: '192x192',
-            type: 'image/png'
-          },
-          {
-            src: 'icons/icon-256x256.png',
-            sizes: '256x256',
-            type: 'image/png'
-          },
-          {
-            src: 'icons/icon-384x384.png',
-            sizes: '384x384',
-            type: 'image/png'
-          },
-          {
-            src: 'icons/icon-512x512.png',
-            sizes: '512x512',
-            type: 'image/png'
-          }
-        ]
-      }
-    },
+    //   manifest: {
+    //     name: `BuildUVS`,
+    //     short_name: `BuildUVS`,
+    //     description: `A deck building tool for the Universus and My Hero Academia card game`,
+    //     display: 'standalone',
+    //     orientation: 'portrait',
+    //     background_color: '#ffffff',
+    //     theme_color: '#027be3',
+    //     icons: [
+    //       {
+    //         src: 'icons/icon-128x128.png',
+    //         sizes: '128x128',
+    //         type: 'image/png'
+    //       },
+    //       {
+    //         src: 'icons/icon-192x192.png',
+    //         sizes: '192x192',
+    //         type: 'image/png'
+    //       },
+    //       {
+    //         src: 'icons/icon-256x256.png',
+    //         sizes: '256x256',
+    //         type: 'image/png'
+    //       },
+    //       {
+    //         src: 'icons/icon-384x384.png',
+    //         sizes: '384x384',
+    //         type: 'image/png'
+    //       },
+    //       {
+    //         src: 'icons/icon-512x512.png',
+    //         sizes: '512x512',
+    //         type: 'image/png'
+    //       }
+    //     ]
+    //   }
+    // },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli/developing-cordova-apps/configuring-cordova
     cordova: {
