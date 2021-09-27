@@ -1,48 +1,51 @@
 <template>
-  <q-card
-    class="ultra-card row"
-    flat
+  <div
+    class="row"
     onmouseover="//preview('$extension', '$padded_numero');"
   >
-
-      <q-card-section class="card_image" @click="increment()">
-        <!-- TODO onclick detail popup / dialog / lightbox -->
-        <q-img
+    <!-- Title -->
+    <div class="col-12">
+      <h3 accent bolder v-if="amMain">{{data.name}}</h3>
+      <h3 v-else>{{ data.name }}</h3>
+    </div>
+    
+    <!-- Image + fundamentals section -->
+    <div class="col-6 row no-wrap">
+      <!-- TODO onclick detail popup / dialog / lightbox -->
+      <q-img
+          @click="increment()"
           :fit="'contain'"
-          :loading="'lazy'"
+          loading="lazy"
           style="height: 600; width: 300px"
           :src="require('assets/images/card_images/' + this.data.asset)"
           :alt="data.name"
-        />
-      </q-card-section>
-      <q-card-section horizontal>
-        <q-card-section>
-          <h3>{{ data.name }}</h3>
-        </q-card-section>
-        <q-card-section q-mr-md>
-          <span class="label" :class="'card-list-' + data.type">{{data.type}}</span><br />
-          <Elements v-bind:resources="data.resources" /> <br />
-          {{ data.difficulty }} Difficulty {{ data.control }} Control<br />
-          <BlockData v-bind:card="data" />
-          <AttackData v-bind:card="data" />
-          <div class="ischaracter" v-if="isCharacter()">
-            Handsize : {{ data["hand_size"] }} <br />
-            Vitality : {{ data["vitality"] }} <br />
-          </div>
+      />
+      <div>
+        <span :class="'card-list-' + data.type">{{data.type}}</span><br />
+        <Elements v-bind:resources="data.resources" /> <br />
+        {{ data.difficulty }} Difficulty {{ data.control }} Control<br />
+        <BlockData v-bind:card="data" />
+        <AttackData v-bind:card="data" />
+        <div class="ischaracter" v-if="isCharacter()">
+          Handsize : {{ data["hand_size"] }} <br />
+          Vitality : {{ data["vitality"] }} <br />
+        </div>
         {{ data.rarity || "" }}
-          <span v-if="myQty > 0" class="badge badge-success">Quantity in Deck {{ myQty }}</span>
-        </q-card-section>
-      </q-card-section>
+        <span v-if="myQty > 0" class="badge badge-success">Quantity in Deck {{ myQty }}</span>
+      </div>
+    </div>
 
-      <q-card-section >
-        <!-- TODO onclick detail popup / dialog / lightbox -->
-        <h4>{{ (data.keywords ? data.keywords : []).join(" - ") }}</h4>
-        <h6>{{ data.text || "Missing text" }}</h6>
-        <br />
-      </q-card-section>
-      
-      <q-separator />
-  </q-card>
+    <div class="col-sm-6 col-xs-12 col-grow">
+      <!-- TODO onclick detail popup / dialog / lightbox -->
+      <h4>{{ (data.keywords ? data.keywords : []).join(" - ") }}</h4>
+      <h6>{{ data.text || "Missing text" }}</h6>
+      <br />
+    </div>
+
+    
+    
+    <q-separator />
+</div>
 </template>
 
 <script>
@@ -80,8 +83,10 @@ export default {
       },
     );
 
+    const amMain = computed(() => $store.getters["deck/getMain"]?.name == props.data["name"])
+
     return {
-        increment, decrement, isCharacter, myQty
+        increment, decrement, isCharacter, myQty, amMain
     }
   },
   props: {
