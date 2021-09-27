@@ -12,7 +12,7 @@
     <!-- Image + fundamentals section -->
     <div class="col-6 row no-wrap">
       <!-- TODO onclick detail popup / dialog / lightbox -->
-      <q-img
+      <q-img class="col-8"
           @click="increment()"
           :fit="'contain'"
           loading="lazy"
@@ -20,7 +20,7 @@
           :src="require('assets/images/card_images/' + this.data.asset)"
           :alt="data.name"
       />
-      <div>
+      <div class="col-4">
         <span :class="'card-list-' + data.type">{{data.type}}</span><br />
         <Elements v-bind:resources="data.resources" /> <br />
         {{ data.difficulty }} Difficulty {{ data.control }} Control<br />
