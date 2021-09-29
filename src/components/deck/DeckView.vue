@@ -3,7 +3,7 @@
   import { useStore } from 'vuex';
   const store = useStore()
   const deck = computed(() => store.getters['deck/getDeckList'] )
-  const mainChar = computed(() => store.getters['deck/getMain'])
+  const face = computed(() => store.getters['deck/getFace'])
 
   const increment = ev => store.commit('deck/increment', ev)
   const decrement = ev => store.commit('deck/decrement', ev)
@@ -17,13 +17,18 @@
 
   function arbitraryPartition(funk) {
     let contents = deck.value
+    // unique values for applying the function
     let parts = new Set([...contents.map(funk)])
+    
     // coerce the Set back into a List
-    return [...parts].map(me => ({key: me, label: me, cards: contents.filter(c => funk(c) == me)})
-    )
+    return [...parts].map(me => {
+      let part = contents.filter(c => funk(c) == me)
+      let qty = part.reduce((total, me) => total + me.qty, 0)
+      return {key: me, label: `${qty} ${me}`, cards: part}
+    })
   }
   function matchSymbols(card) {
-    let mainResources = mainChar.value.resources
+    let mainResources = face.value.resources
     return card.resources.filter(resource => mainResources.includes(resource))
   }
   function symbolPartition() {
@@ -36,7 +41,7 @@
   // TODO this is the kind of thing unit tests are good for
   function symbolPartition() {
     // TODO use an Elements component for the label
-    let groups = combinations(mainChar.value.resources)
+    let groups = combinations(face.value.resources)
     let parts = groups.map(g => {
       return { key: g, label: g ? g : "No Symbols", cards: []}
     } )
@@ -72,14 +77,14 @@
 <template>
   <q-select filled label="Partition" stack-label :options="partitionOptions" v-model="howPartition"/>
 
-  <q-item-section avatar v-if="mainChar">
+  <q-item-section avatar v-if="face">
       <q-avatar>
       <!-- TODO zoom into just the card art here -->
-      <img :src="require(`assets/images/card_images/${mainChar.asset}`)">
+      <img :src="require(`assets/images/card_images/${face.asset}`)">
       </q-avatar>  
   </q-item-section>
   <q-item-section>
-      <q-item-label lines="1" v-if="mainChar">{{mainChar.name}} <Elements :resources="mainChar.resources" /></q-item-label>
+      <q-item-label lines="1" v-if="face">{{face.name}} <Elements :resources="face.resources" /></q-item-label>
   </q-item-section>
 
   <q-list bordered>
