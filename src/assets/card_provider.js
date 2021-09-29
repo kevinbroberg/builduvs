@@ -139,7 +139,6 @@ function allFiltersMatch(card) {
                  symbolFilterGenerator(selections.value.symbols3),
                  textFilter,
                  typeMatchFilter,
-                 formatMatchFilter,
                  keywordFilter,
                  ]
   return filters.every(f => {
@@ -152,7 +151,9 @@ function allFiltersMatch(card) {
   })
 }
 
-const filteredCards = computed(() => cards.filter(card => allFiltersMatch(card)))
+const formatCards = computed(() => cards.filter(formatMatchFilter))
+
+const filteredCards = computed(() => formatCards.value.filter(card => allFiltersMatch(card)))
 
 function stripQuotes(str) {
     if (str.charAt(0) === '"' && str.charAt(str.length -1) === '"') {
@@ -179,4 +180,4 @@ export function handleQuery(query) {
 }
 
 
-export { selections, filteredCards }
+export { selections, formatCards, filteredCards }

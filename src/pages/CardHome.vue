@@ -80,16 +80,13 @@ export default {
       return provider.filteredCards.value.length
     },
     difficulties() {
-      return [...new Set(provider.filteredCards.value.map(card => card.difficulty))].sort()
+      return [...new Set(provider.formatCards.value.map(card => card.difficulty))].sort()
     },
     controls() {
-      return [...new Set(provider.filteredCards.value.map(card => card.control))].sort()
+      return [...new Set(provider.formatCards.value.map(card => card.control))].sort()
     },
     typeOptions() {
-      return [...new Set(provider.cards.map(card => card.type))].sort()
-    },
-    nameOptions() {
-      return [...provider.filteredCards.value.map(c => c.name)]
+      return [...new Set(provider.formatCards.value.map(card => card.type))].sort()
     },
     textOptions() {
       return ["NONE", ...this.textTags, ...new Set(provider.filteredCards.value.map(c => c.text))]
@@ -101,7 +98,7 @@ export default {
       return [...this.keywordTags, ...new Set(provider.filteredCards.value.map(card => card.keywords).flat())].sort()
     },
     originOptions() {
-      return [...new Set(provider.filteredCards.value.map(card => card.extension))]
+      return [...new Set(provider.formatCards.value.map(card => card.extension))]
     },
   },
   methods: {
