@@ -134,6 +134,7 @@ module.exports = configure(function (ctx) {
     },
 
     // TODO implement with InjectManifest. As-is, this maybe speeds things up a teenie bit while also ruining user experience after changes
+    // TODO need to reenable in netlify options: uncomment, change build command to "...-m pwa", change destination to dist/pwa
     // https://v2.quasar.dev/quasar-cli/developing-pwa/configuring-pwa
     // pwa: {
     //   workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
