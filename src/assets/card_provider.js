@@ -35,8 +35,9 @@ export function getFilterPath() {
         "formats", 
         "difficulty", 
         "control"]
-    let stringy = fields.map(field => selections.value[field] && selections.value[field].length > 0 ?
-                              field + "=" + JSON.stringify(selections.value[field]) : "")
+    let stringy = fields.map(field => selections.value[field] && selections.value[field].length > 0 
+      ? encodeURI(field + "=" + JSON.stringify(selections.value[field])) 
+      : "")
         
     console.log(stringy)
     return stringy.filter(val => val.length > 0).join("&")
