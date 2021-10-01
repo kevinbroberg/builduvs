@@ -1,12 +1,29 @@
 <script setup> 
   import { ref, computed } from 'vue'
   import { useStore } from 'vuex'
+  import { useQuasar } from 'quasar'
+
   const store = useStore()
   const deck = computed(() => store.getters['deck/getDeckList'] )
   const face = computed(() => store.getters['deck/getFace'])
 
   const increment = ev => store.commit('deck/increment', ev)
   const decrement = ev => store.commit('deck/decrement', ev)
+
+  const $q = useQuasar()
+
+  import DeckLoaderDialog from 'components/deck/DeckLoaderDialog.vue'
+  function deckLoadDialog() {
+    $q.dialog({
+      component: DeckLoaderDialog,
+    }).onOk(() => {
+      console.log('OK')
+    }).onCancel(() => {
+      console.log('Cancel')
+    }).onDismiss(() => {
+      console.log('Called on OK or Cancel')
+    })
+  }
 
   const simple = "Simple", type = "Types", symbol = "Symbols", difficulty = "Difficulty", control = "Control"
   const partitionOptions = [simple, type, symbol, difficulty, control]
@@ -91,7 +108,7 @@
 <template>
   <q-btn-group push>
     
-      <q-btn push stack dense round icon="file_upload" @click="toggleDeckLoad">
+      <q-btn push stack dense round icon="file_upload" @click="deckLoadDialog">
         <q-tooltip>Load a deck from file or with text input</q-tooltip>
       </q-btn>
       <q-btn-dropdown menu-self="bottom middle" push stack auto-close 
