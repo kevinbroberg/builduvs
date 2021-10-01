@@ -72,25 +72,6 @@
   function simplePartition() {
     return [{'key': 'all', 'label': 'Deck', 'cards': deck.value}]
   }
-  /*
-  // TODO this is the kind of thing unit tests are good for
-  function symbolPartition() {
-    // TODO use an Elements component for the label
-    let groups = combinations(face.value.resources)
-    let parts = groups.map(g => {
-      return { key: g, label: g ? g : "No Symbols", cards: []}
-    } )
-    deck.value.forEach( card => {
-      // every resource in the partition must have a matching resource in at least one of the cards
-      let index = parts.findIndex(part => part.key.every( resource => card.resources.some( cr => cr == resource)))
-      // sentinel just in case - resource matching should always succeed on the empty list, though
-      let use = index < 0 ? groups.length - 1 : index
-      
-      parts[use].cards.push(card)
-    })
-    return parts
-  }
-  */
   
   const partitions = computed(() => {
     switch(howPartition.value) {
@@ -126,7 +107,7 @@
       
       <q-btn-dropdown menu-self="bottom middle" push stack auto-close
         label="Partition" icon="group_work">
-        <q-item v-for="partOpt in partitionOptions" v-bind:key="partOpt" clickable @click="howPartition = partOpt">
+        <q-item v-for="partOpt in partitionOptions" v-bind:key="partOpt" clickable @click="howPartition = partOpt" :active="howPartition === partOpt" active-class="bg-orange-13">
           <q-item-label>{{partOpt}}</q-item-label>
         </q-item>
       </q-btn-dropdown>
