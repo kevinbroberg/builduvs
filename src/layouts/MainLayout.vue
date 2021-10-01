@@ -1,40 +1,21 @@
 <script setup>
   import { ref } from 'vue'
   import { useStore } from 'vuex';
-  import DeckLoader from 'components/deck/DeckLoader.vue'
   import DeckView from 'components/deck/DeckView.vue'
   import NamePicker from 'components/filter/NamePicker.vue'
 
   const store = useStore()
 
   const leftDrawerOpen = ref(false)
-  const deckViewOpen = ref(false)
-  const deckLoadOpen = ref(false)
   const rightDrawerOpen = ref(false)
-  // const rightDrawerOpen = computed(deckViewOpen.value || deckLoadOpen.value) // but this crashed the app
 
   function toggleLeftDrawer () {
     leftDrawerOpen.value = !leftDrawerOpen.value
   }
-  function toggleDeckView () {
-    deckViewOpen.value = !deckViewOpen.value
-    deckLoadOpen.value = false
-    if (rightDrawerOpen.value != deckViewOpen.value) {
-      rightDrawerOpen.value = deckViewOpen.value
-    }
-  }
-  function toggleDeckLoad () {
-    deckLoadOpen.value = !deckLoadOpen.value
-    deckViewOpen.value = false
-
-    if (rightDrawerOpen.value != deckLoadOpen.value) {
-      rightDrawerOpen.value = deckLoadOpen.value
-    }
+  function toggleRightDrawer () {
+    rightDrawerOpen.value = !rightDrawerOpen.value
   }
 
-  function deck2clipboard() {
-    navigator.clipboard.writeText(store.getters['deck/getDeckText'])
-  }
 
 </script>
 
@@ -52,34 +33,24 @@
           </q-avatar>
           BuildUVS
         </q-toolbar-title>
-        <!-- <q-input dark dense standout v-model="search" input-class="text-right"  -->
-          <!-- @new-value="addNameTag" -->
         <NamePicker />
-        <q-btn dense flat round icon="content_copy" @click="deck2clipboard">
-          <q-tooltip>Copy your deck to the clipboard as text</q-tooltip>
-        </q-btn>
-        <q-btn dense flat round icon="file_upload" @click="toggleDeckLoad">
-          <q-tooltip>Load a deck from file or with text input</q-tooltip>
-        </q-btn>
-        <q-btn dense flat round icon="description" @click="toggleDeckView" >
+        <q-btn dense flat round icon="table_view" @click="toggleRightDrawer" >
           <q-tooltip>View current deck</q-tooltip>
         </q-btn>
       </q-toolbar>
 
-      <!-- <q-tabs align="left"> -->
-        <!-- <q-route-tab to="/" label="Search" /> -->
-        <!-- <q-route-tab to="/deck" label="Deck" /> -->
-        <!-- <q-route-tab to="/load" label="Deck loader" /> -->
-      <!-- </q-tabs> -->
+      <!-- <q-tabs align='left'>
+        <q-route-tab to="/" label="Search" />
+        <q-route-tab to="/config" label="Preferences" />
+      </q-tabs> -->
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" side="left" behavior="mobile" elevated>
-      <h4 style='text-align: center'>Deck listing will go here once implemented</h4>
+      <h4>Deck listing will go here once implemented</h4>
     </q-drawer>
 
     <q-drawer v-model="rightDrawerOpen" side="right" elevated>
-      <DeckView v-if="deckViewOpen" />
-      <DeckLoader v-if="deckLoadOpen" />
+      <DeckView />
     </q-drawer>
 
     <q-page-container>
