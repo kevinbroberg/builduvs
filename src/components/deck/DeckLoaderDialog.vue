@@ -123,7 +123,7 @@ function replaceVuexDeck() {
         <q-btn color="primary" @click="replaceVuexDeck" v-if="showInputComponents" label="Finalize deck">
           <q-tooltip>Loads the deck from text into this app</q-tooltip>
         </q-btn>
-        <q-btn color="primary" label="Cancel" @click="onCancelClick" />
+        <q-btn color="primary" label="Cancel" @click="onDialogCancel" />
       </q-card-actions>
     </q-card>
 

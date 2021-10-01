@@ -10,19 +10,22 @@
   const increment = ev => store.commit('deck/increment', ev)
   const decrement = ev => store.commit('deck/decrement', ev)
 
+  const trash = ev => store.commit('deck/nuke')
+
   const $q = useQuasar()
 
   import DeckLoaderDialog from 'components/deck/DeckLoaderDialog.vue'
   function deckLoadDialog() {
     $q.dialog({
       component: DeckLoaderDialog,
-    }).onOk(() => {
-      console.log('OK')
-    }).onCancel(() => {
-      console.log('Cancel')
-    }).onDismiss(() => {
-      console.log('Called on OK or Cancel')
     })
+    // .onOk(() => {
+    //   console.log('OK')
+    // }).onCancel(() => {
+    //   console.log('Cancel')
+    // }).onDismiss(() => {
+    //   console.log('Called on OK or Cancel')
+    // })
   }
 
   const simple = "Simple", type = "Types", symbol = "Symbols", difficulty = "Difficulty", control = "Control"
@@ -33,26 +36,28 @@
     navigator.clipboard.writeText(store.getters['deck/getDeckText'])
   }
 
-  const sorts = ['Difficulty', 'Control', 'Block Modifier', 'Speed', 'Damage', 'Name'].map(f => ({ label: f, fun: card => card[f]}))
-  const sortField = ref('')
-  function compare(a, b) {
-    if (sortField.value) {
-      return a[sortField.value] - b[sortField.value]
-    } else {
-      return 1 // do nothing
-    }
-  }
+  // const sorts = ['Difficulty', 'Control', 'Block_Modifier', 'Speed', 'Damage', 'Name'].map(f => ({ label: f.toLowerCase(), fun: card => card[f]}))
+  // const sortField = ref('')
+  // function compare(a, b) {
+  //   console.log('hi from compare')
+  //   if (sortField.value) {
+  //     return a[sortField.value] - b[sortField.value]
+  //   } else {
+  //     return 1 // do nothing
+  //   }
+  // }
 
+  // const sortedDeck = computed(() => [...deck.value].sort(compare))
   import Elements from 'components/cards/detail/Elements.vue'
 
   function arbitraryPartition(funk) {
-    let contents = deck.value
+    let contents = deck.value // sortedDeck.value
     // unique values for applying the function
     let parts = new Set([...contents.map(funk)])
     
     // coerce the Set back into a List
     return [...parts].map(me => {
-      let part = contents.filter(c => funk(c) == me).sort(compare)
+      let part = contents.filter(c => funk(c) == me)
       let qty = part.reduce((total, me) => total + me.qty, 0)
       return {key: me, label: `${qty} ${me}`, cards: part}
     })
@@ -111,12 +116,13 @@
       <q-btn push stack dense round icon="file_upload" @click="deckLoadDialog">
         <q-tooltip>Load a deck from file or with text input</q-tooltip>
       </q-btn>
-      <q-btn-dropdown menu-self="bottom middle" push stack auto-close 
+      <!-- <q-btn-dropdown menu-self="bottom middle" push stack auto-close 
         label="Sort" icon="sort">
         <q-item v-for="sort in sorts" v-bind:key="sort.label" clickable @click="sortField = sort">
-          <q-item-label>{{sort.label}}</q-item-label>
+          <q-item-label standout v-if='sortField == sort'>{{sort.label}}</q-item-label>
+          <q-item-label v-else>{{sort.label}}</q-item-label>
         </q-item>
-      </q-btn-dropdown>
+      </q-btn-dropdown> -->
       
       <q-btn-dropdown menu-self="bottom middle" push stack auto-close
         label="Partition" icon="group_work">
@@ -127,6 +133,7 @@
       <q-btn push label="Copy" icon="content_copy" @click="deck2clipboard" >
         <q-tooltip>Copies your deck to clipboard</q-tooltip>
       </q-btn>
+      <q-btn push label="Wipe" icon="delete" @click="trash" />
   </q-btn-group>
 
   <q-item-section avatar v-if="face">
