@@ -1,6 +1,6 @@
 <script setup> 
   import { ref, computed } from 'vue'
-  import { useStore } from 'vuex';
+  import { useStore } from 'vuex'
   const store = useStore()
   const deck = computed(() => store.getters['deck/getDeckList'] )
   const face = computed(() => store.getters['deck/getFace'])
@@ -12,6 +12,19 @@
   const partitionOptions = [simple, type, symbol, difficulty, control]
   const howPartition = ref(type)
 
+  function deck2clipboard() {
+    navigator.clipboard.writeText(store.getters['deck/getDeckText'])
+  }
+
+  const sorts = ['Difficulty', 'Control', 'Block Modifier', 'Speed', 'Damage', 'Name'].map(f => ({ label: f, fun: card => card[f]}))
+  const sortField = ref('')
+  function compare(a, b) {
+    if (sortField.value) {
+      return a[sortField.value] - b[sortField.value]
+    } else {
+      return 1 // do nothing
+    }
+  }
 
   import Elements from 'components/cards/detail/Elements.vue'
 
@@ -22,7 +35,7 @@
     
     // coerce the Set back into a List
     return [...parts].map(me => {
-      let part = contents.filter(c => funk(c) == me)
+      let part = contents.filter(c => funk(c) == me).sort(compare)
       let qty = part.reduce((total, me) => total + me.qty, 0)
       return {key: me, label: `${qty} ${me}`, cards: part}
     })
@@ -72,10 +85,32 @@
           return simplePartition()
     }
   })
+
 </script>
 
 <template>
-  <q-select filled label="Partition" stack-label :options="partitionOptions" v-model="howPartition"/>
+  <q-btn-group push>
+    
+      <q-btn push stack dense round icon="file_upload" @click="toggleDeckLoad">
+        <q-tooltip>Load a deck from file or with text input</q-tooltip>
+      </q-btn>
+      <q-btn-dropdown menu-self="bottom middle" push stack auto-close 
+        label="Sort" icon="sort">
+        <q-item v-for="sort in sorts" v-bind:key="sort.label" clickable @click="sortField = sort">
+          <q-item-label>{{sort.label}}</q-item-label>
+        </q-item>
+      </q-btn-dropdown>
+      
+      <q-btn-dropdown menu-self="bottom middle" push stack auto-close
+        label="Partition" icon="group_work">
+        <q-item v-for="partOpt in partitionOptions" v-bind:key="partOpt" clickable @click="howPartition = partOpt">
+          <q-item-label>{{partOpt}}</q-item-label>
+        </q-item>
+      </q-btn-dropdown>
+      <q-btn push label="Copy" icon="content_copy" @click="deck2clipboard" >
+        <q-tooltip>Copies your deck to clipboard</q-tooltip>
+      </q-btn>
+  </q-btn-group>
 
   <q-item-section avatar v-if="face">
       <q-avatar>
