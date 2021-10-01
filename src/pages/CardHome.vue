@@ -26,25 +26,17 @@
         <q-option-group v-model="selections.control" :options="numberOptions(controls)" 
           inline multiple dense type="checkbox"/>
       </div>
-      <div>
-        <q-select v-model="selections.extensions" :options="originOptions" standout dense stack-label 
-          use-chips multiple label="Search extensions">
-        </q-select>
-      </div>
-      <div>
-        <!-- @update:model-value="addKeywordTag" -->
-        <q-select v-model="selections.keywords" :options="keywordOptions" standout dense stack-label 
-          use-chips multiple use-input clearable 
-          new-value-mode="add" placeholder="Search keywords">
-        </q-select>
-      </div>
-      <div>
-        <!-- @update:model-value="addTextTag" -->
-        <q-select v-model="selections.text" :options="textOptions" standout dense 
-          use-input clearable 
-          new-value-mode="add" label="Search text">
-        </q-select>
-      </div>
+      <q-select v-model="selections.extensions" :options="originOptions" standout dense stack-label 
+        use-chips multiple label="Select extensions">
+      </q-select>
+      <q-select v-model="selections.keywords" :options="keywordOptions" standout dense stack-label 
+        use-chips multiple use-input clearable 
+        new-value-mode="add" placeholder="Search keywords">
+      </q-select>
+      <q-select v-model="selections.text" :options="textOptions" standout dense 
+        use-input clearable 
+        new-value-mode="add" label="Search text">
+      </q-select>
       <button v-if="resultsCount > 200" type="button">{{resultsCount}} Cards in Search</button>
       <button v-if="resultsCount <= 200" @click="addAllToDeck" type="button">Add All {{resultsCount}} Cards to your Deck</button>
       <button @click="clearFilters" type="button">Clear Filters</button>
