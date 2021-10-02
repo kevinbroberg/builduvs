@@ -31,4 +31,19 @@ export function getDeckText(state) {
 export function getFace(state) {
     return state.face || undefined
 }
+export function quantity(state) {
+    return (asset) => {
+        if (!state?.deck) {
+            return 0
+        }
+        let card = state.deck[asset];
+        let qty = card ? card.qty : 0;
+        console.log(`${qty} copies of ${asset} while ${getFace(state)?.asset} is main`)
+        if (getFace(state)?.asset == asset) {
+            qty += 1
+        }
+        return qty
+        
+    }
+}
 // TODO amMain(card) { return true iff main is defined and equals card }

@@ -10,10 +10,9 @@
     </div>
     
     <!-- Image + fundamentals section -->
-    <div class="col-6 row no-wrap">
+    <div class="col-6 row no-wrap" @click="increment()">
       <!-- TODO onclick detail popup / dialog / lightbox -->
       <q-img class="col-8"
-          @click="increment()"
           :fit="'contain'"
           loading="lazy"
           style="height: 600; width: 300px"
@@ -77,11 +76,7 @@ export default {
       $store.commit("deck/decrement", props.data);
     }
 
-    const myQty = computed(() => {
-        let card = $store.state.deck.deck[props.data.asset];
-        return card ? card.qty : 0;
-      },
-    );
+    const myQty = computed(() => $store.getters["deck/quantity"](props.data.asset))
 
     const amMain = computed(() => $store.getters["deck/getMain"]?.name == props.data["name"])
 
