@@ -38,7 +38,6 @@ export function quantity(state) {
         }
         let card = state.deck[asset];
         let qty = card ? card.qty : 0;
-        console.log(`${qty} copies of ${asset} while ${getFace(state)?.asset} is main`)
         if (getFace(state)?.asset == asset) {
             qty += 1
         }
