@@ -33,9 +33,6 @@
   const partitionOptions = [simple, type, symbol, difficulty, control]
   const howPartition = ref(type)
 
-  function deck2clipboard() {
-    navigator.clipboard.writeText(store.getters['deck/getDeckText'])
-  }
 
   // const sorts = ['Difficulty', 'Control', 'Block_Modifier', 'Speed', 'Damage', 'Name'].map(f => ({ label: f.toLowerCase(), fun: card => card[f]}))
   // const sortField = ref('')
@@ -71,7 +68,7 @@
     return arbitraryPartition(card => matchSymbols(card).sort().toString())
   }
   function simplePartition() {
-    return [{'key': 'all', 'label': 'Deck', 'cards': deck.value}]
+    return arbitraryPartition(c => "All")
   }
   
   const partitions = computed(() => {
@@ -90,6 +87,29 @@
     }
   })
 
+/*
+export function getDeckText(state) {
+    let name = getFace(state)?.name // mainchar may be undefined
+    let face = name ? [{ name: name, qty: 1 }] : [] // if it's not, there is 1 copy in your deck
+    let deck = [...face, ...getDeckList(state)].map(c => `${c.qty} ${c.name}`)
+    
+    let side = hasSide(state) ? ['sideboard', ...getSideList(state).map(c => `${c.qty} ${c.name}`)] : []
+    // maybe TODO sometime: accumulate additional copies of main char into the 1st quantity, vs 1 Amy... 3 Amy that will happen now
+    // a possible method: simply increment() face before exporting? or have a general dedupe method, and prepend face to the list before dedupe
+    return [...deck, ...side ].join('\n')
+}
+*/
+  function deck2clipboard() {
+    const deckList = partitions.value.map(p => p.cards).flat()
+    let name = face.value?.name // mainchar may be undefined
+    let myFace = name ? [{ name: name, qty: 1 }] : [] // if it's not, there is 1 copy in your deck
+    let deck = [...myFace, ...deckList].map(c => `${c.qty} ${c.name}`)
+    
+    let side = store.getters['deck/hasSide'] ? ['sideboard', ...store.getters['deck/getSideList'](state).map(c => `${c.qty} ${c.name}`)] : []
+    // maybe TODO sometime: accumulate additional copies of main char into the 1st quantity, vs 1 Amy... 3 Amy that will happen now
+    // a possible method: simply increment() face before exporting? or have a general dedupe method, and prepend face to the list before dedupe
+    navigator.clipboard.writeText([...deck, ...side ].join('\n'))
+  }
 </script>
 
 <template>
