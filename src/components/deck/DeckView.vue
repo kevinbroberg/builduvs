@@ -11,6 +11,7 @@
   const decrement = ev => store.commit('deck/decrement', ev)
 
   const trash = ev => store.commit('deck/nuke')
+  const clearFace = ev => store.commit('deck/setFace', undefined) // TODO make this a real mutation?
 
   const $q = useQuasar()
 
@@ -122,6 +123,7 @@
       <!-- TODO zoom into just the card art here -->
       <img :src="require(`assets/images/card_images/${face.asset}`)">
       </q-avatar>  
+      <q-btn icon="clear" @click="clearFace" />
   </q-item-section>
   <q-item-section>
       <q-item-label lines="1" v-if="face">{{face.name}} <Elements :resources="face.resources" /></q-item-label>
