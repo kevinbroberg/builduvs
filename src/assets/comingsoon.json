@@ -1,1195 +1,489 @@
 [
   {
     "name": "All Might1",
-    "asset": "mha/All Might1.png",
     "resources": [
-      "all",
+      "earth",
       "good",
-      "earth"
+      "all"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 5,
+    "vitality": 30,
+    "text": "Form [Once per turn] Permanently reduce your character's hand size by 1: Draw 3 cards\n\nEnhance Commit: Your Fury or Punch attack gains Powerful: X. X equals the number of cards in your hand.",
+    "numero": 1,
+    "numero_image": 1,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/001.png"
   },
   {
     "name": "Detroit Smash",
-    "asset": "mha/Detroit Smash.png",
+    "keywords": [
+      "EX: 2",
+      "Fury",
+      "Powerful: 2",
+      "Punch"
+    ],
     "resources": [
-      "all",
+      "earth",
       "good",
-      "earth"
+      "all"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 2,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "high",
+    "speed": 6,
+    "damage": 6,
+    "attack_zone": "mid",
+    "hand_size": 0,
+    "vitality": 0,
+    "text": "Enhance Discard 1 momentum: Add up to 3 cards from your hand to your momentum.\n\nAll Might Enhance Permanently reduce your character's hand size by 1: Draw 3 cards.",
+    "numero": 2,
+    "numero_image": 2,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/002.png"
   },
   {
     "name": "Missouri Smash",
-    "asset": "mha/Missouri Smash.png",
+    "keywords": [
+      "Punch"
+    ],
     "resources": [
-      "all",
+      "earth",
       "good",
-      "earth"
+      "all"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 3,
+    "damage": 5,
+    "attack_zone": "high",
+    "text": "Enhance: If this attack deals damage, build the next foundation you play face up.\n\nEnhance: If a Punch attack has dealt damage this turn, draw 1 card.",
+    "numero": 3,
+    "numero_image": 3,
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/003.png"
   },
   {
     "name": "Smash",
-    "asset": "mha/Smash.png",
+    "keywords": [
+      "Fury",
+      "Punch"
+    ],
     "resources": [
-      "all",
+      "earth",
       "good",
-      "earth"
+      "all"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 6,
+    "attack_zone": "mid",
+    "text": "Enhance: If this attack is blocked, your rival flips 1 foundation.",
+    "numero": 4,
+    "numero_image": 4,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/004.png"
   },
   {
     "name": "Texas Smash",
-    "asset": "mha/Texas Smash.png",
+    "keywords": [
+      "Combo (Punch)",
+      "Fury",
+      "Punch"
+    ],
     "resources": [
-      "all",
+      "earth",
       "good",
-      "earth"
+      "all"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 3,
+    "attack_zone": "high",
+    "text": "Combo Enhance: This attack gets +4 damage.\n\nEnhance Discard 1 card: Your next attack this turn gets +4 damage.",
+    "numero": 5,
+    "numero_image": 5,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/005.png"
   },
   {
     "name": "Celebrity Status",
-    "asset": "mha/Celebrity Status.png",
     "resources": [
-      "all",
+      "earth",
       "good",
-      "earth"
+      "all"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Enhance Flip: Add 1 of your momentum to the top of your deck.",
+    "numero": 6,
+    "numero_image": 6,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/006.png"
   },
   {
     "name": "It Can't Be Fixed",
-    "asset": "mha/It Can't Be Fixed.png",
     "resources": [
-      "all",
+      "earth",
       "good",
-      "earth"
+      "all"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 5,
+    "difficulty": 0,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "text": "Response Flip: After you commit any number of cards due to your rival's effect, build the top card of your deck face down. Playable while committed.",
+    "numero": 7,
+    "numero_image": 7,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/007.png"
   },
   {
     "name": "Pull No Punches",
-    "asset": "mha/Pull No Punches.png",
     "resources": [
-      "all",
+      "earth",
       "good",
-      "earth"
+      "all"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 5,
+    "difficulty": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "text": "Enhance Destroy: Add 1 Punch attack from your card pool to your momentum.\n\nDeadlock Enhance: Your Punch attack gets +2 speed and gains Stun: 1.",
+    "numero": 8,
+    "numero_image": 8,
+    "type": "foundation",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/008.png"
   },
   {
     "name": "You're So Obvious",
-    "asset": "mha/You're So Obvious.png",
     "resources": [
-      "all",
+      "earth",
       "good",
-      "earth"
+      "all"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Tomura Shigaraki1",
-    "asset": "mha/Tomura Shigaraki1.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
     ],
-    "formats": [
-      "Boku no Card Game"
-    ]
+    "control": 4,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "text": "Enhance Destroy: Return this attack to its printed speed. If it is a Punch attack, it gets +2 damage.\n\nEnhance Destroy: Return this attack to its printed damage. If it is a Punch attack, it gets +2 speed.",
+    "numero": 9,
+    "numero_image": 9,
+    "type": "foundation",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/009.png"
   },
   {
-    "name": "Evil Gaze",
-    "asset": "mha/Evil Gaze.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Corrosion Lunge",
-    "asset": "mha/Corrosion Lunge.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Decaying Grip",
-    "asset": "mha/Decaying Grip.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Touch of Decay",
-    "asset": "mha/Touch of Decay.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Turn to Dust",
-    "asset": "mha/Turn to Dust.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Keen Observation",
-    "asset": "mha/Keen Observation.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Nervous Habit",
-    "asset": "mha/Nervous Habit.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Villainous Entrance",
-    "asset": "mha/Villainous Entrance.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Tenya Ida1",
-    "asset": "mha/Tenya Ida1.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Engine Rush",
-    "asset": "mha/Engine Rush.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Flying Thruster Kick",
-    "asset": "mha/Flying Thruster Kick.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Recipro Burst",
-    "asset": "mha/Recipro Burst.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Recipro Extend",
-    "asset": "mha/Recipro Extend.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Calling for Backup",
-    "asset": "mha/Calling for Backup.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Fulfilled My Duty",
-    "asset": "mha/Fulfilled My Duty.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Heroic Lineage",
-    "asset": "mha/Heroic Lineage.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Natural Leader",
-    "asset": "mha/Natural Leader.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Ochaco Uraraka1",
-    "asset": "mha/Ochaco Uraraka1.png",
+    "name": "Denki Kaminari",
     "resources": [
       "air",
       "chaos",
-      "life"
+      "order"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 7,
+    "vitality": 20,
+    "text": "Response [Once per game]: After your Charge attack deals damage, add all cards from your card pool to your momentum. This ability cannot be canceled.\n\nEnhance: If your Charge or Stun attack is blocked, commit 1 rival foundation.",
+    "numero": 10,
+    "numero_image": 10,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/010.jpg"
   },
   {
-    "name": "Home Run Comet",
-    "asset": "mha/Home Run Comet.png",
+    "name": "Blitz Rush",
+    "keywords": [
+      "Charge",
+      "Stun: 1"
+    ],
     "resources": [
       "air",
       "chaos",
-      "life"
+      "order"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 3,
+    "difficulty": 6,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 7,
+    "attack_zone": "high",
+    "text": "Enhance: This attack gets +2 damage for each card in your momentum.\n\nDeadlock Enhance: Your rival commits 1 foundation for each card in your momentum.",
+    "numero": 11,
+    "numero_image": 11,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/011.png"
   },
   {
-    "name": "Meteor Shower",
-    "asset": "mha/Meteor Shower.png",
+    "name": "Electric Jolt",
+    "keywords": [
+      "Charge",
+      "EX: 2",
+      "Stun: 1"
+    ],
     "resources": [
       "air",
       "chaos",
-      "life"
+      "order"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 3,
+    "damage": 4,
+    "attack_zone": "mid",
+    "text": "If this attack is added to your momentum, add it face up.\n\nEnhance [Momentum] Flip: Commit 1 rival foundation.\n\nEnhance: If this attack is completely blocked, it still deals 1 damage during the Damage Step.",
+    "numero": 12,
+    "numero_image": 12,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/012.png"
   },
   {
-    "name": "Zero Gravity Capture",
-    "asset": "mha/Zero Gravity Capture.png",
+    "name": "Electric Surge",
+    "keywords": [
+      "Charge",
+      "Stun: 1"
+    ],
     "resources": [
       "air",
       "chaos",
-      "life"
+      "order"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "mid",
+    "text": "If this attack is added to your momentum, add it face up.\n\nEnhance [Momentum] Flip: Add the top card of your deck to your momentum.\n\nEnhance Discard 1 momentum: This attack gets +3 damage.",
+    "numero": 13,
+    "numero_image": 13,
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/013.png"
   },
   {
-    "name": "Zero Gravity Lift",
-    "asset": "mha/Zero Gravity Lift.png",
+    "name": "Indiscriminate Shock 1,300,000 Volts",
+    "keywords": [
+      "Charge",
+      "Ranged",
+      "Stun: 1"
+    ],
     "resources": [
       "air",
       "chaos",
-      "life"
+      "order"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 3,
+    "damage": 5,
+    "attack_zone": "low",
+    "text": "Enhance: This attack gets +1 damage for each committed rival foundation.\n\nEnhance Commit 1 foundation: Your rival commits 1 foundation.",
+    "numero": 14,
+    "numero_image": 14,
+    "type": "attack",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/014.png"
   },
   {
-    "name": "Ecouraging Training Partner",
-    "asset": "mha/Ecouraging Training Partner.png",
+    "name": "Charged Up",
     "resources": [
       "air",
       "chaos",
-      "life"
+      "order"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "text": "Response Remove: After your Charge or Stun attack deals damage, add 1 card from your discard pile to your momentum.",
+    "numero": 15,
+    "numero_image": 15,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/015.png"
   },
   {
-    "name": "Infinite Potential",
-    "asset": "mha/Infinite Potential.png",
+    "name": "Requesting Assistance",
     "resources": [
       "air",
       "chaos",
-      "life"
+      "order"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 5,
+    "difficulty": 0,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Enhance Flip: If you have 1 or more momentum, ready 1 foundation that has not been readied this Combat Phase.",
+    "numero": 16,
+    "numero_image": 16,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/016.png"
   },
   {
-    "name": "Release",
-    "asset": "mha/Release.png",
+    "name": "Shock Treatment",
+    "keywords": [
+      "Unique"
+    ],
     "resources": [
       "air",
       "chaos",
-      "life"
+      "order"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Enhance [Your attack] Discard 1 momentum; Commit 1 rival foundation.\n\nEnhance Destroy: Commit 1 rival foundation.",
+    "numero": 17,
+    "numero_image": 17,
+    "type": "foundation",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/017.png"
   },
   {
-    "name": "Wealthy Aspriations",
-    "asset": "mha/Wealthy Aspriations.png",
+    "name": "Short Circuit",
     "resources": [
       "air",
       "chaos",
-      "life"
+      "order"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Tsuyu Asui1",
-    "asset": "mha/Tsuyu Asui1.png",
-    "resources": [
-      "air",
-      "life",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "200 Meter Tongue Strike",
-    "asset": "mha/200 Meter Tongue Strike.png",
-    "resources": [
-      "air",
-      "life",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Frog Kick",
-    "asset": "mha/Frog Kick.png",
-    "resources": [
-      "air",
-      "life",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Frog Lashing",
-    "asset": "mha/Frog Lashing.png",
-    "resources": [
-      "air",
-      "life",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Tongue Smack",
-    "asset": "mha/Tongue Smack.png",
-    "resources": [
-      "air",
-      "life",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Amphibious",
-    "asset": "mha/Amphibious.png",
-    "resources": [
-      "air",
-      "life",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Observant Student",
-    "asset": "mha/Observant Student.png",
-    "resources": [
-      "air",
-      "life",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Rescue Completed",
-    "asset": "mha/Rescue Completed.png",
-    "resources": [
-      "air",
-      "life",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Wall Cling",
-    "asset": "mha/Wall Cling.png",
-    "resources": [
-      "air",
-      "life",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Yuga Aoyama1",
-    "asset": "mha/Yuga Aoyama1.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Tres Chic Cape",
-    "asset": "mha/Tres Chic Cape.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Instant Shining Finish",
-    "asset": "mha/Instant Shining Finish.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Navel Laser Beam",
-    "asset": "mha/Navel Laser Beam.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Navel Laser Charge",
-    "asset": "mha/Navel Laser Charge.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Panache Shining Navel Blast",
-    "asset": "mha/Panache Shining Navel Blast.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Glamorous",
-    "asset": "mha/Glamorous.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Someone With Style",
-    "asset": "mha/Someone With Style.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Tight Lipped",
-    "asset": "mha/Tight Lipped.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Izuku Midoriya1",
-    "asset": "mha/Izuku Midoriya1.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Apsiring Punch",
-    "asset": "mha/Apsiring Punch.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Delaware Smash",
-    "asset": "mha/Delaware Smash.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Determined Victory Smash",
-    "asset": "mha/Determined Victory Smash.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Future Charge",
-    "asset": "mha/Future Charge.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Heroic Strike",
-    "asset": "mha/Heroic Strike.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Reverse Throw",
-    "asset": "mha/Reverse Throw.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Setup Strike",
-    "asset": "mha/Setup Strike.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Velocity Punch ",
-    "asset": "mha/Velocity Punch .png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Bonds of Friendship",
-    "asset": "mha/Bonds of Friendship.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Gift From Mom",
-    "asset": "mha/Gift From Mom.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Good Impression",
-    "asset": "mha/Good Impression.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Note Taking",
-    "asset": "mha/Note Taking.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Passing the Torch",
-    "asset": "mha/Passing the Torch.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
     ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Planning Ahead",
-    "asset": "mha/Planning Ahead.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Recovery Girl's Kiss",
-    "asset": "mha/Recovery Girl's Kiss.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Rigorous Training",
-    "asset": "mha/Rigorous Training.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Self Sacrifice",
-    "asset": "mha/Self Sacrifice.png",
-    "resources": [
-      "death",
-      "earth",
-      "life"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Katsuki Bakugo1",
-    "asset": "mha/Katsuki Bakugo1.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Blast Rush Turbo",
-    "asset": "mha/Blast Rush Turbo.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Exloding Pride",
-    "asset": "mha/Exloding Pride.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Howitzer Impact",
-    "asset": "mha/Howitzer Impact.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Instant Explosive Release",
-    "asset": "mha/Instant Explosive Release.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Long-Lasting Explosion",
-    "asset": "mha/Long-Lasting Explosion.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Monster Blast",
-    "asset": "mha/Monster Blast.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Point Blank Incineration",
-    "asset": "mha/Point Blank Incineration.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Signature Right Swing",
-    "asset": "mha/Signature Right Swing.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Aggressive Temper",
-    "asset": "mha/Aggressive Temper.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Agitation",
-    "asset": "mha/Agitation.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Arrogant Disposition",
-    "asset": "mha/Arrogant Disposition.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Burst Speed",
-    "asset": "mha/Burst Speed.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Capabilites",
-    "asset": "mha/Capabilites.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Encouragement",
-    "asset": "mha/Encouragement.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "In Danger",
-    "asset": "mha/In Danger.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Latent Skill",
-    "asset": "mha/Latent Skill.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Let's Fight Bad Guys",
-    "asset": "mha/Let's Fight Bad Guys.png",
-    "resources": [
-      "death",
-      "evil",
-      "fire"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Shoto Todoroki",
-    "asset": "mha/Shoto Todoroki.png",
-    "resources": [
-      "fire",
-      "chaos",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Massive Flash Freeze",
-    "asset": "mha/Massive Flash Freeze.png",
-    "resources": [
-      "fire",
-      "chaos",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Precise Control",
-    "asset": "mha/Precise Control.png",
-    "resources": [
-      "fire",
-      "chaos",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Ice Storm",
-    "asset": "mha/Ice Storm.png",
-    "resources": [
-      "fire",
-      "chaos",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Frozen",
-    "asset": "mha/Frozen.png",
-    "resources": [
-      "fire",
-      "chaos",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Self Assured",
-    "asset": "mha/Self Assured.png",
-    "resources": [
-      "fire",
-      "chaos",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Frigid Heatwave",
-    "asset": "mha/Frigid Heatwave.png",
-    "resources": [
-      "fire",
-      "chaos",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Giant Ice Wall",
-    "asset": "mha/Giant Ice Wall.png",
-    "resources": [
-      "fire",
-      "chaos",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Irrefutable Force of Nature",
-    "asset": "mha/Irrefutable Force of Nature.png",
-    "resources": [
-      "fire",
-      "chaos",
-      "water"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "text": "Enhance Destroy: Return this non-Charge attack to its printed damage.",
+    "numero": 18,
+    "numero_image": 18,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/018.png"
   },
   {
-    "name": "Eijiro Kirshima",
-    "asset": "mha/Eijiro Kirshima.png",
+    "name": "Eijiro Kirishima",
     "resources": [
       "earth",
       "void",
@@ -1197,35 +491,28 @@
     ],
     "formats": [
       "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Hardened Frenzy",
-    "asset": "mha/Hardened Frenzy.png",
-    "resources": [
-      "earth",
-      "void",
-      "good"
     ],
-    "formats": [
-      "Boku no Card Game"
-    ]
-  },
-  {
-    "name": "Manly Passionate Guy",
-    "asset": "mha/Manly Passionate Guy.png",
-    "resources": [
-      "earth",
-      "void",
-      "good"
-    ],
-    "formats": [
-      "Boku no Card Game"
-    ]
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 5,
+    "vitality": 29,
+    "text": "Enhance [Once per turn]: Build the top card of your deck face down.\n\nEnhance [Twice per turn] Add 1 foundation from your stage to your hand: This attack gets +2 or -2 damage.",
+    "numero": 19,
+    "numero_image": 19,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/019.png"
   },
   {
     "name": "Hardened Chop",
-    "asset": "mha/Hardened Chop.png",
+    "keywords": [
+      "Breaker: 1",
+      "Punch"
+    ],
     "resources": [
       "earth",
       "void",
@@ -1233,11 +520,116 @@
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 5,
+    "attack_zone": "low",
+    "text": "Enhance Destroy 1 face down foundation: Build the top card of your deck face down.\n\nEnhance: If this attack is blocked, your rival discards 1 card.",
+    "numero": 20,
+    "numero_image": 20,
+    "type": "attack",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/020.png"
+  },
+  {
+    "name": "Hardened Frenzy",
+    "keywords": [
+      "Fury",
+      "Kick"
+    ],
+    "resources": [
+      "earth",
+      "void",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Enhance: If this attack is completely blocked, build it face down after it resolves.\n\nEnhance: If you have built a card this turn, this attack gets +1 speed and +1 damage.",
+    "numero": 21,
+    "numero_image": 21,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/021.png"
+  },
+  {
+    "name": "Hardened Jab",
+    "keywords": [
+      "Punch"
+    ],
+    "resources": [
+      "earth",
+      "void",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 3,
+    "damage": 5,
+    "attack_zone": "mid",
+    "text": "Enhance: Add 1 face down foundation from your stage to your hand. Build the top card of your deck face down.",
+    "numero": 22,
+    "numero_image": 22,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/022.png"
+  },
+  {
+    "name": "Hardened Pummel",
+    "keywords": [
+      "Punch"
+    ],
+    "resources": [
+      "earth",
+      "void",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "damage": 5,
+    "attack_zone": "mid",
+    "text": "Enhance Discard 1 momentum: Build 1 card from your hand face down. This attack gets +5 damage.\n\nEnhance: Your rival cannot play action cards during this attack.",
+    "numero": 23,
+    "numero_image": 23,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/023.png"
   },
   {
     "name": "Coordinated Effort",
-    "asset": "mha/Coordinated Effort.png",
+    "keywords": [
+      "Unique"
+    ],
     "resources": [
       "earth",
       "void",
@@ -1245,11 +637,71 @@
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 6,
+    "difficulty": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Response Commit: After your blocked attack resolves, build it face down.\n\nDeadlock Enhance: Unflip 1 foundation.",
+    "numero": 24,
+    "numero_image": 24,
+    "type": "foundation",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/024.png"
+  },
+  {
+    "name": "Harden",
+    "resources": [
+      "earth",
+      "void",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "text": "Response: After you block with this card, your rival's next attack this turn gets -2 damage.\n\nEnhance Commit: Your attack gets +2 damage, or if it has 'Hardened' in its name, it gets +3 damage instead.",
+    "numero": 25,
+    "numero_image": 25,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/025.png"
+  },
+  {
+    "name": "Manly Passionate Guy",
+    "resources": [
+      "earth",
+      "void",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "text": "Response Flip: After you block with a foundation, build it face up.",
+    "numero": 26,
+    "numero_image": 26,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/026.png"
   },
   {
     "name": "Resistance",
-    "asset": "mha/Resistance.png",
+    "keywords": [
+      "Breaker: 1"
+    ],
     "resources": [
       "earth",
       "void",
@@ -1257,16 +709,4177 @@
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "text": "Enhance Commit: Your rival's next attack this turn gets -2 damage.\n\nResponse Flip: After your rival plays a stun ability, cancel it.",
+    "numero": 27,
+    "numero_image": 27,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/027.png"
+  },
+  {
+    "name": "Eraser Head",
+    "resources": [
+      "void",
+      "death",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 7,
+    "vitality": 19,
+    "text": "Before the game begins, add up to 1 copy of \"ERASE!\" from your deck to your discard pile, then shuffle your deck.\n\nEnhance Discard 1 card: This attack gets +2 or -2 speed. Add 1 copy of \"ERASE!\" from your discard pile to your hand.\n\nResponse Commit: After you play or block with an action, draw 2 cards.",
+    "numero": 28,
+    "numero_image": 28,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/028.png"
+  },
+  {
+    "name": "ERASE!",
+    "keywords": [
+      "Breaker: 1"
+    ],
+    "resources": [
+      "void",
+      "death",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "text": "Enhance Remove: Seal 1 rival asset or foundation.\n\nEraser Head Response: After and attack is played, your rival cannot play abilities on their character during this attack. Discard this card from your card pool.",
+    "numero": 29,
+    "numero_image": 29,
+    "type": "action",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/029.png"
+  },
+  {
+    "name": "Binding Cloth Assault",
+    "keywords": [
+      "Combo (Weapon)",
+      "Fury",
+      "Weapon"
+    ],
+    "resources": [
+      "void",
+      "death",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "damage": 5,
+    "attack_zone": "mid",
+    "text": "Combo Enhance Discard 1 card: Draw 2 cards.\n\nEnhance: If you have played an action this turn, this attack gets +2 speed.",
+    "numero": 30,
+    "numero_image": 30,
+    "type": "attack",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/030.png"
+  },
+  {
+    "name": "Binding Cloth Capture",
+    "keywords": [
+      "Combo (Combo)",
+      "Weapon"
+    ],
+    "resources": [
+      "void",
+      "death",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "damage": 5,
+    "attack_zone": "low",
+    "text": "If you have played an action this turn, this card gets -2 Difficulty\n\nCombo Enhance: If you have played an action this turn, your rival discards 1 card.\n\nEnhance: Seal 1 rival foundation.",
+    "numero": 31,
+    "numero_image": 31,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/031.png"
+  },
+  {
+    "name": "Binding Kick",
+    "keywords": [
+      "Combo (Attack)",
+      "Kick"
+    ],
+    "resources": [
+      "void",
+      "death",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Combo Enhance Discard 1 momentum: This attack gets +3 damage.\n\nEnhance: If this attack deals damage, draw 1 card.",
+    "numero": 32,
+    "numero_image": 32,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/032.png"
+  },
+  {
+    "name": "Expert Flurry",
+    "keywords": [
+      "Combo (Attack)",
+      "Ranged",
+      "Weapon"
+    ],
+    "resources": [
+      "void",
+      "death",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Combo Enhance: Discard 1 rival momentum.\n\nEnhance: Your next attack this turn gets +2 damage.",
+    "numero": 33,
+    "numero_image": 33,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/033.png"
+  },
+  {
+    "name": "Late Riser",
+    "resources": [
+      "void",
+      "death",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 4,
+    "block_zone": "low",
+    "text": "Response: After this card is discarded from your hand during the Enhance Step, this atack gets +1 or -2 speed.\n\nEnhance: if you have played a Combo ability this Enhance Step, your attack gets +1 damage.",
+    "numero": 34,
+    "numero_image": 34,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/034.png"
+  },
+  {
+    "name": "Mediator",
+    "resources": [
+      "void",
+      "death",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "text": "Enhance Destroy: Your rival's attack gets -3 speed. If you have played an action card this turn, draw 1 card.",
+    "numero": 35,
+    "numero_image": 35,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/035.png"
+  },
+  {
+    "name": "Night Watch",
+    "keywords": [
+      "Unique"
+    ],
+    "resources": [
+      "void",
+      "death",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "text": "Response Remove, remove 1 action card from your discard pile: After your rival plays a non-character enhance, cancel it.\n\nDeadlock Form Flip: Add 1 Combo attack from your card pool to your hand.",
+    "numero": 36,
+    "numero_image": 36,
+    "type": "foundation",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/036.png"
+  },
+  {
+    "name": "Fumikage Tokoyami",
+    "resources": [
+      "fire",
+      "chaos",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 7,
+    "vitality": 20,
+    "text": "Enhance [Once per turn] Discard the top 5 cards of your deck: Add 1 copy of 'Summon Dark Shadow' from your discard pile to your hand.\n\nEnhance: This attack gets +1 or -1 damage. Only playable while committed.",
+    "numero": 37,
+    "numero_image": 37,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/037.png"
+  },
+  {
+    "name": "Summon Dark Shadow",
+    "keywords": [
+      "Ally"
+    ],
+    "resources": [
+      "fire",
+      "chaos",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "While this card is in your card pool, your attacks get +1 speed and +1 damage.\n\nEnhance: Your next check to play a card this turn gets +3. Commit your character.",
+    "numero": 38,
+    "numero_image": 38,
+    "type": "action",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/038.png"
+  },
+  {
+    "name": "Dark Shadow Ruin",
+    "keywords": [
+      "Ally",
+      "Breaker: 1",
+      "Ranged"
+    ],
+    "resources": [
+      "fire",
+      "chaos",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 5,
+    "attack_zone": "high",
+    "text": "Enhance: Actions in your card pool do not count towards progressive difficulty for the rest of this turn.\n\nEnhance: If this attack has received a speed and damage bonus, it gets +3 damage and gains Stun: 1.",
+    "numero": 39,
+    "numero_image": 39,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/039.png"
+  },
+  {
+    "name": "Dark Shadow Slash",
+    "keywords": [
+      "Ally",
+      "Charge",
+      "Punch"
+    ],
+    "resources": [
+      "fire",
+      "chaos",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 1,
+    "damage": 4,
+    "attack_zone": "mid",
+    "text": "Enhance: If your character is committed, this attack gets +2 damage.\n\nEnhance: This attack gets +1 speed for each Ally in your card pool.",
+    "numero": 40,
+    "numero_image": 40,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/040.png"
+  },
+  {
+    "name": "Dark Shadow Talon",
+    "keywords": [
+      "Ally",
+      "Ranged"
+    ],
+    "resources": [
+      "fire",
+      "chaos",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Enhance: Add 1 action from your discard pile to your card pool.\n\nDeadlock Enhance: Your rival loses 1 health for each Ally card in your card pool.",
+    "numero": 41,
+    "numero_image": 41,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/041.png"
+  },
+  {
+    "name": "Back To Back",
+    "keywords": [
+      "Ally"
+    ],
+    "resources": [
+      "fire",
+      "chaos",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "text": "Enhance Flip: This attack gets -3 damage. Only playable if you have an Ally card in your card pool.\n\nDeadlock Enhance: Your Ally or Ranged attack gets +1 speed and +1 damage.",
+    "numero": 42,
+    "numero_image": 42,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/042.png"
+  },
+  {
+    "name": "Clever Distraction",
+    "resources": [
+      "fire",
+      "chaos",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "text": "Enhance Flip: This 'High' or 'Low' attack gets -2 speed.",
+    "numero": 43,
+    "numero_image": 43,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/043.png"
+  },
+  {
+    "name": "Cool Student",
+    "keywords": [
+      "Ally"
+    ],
+    "resources": [
+      "fire",
+      "chaos",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "text": "Enhance Discard 1 momentum: Your next check to play a card gets +2.\n\nEnhance: Add this card to the top of your deck.",
+    "numero": 44,
+    "numero_image": 44,
+    "type": "foundation",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/044.png"
+  },
+  {
+    "name": "Stronger In Darkness",
+    "resources": [
+      "fire",
+      "chaos",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 0,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "text": "Enhance: If your character is committed, this attack gets +1 damage.",
+    "numero": 45,
+    "numero_image": 45,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/045.png"
+  },
+  {
+    "name": "Hanta Sero",
+    "resources": [
+      "water",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 27,
+    "text": "Response: After your attack is partially blocked, draw 2 cards.\n\nResponse [Once per game]: After an attack is completely blocked, your rival reveals their hand. Choose 1 card in their hand and discard it.\n\nEnhance: Change the zone of your attack.",
+    "numero": 46,
+    "numero_image": 46,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/046.png"
+  },
+  {
+    "name": "Grasping Tape Toss",
+    "keywords": [
+      "Ranged",
+      "Stun: 1",
+      "Throw"
+    ],
+    "resources": [
+      "water",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 2,
+    "damage": 5,
+    "attack_zone": "mid",
+    "text": "Enhance: If this attack is not blocked, commit 1 rival foundation.\n\nDeadlock Enhance: Add 2 rival foundations to the bottom of their deck.",
+    "numero": 47,
+    "numero_image": 47,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/047.png"
+  },
+  {
+    "name": "Rapid Tape Strike",
+    "keywords": [
+      "Ranged",
+      "Stun: 1"
+    ],
+    "resources": [
+      "water",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Sero Enhance Commit 1 foundation: This attack cannot be blocked by mid blocks.\n\nEnhance Commit 1 foundation: If this attack is not blocked, your rival discards 1 card.",
+    "numero": 48,
+    "numero_image": 48,
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/048.png"
+  },
+  {
+    "name": "Sudden Tape Shot",
+    "keywords": [
+      "Ranged",
+      "Stun: 1"
+    ],
+    "resources": [
+      "water",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "mid",
+    "text": "Enhance Commit 1 foundation: Change the zone of this attack.\n\nEnhance: If the zone of this attack is 'High', it gets +2 speed.\n\nEnhance: If the zone of this attack is 'Low', it gets +2 damage.",
+    "numero": 49,
+    "numero_image": 49,
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/049.png"
+  },
+  {
+    "name": "Tape Swing",
+    "keywords": [
+      "Charge",
+      "Ranged"
+    ],
+    "resources": [
+      "water",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 2,
+    "difficulty": 5,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "damage": 6,
+    "attack_zone": "mid",
+    "text": "This attack cannot be completely blocked.\n\nResponse: After the zone of this attack is changed, it gets +2 damage.\n\nEnhance Discard 1 momentum: Change the zone of this attack. This enhance is playable any number of times this Enhance Step.",
+    "numero": 50,
+    "numero_image": 50,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/050.png"
+  },
+  {
+    "name": "Gotcha",
+    "resources": [
+      "water",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 0,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "text": "Response: After this card is committed during the Enhance Step, this attack gets +1 or -1 speed. Playable while committed.",
+    "numero": 51,
+    "numero_image": 51,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/051.png"
+  },
+  {
+    "name": "Tape",
+    "resources": [
+      "water",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "text": "Enhance Flip: Change this attack's zone to 'Mid'.\n\nEnhance Flip: This 'Mid' attack gets -2 speed.",
+    "numero": 52,
+    "numero_image": 52,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/052.png"
+  },
+  {
+    "name": "Think Fast!",
+    "keywords": [
+      "Unique"
+    ],
+    "resources": [
+      "water",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "text": "Enhance Commit 1 foundation: Change the zone of your attack.\n\nEnhance: If the zone of your attack has been changed, it gets +1 speed and +1 damage.",
+    "numero": 53,
+    "numero_image": 53,
+    "type": "foundation",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/053.png"
+  },
+  {
+    "name": "What's Their Plan?",
+    "keywords": [
+      "Ally"
+    ],
+    "resources": [
+      "water",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Enhance Flip, chose 1 of the following effects:   - Both players discard 1 momentum.  - The next attack this turn loses EX.  - The next attack this turn loses Powerful.  - The next attack this turn loses Stun.",
+    "numero": 54,
+    "numero_image": 54,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/054.png"
+  },
+  {
+    "name": "Izuku Midoriya",
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 28,
+    "text": "Enhance Name and attack zone ['High', 'Mid', or 'Low']: If your rival's next attack this turn matches that zone, it gets -3 speed.\n\nEnhance [Once per turn] Discard your hand: Your Punch attack gets +10 damage.",
+    "numero": 55,
+    "numero_image": 55,
+    "type": "character",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/055.png"
+  },
+  {
+    "name": "Aspiring Punch",
+    "keywords": [
+      "Punch"
+    ],
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "speed": 5,
+    "damage": 5,
+    "attack_zone": "mid",
+    "text": "Enhance Discard 1 momentum: This attack gets +5 speed. Only playable if this attack's damage is 10 or greater.",
+    "numero": 56,
+    "numero_image": 56,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/056.png"
+  },
+  {
+    "name": "Delaware Smash",
+    "keywords": [
+      "Flash",
+      "Punch"
+    ],
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 6,
+    "attack_zone": "mid",
+    "text": "",
+    "numero": 57,
+    "numero_image": 57,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/057.png"
+  },
+  {
+    "name": "Determined Victory Smash",
+    "keywords": [
+      "Punch"
+    ],
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "damage": 5,
+    "attack_zone": "high",
+    "text": "Enhance: Add this card to your hand after it resolves. Only playable if this attack's damage is 15 or greater.",
+    "numero": 58,
+    "numero_image": 58,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/058.png"
+  },
+  {
+    "name": "Future Charge",
+    "keywords": [
+      "Charge",
+      "Punch"
+    ],
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 3,
+    "damage": 4,
+    "attack_zone": "mid",
+    "text": "Enhance: Draw 1 card for each copy of 'Future Charge' in your card pool.",
+    "numero": 59,
+    "numero_image": 59,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/059.png"
+  },
+  {
+    "name": "Heroic Strike",
+    "keywords": [
+      "Punch"
+    ],
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Enhance: Your rival commits 1 foundation for each Punch attack in your card pool.",
+    "numero": 60,
+    "numero_image": 60,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/060.png"
+  },
+  {
+    "name": "Reverse Throw",
+    "keywords": [
+      "Punch",
+      "Throw"
+    ],
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "speed": 2,
+    "damage": 5,
+    "attack_zone": "mid",
+    "text": "Enhance: If this attack deals 5 or more damage, draw 1 card.",
+    "numero": 61,
+    "numero_image": 61,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/061.png"
+  },
+  {
+    "name": "Setup Strike",
+    "keywords": [
+      "Punch"
+    ],
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "damage": 5,
+    "attack_zone": "high",
+    "text": "Enhance Discard 1 momentum: This attack gets +3 speed.\n\nEnhance: Your next attack this turn gets +3 speed.",
+    "numero": 62,
+    "numero_image": 62,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/062.png"
+  },
+  {
+    "name": "Velocity Punch",
+    "keywords": [
+      "Punch"
+    ],
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "low",
+    "text": "Enhance: Add 1 foundation from your stage to your momentum.",
+    "numero": 63,
+    "numero_image": 63,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/063.png"
+  },
+  {
+    "name": "Bonds of Friendship",
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 1,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "text": "Enhance Flip: This Fury attack gets -3 damage.",
+    "numero": 64,
+    "numero_image": 64,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/064.png"
+  },
+  {
+    "name": "Gift From Mom",
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Enhance Discard 1 momentum: Your Punch attack gets +3 damage.",
+    "numero": 65,
+    "numero_image": 65,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/065.png"
+  },
+  {
+    "name": "Good Impression",
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "text": "Enhance Flip: Your next Punch attack gets -1 difficulty.",
+    "numero": 66,
+    "numero_image": 66,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/066.png"
+  },
+  {
+    "name": "Note Taking",
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "text": "Enhance Flip: Your Punch attack gets +2 speed.",
+    "numero": 67,
+    "numero_image": 67,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/067.png"
+  },
+  {
+    "name": "Passing the Torch",
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "text": "Enhance Commit: Either draw 1 card or if you have no cards in your hand, draw 2 cards.",
+    "numero": 68,
+    "numero_image": 68,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/068.png"
+  },
+  {
+    "name": "Planning Ahead",
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 3,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "text": "Enhance Commit: Name an attack zone['High', 'Mid', or 'Low']. If your rival's next attack this turn matches the named zone, it gets -5 damage.",
+    "numero": 69,
+    "numero_image": 69,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/069.png"
+  },
+  {
+    "name": "Recovery Girl's Kiss",
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 0,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Enhance Flip: Gain 1 health.",
+    "numero": 70,
+    "numero_image": 70,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/070.png"
+  },
+  {
+    "name": "Rigorous Training",
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Response: After you build this card, gain 2 health.",
+    "numero": 71,
+    "numero_image": 71,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/071.png"
+  },
+  {
+    "name": "Self Sacrifice",
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "text": "Enhance Destroy 1 foundation; this attack gets +1 or -1 damage.",
+    "numero": 72,
+    "numero_image": 72,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/072.png"
+  },
+  {
+    "name": "Katsuki Bakugo",
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 28,
+    "text": "Response: After your blocked Fury attack resolves, discard it from your card pool.\n\nEnhance Destroy 1 foundation: This attack gets +2 damage.",
+    "numero": 73,
+    "numero_image": 73,
+    "type": "character",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/073.png"
+  },
+  {
+    "name": "Blast Rush Turbo",
+    "keywords": [
+      "Fury"
+    ],
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "speed": 4,
+    "damage": 5,
+    "attack_zone": "low",
+    "text": "Enhance Discard 1 momentum: This attack gets +1 damage for each Fury attack in your discard pile.\n\nEnhance: if you have discarded a card from your card pool this Combat Phase, this attack gets +1 speed and +3 damage.",
+    "numero": 74,
+    "numero_image": 74,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/074.png"
+  },
+  {
+    "name": "Exploding Pride",
+    "keywords": [
+      "Fury",
+      "Ranged"
+    ],
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "damage": 3,
+    "attack_zone": "low",
+    "text": "Enhance: Your rival loses 1 health for each card in their momentum. This effect cannot reduce your rival below 1 health.\n\nEnhance: If this attack is blocked, discard all cards from your rival's momentum.",
+    "numero": 75,
+    "numero_image": 75,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/075.png"
+  },
+  {
+    "name": "Howitzer Impact",
+    "keywords": [
+      "Fury"
+    ],
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 6,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "damage": 6,
+    "attack_zone": "low",
+    "text": "If you have destroyed a foundation this turn, this attack gets -2 difficulty.\n\nEnhance Destroy 1 foundation: This attack gets +2 speed.",
+    "numero": 76,
+    "numero_image": 76,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/076.png"
+  },
+  {
+    "name": "Instant Explosive Release",
+    "keywords": [
+      "Fury"
+    ],
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 3,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 3,
+    "damage": 3,
+    "attack_zone": "high",
+    "text": "Enhance: Add this attack to your momentum after it resolves. Only playable if your first attack this turn dealt damage.\n\nEnhance: If this attack deals damage, your next attack gets +2 damage.",
+    "numero": 77,
+    "numero_image": 77,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/077.png"
+  },
+  {
+    "name": "Long Lasting Explosion",
+    "keywords": [
+      "Charge",
+      "Fury"
+    ],
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "damage": 6,
+    "attack_zone": "mid",
+    "text": "Enhance: If the next attack you play this turn is a 'High' attack, it gets +3 speed. If the next attack you play this turn is a 'Mid' attack, it gets +3 damage.",
+    "numero": 78,
+    "numero_image": 78,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/078.png"
+  },
+  {
+    "name": "Monster Blast",
+    "keywords": [
+      "Charge",
+      "Fury",
+      "Ranged"
+    ],
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "mid",
+    "text": "Enhance: If the next attack you play this turn is a 'Low' attack, destroy 1 rival foundation.",
+    "numero": 79,
+    "numero_image": 79,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/079.png"
+  },
+  {
+    "name": "Point Blank Incineration",
+    "keywords": [
+      "Fury",
+      "Stun: 1"
+    ],
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "speed": 3,
+    "damage": 6,
+    "attack_zone": "mid",
+    "text": "Enhance: If the next attack you play this turn is a 'Mid' attack, it gets +3 speed.",
+    "numero": 80,
+    "numero_image": 80,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/080.png"
+  },
+  {
+    "name": "Signature Right Swing",
+    "keywords": [
+      "Fury"
+    ],
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 3,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Enhance Discard 2 cards: Draw 2 cards.",
+    "numero": 81,
+    "numero_image": 81,
+    "type": "attack",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/081.png"
+  },
+  {
+    "name": "Aggresive Temper",
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Response: After this card enters your discard pile during your attack's Enhance Step, your attack gets +2 damage.",
+    "numero": 82,
+    "numero_image": 82,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/082.png"
+  },
+  {
+    "name": "Agitation",
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "text": "Response Commit: After your Fury attack is blocked, draw 1 card.",
+    "numero": 83,
+    "numero_image": 83,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/083.png"
+  },
+  {
+    "name": "Arrogant Disposition",
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 1,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "text": "Enhance Commit: This Punch attack gets -3 speed.",
+    "numero": 84,
+    "numero_image": 84,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/084.png"
+  },
+  {
+    "name": "Burst Speed",
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Bakugo Response: After this card enters your discard pile during your attack's Enhance Step, your rival loses 2 health. This effect can not reduce your rival below 1 health.",
+    "numero": 85,
+    "numero_image": 85,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/085.png"
+  },
+  {
+    "name": "Capabilities",
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 3,
+    "block_modifier": 4,
+    "block_zone": "high",
+    "text": "Enhance Commit, discard 1 momentum: Your Fury attack gets +2 speed and +5 damage.",
+    "numero": 86,
+    "numero_image": 86,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/086.png"
+  },
+  {
+    "name": "Encouragement",
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Response Flip: After your unblocked attack resolves, discard it from the card pool.",
+    "numero": 87,
+    "numero_image": 87,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/087.png"
+  },
+  {
+    "name": "In Danger",
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 0,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "text": "Enhance Destroy: If this attack's damage is equal to or greater than your current health, this attack gets -3 speed.",
+    "numero": 88,
+    "numero_image": 88,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/088.png"
+  },
+  {
+    "name": "Latent Skill",
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "text": "Enhance Flip, discard 2 cards: Draw 2 cards.",
+    "numero": 89,
+    "numero_image": 89,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/089.png"
+  },
+  {
+    "name": "Let's Fight Bad Guys!",
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Enhance Flip: Your fury attack gets +2 speed.",
+    "numero": 90,
+    "numero_image": 90,
+    "type": "foundation",
+    "rarity": "starter exclusive",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/090.png"
+  },
+  {
+    "name": "Kyoka Jiro",
+    "resources": [
+      "air",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 27,
+    "text": "Enhance [Once per turn]: Look at the top two cards of both players' decks. You may replace them in any order.\n\nResponse: After you play a Charge attack, it gets +1 damage for each card in your card pool.\n\nResponse: After you play a Weapon attack, it gets +1 speed for each card in your card pool.",
+    "numero": 91,
+    "numero_image": 91,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/091.png"
+  },
+  {
+    "name": "Earphone Jack",
+    "keywords": [
+      "Unique",
+      "Weapon"
+    ],
+    "resources": [
+      "air",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "text": "Response: After you play an attack, discard the top card of your rival's deck. if the attack you played is a Charge attack, it gets +1 speed.\n\nResponse Commit: After your attack deals damage, ready 1 foundation that has not been readied this Combat Phase.",
+    "numero": 92,
+    "numero_image": 92,
+    "type": "asset",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/092.png"
+  },
+  {
+    "name": "Amplified Sound Blast",
+    "keywords": [
+      "Charge",
+      "Flash"
+    ],
+    "resources": [
+      "air",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "low",
+    "text": "If this attack is added to your momentum, add it face up.\n\nEnhance [Momentum] Flip: Your next Charge or Weapon attack this turn gets -2 difficulty.\n\nDeadlock Response: After you play this attack, draw 2 cards.",
+    "numero": 93,
+    "numero_image": 93,
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/093.png"
+  },
+  {
+    "name": "Improvised Blade",
+    "keywords": [
+      "Combo (Charge)",
+      "Weapon"
+    ],
+    "resources": [
+      "air",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "damage": 4,
+    "attack_zone": "mid",
+    "text": "Combo Enhance: This attack gets +1 damage for each card in your card pool.\n\nDeadlock Enhance: This attack gets +1 speed and +1 damage for each card in your card pool.",
+    "numero": 94,
+    "numero_image": 94,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/094.png"
+  },
+  {
+    "name": "Specialized Sound Waves",
+    "keywords": [
+      "Charge",
+      "Flash",
+      "Ranged"
+    ],
+    "resources": [
+      "air",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 2,
+    "difficulty": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 3,
+    "attack_zone": "high",
+    "text": "Response: After you play this card, draw 1 card.\n\nResponse Remove 1 momentum: After you play this attack, add up to 2 cards from either player's discard pile to the top of their deck in any order.",
+    "numero": 95,
+    "numero_image": 95,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/095.png"
+  },
+  {
+    "name": "Unwavering Slash",
+    "keywords": [
+      "Charge",
+      "Powerful: 2",
+      "Weapon"
+    ],
+    "resources": [
+      "air",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "mid",
+    "text": "Enhance Discard 1 card: Build 1 asset from your discard pile face up.\n\nEnhance: If you have 1 or more assets, ready 1 foundation that has not been readied this Combat Phase and draw 1 card.",
+    "numero": 96,
+    "numero_image": 96,
+    "type": "attack",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/096.png"
+  },
+  {
+    "name": "Destined For Mainstream Success",
+    "resources": [
+      "air",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Enhance Flip: Name a card type then reveal the top card of your deck, if the card matches the named type, add it to your hand.",
+    "numero": 97,
+    "numero_image": 97,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/097.png"
+  },
+  {
+    "name": "Plug-In",
+    "resources": [
+      "air",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Response Flip: After this card is committed due to your rival's effect, draw 1 card. Playable while committed.\n\nEnhance Flip: Look at the top card of either player's deck. You may discard it.",
+    "numero": 98,
+    "numero_image": 98,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/098.png"
+  },
+  {
+    "name": "Specialist Of Sound",
+    "resources": [
+      "air",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "text": "Response: After you check this card, reveal the top card of your deck.\n\nResponse Commit: After an attack is played, it gets -3 speed.",
+    "numero": 99,
+    "numero_image": 99,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/099.png"
+  },
+  {
+    "name": "Minoru Mineta",
+    "resources": [
+      "water",
+      "order",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 27,
+    "text": "Response Lose 1 health: After an attack is blocked, your rival commits 1 foundation.\n\nEnhance: If there is a card in your rival's card pool, your attack gets +2 damage.\n\nEnhance Commit: Return this attack to its printed speed. It cannot receive any speed bonuses.",
+    "numero": 100,
+    "numero_image": 100,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/100.png"
+  },
+  {
+    "name": "Eat My Sticky Balls",
+    "keywords": [
+      "Fury",
+      "Ranged"
+    ],
+    "resources": [
+      "water",
+      "order",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Enhance: If this atack is not blocked, add the top card of your rival's discard pile to their card pool face up.",
+    "numero": 101,
+    "numero_image": 101,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/101.png"
+  },
+  {
+    "name": "Grape Rush Attack",
+    "keywords": [
+      "Fury",
+      "Powerful: 2",
+      "Ranged"
+    ],
+    "resources": [
+      "water",
+      "order",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 2,
+    "difficulty": 5,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "damage": 8,
+    "attack_zone": "mid",
+    "text": "Enhance: If this attack is blocked, add 1 copy of 'Eat My Sticky Balls' from your discard pile to your hand, or if your character is Minoru Mineta, add all copies of 'Eat My Sticky Balls' in your discard pile to your hand.",
+    "numero": 102,
+    "numero_image": 102,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/102.png"
+  },
+  {
+    "name": "Pop Off Step",
+    "keywords": [
+      "Combo (Fury)"
+    ],
+    "resources": [
+      "water",
+      "order",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 2,
+    "damage": 5,
+    "attack_zone": "low",
+    "text": "Combo Enhance: If this attack is not blocked, add 1 Fury attack from your card pool to your momentum.\n\nDeadlock Enhance: This attack gets +5 speed.",
+    "numero": 103,
+    "numero_image": 103,
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/103.png"
+  },
+  {
+    "name": "Sticky Ball Toss Tackle",
+    "keywords": [
+      "Fury",
+      "Throw"
+    ],
+    "resources": [
+      "water",
+      "order",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 3,
+    "damage": 3,
+    "attack_zone": "mid",
+    "text": "Enhance: This attack gets +1 damage for each card in your rival's card pool.\n\nEnhance Lose 2 health: If this attack is not blocked, your rival commits 2 foundations.",
+    "numero": 104,
+    "numero_image": 104,
+    "type": "attack",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/104.png"
+  },
+  {
+    "name": "Classmate Introductions",
+    "resources": [
+      "water",
+      "order",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Enhance: If your rival has not played a block this turn, this attack gets +1 speed.\n\nEnhance: If this is your first attack this turn, it gets +1 damage.",
+    "numero": 105,
+    "numero_image": 105,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/105.png"
+  },
+  {
+    "name": "Creepy Realization",
+    "resources": [
+      "water",
+      "order",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 4,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "text": "Enhance Commit: This attack gets +1 or -1 damage for each card in your rival's card pool.",
+    "numero": 106,
+    "numero_image": 106,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/106.png"
+  },
+  {
+    "name": "Desperate Times",
+    "resources": [
+      "water",
+      "order",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 0,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "text": "Response Flip: After your rival draws any number of cards during the Combat Phase, they commit 1 foundation.",
+    "numero": 107,
+    "numero_image": 107,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/107.png"
+  },
+  {
+    "name": "Sticky Balls",
+    "keywords": [
+      "Unique"
+    ],
+    "resources": [
+      "water",
+      "order",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Enhance Flip: Add the top card of your rival's discard pile to their card pool.\n\nEnhance Commit: This non-Ranged attack gets -4 speed.",
+    "numero": 108,
+    "numero_image": 108,
+    "type": "foundation",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/108.png"
+  },
+  {
+    "name": "Momo Yaoyorozu",
+    "resources": [
+      "life",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 26,
+    "text": "Enhance Destroy 1 foundation: Build 1 asset or Weapon foundation from your card pool face up. This attack gets +2 or -2 speed.\n\nEnhance [Once per turn] Remove 1 foundation: Add 1 Weapon card from your discard pile to your hand.",
+    "numero": 109,
+    "numero_image": 109,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/109.png"
+  },
+  {
+    "name": "Quick Creation",
+    "keywords": [
+      "Weapon"
+    ],
+    "resources": [
+      "life",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Enhance Commit: Add the top card of your discard pile to your card pool. This attack gets +2 or -2 damage.\n\nDeadlock First Enhance Commit: Double your Weapon attack's speed and damage.",
+    "numero": 110,
+    "numero_image": 110,
+    "type": "asset",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/110.png"
+  },
+  {
+    "name": "Create: Bo Staff",
+    "keywords": [
+      "Weapon"
+    ],
+    "resources": [
+      "life",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "mid",
+    "text": "Enhance: Add 1 asset or Weapon foundation from your discard pile to your card pool or hand.",
+    "numero": 111,
+    "numero_image": 111,
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/111.png"
+  },
+  {
+    "name": "Create: Capturing Net",
+    "keywords": [
+      "Charge",
+      "Combo (Foundation)",
+      "Weapon"
+    ],
+    "resources": [
+      "life",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 2,
+    "damage": 4,
+    "attack_zone": "low",
+    "text": "Combo Enhance: This attack gains Stun: 2.\n\nEnhance: Build 1 foundation from your card pool face up.",
+    "numero": 112,
+    "numero_image": 112,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/112.png"
+  },
+  {
+    "name": "Staff Strike",
+    "keywords": [
+      "Combo (Weapon, Foundation)",
+      "Powerful: 2",
+      "Weapon"
+    ],
+    "resources": [
+      "life",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 6,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 6,
+    "attack_zone": "mid",
+    "text": "Combo Enhance: The next 2 Weapon cards you try to play this turn ignore progressive difficulty.\n\nEnhance: Draw 1 card for each foundation in your card pool.",
+    "numero": 113,
+    "numero_image": 113,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/113.png"
+  },
+  {
+    "name": "A Precious Lesson",
+    "resources": [
+      "life",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "text": "Response Flip: After 1 of your foundations is removed or destroyed, build the top card of your deck face down.",
+    "numero": 114,
+    "numero_image": 114,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/114.png"
+  },
+  {
+    "name": "Preparing For Battle",
+    "keywords": [
+      "Breaker: 1",
+      "Weapon"
+    ],
+    "resources": [
+      "life",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "text": "Enhance Commit, discard 1 card: Draw 1 card.",
+    "numero": 115,
+    "numero_image": 115,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/115.png"
+  },
+  {
+    "name": "Rising Starlet",
+    "keywords": [
+      "Weapon"
+    ],
+    "resources": [
+      "life",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "text": "Response: After you build this card, gain 1 health.\n\nEnhance [Your attack] Flip: Build 1 Weapon asset or Weapon foundation from your card pool face up.",
+    "numero": 116,
+    "numero_image": 116,
+    "type": "foundation",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/116.png"
+  },
+  {
+    "name": "Start With The Basics",
+    "resources": [
+      "life",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Enhance Commit: Your Weapon attack gets +1 speed and +2 damage.",
+    "numero": 117,
+    "numero_image": 117,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/117.png"
+  },
+  {
+    "name": "Nomu",
+    "resources": [
+      "earth",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 5,
+    "vitality": 35,
+    "text": "Response Commit 1 foundation: Before the Damage Step of this unblocked attack, reduce its damage to 6.\n\nEnhance: Your non-Throw attack gets a damage bonus equal to its printed difficulty.",
+    "numero": 118,
+    "numero_image": 118,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/118.png"
+  },
+  {
+    "name": "Berserker Blow",
+    "keywords": [
+      "Fury",
+      "Punch"
+    ],
+    "resources": [
+      "earth",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 6,
+    "attack_zone": "low",
+    "text": "Enhance Destroy 1 foundation: If this attack is not blocked, destroy 1 rival foundation. If your character is Nomu, build the top card of your deck face down.\n\nDeadlock Enhance: Destroy 2 rival foundations.",
+    "numero": 119,
+    "numero_image": 119,
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/119.png"
+  },
+  {
+    "name": "Gale Force Punch",
+    "keywords": [
+      "Punch",
+      "Ranged"
+    ],
+    "resources": [
+      "earth",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 2,
+    "difficulty": 6,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 6,
+    "damage": 6,
+    "attack_zone": "mid",
+    "text": "Enhance: If you have fewer foundation than your rival, destroy 1 rival foundation.\n\nEnhance Lose 3 health: Your next Fury or Punch attack gets +5 damage.",
+    "numero": 120,
+    "numero_image": 120,
+    "type": "attack",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/120.png"
+  },
+  {
+    "name": "Merciless Rush",
+    "keywords": [
+      "EX: 2",
+      "Fury",
+      "Punch"
+    ],
+    "resources": [
+      "earth",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "damage": 5,
+    "attack_zone": "high",
+    "text": "If your printed handsize is less than your rival's, this attack gets -1 difficulty.\n\nEnhance: If this attack is completely blocked, your rival destroys 1 foundation.",
+    "numero": 121,
+    "numero_image": 121,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/121.png"
+  },
+  {
+    "name": "Relentless Barrage",
+    "keywords": [
+      "Combo (Punch)",
+      "Fury",
+      "Punch"
+    ],
+    "resources": [
+      "earth",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 3,
+    "damage": 5,
+    "attack_zone": "mid",
+    "text": "Combo Enhance Lose 2 health: Add 1 copy of 'Relentless Barrage' from your discard pile to your hand.\n\nEnhance: If this attack is blocked, your next attack this turn gets +2 damage.",
+    "numero": 122,
+    "numero_image": 122,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/122.png"
+  },
+  {
+    "name": "Apathetic",
+    "resources": [
+      "earth",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "text": "Enhance Flip: Flip 1 rival foundation.",
+    "numero": 123,
+    "numero_image": 123,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/123.png"
+  },
+  {
+    "name": "Brute Strength",
+    "resources": [
+      "earth",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "text": "Enhance Lose 1 health: Your attack gets +1 damage.\n\nEnhance Destroy 1 foundation: Your attack gets +1 damage.",
+    "numero": 124,
+    "numero_image": 124,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/124.png"
+  },
+  {
+    "name": "Shock Absorption",
+    "resources": [
+      "earth",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Enhance Destroy: This attack gets -2 speed. Playable while committed.",
+    "numero": 125,
+    "numero_image": 125,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/125.png"
+  },
+  {
+    "name": "Super Regeneration",
+    "resources": [
+      "earth",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 4,
+    "block_zone": "high",
+    "text": "Response Flip: After you lose health dur to your rival's attack or effect, gain 3 health.",
+    "numero": 126,
+    "numero_image": 126,
+    "type": "foundation",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/126.png"
+  },
+  {
+    "name": "Ochaco Uraraka",
+    "resources": [
+      "air",
+      "life",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 27,
+    "text": "Response [Once per turn]: After your Charge or 'High' attack resolves, add it to your momentum.\n\nEnhance Commit: if you have 1 or more momentum, your attack gets +3 speed. You may add 1 momentum to your hand.",
+    "numero": 127,
+    "numero_image": 127,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/127.png"
+  },
+  {
+    "name": "Home Run Comet",
+    "keywords": [
+      "Charge",
+      "Powerful: 1",
+      "Weapon"
+    ],
+    "resources": [
+      "air",
+      "life",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 3,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Enhance: Add 1 foundation to your momentum.\n\nEnhance: This attack gets +1 to its Powerful rating for each Charge or 'High' attack in your card pool.",
+    "numero": 128,
+    "numero_image": 128,
+    "type": "attack",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/128.png"
+  },
+  {
+    "name": "Meteor Shower",
+    "keywords": [
+      "Charge"
+    ],
+    "resources": [
+      "air",
+      "life",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 5,
+    "attack_zone": "high",
+    "text": "If this attack is added to your momentum, add it face up.\n\nEnhance Discard 1 momentum: Add 1 copy of 'Meteor Shower' from your discard pile to your momentum.\n\nEnhance [Momentum] Discard 1 card: Add this card to your hand.",
+    "numero": 129,
+    "numero_image": 129,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/129.png"
+  },
+  {
+    "name": "Zero Gravity Capture",
+    "keywords": [
+      "Charge"
+    ],
+    "resources": [
+      "air",
+      "life",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 0,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "If this attack is added to your momentum, add it face up.\n\nEnhance [Momentum] Flip: This attack gets +3 damage.\n\nDeadlock Enhance: Add 1 momentum to your hand.",
+    "numero": 130,
+    "numero_image": 130,
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/130.png"
+  },
+  {
+    "name": "Zero Gravity Lift",
+    "keywords": [
+      "Charge",
+      "Throw"
+    ],
+    "resources": [
+      "air",
+      "life",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "speed": 3,
+    "damage": 6,
+    "attack_zone": "high",
+    "text": "If this attack is added to your momentum, add it face up.\n\nEnhance [Momentum] Remove: After your attack resolves, add it to your momentum.",
+    "numero": 131,
+    "numero_image": 131,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/131.png"
+  },
+  {
+    "name": "Encouraging Training Partner",
+    "resources": [
+      "air",
+      "life",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "text": "Midoriya/Uraraka Response Commit: After you take 5 or more damage, gain 1 health.\n\nEnhance Flip: Change this attack's speed to 4.",
+    "numero": 132,
+    "numero_image": 132,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/132.png"
+  },
+  {
+    "name": "Infinite Potential",
+    "resources": [
+      "air",
+      "life",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "text": "Response Flip: After your rival plays an attack, change its zone to 'High'.",
+    "numero": 133,
+    "numero_image": 133,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/133.png"
+  },
+  {
+    "name": "Release",
+    "resources": [
+      "air",
+      "life",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 4,
+    "difficulty": 0,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "text": "Enhance Destroy 1 foundation: Your check to block this attack gets +2.",
+    "numero": 134,
+    "numero_image": 134,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/134.png"
+  },
+  {
+    "name": "Wealthy Aspirations",
+    "keywords": [
+      "Unique"
+    ],
+    "resources": [
+      "air",
+      "life",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "text": "Enhance Remove: Look at your momentum and turn 1 of them face up.\n\nResponse Flip: After a card is added to your momentum, add the top card of your deck to your momentum.",
+    "numero": 135,
+    "numero_image": 135,
+    "type": "foundation",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/135.png"
+  },
+  {
+    "name": "Shoto Todoroki",
+    "resources": [
+      "fire",
+      "water",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 7,
+    "vitality": 20,
+    "text": "Enhance Commit 1 foundation: Your attack gets +1 damage for every 2 Ranged attacks in your discard pile.\n\nResponse Commit, discard the top 3 cards of your deck: After your rival plays an Enhance ability on a non-character card, cancel it.",
+    "numero": 136,
+    "numero_image": 136,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/136.png"
+  },
+  {
+    "name": "Frigid Heatwave",
+    "keywords": [
+      "Ranged"
+    ],
+    "resources": [
+      "fire",
+      "water",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 5,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Enhance: If you have 6 or more Ranged attacks in your discard pile, draw 2 cards.\n\nEnhance Discard the top 3 cards of your deck: This attack gets +2 damage for each Ranged attack discarded this way.",
+    "numero": 137,
+    "numero_image": 137,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/137.png"
+  },
+  {
+    "name": "Giant Ice Wall",
+    "keywords": [
+      "Breaker: 1",
+      "Ranged",
+      "Stun: 2"
+    ],
+    "resources": [
+      "fire",
+      "water",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 3,
+    "damage": 5,
+    "attack_zone": "low",
+    "text": "Enhance Discard 1 momentum: Your next Ranged attack gains Stun: 2.",
+    "numero": 138,
+    "numero_image": 138,
+    "type": "attack",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/138.png"
+  },
+  {
+    "name": "Ice Storm",
+    "keywords": [
+      "Breaker: 2",
+      "Powerful: 3",
+      "Ranged"
+    ],
+    "resources": [
+      "fire",
+      "water",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "low",
+    "text": "Enhance: This attack cannot be blocked by attack cards.\n\nDeadlock Enhance: This attack gets +2 speed. The speed of this attack cannot be reduced.",
+    "numero": 139,
+    "numero_image": 139,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/139.png"
+  },
+  {
+    "name": "Massive Flash Freeze",
+    "keywords": [
+      "Ranged"
+    ],
+    "resources": [
+      "fire",
+      "water",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "damage": 3,
+    "attack_zone": "mid",
+    "text": "Enhance Discard the top card of your deck: Your next check to play a Ranged attack gets +1.\n\nDeadlock Enhance: The next check you make to play an attack passes.",
+    "numero": 140,
+    "numero_image": 140,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/140.png"
+  },
+  {
+    "name": "Frozen",
+    "resources": [
+      "fire",
+      "water",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "text": "Enhance [Your turn] Destroy 1 foundation: Your rival commits 1 foundation.",
+    "numero": 141,
+    "numero_image": 141,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/141.png"
+  },
+  {
+    "name": "Irrefutable Force Of Nature",
+    "resources": [
+      "fire",
+      "water",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "text": "Enhance Commit: Seal 1 rival 'Earth', 'Fire', or 'Water' asset or foundation.\n\nEnhance Remove: Seal 1 rival asset or foundation.",
+    "numero": 142,
+    "numero_image": 142,
+    "type": "foundation",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/142.png"
+  },
+  {
+    "name": "Precise Control",
+    "keywords": [
+      "Breaker: 1"
+    ],
+    "resources": [
+      "fire",
+      "water",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "text": "Enhance: Add this card to your hand.",
+    "numero": 143,
+    "numero_image": 143,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/143.png"
+  },
+  {
+    "name": "Self-Assured",
+    "keywords": [
+      "Unique"
+    ],
+    "resources": [
+      "fire",
+      "water",
+      "chaos"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 4,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "text": "Enhance Commit: Change the zone of this attack.\n\nEnhance Destroy: Draw 1 card for every 4 Ranged attacks in your discard pile.",
+    "numero": 144,
+    "numero_image": 144,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/144.png"
+  },
+  {
+    "name": "Tenya Iida",
+    "resources": [
+      "fire",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 28,
+    "text": "Response [Once per turn]: After an attack is played, it gets +3 or -3 speed. If it is your attack, your rival commits 1 foundation each time they play an enhance ability during its Enhance Step.\n\nResponse: After your rival plays an attack, you may play the first enhance ability during its Enhance Step.",
+    "numero": 145,
+    "numero_image": 145,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/145.png"
+  },
+  {
+    "name": "Engine Rush",
+    "keywords": [
+      "EX: 1",
+      "Kick",
+      "Powerful: 2"
+    ],
+    "resources": [
+      "fire",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 5,
+    "damage": 5,
+    "attack_zone": "mid",
+    "text": "Enhance Commit 1 foundation: If this attack is not blocked, draw 2 cards.\n\nEnhance: End this Enhance Step.",
+    "numero": 146,
+    "numero_image": 146,
+    "type": "attack",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/146.png"
+  },
+  {
+    "name": "Flying Thruster Kick",
+    "keywords": [
+      "EX: 2",
+      "Kick"
+    ],
+    "resources": [
+      "fire",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Enhance: This attack gets +2 damage. Only playable if this attack has received a speed bonus.\n\nDeadlock Enhance: Add the top 2 cards of your deck to your momentum.",
+    "numero": 147,
+    "numero_image": 147,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/147.png"
+  },
+  {
+    "name": "Recipro Burst",
+    "keywords": [
+      "EX: 3",
+      "Kick",
+      "Stun: 1"
+    ],
+    "resources": [
+      "fire",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 3,
+    "damage": 5,
+    "attack_zone": "low",
+    "text": "Response: After your rival commits 1 or more foundations during this attack's Enhance Step, it gets +1 speed.\n\nEnhance Discard 1 momentum: This attack gets +X damage. X equals the speed of this attack minus 3.",
+    "numero": 148,
+    "numero_image": 148,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/148.png"
+  },
+  {
+    "name": "Recipro Extend",
+    "keywords": [
+      "Charge",
+      "Kick"
+    ],
+    "resources": [
+      "fire",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "mid",
+    "text": "Enhance: Your next Kick attack this turn gets +2 speed and +2 damage.\n\nEnhance: Draw 1 card.",
+    "numero": 149,
+    "numero_image": 149,
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/149.png"
+  },
+  {
+    "name": "Calling For Backup",
+    "resources": [
+      "fire",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "text": "Enhance Flip: Draw 1 card. If this was not the first enhance played this Enhance Step, discard 1 card.",
+    "numero": 150,
+    "numero_image": 150,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/150.png"
+  },
+  {
+    "name": "Fulfilled My Duty",
+    "resources": [
+      "fire",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "text": "Enhance Destroy: End this Enhance Step.",
+    "numero": 151,
+    "numero_image": 151,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/151.png"
+  },
+  {
+    "name": "Heroic Lineage",
+    "resources": [
+      "fire",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "text": "Response Commit: After your rival's attack receives a damage bonus, it gets -3 speed.\n\nResponse Commit: After your attack receives a speed bonus, it gets +2 damage.",
+    "numero": 152,
+    "numero_image": 152,
+    "type": "foundation",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/152.png"
+  },
+  {
+    "name": "Natural Leader",
+    "resources": [
+      "fire",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "text": "Enhance Commit: This 'Mid' or Kick attack gets +2 speed.\n\nFirst Enhance Commit: Chose 1 rival foundation. Abilities on the chosen card can not be played for the rest of this Enhance Step.",
+    "numero": 153,
+    "numero_image": 153,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/153.png"
+  },
+  {
+    "name": "Tomura Shigaraki",
+    "resources": [
+      "fire",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 28,
+    "text": "Response [Once per turn]: After your non-Throw attack deals damage, your rival loses 5 health.\n\nResponse Commit: After you completely block an attack, your rival destroys 1 ready foundation.",
+    "numero": 154,
+    "numero_image": 154,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/154.png"
+  },
+  {
+    "name": "Evil Gaze",
+    "keywords": [
+      "Breaker: 1"
+    ],
+    "resources": [
+      "fire",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 0,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "text": "Enhance Lose 2 health: This attack gets +2 or -2 speed. If this attack is blocked, destroy 1 rival foundation. Remove this card from the game.\n\nDeadlock Enhance: Destroy 1 rival foundation. Remove this card from the game.",
+    "numero": 155,
+    "numero_image": 155,
+    "type": "action",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/155.png"
+  },
+  {
+    "name": "Corrosion Lunge",
+    "keywords": [
+      "Fury"
+    ],
+    "resources": [
+      "fire",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "speed": 3,
+    "damage": 5,
+    "attack_zone": "low",
+    "text": "Enhance: If this attack is blocked, your next attack this turn gets +2 speed and +2 damage.\n\nDeadlock Enhance: If this attack is completely blocked, it still deals 3 damage.",
+    "numero": 156,
+    "numero_image": 156,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/156.png"
+  },
+  {
+    "name": "Decaying Grip",
+    "keywords": [
+      "Combo (Fury)",
+      "Fury"
+    ],
+    "resources": [
+      "fire",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "damage": 4,
+    "attack_zone": "mid",
+    "text": "Shigaraki Response: After you block with this card, ready your character.\n\nCombo Enhance: This attack can only be blocked by cards with a printed block modifier of +3 or greater.",
+    "numero": 157,
+    "numero_image": 157,
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/157.png"
+  },
+  {
+    "name": "Touch of Decay",
+    "keywords": [
+      "Combo (Fury)",
+      "Fury",
+      "Stun: 1"
+    ],
+    "resources": [
+      "fire",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "mid",
+    "text": "Combo Enhance Commit 1 foundation: If this attack is completely blocked, add it to your hand after it resolves.\n\nEnhance: If this attack is not blocked, draw 1 card.",
+    "numero": 158,
+    "numero_image": 158,
+    "type": "attack",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/158.png"
+  },
+  {
+    "name": "Turn To Dust",
+    "keywords": [
+      "EX: 2",
+      "Fury",
+      "Stun: 2"
+    ],
+    "resources": [
+      "fire",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 5,
+    "attack_zone": "high",
+    "text": "Enhance Destroy 1 foundation: Destroy 1 foundation committed due to this attack's Stun ability. Your rival may lose 2 health to cancel this ability.\n\nEnhance Lose 2 health: Your rival loses 2 health. Your rival may destroy 1 foundation to cancel this ability.",
+    "numero": 159,
+    "numero_image": 159,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/159.png"
+  },
+  {
+    "name": "Keen Observation",
+    "resources": [
+      "fire",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 0,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "text": "Response Flip: After your rival loses health due to an effect, your rival loses 1 health. This effect cannot reduce your rival below 1 health.",
+    "numero": 160,
+    "numero_image": 160,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/160.png"
+  },
+  {
+    "name": "Nervous Habit",
+    "resources": [
+      "fire",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "text": "Enhance Lose 1 health: Your attack gets +1 speed.\n\nResponse Destroy: After this card is committed due to your rival's effect, your rival destroys 1 foundation. Playable while committed.",
+    "numero": 161,
+    "numero_image": 161,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/161.png"
+  },
+  {
+    "name": "Villainous Entrance",
+    "resources": [
+      "fire",
+      "death",
+      "evil"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "text": "Enhance Commit: Your Fury attack gains Stun: 1.\n\nResponse Flip: After your rival builds a foundation during the Combat Phase, commit it. Playable while committed.",
+    "numero": 162,
+    "numero_image": 162,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/162.png"
+  },
+  {
+    "name": "Tsuyu Asui",
+    "resources": [
+      "water",
+      "air",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 7,
+    "vitality": 20,
+    "text": "Enhance Commit: Your attack gets +2 speed. You may discard 1 Kick or Ranged attack from your card pool.\n\nEnhance Flip 1 foundation: Ready this card. Playable while committed.",
+    "numero": 163,
+    "numero_image": 163,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/163.png"
+  },
+  {
+    "name": "20 Meter Tongue Strike",
+    "keywords": [
+      "Ranged"
+    ],
+    "resources": [
+      "water",
+      "air",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 6,
+    "attack_zone": "mid",
+    "text": "Enhance: If your character is committed, commit 1 rival foundation.",
+    "numero": 164,
+    "numero_image": 164,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/164.png"
+  },
+  {
+    "name": "Frog Kick",
+    "keywords": [
+      "Kick"
+    ],
+    "resources": [
+      "water",
+      "air",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 2,
+    "damage": 5,
+    "attack_zone": "low",
+    "text": "Response: After this card leaves your card pool during the Combat Phase, ready 1 foundation that has not been readied this Combat Phase.\n\nEnhance: If this attack deals damage your next attack this turn gets +3 speed.",
+    "numero": 165,
+    "numero_image": 165,
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/165.png"
+  },
+  {
+    "name": "Frog Lashing",
+    "keywords": [
+      "Breaker: 1",
+      "Ranged"
+    ],
+    "resources": [
+      "water",
+      "air",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 6,
+    "attack_zone": "high",
+    "text": "Enhance: This attack gets +1 damage for each of your ready face down foundations.\n\nEnhance: Ready 2 face down foundations.",
+    "numero": 166,
+    "numero_image": 166,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/166.png"
+  },
+  {
+    "name": "Tongue Smack",
+    "keywords": [
+      "Ranged"
+    ],
+    "resources": [
+      "water",
+      "air",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Enhance: If your character is committed, this attack gets +2 damage.\n\nEnhance: Draw 1 card. Only playable if a card has left your card pool this turn.",
+    "numero": 167,
+    "numero_image": 167,
+    "type": "attack",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/167.png"
+  },
+  {
+    "name": "Amphibious",
+    "resources": [
+      "water",
+      "air",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "text": "Enhance [Once per turn]: If a card has left your card pool this turn, ready this foundation. Playable while committed.",
+    "numero": 168,
+    "numero_image": 168,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/168.png"
+  },
+  {
+    "name": "Observant Student",
+    "resources": [
+      "water",
+      "air",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "text": "Enhance Flip: Look at the top card of your deck.\n\nDeadlock Enhance Commit: If a card has left your card pool this turn, add 1 Ranged attack from your discard pile to your hand.",
+    "numero": 169,
+    "numero_image": 169,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/169.png"
+  },
+  {
+    "name": "Rescue Completed",
+    "resources": [
+      "water",
+      "air",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "text": "Enhance Destroy: Ready 2 face down foundations that have not been readied this Combat Phase.\n\nEnhance Commit 1 foundation: This attack gets +1 or -2 speed.",
+    "numero": 170,
+    "numero_image": 170,
+    "type": "foundation",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/170.png"
+  },
+  {
+    "name": "Wall Cling",
+    "resources": [
+      "water",
+      "air",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 4,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "text": "Enhance Flip: If this attack is blocked, it deals no damage.",
+    "numero": 171,
+    "numero_image": 171,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/171.png"
+  },
+  {
+    "name": "Yuga Aoyama",
+    "resources": [
+      "earth",
+      "death",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 27,
+    "text": "Response: After you flip 1 or more foundations during your attack's Enhance Step, your attack gets +1 speed and +1 damage. Playable while committed.\n\nEnhance Commit: The next card you attempt to play this turn gets -1 difficulty for each of your face down foundations.",
+    "numero": 172,
+    "numero_image": 172,
+    "type": "character",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/172.png"
+  },
+  {
+    "name": "Tres Chic Cape",
+    "keywords": [
+      "Unique"
+    ],
+    "resources": [
+      "earth",
+      "death",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 4,
+    "block_zone": "mid",
+    "text": "First Enhance Commit: Unflip 1 committed foundation.\n\nDeadlock Form Remove: Add up to 2 Ranged attacks from your card pool to your hand.",
+    "numero": 173,
+    "numero_image": 173,
+    "type": "asset",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/173.png"
+  },
+  {
+    "name": "Instant Shining Flash",
+    "keywords": [
+      "Charge",
+      "Ranged",
+      "Weapon"
+    ],
+    "resources": [
+      "earth",
+      "death",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Enhance Flip 1 foundation: The next card you attempt to play this turn gets -1 difficulty.\n\nResponse: After you play this card, your rival discards 1 momentum.",
+    "numero": 174,
+    "numero_image": 174,
+    "type": "attack",
+    "rarity": "rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/174.png"
+  },
+  {
+    "name": "Navel Laser Beam",
+    "keywords": [
+      "Breaker: 2",
+      "Ranged"
+    ],
+    "resources": [
+      "earth",
+      "death",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "damage": 6,
+    "attack_zone": "mid",
+    "text": "First Enhance Discard 1 momentum: Unflip 2 foundation.\n\nEnhance Flip 1 foundation: This attack gets +2 speed.\n\nEnhance Flip 1 foundation: This attack gets +2 damage.",
+    "numero": 175,
+    "numero_image": 175,
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/175.png"
+  },
+  {
+    "name": "Navel Laser Charge",
+    "keywords": [
+      "Charge",
+      "Ranged",
+      "Weapon"
+    ],
+    "resources": [
+      "earth",
+      "death",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 3,
+    "damage": 5,
+    "attack_zone": "low",
+    "text": "Enhance Discard 1 momentum: Gain 3 health.\n\nEnhance: If you have flipped a foundation during this attack's Enhance Step, your next attack this turn gets +1 speed and +1 damage.",
+    "numero": 176,
+    "numero_image": 176,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/176.png"
+  },
+  {
+    "name": "Panache Shining Navel Blast",
+    "keywords": [
+      "Charge",
+      "Ranged"
+    ],
+    "resources": [
+      "earth",
+      "death",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 5,
+    "damage": 5,
+    "attack_zone": "mid",
+    "text": "Enhance Flip 1 foundation: This attack gets +1 speed and +1 damage. Your rival discards 1 momentum.\n\nDeadlock Enhance: This attack gets +5 damage.",
+    "numero": 177,
+    "numero_image": 177,
+    "type": "attack",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/177.png"
+  },
+  {
+    "name": "Glamorous",
+    "resources": [
+      "earth",
+      "death",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "text": "Response: After you build this card, unflip 1 foundation.\n\nEnhance Flip: This attack gets +3 speed. Only playable if this attack's speed is less than its printed speed.",
+    "numero": 178,
+    "numero_image": 178,
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/178.png"
+  },
+  {
+    "name": "Someone With Style",
+    "resources": [
+      "earth",
+      "death",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "text": "Response Destroy: After this foundation is committed due to a Stun ability, reduce your rival's attack to 0 speed. Playable while committed.\n\nEnhance [Once per turn] Destroy 1 foundation: Ready this foundation. Playable while committed.",
+    "numero": 179,
+    "numero_image": 179,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/179.png"
+  },
+  {
+    "name": "Tight Lipped",
+    "resources": [
+      "earth",
+      "death",
+      "life"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 0,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "text": "Enhance Flip 1 foundation: Your attack gets +1 damage.",
+    "numero": 180,
+    "numero_image": 180,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/180.png"
   },
   {
     "name": "Go Beyond!",
-    "asset": "mha/Go Beyond.jpg",
     "resources": [
       "infinity"
     ],
     "formats": [
       "Boku no Card Game"
-    ]
+    ],
+    "control": 3,
+    "difficulty": 3,
+    "block_modifier": 4,
+    "block_zone": "mid",
+    "text": "{UA} Enhance Discard 1 momentum: Add 1 attack from your discard pile to your hand. Remove this card from the game.",
+    "numero": 181,
+    "numero_image": 181,
+    "type": "action",
+    "rarity": "promo",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/181.png"
+  },
+  {
+    "name": "All Might (True Form)4",
+    "resources": [
+      "death",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 7,
+    "vitality": 30,
+    "text": "At the start of your turn, lose 3 health. This cannot reduce your health below 1.",
+    "numero": 182,
+    "numero_image": 182,
+    "type": "character",
+    "rarity": "promo",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/182.png"
+  },
+  {
+    "name": "Kamui Woods",
+    "resources": [
+      "water",
+      "air",
+      "earth"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 7,
+    "vitality": 20,
+    "text": "Response: After an attack is blocked, ready this character. Playable while committed.\n\nEnhance Commit: For the rest of this turn, your attacks get +1 damage and rival attacks get -1 damage.",
+    "numero": 185,
+    "numero_image": 185,
+    "type": "character",
+    "rarity": "promo",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/185.png"
+  },
+  {
+    "name": "Plus Ultra!",
+    "resources": [
+      "infinity"
+    ],
+    "formats": [
+      "Boku no Card Game"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 5,
+    "block_zone": "mid",
+    "text": "When attempting to block with this card, reduce the speed of your rival's attack to 0.\n\n{UA} First Enhance Discard 1 momentum: Double your attack's speed or damage.",
+    "numero": 210,
+    "numero_image": 210,
+    "type": "action",
+    "rarity": "promo",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/210.png"
   }
 ]
