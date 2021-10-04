@@ -38,7 +38,7 @@
       <!-- TODO onclick detail popup / dialog / lightbox -->
       <h4>{{ (data.keywords ? data.keywords : []).join(" - ") }}</h4>
       <h6>{{ data.text || "Missing text" }}</h6>
-      <q-btn v-if="data.rochester_url" type="a" href='https://rochesterccg.com/{{data.rochester_url}}' target="_blank" label="Buy on RochesterCCG" color="orange" />
+      <q-btn v-if="data.rochester_url" type="a" :href="'https://www.rochesterccg.com' + data.rochester_url" target="_blank" label="Buy on RochesterCCG" color="orange" />
     </div>
 
     
