@@ -1,8 +1,8 @@
 import { ref, computed } from 'vue'
 import real_cards from './cards.json'
-import future from './comingsoon.json'
+import mha from './comingsoon.json'
 
-export const cards = [...real_cards, ...future]
+export const cards = [...mha, ...real_cards]
 
 const selections = ref({})
 export function initializeSelections() {
