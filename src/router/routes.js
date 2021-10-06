@@ -8,6 +8,14 @@ const routes = [
         component: () => import("pages/CardHome.vue"),
         props: (route) => ({ query: route.query }),
       },
+      // {
+      //   path: "config",
+      //   component: () => import("pages/Config.vue"),
+      // },
+      {
+        path: "deck",
+        component: () => import("pages/DeckDetail.vue"),
+      }
       // { path: 'deck', component: () => import('../views/DeckDataGrid.vue') },
       // { path: 'load', component: () => import('../components/deckloader/DeckLoader.vue') },
       // { path: 'about', component: () => import('../views/About.vue') },

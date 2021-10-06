@@ -27,6 +27,16 @@ export function decrement(state, card) {
     if (state.face == card) { state.face = undefined}
   }
 }
+export function decrementSide(state, card) {
+  let qtyObj = state.side[card.asset] || { qty: 1 };
+  let count = qtyObj.qty - 1;
+  if (count > 0) {
+    state.side[card.asset] = { ...card, qty: count }
+  } else {
+    delete state.side[card.asset]
+    if (state.face == card) { state.face = undefined}
+  }
+}
 export function setFace(state, card) {
   state.face = card
 }
@@ -50,10 +60,10 @@ export function setQty(state, card, qty) {
 
 // TODO limit this duplication of code
 export function send2Board(state, card) {
-  this.decrement(state, card, state.deck);
-  this.increment(state, card, state.side);
+  decrement(state, card);
+  incrementSide(state, card);
 }
 export function send2Main(state, card) {
-  this.decrement(state, card, state.side);
-  this.increment(state, card, state.deck);
+  decrementSide(state, card);
+  increment(state, card);
 }

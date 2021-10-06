@@ -39,10 +39,10 @@
         </q-btn>
       </q-toolbar>
 
-      <!-- <q-tabs align='left'>
+      <q-tabs align='left'>
         <q-route-tab to="/" label="Search" />
-        <q-route-tab to="/config" label="Preferences" />
-      </q-tabs> -->
+        <q-route-tab to="/deck" label="Deck Detail" />
+      </q-tabs>
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" side="left" behavior="mobile" elevated>
