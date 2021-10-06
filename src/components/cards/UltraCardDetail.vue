@@ -30,14 +30,14 @@
           Vitality : {{ data["vitality"] }} <br />
         </div>
         {{ data.rarity || "" }}
-        <span v-if="myQty > 0" class="badge badge-success">Quantity in Deck {{ myQty }}</span>
+        <span v-if="myQty > 0" class="bg-positive">Quantity in Deck {{ myQty }}</span>
       </div>
     </div>
 
     <div class="col-sm-6 col-xs-12 col-grow">
       <!-- TODO onclick detail popup / dialog / lightbox -->
       <h4>{{ (data.keywords ? data.keywords : []).join(" - ") }}</h4>
-      <h6>{{ data.text || "Missing text" }}</h6>
+      <h6 style="margin: 0px 15px">{{ data.text || "Missing text" }}</h6>
       <q-btn v-if="data.rochester_url" type="a" :href="'https://www.rochesterccg.com' + data.rochester_url" target="_blank" label="Buy on RochesterCCG" color="orange" />
     </div>
 
