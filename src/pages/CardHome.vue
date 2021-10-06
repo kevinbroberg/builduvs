@@ -48,6 +48,7 @@
 
 <script>
 import InfiniteScrollCardDetailList from 'components/cards/InfiniteScrollCardDetailList'
+import { copyToClipboard } from 'quasar'
 import * as provider from 'assets/card_provider.js'
 
 export default {
@@ -110,7 +111,8 @@ export default {
     },
     async copyFilterLink() {
         let filterLink = location.origin + this.$route.path + '?' + provider.getFilterPath()
-        await navigator.clipboard.writeText(filterLink)
+        // await navigator.clipboard.writeText(filterLink)
+        await copyToClipboard(filterLink)
     },
     clearFilters() {
       provider.initializeSelections()

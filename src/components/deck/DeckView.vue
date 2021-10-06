@@ -1,7 +1,7 @@
 <script setup> 
   import { ref, computed } from 'vue'
   import { useStore } from 'vuex'
-  import { useQuasar } from 'quasar'
+  import { useQuasar, copyToClipboard } from 'quasar'
 
   const store = useStore()
   const deck = computed(() => store.getters['deck/getDeckList'] )
@@ -48,43 +48,48 @@
   // const sortedDeck = computed(() => [...deck.value].sort(compare))
   import Elements from 'components/cards/detail/Elements.vue'
 
+  function count(stack) {
+    return stack.reduce((total, me) => total + me.qty, 0)
+  }
   function arbitraryPartition(funk) {
-    let contents = deck.value // sortedDeck.value
+    let contents = store.getters['deck/getDeckList'] // TODO, sometime, sort this
     // unique values for applying the function
     let parts = new Set([...contents.map(funk)])
     
     // coerce the Set back into a List
     return [...parts].map(me => {
       let part = contents.filter(c => funk(c) == me)
-      let qty = part.reduce((total, me) => total + me.qty, 0)
-      return {key: me, label: `${qty} ${me}`, cards: part}
+      let qty = count(part)
+      return {key: me, label: `${me}: ${qty}`, cards: part} // TODO decouple algorithm from this display logic
     })
   }
+
   function matchSymbols(card) {
     let mainResources = face.value.resources
     return card.resources.filter(resource => mainResources.includes(resource))
   }
-  function symbolPartition() {
-    return arbitraryPartition(card => matchSymbols(card).sort().toString())
-  }
-  function simplePartition() {
-    return arbitraryPartition(c => "All")
-  }
   
   const partitions = computed(() => {
+    let main
     switch(howPartition.value) {
         case type:
-          return arbitraryPartition(card => card.type)
+          main = arbitraryPartition(card => card.type)
         case symbol:
-          return symbolPartition()
+          main = arbitraryPartition(card => matchSymbols(card).sort().toString())
         case control:
-          return arbitraryPartition(card => card.control)
+          main = arbitraryPartition(card => card.control)
         case difficulty:
-          return arbitraryPartition(card => card.difficulty)
+          main = arbitraryPartition(card => card.difficulty)
         case simple:
         default:
-          return simplePartition()
+          main = arbitraryPartition(c => "All")
     }
+    const sideContent = store.getters['deck/getSideList']
+    if (sideContent?.length > 0) {
+      let sidePart = {key: "sideboard", label: `Sideboard: ${count(sideContent)}`, cards: sideContent}
+      main.push(sidePart)
+    }
+    return main
   })
 
 /*
@@ -100,7 +105,7 @@ export function getDeckText(state) {
 }
 */
   function deck2clipboard() {
-    const deckList = partitions.value.map(p => p.cards).flat()
+    const deckList = partitions.value.map(p => p.cards).flat() // use displayed ordering of cards
     let name = face.value?.name // mainchar may be undefined
     let myFace = name ? [{ name: name, qty: 1 }] : [] // if it's not, there is 1 copy in your deck
     let deck = [...myFace, ...deckList].map(c => `${c.qty} ${c.name}`)
@@ -108,7 +113,8 @@ export function getDeckText(state) {
     let side = store.getters['deck/hasSide'] ? ['sideboard', ...store.getters['deck/getSideList'](state).map(c => `${c.qty} ${c.name}`)] : []
     // maybe TODO sometime: accumulate additional copies of main char into the 1st quantity, vs 1 Amy... 3 Amy that will happen now
     // a possible method: simply increment() face before exporting? or have a general dedupe method, and prepend face to the list before dedupe
-    navigator.clipboard.writeText([...deck, ...side ].join('\n'))
+    // navigator.clipboard.writeText([...deck, ...side ].join('\n'))
+    copyToClipboard([...deck, ...side ].join('\n')).catch(() => console.log("TODO alert the user that their clipboard failed"))
   }
 </script>
 
