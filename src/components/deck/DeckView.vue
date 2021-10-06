@@ -65,8 +65,8 @@
   }
 
   function matchSymbols(card) {
-    let mainResources = face.value.resources
-    return card.resources.filter(resource => mainResources.includes(resource))
+    let mainResources = face.value?.resources
+    return card.resources.filter(resource => mainResources?.includes(resource))
   }
   
   const partitions = computed(() => {
