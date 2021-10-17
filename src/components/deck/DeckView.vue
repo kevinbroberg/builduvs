@@ -164,17 +164,18 @@ export function getDeckText(state) {
       <q-separator/>
       <!-- <q-item-label v-if="howPartition == symbol" header><Elements :card=partition.cards[0].resources /></q-item-label> -->
       <q-item-label header>{{partition.label}}</q-item-label> <!-- v-else -->
-      <q-item v-for="card in partition.cards" :key="card.asset" no-wrap>
-        <q-item-section avatar>
-            <q-avatar>
+      <q-item v-for="card in partition.cards" :key="card.asset" no-wrap dense>
+        <q-item-section avatar v-ripple>
+            <q-avatar square>
               <!-- TODO zoom into just the card art here -->
-              <!-- TODO onmouseover fade out and display an "add" icon -->
-              <img :src="require(`assets/images/card_images/${card.asset}`)" @click="increment(card)" />
+              <img
+                :src="require(`assets/images/card_images/${card.asset}`)" @click="increment(card)" 
+              />
               
             </q-avatar>  
         </q-item-section>
         <q-item-section>
-            <q-item-label lines="2"><q-btn flat round no-margin icon="remove" @click="decrement(card)"/> {{card.qty}} {{card.name}}</q-item-label>            
+            <q-item-label lines="2"><q-btn v-ripple flat round no-margin icon="remove" @click="decrement(card)"/> {{card.qty}} {{card.name}}</q-item-label>            
         </q-item-section>
       </q-item>
     </div>
