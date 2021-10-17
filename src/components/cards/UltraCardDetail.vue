@@ -18,6 +18,7 @@
           style="height: 600; width: 300px"
           :src="require('assets/images/card_images/' + this.data.asset)"
           :alt="data.name"
+          v-ripple
       />
       <div class="col-4">
         <span :class="'card-list-' + data.type">{{data.type}}</span><br />
@@ -91,28 +92,6 @@ export default {
 </script>
 
 <style scoped>
-.preview {
-  max-height: 50;
-  display: inline-block;
-  margin: auto;
-}
-
-.card:hover {
-  background-color: #989db3;
-  cursor: pointer;
-}
-
-.cardstats {
-  display: inline-block;
-  width: 50;
-}
-
-.card-detail {
-  background: #f4f4f4;
-  padding: 10px;
-  border-bottom: 1px #ccc dotted;
-}
-
 body {
   font-family: arial;
   padding: 0;
@@ -123,23 +102,5 @@ body {
 
 #options > div {
   margin: 10px 0px;
-}
-.card-list-character {
-  background-color: #98a6e3;
-}
-.card-list-foundation {
-  background-color: #b6a7a0;
-}
-.card-list-attack {
-  background-color: #d25421;
-}
-.card-list-asset {
-  background-color: #a3bf75;
-}
-.card-list-action {
-  background-color: #7e9cc0;
-}
-.card-list-side {
-  background-color: #999999;
 }
 </style>
