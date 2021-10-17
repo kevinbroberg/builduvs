@@ -4,7 +4,6 @@
 
   import { useStore } from 'vuex'
   import CardCard from 'src/components/cards/CardCard.vue'
-  import SideboardCardCard from 'src/components/cards/SideboardCardCard.vue' // holy shit this is such bad practice
 
   const store = useStore()
   const deck = computed(() => store.getters['deck/getDeckList'] )
@@ -18,8 +17,8 @@
       <CardCard v-if=face :card="this.face" />
       
     </div>
-    <CardCard v-for="card in this.deck" v-bind:key=card?.name :card=card />
+    <CardCard v-for="card in this.deck" v-bind:key=card?.name :card=card :main=true />
     <q-separator row />
-    <SideboardCardCard v-for="card in this.side" v-bind:key=card?.name :card=card />
+    <CardCard v-for="card in this.side" v-bind:key=card?.name :card=card :main=false />
   </div>
 </template>
