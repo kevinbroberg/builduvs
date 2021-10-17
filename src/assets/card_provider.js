@@ -1,11 +1,13 @@
 import { ref, computed } from 'vue'
 import real_cards from './cards.json'
-import mha from './comingsoon.json'
+import mha from './comingsoon.json' // someday: lazy-load card resources by format
+// TODO sooner than later: pull out legacy / retro 
 
 export const cards = [...mha, ...real_cards]
 
 const selections = ref({})
 export function initializeSelections() {
+    const prevFormat = selections.value?.formats || ["standard"]
     selections.value = {
         name:  '', 
         text:  '', 
@@ -15,7 +17,7 @@ export function initializeSelections() {
         extensions:  [], 
         types:     [], 
         keywords:  [], 
-        formats:  ["standard"],
+        formats:  prevFormat,
         difficulty: [],
         control: [],
     }
