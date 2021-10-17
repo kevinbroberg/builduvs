@@ -74,12 +74,16 @@
     switch(howPartition.value) {
         case type:
           main = arbitraryPartition(card => card.type)
+          break
         case symbol:
           main = arbitraryPartition(card => matchSymbols(card).sort().toString())
+          break
         case control:
           main = arbitraryPartition(card => card.control)
+          break
         case difficulty:
           main = arbitraryPartition(card => card.difficulty)
+          break
         case simple:
         default:
           main = arbitraryPartition(c => "All")
