@@ -5,20 +5,20 @@
   const data = ref(props.card)
   
   const store = useStore()
-  const increment = ev => store.commit('deck/increment', ev)
-  const decrement = ev => store.commit('deck/decrement', ev)
-  const side = ev => store.commit('deck/send2Board', ev)
+  const increment = ev => store.commit('deck/increment', data.value)
+  const decrement = ev => store.commit('deck/decrement', data.value)
+  const side = ev => store.commit('deck/send2Board', data.value)
 </script>
 
 <template>
-<q-card style="max-width: 250px" >
+<q-card>
     <!-- <q-card-section class="bg-purple text-white"> -->
         <q-img
             loading="lazy"
             fit="cover"
             :src="require('assets/images/card_images/' + data.asset)"
             :alt="data.name">
-            <div class="absolute-bottom">
+            <div class="absolute-bottom" text-subtitle2 flex flex-center>
               {{data.qty}} {{data.name}}
             </div>
         </q-img>
