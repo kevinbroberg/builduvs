@@ -18,9 +18,9 @@
             fit="cover"
             :src="require('assets/images/card_images/' + data.asset)"
             :alt="data.name">
-            <!-- <div class="absolute-bottom">
-              {{data.name}}
-            </div> -->
+            <div class="absolute-bottom">
+              {{data.qty}} {{data.name}}
+            </div>
         </q-img>
     <!-- </q-card-section> -->
 
