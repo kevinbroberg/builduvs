@@ -5,6 +5,13 @@
         <body>Symbols. AND across lines, OR within a line</body>
         <q-option-group v-model="selections.symbols" :options="groupOptions(symbolOptions)" 
           inline multiple dense type="checkbox"/>
+        
+          <q-btn v-for="(opt, i) in symbolOptions" v-bind:key=opt 
+            :push="symbolPicks[i]" :color="symbolPicks[i] ? 'primary' : 'white'"
+            @click="symbolPicks[i] = !symbolPicks[i]; doSymbols()" >
+            <Elements :resources=[opt] />
+          </q-btn>
+        
         <q-separator />
         <q-option-group v-model="selections.symbols2" :options="groupOptions(symbolOptions)" 
           inline multiple dense type="checkbox"/>
@@ -48,13 +55,14 @@
 
 <script>
 import InfiniteScrollCardDetailList from 'components/cards/InfiniteScrollCardDetailList'
+import Elements from "components/cards/detail/Elements";
 import { copyToClipboard } from 'quasar'
 import * as provider from 'assets/card_provider.js'
 
 export default {
   name: 'Home',
   components: {
-    InfiniteScrollCardDetailList
+    InfiniteScrollCardDetailList, Elements
   },
   props: ["query"],
   created() {
@@ -63,6 +71,7 @@ export default {
   data() {
     return {
       symbolOptions: ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "infinity", "life", "order", "void", "water"],
+      symbolPicks: Array(13).fill(false),
       keywordTags: [],
       textTags: [],
       selections: provider.selections,
@@ -117,6 +126,9 @@ export default {
     clearFilters() {
       provider.initializeSelections()
     },
+    doSymbols() {
+      this.selections.symbols = this.symbolOptions.map((sy, i) => this.symbolPicks[i] ? sy : null).filter(e => e)
+    }
   }
 }
 </script>
