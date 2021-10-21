@@ -1491,7 +1491,7 @@
     "formats": [
       "My Hero Academia"
     ],
-    "control": 5,
+    "control": 3,
     "difficulty": 5,
     "block_modifier": 3,
     "block_zone": "high",
@@ -2900,7 +2900,8 @@
   {
     "name": "Quick Creation",
     "keywords": [
-      "Weapon"
+      "Weapon",
+      "Breaker: 1"
     ],
     "resources": [
       "life",
@@ -4809,7 +4810,7 @@
     "type": "action",
     "rarity": "promo",
     "extension_short": "mha01",
-    "extension": "My Hero Academia",
+    "extension": "My Hero Academia Quirk Pack",
     "asset": "mha01/181.png"
   },
   {
@@ -4834,7 +4835,7 @@
     "type": "character",
     "rarity": "promo",
     "extension_short": "mha01",
-    "extension": "My Hero Academia",
+    "extension": "My Hero Academia Quirk Pack",
     "asset": "mha01/182.png"
   },
   {
@@ -4859,7 +4860,7 @@
     "type": "character",
     "rarity": "promo",
     "extension_short": "mha01",
-    "extension": "My Hero Academia",
+    "extension": "My Hero Academia Quirk Pack",
     "asset": "mha01/185.png"
   },
   {
@@ -4880,7 +4881,7 @@
     "type": "action",
     "rarity": "promo",
     "extension_short": "mha01",
-    "extension": "My Hero Academia",
+    "extension": "My Hero Academia Tournament Pack",
     "asset": "mha01/210.png"
   }
 ]
