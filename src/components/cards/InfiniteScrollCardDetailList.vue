@@ -1,11 +1,16 @@
 <template>
+  <div>
+    <q-btn push @click="swapDisplay = !swapDisplay" label="Swap card display">
+      <q-tooltip>Swaps between tiles and card detail views</q-tooltip>
+    </q-btn>
+  </div>
   <div id="scroll-target-id">
-    <q-infinite-scroll @load="addMore" :offset="500" :scroll-target="'scroll-target-id'">
-      <!-- TODO use QList and QListItem -->
-      <UltraCardDetail
+    <q-infinite-scroll class="row" @load="addMore" :offset="500" :scroll-target="'scroll-target-id'">
+      <component :is=detailType
+        class="col-lg-2 col-md-3 col-sm-6 col-xs-12"
         v-for="(card, i) in scrolledCards"
         :key="i"
-        :data="card"
+        v-bind="{card: card, main: true}"
       />
       <template v-slot:loading>
         <div class="row justify-center q-my-md">
@@ -17,22 +22,28 @@
 </template>
 
 <script>
-import UltraCardDetail from "./UltraCardDetail.vue";
-import { filteredCards } from "assets/card_provider.js";
+import UltraCardDetail from "./UltraCardDetail.vue"
+import CardCard from "./CardCard.vue"
+import { filteredCards } from "assets/card_provider.js"
+// import { shallowRef } from 'vue'
 
 export default {
   name: "InfiniteScrollCardDetailList",
   components: {
-    UltraCardDetail,
+    UltraCardDetail, CardCard
   },
   data() {
     return {
+      swapDisplay: true,
       filteredCards: filteredCards,
       scrollLimit: 1,
       scrollPageSize: 5,
     };
   },
   computed: {
+    detailType() {
+      return this.swapDisplay ? CardCard : UltraCardDetail
+    },
     scrolledCards() {
       return this.filteredCards.slice(
         0,

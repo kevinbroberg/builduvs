@@ -5,8 +5,8 @@
   >
     <!-- Title -->
     <div class="col-12">
-      <h3 accent bolder v-if="amMain">{{data.name}}</h3>
-      <h3 v-else>{{ data.name }}</h3>
+      <h3 accent bolder v-if="amMain">{{card.name}}</h3>
+      <h3 v-else>{{ card.name }}</h3>
     </div>
     
     <!-- Image + fundamentals section -->
@@ -16,30 +16,30 @@
           :fit="'contain'"
           loading="lazy"
           style="height: 600; width: 300px"
-          :src="require('assets/images/card_images/' + this.data.asset)"
-          :alt="data.name"
+          :src="require('assets/images/card_images/' + this.card.asset)"
+          :alt="card.name"
           v-ripple
       />
       <div class="col-4">
-        <span :class="'card-list-' + data.type">{{data.type}}</span><br />
-        <Elements v-bind:resources="data.resources" /> <br />
-        {{ data.difficulty }} Difficulty {{ data.control }} Control<br />
-        <BlockData v-bind:card="data" />
-        <AttackData v-bind:card="data" />
+        <span :class="'card-list-' + card.type">{{card.type}}</span><br />
+        <Elements v-bind:resources="card.resources" /> <br />
+        {{ card.difficulty }} Difficulty {{ card.control }} Control<br />
+        <BlockData v-bind:card="card" />
+        <AttackData v-bind:card="card" />
         <div class="ischaracter" v-if="isCharacter()">
-          Handsize : {{ data["hand_size"] }} <br />
-          Vitality : {{ data["vitality"] }} <br />
+          Handsize : {{ card["hand_size"] }} <br />
+          Vitality : {{ card["vitality"] }} <br />
         </div>
-        {{ data.rarity || "" }}
+        {{ card.rarity || "" }}
         <span v-if="myQty > 0" class="bg-positive">Quantity in Deck {{ myQty }}</span>
       </div>
     </div>
 
     <div class="col-sm-6 col-xs-12 col-grow">
       <!-- TODO onclick detail popup / dialog / lightbox -->
-      <h4>{{ (data.keywords ? data.keywords : []).join(" - ") }}</h4>
-      <h6 style="margin: 0px 15px">{{ data.text || "Missing text" }}</h6>
-      <q-btn v-if="data.rochester_url" type="a" :href="'https://www.rochesterccg.com' + data.rochester_url" target="_blank" label="Buy on RochesterCCG" color="orange" />
+      <h4>{{ (card.keywords ? card.keywords : []).join(" - ") }}</h4>
+      <h6 style="margin: 0px 15px">{{ card.text || "Missing text" }}</h6>
+      <q-btn v-if="card.rochester_url" type="a" :href="'https://www.rochesterccg.com' + card.rochester_url" target="_blank" label="Buy on RochesterCCG" color="orange" />
     </div>
 
     
@@ -66,27 +66,27 @@ export default {
     const $store = useStore();
 
     function isCharacter() {
-      return props.data["type"] == "character";
+      return props.card["type"] == "character";
     }
 
     function increment() {
-      $store.commit("deck/increment", props.data);
+      $store.commit("deck/increment", props.card);
     }
 
     function decrement() {
-      $store.commit("deck/decrement", props.data);
+      $store.commit("deck/decrement", props.card);
     }
 
-    const myQty = computed(() => $store.getters["deck/quantity"](props.data.asset))
+    const myQty = computed(() => $store.getters["deck/quantity"](props.card.asset))
 
-    const amMain = computed(() => $store.getters["deck/getMain"]?.name == props.data["name"])
+    const amMain = computed(() => $store.getters["deck/getMain"]?.name == props.card["name"])
 
     return {
         increment, decrement, isCharacter, myQty, amMain
     }
   },
   props: {
-    data: Object,
+    card: Object,
   },
 };
 </script>
