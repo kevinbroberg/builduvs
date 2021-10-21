@@ -47,10 +47,10 @@
         use-input clearable 
         new-value-mode="add" label="Search text">
       </q-select>
-      <button v-if="resultsCount > 200" type="button">{{resultsCount}} Cards in Search</button>
-      <button v-if="resultsCount <= 200" @click="addAllToDeck" type="button">Add All {{resultsCount}} Cards to your Deck</button>
-      <button @click="clearFilters" type="button">Clear Filters</button>
-      <button @click="copyFilterLink" type="button">Copy Link to These Filters</button>
+      <q-btn push v-if="resultsCount > 200">{{resultsCount}} Cards in Search</q-btn>
+      <q-btn push v-if="resultsCount <= 200" @click="addAllToDeck">Add All {{resultsCount}} Cards to your Deck</q-btn>
+      <q-btn push @click="clearFilters">Clear Filters</q-btn>
+      <q-btn push @click="copyFilterLink">Copy Link to These Filters</q-btn>
     </div>
     <InfiniteScrollCardDetailList />
   </div>
