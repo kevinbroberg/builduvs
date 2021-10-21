@@ -20,7 +20,7 @@
 
   // TODO hacky roll-my-own reactivity, figure out why the label doesn't update itself
   //  like it does in the sidebar DeckView
-  const quantity = ref(data.value.qty)
+  const quantity = ref(data.value.qty || 0)
   function plus() { quantity.value ++ }
   function minus() { quantity.value -- }
 </script>
@@ -28,15 +28,15 @@
 <template>
 <q-card>
     <!-- <q-card-section class="bg-purple text-white"> -->
-        <q-img
-            loading="lazy"
-            fit="cover"
-            :src="require('assets/images/card_images/' + data.asset)"
-            :alt="data.name">
-            <div class="absolute-bottom" text-subtitle2 flex flex-center>
-              {{quantity}} {{data.name}}
-            </div>
-        </q-img>
+    <q-img
+        loading="lazy"
+        fit="cover"
+        :src="require('assets/images/card_images/' + data.asset)"
+        :alt="data.name">
+        <div class="absolute-bottom" text-subtitle2 flex flex-center>
+            {{quantity || ""}} {{data.name}}
+        </div>
+    </q-img>
     <!-- </q-card-section> -->
 
     <q-card-actions align="around">
