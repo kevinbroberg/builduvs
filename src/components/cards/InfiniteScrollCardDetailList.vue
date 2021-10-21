@@ -1,12 +1,12 @@
 <template>
   <div>
-    <q-btn push @click="swapDisplay = !swapDisplay" label="Swap card display">
-      <q-tooltip>Swaps between tiles and card detail views</q-tooltip>
+    <q-btn push @click="swapDisplay = !swapDisplay" :label=detailType.label>
+      <q-tooltip>{{detailType.tip}}</q-tooltip>
     </q-btn>
   </div>
   <div id="scroll-target-id">
     <q-infinite-scroll class="row" @load="addMore" :offset="500" :scroll-target="'scroll-target-id'">
-      <component :is=detailType
+      <component :is=detailType.component
         class="col-lg-2 col-md-3 col-sm-6 col-xs-12"
         v-for="(card, i) in scrolledCards"
         :key="i"
@@ -42,7 +42,8 @@ export default {
   },
   computed: {
     detailType() {
-      return this.swapDisplay ? CardCard : UltraCardDetail
+      return this.swapDisplay ? { label: "Show Details", tip: "View card details, one per row", component: CardCard } : 
+        { label: "Show Tiles", tip: "View cards as tiles", component: UltraCardDetail }
     },
     scrolledCards() {
       return this.filteredCards.slice(
@@ -61,7 +62,7 @@ export default {
     filteredCards: function(_, __) {
       // page froze up if user scrolled down then removed filters, as the page tried to render 100s of new cards
       console.log("Resetting scroll after search results changed")
-      this.scrollLimit = 1
+      this.scrollLimit = 0
     }
   }
 };
