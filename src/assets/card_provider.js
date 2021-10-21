@@ -20,6 +20,7 @@ export function initializeSelections() {
         formats:  prevFormat,
         difficulty: [],
         control: [],
+        rarity: [],
     }
 }
 initializeSelections()
@@ -36,7 +37,9 @@ export function getFilterPath() {
         "keywords",
         "formats", 
         "difficulty", 
-        "control"]
+        "control",
+        "rarity"
+      ]
     let stringy = fields.map(field => selections.value[field] && selections.value[field].length > 0 
       ? encodeURI(field + "=" + JSON.stringify(selections.value[field])) 
       : "")
@@ -71,6 +74,14 @@ function symbolFilterGenerator(choices) {
 function originMatchFilter(card) {
   if (selections.value.extensions && selections.value.extensions.length > 0) {
     return selections.value.extensions.includes(card.extension)
+  } else {
+    return true
+  }
+}
+
+function rarityFilter(card) {
+  if (selections.value.rarity && selections.value.rarity.length > 0) {
+    return selections.value.rarity.includes(card.rarity)
   } else {
     return true
   }
@@ -143,6 +154,7 @@ function allFiltersMatch(card) {
                  textFilter,
                  typeMatchFilter,
                  keywordFilter,
+                 rarityFilter,
                  ]
   return filters.every(f => {
     try {
@@ -178,6 +190,7 @@ export function handleQuery(query) {
         formats:    query.formats  ? JSON.parse(query.formats)  : selections.value.formats,
         difficulty: query.difficulty ? JSON.parse(query.difficulty) : selections.value.difficulty,
         control: query.control ? JSON.parse(query.control) : selections.value.control,
+        rarity: query.rarity ? JSON.parse(query.rarity): selections.value.rarity,
     }
     selections.value = queries
 }

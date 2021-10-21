@@ -25,6 +25,9 @@
         <q-option-group v-model="selections.formats" :options="groupOptions(formatOptions)" 
           inline multiple dense type="checkbox"/>
         <q-separator />
+        <q-option-group v-model="selections.rarity" :options="groupOptions(rarityOptions)" 
+          inline multiple dense type="checkbox"/>
+        <q-separator />
         <body>Difficulty</body>
         <q-option-group v-model="selections.difficulty" :options="numberOptions(difficulties)" 
           inline multiple dense type="checkbox"/>
@@ -96,6 +99,9 @@ export default {
     formatOptions() {
       return [...new Set(provider.cards.map(card => card.formats).flat())]
     },
+    rarityOptions() {
+      return [...new Set(provider.formatCards.value.map(card => card.rarity).flat())]
+    },
     keywordOptions() {
       return [...this.keywordTags, ...new Set(provider.filteredCards.value.map(card => card.keywords).flat())].sort()
     },
@@ -104,9 +110,10 @@ export default {
     },
   },
   methods: {
+    identity(o) { return o == 0 || o },
     // The "undefined" workaround is not very good; the checkboxes don't function
-    groupOptions(list) { return list.map(o => ({ value: o, label: o == undefined ? "Undefined" : this.initialCap(o) })) },
-    numberOptions(list) { return list.map(n => ({ value: n, label: n == undefined ? "Undefined" : n.toString() })) },
+    groupOptions(list) { return list.filter(this.identity).map(o => ({ value: o, label: o })) },
+    numberOptions(list) { return list.filter(this.identity).map(n => ({ value: n, label: n.toString() })) },
     addAllToDeck() {
         if (provider.filteredCards.value.length > 200) {
             // TODO just don't show the button unless they meet this criteria? Show a different one instead?
