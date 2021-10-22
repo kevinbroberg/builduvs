@@ -164,7 +164,7 @@ export function getDeckText(state) {
       <q-separator/>
       <!-- <q-item-label v-if="howPartition == symbol" header><Elements :card=partition.cards[0].resources /></q-item-label> -->
       <q-item-label header>{{partition.label}}</q-item-label> <!-- v-else -->
-      <q-item v-for="card in partition.cards" :key="card.asset" no-wrap dense>
+      <q-item v-for="card in partition.cards" :key="card.asset" no-wrap dense :class="`card-list-${card.type}`">
         <q-item-section avatar v-ripple>
             <q-avatar square>
               <!-- TODO zoom into just the card art here -->
@@ -175,10 +175,34 @@ export function getDeckText(state) {
             </q-avatar>  
         </q-item-section>
         <q-item-section>
-            <q-item-label lines="2"><q-btn v-ripple flat round no-margin icon="remove" @click="decrement(card)"/> {{card.qty}} {{card.name}}</q-item-label>            
+            <q-item-label lines="2">
+              <q-btn v-ripple flat round no-margin icon="remove" 
+                @click="decrement(card)"/>
+              {{card.qty}} {{card.name}}
+            </q-item-label>            
         </q-item-section>
       </q-item>
     </div>
   </q-list>
 </template>
 
+<style>
+.card-list-character {
+  background-color: #98a6e3;
+}
+.card-list-foundation {
+  background-color: #b6a7a0;
+}
+.card-list-attack {
+  background-color: #d25421;
+}
+.card-list-asset {
+  background-color: #a3bf75;
+}
+.card-list-action {
+  background-color: #7e9cc0;
+}
+.card-list-side {
+  background-color: #999999;
+}
+</style>
