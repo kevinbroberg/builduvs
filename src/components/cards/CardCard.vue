@@ -19,10 +19,12 @@
   const actions = props.main ? mainActions : sideActions
 
   // TODO hacky roll-my-own reactivity, figure out why the label doesn't update itself
-  //  like it does in the sidebar DeckView
+  //  like it does in the sidebar DeckView. And TODO de-duplicate limiting logic
   const quantity = ref(data.value.qty || 0)
-  function plus() { quantity.value ++ }
-  function minus() { quantity.value -- }
+  function plus() { if(quantity.value < (props.card?.limit || 4)) { quantity.value ++ } }
+  function minus() { if(quantity.value > 0) { 
+    quantity.value -- 
+  } }
 </script>
 
 <template>
