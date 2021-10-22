@@ -5,9 +5,10 @@
     </q-btn>
   </div>
   <div id="scroll-target-id">
-    <q-infinite-scroll class="row" @load="addMore" :offset="500" :scroll-target="'scroll-target-id'">
+    <q-infinite-scroll class="row" @load="addMore" :offset=500 
+      :scroll-target="'scroll-target-id'">
       <component :is=detailType.component
-        class="col-lg-2 col-md-3 col-sm-6 col-xs-12"
+        :class=detailType.class
         v-for="(card, i) in scrolledCards"
         :key="i"
         v-bind="{card: card, main: true}"
@@ -37,13 +38,15 @@ export default {
       swapDisplay: true,
       filteredCards: filteredCards,
       scrollLimit: 1,
-      scrollPageSize: 5,
+      scrollPageSize: 6,
     };
   },
   computed: {
     detailType() {
-      return this.swapDisplay ? { label: "Show Details", tip: "View card details, one per row", component: CardCard } : 
-        { label: "Show Tiles", tip: "View cards as tiles", component: UltraCardDetail }
+      return this.swapDisplay
+        ? { label: "Show Details", tip: "View card details, one per row", 
+          component: CardCard, class: "col-lg-2 col-md-3 col-sm-6 col-xs-12" } 
+        : { label: "Show Tiles", tip: "View cards as tiles", component: UltraCardDetail}
     },
     scrolledCards() {
       return this.filteredCards.slice(
@@ -54,7 +57,7 @@ export default {
   },
   methods: {
     addMore(index, done) {
-      this.scrollLimit = index + 1;
+      this.scrollLimit = index;
       done()
     },
   },
@@ -62,7 +65,7 @@ export default {
     filteredCards: function(_, __) {
       // page froze up if user scrolled down then removed filters, as the page tried to render 100s of new cards
       console.log("Resetting scroll after search results changed")
-      this.scrollLimit = 0
+      this.scrollLimit = 1
     }
   }
 };
