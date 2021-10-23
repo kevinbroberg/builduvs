@@ -2599,7 +2599,7 @@
     "control": 5,
     "difficulty": 2,
     "block_modifier": 2,
-    "block_zone": "mid",
+    "block_zone": "high",
     "text": "Response Flip: After this card is committed due to your rival's effect, draw 1 card. Playable while committed.\n\nEnhance Flip: Look at the top card of either player's deck. You may discard it.",
     "numero": 98,
     "numero_image": 98,
@@ -3025,7 +3025,7 @@
     "formats": [
       "My Hero Academia"
     ],
-    "control": 5,
+    "control": 4,
     "difficulty": 1,
     "block_modifier": 3,
     "block_zone": "mid",
@@ -3271,7 +3271,7 @@
     "formats": [
       "My Hero Academia"
     ],
-    "control": 5,
+    "control": 4,
     "difficulty": 2,
     "block_modifier": 3,
     "block_zone": "high",
@@ -4016,7 +4016,7 @@
     "formats": [
       "My Hero Academia"
     ],
-    "control": 5,
+    "control": 4,
     "difficulty": 2,
     "block_modifier": 3,
     "block_zone": "high",
@@ -4793,6 +4793,65 @@
     "asset": "mha01/180.png"
   },
   {
+    "name": "Nitro Explosion: Ignition",
+    "keywords": [
+      "Fury",
+      "Ranged"
+    ],
+    "resources": [
+      "fire",
+      "air",
+      "death"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Response [Card Pool]: After a Fury attack leaves your card pool during the Combat Phase, add the top card of your deck to your momentum.\n\nEnhance [Card Pool] Remove: Your attack gains Powerful: 2.",
+    "numero": 181,
+    "numero_image": 181,
+    "type": "attack",
+    "rarity": "promo",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/181.png"
+  },
+  {
+    "name": "One For All: Full Cowling 5% Strike",
+    "keywords": [
+      "Punch"
+    ],
+    "resources": [
+      "life",
+      "order",
+      "good"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "damage": 6,
+    "attack_zone": "high",
+    "text": "Enhance Discard your hand: Draw 3 cards.\n\nEnhance: If this attack is not blocked, commit your rival's character.",
+    "numero": 182,
+    "numero_image": 182,
+    "type": "attack",
+    "rarity": "promo",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/182.png"
+  },
+  {
     "name": "Go Beyond!",
     "resources": [
       "infinity"
@@ -4805,16 +4864,16 @@
     "block_modifier": 4,
     "block_zone": "mid",
     "text": "{UA} Enhance Discard 1 momentum: Add 1 attack from your discard pile to your hand. Remove this card from the game.",
-    "numero": 181,
-    "numero_image": 181,
+    "numero": 183,
+    "numero_image": 183,
     "type": "action",
     "rarity": "promo",
     "extension_short": "mha01",
-    "extension": "My Hero Academia Quirk Pack",
-    "asset": "mha01/181.png"
+    "extension": "My Hero Academia",
+    "asset": "mha01/183.png"
   },
   {
-    "name": "All Might (True Form)4",
+    "name": "All Might4",
     "resources": [
       "death",
       "good",
@@ -4829,14 +4888,70 @@
     "block_zone": "mid",
     "hand_size": 7,
     "vitality": 30,
-    "text": "At the start of your turn, lose 3 health. This cannot reduce your health below 1.",
-    "numero": 182,
-    "numero_image": 182,
+    "text": "At the start of your turn, lose 3 health. This cannot reduce your health below 1. First Form [Once per game]: Place 1 copy of 'All Might' from your hand on top of this character. Remove that 'All Might' at the end of this turn. Enhance Discard 1 'All Might' card: Your attack gets +3 damage. Draw 1 card.",
+    "numero": 184,
+    "numero_image": 184,
     "type": "character",
     "rarity": "promo",
     "extension_short": "mha01",
-    "extension": "My Hero Academia Quirk Pack",
-    "asset": "mha01/182.png"
+    "extension": "My Hero Academia",
+    "asset": "mha01/184.png"
+  },
+  {
+    "name": "Amphibious Ambush",
+    "keywords": [
+      "Combo (Ranged)",
+      "Ranged"
+    ],
+    "resources": [
+      "water",
+      "life",
+      "evil"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 3,
+    "damage": 5,
+    "attack_zone": "high",
+    "text": "Combo Enhance: Your rivals adds 1 face up foundation from their stage to their card pool, then builds the top card of their deck face down.\n\nEnhance: Add 1 other Ranged attack from your card pool to your momentum.",
+    "numero": 185,
+    "numero_image": 185,
+    "type": "attack",
+    "rarity": "promo",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/185.png"
+  },
+  {
+    "name": "Capture Evil-Doers",
+    "keywords": [
+      "Breaker: 1"
+    ],
+    "resources": [
+      "fire",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "text": "Enhance: Remove 1 rival momentum. If you did, add the top card of your deck to your momentum. Remove this card from the game.\n\nForm Discard 1 momentum: Discard up to 3 cards from your card pool.",
+    "numero": 186,
+    "numero_image": 186,
+    "type": "action",
+    "rarity": "promo",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/186.png"
   },
   {
     "name": "Kamui Woods",
@@ -4855,13 +4970,304 @@
     "hand_size": 7,
     "vitality": 20,
     "text": "Response: After an attack is blocked, ready this character. Playable while committed.\n\nEnhance Commit: For the rest of this turn, your attacks get +1 damage and rival attacks get -1 damage.",
-    "numero": 185,
-    "numero_image": 185,
+    "numero": 187,
+    "numero_image": 187,
     "type": "character",
     "rarity": "promo",
     "extension_short": "mha01",
-    "extension": "My Hero Academia Quirk Pack",
-    "asset": "mha01/185.png"
+    "extension": "My Hero Academia",
+    "asset": "mha01/187.png"
+  },
+  {
+    "name": "Villains Defeated",
+    "resources": [
+      "void",
+      "chaos",
+      "all"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "text": "Response Flip: After you discard any number of cards due to your rival's effect, draw 1 card. Playable while committed.\n\nResponse Flip: After your rival's blocked attack resolves, remove it and gain 2 health.",
+    "numero": 188,
+    "numero_image": 188,
+    "type": "foundation",
+    "rarity": "promo",
+    "extension_short": "mha01",
+    "extension": "My Hero Academia",
+    "asset": "mha01/188.png"
+  },
+  {
+    "name": "All Might3",
+    "resources": [
+      "air",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 30,
+    "text": "Enhance Commit, commit 1 foundation: Draw 2 cards.\n\nEnhance: Your Fury or Punch attack gets +1 speed or +1 damage for each card in your rival's hand. Playable while committed.",
+    "numero": 200,
+    "numero_image": 200,
+    "type": "character",
+    "rarity": "promo",
+    "extension_short": "mha_tournament_1",
+    "extension": "My Hero Tournament Pack 1",
+    "asset": "mha_tournament_1/001.png"
+  },
+  {
+    "name": "Crow and Frog Takedown",
+    "keywords": [
+      "Ally",
+      "Ranged"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 5,
+    "attack_zone": "high",
+    "text": "Enhance: This card does not count toward progressive difficulty for the rest of this turn.\n\nAsui/Tokoyami Enhance: Ready 1 card in your stage that has not been readied this Combat Phase.",
+    "numero": 201,
+    "numero_image": 201,
+    "type": "attack",
+    "rarity": "promo",
+    "extension_short": "mha_tournament_1",
+    "extension": "My Hero Tournament Pack 1",
+    "asset": "mha_tournament_1/002.png"
+  },
+  {
+    "name": "Double Front Beat-Down",
+    "keywords": [
+      "Fury",
+      "Punch",
+      "Ranged"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 1,
+    "difficulty": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 6,
+    "attack_zone": "high",
+    "text": "Enhance [Hand] Add this card to your card pool: Return this attack to its printed speed and damage.\n\nBakugo/Midoriya Enhance: Discard the top 2 cards of your deck. Build all foundations discarded this way face up.",
+    "numero": 202,
+    "numero_image": 202,
+    "type": "attack",
+    "rarity": "promo",
+    "extension_short": "mha_tournament_1",
+    "extension": "My Hero Tournament Pack 1",
+    "asset": "mha_tournament_1/003.png"
+  },
+  {
+    "name": "Gutter Punk Elbow",
+    "keywords": [
+      "Combo (Weapon)",
+      "Fury",
+      "Slam"
+    ],
+    "resources": [
+      "void",
+      "death",
+      "all"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 5,
+    "damage": 5,
+    "attack_zone": "mid",
+    "text": "Combo Enhance Discard 1 momentum: Add the first card in your card pool to your hand.\n\nEnhance: Cancel the next non-character ability your rival plays this Enhance Step.",
+    "numero": 203,
+    "numero_image": 203,
+    "type": "attack",
+    "rarity": "promo",
+    "extension_short": "mha_tournament_1",
+    "extension": "My Hero Tournament Pack 1",
+    "asset": "mha_tournament_1/004.png"
+  },
+  {
+    "name": "In The Typhoon",
+    "resources": [
+      "fire",
+      "chaos",
+      "evil"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 5,
+    "difficulty": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "text": "Enhance Remove, discard 2 cards: This attack is considered completely blocked during the Block Step.",
+    "numero": 204,
+    "numero_image": 204,
+    "type": "foundation",
+    "rarity": "promo",
+    "extension_short": "mha_tournament_1",
+    "extension": "My Hero Tournament Pack 1",
+    "asset": "mha_tournament_1/005.png"
+  },
+  {
+    "name": "Mashirao Ojiro",
+    "resources": [
+      "fire",
+      "earth",
+      "death"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 29,
+    "text": "Enhance Flip 1 foundation: Your attack gets +3 damage. If it is blocked, your rival flips 1 foundation.\n\nEnhance [Once per game]: This attack's speed cannot be reduced and it gets +1 speed for each of your rival's face down foundation. This ability cannot be canceled.",
+    "numero": 205,
+    "numero_image": 205,
+    "type": "character",
+    "rarity": "promo",
+    "extension_short": "mha_tournament_1",
+    "extension": "My Hero Tournament Pack 1",
+    "asset": "mha_tournament_1/006.png"
+  },
+  {
+    "name": "Mezo Shoji",
+    "resources": [
+      "life",
+      "evil",
+      "all"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 29,
+    "text": "Form [Once per turn]: Add 1 attack or foundation from your discard pile to your hand. Lose health equal to its printed difficulty.\n\nEnhance Commit: This attack gets +2 damage. Your next attack gets +2 damage.",
+    "numero": 206,
+    "numero_image": 206,
+    "type": "character",
+    "rarity": "promo",
+    "extension_short": "mha_tournament_1",
+    "extension": "My Hero Tournament Pack 1",
+    "asset": "mha_tournament_1/007.png"
+  },
+  {
+    "name": "Mina Ashido",
+    "resources": [
+      "water",
+      "life",
+      "chaos"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 7,
+    "vitality": 20,
+    "text": "Response [Once per turn, Your turn] Discard 1 card: After you check a card, you may play it as your next form this turn (no check necessary).\n\nEnhance: Your attack gets +1 speed. If it deals damage, gain 1 health.",
+    "numero": 207,
+    "numero_image": 207,
+    "type": "character",
+    "rarity": "promo",
+    "extension_short": "mha_tournament_1",
+    "extension": "My Hero Tournament Pack 1",
+    "asset": "mha_tournament_1/008.png"
+  },
+  {
+    "name": "Mt. Lady",
+    "resources": [
+      "earth",
+      "void",
+      "good"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 29,
+    "text": "Enhance Commit: Add 1 copy of \"Mt. Lady\" from your discard pile to your stage face up. If you could not, you may add 1 card from your discard pile to your momentum. (You cannot use abilities on additional \"Mt. Lady\" cards or commit them to pass checks.)\n\nEnhance Discard 1 momentum: This attack gets +2 damage for each \"Mt. Lady\" character in your stage. Playable while committed.",
+    "numero": 208,
+    "numero_image": 208,
+    "type": "character",
+    "rarity": "promo",
+    "extension_short": "mha_tournament_1",
+    "extension": "My Hero Tournament Pack 1",
+    "asset": "mha_tournament_1/009.png"
+  },
+  {
+    "name": "Pillar Swing",
+    "keywords": [
+      "Charge",
+      "Slam",
+      "Stun: 2",
+      "Weapon"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "chaos"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 3,
+    "difficulty": 6,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 3,
+    "damage": 8,
+    "attack_zone": "mid",
+    "text": "Enhance: If this attack is completely blocked, add it to your momentum.\n\nEnhance: The damage of this attack cannot be reduced below printed.",
+    "numero": 209,
+    "numero_image": 209,
+    "type": "attack",
+    "rarity": "promo",
+    "extension_short": "mha_tournament_1",
+    "extension": "My Hero Tournament Pack 1",
+    "asset": "mha_tournament_1/010.png"
   },
   {
     "name": "Plus Ultra!",
@@ -4880,8 +5286,349 @@
     "numero_image": 210,
     "type": "action",
     "rarity": "promo",
-    "extension_short": "mha01",
-    "extension": "My Hero Academia Tournament Pack",
-    "asset": "mha01/210.png"
+    "extension_short": "mha_tournament_1",
+    "extension": "My Hero Tournament Pack 1",
+    "asset": "mha_tournament_1/011.png"
+  },
+  {
+    "name": "Recipro Acceleration Kick",
+    "keywords": [
+      "Combo (Kick)",
+      "EX: 2",
+      "Kick"
+    ],
+    "resources": [
+      "earth",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "speed": 4,
+    "damage": 6,
+    "attack_zone": "low",
+    "text": "Combo Enhance: Your rival discards 1 random card and then draws 1 card.\n\nEnhance: You may remove Kick attacks from your card pool in addition to discarding momentum to pay for this attack's EX ability.",
+    "numero": 211,
+    "numero_image": 211,
+    "type": "attack",
+    "rarity": "promo",
+    "extension_short": "mha_tournament_1",
+    "extension": "My Hero Tournament Pack 1",
+    "asset": "mha_tournament_1/012.png"
+  },
+  {
+    "name": "All Might (II)",
+    "resources": [
+      "fire",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 29,
+    "text": "Enhance Discard the top 4 cards of your deck: Your attack gets +2 damage. If it is blocked, your next attack gets +2 damage.\n\nEnhance Discard 1 momentum: Draw 1 card. If this attack is not blocked, draw 1 card.",
+    "numero": 220,
+    "numero_image": 220,
+    "type": "character",
+    "rarity": "promo",
+    "extension_short": "mha_dlc",
+    "extension": "My Hero DLC 1",
+    "asset": "mha_dlc/220.png"
+  },
+  {
+    "name": "Mighty Punch",
+    "keywords": [
+      "Fury",
+      "Punch"
+    ],
+    "resources": [
+      "fire",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 3,
+    "damage": 7,
+    "attack_zone": "mid",
+    "text": "Enhance Discard the top 4 cards from your deck: If this attack is not blocked, draw 2 cards.\n\nDeadlock Enhance: Discard the top 10 cards of your rival's deck.",
+    "numero": 221,
+    "numero_image": 221,
+    "type": "attack",
+    "rarity": "promo",
+    "extension_short": "mha_dlc",
+    "extension": "My Hero DLC 1",
+    "asset": "mha_dlc/221.png"
+  },
+  {
+    "name": "Staggering Positivity",
+    "resources": [
+      "fire",
+      "good",
+      "all"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 4,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "text": "Enhance Flip: Your attack gets +2 damage. If this attack is blocked, shuffle up to 3 cards from either player's discard pile into their deck.",
+    "numero": 222,
+    "numero_image": 222,
+    "type": "foundation",
+    "rarity": "promo",
+    "extension_short": "mha_dlc",
+    "extension": "My Hero DLC 1",
+    "asset": "mha_dlc/222.png"
+  },
+  {
+    "name": "Ochaco Uraraka (II)",
+    "resources": [
+      "air",
+      "death",
+      "chaos"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 5,
+    "vitality": 33,
+    "text": "Response [Once per turn]: After your non-throw attack deals damage, add it to your hand. Your next check to play an attack this turn gets +2.\n\nEnhance Commit: This attack gets -3 speed.\n\nEnhance: This attack gets +2 speed.",
+    "numero": 223,
+    "numero_image": 223,
+    "type": "character",
+    "rarity": "promo",
+    "extension_short": "mha_dlc",
+    "extension": "My Hero DLC 1",
+    "asset": "mha_dlc/223.png"
+  },
+  {
+    "name": "Float Combo",
+    "keywords": [
+      "Combo (High Attack)",
+      "Ranged"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "chaos"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 3,
+    "difficulty": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 6,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Combo Enhance: Switch this attack's speed and damage.\n\nEnhance: If this attack is completely blocked, it still deals 1 damage.",
+    "numero": 224,
+    "numero_image": 224,
+    "type": "attack",
+    "rarity": "promo",
+    "extension_short": "mha_dlc",
+    "extension": "My Hero DLC 1",
+    "asset": "mha_dlc/224.png"
+  },
+  {
+    "name": "First Day of Class",
+    "resources": [
+      "air",
+      "death",
+      "chaos"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "text": "Response Flip: After this card is committed during the Enhance Step, ready it. Playable while committed.\n\nEnhance Commit: If this is the first attack this turn, your next check to play an attack this turn gets +2.",
+    "numero": 225,
+    "numero_image": 225,
+    "type": "foundation",
+    "rarity": "promo",
+    "extension_short": "mha_dlc",
+    "extension": "My Hero DLC 1",
+    "asset": "mha_dlc/225.png"
+  },
+  {
+    "name": "Tenya Iida (II)",
+    "resources": [
+      "earth",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 7,
+    "vitality": 19,
+    "text": "Response [Once per turn] Discard 1 card: After an attack is played, draw 1 card. This attack gets +2 speed. If you discard an attack, it gets +4 speed instead.\n\nEnhance: If this attack's speed is at least double its printed speed, it gets +2 or -2 damage.",
+    "numero": 226,
+    "numero_image": 226,
+    "type": "character",
+    "rarity": "promo",
+    "extension_short": "mha_dlc",
+    "extension": "My Hero DLC 1",
+    "asset": "mha_dlc/226.png"
+  },
+  {
+    "name": "High Engine Kick",
+    "keywords": [
+      "Kick"
+    ],
+    "resources": [
+      "earth",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "high",
+    "text": "Enhance Discard 1 card: This attack gets +2 speed. If you discard an attack, it gets +4 speed instead. Draw 1 card.",
+    "numero": 227,
+    "numero_image": 227,
+    "type": "attack",
+    "rarity": "promo",
+    "extension_short": "mha_dlc",
+    "extension": "My Hero DLC 1",
+    "asset": "mha_dlc/227.png"
+  },
+  {
+    "name": "Class 1-A President",
+    "resources": [
+      "earth",
+      "void",
+      "order"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "text": "Enhance Flip: If this attack's speed is at least double its printed speed, it gets +2 or -2 damage.",
+    "numero": 228,
+    "numero_image": 228,
+    "type": "foundation",
+    "rarity": "promo",
+    "extension_short": "mha_dlc",
+    "extension": "My Hero DLC 1",
+    "asset": "mha_dlc/228.png"
+  },
+  {
+    "name": "Tsuyu Asui (II)",
+    "resources": [
+      "water",
+      "life",
+      "evil"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 6,
+    "difficulty": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 29,
+    "text": "Enhance: If your attack is not blocked, your next attack this turn gets +2 speed.\n\nEnhance [Your attack] Discard 1 card from your rival's card pool: Your Ranged attack gets +4 damage.",
+    "numero": 229,
+    "numero_image": 229,
+    "type": "character",
+    "rarity": "promo",
+    "extension_short": "mha_dlc",
+    "extension": "My Hero DLC 1",
+    "asset": "mha_dlc/229.png"
+  },
+  {
+    "name": "Tongue Whip",
+    "keywords": [
+      "Ranged"
+    ],
+    "resources": [
+      "water",
+      "life",
+      "evil"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 3,
+    "difficulty": 4,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "damage": 4,
+    "attack_zone": "low",
+    "text": "Enhance: This attack gets +1 damage for each card in your rival's card pool.\n\nEnhance: Add the top card of your rival's deck to their card pool.",
+    "numero": 230,
+    "numero_image": 230,
+    "type": "attack",
+    "rarity": "promo",
+    "extension_short": "mha_dlc",
+    "extension": "My Hero DLC 1",
+    "asset": "mha_dlc/230.png"
+  },
+  {
+    "name": "First Villain Encounter",
+    "resources": [
+      "water",
+      "life",
+      "evil"
+    ],
+    "formats": [
+      "My Hero Academia"
+    ],
+    "control": 5,
+    "difficulty": 2,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "text": "Enhance Commit: Your attack gets +1 speed and +1 damage. Your next Ranged attack this turn gets -1 difficulty.\n\nDeadlock Enhance Flip: Your rival adds 2 foundations from their stage to their card pool.",
+    "numero": 231,
+    "numero_image": 231,
+    "type": "foundation",
+    "rarity": "promo",
+    "extension_short": "mha_dlc",
+    "extension": "My Hero DLC 1",
+    "asset": "mha_dlc/231.png"
   }
 ]
