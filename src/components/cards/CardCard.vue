@@ -29,25 +29,20 @@
 
 <template>
 <q-card>
-    <!-- <q-card-section class="bg-purple text-white"> -->
-    <q-img
-        loading="lazy"
-        fit="cover"
-        :src="require('assets/images/card_images/' + data.asset)"
-        :alt="data.name">
-        <div class="absolute-bottom" text-subtitle2 flex flex-center>
-            {{quantity || ""}} {{data.name}}
-        </div>
-    </q-img>
-    <!-- </q-card-section> -->
+  <q-img
+    loading="lazy"
+    fit="cover"
+    :src="require('assets/images/card_images/' + data.asset)"
+    :alt="data.name">
+    <div class="absolute-bottom" text-subtitle2 flex flex-center>
+      {{quantity || ""}} {{data.name}}
+    </div>
+  </q-img>
 
-    <q-card-actions align="around">
-        <q-btn-group push row>
-            <!-- @click increment, @click decrement, @click move2Side -->
-            <q-btn push col-4 color="positive" @click="actions.increment(); plus()" >+</q-btn> 
-            <q-btn push col-4 color="negative" @click="actions.decrement(); minus()">-</q-btn>
-            <q-btn push col-4 color="accent"   @click="actions.side(); minus()"     >{{swapLabel}}</q-btn>
-        </q-btn-group>
-    </q-card-actions>
+  <q-btn-group spread push>
+    <q-btn push col-4 color="positive" @click="actions.increment(); plus()" >Add</q-btn> 
+    <q-btn push col-4 color="negative" @click="actions.decrement(); minus()">Remove</q-btn>
+    <q-btn push col-4 color="accent"   @click="actions.side(); minus()"     >{{swapLabel}}</q-btn>
+  </q-btn-group>
 </q-card>
 </template>
