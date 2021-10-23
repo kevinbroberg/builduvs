@@ -9,8 +9,8 @@
       :scroll-target="'scroll-target-id'">
       <component :is=detailType.component
         :class=detailType.class
-        v-for="(card, i) in scrolledCards"
-        :key="i"
+        v-for="card in scrolledCards"
+        :key="card.asset"
         v-bind="{card: card, main: true}"
       />
       <template v-slot:loading>
@@ -26,7 +26,6 @@
 import UltraCardDetail from "./UltraCardDetail.vue"
 import CardCard from "./CardCard.vue"
 import { filteredCards } from "assets/card_provider.js"
-// import { shallowRef } from 'vue'
 
 export default {
   name: "InfiniteScrollCardDetailList",
