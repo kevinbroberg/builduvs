@@ -187,7 +187,7 @@ export function handleQuery(query) {
         symbols2: query.symbols2 ? JSON.parse(query.symbols2) : selections.value.symbols2,
         symbols3: query.symbols3 ? JSON.parse(query.symbols3) : selections.value.symbols3,
         
-        extensions: query.origins  ? JSON.parse(query.extensions)  : selections.value.extensions,
+        extensions: query.extensions ? JSON.parse(query.extensions)  : selections.value.extensions,
         types:      query.types    ? JSON.parse(query.types)    : selections.value.types,
         keywords:   query.keywords ? JSON.parse(query.keywords) : selections.value.keywords,
         formats:    query.formats  ? JSON.parse(query.formats)  : selections.value.formats,
