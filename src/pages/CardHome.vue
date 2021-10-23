@@ -126,9 +126,12 @@ export default {
       return first.toUpperCase() + rest.join('')
     },
     async copyFilterLink() {
-        let filterLink = location.origin + this.$route.path + '?' + provider.getFilterPath()
-        // await navigator.clipboard.writeText(filterLink)
-        await copyToClipboard(filterLink)
+      let chosenFormats = provider.selections.value.formats
+      let linkMHA = this.$route.path.includes("mha") && chosenFormats.length == 1 && chosenFormats[0] == "My Hero Academia" // TODO magic string
+      let skips = linkMHA ? ["formats"] : []
+      let filterLink = location.origin + this.$route.path + '?' + provider.getFilterPath(skips)
+      //http://localhost:8080/mha?formats=%5B%22My%20Hero%20Academia%22%5D
+      await copyToClipboard(filterLink)
     },
     clearFilters() {
       provider.initializeSelections()

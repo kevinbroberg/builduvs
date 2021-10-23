@@ -25,7 +25,7 @@ export function initializeSelections() {
 }
 initializeSelections()
 
-export function getFilterPath() {
+export function getFilterPath(skips = []) {
     let fields = [
         "name", // TODO t y p e s c r i p t
         "text",
@@ -40,6 +40,9 @@ export function getFilterPath() {
         "control",
         "rarity"
       ]
+    if (skips) {
+      fields = fields.filter(f => !skips.includes(f))
+    }
     let stringy = fields.map(field => selections.value[field] && selections.value[field].length > 0 
       ? encodeURI(field + "=" + JSON.stringify(selections.value[field])) 
       : "")
