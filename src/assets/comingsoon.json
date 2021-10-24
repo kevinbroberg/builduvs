@@ -4817,7 +4817,7 @@
     "numero": 181,
     "numero_image": 181,
     "type": "attack",
-    "rarity": "promo",
+    "rarity": "secret",
     "extension_short": "mha01",
     "extension": "My Hero Academia",
     "asset": "mha01/181.png"
@@ -4846,7 +4846,7 @@
     "numero": 182,
     "numero_image": 182,
     "type": "attack",
-    "rarity": "promo",
+    "rarity": "secret",
     "extension_short": "mha01",
     "extension": "My Hero Academia",
     "asset": "mha01/182.png"
