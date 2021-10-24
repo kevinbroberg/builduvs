@@ -7,7 +7,7 @@
   const emit = defineEmits( [ "update:picks" ] )
   console.log(picks.value)
   const btnOn = {
-    color: "deep-orange-10",
+    color: "deep-orange-8",
     click: (sym) => {
       picks.value.splice(picks.value.indexOf(sym), 1)
       emit("update:picks", picks.value)

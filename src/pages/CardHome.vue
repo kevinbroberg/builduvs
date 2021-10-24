@@ -1,5 +1,5 @@
 <script setup>
-  import Selector from "./Selector"
+  import Selector from "components/filter/Selector"
   import Element from "components/cards/detail/Element"  
 </script>
 
