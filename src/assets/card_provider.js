@@ -11,16 +11,16 @@ export function initializeSelections() {
     selections.value = {
         name:  '', 
         text:  '', 
-        symbols:  [], 
+        symbols:   [], 
         symbols2:  [], 
         symbols3:  [],
-        extensions:  [], 
+        extensions:[], 
         types:     [], 
         keywords:  [], 
         formats:  prevFormat,
-        difficulty: [],
-        control: [],
-        rarity: [],
+        difficulty:[],
+        control:   [],
+        rarity:    [],
     }
 }
 initializeSelections()
@@ -67,7 +67,7 @@ function nameFilter(card) {
 function symbolFilterGenerator(choices) {
   return (card) => {
     if (choices && choices.length > 0) {
-      return card.resources.some(sym => choices.includes(sym.toLowerCase()))
+      return card.resources.some(sym => sym == "infinity" || choices.includes(sym.toLowerCase()))
     } else {
       return true
     }
