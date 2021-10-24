@@ -1,40 +1,29 @@
+<script setup>
+  import Selector from "./Selector"
+  import Element from "components/cards/detail/Element"  
+</script>
+
 <template>
   <div id="app">
     <div id="options"> <!-- TODO Use a QList here-->
       <div>
         <body>Symbols. AND across lines, OR within a line</body>
-        <q-option-group v-model="selections.symbols" :options="groupOptions(symbolOptions)" 
-          inline multiple dense type="checkbox"/>
-        
-          <q-btn v-for="(opt, i) in symbolOptions" v-bind:key=opt 
-            :push="symbolPicks[i]" :color="symbolPicks[i] ? 'primary' : 'white'"
-            @click="symbolPicks[i] = !symbolPicks[i]; doSymbols()" >
-            <Elements :resources=[opt] />
-          </q-btn>
-        
+          <Selector v-for="i in ['', '2', '3']" :key=i v-slot="{ selected }"
+          v-model:picks="selections['symbols' + i]" :options=symbolOptions>
+            {{selected}}<Element :element=selected />
+          </Selector>
         <q-separator />
-        <q-option-group v-model="selections.symbols2" :options="groupOptions(symbolOptions)" 
-          inline multiple dense type="checkbox"/>
+        <Selector v-model:picks="selections.types" :options="typeOptions"/>
         <q-separator />
-        <q-option-group v-model="selections.symbols3" :options="groupOptions(symbolOptions)" 
-          inline multiple dense type="checkbox"/>
+        <Selector v-model:picks="selections.formats" :options="formatOptions" />
         <q-separator />
-        <q-option-group v-model="selections.types" :options="groupOptions(typeOptions)" 
-          inline multiple dense type="checkbox"/>
-        <q-separator />
-        <q-option-group v-model="selections.formats" :options="groupOptions(formatOptions)" 
-          inline multiple dense type="checkbox"/>
-        <q-separator />
-        <q-option-group v-model="selections.rarity" :options="groupOptions(rarityOptions)" 
-          inline multiple dense type="checkbox"/>
+        <Selector v-model:picks="selections.rarity" :options="rarityOptions" />
         <q-separator />
         <body>Difficulty</body>
-        <q-option-group v-model="selections.difficulty" :options="numberOptions(difficulties)" 
-          inline multiple dense type="checkbox"/>
+        <Selector v-model:picks="selections.difficulty" :options="difficulties" />
         <q-separator />
         <body>Control</body>
-        <q-option-group v-model="selections.control" :options="numberOptions(controls)" 
-          inline multiple dense type="checkbox"/>
+        <Selector v-model:picks="selections.control" :options="controls" />
       </div>
       <q-select v-model="selections.extensions" :options="originOptions" standout dense stack-label 
         use-chips multiple label="Select extensions">
@@ -58,14 +47,13 @@
 
 <script>
 import InfiniteScrollCardDetailList from 'components/cards/InfiniteScrollCardDetailList'
-import Elements from "components/cards/detail/Elements";
 import { copyToClipboard } from 'quasar'
 import * as provider from 'assets/card_provider.js'
 
 export default {
   name: 'Home',
   components: {
-    InfiniteScrollCardDetailList, Elements
+    InfiniteScrollCardDetailList
   },
   props: ["query"],
   created() {
