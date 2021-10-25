@@ -14,11 +14,11 @@
 <template>
   <div class="q-pa-md row items-start q-gutter-md">
     <div>
-      <CardCard v-if=face :card="this.face" />
+      <CardCard v-if=face :card="face" />
       
     </div>
-    <CardCard v-for="card in this.deck" v-bind:key=card?.name :card=card :main=true />
+    <CardCard v-for="card in deck" v-bind:key=card?.name :card=card :main=true />
     <q-separator row />
-    <CardCard v-for="card in this.side" v-bind:key=card?.name :card=card :main=false />
+    <CardCard v-for="card in side" v-bind:key=card?.name :card=card :main=false />
   </div>
 </template>
