@@ -7,12 +7,16 @@
   <div id="app">
     <div id="options"> <!-- TODO Use a QList here-->
       <div>
-        <body>Symbols. AND across lines, OR within a line</body>
-          <Selector v-for="i in ['', '2', '3']" :key=i v-slot="{ selected }"
-            v-model:picks="selections['symbols' + i]" :options=symbolOptions
-            name="Symbols"
+          <Selector v-for="name in symbolListsToShow" :key=name
+            v-model:picks="selections[name]" :options=symbolOptions
+            name="Symbols" 
           >
-            {{selected}}<Element :element=selected />
+            <template v-slot:label>
+              <span class="col-1">
+                Symbols <q-btn v-if="symbolMax < 3" dense @click="symbolMax++" label="And"/>
+              </span>
+            </template>
+            <template v-slot:button="{selected}">{{selected}}<Element :element=selected /></template>
           </Selector>
         <q-separator />
         <Selector name="Type" v-model:picks="selections.types" :options="typeOptions"/>
@@ -26,14 +30,14 @@
         <Selector name="Control" v-model:picks="selections.control" :options="controls" />
         <span>
           <Selector name="Block" v-model:picks="selections.block_modifier" :options="blockOptions" />
-          <Selector name="Block zone" v-model:picks="selections.block_zone" :options="zoneOptions" v-slot="{selected}">
-            {{selected}} <Element :element="'block' + selected" />
+          <Selector name="Block zone" v-model:picks="selections.block_zone" :options="zoneOptions">
+            <template v-slot:button="{selected}">{{selected}}<Element :element="'block' + selected" /></template>
           </Selector>
         </span>
         <span>
           <Selector name="Damage" v-model:picks="selections.damage" :options="damageOptions" />
-          <Selector name="Zone" v-model:picks="selections.attack_zone" :options="zoneOptions" v-slot="{selected}">
-            {{selected}} <Element :element="'attack' + selected" />
+          <Selector name="Zone" v-model:picks="selections.attack_zone" :options="zoneOptions">
+            <template v-slot:button="{selected}">{{selected}}<Element :element="'attack' + selected" /></template>
           </Selector>
           <Selector name="Speed" v-model:picks="selections.speed" :options="speedOptions" />
         </span>
@@ -79,6 +83,7 @@ export default {
   data() {
     return {
       symbolOptions: ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "infinity", "life", "order", "void", "water"],
+      symbolMax: 1,
       keywordTags: [],
       textTags: [],
       selections: provider.selections,
@@ -129,6 +134,9 @@ export default {
     },
     zoneOptions() {
       return ["high", "mid", "low"]
+    },
+    symbolListsToShow() {
+      return ["symbols", "symbols2", "symbols3"].slice(0, this.symbolMax)
     }
   },
   methods: {
