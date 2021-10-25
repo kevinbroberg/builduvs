@@ -1,7 +1,7 @@
 <script setup>
   import { ref, computed, defineProps, defineEmits } from "vue"
 
-  const props = defineProps( { picks: Array, options: Array } )
+  const props = defineProps( { picks: Array, options: Array, name: String } )
   const picks = ref(props.picks)
   const color = "deep-orange-"
   const emit = defineEmits( [ "update:picks" ] )
@@ -30,12 +30,15 @@
 </script>
 
 <template>
- <q-btn-group push spread>
-  <q-btn v-for="opt, in options" v-bind:key=opt push class="text-black text-capitalize"
-    :color="(state[opt] ? btnOn : btnOff).color"
-    @click="(state[opt] ? btnOn : btnOff).click(opt)" >
-    <slot :selected=opt>{{opt}}</slot>
-    <q-separator horizontal />
-  </q-btn>
-</q-btn-group>
+ <span class="row">
+  <body v-if="props.name" class="col-1">{{props.name}}</body>
+  <q-btn-group push spread :class="[props.name ? 'col-11' : 'col-12']">
+    <q-btn v-for="opt in options" v-bind:key=opt push class="text-black text-capitalize"
+      :color="(state[opt] ? btnOn : btnOff).color"
+      @click="(state[opt] ? btnOn : btnOff).click(opt)" >
+      <slot :selected=opt>{{opt}}</slot>
+      <q-separator horizontal />
+    </q-btn>
+  </q-btn-group>
+</span>
 </template>

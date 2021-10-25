@@ -10,40 +10,36 @@
         <body>Symbols. AND across lines, OR within a line</body>
           <Selector v-for="i in ['', '2', '3']" :key=i v-slot="{ selected }"
             v-model:picks="selections['symbols' + i]" :options=symbolOptions
+            name="Symbols"
           >
             {{selected}}<Element :element=selected />
           </Selector>
         <q-separator />
-        <Selector v-model:picks="selections.types" :options="typeOptions"/>
+        <Selector name="Type" v-model:picks="selections.types" :options="typeOptions"/>
         <q-separator />
-        <Selector v-model:picks="selections.formats" :options="formatOptions" />
+        <Selector name="Format" v-model:picks="selections.formats" :options="formatOptions" />
         <q-separator />
-        <Selector v-model:picks="selections.rarity" :options="rarityOptions" />
+        <Selector name="Rarity" v-model:picks="selections.rarity" :options="rarityOptions" />
         <q-separator />
-        <body>Difficulty</body>
-        <Selector v-model:picks="selections.difficulty" :options="difficulties" />
+        <Selector name="Difficulty" v-model:picks="selections.difficulty" :options="difficulties" />
         <q-separator />
-        <body>Control</body>
-        <Selector v-model:picks="selections.control" :options="controls" />
+        <Selector name="Control" v-model:picks="selections.control" :options="controls" />
         <span>
-          <body>Block</body>
-          <Selector v-model:picks="selections.block_modifier" :options="blockOptions" />
-          <Selector v-model:picks="selections.block_zone" :options="zoneOptions" v-slot="{selected}">
+          <Selector name="Block" v-model:picks="selections.block_modifier" :options="blockOptions" />
+          <Selector name="Block zone" v-model:picks="selections.block_zone" :options="zoneOptions" v-slot="{selected}">
             {{selected}} <Element :element="'block' + selected" />
           </Selector>
         </span>
         <span>
-          <body>Attack</body>
-          <Selector v-model:picks="selections.damage" :options="damageOptions" />
-          <Selector v-model:picks="selections.attack_zone" :options="zoneOptions" v-slot="{selected}">
+          <Selector name="Damage" v-model:picks="selections.damage" :options="damageOptions" />
+          <Selector name="Zone" v-model:picks="selections.attack_zone" :options="zoneOptions" v-slot="{selected}">
             {{selected}} <Element :element="'attack' + selected" />
           </Selector>
-          <Selector v-model:picks="selections.speed" :options="speedOptions" />
+          <Selector name="Speed" v-model:picks="selections.speed" :options="speedOptions" />
         </span>
         <span>
-          <body>Character</body>
-          <Selector v-model:picks="selections.hand_size" :options="handOptions" />
-          <Selector v-model:picks="selections.vitality" :options="vitalityOptions" />
+          <Selector name="Handsize" v-model:picks="selections.hand_size" :options="handOptions" />
+          <Selector name="Health" v-model:picks="selections.vitality" :options="vitalityOptions" />
         </span>
       </div>
       <q-select v-model="selections.extensions" :options="originOptions" standout dense stack-label 
