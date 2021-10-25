@@ -5,7 +5,6 @@
   const picks = ref(props.picks)
   const color = "deep-orange-"
   const emit = defineEmits( [ "update:picks" ] )
-  console.log(picks.value)
   const btnOn = {
     color: "deep-orange-8",
     click: (sym) => {
