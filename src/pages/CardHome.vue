@@ -9,7 +9,8 @@
       <div>
         <body>Symbols. AND across lines, OR within a line</body>
           <Selector v-for="i in ['', '2', '3']" :key=i v-slot="{ selected }"
-          v-model:picks="selections['symbols' + i]" :options=symbolOptions>
+            v-model:picks="selections['symbols' + i]" :options=symbolOptions
+          >
             {{selected}}<Element :element=selected />
           </Selector>
         <q-separator />
@@ -24,6 +25,26 @@
         <q-separator />
         <body>Control</body>
         <Selector v-model:picks="selections.control" :options="controls" />
+        <span>
+          <body>Block</body>
+          <Selector v-model:picks="selections.block_modifier" :options="blockOptions" />
+          <Selector v-model:picks="selections.block_zone" :options="zoneOptions" v-slot="{selected}">
+            {{selected}} <Element :element="'block' + selected" />
+          </Selector>
+        </span>
+        <span>
+          <body>Attack</body>
+          <Selector v-model:picks="selections.damage" :options="damageOptions" />
+          <Selector v-model:picks="selections.attack_zone" :options="zoneOptions" v-slot="{selected}">
+            {{selected}} <Element :element="'attack' + selected" />
+          </Selector>
+          <Selector v-model:picks="selections.speed" :options="speedOptions" />
+        </span>
+        <span>
+          <body>Character</body>
+          <Selector v-model:picks="selections.hand_size" :options="handOptions" />
+          <Selector v-model:picks="selections.vitality" :options="vitalityOptions" />
+        </span>
       </div>
       <q-select v-model="selections.extensions" :options="originOptions" standout dense stack-label 
         use-chips multiple label="Select extensions">
@@ -51,7 +72,7 @@ import { copyToClipboard } from 'quasar'
 import * as provider from 'assets/card_provider.js'
 
 export default {
-  name: 'Home',
+  name: 'CardHome',
   components: {
     InfiniteScrollCardDetailList
   },
@@ -62,7 +83,6 @@ export default {
   data() {
     return {
       symbolOptions: ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "infinity", "life", "order", "void", "water"],
-      symbolPicks: Array(13).fill(false),
       keywordTags: [],
       textTags: [],
       selections: provider.selections,
@@ -88,7 +108,7 @@ export default {
       return [...new Set(provider.cards.map(card => card.formats).flat())]
     },
     rarityOptions() {
-      return [...new Set(provider.formatCards.value.map(card => card.rarity).flat())]
+      return this.getOptions("rarity")
     },
     keywordOptions() {
       return [...this.keywordTags, ...new Set(provider.filteredCards.value.map(card => card.keywords).flat())].sort()
@@ -96,12 +116,33 @@ export default {
     originOptions() {
       return [...new Set(provider.formatCards.value.map(card => card.extension))]
     },
+    blockOptions() {
+      return this.getNumberOptions("block_modifier")
+    },
+    speedOptions() {
+      return this.getNumberOptions("speed")
+    },
+    damageOptions() {
+      return this.getNumberOptions("damage")
+    },
+    handOptions() {
+      return this.getNumberOptions("hand_size")
+    },
+    vitalityOptions() {
+      return this.getNumberOptions("vitality")
+    },
+    zoneOptions() {
+      return ["high", "mid", "low"]
+    }
   },
   methods: {
-    identity(o) { return o == 0 || o },
-    // The "undefined" workaround is not very good; the checkboxes don't function
-    groupOptions(list) { return list.filter(this.identity).map(o => ({ value: o, label: o })) },
-    numberOptions(list) { return list.filter(this.identity).map(n => ({ value: n, label: n.toString() })) },
+    getOptions(field) {
+      return [...new Set(provider.formatCards.value.map(card => card[field]))].filter(e => e != undefined).sort()
+    },
+    getNumberOptions(field) {
+      return [...new Set(provider.formatCards.value.map(card => card[field]))]
+        .filter(e => e != undefined).sort((a, b) => a - b)
+    },
     addAllToDeck() {
         if (provider.filteredCards.value.length > 200) {
             // TODO just don't show the button unless they meet this criteria? Show a different one instead?
@@ -110,22 +151,15 @@ export default {
             provider.filteredCards.value.forEach(c => this.$store.commit('deck/increment', c))
         }
     },
-    initialCap([first, ...rest]) { // I LOVE destructuring but this handles edge cases badly
-      return first.toUpperCase() + rest.join('')
-    },
     async copyFilterLink() {
       let chosenFormats = provider.selections.value.formats
       let linkMHA = this.$route.path.includes("mha") && chosenFormats.length == 1 && chosenFormats[0] == "My Hero Academia" // TODO magic string
       let skips = linkMHA ? ["formats"] : []
       let filterLink = location.origin + this.$route.path + '?' + provider.getFilterPath(skips)
-      //http://localhost:8080/mha?formats=%5B%22My%20Hero%20Academia%22%5D
       await copyToClipboard(filterLink)
     },
     clearFilters() {
       provider.initializeSelections()
-    },
-    doSymbols() {
-      this.selections.symbols = this.symbolOptions.map((sy, i) => this.symbolPicks[i] ? sy : null).filter(e => e)
     }
   }
 }

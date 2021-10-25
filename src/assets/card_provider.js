@@ -5,6 +5,16 @@ import mha from './comingsoon.json' // someday: lazy-load card resources by form
 
 export const cards = [...mha, ...real_cards]
 
+/*
+"block_modifier": 0,
+"block_zone": "mid",
+"hand_size": 6,
+"vitality": 29,
+"speed": 4,
+"damage": 6,
+"attack_zone": "high",
+*/
+
 const selections = ref({})
 export function initializeSelections() {
     const prevFormat = selections.value?.formats || ["standard"]
@@ -21,6 +31,13 @@ export function initializeSelections() {
         difficulty:[],
         control:   [],
         rarity:    [],
+        block_modifier: [],
+        block_zone: [],
+        speed: [],
+        damage: [],
+        attack_zone: [],
+        vitality: [],
+        hand_size: [],
     }
 }
 initializeSelections()
@@ -38,7 +55,14 @@ export function getFilterPath(skips = []) {
         "formats", 
         "difficulty", 
         "control",
-        "rarity"
+        "rarity",
+        "block_modifier",
+        "block_zone",
+        "speed",
+        "damage",
+        "attack_zone",
+        "vitality",
+        "hand_size",
       ]
     if (skips) {
       fields = fields.filter(f => !skips.includes(f))
@@ -51,6 +75,18 @@ export function getFilterPath(skips = []) {
     return stringy.filter(val => val.length > 0).join("&")
     // let filterLink = location.origin + this.$route.path + '?' + queryStr
     // await navigator.clipboard.writeText(filterLink)
+}
+
+// TODO use more
+// suitable for any field with exactly 1 value, like difficulty or attack_zone
+function exactMatchFilter(field) {
+  return (card) => {
+    if (selections.value[field] && selections.value[field].length > 0) {
+      return selections.value[field].includes(card[field])
+    } else {
+      return true
+    }
+  }
 }
 
 function nameFilter(card) {
@@ -96,6 +132,7 @@ function typeMatchFilter(card) {
     return true
   }
 }
+
 function difficultyFilter(card) {
   if (selections.value.difficulty && selections.value.difficulty.length > 0) {
     return selections.value.difficulty.includes(card.difficulty)
@@ -158,6 +195,13 @@ function allFiltersMatch(card) {
                  typeMatchFilter,
                  keywordFilter,
                  rarityFilter,
+                 exactMatchFilter("block_modifier"),
+                 exactMatchFilter("block_zone"),
+                 exactMatchFilter("speed"),
+                 exactMatchFilter("damage"),
+                 exactMatchFilter("attack_zone"),
+                 exactMatchFilter("vitality"),
+                 exactMatchFilter("hand_size"),
                  ]
   return filters.every(f => {
     try {
@@ -183,18 +227,11 @@ export function handleQuery(query) {
     let queries = {
         name: query.name      ? stripQuotes(query.name)  : selections.value.name,
         text: query.text      ? stripQuotes(query.text)  : selections.value.text,
-        symbols:  query.symbols  ? JSON.parse(query.symbols)  : selections.value.symbols,
-        symbols2: query.symbols2 ? JSON.parse(query.symbols2) : selections.value.symbols2,
-        symbols3: query.symbols3 ? JSON.parse(query.symbols3) : selections.value.symbols3,
-        
-        extensions: query.extensions ? JSON.parse(query.extensions)  : selections.value.extensions,
-        types:      query.types    ? JSON.parse(query.types)    : selections.value.types,
-        keywords:   query.keywords ? JSON.parse(query.keywords) : selections.value.keywords,
-        formats:    query.formats  ? JSON.parse(query.formats)  : selections.value.formats,
-        difficulty: query.difficulty ? JSON.parse(query.difficulty) : selections.value.difficulty,
-        control: query.control ? JSON.parse(query.control) : selections.value.control,
-        rarity: query.rarity ? JSON.parse(query.rarity): selections.value.rarity,
     }
+    let listFields = ["symbols","symbols2","symbols3","extensions","types","keywords",
+      "formats", "difficulty", "control", "rarity", "block_modifier", "block_zone", "speed",
+      "damage", "attack_zone", "vitality","hand_size",]
+    listFields.forEach(field => queries[field] = query[field]  ? JSON.parse(query[field])  : selections.value[field])
     selections.value = queries
 }
 
