@@ -41,21 +41,24 @@ function reset() {
   <Selector name="Format" v-model:picks="selections.formats" :options="formatOptions()" />
   <q-separator />
   <q-btn push clickable ripple size='xl' spread @click=reset>Reset</q-btn>
-  <h1 v-if="me != null" @click="showPic = true">Using {{me.name}}</h1>
+  <div class="row" v-if="me != null" @click="showPic = !showPic"> 
+      <h1 v-if="me != null">Using {{me?.name}}</h1>
+  </div>
   <h1>Speed: 
-      <q-btn push size='xl' :color=zoneColor(me.attack_zone) clickable ripple @click="speed--" label="-"/>
+      <q-btn push size='xl' :color=zoneColor(me?.attack_zone) clickable ripple @click="speed--" label="-"/>
+
       {{speed}}
-      <q-btn push size='xl' :color=zoneColor(me.attack_zone) clickable ripple @click="speed++" label="+"/>
+      <q-btn push size='xl' :color=zoneColor(me?.attack_zone) clickable ripple @click="speed++" label="+"/>
   </h1>
   <h1>Damage: 
-      <q-btn push size='xl' :color=zoneColor(me.attack_zone) clickable ripple @click="damage--" label="-"/>
+      <q-btn push size='xl' :color=zoneColor(me?.attack_zone) clickable ripple @click="damage--" label="-"/>
       {{damage}}
-      <q-btn push size='xl' :color=zoneColor(me.attack_zone) clickable ripple @click="damage++" label="+"/>
+      <q-btn push size='xl' :color=zoneColor(me?.attack_zone) clickable ripple @click="damage++" label="+"/>
   </h1>
   <q-btn push clickable ripple size='xl' spread @click=reset>Reset</q-btn>
   <q-img v-if=showPic @click="showPic = false"
           style="max-height: 100vh" fit="contain"
           loading="lazy"
-          :src="require('assets/images/card_images/' + me.asset)"
-          :alt="me.name"/>
+          :src="require('assets/images/card_images/' + me?.asset)"
+          :alt="me?.name"/>
 </template>
