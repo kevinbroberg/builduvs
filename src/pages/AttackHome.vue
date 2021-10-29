@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import Selector from 'components/filter/Selector.vue'
 import Element from 'components/cards/detail/Element.vue'
 import { cards, filteredCards, selections, symbolOptions } from "assets/card_provider.js"
@@ -11,6 +11,11 @@ const speed = ref(0)
 const damage = ref(0)
 const showPic = ref(false)
 const me = computed(() => filteredCards.value.length == 1 ? filteredCards.value[0] : null)
+watch(me, (now, __) => {
+    //console.log("got a card!")
+    now != null ? reset() : null
+})
+selections.value.types = ["attack"]
 
 function zoneColor(zone) {
     switch(zone) {
@@ -27,6 +32,7 @@ function zoneColor(zone) {
 }
 
 function reset() {
+    selections.value.types = ["attack"]
     speed.value = me.value?.speed || 0
     damage.value = me.value?.damage || 0
     showPic.value = false
