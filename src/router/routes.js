@@ -21,6 +21,10 @@ const routes = [
       {
         path: "deck",
         component: () => import("src/pages/DeckHome.vue"),
+      },
+      {
+        path: "attack",
+        component: () => import('src/pages/AttackHome.vue')
       }
       // { path: 'deck', component: () => import('../views/DeckDataGrid.vue') },
       // { path: 'load', component: () => import('../components/deckloader/DeckLoader.vue') },

@@ -42,6 +42,7 @@
       <q-tabs align='left'>
         <q-route-tab to="/" label="Search" />
         <q-route-tab to="/deck" label="Deck Detail" />
+        <q-route-tab to="/attack" label="Attack Tracker" />
       </q-tabs>
     </q-header>
 

@@ -4,7 +4,7 @@ import mha from './comingsoon.json' // someday: lazy-load card resources by form
 // TODO sooner than later: pull out legacy / retro 
 
 export const cards = [...mha, ...real_cards]
-
+export const symbolOptions = ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "infinity", "life", "order", "void", "water"]
 /*
 "block_modifier": 0,
 "block_zone": "mid",
