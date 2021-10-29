@@ -33,8 +33,8 @@ function zoneColor(zone) {
 
 function reset() {
     selections.value.types = ["attack"]
-    speed.value = me.value?.speed || 0
-    damage.value = me.value?.damage || 0
+    speed.value = me?.value?.speed || 0
+    damage.value = me?.value?.damage || 0
     showPic.value = false
 }
 </script>
