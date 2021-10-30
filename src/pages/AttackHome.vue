@@ -9,6 +9,7 @@ function formatOptions() {
 
 const speed = ref(0)
 const damage = ref(0)
+const attack_zone = ref('mid')
 const showPic = ref(false)
 const me = computed(() => filteredCards.value.length == 1 ? filteredCards.value[0] : null)
 watch(me, (now, __) => {
@@ -20,11 +21,11 @@ selections.value.types = ["attack"]
 function zoneColor(zone) {
     switch(zone) {
         case 'low':
-            return 'yellow-8'
+            return 'yellow'
         case 'high':
-            return 'red-8'
+            return 'red'
         case 'mid':
-            return 'deep-orange-8'
+            return 'orange'
         default:
             return 'black'
     }
@@ -35,6 +36,7 @@ function reset() {
     selections.value.types = ["attack"]
     speed.value = me?.value?.speed || 0
     damage.value = me?.value?.damage || 0
+    attack_zone.value = me?.value?.attack_zone || "unknown"
     showPic.value = false
 }
 </script>
@@ -47,21 +49,31 @@ function reset() {
   <Selector name="Format" v-model:picks="selections.formats" :options="formatOptions()" />
   <q-separator />
   <q-btn push clickable ripple size='xl' spread @click=reset>Reset</q-btn>
-  <div class="row" v-if="me != null" @click="showPic = !showPic"> 
-      <h1 v-if="me != null">Using {{me?.name}}</h1>
+  <div v-if="me != null" class="row no-wrap justify-center"> 
+      <h3 v-if="me != null">Using {{me?.name}}</h3>
+      <!-- TODO dialog -->
+      <q-btn class="q-mx-none" square dense label="Show" :size="sm" @click="showPic = !showPic" />
   </div>
-  <h1>Speed: 
-      <q-btn push size='xl' :color=zoneColor(me?.attack_zone) clickable ripple @click="speed--" label="-"/>
-
-      {{speed}}
-      <q-btn push size='xl' :color=zoneColor(me?.attack_zone) clickable ripple @click="speed++" label="+"/>
-  </h1>
-  <h1>Damage: 
-      <q-btn push size='xl' :color=zoneColor(me?.attack_zone) clickable ripple @click="damage--" label="-"/>
-      {{damage}}
-      <q-btn push size='xl' :color=zoneColor(me?.attack_zone) clickable ripple @click="damage++" label="+"/>
-  </h1>
-  <q-btn push clickable ripple size='xl' spread @click=reset>Reset</q-btn>
+  <div class="row no-wrap justify-center ">
+    <q-btn push text-color=black clickable ripple @click="speed--" label="-"/>
+    <h3 class="q-mx-none">{{speed}}</h3>
+    <q-btn push text-color=black clickable ripple @click="speed++" label="+"/>
+    <q-btn-dropdown dense auto-close :class="`bg-${zoneColor(attack_zone)}`">
+        <template v-slot:label><h5 class="q-mx-none">{{attack_zone}}</h5></template>
+        <q-list>
+            <q-item v-for="zone in ['high', 'mid', 'low']" clickable v-ripple :key=zone :class="`bg-${zoneColor(zone)}`"
+            @click="attack_zone = zone">
+            <body class="text-capitalize">{{zone}}</body>
+            </q-item>
+        </q-list>
+    </q-btn-dropdown>
+    <q-btn push text-color=black clickable ripple @click="damage--" label="-"/>
+    <h3 class="q-mx-none">{{damage}}</h3>
+    <q-btn push text-color=black clickable ripple @click="damage++" label="+"/>
+  </div>
+  <div>
+    <q-btn push clickable ripple size='xl' spread @click=reset>Reset</q-btn>
+  </div>
   <q-img v-if=showPic @click="showPic = false"
           style="max-height: 100vh" fit="contain"
           loading="lazy"
