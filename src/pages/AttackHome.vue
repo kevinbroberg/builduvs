@@ -89,18 +89,19 @@ function updatePlayer(choice, player) {
   <Selector name="Format" v-model:picks="selections.formats" :options="formatOptions()" />
   <q-separator />
   <!-- TODO namepicker to accept a label param to clarify, "search for ATTACK" -->
-  <NamePicker /> 
+  <NamePicker :label="'Select an attack'" /> 
   <q-separator />
   <!-- <div v-if="theAttack != null" class="row no-wrap justify-center"> 
       <h3 v-if="theAttack != null">Using {{theAttack?.name}}</h3>
       <q-btn square dense label="Show" :size="sm" @click="showPic = !showPic" />
   </div> -->
   <div>
-      <PureCharacterPicker @update:character="updatePlayer($event, p1)" />
+      <PureCharacterPicker :label="'Select character for Player 1'" @update:character="updatePlayer($event, p1)" />
       <div @click="routeClick($event, () => p1.health++, () => p1.health--)" style="border: 2px solid red;"><h6 class="q-mx-none">Player 1 {{p1.face?.name}} {{p1.health}}</h6></div>
   </div>
+
   <div class="row no-wrap justify-center ">
-    <p v-if="theAttack != null">{{theAttack?.name}}:</p>
+    <div class="self-center q-mx-md"><p v-if="theAttack != null">{{theAttack?.name}}:</p></div>
     <div @click="routeClick($event, () => speed++, () => speed--)" style="padding: 5vw; border: 2px solid green;"><h3 class="q-mx-none">{{speed}}</h3></div>
     <q-btn-dropdown dense auto-close :class="`bg-${zoneColor(attack_zone)}`">
         <template v-slot:label><h5 class="q-mx-none">{{attack_zone}}</h5></template>
@@ -114,7 +115,7 @@ function updatePlayer(choice, player) {
     <div @click="routeClick($event, () => damage++, () => damage--)" style="padding: 5vw; border: 2px solid red;"><h3 class="q-mx-none">{{damage}}</h3></div>
   </div>  
   <div>
-      <PureCharacterPicker @update:character="updatePlayer($event, p2)" />
+      <PureCharacterPicker :label="'Select character for Player 2'" @update:character="updatePlayer($event, p2)" />
       <div @click="routeClick($event, () => p2.health++, () => p2.health--)" style="border: 2px solid red;"><h6 class="q-mx-none">Player 2 {{p2.face?.name}} {{p2.health}}</h6></div>
   </div>
   <q-img v-if=showPic @click="showPic = false"

@@ -10,7 +10,9 @@ const options = computed(() => myCards
 )
 
 const emit = defineEmits( ['update:character'] )
-const props = defineProps( {character: Object})
+const props = defineProps( {character: Object, label: String})
+
+
 
 const pick = ref("")
 watch(pick, (val, __) => {
@@ -25,5 +27,5 @@ watch(pick, (val, __) => {
 <template>
     <q-select v-model="pick" :options=options
       standout dense clearable
-      label="Select a character" class="q-ml-sm" />
+      :label="props.label || 'Select a character'" class="q-ml-sm" />
 </template>
