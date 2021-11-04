@@ -23,11 +23,12 @@ function reset() {
     selections.value.types = ["attack"]
     speed.value = theAttack?.value?.speed || 0
     damage.value = theAttack?.value?.damage || 0
-    attack_zone.value = theAttack?.value?.attack_zone || "unknown"
+    attack_zone.value = theAttack?.value?.attack_zone || "mid"
     showPic.value = false
 }
 
 selections.value.types = ["attack"]
+selections.value.formats = ["My Hero Academia", "standard"]
 
 function zoneColor(zone) {
     switch(zone) {

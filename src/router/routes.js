@@ -14,6 +14,10 @@ const routes = [
         // http://localhost:8080/mha?formats=%5B%22My%20Hero%20Academia%22%5D
         props: (route) => ({ query: { ...route.query, formats: "[\"My Hero Academia\"]" } })
       },
+      {
+        path: "mha/attack",
+        component: () => import('src/pages/AttackHome.vue')
+      },
       // {
       //   path: "config",
       //   component: () => import("pages/Config.vue"),
