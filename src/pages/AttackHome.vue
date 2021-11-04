@@ -49,7 +49,7 @@ function routeClick(e, hi, low) {
         hi()
         return 
     }
-    var x = e.clientX - rect.left; //x position within the element.
+    // var x = e.clientX - rect.left; //x position within the element. - unused
     var y = e.clientY - rect.top;  //y position within the element.
     var mid = (rect.bottom - rect.top)/2
     // console.log(`Computed ${y} from client ${e.clientY} rect ${rect.top} and relative to ${mid}`);
@@ -61,11 +61,6 @@ function routeClick(e, hi, low) {
     }
 }
 
-const player1 = ref(null)
-const p1Health = ref(0)
-const player2 = ref(null)
-const p2Health = ref(0)
-
 const p1 = ref({
     face : null,
     health : 0
@@ -75,7 +70,6 @@ const p2 = ref({
     health : 0
 })
 function updatePlayer(choice, player) {
-    console.log(`update ${choice} ${player}`)
     player.health = choice.vitality
     player.face = choice
 }
@@ -96,19 +90,31 @@ function updatePlayer(choice, player) {
       <q-btn square dense label="Show" :size="sm" @click="showPic = !showPic" />
   </div> -->
   <div>
-      <PureCharacterPicker :label="'Select character for Player 1'" @update:character="updatePlayer($event, p1)" />
-      <div @click="routeClick($event, () => p1.health++, () => p1.health--)" style="border: 2px solid red;"><h6 class="q-mx-none">Player 1 {{p1.face?.name}} {{p1.health}}</h6></div>
+    <PureCharacterPicker :label="'Select character for Player 1'" @update:character="updatePlayer($event, p1)" />
+    <div class="row" v-if="p1.face" > 
+      <div @click="routeClick($event, () => p1.health++, () => p1.health--)" 
+        style="border: 2px solid red;" class="col-8">
+        <h6 class="q-mx-none">Player 1 {{p1.face?.name}} {{p1.health}}</h6>  
+      </div>
+      <div class="col-4">
+        <q-btn push color=green-12 text-color=black @click="p1.health -= (damage/2)|0; reset()">Take half</q-btn>
+        <q-btn push color=purple-12 text-color=black @click="p1.health -= damage; reset()">Take full</q-btn>
+      </div>
+    </div>
   </div>
 
   <div class="row no-wrap justify-center ">
-    <div class="self-center q-mx-md"><p v-if="theAttack != null">{{theAttack?.name}}:</p></div>
+    <div class="self-center q-mx-md">
+        <p v-if="theAttack != null">{{theAttack?.name}}:</p>
+        <q-btn @click=reset>Reset</q-btn>
+    </div>
     <div @click="routeClick($event, () => speed++, () => speed--)" style="padding: 5vw; border: 2px solid green;"><h3 class="q-mx-none">{{speed}}</h3></div>
     <q-btn-dropdown dense auto-close :class="`bg-${zoneColor(attack_zone)}`">
         <template v-slot:label><h5 class="q-mx-none">{{attack_zone}}</h5></template>
         <q-list>
             <q-item v-for="zone in ['high', 'mid', 'low']" clickable v-ripple :key=zone :class="`bg-${zoneColor(zone)}`"
-            @click="attack_zone = zone">
-            <body class="text-capitalize">{{zone}}</body>
+              @click="attack_zone = zone">
+              <body class="text-capitalize">{{zone}}</body>
             </q-item>
         </q-list>
     </q-btn-dropdown>
@@ -116,7 +122,16 @@ function updatePlayer(choice, player) {
   </div>  
   <div>
       <PureCharacterPicker :label="'Select character for Player 2'" @update:character="updatePlayer($event, p2)" />
-      <div @click="routeClick($event, () => p2.health++, () => p2.health--)" style="border: 2px solid red;"><h6 class="q-mx-none">Player 2 {{p2.face?.name}} {{p2.health}}</h6></div>
+      <div class="row" v-if="p2.face">
+      <div @click="routeClick($event, () => p2.health++, () => p2.health--)" 
+        style="border: 2px solid red;" class="col-8">
+        <h6 class="q-mx-none">Player 2 {{p2.face?.name}} {{p2.health}}</h6>  
+      </div>
+      <div class="col-4">
+        <q-btn push color=green-12 text-color=black @click="p2.health -= (damage/2)|0; reset()">Take half</q-btn>
+        <q-btn push color=purple-12 text-color=black @click="p2.health -= damage; reset()">Take full</q-btn>
+      </div>
+    </div>
   </div>
   <q-img v-if=showPic @click="showPic = false"
           style="max-height: 100vh" fit="contain"
