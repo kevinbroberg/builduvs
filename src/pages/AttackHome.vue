@@ -26,6 +26,9 @@ function reset() {
     attack_zone.value = theAttack?.value?.attack_zone || "mid"
     showPic.value = false
 }
+function half(x) {
+  return (x % 2) + (x/2 | 0)
+}
 
 selections.value.types = ["attack"]
 selections.value.formats = ["My Hero Academia", "standard"]
@@ -98,7 +101,7 @@ function updatePlayer(choice, player) {
         <h6 class="q-mx-none">Player 1 {{p1.face?.name}} {{p1.health}}</h6>  
       </div>
       <div class="col-4">
-        <q-btn push color=green-12 text-color=black @click="p1.health -= (damage/2)|0; reset()">Take half</q-btn>
+        <q-btn push color=green-12 text-color=black @click="p1.health -= half(damage); reset()">Take half</q-btn>
         <q-btn push color=purple-12 text-color=black @click="p1.health -= damage; reset()">Take full</q-btn>
       </div>
     </div>
@@ -129,7 +132,7 @@ function updatePlayer(choice, player) {
         <h6 class="q-mx-none">Player 2 {{p2.face?.name}} {{p2.health}}</h6>  
       </div>
       <div class="col-4">
-        <q-btn push color=green-12 text-color=black @click="p2.health -= (damage/2)|0; reset()">Take half</q-btn>
+        <q-btn push color=green-12 text-color=black @click="p2.health -= half(damage); reset()">Take half</q-btn>
         <q-btn push color=purple-12 text-color=black @click="p2.health -= damage; reset()">Take full</q-btn>
       </div>
     </div>
