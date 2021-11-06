@@ -86,7 +86,7 @@ function updatePlayer(choice, player) {
   <q-separator />
   <Selector name="Format" v-model:picks="selections.formats" :options="formatOptions()" />
   <q-separator />
-  <!-- TODO namepicker to accept a label param to clarify, "search for ATTACK" -->
+
   <NamePicker :label="'Select an attack'" /> 
   <q-separator />
   <!-- <div v-if="theAttack != null" class="row no-wrap justify-center"> 
@@ -103,6 +103,7 @@ function updatePlayer(choice, player) {
       <div class="col-4">
         <q-btn push color=green-12 text-color=black @click="p1.health -= half(damage); reset()">Take half</q-btn>
         <q-btn push color=purple-12 text-color=black @click="p1.health -= damage; reset()">Take full</q-btn>
+        <q-btn push text-color=black @click="p1.health = p1.face.vitality">Reset to full</q-btn>
       </div>
     </div>
   </div>
@@ -134,6 +135,8 @@ function updatePlayer(choice, player) {
       <div class="col-4">
         <q-btn push color=green-12 text-color=black @click="p2.health -= half(damage); reset()">Take half</q-btn>
         <q-btn push color=purple-12 text-color=black @click="p2.health -= damage; reset()">Take full</q-btn>
+        <q-btn push text-color=black @click="p2.health = p2.face.vitality">Reset to full</q-btn>
+
       </div>
     </div>
   </div>
