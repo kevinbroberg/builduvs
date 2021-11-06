@@ -16,7 +16,7 @@ const props = defineProps( {character: Object, label: String})
 
 const pick = ref("")
 watch(pick, (val, __) => {
-  var possibles = myCards.filter(c => c.name == val)
+  var possibles = myCards.value.filter(c => c.name == val)
   if(possibles.length == 1) {
     emit("update:character", possibles[0])
   }
