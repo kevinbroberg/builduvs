@@ -1,8 +1,8 @@
 <script setup>
 import { ref, computed, defineEmits, defineProps, watch } from 'vue'
-import { formatCards } from 'assets/card_provider.js'
+import { filteredCards } from 'assets/card_provider.js'
 
-const myCards = formatCards.value.filter(c => c.type == "character")//.filter(symbolFilter)
+const myCards = ref(filteredCards.value.filter(c => c.type == "character"))//.filter(symbolFilter)
 
 const options = computed(() => myCards
   .map(c => c.name)
