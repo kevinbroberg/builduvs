@@ -4,7 +4,7 @@ import { filteredCards } from 'assets/card_provider.js'
 
 const myCards = ref(filteredCards.value.filter(c => c.type == "character"))//.filter(symbolFilter)
 
-const options = computed(() => myCards
+const options = computed(() => myCards.value
   .map(c => c.name)
 //   .filter(name => name.toLowerCase().indexOf(extraFilter.value) > -1)
 )
