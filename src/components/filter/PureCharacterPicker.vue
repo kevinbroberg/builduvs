@@ -2,7 +2,8 @@
 import { ref, computed, defineEmits, defineProps, watch } from 'vue'
 import { filteredCards } from 'assets/card_provider.js'
 
-const myCards = ref(filteredCards.value.filter(c => c.type == "character"))//.filter(symbolFilter)
+// TODO change names for everything: maybe name the file SingleTypeSubselect
+const myCards = ref(filteredCards.value.filter(c => c.type == props.type))//.filter(symbolFilter)
 
 const options = computed(() => myCards.value
   .map(c => c.name)
@@ -10,7 +11,7 @@ const options = computed(() => myCards.value
 )
 
 const emit = defineEmits( ['update:character'] )
-const props = defineProps( {character: Object, label: String})
+const props = defineProps( {character: Object, label: String, type: String})
 
 
 
