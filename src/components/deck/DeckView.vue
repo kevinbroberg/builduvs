@@ -29,8 +29,8 @@
     // })
   }
 
-  const simple = "Simple", type = "Types", symbol = "Symbols", difficulty = "Difficulty", control = "Control"
-  const partitionOptions = [simple, type, symbol, difficulty, control]
+  const simple = "Simple", type = "Types", symbol = "Symbols", difficulty = "Difficulty", control = "Control", block = 'Block'
+  const partitionOptions = [simple, type, symbol, difficulty, control, block]
   const howPartition = ref(type)
 
 
@@ -74,6 +74,9 @@
     switch(howPartition.value) {
         case type:
           main = arbitraryPartition(card => card.type)
+          break
+        case block:
+          main = arbitraryPartition(card => card.block_zone)
           break
         case symbol:
           main = arbitraryPartition(card => matchSymbols(card).sort().toString())
