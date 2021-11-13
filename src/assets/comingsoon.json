@@ -47,8 +47,6 @@
     "speed": 6,
     "damage": 6,
     "attack_zone": "mid",
-    "hand_size": 0,
-    "vitality": 0,
     "text": "Enhance Discard 1 momentum: Add up to 3 cards from your hand to your momentum.\n\nAll Might Enhance Permanently reduce your character's hand size by 1: Draw 3 cards.",
     "numero": 2,
     "numero_image": 2,
