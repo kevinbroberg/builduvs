@@ -99,25 +99,14 @@
     return main
   })
 
-/*
-export function getDeckText(state) {
-    let name = getFace(state)?.name // mainchar may be undefined
-    let face = name ? [{ name: name, qty: 1 }] : [] // if it's not, there is 1 copy in your deck
-    let deck = [...face, ...getDeckList(state)].map(c => `${c.qty} ${c.name}`)
-    
-    let side = hasSide(state) ? ['sideboard', ...getSideList(state).map(c => `${c.qty} ${c.name}`)] : []
-    // maybe TODO sometime: accumulate additional copies of main char into the 1st quantity, vs 1 Amy... 3 Amy that will happen now
-    // a possible method: simply increment() face before exporting? or have a general dedupe method, and prepend face to the list before dedupe
-    return [...deck, ...side ].join('\n')
-}
-*/
   function deck2clipboard() {
-    const deckList = partitions.value.map(p => p.cards).flat() // use displayed ordering of cards
+    let main = partitions.value.filter(part => part.key != "sideboard")
+    const deckList = main.map(p => p.cards).flat() // use displayed ordering of cards
     let name = face.value?.name // mainchar may be undefined
     let myFace = name ? [{ name: name, qty: 1 }] : [] // if it's not, there is 1 copy in your deck
     let deck = [...myFace, ...deckList].map(c => `${c.qty} ${c.name}`)
     
-    let side = store.getters['deck/hasSide'] ? ['sideboard', ...store.getters['deck/getSideList'](state).map(c => `${c.qty} ${c.name}`)] : []
+    let side = store.getters['deck/hasSide'] ? ['sideboard', ...store.getters['deck/getSideList'].map(c => `${c.qty} ${c.name}`)] : []
     // maybe TODO sometime: accumulate additional copies of main char into the 1st quantity, vs 1 Amy... 3 Amy that will happen now
     // a possible method: simply increment() face before exporting? or have a general dedupe method, and prepend face to the list before dedupe
     // navigator.clipboard.writeText([...deck, ...side ].join('\n'))

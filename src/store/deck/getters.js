@@ -1,8 +1,8 @@
 export function hasDeck (state) {
-    return state.deck?.keys?.length > 0
+    return Object.keys(state.deck)?.length > 0
 }
 export function hasSide (state) {
-    return state.side?.keys?.length > 0
+    return Object.keys(state.side)?.length > 0
 }
 // object from asset => card
 export function getDeck (state) {
