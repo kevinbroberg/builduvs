@@ -17,7 +17,7 @@ const routes = [
       {
         path: "updog",
         component: () => import("pages/CardHome.vue"),
-        props: (route) => ({query: {...route.query, formats: "[\"Updog\"]"}})
+        props: (route) => ({query: {...route.query, formats: "[\"updog\"]"}})
       },
       {
         path: "mha/attack",
