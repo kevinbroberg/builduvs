@@ -82,7 +82,8 @@ export default {
   },
   data() {
     return {
-      symbolOptions: ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "infinity", "life", "order", "void", "water"],
+      symbolOptions: provider.symbolOptions,
+      formatOptions: provider.formatOptions,
       symbolMax: 1,
       keywordTags: [],
       textTags: [],
@@ -104,9 +105,6 @@ export default {
     },
     textOptions() {
       return ["NONE", ...this.textTags, ...new Set(provider.filteredCards.value.map(c => c.text))]
-    },
-    formatOptions() {
-      return [...new Set(provider.cards.map(card => card.formats).flat())]
     },
     rarityOptions() {
       return this.getOptions("rarity")

@@ -5,6 +5,7 @@ import mha from './comingsoon.json' // someday: lazy-load card resources by form
 
 export const cards = [...mha, ...real_cards]
 export const symbolOptions = ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "infinity", "life", "order", "void", "water"]
+export const formatOptions = ["My Hero Academia","standard","standard banned","updog","updog banned","universal","unreleased","legacy"]
 /*
 "block_modifier": 0,
 "block_zone": "mid",
@@ -100,7 +101,7 @@ function nameFilter(card) {
         return true
     }
 }
-function symbolFilterGenerator(choices) {
+export default function symbolFilterGenerator(choices) {
   return (card) => {
     if (choices && choices.length > 0) {
       return card.resources.some(sym => sym == "infinity" || choices.includes(sym.toLowerCase()))
