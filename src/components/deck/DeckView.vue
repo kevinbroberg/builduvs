@@ -53,12 +53,16 @@
   }
   function arbitraryPartition(funk) {
     let contents = store.getters['deck/getDeckList'] // TODO, sometime, sort this
+    const safeFunk = c => {
+      let value = funk(c)
+      return value == undefined ? "None" : value
+    }
     // unique values for applying the function
-    let parts = new Set([...contents.map(funk)])
+    let parts = new Set([...contents.map(safeFunk)])
     
     // coerce the Set back into a List
     return [...parts].map(me => {
-      let part = contents.filter(c => funk(c) == me)
+      let part = contents.filter(c => safeFunk(c) == me)
       let qty = count(part)
       return {key: me, label: `${me}: ${qty}`, cards: part} // TODO decouple algorithm from this display logic
     })
