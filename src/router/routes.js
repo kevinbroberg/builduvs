@@ -15,6 +15,11 @@ const routes = [
         props: (route) => ({ query: { ...route.query, formats: "[\"My Hero Academia\"]" } })
       },
       {
+        path: "updog",
+        component: () => import("pages/CardHome.vue"),
+        props: (route) => ({query: {...route.query, formats: "[\"Updog\"]"}})
+      },
+      {
         path: "mha/attack",
         component: () => import('src/pages/AttackHome.vue')
       },
