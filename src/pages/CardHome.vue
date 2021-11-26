@@ -31,13 +31,13 @@
         <span>
           <Selector name="Block" v-model:picks="selections.block_modifier" :options="blockOptions" />
           <Selector name="Block zone" v-model:picks="selections.block_zone" :options="zoneOptions">
-            <template v-slot:button="{selected}">{{selected}}<Element :element="'block' + selected" /></template>
+            <template v-slot:button="{selected}">{{selected}}<Element :element="selected + ' block'" /></template>
           </Selector>
         </span>
         <span>
           <Selector name="Damage" v-model:picks="selections.damage" :options="damageOptions" />
           <Selector name="Zone" v-model:picks="selections.attack_zone" :options="zoneOptions">
-            <template v-slot:button="{selected}">{{selected}}<Element :element="'attack' + selected" /></template>
+            <template v-slot:button="{selected}">{{selected}}<Element :element="selected + ' attack'" /></template>
           </Selector>
           <Selector name="Speed" v-model:picks="selections.speed" :options="speedOptions" />
         </span>

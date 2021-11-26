@@ -1,7 +1,7 @@
 <template>
 <div class="hasblock" v-if="rawzone">
   <span>
-    Block : +{{card['block_modifier']}} <img :src="getSource(rawzone)" title="Block" style="vertical-align : -3px;" /> <br/>
+    Block : +{{card['block_modifier']}} <q-icon :name="'img:' + getSource(rawzone)" /> <br/>
   </span>
 </div>
 </template>
@@ -19,7 +19,7 @@ export default {
     },
     methods: {
         getSource(s) {
-            return require('assets/images/block' + this.switchSource(s) + '.png')
+            return require('assets/images/' + this.switchSource(s) + ' block.png')
         },
         switchSource(s) {
             s = s.toLowerCase();

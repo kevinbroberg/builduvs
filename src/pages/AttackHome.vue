@@ -46,7 +46,7 @@ function zoneColor(zone) {
     }
 }
 
-function routeClick(e, hi, low) {
+function hiOrLow(e, hi, low) {
     var rect = e?.target?.getBoundingClientRect();
     if(!rect) {
         console.log(`sry no bounding rectange, only counting up`)
@@ -60,6 +60,28 @@ function routeClick(e, hi, low) {
     // console.log(`do high? ${y < mid}`)
     if(y < mid) {
         hi()
+    } else {
+        low()
+    }
+}
+
+function click3(e, hi, mid, low) {
+    var rect = e?.target?.getBoundingClientRect();
+    if(!rect) {
+        console.log(`sry no bounding rectange, only counting up`)
+        hi()
+        return 
+    }
+    // var x = e.clientX - rect.left; //x position within the element. - unused
+    var y = e.clientY - rect.top;  //y position within the element.
+    var inc = (rect.bottom - rect.top)/3
+    var t = (inc), m = t + inc
+    // console.log(`Computed ${y} from client ${e.clientY} rect ${rect.top} and relative to ${mid}`);
+    console.log(`${y} click bottom ${rect.bottom} top ${rect.top} step ${inc} first boundary ${t} second ${m}`)
+    if(y < inc) {
+        hi()
+    } else if (y < 2*inc) {
+        mid()
     } else {
         low()
     }
@@ -96,7 +118,7 @@ function updatePlayer(choice, player) {
   <div>
     <PureCharacterPicker :label="'Select character for Player 1'" @update:character="updatePlayer($event, p1)" />
     <div class="row" v-if="p1.face" > 
-      <div @click="routeClick($event, () => p1.health++, () => p1.health--)" 
+      <div @click="hiOrLow($event, () => p1.health++, () => p1.health--)" 
         style="border: 2px solid red;" class="col-8">
         <h6 class="q-mx-none">Player 1 {{p1.face?.name}} {{p1.health}}</h6>  
       </div>
@@ -112,22 +134,32 @@ function updatePlayer(choice, player) {
         <p v-if="theAttack != null">{{theAttack?.name}}:</p>
         <q-btn @click=reset>Reset</q-btn>
     </div>
-    <div @click="routeClick($event, () => speed++, () => speed--)" style="padding: 5vw; border: 2px solid green;"><h3 class="q-mx-none">{{speed}}</h3></div>
-    <q-btn-dropdown dense auto-close :class="`bg-${zoneColor(attack_zone)}`">
-        <template v-slot:label><h5 class="q-mx-none">{{attack_zone}}</h5></template>
-        <q-list>
-            <q-item v-for="zone in ['high', 'mid', 'low']" clickable v-ripple :key=zone :class="`bg-${zoneColor(zone)}`"
-              @click="attack_zone = zone">
-              <body class="text-capitalize">{{zone}}</body>
-            </q-item>
-        </q-list>
-    </q-btn-dropdown>
-    <div @click="routeClick($event, () => damage++, () => damage--)" style="padding: 5vw; border: 2px solid red;"><h3 class="q-mx-none">{{damage}}</h3></div>
-  </div>  
+    <div 
+      @click="hiOrLow($event, () => speed++, () => speed--)" 
+      style="padding: 5vw; border: 2px solid green;">
+      <h3 class="q-mx-none">{{speed}}</h3>
+    </div>
+    <div class="self-center"
+      :style="`padding: 2.5vw; background: ${zoneColor(attack_zone)};`" 
+      @click="click3($event, () => attack_zone = 'high', () => attack_zone = 'mid', ()=> attack_zone = 'low')" >
+      <h3 class="q-mx-none">
+        <hr />
+        {{attack_zone}}
+        <hr />
+      </h3>
+
+    </div>
+    <div 
+      @click="hiOrLow($event, () => damage++, () => damage--)" 
+      style="padding: 5vw; border: 2px solid red;">
+      <h3 class="q-mx-none">{{damage}}</h3>
+    </div>
+  </div>
+
   <div>
       <PureCharacterPicker :label="'Select character for Player 2'" @update:character="updatePlayer($event, p2)" />
       <div class="row" v-if="p2.face">
-      <div @click="routeClick($event, () => p2.health++, () => p2.health--)" 
+      <div @click="hiOrLow($event, () => p2.health++, () => p2.health--)" 
         style="border: 2px solid red;" class="col-8">
         <h6 class="q-mx-none">Player 2 {{p2.face?.name}} {{p2.health}}</h6>  
       </div>
