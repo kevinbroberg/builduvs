@@ -101,7 +101,7 @@ function nameFilter(card) {
         return true
     }
 }
-export default function symbolFilterGenerator(choices) {
+function symbolFilterGenerator(choices) {
   return (card) => {
     if (choices && choices.length > 0) {
       return card.resources.some(sym => sym == "infinity" || choices.includes(sym.toLowerCase()))
@@ -109,6 +109,10 @@ export default function symbolFilterGenerator(choices) {
       return true
     }
   }
+}
+
+export function symbolFilter1(card) {
+  return symbolFilterGenerator(selections.value.symbols)(card)
 }
 
 function originMatchFilter(card) {
