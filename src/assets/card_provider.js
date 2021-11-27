@@ -5,7 +5,7 @@ import mha from './comingsoon.json' // someday: lazy-load card resources by form
 
 export const cards = [...mha, ...real_cards]
 export const symbolOptions = ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "infinity", "life", "order", "void", "water"]
-export const formatOptions = ["My Hero Academia","standard","standard banned","updog","updog banned","universal","unreleased","legacy"]
+export const formatOptions = ["My Hero Academia","standard","standard banned","retro","retro banned","universal","unreleased","legacy"]
 /*
 "block_modifier": 0,
 "block_zone": "mid",
@@ -111,6 +111,7 @@ function symbolFilterGenerator(choices) {
   }
 }
 
+// TODO bad practice / tech debt used for AttackHome
 export function symbolFilter1(card) {
   return symbolFilterGenerator(selections.value.symbols)(card)
 }

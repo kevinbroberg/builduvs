@@ -11,13 +11,17 @@ const routes = [
       {
         path: "mha",
         component: () => import("pages/CardHome.vue"),
-        // http://localhost:8080/mha?formats=%5B%22My%20Hero%20Academia%22%5D
         props: (route) => ({ query: { ...route.query, formats: "[\"My Hero Academia\"]" } })
       },
       {
         path: "updog",
         component: () => import("pages/CardHome.vue"),
-        props: (route) => ({query: {...route.query, formats: "[\"updog\"]"}})
+        props: (route) => ({query: {...route.query, formats: "[\"retro\"]"}})
+      },
+      {
+        path: "retro",
+        component: () => import("pages/CardHome.vue"),
+        props: (route) => ({query: {...route.query, formats: "[\"retro\"]"}})
       },
       {
         path: "mha/attack",
