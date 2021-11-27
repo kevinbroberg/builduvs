@@ -8,9 +8,10 @@ function formatOptions() {
   return [...new Set(cards.map(card => card.formats).flat())]
 }
 
-const speed = ref(0)
-const damage = ref(0)
-const attack_zone = ref('mid')
+const defaults = { speed: 0 , damage: 5, health: 30, zone: 'mid'}
+const speed = ref(defaults.speed)
+const damage = ref(defaults.damage)
+const attack_zone = ref(defaults.zone)
 const showPic = ref(false)
 const theAttack = ref({})
 watch(theAttack, (now, __) => {
@@ -19,9 +20,9 @@ watch(theAttack, (now, __) => {
 })
 
 function reset() {
-    speed.value = theAttack?.value?.speed || 0
-    damage.value = theAttack?.value?.damage || 0
-    attack_zone.value = theAttack?.value?.attack_zone || "mid"
+    speed.value = theAttack?.value?.speed || defaults.speed
+    damage.value = theAttack?.value?.damage || defaults.damage
+    attack_zone.value = theAttack?.value?.attack_zone || defaults.zone
     showPic.value = false
 }
 function half(x) {
@@ -87,11 +88,11 @@ function click3(e, hi, mid, low) {
 
 const p1 = ref({
     face : null,
-    health : 0
+    health : defaults.health
 })
 const p2 = ref({
     face : null,
-    health : 0
+    health : defaults.health
 })
 function updatePlayer(choice, player) {
     player.health = choice.vitality
@@ -108,11 +109,11 @@ function updatePlayer(choice, player) {
   <q-separator />
   <!-- <div v-if="theAttack != null" class="row no-wrap justify-center"> 
       <h3 v-if="theAttack != null">Using {{theAttack?.name}}</h3>
-      <q-btn square dense label="Show" :size="sm" @click="showPic = !showPic" />
+      
   </div> -->
   <div>
     <SimpleTypePicker :type="'character'" :label="'Select character for Player 1'" @update:choice="updatePlayer($event, p1)" />
-    <div class="row" v-if="p1.face" > 
+    <div class="row" > 
       <div @click="hiOrLow($event, () => p1.health++, () => p1.health--)" 
         style="border: 2px solid red;" class="col-6">
         <h2 class="q-mx-none self-center text-center">{{p1.health}}</h2>  
@@ -128,6 +129,7 @@ function updatePlayer(choice, player) {
       <SimpleTypePicker :type="'attack'" :label="'Pick an attack'" 
         @update:choice="theAttack = $event" />
       <q-btn row push @click=reset>Reset</q-btn>
+      <q-btn row push label="Show" :size="sm" @click="showPic = !showPic" />
     </div>
     <div class="col"
       @click="hiOrLow($event, () => speed++, () => speed--)" 
@@ -139,7 +141,7 @@ function updatePlayer(choice, player) {
       :class="`bg-${zoneColor(attack_zone)}`"
       @click="click3($event, () => attack_zone = 'high', () => attack_zone = 'mid', ()=> attack_zone = 'low')" >
       <h3 class="q-mx-none">
-        {{attack_zone}}<Element :element="attack_zone + ' block'" />
+        {{attack_zone}}<Element :element="attack_zone + ' attack'" />
       </h3>
     </div>
     <div class="col"
@@ -151,7 +153,7 @@ function updatePlayer(choice, player) {
 
   <div>
       <SimpleTypePicker :type="'character'" :label="'Select character for Player 2'" @update:choice="updatePlayer($event, p2)" />
-      <div class="row" v-if="p2.face">
+      <div class="row" >
       <div @click="hiOrLow($event, () => p2.health++, () => p2.health--)" 
         style="border: 2px solid red;" class="col-6">
         <h2 class="q-mx-none self-center text-center">{{p2.health}}</h2>  
