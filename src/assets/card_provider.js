@@ -1,9 +1,8 @@
 import { ref, computed } from 'vue'
 import real_cards from './cards.json'
-import mha from './comingsoon.json' // someday: lazy-load card resources by format
 // TODO sooner than later: pull out legacy / retro 
 
-export const cards = [...mha, ...real_cards]
+export const cards = [...real_cards]
 export const symbolOptions = ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "infinity", "life", "order", "void", "water"]
 export const formatOptions = ["My Hero Academia","standard","standard banned","retro","retro banned","universal","unreleased","legacy"]
 /*
