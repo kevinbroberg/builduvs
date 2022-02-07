@@ -4,6 +4,7 @@
 
   import { useStore } from 'vuex'
   import CardCard from 'src/components/cards/CardCard.vue'
+  import UltraCardDetail from 'src/components/cards/UltraCardDetail.vue'
 
   const store = useStore()
   const deck = computed(() => store.getters['deck/getDeckList'] )
@@ -12,13 +13,15 @@
 </script>
 
 <template>
-  <div class="q-pa-md row items-start q-gutter-md">
-    <div>
-      <CardCard v-if=face :card="face" />
-      
+  <div class="row items-start q-gutter-md">
+    <div center row v-if=face>
+      <UltraCardDetail :card="face" />
     </div>
+    <q-separator />
     <CardCard v-for="card in deck" v-bind:key=card?.name :card=card :main=true />
-    <q-separator row />
+  </div>
+  <h3>Sideboard</h3>
+  <div class="row items-start q-gutter-md">
     <CardCard v-for="card in side" v-bind:key=card?.name :card=card :main=false />
   </div>
 </template>
