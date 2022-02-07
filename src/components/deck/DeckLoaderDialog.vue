@@ -67,14 +67,15 @@ function replaceVuexDeck() {
   $store.commit('deck/nuke')
 
   let regex = /^\s*(\d+)x?\)? (.*?)\s*$/
-  let sideboard = /\s*sideboard\s*/i
+  let sideboard = /\n\s*(sideboard|\[b\]Side)/i
   let trailingDigit = /\d$/
 
   let decks = text.value.split(sideboard)
   let splitDecks = decks.map(d => d.split('\n').map(s => s.match(regex)).filter(i => i))
   console.log(splitDecks)
   proc(splitDecks[0], (card) => $store.commit('deck/increment', card))
-  proc(splitDecks[1], (card) => $store.commit('deck/incrementSide', card))
+  // splitDecks[1] is the word sideboard
+  proc(splitDecks[2], (card) => $store.commit('deck/incrementSide', card))
   function proc(deck, action) {
     for (let idx in deck) {
       let match = deck[idx]
