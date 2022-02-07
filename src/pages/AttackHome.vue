@@ -3,10 +3,7 @@ import { ref, watch } from 'vue'
 import Selector from 'components/filter/Selector.vue'
 import SimpleTypePicker from 'src/components/filter/SimpleTypePicker.vue'
 import Element from 'components/cards/detail/Element.vue'
-import { cards, filteredCards, selections, symbolOptions } from "assets/card_provider.js"
-function formatOptions() {
-  return [...new Set(cards.map(card => card.formats).flat())]
-}
+import { selections, symbolOptions, formatOptions } from "assets/card_provider.js"
 
 const defaults = { speed: 0 , damage: 5, health: 30, zone: 'mid'}
 const speed = ref(defaults.speed)
@@ -65,7 +62,7 @@ function click3(e, hi, mid, low) {
     var target = e?.target
     // this is AWFUL practice I'm sure...
     target = target.tagName === "DIV" ? target : target.parentNode
-    var rect = target?.getBoundingClientRect();
+    var rect = target?.getBoundingClientRect()
     if(!rect) {
         console.log(`sry no bounding rectange, only counting up ${target}`)
         hi()
@@ -74,12 +71,12 @@ function click3(e, hi, mid, low) {
     // var x = e.clientX - rect.left; //x position within the element. - unused
     var y = e.clientY - rect.top;  //y position within the element.
     var inc = (rect.bottom - rect.top)/3
-    var t = (inc), m = t + inc
+    var t = inc, m = t + inc
     // console.log(`Computed ${y} from client ${e.clientY} rect ${rect.top} and relative to ${mid}`);
     console.log(`${e.target} ${y} click bottom ${rect.bottom} top ${rect.top} step ${inc} first boundary ${t} second ${m}`)
-    if(y < inc) {
+    if(y < t) {
         hi()
-    } else if (y < 2*inc) {
+    } else if (y < m) {
         mid()
     } else {
         low()
@@ -105,7 +102,7 @@ function updatePlayer(choice, player) {
     <template v-slot:button="{selected}">{{selected}}<Element :element=selected /></template>
   </Selector>
   <q-separator />
-  <Selector name="Format" v-model:picks="selections.formats" :options="formatOptions()" />
+  <Selector name="Format" v-model:picks="selections.formats" :options="formatOptions" />
   <q-separator />
   <!-- <div v-if="theAttack != null" class="row no-wrap justify-center"> 
       <h3 v-if="theAttack != null">Using {{theAttack?.name}}</h3>
@@ -128,8 +125,8 @@ function updatePlayer(choice, player) {
     <div class="self-center col">
       <SimpleTypePicker :type="'attack'" :label="'Pick an attack'" 
         @update:choice="theAttack = $event" />
-      <q-btn row push @click=reset>Reset</q-btn>
-      <q-btn row push label="Show" :size="sm" @click="showPic = !showPic" />
+      <q-btn col push @click=reset>Reset</q-btn>
+      <q-btn col push label="Show" @click="showPic = !!theAttack && !showPic" />
     </div>
     <div class="col"
       @click="hiOrLow($event, () => speed++, () => speed--)" 
