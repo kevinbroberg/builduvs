@@ -11,6 +11,7 @@ const damage = ref(defaults.damage)
 const attack_zone = ref(defaults.zone)
 const showPic = ref(false)
 const theAttack = ref({})
+const mySymbolOptions = symbolOptions.filter(s => s != "infinity")
 watch(theAttack, (now, __) => {
     //console.log("got a card!")
     now != null ? reset() : null
@@ -98,7 +99,7 @@ function updatePlayer(choice, player) {
 </script>
 
 <template>
-  <Selector v-model:picks="selections['symbols']" :options=symbolOptions name="Symbols">
+  <Selector v-model:picks="selections['symbols']" :options=mySymbolOptions name="Symbols">
     <template v-slot:button="{selected}">{{selected}}<Element :element=selected /></template>
   </Selector>
   <q-separator />
