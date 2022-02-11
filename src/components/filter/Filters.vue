@@ -9,11 +9,11 @@
             v-model:picks="selections[name]" :options=symbolOptions
             name="Symbols" 
           >
-            <template v-slot:label>
+            <!-- <template v-slot:label>
               <span class="col-1">
                 Symbols <q-btn v-if="symbolMax < 3" dense @click="symbolMax++" label="And"/>
               </span>
-            </template>
+            </template> -->
             <template v-slot:button="{selected}">{{selected}}<Element :element=selected /></template>
           </Selector>
         <q-separator />
@@ -124,7 +124,7 @@ export default {
       return ["high", "mid", "low"]
     },
     symbolListsToShow() {
-      return ["symbols", "symbols2", "symbols3"].slice(0, this.symbolMax)
+      return ["symbols", "symbols2", "symbols3"]
     }
   },
   methods: {
