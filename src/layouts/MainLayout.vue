@@ -1,6 +1,7 @@
 <script setup>
   import { ref } from 'vue'
   import { useStore } from 'vuex';
+  import { useQuasar } from 'quasar'
   import DeckView from 'components/deck/DeckView.vue'
   import NamePicker from 'components/filter/NamePicker.vue'
 
@@ -16,6 +17,20 @@
     rightDrawerOpen.value = !rightDrawerOpen.value
   }
 
+  import FilterDialog from 'components/filter/FilterDialog.vue'
+  const $q = useQuasar()
+  function showFilterDialog() {
+    $q.dialog({
+      component: FilterDialog,
+    })
+    // .onOk(() => {
+    //   console.log('OK')
+    // }).onCancel(() => {
+    //   console.log('Cancel')
+    // }).onDismiss(() => {
+    //   console.log('Called on OK or Cancel')
+    // })
+  }
 
 </script>
 
@@ -33,6 +48,7 @@
           </q-avatar>
           BuildUVS
         </q-toolbar-title>
+        <q-btn dense flat round icon="tuner" @click="showFilterDialog"/>
         <NamePicker />
         <q-btn dense flat round icon="table_view" @click="toggleRightDrawer" >
           <q-tooltip>View current deck</q-tooltip>
