@@ -2,6 +2,7 @@
 import { ref, watch } from 'vue'
 import Selector from 'components/filter/Selector.vue'
 import SimpleTypePicker from 'src/components/filter/SimpleTypePicker.vue'
+import Player from 'src/components/attack/Player.vue'
 import Element from 'components/cards/detail/Element.vue'
 import { selections, symbolOptions, formatOptions } from "assets/card_provider.js"
 
@@ -22,9 +23,6 @@ function reset() {
     damage.value = theAttack?.value?.damage || defaults.damage
     attack_zone.value = theAttack?.value?.attack_zone || defaults.zone
     showPic.value = false
-}
-function half(x) {
-  return (x % 2) + (x/2 | 0)
 }
 
 function zoneColor(zone) {
@@ -83,19 +81,6 @@ function click3(e, hi, mid, low) {
         low()
     }
 }
-
-const p1 = ref({
-    face : null,
-    health : defaults.health
-})
-const p2 = ref({
-    face : null,
-    health : defaults.health
-})
-function updatePlayer(choice, player) {
-    player.health = choice.vitality
-    player.face = choice
-}
 </script>
 
 <template>
@@ -109,18 +94,7 @@ function updatePlayer(choice, player) {
       <h3 v-if="theAttack != null">Using {{theAttack?.name}}</h3>
       
   </div> -->
-  <div>
-    <SimpleTypePicker :type="'character'" :label="'Select character for Player 1'" @update:choice="updatePlayer($event, p1)" />
-    <div class="row" > 
-      <div @click="hiOrLow($event, () => p1.health++, () => p1.health--)" 
-        style="border: 2px solid red;" class="col-6">
-        <h2 class="q-mx-none self-center text-center">{{p1.health}}</h2>  
-      </div>
-      <q-btn push class="col-2" color=green-12 text-color=black @click="p1.health -= half(damage); reset()">Take half</q-btn>
-      <q-btn push class="col-2" color=purple-12 text-color=black @click="p1.health -= damage; reset()">Take full</q-btn>
-      <q-btn push class="col-2" text-color=black @click="p1.health = p1.face.vitality">Reset</q-btn>
-    </div>
-  </div>
+  <Player />
 
   <div class="row no-wrap justify-center ">
     <div class="self-center col">
@@ -149,18 +123,7 @@ function updatePlayer(choice, player) {
     </div>
   </div>
 
-  <div>
-      <SimpleTypePicker :type="'character'" :label="'Select character for Player 2'" @update:choice="updatePlayer($event, p2)" />
-      <div class="row" >
-      <div @click="hiOrLow($event, () => p2.health++, () => p2.health--)" 
-        style="border: 2px solid red;" class="col-6">
-        <h2 class="q-mx-none self-center text-center">{{p2.health}}</h2>  
-      </div>
-      <q-btn push class="col-2" color=green-12 text-color=black @click="p2.health -= half(damage); reset()">Take half</q-btn>
-      <q-btn push class="col-2" color=purple-12 text-color=black @click="p2.health -= damage; reset()">Take full</q-btn>
-      <q-btn push class="col-2" text-color=black @click="p2.health = p2.face.vitality">Reset</q-btn>
-    </div>
-  </div>
+  <Player :damage=damage />
   <q-img v-if=showPic @click="showPic = false"
           style="max-height: 100vh" fit="contain"
           loading="lazy"
