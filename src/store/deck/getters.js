@@ -45,4 +45,15 @@ export function quantity(state) {
         
     }
 }
-// TODO amMain(card) { return true iff main is defined and equals card }
+
+export function sideQuantity(state) {
+    return (asset) => {
+        if (!state?.side) {
+            return 0
+        }
+        let card = state.side[asset];
+        let qty = card ? card.qty : 0;
+        return qty
+        
+    }
+}
