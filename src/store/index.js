@@ -11,16 +11,17 @@ import deck from './deck'
  * with the Store instance.
  */
 
+
+export const theStore = createStore({
+  modules: {
+    deck
+  },
+
+  // enable strict mode (adds overhead!)
+  // for dev mode and --debug builds only
+  strict: process.env.DEBUGGING
+})
+
 export default store(function (/* { ssrContext } */) {
-  const Store = createStore({
-    modules: {
-      deck
-    },
-
-    // enable strict mode (adds overhead!)
-    // for dev mode and --debug builds only
-    strict: process.env.DEBUGGING
-  })
-
-  return Store
+  return theStore
 })

@@ -1,168 +1,25 @@
-<script setup>
-  import Selector from "components/filter/Selector"
-  import Element from "components/cards/detail/Element"  
-</script>
+
 
 <template>
   <div id="app">
-    <div id="options"> <!-- TODO Use a QList here-->
-      <div>
-          <Selector v-for="name in symbolListsToShow" :key=name
-            v-model:picks="selections[name]" :options=symbolOptions
-            name="Symbols" 
-          >
-            <template v-slot:label>
-              <span class="col-1">
-                Symbols <q-btn v-if="symbolMax < 3" dense @click="symbolMax++" label="And"/>
-              </span>
-            </template>
-            <template v-slot:button="{selected}">{{selected}}<Element :element=selected /></template>
-          </Selector>
-        <q-separator />
-        <Selector name="Type" v-model:picks="selections.types" :options="typeOptions"/>
-        <q-separator />
-        <Selector name="Format" v-model:picks="selections.formats" :options="formatOptions" />
-        <q-separator />
-        <Selector name="Rarity" v-model:picks="selections.rarity" :options="rarityOptions" />
-        <q-separator />
-        <Selector name="Difficulty" v-model:picks="selections.difficulty" :options="difficulties" />
-        <q-separator />
-        <Selector name="Control" v-model:picks="selections.control" :options="controls" />
-        <span>
-          <Selector name="Block" v-model:picks="selections.block_modifier" :options="blockOptions" />
-          <Selector name="Block zone" v-model:picks="selections.block_zone" :options="zoneOptions">
-            <template v-slot:button="{selected}">{{selected}}<Element :element="selected + ' block'" /></template>
-          </Selector>
-        </span>
-        <span>
-          <Selector name="Damage" v-model:picks="selections.damage" :options="damageOptions" />
-          <Selector name="Zone" v-model:picks="selections.attack_zone" :options="zoneOptions">
-            <template v-slot:button="{selected}">{{selected}}<Element :element="selected + ' attack'" /></template>
-          </Selector>
-          <Selector name="Speed" v-model:picks="selections.speed" :options="speedOptions" />
-        </span>
-        <span>
-          <Selector name="Handsize" v-model:picks="selections.hand_size" :options="handOptions" />
-          <Selector name="Health" v-model:picks="selections.vitality" :options="vitalityOptions" />
-        </span>
-      </div>
-      <q-select v-model="selections.extensions" :options="originOptions" standout dense stack-label 
-        use-chips multiple label="Select extensions">
-      </q-select>
-      <q-select v-model="selections.keywords" :options="keywordOptions" standout dense stack-label 
-        use-chips multiple use-input clearable 
-        new-value-mode="add" placeholder="Search keywords">
-      </q-select>
-      <q-select v-model="selections.text" :options="textOptions" standout dense 
-        use-input clearable 
-        new-value-mode="add" label="Search text">
-      </q-select>
-      <q-btn push v-if="resultsCount > 200">{{resultsCount}} Cards in Search</q-btn>
-      <q-btn push v-if="resultsCount <= 200" @click="addAllToDeck">Add All {{resultsCount}} Cards to your Deck</q-btn>
-      <q-btn push @click="clearFilters">Clear Filters</q-btn>
-      <q-btn push @click="copyFilterLink">Copy Link to These Filters</q-btn>
-    </div>
+    <Filters />
     <InfiniteScrollCardDetailList />
   </div>
 </template>
 
 <script>
 import InfiniteScrollCardDetailList from 'components/cards/InfiniteScrollCardDetailList'
-import { copyToClipboard } from 'quasar'
+import Filters from 'components/filter/Filters'
 import * as provider from 'assets/card_provider.js'
 
 export default {
   name: 'CardHome',
   components: {
-    InfiniteScrollCardDetailList
+    InfiniteScrollCardDetailList, Filters
   },
   props: ["query"],
   created() {
     provider.handleQuery(this.query)
-  },
-  data() {
-    return {
-      symbolOptions: provider.symbolOptions,
-      formatOptions: provider.formatOptions,
-      symbolMax: 1,
-      keywordTags: [],
-      textTags: [],
-      selections: provider.selections,
-    }
-  },
-  computed: {
-    resultsCount() {
-      return provider.filteredCards.value.length
-    },
-    difficulties() {
-      return [...new Set(provider.formatCards.value.map(card => card.difficulty))].sort()
-    },
-    controls() {
-      return [...new Set(provider.formatCards.value.map(card => card.control))].sort()
-    },
-    typeOptions() {
-      return [...new Set(provider.formatCards.value.map(card => card.type))].sort()
-    },
-    textOptions() {
-      return ["NONE", ...this.textTags, ...new Set(provider.filteredCards.value.map(c => c.text))]
-    },
-    rarityOptions() {
-      return this.getOptions("rarity")
-    },
-    keywordOptions() {
-      return [...this.keywordTags, ...new Set(provider.filteredCards.value.map(card => card.keywords).flat())].sort()
-    },
-    originOptions() {
-      return [...new Set(provider.formatCards.value.map(card => card.extension))]
-    },
-    blockOptions() {
-      return this.getNumberOptions("block_modifier")
-    },
-    speedOptions() {
-      return this.getNumberOptions("speed")
-    },
-    damageOptions() {
-      return this.getNumberOptions("damage")
-    },
-    handOptions() {
-      return this.getNumberOptions("hand_size")
-    },
-    vitalityOptions() {
-      return this.getNumberOptions("vitality")
-    },
-    zoneOptions() {
-      return ["high", "mid", "low"]
-    },
-    symbolListsToShow() {
-      return ["symbols", "symbols2", "symbols3"].slice(0, this.symbolMax)
-    }
-  },
-  methods: {
-    getOptions(field) {
-      return [...new Set(provider.formatCards.value.map(card => card[field]))].filter(e => e != undefined).sort()
-    },
-    getNumberOptions(field) {
-      return [...new Set(provider.formatCards.value.map(card => card[field]))]
-        .filter(e => e != undefined).sort((a, b) => a - b)
-    },
-    addAllToDeck() {
-        if (provider.filteredCards.value.length > 200) {
-            // TODO just don't show the button unless they meet this criteria? Show a different one instead?
-            alert('200 card limit for bulk add. Please set more filters')
-        } else {
-            provider.filteredCards.value.forEach(c => this.$store.commit('deck/increment', c))
-        }
-    },
-    async copyFilterLink() {
-      let chosenFormats = provider.selections.value.formats
-      let linkMHA = this.$route.path.includes("mha") && chosenFormats.length == 1 && chosenFormats[0] == "My Hero Academia" // TODO magic string
-      let skips = linkMHA ? ["formats"] : []
-      let filterLink = location.origin + this.$route.path + '?' + provider.getFilterPath(skips)
-      await copyToClipboard(filterLink)
-    },
-    clearFilters() {
-      provider.initializeSelections()
-    }
   }
 }
 </script>
