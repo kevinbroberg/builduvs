@@ -1,121 +1,22 @@
 <script setup> 
-  import { ref, computed } from 'vue'
-  import { useStore } from 'vuex'
-  import { useQuasar, copyToClipboard } from 'quasar'
-
-  const store = useStore()
-  const deck = computed(() => store.getters['deck/getDeckList'] )
-  const face = computed(() => store.getters['deck/getFace'])
-
-  const increment = ev => store.commit('deck/increment', ev)
-  const decrement = ev => store.commit('deck/decrement', ev)
-
-  const trash = ev => store.commit('deck/nuke')
-  const clearFace = ev => store.commit('deck/setFace', undefined) // TODO make this a real mutation?
-
-  const $q = useQuasar()
-
-  import DeckLoaderDialog from 'components/deck/DeckLoaderDialog.vue'
-  function deckLoadDialog() {
-    $q.dialog({
-      component: DeckLoaderDialog,
-    })
-    // .onOk(() => {
-    //   console.log('OK')
-    // }).onCancel(() => {
-    //   console.log('Cancel')
-    // }).onDismiss(() => {
-    //   console.log('Called on OK or Cancel')
-    // })
-  }
-
-  const simple = "Simple", type = "Types", symbol = "Symbols", difficulty = "Difficulty", control = "Control", block = 'Block'
-  const partitionOptions = [simple, type, symbol, difficulty, control, block]
-  const howPartition = ref(type)
-
-
-  // const sorts = ['Difficulty', 'Control', 'Block_Modifier', 'Speed', 'Damage', 'Name'].map(f => ({ label: f.toLowerCase(), fun: card => card[f]}))
-  // const sortField = ref('')
-  // function compare(a, b) {
-  //   console.log('hi from compare')
-  //   if (sortField.value) {
-  //     return a[sortField.value] - b[sortField.value]
-  //   } else {
-  //     return 1 // do nothing
-  //   }
-  // }
-
-  // const sortedDeck = computed(() => [...deck.value].sort(compare))
   import Elements from 'components/cards/detail/Elements.vue'
-
-  function count(stack) {
-    return stack.reduce((total, me) => total + me.qty, 0)
-  }
-  function arbitraryPartition(funk) {
-    let contents = store.getters['deck/getDeckList'] // TODO, sometime, sort this
-    const safeFunk = c => {
-      let value = funk(c)
-      return value == undefined ? "None" : value
-    }
-    // unique values for applying the function
-    let parts = new Set([...contents.map(safeFunk)])
-    
-    // coerce the Set back into a List
-    return [...parts].map(me => {
-      let part = contents.filter(c => safeFunk(c) == me)
-      let qty = count(part)
-      return {key: me, label: `${me}: ${qty}`, cards: part} // TODO decouple algorithm from this display logic
-    })
-  }
-
-  function matchSymbols(card) {
-    let mainResources = face.value?.resources
-    return card.resources.filter(resource => mainResources?.includes(resource))
-  }
-  
-  const partitions = computed(() => {
-    let main
-    switch(howPartition.value) {
-        case type:
-          main = arbitraryPartition(card => card.type)
-          break
-        case block:
-          main = arbitraryPartition(card => card.block_zone)
-          break
-        case symbol:
-          main = arbitraryPartition(card => matchSymbols(card).sort().toString())
-          break
-        case control:
-          main = arbitraryPartition(card => card.control)
-          break
-        case difficulty:
-          main = arbitraryPartition(card => card.difficulty)
-          break
-        case simple:
-        default:
-          main = arbitraryPartition(c => "All")
-    }
-    const sideContent = store.getters['deck/getSideList']
-    if (sideContent?.length > 0) {
-      let sidePart = {key: "sideboard", label: `Sideboard: ${count(sideContent)}`, cards: sideContent}
-      main.push(sidePart)
-    }
-    return main
-  })
-
-  function deck2clipboard() {
-    let main = partitions.value.filter(part => part.key != "sideboard")
-    const deckList = main.map(p => p.cards).flat() // use displayed ordering of cards
-    let name = face.value?.name // mainchar may be undefined
-    let myFace = name ? [{ name: name, qty: 1 }] : [] // if it's not, there is 1 copy in your deck
-    let deck = [...myFace, ...deckList].map(c => `${c.qty} ${c.name}`)
-    
-    let side = store.getters['deck/hasSide'] ? ['sideboard', ...store.getters['deck/getSideList'].map(c => `${c.qty} ${c.name}`)] : []
-    // maybe TODO sometime: accumulate additional copies of main char into the 1st quantity, vs 1 Amy... 3 Amy that will happen now
-    // a possible method: simply increment() face before exporting? or have a general dedupe method, and prepend face to the list before dedupe
-    // navigator.clipboard.writeText([...deck, ...side ].join('\n'))
-    copyToClipboard([...deck, ...side ].join('\n')).catch(() => console.log("TODO alert the user that their clipboard failed"))
-  }
+  import {
+      face,
+      deck2clipboard,
+      partitions,
+      sorts,
+      sortField,
+      sortedDeck,
+      
+      increment,
+      decrement,
+      trash,
+      clearFace,
+      deckLoadDialog,
+      
+      partitionOptions,
+      howPartition,
+  } from './deck_logic'
 </script>
 
 <template>
@@ -184,7 +85,7 @@
 
 <style>
 .card-list-character {
-  background-color: #98a6e3;
+  background-color: #f51a1a;
 }
 .card-list-foundation {
   background-color: #b6a7a0;
@@ -196,7 +97,7 @@
   background-color: #a3bf75;
 }
 .card-list-action {
-  background-color: #7e9cc0;
+  background-color: #0b64cf;
 }
 .card-list-side {
   background-color: #999999;
