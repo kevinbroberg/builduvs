@@ -94,8 +94,7 @@ function click3(e, hi, mid, low) {
       <h3 v-if="theAttack != null">Using {{theAttack?.name}}</h3>
       
   </div> -->
-  <Player />
-
+  <Player :damage=damage />
   <div class="row no-wrap justify-center ">
     <div class="self-center col">
       <SimpleTypePicker :type="'attack'" :label="'Pick an attack'" 
