@@ -1,5 +1,5 @@
   import { ref, computed } from 'vue'
-  import { useQuasar, copyToClipboard } from 'quasar'
+  import { copyToClipboard } from 'quasar'
   import { theStore as store } from 'components/../store'
 
   export const deck = computed(() => store.getters['deck/getDeckList'] )
@@ -11,21 +11,6 @@
   export const trash = ev => store.commit('deck/nuke')
   export const clearFace = ev => store.commit('deck/setFace', undefined) // TODO make this a real mutation?
 
-  const $q = useQuasar()
-
-  import DeckLoaderDialog from 'components/deck/DeckLoaderDialog.vue'
-  export function deckLoadDialog() {
-    $q.dialog({
-      component: DeckLoaderDialog,
-    })
-    // .onOk(() => {
-    //   console.log('OK')
-    // }).onCancel(() => {
-    //   console.log('Cancel')
-    // }).onDismiss(() => {
-    //   console.log('Called on OK or Cancel')
-    // })
-  }
 
   const simple = "Simple", type = "Types", symbol = "Symbols", difficulty = "Difficulty", control = "Control", block = 'Block'
   export const partitionOptions = [simple, type, symbol, difficulty, control, block]
@@ -35,11 +20,11 @@
   export const sorts = ['Difficulty', 'Control', 'Block_Modifier', 'Speed', 'Damage', 'Name'].map(f => ({ label: f.toLowerCase(), fun: card => card[f]}))
   export const sortField = ref('')
   export function compare(a, b) {
-    console.log('hi from compare')
     if (sortField.value) {
-      return a[sortField.value] - b[sortField.value]
+      let av = a[sortField.value], bv = b[sortField.value]
+      return av > bv ? 1 : bv > av ? -1 : 0
     } else {
-      return 1 // do nothing
+      return 0 // do nothing
     }
   }
 
@@ -49,7 +34,8 @@
     return stack.reduce((total, me) => total + me.qty, 0)
   }
   function arbitraryPartition(funk) {
-    let contents = store.getters['deck/getDeckList'] // TODO, sometime, sort this
+    //let contents = sortedDeck.value
+    let contents = store.getters['deck/getDeckList'] 
     const safeFunk = c => {
       let value = funk(c)
       return value == undefined ? "None" : value

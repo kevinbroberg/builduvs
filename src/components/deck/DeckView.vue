@@ -1,5 +1,6 @@
 <script setup> 
   import Elements from 'components/cards/detail/Elements.vue'
+  import DeckDialog from './DeckDialog.vue'
   import {
       face,
       deck2clipboard,
@@ -12,7 +13,6 @@
       decrement,
       trash,
       clearFace,
-      deckLoadDialog,
       
       partitionOptions,
       howPartition,
@@ -21,10 +21,7 @@
 
 <template>
   <q-btn-group push>
-    
-      <q-btn push stack dense round icon="file_upload" @click="deckLoadDialog">
-        <q-tooltip>Load a deck from file or with text input</q-tooltip>
-      </q-btn>
+      <DeckDialog />
       <!-- <q-btn-dropdown menu-self="bottom middle" push stack auto-close 
         label="Sort" icon="sort">
         <q-item v-for="sort in sorts" v-bind:key="sort.label" clickable @click="sortField = sort">
