@@ -7,9 +7,6 @@ import {
   face,
   deck2clipboard,
   partitions,
-  sorts,
-  sortField,
-  sortedDeck,
 
   trash,
   clearFace,
@@ -22,13 +19,6 @@ import {
 <template>
   <q-btn-group push>
     <DeckDialog />
-    <q-btn-dropdown menu-self="bottom middle" push stack auto-close 
-        label="Sort" icon="sort">
-        <q-item v-for="sort in sorts" v-bind:key="sort.label" clickable @click="sortField = sort">
-          <q-item-label standout v-if='sortField == sort'>{{sort.label}}</q-item-label>
-          <q-item-label v-else>{{sort.label}}</q-item-label>
-        </q-item>
-    </q-btn-dropdown>
 
     <q-btn-dropdown
       menu-self="bottom middle"
