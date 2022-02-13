@@ -1,24 +1,22 @@
 <script setup>
-  import { computed, ref, defineProps } from 'vue'
+  import { ref, defineProps } from 'vue'
   import * as provider from 'assets/card_provider.js'
 
+  // TODO make this a prop, and emit value updates
   const selections = provider.selections
-  const options = computed(() => provider.filteredCards.value
-    .map(c => c.name)
-    .filter(name => name.toLowerCase().indexOf(extraFilter.value) > -1)
-  )
+  const history = ref([])
+  function add(val, done) {
+    history.value.push(val)
+    done(val)
+  }
   
   const props = defineProps({ label: String})
-
-  let extraFilter = ref('')
-  function filterNames(val, update, abort) {
-    update(() => extraFilter.value = val.toLowerCase())
-  }
   
 </script>
 <template>
-    <q-select v-model="selections.name" :options=options 
+    <q-select v-model="selections.name" :options=history
+      @new-value="add"
       use-input standout dense clearable
       new-value-mode="add" 
-      :label="props.label || 'Search by name'" class="q-ml-sm" @filter=filterNames />
+      :label="props.label || 'Search by name'" class="q-ml-sm"  />
 </template>
