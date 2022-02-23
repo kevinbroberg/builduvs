@@ -10,7 +10,7 @@ import {
 
   trash,
   clearFace,
-
+  SIDEKEY,
   partitionOptions,
   howPartition,
 } from 'components/deck/deck_logic'
@@ -71,7 +71,7 @@ import {
     <q-separator/>
     <div class="row items-start">
       <CardCard v-for="card in partition.cards" :key="card.asset" 
-        :card="card" :main="true" :class="'col-lg-2 col-md-3 col-sm-6 col-xs-12'" />
+        :card="card" :main="partition.key != SIDEKEY" :class="'col-lg-2 col-md-3 col-sm-6 col-xs-12'" />
     </div>
 
   </div>

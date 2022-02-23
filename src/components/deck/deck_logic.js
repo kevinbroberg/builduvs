@@ -55,6 +55,8 @@
     let mainResources = face.value?.resources
     return card.resources.filter(resource => mainResources?.includes(resource))
   }
+
+  export const SIDEKEY = "sideboard"
   
   export const partitions = computed(() => {
     let main
@@ -80,14 +82,14 @@
     }
     const sideContent = store.getters['deck/getSideList']
     if (sideContent?.length > 0) {
-      let sidePart = {key: "sideboard", label: `Sideboard: ${count(sideContent)}`, cards: sideContent.map(c => ({...c, type: 'sideboard'}))}
+      let sidePart = {key: SIDEKEY, label: `Sideboard: ${count(sideContent)}`, cards: sideContent.map(c => ({...c, type: 'sideboard'}))}
       main.push(sidePart)
     }
     return main
   })
 
   export function deck2clipboard() {
-    let main = partitions.value.filter(part => part.key != "sideboard")
+    let main = partitions.value.filter(part => part.key != SIDEKEY)
     const deckList = main.map(p => p.cards).flat() // use displayed ordering of cards
     let name = face.value?.name // mainchar may be undefined
     let myFace = name ? [{ name: name, qty: 1 }] : [] // if it's not, there is 1 copy in your deck
