@@ -105,20 +105,22 @@ function click3(e, hi, mid, low) {
     <div class="col"
       @click="hiOrLow($event, () => speed++, () => speed--)" 
       style="padding: 2vh; border: 2px solid green;">
-      <h3 class="q-mx-none">{{speed}} speed</h3>
+      <h3 class="q-mx-none">{{speed}}
+      <Element :element="attack_zone + ' attack'" /></h3>
     </div>
     <div class="self-center text-center col"
       :style="`padding: 2vh;`" 
       :class="`bg-${zoneColor(attack_zone)}`"
       @click="click3($event, () => attack_zone = 'high', () => attack_zone = 'mid', ()=> attack_zone = 'low')" >
       <h3 class="q-mx-none">
-        {{attack_zone}}<Element :element="attack_zone + ' attack'" />
+        {{attack_zone}}
       </h3>
     </div>
     <div class="col"
       @click="hiOrLow($event, () => damage++, () => damage--)" 
       style="padding: 2vh; border: 2px solid red;">
-      <h3 class="q-mx-none">{{damage}} damage</h3>
+      <h3 class="q-mx-none">{{damage}}
+      <Element :element="'damage'" /></h3>
     </div>
   </div>
 
