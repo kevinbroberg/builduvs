@@ -17,7 +17,7 @@ export const formatOptions = ["My Hero Academia","standard","standard banned","r
 
 const selections = ref({})
 export function initializeSelections() {
-    const prevFormat = selections.value?.formats || ["standard"]
+    const prevFormat = selections.value?.formats || []
     selections.value = {
         name:  '', 
         text:  '', 
@@ -38,6 +38,7 @@ export function initializeSelections() {
         attack_zone: [],
         vitality: [],
         hand_size: [],
+        keyword_count: [],
     }
 }
 initializeSelections()
@@ -63,6 +64,7 @@ export function getFilterPath(skips = []) {
         "attack_zone",
         "vitality",
         "hand_size",
+        "keyword_count",
       ]
     if (skips) {
       fields = fields.filter(f => !skips.includes(f))
@@ -152,6 +154,13 @@ function controlFilter(card) {
     return true
   }
 }
+function keywordCountFilter(card) {
+  if (selections.value.keyword_count && selections.value.keyword_count.length > 0) {
+    return selections.value.keyword_count.includes(card.keywords?.length || 0)
+  } else {
+    return true
+  }
+}
 function formatMatchFilter(card) {
     if (selections.value.formats && selections.value.formats.length > 0) {
       return card.formats &&
@@ -200,6 +209,7 @@ function allFiltersMatch(card) {
                  typeMatchFilter,
                  keywordFilter,
                  rarityFilter,
+                 keywordCountFilter,
                  exactMatchFilter("block_modifier"),
                  exactMatchFilter("block_zone"),
                  exactMatchFilter("speed"),
@@ -235,7 +245,7 @@ export function handleQuery(query) {
     }
     let listFields = ["symbols","symbols2","symbols3","extensions","types","keywords",
       "formats", "difficulty", "control", "rarity", "block_modifier", "block_zone", "speed",
-      "damage", "attack_zone", "vitality","hand_size",]
+      "damage", "attack_zone", "vitality","hand_size","keyword_count"]
     listFields.forEach(field => queries[field] = query[field]  ? JSON.parse(query[field])  : selections.value[field])
     selections.value = queries
 }
