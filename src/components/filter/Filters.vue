@@ -43,7 +43,7 @@
           <Selector name="Handsize" v-model:picks="selections.hand_size" :options="handOptions" />
           <Selector name="Health" v-model:picks="selections.vitality" :options="vitalityOptions" />
         </span>
-        <Selector name="Keyword Count" v-model:picks="selections.keyword_count" :options="Array.from({ length: 9 }, (_, i) => i)" />
+        <Selector name="Keyword Count" v-model:picks="selections.keyword_count" :options="keywordCountOptions" />
       </div>
       <q-select v-model="selections.extensions" :options="originOptions" standout dense stack-label 
         use-chips multiple label="Select extensions">
@@ -52,10 +52,10 @@
         use-chips multiple use-input clearable 
         new-value-mode="add" placeholder="Search keywords">
       </q-select>
-      <q-input v-model="selections.text" :options="textOptions" standout dense 
+      <q-select v-model="selections.text" :options="textOptions" standout dense 
         use-input clearable 
         new-value-mode="add" label="Search text">
-      </q-input>
+      </q-select>
       <q-btn push v-if="resultsCount > 200">{{resultsCount}} Cards in Search</q-btn>
       <q-btn push v-if="resultsCount <= 200" @click="addAllToDeck">Add All {{resultsCount}} Cards to your Deck</q-btn>
       <q-btn push @click="clearFilters">Clear Filters</q-btn>
@@ -94,7 +94,7 @@ export default {
       return [...new Set(provider.formatCards.value.map(card => card.type))].sort()
     },
     textOptions() {
-      return ["NONE", ...this.textTags, ...new Set(provider.filteredCards.value.map(c => c.text))]
+      return this.textTags
     },
     rarityOptions() {
       return this.getOptions("rarity")
@@ -119,6 +119,9 @@ export default {
     },
     vitalityOptions() {
       return this.getNumberOptions("vitality")
+    },
+    keywordCountOptions() {
+      return [...new Set(provider.formatCards.value.map(card => card?.keywords?.length || 0))].sort()
     },
     zoneOptions() {
       return ["high", "mid", "low"]
