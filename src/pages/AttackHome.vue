@@ -6,7 +6,7 @@ import Player from 'src/components/attack/Player.vue'
 import Element from 'components/cards/detail/Element.vue'
 import { selections, symbolOptions, formatOptions } from "assets/card_provider.js"
 
-const defaults = { speed: 0 , damage: 5, health: 30, zone: 'mid'}
+const defaults = { speed: 4 , damage: 5, health: 30, zone: 'mid'}
 const speed = ref(defaults.speed)
 const damage = ref(defaults.damage)
 const attack_zone = ref(defaults.zone)
@@ -81,13 +81,13 @@ function click3(e, hi, mid, low) {
         low()
     }
 }
+
 </script>
 
 <template>
   <Selector v-model:picks="selections['symbols']" :options=mySymbolOptions name="Symbols">
     <template v-slot:button="{selected}">{{selected}}<Element :element=selected /></template>
   </Selector>
-  <q-separator />
   <Selector name="Format" v-model:picks="selections.formats" :options="formatOptions" />
   <q-separator />
   <!-- <div v-if="theAttack != null" class="row no-wrap justify-center"> 
@@ -96,11 +96,13 @@ function click3(e, hi, mid, low) {
   </div> -->
   <Player :damage=damage />
   <div class="row no-wrap justify-center ">
-    <div class="self-center col">
+    <div class="self-center col items-stretch">
       <SimpleTypePicker :type="'attack'" :label="'Pick an attack'" 
         @update:choice="theAttack = $event" />
-      <q-btn col push @click=reset>Reset</q-btn>
-      <q-btn col push label="Show" @click="showPic = !!theAttack && !showPic" />
+      <div class="row">
+        <q-btn class="col" push @click=reset>Reset</q-btn>
+        <q-btn class="col" push label="Show" @click="showPic = !!theAttack && !showPic" />
+      </div>
     </div>
     <div class="col"
       @click="hiOrLow($event, () => speed++, () => speed--)" 
