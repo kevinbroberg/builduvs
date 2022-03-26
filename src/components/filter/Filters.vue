@@ -66,7 +66,7 @@
 
 <script>
 import { copyToClipboard } from 'quasar'
-import * as provider from 'assets/card_provider.js'
+import * as provider from 'src/js/card_provider.js'
 
 export default {
   name: 'Filters',

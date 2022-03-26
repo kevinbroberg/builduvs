@@ -1,5 +1,5 @@
 <script setup>
-import { cards } from 'assets/card_provider.js'
+import { cards } from 'src/js/card_provider.js'
 import { ref, computed, defineEmits } from 'vue'
 import { useDialogPluginComponent } from 'quasar'
 import { useStore } from 'vuex'

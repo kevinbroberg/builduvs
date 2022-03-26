@@ -25,7 +25,7 @@
 <script>
 import UltraCardDetail from "./UltraCardDetail.vue"
 import CardCard from "./CardCard.vue"
-import { filteredCards } from "assets/card_provider.js"
+import { filteredCards } from "src/js/card_provider.js"
 
 export default {
   name: "InfiniteScrollCardDetailList",

@@ -1,6 +1,6 @@
 <script setup>
   import { ref, defineProps } from 'vue'
-  import * as provider from 'assets/card_provider.js'
+  import * as provider from 'src/js/card_provider.js'
 
   // TODO make this a prop, and emit value updates
   const selections = provider.selections

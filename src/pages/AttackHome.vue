@@ -4,7 +4,7 @@ import Selector from 'components/filter/Selector.vue'
 import SimpleTypePicker from 'src/components/filter/SimpleTypePicker.vue'
 import Player from 'src/components/attack/Player.vue'
 import Element from 'components/cards/detail/Element.vue'
-import { selections, symbolOptions, formatOptions } from "assets/card_provider.js"
+import { selections, symbolOptions, formatOptions } from "src/js/card_provider.js"
 
 const defaults = { speed: 4 , damage: 5, health: 30, zone: 'mid'}
 const speed = ref(defaults.speed)

@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, defineEmits, defineProps, watch } from 'vue'
 // TODO provide separate streams of filtered cards with fully distinct selections
-import { formatCards, symbolFilter1 } from 'assets/card_provider.js'
+import { formatCards, symbolFilter1 } from 'src/js/card_provider.js'
 
 const emit = defineEmits( ['update:choice'] )
 const props = defineProps( {choice: Object, type: String, label: String})

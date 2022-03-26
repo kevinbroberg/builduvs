@@ -10,7 +10,7 @@
 <script>
 import InfiniteScrollCardDetailList from 'components/cards/InfiniteScrollCardDetailList'
 import Filters from 'components/filter/Filters'
-import * as provider from 'assets/card_provider.js'
+import * as provider from 'src/js/card_provider.js'
 
 export default {
   name: 'CardHome',

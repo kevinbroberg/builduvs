@@ -1,6 +1,6 @@
 import { ref, computed } from 'vue'
-import provisional from './provs.json'
-import real_cards from './cards.json'
+import provisional from 'assets/provs.json'
+import real_cards from 'assets/cards.json'
 // TODO sooner than later: pull out legacy / retro 
 
 export const cards = [...provisional, ...real_cards]
