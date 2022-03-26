@@ -1,5 +1,6 @@
 <script setup>
   import Selector from "components/filter/Selector"
+  import MultilineSelector from "components/filter/MultilineSelector"
   import Element from "components/cards/detail/Element"  
 </script>
 <template>
@@ -26,31 +27,33 @@
         <Selector name="Difficulty" v-model:picks="selections.difficulty" :options="difficulties" />
         <q-separator />
         <Selector name="Control" v-model:picks="selections.control" :options="controls" />
-        <span>
+        <span ref="block_stats">
           <Selector name="Block" v-model:picks="selections.block_modifier" :options="blockOptions" />
           <Selector name="Block zone" v-model:picks="selections.block_zone" :options="zoneOptions">
             <template v-slot:button="{selected}">{{selected}}<Element :element="selected + ' block'" /></template>
           </Selector>
         </span>
-        <span>
+        <span ref="attack_stats">
           <Selector name="Damage" v-model:picks="selections.damage" :options="damageOptions" />
           <Selector name="Zone" v-model:picks="selections.attack_zone" :options="zoneOptions">
             <template v-slot:button="{selected}">{{selected}}<Element :element="selected + ' attack'" /></template>
           </Selector>
           <Selector name="Speed" v-model:picks="selections.speed" :options="speedOptions" />
         </span>
-        <span>
+        <span ref="character_stats">
           <Selector name="Handsize" v-model:picks="selections.hand_size" :options="handOptions" />
           <Selector name="Health" v-model:picks="selections.vitality" :options="vitalityOptions" />
         </span>
+        <MultilineSelector name="Keywords" v-model:picks="selections.keyword_picks" :options="keywordSelectOptions" :multi=2 />
         <Selector name="Keyword Count" v-model:picks="selections.keyword_count" :options="keywordCountOptions" />
+        <!-- <MultilineSelector name="Extensions" v-model:picks="selections.extensions" :options="originOptions" lines=7 /> -->
       </div>
       <q-select v-model="selections.extensions" :options="originOptions" standout dense stack-label 
         use-chips multiple label="Select extensions">
       </q-select>
-      <q-select v-model="selections.keywords" :options="keywordOptions" standout dense stack-label 
+      <q-select v-model="selections.keyword_search" :options="keywordSearchOptions" standout dense stack-label 
         use-chips multiple use-input clearable 
-        new-value-mode="add" placeholder="Search keywords">
+        new-value-mode="add" placeholder="Advanced keyword search">
       </q-select>
       <q-select v-model="selections.text" :options="textOptions" standout dense 
         use-input clearable 
@@ -99,8 +102,11 @@ export default {
     rarityOptions() {
       return this.getOptions("rarity")
     },
-    keywordOptions() {
+    keywordSearchOptions() {
       return [...this.keywordTags, ...new Set(provider.filteredCards.value.map(card => card.keywords).flat())].sort()
+    },
+    keywordSelectOptions() {
+      return provider.mhaOnlySelected() ? provider.mha_keywords : provider.universus_keywords
     },
     originOptions() {
       return [...new Set(provider.formatCards.value.map(card => card.extension))]
@@ -139,16 +145,10 @@ export default {
         .filter(e => e != undefined).sort((a, b) => a - b)
     },
     addAllToDeck() {
-        if (provider.filteredCards.value.length > 200) {
-            // TODO just don't show the button unless they meet this criteria? Show a different one instead?
-            alert('200 card limit for bulk add. Please set more filters')
-        } else {
-            provider.filteredCards.value.forEach(c => this.$store.commit('deck/increment', c))
-        }
+      provider.filteredCards.value.forEach(c => this.$store.commit('deck/increment', c))
     },
     async copyFilterLink() {
-      let chosenFormats = provider.selections.value.formats
-      let linkMHA = this.$route.path.includes("mha") && chosenFormats.length == 1 && chosenFormats[0] == "My Hero Academia" // TODO magic string
+      let linkMHA = provider.mhaOnlySelected()
       let skips = linkMHA ? ["formats"] : []
       let filterLink = location.origin + this.$route.path + '?' + provider.getFilterPath(skips)
       await copyToClipboard(filterLink)

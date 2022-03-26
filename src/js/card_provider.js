@@ -27,7 +27,6 @@ export function initializeSelections() {
         symbols3:  [],
         extensions:[], 
         types:     [], 
-        keywords:  [], 
         formats:  prevFormat,
         difficulty:[],
         control:   [],
@@ -39,7 +38,9 @@ export function initializeSelections() {
         attack_zone: [],
         vitality: [],
         hand_size: [],
+        keyword_search:  [], 
         keyword_count: [],
+        keyword_picks: []
     }
 }
 initializeSelections()
@@ -53,7 +54,6 @@ export function getFilterPath(skips = []) {
         "symbols3",
         "extensions",
         "types",
-        "keywords",
         "formats", 
         "difficulty", 
         "control",
@@ -66,6 +66,8 @@ export function getFilterPath(skips = []) {
         "vitality",
         "hand_size",
         "keyword_count",
+        "keyword_search",
+        "keyword_picks",
       ]
     if (skips) {
       fields = fields.filter(f => !skips.includes(f))
@@ -185,13 +187,21 @@ function textFilter(card) {
     return true
   }
 }
-function keywordFilter(card) {
-  let choices = selections.value.keywords
+function keywordSearchFilter(card) {
+  let choices = selections.value.keyword_search
   if (choices && choices.length > 0) {
     let tlc = s => s.toLowerCase() // i tried alternatives and rather dislike this, but it works
     choices = choices.map(tlc)
     let keys = card.keywords?.map(tlc)
     return keys?.some(key => choices.some(choice => key.includes(choice)))
+  } else {
+    return true
+  }
+}
+function keywordPickFilter(card) {
+  let choices = selections.value.keyword_picks // simplified, case sensitive version of keyword search because I fully control input options
+  if (choices && choices.length > 0) {
+    return card.keywords?.some(key => choices.some(choice => key.includes(choice)))
   } else {
     return true
   }
@@ -208,7 +218,6 @@ function allFiltersMatch(card) {
                  symbolFilterGenerator(selections.value.symbols3),
                  textFilter,
                  typeMatchFilter,
-                 keywordFilter,
                  rarityFilter,
                  keywordCountFilter,
                  exactMatchFilter("block_modifier"),
@@ -218,6 +227,8 @@ function allFiltersMatch(card) {
                  exactMatchFilter("attack_zone"),
                  exactMatchFilter("vitality"),
                  exactMatchFilter("hand_size"),
+                 keywordSearchFilter,
+                 keywordPickFilter
                  ]
   return filters.every(f => {
     try {
@@ -244,12 +255,75 @@ export function handleQuery(query) {
         name: query.name      ? stripQuotes(query.name)  : selections.value.name,
         text: query.text      ? stripQuotes(query.text)  : selections.value.text,
     }
-    let listFields = ["symbols","symbols2","symbols3","extensions","types","keywords",
+    let listFields = ["symbols","symbols2","symbols3","extensions","types",
       "formats", "difficulty", "control", "rarity", "block_modifier", "block_zone", "speed",
-      "damage", "attack_zone", "vitality","hand_size","keyword_count"]
+      "damage", "attack_zone", "vitality","hand_size","keyword_count", "keyword_search", "keyword_picks"]
     listFields.forEach(field => queries[field] = query[field]  ? JSON.parse(query[field])  : selections.value[field])
     selections.value = queries
 }
 
+// {key for card in mha_cards for key in card.get('keywords') or []}
+const mha_keywords = ['Ally',
+'Breaker',
+'Charge',
+'Combo',
+'EX',
+'Flash',
+'Fury',
+'Kick',
+'Powerful',
+'Punch',
+'Ranged',
+'Slam',
+'Stun',
+'Throw',
+'Unique',
+'Weapon']
 
-export { selections, formatCards, filteredCards }
+const universus_keywords = [
+  "Ally",
+  "Breaker",
+  "Charge",
+  "Combo",
+  "Desperation",
+  "EX",
+  "Flash",
+  "Fury",
+  "Gauge",
+  "Item",
+  "Kick",
+  "Multiple",
+  "Only",
+  "Powerful",
+  "Punch",
+  "Ranged",
+  "Reversal",
+  "Safe",
+  "Slam",
+  "Stance",
+  "Stun",
+  "Taunt",
+  "Tech",
+  "Terrain",
+  "Throw",
+  "Unique",
+  "Weapon",
+]
+
+export function mhaOnlySelected() {
+  return isMHA(selections.value.formats)
+}
+
+export function isMHA(formatList) {
+  return formatList.length == 1 && formatList[0] == "My Hero Academia"
+}
+export function keywordList() {
+  if (mhaOnlySelected()) {
+    return mha_keywords
+  } else {
+    return universus_keywords
+  }
+}
+
+
+export { selections, formatCards, filteredCards, mha_keywords, universus_keywords }
