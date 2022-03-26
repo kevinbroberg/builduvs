@@ -101,7 +101,7 @@ function click3(e, hi, mid, low) {
         @update:choice="theAttack = $event" />
       <div class="row">
         <q-btn class="col" push @click=reset>Reset</q-btn>
-        <q-btn class="col" push label="Show" @click="showPic = !!theAttack && !showPic" />
+        <q-btn class="col" push label="Show" @click="showPic = !!(theAttack.value) && !showPic" />
       </div>
     </div>
     <div class="col"
