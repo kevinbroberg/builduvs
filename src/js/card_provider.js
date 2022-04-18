@@ -5,7 +5,7 @@ import real_cards from 'assets/cards.json'
 
 export const cards = [...provisional, ...real_cards]
 export const symbolOptions = ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "infinity", "life", "order", "void", "water"]
-export const formatOptions = ["My Hero Academia","standard","standard banned","retro","retro banned","universal","unreleased","legacy"]
+export const formatOptions = ["My Hero Academia","MHA banned", "standard","standard banned","retro","retro banned","universal","unreleased","legacy"]
 /*
 "block_modifier": 0,
 "block_zone": "mid",
@@ -187,6 +187,7 @@ function textFilter(card) {
     return true
   }
 }
+
 function keywordSearchFilter(card) {
   let choices = selections.value.keyword_search
   if (choices && choices.length > 0) {
@@ -250,6 +251,7 @@ function stripQuotes(str) {
     }
     return str
 }
+
 export function handleQuery(query) {
     let queries = {
         name: query.name      ? stripQuotes(query.name)  : selections.value.name,
