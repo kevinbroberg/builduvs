@@ -5,7 +5,7 @@ import real_cards from 'assets/cards.json'
 
 export const cards = [...provisional, ...real_cards]
 export const symbolOptions = ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "infinity", "life", "order", "void", "water"]
-export const formatOptions = ["My Hero Academia","MHA banned", "standard","standard banned","retro","retro banned","universal","unreleased","legacy"]
+export const formatOptions = ["My Hero Academia","MHA banned", "standard","standard banned","retro","retro banned","unreleased","alpha", "alpha legend"]
 /*
 "block_modifier": 0,
 "block_zone": "mid",
