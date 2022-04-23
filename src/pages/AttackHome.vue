@@ -1,28 +1,28 @@
 <script setup>
-import { ref, watch } from 'vue'
-import Selector from 'components/filter/Selector.vue'
-import SimpleTypePicker from 'src/components/filter/SimpleTypePicker.vue'
+import { ref } from 'vue'
+import { hiOrLow, click3 } from "src/js/hiorlowlogic.js"
 import Player from 'src/components/attack/Player.vue'
 import Element from 'components/cards/detail/Element.vue'
-import { selections, symbolOptions, formatOptions } from "src/js/card_provider.js"
 
-const defaults = { speed: 4 , damage: 5, health: 30, zone: 'mid'}
-const speed = ref(defaults.speed)
-const damage = ref(defaults.damage)
-const attack_zone = ref(defaults.zone)
-const showPic = ref(false)
-const theAttack = ref({})
-const mySymbolOptions = symbolOptions.filter(s => s != "infinity")
-watch(theAttack, (now, __) => {
-    //console.log("got a card!")
-    now != null ? reset() : null
-})
+const defaults = ref({ speed: 4 , damage: 5, p1hp: 30, p2hp: 30, zone: 'mid'})
+const speed = ref(defaults.value.speed)
+const damage = ref(defaults.value.damage)
+const attack_zone = ref(defaults.value.zone)
+
+// Players watch this to determine when to reset
+const resetFlag = ref(false)
+// dialog flags
+const dialog = ref(false)
+const confirmReset = ref(false)
 
 function reset() {
-    speed.value = theAttack?.value?.speed || defaults.speed
-    damage.value = theAttack?.value?.damage || defaults.damage
-    attack_zone.value = theAttack?.value?.attack_zone || defaults.zone
-    showPic.value = false
+    speed.value = defaults.value.speed
+    damage.value = defaults.value.damage
+    attack_zone.value = defaults.value.zone
+}
+
+function resetGame() {
+  resetFlag.value = !resetFlag.value
 }
 
 function zoneColor(zone) {
@@ -38,71 +38,17 @@ function zoneColor(zone) {
     }
 }
 
-function hiOrLow(e, hi, low) {
-    var rect = e?.target?.getBoundingClientRect();
-    if(!rect) {
-        console.log(`sry no bounding rectange, only counting up`)
-        hi()
-        return 
-    }
-    // var x = e.clientX - rect.left; //x position within the element. - unused
-    var y = e.clientY - rect.top;  //y position within the element.
-    var mid = (rect.bottom - rect.top)/2
-    // console.log(`Computed ${y} from client ${e.clientY} rect ${rect.top} and relative to ${mid}`);
-    // console.log(`do high? ${y < mid}`)
-    if(y < mid) {
-        hi()
-    } else {
-        low()
-    }
-}
 
-function click3(e, hi, mid, low) {
-    var target = e?.target
-    // this is AWFUL practice I'm sure...
-    target = target.tagName === "DIV" ? target : target.parentNode
-    var rect = target?.getBoundingClientRect()
-    if(!rect) {
-        console.log(`sry no bounding rectange, only counting up ${target}`)
-        hi()
-        return 
-    }
-    // var x = e.clientX - rect.left; //x position within the element. - unused
-    var y = e.clientY - rect.top;  //y position within the element.
-    var inc = (rect.bottom - rect.top)/3
-    var t = inc, m = t + inc
-    // console.log(`Computed ${y} from client ${e.clientY} rect ${rect.top} and relative to ${mid}`);
-    console.log(`${e.target} ${y} click bottom ${rect.bottom} top ${rect.top} step ${inc} first boundary ${t} second ${m}`)
-    if(y < t) {
-        hi()
-    } else if (y < m) {
-        mid()
-    } else {
-        low()
-    }
-}
 
 </script>
 
 <template>
-  <Selector v-model:picks="selections['symbols']" :options=mySymbolOptions name="Symbols">
-    <template v-slot:button="{selected}">{{selected}}<Element :element=selected /></template>
-  </Selector>
-  <Selector name="Format" v-model:picks="selections.formats" :options="formatOptions" />
-  <q-separator />
-  <!-- <div v-if="theAttack != null" class="row no-wrap justify-center"> 
-      <h3 v-if="theAttack != null">Using {{theAttack?.name}}</h3>
-      
-  </div> -->
-  <Player :damage=damage />
+  <Player :damage=damage :start="defaults.p1hp" :reset=resetFlag />
   <div class="row no-wrap justify-center ">
-    <div class="self-center col items-stretch">
-      <SimpleTypePicker :type="'attack'" :label="'Pick an attack'" 
-        @update:choice="theAttack = $event" />
-      <div class="row">
-        <q-btn class="col" push @click=reset>Reset</q-btn>
-        <q-btn class="col" push label="Show" @click="showPic = !!(theAttack.value) && !showPic" />
-      </div>
+    <div class="self-center col justify-center q-px-md column">
+      <q-btn class="row-2" push icon="settings" @click="dialog = true" label="Settings"/>
+      <q-btn class="row justify-center" push @click=reset>Reset attack</q-btn>
+      <q-btn class="row justify-center" push @click="confirmReset = true">Reset game</q-btn>
     </div>
     <div class="col"
       @click="hiOrLow($event, () => speed++, () => speed--)" 
@@ -125,11 +71,34 @@ function click3(e, hi, mid, low) {
       <Element :element="'damage'" /></h3>
     </div>
   </div>
-
-  <Player :damage=damage />
-  <q-img v-if=showPic @click="showPic = false"
-          style="max-height: 100vh" fit="contain"
-          loading="lazy"
-          :src="require('assets/images/card_images/' + theAttack?.asset)"
-          :alt="theAttack?.name"/>
+  <Player :damage=damage :start="defaults.p2hp" :reset=resetFlag />
+  <q-dialog v-model="dialog">
+    <q-card>
+      <q-card-section>
+        <div class="text-h6">Starting life totals</div>
+        <q-input v-model.number="defaults.p1hp" label="Player 1" stack-label type="number" />
+        <q-input v-model.number="defaults.p2hp" label="Player 2" stack-label type="number" />
+      </q-card-section>
+      <q-card-section>
+        <div class="text-h6">Starting attack stats</div>
+        <q-input v-model.number="defaults.speed" label="Starting speed" stack-label type="number" />
+        <div class="q-gutter-sm"> 
+          <q-radio v-model="defaults.zone" val="high" label="High" />
+          <q-radio v-model="defaults.zone" val="mid" label="Mid" />
+          <q-radio v-model="defaults.zone" val="low" label="Low" />
+        </div>
+        <q-input v-model.number="defaults.damage" label="Starting damage" stack-label type="number" />
+      </q-card-section>
+    </q-card>
+  </q-dialog>
+  <q-dialog v-model="confirmReset">
+    <q-card style="height: 40vh">
+      <q-card-section>
+        <p>Reset both players to starting life total and erase history?</p>
+      </q-card-section>
+      <q-card-section>
+        <q-btn class="absolute-center" color="red-8" push @click=resetGame>Reset game</q-btn>
+      </q-card-section>      
+    </q-card>
+  </q-dialog>
 </template>

@@ -1,54 +1,48 @@
 <script setup>
-    import { ref } from 'vue'
-    import SimpleTypePicker from 'src/components/filter/SimpleTypePicker.vue'
+    import { ref, watch } from 'vue'
+    import { hiOrLow } from "src/js/hiorlowlogic"
     
-    const props = defineProps({ damage: Number })
-    
-    function hiOrLow(e, hi, low) {
-        var rect = e?.target?.getBoundingClientRect();
-        if(!rect) {
-            console.log(`sry no bounding rectange, only counting up`)
-            hi()
-            return 
-        }
-        // var x = e.clientX - rect.left; //x position within the element. - unused
-        var y = e.clientY - rect.top;  //y position within the element.
-        var mid = (rect.bottom - rect.top)/2
-        // console.log(`Computed ${y} from client ${e.clientY} rect ${rect.top} and relative to ${mid}`);
-        // console.log(`do high? ${y < mid}`)
-        if(y < mid) {
-            hi()
-        } else {
-            low()
-        }
-    }
+    const props = defineProps({ start: Number, damage: Number, reset: Boolean })
     
     function half(x) {
         return (x % 2) + (x/2 | 0)
     }
     
     const p1 = ref({
-        face : null,
-        health : 30
+        health : props.start
     })
-    function updatePlayer(choice, player) {
-        player.health = choice.vitality
-        player.face = choice
+    
+    const damageQueue = []
+
+    function hit(x) {
+      damageQueue.push(x)
+      p1.value.health -= x
     }
+
+    function undo() {
+      if (damageQueue.length > 0) {
+        let y = damageQueue.pop()
+        p1.value.health += y
+      }
+    }
+
+    watch(() => props.start, (newv, _) => p1.value.health = newv)
+
+    // on ANY change, reset to full life
+    watch(() => props.reset, (_, __) => p1.value.health = props.start)
 </script>
 
 
 <template>
   <div>
-    <SimpleTypePicker :type="'character'" :label="'Select character for Player 1'" @update:choice="updatePlayer($event, p1)" />
     <div class="row" > 
-      <div @click="hiOrLow($event, () => p1.health++, () => p1.health--)" 
+      <div @click="hiOrLow($event, () => hit(-1), () => hit(1))" 
         style="border: 2px solid red;" class="col-6">
         <h2 class="q-mx-none self-center text-weight-bold text-center">{{p1.health}}</h2>  
       </div>
-      <q-btn push class="col-2" color=green-12 text-color=black @click="p1.health -= half(props.damage)">Take half</q-btn>
-      <q-btn push class="col-2" color=purple-12 text-color=black @click="p1.health -= props.damage">Take full</q-btn>
-      <q-btn push class="col-2" text-color=black @click="p1.health = p1.face.vitality">Reset</q-btn>
+      <q-btn push class="col-2" color=green-12 text-color=black @click="hit(half(props.damage))">Take half</q-btn>
+      <q-btn push class="col-2" color=purple-12 text-color=black @click="hit(props.damage)">Take full</q-btn>
+      <q-btn push class="col-2" text-color=black @click="undo()">Undo</q-btn>
     </div>
   </div>
 </template>
