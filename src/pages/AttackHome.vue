@@ -23,9 +23,9 @@ const dialog = ref(false)
 const confirmReset = ref(false)
 
 function reset() {
-    speed.value = defaults.value.speed
-    damage.value = defaults.value.damage
-    attack_zone.value = defaults.value.zone
+  speed.value = defaults.value.speed
+  damage.value = defaults.value.damage
+  attack_zone.value = defaults.value.zone
 }
 
 function resetGame() {
@@ -33,16 +33,16 @@ function resetGame() {
 }
 
 function zoneColor(zone) {
-    switch(zone) {
-        case 'low':
-            return 'yellow-10'
-        case 'high':
-            return 'red-10'
-        case 'mid':
-            return 'orange-10'
-        default:
-            return 'black'
-    }
+  switch(zone) {
+    case 'low':
+      return 'yellow-10'
+    case 'high':
+      return 'red-10'
+    case 'mid':
+      return 'orange-10'
+    default:
+      return 'black'
+  }
 }
 
 watch(defaults, (nu, _) => {
