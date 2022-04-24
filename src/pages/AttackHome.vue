@@ -1,10 +1,17 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
+import { useQuasar } from 'quasar'
 import { hiOrLow, click3 } from "src/js/hiorlowlogic.js"
 import Player from 'src/components/attack/Player.vue'
 import Element from 'components/cards/detail/Element.vue'
 
-const defaults = ref({ speed: 4 , damage: 5, p1hp: 30, p2hp: 30, zone: 'mid'})
+const $q = useQuasar()
+
+const storage_key = "attack_default"
+const default_defaults = { speed: 4 , damage: 5, p1hp: 30, p2hp: 30, zone: 'mid'}
+const initial_defaults = $q.localStorage?.getItem(storage_key) || default_defaults
+
+const defaults = ref(initial_defaults)
 const speed = ref(defaults.value.speed)
 const damage = ref(defaults.value.damage)
 const attack_zone = ref(defaults.value.zone)
@@ -38,15 +45,23 @@ function zoneColor(zone) {
     }
 }
 
-
+watch(defaults, (nu, _) => {
+  try {
+    console.log(`hello new defaults in ${nu.zone}`)
+    $q.localStorage.set(storage_key, nu)
+  } catch (e) {
+    console.log(`Error persisting defaults ${e}`)
+  }
+  
+}, { deep: true})
 
 </script>
 
 <template>
   <Player :damage=damage :start="defaults.p1hp" :reset=resetFlag />
-  <div class="row no-wrap justify-center ">
-    <div class="self-center col justify-center q-px-md column">
-      <q-btn class="row-2" push icon="settings" @click="dialog = true" label="Settings"/>
+  <div class="row no-wrap justify-center">
+    <div class="col justify-center q-mx-md column">
+      <q-btn class="row" push icon="settings" @click="dialog = true" label="Settings"/>
       <q-btn class="row justify-center" push @click=reset>Reset attack</q-btn>
       <q-btn class="row justify-center" push @click="confirmReset = true">Reset game</q-btn>
     </div>
