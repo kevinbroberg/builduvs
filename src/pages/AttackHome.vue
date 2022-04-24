@@ -47,7 +47,6 @@ function zoneColor(zone) {
 
 watch(defaults, (nu, _) => {
   try {
-    console.log(`hello new defaults in ${nu.zone}`)
     $q.localStorage.set(storage_key, nu)
   } catch (e) {
     console.log(`Error persisting defaults ${e}`)
