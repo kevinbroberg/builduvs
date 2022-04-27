@@ -16,22 +16,6 @@
   function toggleRightDrawer () {
     rightDrawerOpen.value = !rightDrawerOpen.value
   }
-
-  import FilterDialog from 'components/filter/FilterDialog.vue'
-  const $q = useQuasar()
-  function showFilterDialog() {
-    $q.dialog({
-      component: FilterDialog,
-    })
-    // .onOk(() => {
-    //   console.log('OK')
-    // }).onCancel(() => {
-    //   console.log('Cancel')
-    // }).onDismiss(() => {
-    //   console.log('Called on OK or Cancel')
-    // })
-  }
-
 </script>
 
 <template>
@@ -48,7 +32,6 @@
           </q-avatar>
           BuildUVS
         </q-toolbar-title>
-        <q-btn dense flat round icon="tuner" @click="showFilterDialog"/>
         <NamePicker />
         <q-btn dense flat round icon="table_view" @click="toggleRightDrawer" >
           <q-tooltip>View current deck</q-tooltip>
@@ -62,9 +45,9 @@
       </q-tabs>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" side="left" behavior="mobile" elevated>
+    <!-- <q-drawer v-model="leftDrawerOpen" side="left" behavior="mobile" elevated>
       <h4>Deck listing will go here once implemented</h4>
-    </q-drawer>
+    </q-drawer> -->
 
     <q-drawer v-model="rightDrawerOpen" side="right" elevated>
       <DeckView />
