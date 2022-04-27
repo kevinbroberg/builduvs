@@ -20,7 +20,6 @@ const attack_zone = ref(defaults.value.zone)
 const resetFlag = ref(false)
 // dialog flags
 const dialog = ref(false)
-const confirmReset = ref(false)
 
 function reset() {
   speed.value = defaults.value.speed
@@ -58,13 +57,9 @@ watch(defaults, (nu, _) => {
 
 <template>
   <Player :damage=damage :start="defaults.p1hp" :reset=resetFlag />
-  <div class="row no-wrap justify-center">
-    <div class="col justify-center q-mx-md column">
-      <q-btn class="row" push icon="settings" @click="dialog = true" label="Settings"/>
-      <q-btn class="row justify-center" push @click=reset>Reset attack</q-btn>
-      <q-btn class="row justify-center" push @click="confirmReset = true">Reset game</q-btn>
-    </div>
-    <div class="col"
+  <div class="row no-wrap">
+
+    <div class="col self-center text-center"
       @click="hiOrLow($event, () => speed++, () => speed--)" 
       style="padding: 2vh; border: 2px solid green;">
       <h3 class="q-mx-none">{{speed}}
@@ -78,7 +73,7 @@ watch(defaults, (nu, _) => {
         {{attack_zone}}
       </h3>
     </div>
-    <div class="col"
+    <div class="col self-center text-center"
       @click="hiOrLow($event, () => damage++, () => damage--)" 
       style="padding: 2vh; border: 2px solid red;">
       <h3 class="q-mx-none">{{damage}}
@@ -86,12 +81,16 @@ watch(defaults, (nu, _) => {
     </div>
   </div>
   <Player :damage=damage :start="defaults.p2hp" :reset=resetFlag />
+  <q-page-sticky position="bottom-right" :offset="[18, 18]">
+    <q-btn :fab="true" icon="settings" color="primary" @click="dialog = true"/>
+  </q-page-sticky>
   <q-dialog v-model="dialog">
     <q-card>
       <q-card-section>
         <div class="text-h6">Starting life totals</div>
         <q-input v-model.number="defaults.p1hp" label="Player 1" stack-label type="number" />
         <q-input v-model.number="defaults.p2hp" label="Player 2" stack-label type="number" />
+        <q-btn class="flex-center" @click="resetGame()" color="negative">Reset game</q-btn>
       </q-card-section>
       <q-card-section>
         <div class="text-h6">Starting attack stats</div>
@@ -103,16 +102,6 @@ watch(defaults, (nu, _) => {
         </div>
         <q-input v-model.number="defaults.damage" label="Starting damage" stack-label type="number" />
       </q-card-section>
-    </q-card>
-  </q-dialog>
-  <q-dialog v-model="confirmReset">
-    <q-card style="height: 40vh">
-      <q-card-section>
-        <p>Reset both players to starting life total and erase history?</p>
-      </q-card-section>
-      <q-card-section>
-        <q-btn class="absolute-center" color="red-8" push @click=resetGame>Reset game</q-btn>
-      </q-card-section>      
     </q-card>
   </q-dialog>
 </template>
