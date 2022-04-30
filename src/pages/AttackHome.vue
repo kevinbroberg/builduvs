@@ -27,8 +27,35 @@ function reset() {
   attack_zone.value = defaults.value.zone
 }
 
+const history = ref({ p1: [], p2:[] })
+function delta(list) {
+  // this seems kinda overengineered tbh
+  return (x) => {
+    if (x == -1) {
+      let last = list.pop()
+      if (last < 0) {
+        last = last - 1
+        list.push(last)
+      } else {
+        // don't push undefined
+        if (last) list.push(last)
+        list.push(x)
+      }
+    } else {
+      list.push(x)
+    }
+  }
+}
+function p1change(x) {
+  delta(history.value.p1)(x)
+}
+function p2change(x) {
+  delta(history.value.p2z``)(x)
+}
+
 function resetGame() {
   resetFlag.value = !resetFlag.value
+  history.value = { p1: [], p2:[] }
 }
 
 function zoneColor(zone) {
@@ -56,9 +83,9 @@ watch(defaults, (nu, _) => {
 </script>
 
 <template>
-  <Player :damage=damage :start="defaults.p1hp" :reset=resetFlag />
+  <div class="q-gutter-md column">
+  <Player :damage=damage :start="defaults.p1hp" label="You" :reset=resetFlag @healthChange="p1change" />
   <div class="row no-wrap">
-
     <div class="col self-center text-center"
       @click="hiOrLow($event, () => speed++, () => speed--)" 
       style="padding: 2vh; border: 2px solid green;">
@@ -80,7 +107,7 @@ watch(defaults, (nu, _) => {
       <Element :element="'damage'" /></h3>
     </div>
   </div>
-  <Player :damage=damage :start="defaults.p2hp" :reset=resetFlag />
+  <Player :damage=damage :start="defaults.p2hp" label="Me" :reset=resetFlag @healthChange=p2change />
   <q-page-sticky position="bottom-right" :offset="[18, 18]">
     <q-btn :fab="true" icon="settings" color="primary" @click="dialog = true"/>
   </q-page-sticky>
@@ -91,6 +118,19 @@ watch(defaults, (nu, _) => {
         <q-input v-model.number="defaults.p1hp" label="Player 1" stack-label type="number" />
         <q-input v-model.number="defaults.p2hp" label="Player 2" stack-label type="number" />
         <q-btn class="flex-center" @click="resetGame()" color="negative">Reset game</q-btn>
+      </q-card-section>
+      <q-card-section>
+        <div class="text-h6">Life total history </div>
+        <div class="row justify-between">
+          <div class="column">
+            <p>Player 1</p>
+            <p v-for="c in history.p1" :key="c">{{c}}</p>
+          </div>
+          <div class="column text-right">
+            <p>Player 2</p>
+            <p v-for="c in history.p2" :key="c">{{c}}</p>
+          </div>
+        </div>
       </q-card-section>
       <q-card-section>
         <div class="text-h6">Starting attack stats</div>
@@ -104,4 +144,5 @@ watch(defaults, (nu, _) => {
       </q-card-section>
     </q-card>
   </q-dialog>
+  </div>
 </template>
