@@ -6,7 +6,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/001.png",
+    "asset": "mha02/001-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/001-preview.jpg",
     "name": "Gran Torino",
     "type": "character",
@@ -17,10 +17,10 @@
       "good",
       "void"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -29,25 +29,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/002.png",
+    "asset": "mha02/002-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/002-preview.jpg",
     "name": "Airstream Driver",
     "type": "attack",
     "rarity": "ultra rare",
-    "keywords": ["Slam", "Charge", "Fury"],
+    "keywords": [
+      "Slam",
+      "Charge",
+      "Fury"
+    ],
     "text": "Enhance Discard 1 card from your rival's card pool: This attack gets +3 speed and +3 damage.  Enhance Discard 1 momentum: Seal 1 rival asset or foundation.",
     "resources": [
       "air",
       "good",
       "void"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "low",
-    "block_mid": "1",
-    "attack_speed": "3",
+    "block_mid": 1,
+    "attack_speed": 3,
     "attack_zone": "high",
-    "attack_damage": "6"
+    "attack_damage": 6
   },
   {
     "extension": "Crimson Rampage",
@@ -56,25 +60,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/003.png",
+    "asset": "mha02/003-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/003-preview.jpg",
     "name": "Jet Stream Crash",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Kick", "Powerful: 2"],
+    "keywords": [
+      "Kick",
+      "Powerful: 2"
+    ],
     "text": "Enhance: If this attack is blocked, your next Charge or Kick attack gets +3 damage.   Enhance: If this attack is not blocked, your next Charge or Kick attack gets +2 speed.",
     "resources": [
       "air",
       "good",
       "void"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "high",
-    "block_mid": "2",
-    "attack_speed": "4",
+    "block_mid": 2,
+    "attack_speed": 4,
     "attack_zone": "mid",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -83,25 +90,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/004.png",
+    "asset": "mha02/004-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/004-preview.jpg",
     "name": "Rebound Side Kick",
     "type": "attack",
     "rarity": "rare",
-    "keywords": ["Kick", "Flash", "Fury"],
+    "keywords": [
+      "Kick",
+      "Flash",
+      "Fury"
+    ],
     "text": "If this attack is added to your momentum, add it face up.  Enhance [Momentum] Add this card to your card pool: This attack gets +2 or -2 damage.   Response: After this attack is blocked, add it to your momentum after it resolves.",
     "resources": [
       "air",
       "good",
       "void"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "2",
-    "attack_speed": "3",
+    "block_mid": 2,
+    "attack_speed": 3,
     "attack_zone": "mid",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -110,25 +121,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/005.png",
+    "asset": "mha02/005-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/005-preview.jpg",
     "name": "Ricochet Charge",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Punch", "Charge"],
+    "keywords": [
+      "Punch",
+      "Charge"
+    ],
     "text": "Enhance: If this is the only attack in your card pool, this attack gains Stun: 2.  air  Enhance: If this attack is not blocked, discard it from your card pool after it resolves.",
     "resources": [
       "air",
       "good",
       "void"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "low",
-    "block_mid": "2",
-    "attack_speed": "2",
+    "block_mid": 2,
+    "attack_speed": 2,
     "attack_zone": "high",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -137,7 +151,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/006.png",
+    "asset": "mha02/006-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/006-preview.jpg",
     "name": "First Impressions",
     "type": "foundation",
@@ -148,10 +162,10 @@
       "good",
       "void"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "low",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -160,22 +174,24 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/007.png",
+    "asset": "mha02/007-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/007-preview.jpg",
     "name": "Going Out To Fight Some Villains",
     "type": "foundation",
     "rarity": "common",
-    "keywords": ["Ally"],
+    "keywords": [
+      "Ally"
+    ],
     "text": "Good Enhance Flip: Your rival's Chaos, Death, or Evil attack gets -2 damage.  Enhance Flip: If this attack's speed is greater than its printed speed, this attack gets -3 speed.",
     "resources": [
       "air",
       "good",
       "void"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "4"
+    "block_mid": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -184,7 +200,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/008.png",
+    "asset": "mha02/008-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/008-preview.jpg",
     "name": "Small And Limber",
     "type": "foundation",
@@ -195,10 +211,10 @@
       "good",
       "void"
     ],
-    "difficulty": "1",
-    "control": "4",
+    "difficulty": 1,
+    "control": 4,
     "block_zone": "mid",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -207,7 +223,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/009.png",
+    "asset": "mha02/009-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/009-preview.jpg",
     "name": "Taiyaki Fanatic",
     "type": "foundation",
@@ -218,10 +234,10 @@
       "good",
       "void"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -230,7 +246,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/010.jpg",
+    "asset": "mha02/010-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/010-preview.jpg",
     "name": "Izuku Midoriya (II)",
     "type": "character",
@@ -241,10 +257,10 @@
       "good",
       "life"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -253,25 +269,30 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/011.png",
+    "asset": "mha02/011-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/011-preview.jpg",
     "name": "Back Alley Haymaker",
     "type": "attack",
     "rarity": "rare",
-    "keywords": ["Stun: 2", "Punch", "Charge", "EX: 2"],
+    "keywords": [
+      "Stun: 2",
+      "Punch",
+      "Charge",
+      "EX: 2"
+    ],
     "text": "Enhance: Draw 1 card or build 1 foundation with a printed difficulty of 0 from your discard pile.",
     "resources": [
       "earth",
       "good",
       "life"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "high",
-    "block_mid": "2",
-    "attack_speed": "4",
+    "block_mid": 2,
+    "attack_speed": 4,
     "attack_zone": "mid",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -280,25 +301,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/012.png",
+    "asset": "mha02/012-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/012-preview.jpg",
     "name": "Full-Power Clash",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Punch", "Powerful: 2", "Fury"],
+    "keywords": [
+      "Punch",
+      "Powerful: 2",
+      "Fury"
+    ],
     "text": "Enhance: Choose 1 of your foundations. This attack gets +1 speed and +1 damage for each copy of that foundation in your stage.",
     "resources": [
       "earth",
       "good",
       "life"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "1",
-    "attack_speed": "3",
+    "block_mid": 1,
+    "attack_speed": 3,
     "attack_zone": "mid",
-    "attack_damage": "3"
+    "attack_damage": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -307,25 +332,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/013.png",
+    "asset": "mha02/013-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/013-preview.jpg",
     "name": "Leaping Right Hook",
     "type": "attack",
     "rarity": "uncommon",
-    "keywords": ["Punch", "Charge"],
+    "keywords": [
+      "Punch",
+      "Charge"
+    ],
     "text": "Enhance: This attack gets +2 speed and -2 damage. If it deals damage, draw 1 card.   Deadlock  Enhance: This attack gets +2 speed and +4 damage.",
     "resources": [
       "earth",
       "good",
       "life"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "low",
-    "block_mid": "2",
-    "attack_speed": "3",
+    "block_mid": 2,
+    "attack_speed": 3,
     "attack_zone": "high",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -334,7 +362,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/014.png",
+    "asset": "mha02/014-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/014-preview.jpg",
     "name": "Overhead Reversal",
     "type": "attack",
@@ -345,13 +373,13 @@
       "good",
       "life"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "high",
-    "block_mid": "3",
-    "attack_speed": "3",
+    "block_mid": 3,
+    "attack_speed": 3,
     "attack_zone": "low",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -360,7 +388,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/015.png",
+    "asset": "mha02/015-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/015-preview.jpg",
     "name": "Any Means Neccessary",
     "type": "foundation",
@@ -371,10 +399,10 @@
       "good",
       "life"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "5"
+    "block_mid": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -383,7 +411,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/016.png",
+    "asset": "mha02/016-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/016-preview.jpg",
     "name": "Battle Resolve",
     "type": "foundation",
@@ -394,10 +422,10 @@
       "good",
       "life"
     ],
-    "difficulty": "0",
-    "control": "5",
+    "difficulty": 0,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -406,7 +434,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/017.png",
+    "asset": "mha02/017-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/017-preview.jpg",
     "name": "High Value Target",
     "type": "foundation",
@@ -417,10 +445,10 @@
       "good",
       "life"
     ],
-    "difficulty": "1",
-    "control": "5",
+    "difficulty": 1,
+    "control": 5,
     "block_zone": "low",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -429,7 +457,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/018.png",
+    "asset": "mha02/018-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/018-preview.jpg",
     "name": "New Training Method",
     "type": "foundation",
@@ -440,10 +468,10 @@
       "good",
       "life"
     ],
-    "difficulty": "2",
-    "control": "4",
+    "difficulty": 2,
+    "control": 4,
     "block_zone": "high",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -452,7 +480,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/019.png",
+    "asset": "mha02/019-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/019-preview.jpg",
     "name": "Katsuki Bakugo (II)",
     "type": "character",
@@ -463,10 +491,10 @@
       "earth",
       "fire"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -475,25 +503,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/020.png",
+    "asset": "mha02/020-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/020-preview.jpg",
     "name": "Brutal Explosion",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Combo(Fury)", "Powerful: 1", "Fury"],
+    "keywords": [
+      "Combo(Fury)",
+      "Powerful: 1",
+      "Fury"
+    ],
     "text": "Death Combo Enhance: If this attack deals damage, your rival destroys 1 foundation.   Enhance: If your rival has 3 or more face down foundations, this attack gets +2 speed.",
     "resources": [
       "death",
       "earth",
       "fire"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "1",
-    "attack_speed": "3",
+    "block_mid": 1,
+    "attack_speed": 3,
     "attack_zone": "high",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -502,25 +534,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/021.png",
+    "asset": "mha02/021-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/021-preview.jpg",
     "name": "Detonation Launcher",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Ranged", "Powerful: 1", "Fury"],
+    "keywords": [
+      "Ranged",
+      "Powerful: 1",
+      "Fury"
+    ],
     "text": "Enhance Flip 1 foundation: If your next attack is attackmid, your rivals flips 1 ready foundation.",
     "resources": [
       "death",
       "earth",
       "fire"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "high",
-    "block_mid": "2",
-    "attack_speed": "4",
+    "block_mid": 2,
+    "attack_speed": 4,
     "attack_zone": "low",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -529,25 +565,30 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/022.png",
+    "asset": "mha02/022-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/022-preview.jpg",
     "name": "Finishing Blast",
     "type": "attack",
     "rarity": "rare",
-    "keywords": ["Combo(Fury)", "Ranged", "Powerful: 2", "Fury"],
+    "keywords": [
+      "Combo(Fury)",
+      "Ranged",
+      "Powerful: 2",
+      "Fury"
+    ],
     "text": "Combo Enhance: Your rival flips 1 ready foundation.   Enhance: If your have played this attack's Powerful ability, it gets +2 speed.",
     "resources": [
       "death",
       "earth",
       "fire"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "2",
-    "attack_speed": "3",
+    "block_mid": 2,
+    "attack_speed": 3,
     "attack_zone": "mid",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -556,25 +597,30 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/023.png",
+    "asset": "mha02/023-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/023-preview.jpg",
     "name": "Howitzer Impact Cyclone",
     "type": "attack",
     "rarity": "ultra rare",
-    "keywords": ["Combo(Fury)", "Powerful: 3", "Slam", "Fury"],
+    "keywords": [
+      "Combo(Fury)",
+      "Powerful: 3",
+      "Slam",
+      "Fury"
+    ],
     "text": "Combo Enhance: Add the top card of your deck to your momentum.  Enhance Destroy 1 foundation: Draw 1 card for each of your momentum.",
     "resources": [
       "death",
       "earth",
       "fire"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "low",
-    "block_mid": "2",
-    "attack_speed": "3",
+    "block_mid": 2,
+    "attack_speed": 3,
     "attack_zone": "high",
-    "attack_damage": "6"
+    "attack_damage": 6
   },
   {
     "extension": "Crimson Rampage",
@@ -583,7 +629,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/024.png",
+    "asset": "mha02/024-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/024-preview.jpg",
     "name": "Forcing Surrender",
     "type": "foundation",
@@ -594,10 +640,10 @@
       "earth",
       "fire"
     ],
-    "difficulty": "1",
-    "control": "5",
+    "difficulty": 1,
+    "control": 5,
     "block_zone": "low",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -606,7 +652,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/025.png",
+    "asset": "mha02/025-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/025-preview.jpg",
     "name": "Internship With Best Jeanist",
     "type": "foundation",
@@ -617,10 +663,10 @@
       "earth",
       "fire"
     ],
-    "difficulty": "0",
-    "control": "5",
+    "difficulty": 0,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -629,7 +675,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/026.png",
+    "asset": "mha02/026-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/026-preview.jpg",
     "name": "Self-Propulsion",
     "type": "foundation",
@@ -640,10 +686,10 @@
       "earth",
       "fire"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -652,7 +698,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/027.png",
+    "asset": "mha02/027-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/027-preview.jpg",
     "name": "Tutoring Kirishima",
     "type": "foundation",
@@ -663,10 +709,10 @@
       "earth",
       "fire"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -675,7 +721,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/028.png",
+    "asset": "mha02/028-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/028-preview.jpg",
     "name": "Mei Hatsume",
     "type": "character",
@@ -686,10 +732,10 @@
       "evil",
       "life"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -698,7 +744,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/029.png",
+    "asset": "mha02/029-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/029-preview.jpg",
     "name": "Box Full Of Babies",
     "type": "asset",
@@ -709,10 +755,10 @@
       "evil",
       "life"
     ],
-    "difficulty": "1",
-    "control": "5",
+    "difficulty": 1,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -721,25 +767,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/030.png",
+    "asset": "mha02/030-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/030-preview.jpg",
     "name": "Electromagnetic Stomp",
     "type": "attack",
     "rarity": "ultra rare",
-    "keywords": ["Stun: 1", "Kick", "Tech"],
+    "keywords": [
+      "Stun: 1",
+      "Kick",
+      "Tech"
+    ],
     "text": "When this card is added to your momentum, add it face up.  Enhance [Momentum] Commit 1 foundation: Add this card to your hand.  Enhance Lose 2 health: Ready 1 asset.",
     "resources": [
       "all",
       "evil",
       "life"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "low",
-    "block_mid": "1",
-    "attack_speed": "4",
+    "block_mid": 1,
+    "attack_speed": 4,
     "attack_zone": "low",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -748,25 +798,30 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/031.png",
+    "asset": "mha02/031-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/031-preview.jpg",
     "name": "Net Gun Surprise!",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Weapon", "Stun: 2", "Ranged", "Tech"],
+    "keywords": [
+      "Weapon",
+      "Stun: 2",
+      "Ranged",
+      "Tech"
+    ],
     "text": "Response [Card pool] Remove: After your rival plays an attack, reduce its speed to 1.",
     "resources": [
       "all",
       "evil",
       "life"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "2",
-    "attack_speed": "3",
+    "block_mid": 2,
+    "attack_speed": 3,
     "attack_zone": "mid",
-    "attack_damage": "3"
+    "attack_damage": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -775,25 +830,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/032.png",
+    "asset": "mha02/032-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/032-preview.jpg",
     "name": "Wire Arrow",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Weapon", "Ranged", "Tech"],
+    "keywords": [
+      "Weapon",
+      "Ranged",
+      "Tech"
+    ],
     "text": "Enhance: If this attack deals damage, add 1 Tech card from your discard pile to the top of your deck.   Enhance: Add 1 asset from either player's stage to their momentum.",
     "resources": [
       "all",
       "evil",
       "life"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "high",
-    "block_mid": "1",
-    "attack_speed": "4",
+    "block_mid": 1,
+    "attack_speed": 4,
     "attack_zone": "mid",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -802,22 +861,25 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/033.png",
+    "asset": "mha02/033-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/033-preview.jpg",
     "name": "Floating Around My Babies",
     "type": "foundation",
     "rarity": "common",
-    "keywords": ["Weapon", "Tech"],
+    "keywords": [
+      "Weapon",
+      "Tech"
+    ],
     "text": "Enhance Remove the top 3 cards from your discard pile: This attack gets +1 damage.",
     "resources": [
       "all",
       "evil",
       "life"
     ],
-    "difficulty": "0",
-    "control": "5",
+    "difficulty": 0,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "4"
+    "block_mid": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -826,22 +888,25 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/034.png",
+    "asset": "mha02/034-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/034-preview.jpg",
     "name": "Mid-Match Advertisement",
     "type": "foundation",
     "rarity": "uncommon",
-    "keywords": ["Taunt", "Tech"],
+    "keywords": [
+      "Taunt",
+      "Tech"
+    ],
     "text": "Enhance Flip, discard 1 card: If there are 2 or more Tech cards in your card pool, gain 2 health.",
     "resources": [
       "all",
       "evil",
       "life"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -850,7 +915,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/035.png",
+    "asset": "mha02/035-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/035-preview.jpg",
     "name": "Succesful Sales Pitch",
     "type": "foundation",
@@ -861,10 +926,10 @@
       "evil",
       "life"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -873,7 +938,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/036.png",
+    "asset": "mha02/036-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/036-preview.jpg",
     "name": "Zoom",
     "type": "foundation",
@@ -884,10 +949,10 @@
       "evil",
       "life"
     ],
-    "difficulty": "1",
-    "control": "5",
+    "difficulty": 1,
+    "control": 5,
     "block_zone": "low",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -896,7 +961,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/037.png",
+    "asset": "mha02/037-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/037-preview.jpg",
     "name": "Mina Ashido (II)",
     "type": "character",
@@ -907,10 +972,10 @@
       "death",
       "water"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -919,25 +984,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/038.png",
+    "asset": "mha02/038-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/038-preview.jpg",
     "name": "Acid Chop",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Punch", "Flash"],
+    "keywords": [
+      "Punch",
+      "Flash"
+    ],
     "text": "Response: After you play this attack, both players add the top card of their deck to their card pool face down.",
     "resources": [
       "chaos",
       "death",
       "water"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "1",
-    "attack_speed": "4",
+    "block_mid": 1,
+    "attack_speed": 4,
     "attack_zone": "high",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -946,25 +1014,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/039.png",
+    "asset": "mha02/039-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/039-preview.jpg",
     "name": "Acid Corrosion Breach",
     "type": "attack",
     "rarity": "ultra rare",
-    "keywords": ["Ranged", "Slam", "Charge"],
+    "keywords": [
+      "Ranged",
+      "Slam",
+      "Charge"
+    ],
     "text": "Enhance Add 1 momentum to your card pool face down: This attack gets +2 speed and +2 damage.  Enhance Add the top card of your deck to your card pool face down: Look at the face down cards in your card pool. You may add 1 of them to your hand.",
     "resources": [
       "chaos",
       "death",
       "water"
     ],
-    "difficulty": "5",
-    "control": "2",
+    "difficulty": 5,
+    "control": 2,
     "block_zone": "high",
-    "block_mid": "1",
-    "attack_speed": "3",
+    "block_mid": 1,
+    "attack_speed": 3,
     "attack_zone": "low",
-    "attack_damage": "6"
+    "attack_damage": 6
   },
   {
     "extension": "Crimson Rampage",
@@ -973,7 +1045,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/040.png",
+    "asset": "mha02/040-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/040-preview.jpg",
     "name": "Acid Fling",
     "type": "attack",
@@ -984,13 +1056,13 @@
       "death",
       "water"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "low",
-    "block_mid": "2",
-    "attack_speed": "4",
+    "block_mid": 2,
+    "attack_speed": 4,
     "attack_zone": "mid",
-    "attack_damage": "3"
+    "attack_damage": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -999,25 +1071,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/041.png",
+    "asset": "mha02/041-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/041-preview.jpg",
     "name": "Cheerful Uppercut",
     "type": "attack",
     "rarity": "rare",
-    "keywords": ["Punch", "Charge"],
+    "keywords": [
+      "Punch",
+      "Charge"
+    ],
     "text": "Enhance Discard 1 momentum: This attack gets +4 damage.   Response: After you block with this card, both players add the top card of their deck to their card pool face down.",
     "resources": [
       "chaos",
       "death",
       "water"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "2",
-    "attack_speed": "5",
+    "block_mid": 2,
+    "attack_speed": 5,
     "attack_zone": "low",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -1026,7 +1101,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/042.png",
+    "asset": "mha02/042-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/042-preview.jpg",
     "name": "Choosing A Hero Name",
     "type": "foundation",
@@ -1037,10 +1112,10 @@
       "death",
       "water"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1049,7 +1124,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/043.png",
+    "asset": "mha02/043-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/043-preview.jpg",
     "name": "Graceful Maneuvers",
     "type": "foundation",
@@ -1060,10 +1135,10 @@
       "death",
       "water"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1072,7 +1147,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/044.png",
+    "asset": "mha02/044-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/044-preview.jpg",
     "name": "Mall Day!",
     "type": "foundation",
@@ -1083,10 +1158,10 @@
       "death",
       "water"
     ],
-    "difficulty": "2",
-    "control": "4",
+    "difficulty": 2,
+    "control": 4,
     "block_zone": "mid",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -1095,7 +1170,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/045.png",
+    "asset": "mha02/045-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/045-preview.jpg",
     "name": "Struggling With Studies",
     "type": "foundation",
@@ -1106,10 +1181,10 @@
       "death",
       "water"
     ],
-    "difficulty": "1",
-    "control": "5",
+    "difficulty": 1,
+    "control": 5,
     "block_zone": "low",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1118,7 +1193,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/046.png",
+    "asset": "mha02/046-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/046-preview.jpg",
     "name": "Ochaco Uraraka (III)",
     "type": "character",
@@ -1129,10 +1204,10 @@
       "chaos",
       "void"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -1141,25 +1216,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/047.png",
+    "asset": "mha02/047-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/047-preview.jpg",
     "name": "Double Jab Pummel",
     "type": "attack",
     "rarity": "ultra rare",
-    "keywords": ["Combo(Charge)", "Punch", "Charge"],
+    "keywords": [
+      "Combo(Charge)",
+      "Punch",
+      "Charge"
+    ],
     "text": "Combo Enhance: If this attack is blocked, draw 2 cards and discard 2 cards. Your next check to play a card gets +2.   Deadlock  Enhance: Your next check to play a card gets +5.",
     "resources": [
       "air",
       "chaos",
       "void"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "high",
-    "block_mid": "1",
-    "attack_speed": "3",
+    "block_mid": 1,
+    "attack_speed": 3,
     "attack_zone": "mid",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -1168,25 +1247,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/048.png",
+    "asset": "mha02/048-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/048-preview.jpg",
     "name": "Shrapnel Cloud Release",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Ranged", "Flash", "Charge"],
+    "keywords": [
+      "Ranged",
+      "Flash",
+      "Charge"
+    ],
     "text": "Response: After this attack is blocked, your rival commits 1 foundation.",
     "resources": [
       "air",
       "chaos",
       "void"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "low",
-    "block_mid": "2",
-    "attack_speed": "2",
+    "block_mid": 2,
+    "attack_speed": 2,
     "attack_zone": "high",
-    "attack_damage": "7"
+    "attack_damage": 7
   },
   {
     "extension": "Crimson Rampage",
@@ -1195,25 +1278,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/049.png",
+    "asset": "mha02/049-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/049-preview.jpg",
     "name": "Training Knife Strike",
     "type": "attack",
     "rarity": "uncommon",
-    "keywords": ["Weapon", "Charge", "EX: 2"],
+    "keywords": [
+      "Weapon",
+      "Charge",
+      "EX: 2"
+    ],
     "text": "[Void] Enhance: If this attack is not blocked, your rival discards 1 card.   Deadlock  Enhance: Add up to 2 other attacks in your card pool to your momentum.",
     "resources": [
       "air",
       "chaos",
       "void"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "2",
-    "attack_speed": "3",
+    "block_mid": 2,
+    "attack_speed": 3,
     "attack_zone": "mid",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -1222,25 +1309,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/050.png",
+    "asset": "mha02/050-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/050-preview.jpg",
     "name": "Zero Gravity Barrier",
     "type": "attack",
     "rarity": "ultra rare",
-    "keywords": ["Ranged", "Charge"],
+    "keywords": [
+      "Ranged",
+      "Charge"
+    ],
     "text": "If this attack is added to your momentum, add it face up.  Enhance [Momentum] Remove, discard 1 momentum: Add your rival's attack to their momentum. They may draw 1 card.   Enhance: Switch this attack's speed and damage.",
     "resources": [
       "air",
       "chaos",
       "void"
     ],
-    "difficulty": "4",
-    "control": "2",
+    "difficulty": 4,
+    "control": 2,
     "block_zone": "mid",
-    "block_mid": "1",
-    "attack_speed": "3",
+    "block_mid": 1,
+    "attack_speed": 3,
     "attack_zone": "low",
-    "attack_damage": "6"
+    "attack_damage": 6
   },
   {
     "extension": "Crimson Rampage",
@@ -1249,7 +1339,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/051.png",
+    "asset": "mha02/051-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/051-preview.jpg",
     "name": "Ambush Tactics",
     "type": "foundation",
@@ -1260,10 +1350,10 @@
       "chaos",
       "void"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1272,7 +1362,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/052.png",
+    "asset": "mha02/052-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/052-preview.jpg",
     "name": "Confused",
     "type": "foundation",
@@ -1283,10 +1373,10 @@
       "chaos",
       "void"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1295,7 +1385,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/053.png",
+    "asset": "mha02/053-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/053-preview.jpg",
     "name": "Fighting Spirit",
     "type": "foundation",
@@ -1306,10 +1396,10 @@
       "chaos",
       "void"
     ],
-    "difficulty": "2",
-    "control": "4",
+    "difficulty": 2,
+    "control": 4,
     "block_zone": "mid",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1318,22 +1408,25 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/054.png",
+    "asset": "mha02/054-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/054-preview.jpg",
     "name": "Training With Gunhead",
     "type": "foundation",
     "rarity": "common",
-    "keywords": ["Weapon", "Ally"],
+    "keywords": [
+      "Weapon",
+      "Ally"
+    ],
     "text": "Enhance: If the check to play this attack was modified by an effect, this attack gets +1 speed.  Enhance Remove: Reduce the damage of this Throw attack to 2.",
     "resources": [
       "air",
       "chaos",
       "void"
     ],
-    "difficulty": "1",
-    "control": "5",
+    "difficulty": 1,
+    "control": 5,
     "block_zone": "low",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1342,7 +1435,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/055.png",
+    "asset": "mha02/055-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/055-preview.jpg",
     "name": "Shoto Todoroki (II)",
     "type": "character",
@@ -1353,10 +1446,10 @@
       "order",
       "water"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -1365,25 +1458,30 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/056.png",
+    "asset": "mha02/056-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/056-preview.jpg",
     "name": "Cinder Convection",
     "type": "attack",
     "rarity": "rare",
-    "keywords": ["Stun: 1", "Ranged", "Powerful: 3", "Charge"],
+    "keywords": [
+      "Stun: 1",
+      "Ranged",
+      "Powerful: 3",
+      "Charge"
+    ],
     "text": "  Enhance Discard 1 momentum: This attack gets +1 to all of its keyword ratings.   Enhance: If this attack is not blocked, both players lose 2 health.",
     "resources": [
       "fire",
       "order",
       "water"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "high",
-    "block_mid": "1",
-    "attack_speed": "3",
+    "block_mid": 1,
+    "attack_speed": 3,
     "attack_zone": "mid",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -1392,25 +1490,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/057.png",
+    "asset": "mha02/057-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/057-preview.jpg",
     "name": "Downward Frost Spike",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Punch", "Slam"],
+    "keywords": [
+      "Punch",
+      "Slam"
+    ],
     "text": "Enhance: Your next Punch or Ranged attack gets +3 damage.   Deadlock  Enhance: This attack gains Stun: 3.",
     "resources": [
       "fire",
       "order",
       "water"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "low",
-    "block_mid": "2",
-    "attack_speed": "3",
+    "block_mid": 2,
+    "attack_speed": 3,
     "attack_zone": "low",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -1419,25 +1520,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/058.png",
+    "asset": "mha02/058-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/058-preview.jpg",
     "name": "Half-Hot Ignition",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Breaker: 1", "Ranged", "Fury"],
+    "keywords": [
+      "Breaker: 1",
+      "Ranged",
+      "Fury"
+    ],
     "text": "water  Enhance: If this attack is completely blocked, it still deals 1 damage during the Damage Step.",
     "resources": [
       "fire",
       "order",
       "water"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "2",
-    "attack_speed": "4",
+    "block_mid": 2,
+    "attack_speed": 4,
     "attack_zone": "mid",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -1446,25 +1551,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/059.png",
+    "asset": "mha02/059-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/059-preview.jpg",
     "name": "Searing Glacial Storm",
     "type": "attack",
     "rarity": "ultra rare",
-    "keywords": ["Stun: 2", "Ranged"],
+    "keywords": [
+      "Stun: 2",
+      "Ranged"
+    ],
     "text": "  order  First Enhance: Both players remove foundations in their stage until they each have 5. End this Enhance Step.",
     "resources": [
       "fire",
       "order",
       "water"
     ],
-    "difficulty": "5",
-    "control": "2",
+    "difficulty": 5,
+    "control": 2,
     "block_zone": "mid",
-    "block_mid": "1",
-    "attack_speed": "2",
+    "block_mid": 1,
+    "attack_speed": 2,
     "attack_zone": "high",
-    "attack_damage": "6"
+    "attack_damage": 6
   },
   {
     "extension": "Crimson Rampage",
@@ -1473,7 +1581,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/060.png",
+    "asset": "mha02/060-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/060-preview.jpg",
     "name": "Defrosting",
     "type": "foundation",
@@ -1484,10 +1592,10 @@
       "order",
       "water"
     ],
-    "difficulty": "3",
-    "control": "5",
+    "difficulty": 3,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -1496,7 +1604,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/061.png",
+    "asset": "mha02/061-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/061-preview.jpg",
     "name": "Drowning In Resentment",
     "type": "foundation",
@@ -1507,10 +1615,10 @@
       "order",
       "water"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -1519,7 +1627,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/062.png",
+    "asset": "mha02/062-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/062-preview.jpg",
     "name": "Ice Gliding",
     "type": "foundation",
@@ -1530,10 +1638,10 @@
       "order",
       "water"
     ],
-    "difficulty": "1",
-    "control": "5",
+    "difficulty": 1,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1542,7 +1650,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/063.png",
+    "asset": "mha02/063-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/063-preview.jpg",
     "name": "Making A Stand",
     "type": "foundation",
@@ -1553,10 +1661,10 @@
       "order",
       "water"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "low",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1565,7 +1673,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/064.png",
+    "asset": "mha02/064-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/064-preview.jpg",
     "name": "Stain",
     "type": "character",
@@ -1576,10 +1684,10 @@
       "evil",
       "order"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -1588,25 +1696,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/065.png",
+    "asset": "mha02/065-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/065-preview.jpg",
     "name": "Double Blade Slash",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Weapon", "Stun: 1", "Fury"],
+    "keywords": [
+      "Weapon",
+      "Stun: 1",
+      "Fury"
+    ],
     "text": "  evil Enhance Lose 1 health: Your rival's check to block this attack gets -1.   Enhance: If this attack is blocked, your next attack gains Stun: 1.",
     "resources": [
       "all",
       "evil",
       "order"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "high",
-    "block_mid": "1",
-    "attack_speed": "5",
+    "block_mid": 1,
+    "attack_speed": 5,
     "attack_zone": "mid",
-    "attack_damage": "3"
+    "attack_damage": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1615,25 +1727,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/066.png",
+    "asset": "mha02/066-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/066-preview.jpg",
     "name": "Piercing Descent",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Weapon", "Combo(Weapon)", "Fury"],
+    "keywords": [
+      "Weapon",
+      "Combo(Weapon)",
+      "Fury"
+    ],
     "text": "   Combo Enhance: This attack gets +2 damage. If this attack deals damage, your rival loses 1 health.",
     "resources": [
       "all",
       "evil",
       "order"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "low",
-    "block_mid": "1",
-    "attack_speed": "2",
+    "block_mid": 1,
+    "attack_speed": 2,
     "attack_zone": "high",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -1642,25 +1758,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/067.png",
+    "asset": "mha02/067-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/067-preview.jpg",
     "name": "Sinister Paralyzation",
     "type": "attack",
     "rarity": "ultra rare",
-    "keywords": ["Weapon", "Combo(Weapon)"],
+    "keywords": [
+      "Weapon",
+      "Combo(Weapon)"
+    ],
     "text": "   Enhance: If your rival has taken damage this game, seal 1 rival asset or foundation.   Combo Enhance: If your rival checks a printed 5 or higher to block this attack, they re-check.",
     "resources": [
       "all",
       "evil",
       "order"
     ],
-    "difficulty": "4",
-    "control": "2",
+    "difficulty": 4,
+    "control": 2,
     "block_zone": "mid",
-    "block_mid": "2",
-    "attack_speed": "3",
+    "block_mid": 2,
+    "attack_speed": 3,
     "attack_zone": "low",
-    "attack_damage": "6"
+    "attack_damage": 6
   },
   {
     "extension": "Crimson Rampage",
@@ -1669,25 +1788,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/068.png",
+    "asset": "mha02/068-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/068-preview.jpg",
     "name": "Slashing Whirlwind",
     "type": "attack",
     "rarity": "ultra rare",
-    "keywords": ["Weapon", "Fury"],
+    "keywords": [
+      "Weapon",
+      "Fury"
+    ],
     "text": "  Enhance Discard 2 momentum: This attack gets +10 damage. Only playable if you have dealt damage this Combat Phase.",
     "resources": [
       "all",
       "evil",
       "order"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "1",
-    "attack_speed": "5",
+    "block_mid": 1,
+    "attack_speed": 5,
     "attack_zone": "mid",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -1696,22 +1818,24 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/069.png",
+    "asset": "mha02/069-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/069-preview.jpg",
     "name": "Challenging The Fakes",
     "type": "foundation",
     "rarity": "common",
-    "keywords": ["Taunt"],
+    "keywords": [
+      "Taunt"
+    ],
     "text": "  Enhance Flip: This attack gets -1 damage. If it is not blocked, your rival's next check to play an attack gets -2. Failing that check does not end the Combat Phase.",
     "resources": [
       "all",
       "evil",
       "order"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "4"
+    "block_mid": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -1720,7 +1844,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/070.png",
+    "asset": "mha02/070-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/070-preview.jpg",
     "name": "Hero Killer",
     "type": "foundation",
@@ -1731,10 +1855,10 @@
       "evil",
       "order"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1743,22 +1867,24 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/071.png",
+    "asset": "mha02/071-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/071-preview.jpg",
     "name": "Intimidating Presence",
     "type": "foundation",
     "rarity": "uncommon",
-    "keywords": ["Weapon"],
+    "keywords": [
+      "Weapon"
+    ],
     "text": "  While this card is in your card pool, rival attacks get -1 speed.  Response Flip: After your rival readies 1 or more foundations due to their effect, flip 1 of them.",
     "resources": [
       "all",
       "evil",
       "order"
     ],
-    "difficulty": "1",
-    "control": "5",
+    "difficulty": 1,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -1767,7 +1893,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/072.png",
+    "asset": "mha02/072-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/072-preview.jpg",
     "name": "Rooftop Vantage",
     "type": "foundation",
@@ -1778,10 +1904,10 @@
       "evil",
       "order"
     ],
-    "difficulty": "0",
-    "control": "5",
+    "difficulty": 0,
+    "control": 5,
     "block_zone": "low",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -1790,7 +1916,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/073.png",
+    "asset": "mha02/073-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/073-preview.jpg",
     "name": "Dabi",
     "type": "character",
@@ -1801,10 +1927,10 @@
       "death",
       "fire"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -1813,25 +1939,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/074.png",
+    "asset": "mha02/074-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/074-preview.jpg",
     "name": "Blue Flame Spiral",
     "type": "attack",
     "rarity": "ultra rare",
-    "keywords": ["Punch", "Charge"],
+    "keywords": [
+      "Punch",
+      "Charge"
+    ],
     "text": "Enhance Ready 2 rival foundations: This attack gets +4 speed.  Enhance Discard the top 3 cards of your deck: If this attack deals damage, destroy 1 rival asset or foundation.",
     "resources": [
       "chaos",
       "death",
       "fire"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "low",
-    "block_mid": "2",
-    "attack_speed": "3",
+    "block_mid": 2,
+    "attack_speed": 3,
     "attack_zone": "mid",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -1840,7 +1969,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/075.png",
+    "asset": "mha02/075-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/075-preview.jpg",
     "name": "League Interview",
     "type": "foundation",
@@ -1851,10 +1980,10 @@
       "death",
       "fire"
     ],
-    "difficulty": "2",
-    "control": "6",
+    "difficulty": 2,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1863,7 +1992,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/076.png",
+    "asset": "mha02/076-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/076-preview.jpg",
     "name": "Endeavor",
     "type": "character",
@@ -1874,10 +2003,10 @@
       "earth",
       "fire"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -1886,25 +2015,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/077.png",
+    "asset": "mha02/077-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/077-preview.jpg",
     "name": "Hellflame Javelin",
     "type": "attack",
     "rarity": "uncommon",
-    "keywords": ["Ranged", "Fury"],
+    "keywords": [
+      "Ranged",
+      "Fury"
+    ],
     "text": "Enhance: If this attack is blocked, your rival cannot play Breaker abilities for the rest of the Combat Phase.   Enhance: If you have 10 or fewer cards in your deck, commit 2 rival foundations or assets (or any combination).",
     "resources": [
       "all",
       "earth",
       "fire"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "high",
-    "block_mid": "1",
-    "attack_speed": "4",
+    "block_mid": 1,
+    "attack_speed": 4,
     "attack_zone": "high",
-    "attack_damage": "3"
+    "attack_damage": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1913,7 +2045,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/078.png",
+    "asset": "mha02/078-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/078-preview.jpg",
     "name": "Revel At His Masterpiece",
     "type": "foundation",
@@ -1924,10 +2056,10 @@
       "earth",
       "fire"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -1936,7 +2068,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/079.png",
+    "asset": "mha02/079-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/079-preview.jpg",
     "name": "Fumikage Tokoyami (II)",
     "type": "character",
@@ -1947,10 +2079,10 @@
       "chaos",
       "evil"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -1959,25 +2091,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/080.png",
+    "asset": "mha02/080-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/080-preview.jpg",
     "name": "Dark Shadow Dive",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Ally", "Ranged", "Slam"],
+    "keywords": [
+      "Ally",
+      "Ranged",
+      "Slam"
+    ],
     "text": "While this card is in your card pool, rival checks to play foundations get -1.  Enhance Commit 1 foundation: This attack gets +2 speed and +1 damage.",
     "resources": [
       "air",
       "chaos",
       "evil"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "2",
-    "attack_speed": "3",
+    "block_mid": 2,
+    "attack_speed": 3,
     "attack_zone": "high",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -1986,7 +2122,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/081.png",
+    "asset": "mha02/081-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/081-preview.jpg",
     "name": "Resting Between Bouts",
     "type": "foundation",
@@ -1997,10 +2133,10 @@
       "chaos",
       "evil"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "low",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -2009,7 +2145,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/082.png",
+    "asset": "mha02/082-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/082-preview.jpg",
     "name": "Hanta Sero (II)",
     "type": "character",
@@ -2020,10 +2156,10 @@
       "order",
       "water"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2032,25 +2168,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/083.png",
+    "asset": "mha02/083-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/083-preview.jpg",
     "name": "Tape Stream Jab",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Ranged", "Punch"],
+    "keywords": [
+      "Ranged",
+      "Punch"
+    ],
     "text": "Enhance: Your rival adds the top card of their discard pile to their card pool.   Enhance: If a card has left your rival's card pool this Combat Phase, change the zone of this attack.",
     "resources": [
       "air",
       "order",
       "water"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "2",
-    "attack_speed": "3",
+    "block_mid": 2,
+    "attack_speed": 3,
     "attack_zone": "mid",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -2059,7 +2198,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/084.png",
+    "asset": "mha02/084-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/084-preview.jpg",
     "name": "Travel By Tape",
     "type": "foundation",
@@ -2070,10 +2209,10 @@
       "order",
       "water"
     ],
-    "difficulty": "2",
-    "control": "4",
+    "difficulty": 2,
+    "control": 4,
     "block_zone": "high",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -2082,7 +2221,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/085.png",
+    "asset": "mha02/085-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/085-preview.jpg",
     "name": "Himiko Toga",
     "type": "character",
@@ -2093,10 +2232,10 @@
       "evil",
       "life"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2105,7 +2244,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/086.png",
+    "asset": "mha02/086-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/086-preview.jpg",
     "name": "Knife Slice",
     "type": "attack",
@@ -2116,13 +2255,13 @@
       "evil",
       "life"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "1",
-    "attack_speed": "5",
+    "block_mid": 1,
+    "attack_speed": 5,
     "attack_zone": "low",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -2131,7 +2270,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/087.png",
+    "asset": "mha02/087-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/087-preview.jpg",
     "name": "Excited For Blood",
     "type": "foundation",
@@ -2142,10 +2281,10 @@
       "evil",
       "life"
     ],
-    "difficulty": "3",
-    "control": "5",
+    "difficulty": 3,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -2154,7 +2293,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/088.png",
+    "asset": "mha02/088-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/088-preview.jpg",
     "name": "Hitoshi Shinso",
     "type": "character",
@@ -2165,10 +2304,10 @@
       "order",
       "void"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2177,25 +2316,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/089.png",
+    "asset": "mha02/089-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/089-preview.jpg",
     "name": "Off-Guard Punch",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Punch", "Fury"],
+    "keywords": [
+      "Punch",
+      "Fury"
+    ],
     "text": "   Enhance: If this attack is not blocked, your rival discards 1 card.  Shinso  Enhance: Change the zone of this attack. Your next attack gets +2 damage.",
     "resources": [
       "all",
       "order",
       "void"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "2",
-    "attack_speed": "2",
+    "block_mid": 2,
+    "attack_speed": 2,
     "attack_zone": "high",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -2204,7 +2346,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/090.png",
+    "asset": "mha02/090-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/090-preview.jpg",
     "name": "Unexpected Hero",
     "type": "foundation",
@@ -2215,10 +2357,10 @@
       "order",
       "void"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "low",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -2227,7 +2369,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/091.png",
+    "asset": "mha02/091-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/091-preview.jpg",
     "name": "Ibara Shiozaki",
     "type": "character",
@@ -2238,10 +2380,10 @@
       "life",
       "water"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2250,7 +2392,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/092.png",
+    "asset": "mha02/092-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/092-preview.jpg",
     "name": "Creeping Vine Eruption",
     "type": "attack",
@@ -2261,13 +2403,13 @@
       "life",
       "water"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "high",
-    "block_mid": "3",
-    "attack_speed": "2",
+    "block_mid": 3,
+    "attack_speed": 2,
     "attack_zone": "low",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -2276,7 +2418,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/093.png",
+    "asset": "mha02/093-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/093-preview.jpg",
     "name": "Faith's Shield",
     "type": "foundation",
@@ -2287,10 +2429,10 @@
       "life",
       "water"
     ],
-    "difficulty": "2",
-    "control": "4",
+    "difficulty": 2,
+    "control": 4,
     "block_zone": "mid",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -2299,7 +2441,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/094.png",
+    "asset": "mha02/094-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/094-preview.jpg",
     "name": "Minoru Mineta (II)",
     "type": "character",
@@ -2310,10 +2452,10 @@
       "evil",
       "water"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2322,25 +2464,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/095.png",
+    "asset": "mha02/095-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/095-preview.jpg",
     "name": "Grape Rush",
     "type": "attack",
     "rarity": "rare",
-    "keywords": ["Stun: 1", "Fury"],
+    "keywords": [
+      "Stun: 1",
+      "Fury"
+    ],
     "text": "Enhance: If your rival has at least 1 card in their card pool, draw 1 card.  Mineta  Enhance: This attack gets +2 damage and gains Throw. Only playable if this attack's speed is below printed.",
     "resources": [
       "death",
       "evil",
       "water"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "1",
-    "attack_speed": "4",
+    "block_mid": 1,
+    "attack_speed": 4,
     "attack_zone": "mid",
-    "attack_damage": "6"
+    "attack_damage": 6
   },
   {
     "extension": "Crimson Rampage",
@@ -2349,7 +2494,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/096.png",
+    "asset": "mha02/096-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/096-preview.jpg",
     "name": "Surviving The Final",
     "type": "foundation",
@@ -2360,10 +2505,10 @@
       "evil",
       "water"
     ],
-    "difficulty": "0",
-    "control": "5",
+    "difficulty": 0,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -2372,7 +2517,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/097.png",
+    "asset": "mha02/097-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/097-preview.jpg",
     "name": "Neito Monoma",
     "type": "character",
@@ -2383,10 +2528,10 @@
       "good",
       "life"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2395,25 +2540,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/098.png",
+    "asset": "mha02/098-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/098-preview.jpg",
     "name": "Copy: Harden",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Breaker: 1", "Slam"],
+    "keywords": [
+      "Breaker: 1",
+      "Slam"
+    ],
     "text": "Enhance Add 1 foundation from your stage to your hand: This attack gets +3 damage.",
     "resources": [
       "all",
       "good",
       "life"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "high",
-    "block_mid": "2",
-    "attack_speed": "4",
+    "block_mid": 2,
+    "attack_speed": 4,
     "attack_zone": "high",
-    "attack_damage": "3"
+    "attack_damage": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -2422,22 +2570,24 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/099.png",
+    "asset": "mha02/099-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/099-preview.jpg",
     "name": "Evade And Copy",
     "type": "foundation",
     "rarity": "common",
-    "keywords": ["Taunt"],
+    "keywords": [
+      "Taunt"
+    ],
     "text": "When you attempt to block with this card, return your rival's attack to its printed speed and zone.  Monoma Enhance [Once per turn]: This foundation gains all Enhance abilities printed on 1 non-unique rival foundation.",
     "resources": [
       "all",
       "good",
       "life"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -2446,7 +2596,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/100.png",
+    "asset": "mha02/100-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/100-preview.jpg",
     "name": "Present Mic (II)",
     "type": "character",
@@ -2457,10 +2607,10 @@
       "fire",
       "good"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2469,25 +2619,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/101.png",
+    "asset": "mha02/101-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/101-preview.jpg",
     "name": "YEEAAHHHHHH!!!",
     "type": "attack",
     "rarity": "ultra rare",
-    "keywords": ["Combo(Attack, Low Attack)", "Ranged", "Charge"],
+    "keywords": [
+      "Combo(Attack, Low Attack)",
+      "Ranged",
+      "Charge"
+    ],
     "text": "Combo Enhance: Ready all cards committed to pass the check to play this attack. Enhance: Your rival discards cards from the top of their deck until they discard 4 non-attack cards.",
     "resources": [
       "chaos",
       "fire",
       "good"
     ],
-    "difficulty": "6",
-    "control": "2",
+    "difficulty": 6,
+    "control": 2,
     "block_zone": "mid",
-    "block_mid": "1",
-    "attack_speed": "2",
+    "block_mid": 1,
+    "attack_speed": 2,
     "attack_zone": "mid",
-    "attack_damage": "8"
+    "attack_damage": 8
   },
   {
     "extension": "Crimson Rampage",
@@ -2496,7 +2650,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/102.png",
+    "asset": "mha02/102-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/102-preview.jpg",
     "name": "Hottest Performances, Guaranteed",
     "type": "foundation",
@@ -2507,10 +2661,10 @@
       "fire",
       "good"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -2519,7 +2673,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/103.png",
+    "asset": "mha02/103-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/103-preview.jpg",
     "name": "Tenya Iida (III)",
     "type": "character",
@@ -2530,10 +2684,10 @@
       "order",
       "void"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2542,25 +2696,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/104.png",
+    "asset": "mha02/104-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/104-preview.jpg",
     "name": "Falling Thruster Kick",
     "type": "attack",
     "rarity": "common",
-    "keywords": ["Combo(EX)", "Kick", "EX: 3 "],
+    "keywords": [
+      "Combo(EX)",
+      "Kick",
+      "EX: 3 "
+    ],
     "text": "Combo Enhance: This attack gets +3 damage.",
     "resources": [
       "air",
       "order",
       "void"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "low",
-    "block_mid": "2",
-    "attack_speed": "2",
+    "block_mid": 2,
+    "attack_speed": 2,
     "attack_zone": "high",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -2569,22 +2727,24 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/105.png",
+    "asset": "mha02/105-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/105-preview.jpg",
     "name": "\"Fusion\"",
     "type": "foundation",
     "rarity": "rare",
-    "keywords": ["Ally"],
+    "keywords": [
+      "Ally"
+    ],
     "text": "Enhance Commit: Your EX or Kick attack gets +2 speed. Enhance Commit: Your rival's attack gets -2 speed.",
     "resources": [
       "air",
       "order",
       "void"
     ],
-    "difficulty": "1",
-    "control": "5",
+    "difficulty": 1,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -2593,7 +2753,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/106.png",
+    "asset": "mha02/106-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/106-preview.jpg",
     "name": "Tetsutetsu Tetsutetsu",
     "type": "character",
@@ -2604,10 +2764,10 @@
       "good",
       "void"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2616,25 +2776,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/107.png",
+    "asset": "mha02/107-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/107-preview.jpg",
     "name": "Tetsutetsu Fist",
     "type": "attack",
     "rarity": "rare",
-    "keywords": ["Punch", "Powerful: 3"],
+    "keywords": [
+      "Punch",
+      "Powerful: 3"
+    ],
     "text": "Enhance: If you have discarded a card this Combat Phase, this attack gets +2 speed. Tetsutetsu Enhance Discard 1 card: Build the top card of your deck. Draw 1 card.",
     "resources": [
       "earth",
       "good",
       "void"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "high",
-    "block_mid": "1",
-    "attack_speed": "4",
+    "block_mid": 1,
+    "attack_speed": 4,
     "attack_zone": "mid",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -2643,22 +2806,24 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/108.png",
+    "asset": "mha02/108-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/108-preview.jpg",
     "name": "Manly Friendship",
     "type": "foundation",
     "rarity": "common",
-    "keywords": ["Ally"],
+    "keywords": [
+      "Ally"
+    ],
     "text": "Enhance [Once per turn]: This attack gets +1 or -1 damage.",
     "resources": [
       "earth",
       "good",
       "void"
     ],
-    "difficulty": "1",
-    "control": "5",
+    "difficulty": 1,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -2667,7 +2832,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/109.png",
+    "asset": "mha02/109-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/109-preview.jpg",
     "name": "Go For The Win!",
     "type": "action",
@@ -2678,10 +2843,10 @@
       "fire",
       "good"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "low",
-    "block_mid": "1"
+    "block_mid": 1
   },
   {
     "extension": "Crimson Rampage",
@@ -2690,7 +2855,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/110.png",
+    "asset": "mha02/110-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/110-preview.jpg",
     "name": "Ready, Get Set, GO!",
     "type": "action",
@@ -2701,10 +2866,10 @@
       "earth",
       "life"
     ],
-    "difficulty": "4",
-    "control": "5",
+    "difficulty": 4,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "1"
+    "block_mid": 1
   },
   {
     "extension": "Crimson Rampage",
@@ -2713,25 +2878,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/111.png",
+    "asset": "mha02/111-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/111-preview.jpg",
     "name": "Cavalry Chariot Advance",
     "type": "attack",
     "rarity": "uncommon",
-    "keywords": ["Ally", "Charge", "Tech"],
+    "keywords": [
+      "Ally",
+      "Charge",
+      "Tech"
+    ],
     "text": "While this card is in your card pool, your other attacks get +1 speed. Enhance: Your next attack gets +2 damage. If this attack is blocked, your next check to play an attack gets +1.",
     "resources": [
       "air",
       "chaos",
       "life"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "3",
-    "attack_speed": "3",
+    "block_mid": 3,
+    "attack_speed": 3,
     "attack_zone": "high",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -2740,7 +2909,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/112.png",
+    "asset": "mha02/112-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/112-preview.jpg",
     "name": "Confident Counterstike",
     "type": "attack",
@@ -2751,13 +2920,13 @@
       "good",
       "void"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "1",
-    "attack_speed": "5",
+    "block_mid": 1,
+    "attack_speed": 5,
     "attack_zone": "mid",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -2766,25 +2935,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/113.png",
+    "asset": "mha02/113-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/113-preview.jpg",
     "name": "Final Exam Gut Shot",
     "type": "attack",
     "rarity": "rare",
-    "keywords": ["Punch", "Flash", "Fury"],
+    "keywords": [
+      "Punch",
+      "Flash",
+      "Fury"
+    ],
     "text": "Response: After your play this attack, discard the top 8 cards of your rival's deck.",
     "resources": [
       "all",
       "earth",
       "evil"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "low",
-    "block_mid": "2",
-    "attack_speed": "3",
+    "block_mid": 2,
+    "attack_speed": 3,
     "attack_zone": "mid",
-    "attack_damage": "6"
+    "attack_damage": 6
   },
   {
     "extension": "Crimson Rampage",
@@ -2793,25 +2966,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/114.png",
+    "asset": "mha02/114-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/114-preview.jpg",
     "name": "Giant Bite Detention",
     "type": "attack",
     "rarity": "ultra rare",
-    "keywords": ["Combo(Attack, High Attack)", "Ally", "Stun: 1"],
+    "keywords": [
+      "Combo(Attack, High Attack)",
+      "Ally",
+      "Stun: 1"
+    ],
     "text": "Combo Enhance: This attack gets +3 speed and +3 damage. Enhance: Shuffle up to 3 cards from either player's discard pile into their deck.",
     "resources": [
       "chaos",
       "order",
       "water"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "1",
-    "attack_speed": "3",
+    "block_mid": 1,
+    "attack_speed": 3,
     "attack_zone": "high",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -2820,20 +2997,22 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/115.png",
+    "asset": "mha02/115-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/115-preview.jpg",
     "name": "Aiming For #1",
     "type": "foundation",
     "rarity": "ultra rare",
-    "keywords": ["Unique"],
+    "keywords": [
+      "Unique"
+    ],
     "text": "[MHA2] Response Commit: After your rival adds any number of cards to their hand due to their non-character effect, they discard 1 card. Response Remove: After your rival adds and number of cards to their hand due to their non-character effect, draw 2 cards.",
     "resources": [
       "infinity"
     ],
-    "difficulty": "3",
-    "control": "5",
+    "difficulty": 3,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -2842,7 +3021,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/116.png",
+    "asset": "mha02/116-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/116-preview.jpg",
     "name": "Fruit Of Our Labors",
     "type": "foundation",
@@ -2853,10 +3032,10 @@
       "order",
       "void"
     ],
-    "difficulty": "1",
-    "control": "5",
+    "difficulty": 1,
+    "control": 5,
     "block_zone": "low",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -2865,7 +3044,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/117.png",
+    "asset": "mha02/117-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/117-preview.jpg",
     "name": "\"SPoOoOoOoKY!\"",
     "type": "foundation",
@@ -2876,10 +3055,10 @@
       "death",
       "void"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -2888,25 +3067,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/118.png",
+    "asset": "mha02/118-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/118-preview.jpg",
     "name": "Dropkick Slicer",
     "type": "attack",
     "rarity": "promo",
-    "keywords": ["Weapon", "Kick"],
+    "keywords": [
+      "Weapon",
+      "Kick"
+    ],
     "text": "If you have 10 or less health, this card gets -1 difficulty. Enhance: Reveal the top 3 cards of your deck and add all attacks revealed this way to your hand. Discard the remaining cards and your rival loses 1 health for each card discarded this way. This effect cannot reduce your rival below 1 health.",
     "resources": [
       "all",
       "evil",
       "order"
     ],
-    "difficulty": "5",
-    "control": "1",
+    "difficulty": 5,
+    "control": 1,
     "block_zone": "low",
-    "block_mid": "1",
-    "attack_speed": "4",
+    "block_mid": 1,
+    "attack_speed": 4,
     "attack_zone": "high",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -2915,25 +3097,30 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/119.png",
+    "asset": "mha02/119-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/119-preview.jpg",
     "name": "Joint Effort Offensive",
     "type": "attack",
     "rarity": "promo",
-    "keywords": ["Combo(Attack)", "Ally", "Punch", "Fury"],
+    "keywords": [
+      "Combo(Attack)",
+      "Ally",
+      "Punch",
+      "Fury"
+    ],
     "text": "Combo Enhance: This attack gets +1 speed and +2 damage for each card in your rival's hand. Bakugo/Midoriya Enhance Discard 1 momentum: You may play \"[Once per turn]\" abilities on your character a second time this turn.",
     "resources": [
       "earth",
       "fire",
       "good"
     ],
-    "difficulty": "4",
-    "control": "2",
+    "difficulty": 4,
+    "control": 2,
     "block_zone": "mid",
-    "block_mid": "1",
-    "attack_speed": "2",
+    "block_mid": 1,
+    "attack_speed": 2,
     "attack_zone": "mid",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -2942,7 +3129,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/120.png",
+    "asset": "mha02/120-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/120-preview.jpg",
     "name": "Alleyway Ambush",
     "type": "attack",
@@ -2951,13 +3138,13 @@
     "resources": [
       "infinity"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "2",
-    "attack_speed": "4",
+    "block_mid": 2,
+    "attack_speed": 4,
     "attack_zone": "high",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage Quirk",
@@ -2966,7 +3153,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/130.png",
+    "asset": "mha02/130-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/130-preview.jpg",
     "name": "Ingenium",
     "type": "character",
@@ -2977,10 +3164,10 @@
       "good",
       "order"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage Quirk",
@@ -2989,7 +3176,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/131.png",
+    "asset": "mha02/131-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/131-preview.jpg",
     "name": "Sugar Rush Power-Up",
     "type": "action",
@@ -3000,10 +3187,10 @@
       "earth",
       "fire"
     ],
-    "difficulty": "1",
-    "control": "5",
+    "difficulty": 1,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "1"
+    "block_mid": 1
   },
   {
     "extension": "Crimson Rampage Quirk",
@@ -3012,25 +3199,27 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/132.png",
+    "asset": "mha02/132-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/132-preview.jpg",
     "name": "Invincible Clasp",
     "type": "attack",
     "rarity": "promo",
-    "keywords": ["Throw"],
+    "keywords": [
+      "Throw"
+    ],
     "text": "Enhance Lose 2 health: This attack gets +3 damage. Response Discard 1 momentum: After your rival plays a non-character enhance during this attack, cancel it.",
     "resources": [
       "all",
       "evil",
       "good"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "high",
-    "block_mid": "2",
-    "attack_speed": "3",
+    "block_mid": 2,
+    "attack_speed": 3,
     "attack_zone": "high",
-    "attack_damage": "3"
+    "attack_damage": 3
   },
   {
     "extension": "Crimson Rampage Quirk",
@@ -3039,7 +3228,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/133.png",
+    "asset": "mha02/133-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/133-preview.jpg",
     "name": "Advice For Winners",
     "type": "foundation",
@@ -3050,10 +3239,10 @@
       "evil",
       "good"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -3062,7 +3251,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/134.png",
+    "asset": "mha02/134-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/134-preview.jpg",
     "name": "Learning The Standards",
     "type": "foundation",
@@ -3073,10 +3262,10 @@
       "earth",
       "void"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3085,7 +3274,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/100.png",
+    "asset": "mha02/200-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/200-preview.jpg",
     "name": "Fourth Kind",
     "type": "character",
@@ -3096,10 +3285,10 @@
       "fire",
       "order"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3108,7 +3297,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/101.png",
+    "asset": "mha02/201-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/201-preview.jpg",
     "name": "Ectoplasm",
     "type": "character",
@@ -3119,10 +3308,10 @@
       "order",
       "water"
     ],
-    "difficulty": "3",
-    "control": "6",
+    "difficulty": 3,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3131,7 +3320,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/102.png",
+    "asset": "mha02/202-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/202-preview.jpg",
     "name": "Cementos",
     "type": "character",
@@ -3142,10 +3331,10 @@
       "earth",
       "void"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3154,7 +3343,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/103.png",
+    "asset": "mha02/203-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/203-preview.jpg",
     "name": "Snipe",
     "type": "character",
@@ -3165,10 +3354,10 @@
       "chaos",
       "death"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3177,7 +3366,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/104.png",
+    "asset": "mha02/204-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/204-preview.jpg",
     "name": "Bloodcurdle",
     "type": "action",
@@ -3188,10 +3377,10 @@
       "order",
       "void"
     ],
-    "difficulty": "4",
-    "control": "4",
+    "difficulty": 4,
+    "control": 4,
     "block_zone": "mid",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3200,20 +3389,23 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/105.png",
+    "asset": "mha02/205-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/205-preview.jpg",
     "name": "Ultra Compressed Weights",
     "type": "asset",
     "rarity": "promo",
-    "keywords": ["Unique", "Tech"],
+    "keywords": [
+      "Unique",
+      "Tech"
+    ],
     "text": "Response Commit: After your attack deals damage, choose 1 committed rival foundation. While this card is committed, the chosen foundation cannot be readied. Response Remove: After an attack is played, it cannot leave its owner's card pool during the Combat Phase. Playable while committed.",
     "resources": [
       "infinity"
     ],
-    "difficulty": "3",
-    "control": "4",
+    "difficulty": 3,
+    "control": 4,
     "block_zone": "mid",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3222,25 +3414,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/106.png",
+    "asset": "mha02/206-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/206-preview.jpg",
     "name": "Facepalm Takedown",
     "type": "attack",
     "rarity": "promo",
-    "keywords": ["Combo(High Block)", "Throw"],
+    "keywords": [
+      "Combo(High Block)",
+      "Throw"
+    ],
     "text": "Combo Enhance: If you have dealt damage this turn, this attack gets +2 damage and Stun: 1. All Might Enhance: Your rival's check to block this attack gets -2.",
     "resources": [
       "all",
       "evil",
       "good"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "3",
-    "attack_speed": "2",
+    "block_mid": 3,
+    "attack_speed": 2,
     "attack_zone": "high",
-    "attack_damage": "6"
+    "attack_damage": 6
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3249,25 +3444,28 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/107.png",
+    "asset": "mha02/207-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/207-preview.jpg",
     "name": "Hellflame Cross Punch",
     "type": "attack",
     "rarity": "promo",
-    "keywords": ["Punch", "Fury "],
+    "keywords": [
+      "Punch",
+      "Fury "
+    ],
     "text": "Response: After you block with this card, add it to your hand during the End Phase. Enhance Discard the top 2 cards of your deck: If this attack's damage is 8 or more, it gets +3 speed.",
     "resources": [
       "all",
       "earth",
       "fire"
     ],
-    "difficulty": "5",
-    "control": "3",
+    "difficulty": 5,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "2",
-    "attack_speed": "4",
+    "block_mid": 2,
+    "attack_speed": 4,
     "attack_zone": "mid",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3276,25 +3474,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/108.png",
+    "asset": "mha02/208-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/208-preview.jpg",
     "name": "Mentor Legacy Punch",
     "type": "attack",
     "rarity": "promo",
-    "keywords": ["Punch", "Charge", "Fury"],
+    "keywords": [
+      "Punch",
+      "Charge",
+      "Fury"
+    ],
     "text": "Response [Card Pool] Remove: After your rival plays a non-character response ability, cancel it.",
     "resources": [
       "air",
       "void",
       "water"
     ],
-    "difficulty": "4",
-    "control": "2",
+    "difficulty": 4,
+    "control": 2,
     "block_zone": "high",
-    "block_mid": "1",
-    "attack_speed": "4",
+    "block_mid": 1,
+    "attack_speed": 4,
     "attack_zone": "mid",
-    "attack_damage": "5"
+    "attack_damage": 5
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3303,25 +3505,29 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/109.png",
+    "asset": "mha02/209-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/209-preview.jpg",
     "name": "Maneuvering Laser",
     "type": "attack",
     "rarity": "promo",
-    "keywords": ["Ranged", "Charge", "EX: 2"],
+    "keywords": [
+      "Ranged",
+      "Charge",
+      "EX: 2"
+    ],
     "text": "Enhance Add 1 card from your stage to your card pool: This attack gets +1 speed and +2 damage. Enhance: If this attack is not blocked, discard your rival's entire momentum.",
     "resources": [
       "air",
       "death",
       "evil"
     ],
-    "difficulty": "4",
-    "control": "3",
+    "difficulty": 4,
+    "control": 3,
     "block_zone": "mid",
-    "block_mid": "1",
-    "attack_speed": "3",
+    "block_mid": 1,
+    "attack_speed": 3,
     "attack_zone": "mid",
-    "attack_damage": "4"
+    "attack_damage": 4
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3330,7 +3536,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/110.png",
+    "asset": "mha02/210-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/210-preview.jpg",
     "name": "Dissolving The Conflict",
     "type": "foundation",
@@ -3341,10 +3547,10 @@
       "order",
       "void"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "3"
+    "block_mid": 3
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3353,7 +3559,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/111.png",
+    "asset": "mha02/211-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/211-preview.jpg",
     "name": "Final Exam Failures",
     "type": "foundation",
@@ -3364,10 +3570,10 @@
       "earth",
       "order"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3376,7 +3582,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/140.png",
+    "asset": "mha02/240-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/240-preview.jpg",
     "name": "Gun Head",
     "type": "character",
@@ -3387,10 +3593,10 @@
       "earth",
       "life"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3399,7 +3605,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/141.png",
+    "asset": "mha02/241-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/241-preview.jpg",
     "name": "Selkie",
     "type": "character",
@@ -3410,10 +3616,10 @@
       "void",
       "water"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3422,7 +3628,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/142.png",
+    "asset": "mha02/242-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/242-preview.jpg",
     "name": "Uwabami",
     "type": "character",
@@ -3433,10 +3639,10 @@
       "earth",
       "life"
     ],
-    "difficulty": "6",
-    "control": "6",
+    "difficulty": 6,
+    "control": 6,
     "block_zone": "mid",
-    "block_mid": "0"
+    "block_mid": 0
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3445,7 +3651,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/143.png",
+    "asset": "mha02/243-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/243-preview.jpg",
     "name": "Overflowing Power",
     "type": "action",
@@ -3456,10 +3662,10 @@
       "void",
       "water"
     ],
-    "difficulty": "3",
-    "control": "4",
+    "difficulty": 3,
+    "control": 4,
     "block_zone": "high",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3468,7 +3674,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/144.png",
+    "asset": "mha02/244-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/244-preview.jpg",
     "name": "Sports Festival Stadium",
     "type": "asset",
@@ -3479,10 +3685,10 @@
       "death",
       "water"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "mid",
-    "block_mid": "2"
+    "block_mid": 2
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3491,7 +3697,7 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/145.png",
+    "asset": "mha02/245-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/245-preview.jpg",
     "name": "Award The Victor",
     "type": "foundation",
@@ -3502,10 +3708,10 @@
       "chaos",
       "order"
     ],
-    "difficulty": "3",
-    "control": "5",
+    "difficulty": 3,
+    "control": 5,
     "block_zone": "high",
-    "block_mid": "1"
+    "block_mid": 1
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3514,21 +3720,24 @@
       "retro",
       "My Hero Academia"
     ],
-    "asset": "mha02/146.png",
+    "asset": "mha02/246-preview.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha02/246-preview.jpg",
     "name": "Childhood Friends",
     "type": "foundation",
     "rarity": "promo",
-    "keywords": ["Ally", "Unique "],
+    "keywords": [
+      "Ally",
+      "Unique "
+    ],
     "text": "Response Discard the top 2 cards of your deck: After your Powerful attack is blocked, gain 1 health and your rival loses 1 health. Response Flip: At the start of your End Phase, add 1 attack that matches 2 or more symbols with your starting character from your card pool to your hand.",
     "resources": [
       "earth",
       "fire",
       "life"
     ],
-    "difficulty": "2",
-    "control": "5",
+    "difficulty": 2,
+    "control": 5,
     "block_zone": "low",
-    "block_mid": "3"
+    "block_mid": 3
   }
 ]
