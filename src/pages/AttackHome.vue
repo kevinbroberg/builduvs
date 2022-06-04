@@ -21,7 +21,7 @@ const resetFlag = ref(false)
 // dialog flags
 const dialog = ref(false)
 
-function reset() {
+function resetAttack() {
   speed.value = defaults.value.speed
   damage.value = defaults.value.damage
   attack_zone.value = defaults.value.zone
@@ -50,11 +50,12 @@ function p1change(x) {
   delta(history.value.p1)(x)
 }
 function p2change(x) {
-  delta(history.value.p2z``)(x)
+  delta(history.value.p2)(x)
 }
 
 function resetGame() {
   resetFlag.value = !resetFlag.value
+  resetAttack()
   history.value = { p1: [], p2:[] }
 }
 
@@ -109,7 +110,12 @@ watch(defaults, (nu, _) => {
   </div>
   <Player :damage=damage :start="defaults.p2hp" label="Me" :reset=resetFlag @healthChange=p2change />
   <q-page-sticky position="bottom-right" :offset="[18, 18]">
-    <q-btn :fab="true" icon="settings" color="primary" @click="dialog = true"/>
+    <q-btn :fab="true" icon="settings_backup_restore" color="green" @click="resetAttack()">
+      <q-tooltip>Reset attack to default</q-tooltip>
+    </q-btn>
+    <q-btn :fab="true" icon="settings" color="primary" @click="dialog = true">
+      <q-tooltip>Change starting values</q-tooltip>
+    </q-btn>
   </q-page-sticky>
   <q-dialog v-model="dialog">
     <q-card>
