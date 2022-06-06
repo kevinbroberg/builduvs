@@ -17,6 +17,8 @@
       "good",
       "void"
     ],
+    "hand_size": 6,
+    "vitality": 26,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -251,6 +253,8 @@
     "name": "Izuku Midoriya (II)",
     "type": "character",
     "rarity": "uncommon",
+    "hand_size": 6,
+    "vitality": 29,
     "text": "Enhance Discard 1 card: Your Punch attack gets +1 speed and +3 damage.  Response [Once per turn] Commit 1 foundation: After you check a copy of a foundation that is in your stage, build the checked foundation.",
     "resources": [
       "earth",
@@ -491,6 +495,8 @@
       "earth",
       "fire"
     ],
+    "hand_size": 7,
+    "vitality": 20,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -732,6 +738,8 @@
       "evil",
       "life"
     ],
+    "hand_size": 5,
+    "vitality": 28,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -972,6 +980,8 @@
       "death",
       "water"
     ],
+    "hand_size": 6,
+    "vitality": 27,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -1204,6 +1214,8 @@
       "chaos",
       "void"
     ],
+    "hand_size": 6,
+    "vitality": 25,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -1446,6 +1458,8 @@
       "order",
       "water"
     ],
+    "hand_size": 6,
+    "vitality": 27,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -1684,6 +1698,8 @@
       "evil",
       "order"
     ],
+    "hand_size": 6,
+    "vitality": 29,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -1927,6 +1943,8 @@
       "death",
       "fire"
     ],
+    "hand_size": 6,
+    "vitality": 28,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -2003,6 +2021,8 @@
       "earth",
       "fire"
     ],
+    "hand_size": 6,
+    "vitality": 30,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -2079,6 +2099,8 @@
       "chaos",
       "evil"
     ],
+    "hand_size": 6,
+    "vitality": 27,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -2156,6 +2178,8 @@
       "order",
       "water"
     ],
+    "hand_size": 6,
+    "vitality": 26,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -2232,6 +2256,8 @@
       "evil",
       "life"
     ],
+    "hand_size": 7,
+    "vitality": 20,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -2304,6 +2330,8 @@
       "order",
       "void"
     ],
+    "hand_size": 7,
+    "vitality": 19,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -2380,6 +2408,8 @@
       "life",
       "water"
     ],
+    "hand_size": 7,
+    "vitality": 19,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -2452,6 +2482,8 @@
       "evil",
       "water"
     ],
+    "hand_size": 5,
+    "vitality": 31,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -2528,6 +2560,8 @@
       "good",
       "life"
     ],
+    "hand_size": 6,
+    "vitality": 26,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -2607,6 +2641,8 @@
       "fire",
       "good"
     ],
+    "hand_size": 7,
+    "vitality": 17,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -2684,6 +2720,8 @@
       "order",
       "void"
     ],
+    "hand_size": 7,
+    "vitality": 20,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -2764,6 +2802,8 @@
       "good",
       "void"
     ],
+    "hand_size": 5,
+    "vitality": 32,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -3164,6 +3204,8 @@
       "good",
       "order"
     ],
+    "hand_size": 6,
+    "vitality": 28,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -3285,6 +3327,8 @@
       "fire",
       "order"
     ],
+    "hand_size": 5,
+    "vitality": 34,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -3308,6 +3352,8 @@
       "order",
       "water"
     ],
+    "hand_size": 6,
+    "vitality": 27,
     "difficulty": 3,
     "control": 6,
     "block_zone": "mid",
@@ -3331,6 +3377,8 @@
       "earth",
       "void"
     ],
+    "hand_size": 5,
+    "vitality": 31,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -3354,6 +3402,8 @@
       "chaos",
       "death"
     ],
+    "hand_size": 7,
+    "vitality": 20,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -3593,6 +3643,8 @@
       "earth",
       "life"
     ],
+    "hand_size": 6,
+    "vitality": 28,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -3616,6 +3668,8 @@
       "void",
       "water"
     ],
+    "hand_size": 6,
+    "vitality": 26,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
@@ -3639,6 +3693,8 @@
       "earth",
       "life"
     ],
+    "hand_size": 6,
+    "vitality": 25,
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
