@@ -22,7 +22,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -50,7 +50,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "low",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 3,
     "attack_zone": "high",
     "damage": 6
@@ -80,7 +80,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "high",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 4,
     "attack_zone": "mid",
     "damage": 5
@@ -111,7 +111,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 3,
     "attack_zone": "mid",
     "damage": 4
@@ -141,7 +141,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "low",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 2,
     "attack_zone": "high",
     "damage": 4
@@ -167,7 +167,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -193,7 +193,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 4
+    "block_modifier": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -216,7 +216,7 @@
     "difficulty": 1,
     "control": 4,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -239,7 +239,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -264,7 +264,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -293,7 +293,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "high",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 4,
     "attack_zone": "mid",
     "damage": 5
@@ -324,7 +324,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 3,
     "attack_zone": "mid",
     "damage": 3
@@ -354,7 +354,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "low",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 3,
     "attack_zone": "high",
     "damage": 4
@@ -380,7 +380,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "high",
-    "block_mod": 3,
+    "block_modifier": 3,
     "speed": 3,
     "attack_zone": "low",
     "damage": 4
@@ -406,7 +406,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 5
+    "block_modifier": 5
   },
   {
     "extension": "Crimson Rampage",
@@ -429,7 +429,7 @@
     "difficulty": 0,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -452,7 +452,7 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -475,7 +475,7 @@
     "difficulty": 2,
     "control": 4,
     "block_zone": "high",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -500,7 +500,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -528,7 +528,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 3,
     "attack_zone": "high",
     "damage": 4
@@ -559,7 +559,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "high",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 4,
     "attack_zone": "low",
     "damage": 5
@@ -591,7 +591,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 3,
     "attack_zone": "mid",
     "damage": 4
@@ -623,7 +623,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "low",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 3,
     "attack_zone": "high",
     "damage": 6
@@ -649,7 +649,7 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -672,7 +672,7 @@
     "difficulty": 0,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -695,7 +695,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -718,7 +718,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -743,7 +743,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -766,7 +766,7 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -794,7 +794,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "low",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 4,
     "attack_zone": "low",
     "damage": 4
@@ -826,7 +826,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 3,
     "attack_zone": "mid",
     "damage": 3
@@ -857,7 +857,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "high",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 4,
     "attack_zone": "mid",
     "damage": 4
@@ -887,7 +887,7 @@
     "difficulty": 0,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 4
+    "block_modifier": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -914,7 +914,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -937,7 +937,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -960,7 +960,7 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -985,7 +985,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -1012,7 +1012,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 4,
     "attack_zone": "high",
     "damage": 4
@@ -1043,7 +1043,7 @@
     "difficulty": 5,
     "control": 2,
     "block_zone": "high",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 3,
     "attack_zone": "low",
     "damage": 6
@@ -1069,7 +1069,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "low",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 4,
     "attack_zone": "mid",
     "damage": 3
@@ -1099,7 +1099,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 5,
     "attack_zone": "low",
     "damage": 4
@@ -1125,7 +1125,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1148,7 +1148,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1171,7 +1171,7 @@
     "difficulty": 2,
     "control": 4,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -1194,7 +1194,7 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1219,7 +1219,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -1247,7 +1247,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "high",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 3,
     "attack_zone": "mid",
     "damage": 5
@@ -1278,7 +1278,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "low",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 2,
     "attack_zone": "high",
     "damage": 7
@@ -1309,7 +1309,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 3,
     "attack_zone": "mid",
     "damage": 5
@@ -1339,7 +1339,7 @@
     "difficulty": 4,
     "control": 2,
     "block_zone": "mid",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 3,
     "attack_zone": "low",
     "damage": 6
@@ -1365,7 +1365,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1388,7 +1388,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1411,7 +1411,7 @@
     "difficulty": 2,
     "control": 4,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1438,7 +1438,7 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1463,7 +1463,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -1492,7 +1492,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "high",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 3,
     "attack_zone": "mid",
     "damage": 5
@@ -1522,7 +1522,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "low",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 3,
     "attack_zone": "low",
     "damage": 4
@@ -1553,7 +1553,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 4,
     "attack_zone": "mid",
     "damage": 4
@@ -1583,7 +1583,7 @@
     "difficulty": 5,
     "control": 2,
     "block_zone": "mid",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 2,
     "attack_zone": "high",
     "damage": 6
@@ -1609,7 +1609,7 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -1632,7 +1632,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -1655,7 +1655,7 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1678,7 +1678,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1703,7 +1703,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -1731,7 +1731,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "high",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 5,
     "attack_zone": "mid",
     "damage": 3
@@ -1762,7 +1762,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "low",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 2,
     "attack_zone": "high",
     "damage": 5
@@ -1792,7 +1792,7 @@
     "difficulty": 4,
     "control": 2,
     "block_zone": "mid",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 3,
     "attack_zone": "low",
     "damage": 6
@@ -1822,7 +1822,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 5,
     "attack_zone": "mid",
     "damage": 4
@@ -1851,7 +1851,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 4
+    "block_modifier": 4
   },
   {
     "extension": "Crimson Rampage",
@@ -1874,7 +1874,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -1900,7 +1900,7 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -1923,7 +1923,7 @@
     "difficulty": 0,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -1948,7 +1948,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -1975,7 +1975,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "low",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 3,
     "attack_zone": "mid",
     "damage": 5
@@ -2001,7 +2001,7 @@
     "difficulty": 2,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -2026,7 +2026,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2053,7 +2053,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "high",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 4,
     "attack_zone": "high",
     "damage": 3
@@ -2079,7 +2079,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -2104,7 +2104,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2132,7 +2132,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 3,
     "attack_zone": "high",
     "damage": 4
@@ -2158,7 +2158,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -2183,7 +2183,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2210,7 +2210,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 3,
     "attack_zone": "mid",
     "damage": 4
@@ -2236,7 +2236,7 @@
     "difficulty": 2,
     "control": 4,
     "block_zone": "high",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -2261,7 +2261,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2284,7 +2284,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 5,
     "attack_zone": "low",
     "damage": 5
@@ -2310,7 +2310,7 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -2335,7 +2335,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2362,7 +2362,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 2,
     "attack_zone": "high",
     "damage": 5
@@ -2388,7 +2388,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -2413,7 +2413,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2436,7 +2436,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "high",
-    "block_mod": 3,
+    "block_modifier": 3,
     "speed": 2,
     "attack_zone": "low",
     "damage": 5
@@ -2462,7 +2462,7 @@
     "difficulty": 2,
     "control": 4,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -2487,7 +2487,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2514,7 +2514,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 4,
     "attack_zone": "mid",
     "damage": 6
@@ -2540,7 +2540,7 @@
     "difficulty": 0,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -2565,7 +2565,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2592,7 +2592,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "high",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 4,
     "attack_zone": "high",
     "damage": 3
@@ -2621,7 +2621,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -2646,7 +2646,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2674,7 +2674,7 @@
     "difficulty": 6,
     "control": 2,
     "block_zone": "mid",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 2,
     "attack_zone": "mid",
     "damage": 8
@@ -2700,7 +2700,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -2725,7 +2725,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2753,7 +2753,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "low",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 2,
     "attack_zone": "high",
     "damage": 4
@@ -2782,7 +2782,7 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -2807,7 +2807,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage",
@@ -2834,7 +2834,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "high",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 4,
     "attack_zone": "mid",
     "damage": 5
@@ -2863,7 +2863,7 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -2886,7 +2886,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 1
+    "block_modifier": 1
   },
   {
     "extension": "Crimson Rampage",
@@ -2909,7 +2909,7 @@
     "difficulty": 4,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 1
+    "block_modifier": 1
   },
   {
     "extension": "Crimson Rampage",
@@ -2937,7 +2937,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 3,
+    "block_modifier": 3,
     "speed": 3,
     "attack_zone": "high",
     "damage": 5
@@ -2963,7 +2963,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 5,
     "attack_zone": "mid",
     "damage": 4
@@ -2994,7 +2994,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "low",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 3,
     "attack_zone": "mid",
     "damage": 6
@@ -3025,7 +3025,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 3,
     "attack_zone": "high",
     "damage": 4
@@ -3052,7 +3052,7 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -3075,7 +3075,7 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage",
@@ -3098,7 +3098,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -3125,7 +3125,7 @@
     "difficulty": 5,
     "control": 1,
     "block_zone": "low",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 4,
     "attack_zone": "high",
     "damage": 5
@@ -3157,7 +3157,7 @@
     "difficulty": 4,
     "control": 2,
     "block_zone": "mid",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 2,
     "attack_zone": "mid",
     "damage": 5
@@ -3181,7 +3181,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 4,
     "attack_zone": "high",
     "damage": 5
@@ -3209,7 +3209,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage Quirk",
@@ -3232,7 +3232,7 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 1
+    "block_modifier": 1
   },
   {
     "extension": "Crimson Rampage Quirk",
@@ -3258,7 +3258,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "high",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 3,
     "attack_zone": "high",
     "damage": 3
@@ -3284,7 +3284,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage",
@@ -3307,7 +3307,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3332,7 +3332,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3357,7 +3357,7 @@
     "difficulty": 3,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3382,7 +3382,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3407,7 +3407,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3430,7 +3430,7 @@
     "difficulty": 4,
     "control": 4,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3455,7 +3455,7 @@
     "difficulty": 3,
     "control": 4,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3482,7 +3482,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 3,
+    "block_modifier": 3,
     "speed": 2,
     "attack_zone": "high",
     "damage": 6
@@ -3512,7 +3512,7 @@
     "difficulty": 5,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 2,
+    "block_modifier": 2,
     "speed": 4,
     "attack_zone": "mid",
     "damage": 4
@@ -3543,7 +3543,7 @@
     "difficulty": 4,
     "control": 2,
     "block_zone": "high",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 4,
     "attack_zone": "mid",
     "damage": 5
@@ -3574,7 +3574,7 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "mid",
-    "block_mod": 1,
+    "block_modifier": 1,
     "speed": 3,
     "attack_zone": "mid",
     "damage": 4
@@ -3600,7 +3600,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 3
+    "block_modifier": 3
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3623,7 +3623,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3648,7 +3648,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3673,7 +3673,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3698,7 +3698,7 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 0
+    "block_modifier": 0
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3721,7 +3721,7 @@
     "difficulty": 3,
     "control": 4,
     "block_zone": "high",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3744,7 +3744,7 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_modifier": 2
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3767,7 +3767,7 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 1
+    "block_modifier": 1
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3794,6 +3794,6 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_modifier": 3
   }
 ]
