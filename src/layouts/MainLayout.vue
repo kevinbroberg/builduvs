@@ -28,7 +28,7 @@
         <q-toolbar-title>
           <q-avatar>
             <!-- TODO make a SVG -->
-            <img src="icons\icon-128x128.png">
+            <img src="icons\icon-128x128.png" width=128 height=128 alt="logo">
           </q-avatar>
           BuildUVS
         </q-toolbar-title>
