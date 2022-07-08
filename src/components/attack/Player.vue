@@ -48,7 +48,7 @@
       <div @click="hiOrLow($event, () => hit(-1), () => hit(1))" 
         style="border: 2px solid red;" class="col-6">
         <h2 class="q-mx-none self-center text-weight-bold text-center">{{p1.health}}</h2>
-        <p class="q-mx-none self-center text-weight-bold text-center">{{label}}</p>
+        <!-- <p class="q-mx-none self-center text-weight-bold text-center">{{label}}</p> -->
       </div>
       <q-btn push class="col-2" color=green-12 text-color=black @click="hit(half(props.damage))">Take half</q-btn>
       <q-btn push class="col-2" color=purple-12 text-color=black @click="hit(props.damage)">Take full</q-btn>
