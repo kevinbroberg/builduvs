@@ -78,8 +78,7 @@ watch(defaults, (nu, _) => {
   } catch (e) {
     console.log(`Error persisting defaults ${e}`)
   }
-  
-}, { deep: true})
+}, { deep: true })
 
 </script>
 
