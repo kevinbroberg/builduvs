@@ -1,8 +1,9 @@
 <script setup>
-    import { ref, watch } from 'vue'
+    import { ref, watch, computed } from 'vue'
     import { hiOrLow } from "src/js/hiorlowlogic"
+    import Counter from 'src/components/attack/Counter.vue'
     
-    const props = defineProps({ start: Number, damage: Number, reset: Boolean, label: String })
+    const props = defineProps({ start: Number, damage: Number, zone: String, reset: Boolean, label: String })
     const emitChangeLabel = 'healthChange'
     const emit = defineEmits( ['healthChange'] )
 
@@ -15,9 +16,14 @@
     })
     
     const damageQueue = []
+    const lastHit = ref(0)
+    const lastHitDisplay = computed(() => lastHit.value ? " (" + lastHit.value + ")" : '')
 
     function hit(x) {
       damageQueue.push(x)
+      
+      lastHit.value = x
+
       p1.value.health -= x
       emit(emitChangeLabel, -x)
     }
@@ -27,9 +33,11 @@
         let y = damageQueue.pop()
         p1.value.health += y
         emit(emitChangeLabel, y)
+
+        lastHit.value = damageQueue.at(-1)
       }
     }
-
+    
     watch(() => props.start, (newv, _) => p1.value.health = newv)
 
     function resetGame() {
@@ -44,15 +52,13 @@
 
 <template>
   <div>
-    <div class="row" > 
-      <div @click="hiOrLow($event, () => hit(-1), () => hit(1))" 
-        style="border: 2px solid red;" class="col-6">
-        <h2 class="q-mx-none self-center text-weight-bold text-center">{{p1.health}}</h2>
-        <p class="q-mx-none self-center text-weight-bold text-center">{{label}}</p>
-      </div>
-      <q-btn push class="col-2" color=green-12 text-color=black @click="hit(half(props.damage))">Take half</q-btn>
-      <q-btn push class="col-2" color=purple-12 text-color=black @click="hit(props.damage)">Take full</q-btn>
-      <q-btn push class="col-2" text-color=black @click="undo()">Undo</q-btn>
+    <Counter @up="hit(-1)" @down="hit(1)">
+      <h2 class="text-center">{{label}}: {{p1.health}}</h2>
+    </Counter>
+    <div class="row justify-end">
+      <q-btn class="col" push size=xl color=primary text-color=black @click="undo()">Undo {{lastHitDisplay}}</q-btn>
+      <q-btn class="col" push size=xl style="background: hsl(360, 100%, 73%)"  text-color=black @click="hit(half(props.damage))">Take half ({{half(props.damage)}})</q-btn>
+      <q-btn class="col" push size=xl style="background: hsl(360, 100%, 43%)" text-color=black @click="hit(props.damage)">Take full ({{props.damage}})</q-btn>
     </div>
   </div>
 </template>

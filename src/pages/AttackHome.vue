@@ -3,18 +3,19 @@ import { ref, watch } from 'vue'
 import { useQuasar } from 'quasar'
 import { hiOrLow, click3 } from "src/js/hiorlowlogic.js"
 import Player from 'src/components/attack/Player.vue'
+import Counter from 'src/components/attack/Counter.vue'
 import Element from 'components/cards/detail/Element.vue'
 
 const $q = useQuasar()
 
 const storage_key = "attack_default"
-const default_defaults = { speed: 4 , damage: 5, p1hp: 30, p2hp: 30, zone: 'mid'}
+const default_defaults = { speed: 4 , damage: 5, p1hp: 30, p1name:"Me", p2hp: 30, p2name: "You", zone: 'mid'}
 const initial_defaults = $q.localStorage?.getItem(storage_key) || default_defaults
 
-const defaults = ref(initial_defaults)
-const speed = ref(defaults.value.speed)
-const damage = ref(defaults.value.damage)
-const attack_zone = ref(defaults.value.zone)
+const settings = ref(initial_defaults)
+const speed = ref(settings.value.speed)
+const damage = ref(settings.value.damage)
+const attack_zone = ref(settings.value.zone)
 
 // Players watch this to determine when to reset
 const resetFlag = ref(false)
@@ -22,9 +23,9 @@ const resetFlag = ref(false)
 const dialog = ref(false)
 
 function resetAttack() {
-  speed.value = defaults.value.speed
-  damage.value = defaults.value.damage
-  attack_zone.value = defaults.value.zone
+  speed.value = settings.value.speed
+  damage.value = settings.value.damage
+  attack_zone.value = settings.value.zone
 }
 
 const history = ref({ p1: [], p2:[] })
@@ -59,55 +60,37 @@ function resetGame() {
   history.value = { p1: [], p2:[] }
 }
 
-function zoneColor(zone) {
-  switch(zone) {
-    case 'low':
-      return 'yellow-10'
-    case 'high':
-      return 'red-10'
-    case 'mid':
-      return 'orange-10'
-    default:
-      return 'black'
-  }
-}
-
-watch(defaults, (nu, _) => {
+watch(settings, (nu, _) => {
   try {
     $q.localStorage.set(storage_key, nu)
   } catch (e) {
-    console.log(`Error persisting defaults ${e}`)
+    console.log(`Error persisting settings ${e}`)
   }
 }, { deep: true })
 
 </script>
 
 <template>
-  <div class="q-gutter-md column">
-  <Player :damage=damage :start="defaults.p1hp" label="You" :reset=resetFlag @healthChange="p1change" />
-  <div class="row no-wrap">
-    <div class="col self-center text-center"
-      @click="hiOrLow($event, () => speed++, () => speed--)" 
-      style="padding: 2vh; border: 2px solid green;">
-      <h3 class="q-mx-none">{{speed}}
-      <Element :element="attack_zone + ' attack'" /></h3>
-    </div>
-    <div class="self-center text-center col"
-      :style="`padding: 2vh;`" 
-      :class="`bg-${zoneColor(attack_zone)}`"
+  <main>
+    <Player class="player" :damage=damage :start="settings.p1hp" :zone="attack_zone" :label="settings.p1name" :reset=resetFlag @healthChange=p1change />
+    <Player class="player" :damage=damage :start="settings.p2hp" :zone="attack_zone" :label="settings.p2name" :reset=resetFlag @healthChange=p2change />
+
+    
+    <Counter class="speed" :class="attack_zone" @up="speed++" @down="speed--">
+      <h3>{{speed}}</h3>
+    </Counter>
+    <!-- TODO sometime soon: replace with divs rather than click3() function -->
+    <div class="zone text-center"
+      :class="`${attack_zone}color`"
       @click="click3($event, () => attack_zone = 'high', () => attack_zone = 'mid', ()=> attack_zone = 'low')" >
-      <h3 class="q-mx-none">
+      <h4 class="q-mx-none">
         {{attack_zone}}
-      </h3>
+      </h4>
     </div>
-    <div class="col self-center text-center"
-      @click="hiOrLow($event, () => damage++, () => damage--)" 
-      style="padding: 2vh; border: 2px solid red;">
-      <h3 class="q-mx-none">{{damage}}
-      <Element :element="'damage'" /></h3>
-    </div>
-  </div>
-  <Player :damage=damage :start="defaults.p2hp" label="Me" :reset=resetFlag @healthChange=p2change />
+    <Counter class="damage" @up="damage++" @down="damage--">
+      <h3>{{damage}}</h3>
+    </Counter>
+  
   <q-page-sticky position="bottom-right" :offset="[18, 18]">
     <q-btn :fab="true" icon="settings_backup_restore" color="green" @click="resetAttack()">
       <q-tooltip>Reset attack to default</q-tooltip>
@@ -119,9 +102,12 @@ watch(defaults, (nu, _) => {
   <q-dialog v-model="dialog">
     <q-card>
       <q-card-section>
-        <div class="text-h6">Starting life totals</div>
-        <q-input v-model.number="defaults.p1hp" label="Player 1" stack-label type="number" />
-        <q-input v-model.number="defaults.p2hp" label="Player 2" stack-label type="number" />
+        <div class="text-h6">Players</div>
+        <q-input v-model.string="settings.p1name" label="Player 1" stack-label />
+        <q-input v-model.number="settings.p1hp" label="Starting life for player 1" stack-label type="number" />
+        
+        <q-input v-model.string="settings.p2name" label="Player 2" stack-label />
+        <q-input v-model.number="settings.p2hp" label="Starting life for player 2" stack-label type="number" />
         <q-btn class="flex-center" @click="resetGame()" color="negative">Reset game</q-btn>
       </q-card-section>
       <q-card-section>
@@ -139,15 +125,75 @@ watch(defaults, (nu, _) => {
       </q-card-section>
       <q-card-section>
         <div class="text-h6">Starting attack stats</div>
-        <q-input v-model.number="defaults.speed" label="Starting speed" stack-label type="number" />
+        <q-input v-model.number="settings.speed" label="Starting speed" stack-label type="number" />
         <div class="q-gutter-sm"> 
-          <q-radio v-model="defaults.zone" val="high" label="High" />
-          <q-radio v-model="defaults.zone" val="mid" label="Mid" />
-          <q-radio v-model="defaults.zone" val="low" label="Low" />
+          <q-radio v-model="settings.zone" val="high" label="High" />
+          <q-radio v-model="settings.zone" val="mid" label="Mid" />
+          <q-radio v-model="settings.zone" val="low" label="Low" />
         </div>
-        <q-input v-model.number="defaults.damage" label="Starting damage" stack-label type="number" />
+        <q-input v-model.number="settings.damage" label="Starting damage" stack-label type="number" />
       </q-card-section>
     </q-card>
   </q-dialog>
-  </div>
+  </main>
 </template>
+
+<style>
+.player {
+  /* I'd really think player{} should work... */
+  grid-column: span 3 / auto;
+  padding: 0.5ch;
+}
+.speed {
+  /* padding: 2vh;  */
+  border: 0.5ch solid black;
+  grid-column: span 2 / auto;
+}
+.zone {
+  border: 0.5ch solid black;
+  grid-column: span 1;
+}
+.speed, .damage, .high, .mid, .low {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% center;
+  display: flex; 
+  flex-direction: column;
+}
+.high, .mid, .low {
+  background-position: 55% center;
+}
+.damage {
+  /* padding: 2vh;  */
+  border: 0.5ch solid black;
+  background-image: url(~assets/images/damage.png);
+  grid-column: span 3 / auto;
+}
+.lowcolor {
+  background-color: hsl(53, 91%, 55%)
+}
+.highcolor {
+  background-color: hsl(359, 85%, 53%)
+}
+.midcolor {
+  background-color: hsl(28, 93%, 58%)
+}
+.high {
+  background-image: url(~assets/images/high attack.png);
+}
+.mid {
+  background-image: url(~assets/images/mid attack.png);
+}
+.low {
+  background-image: url(~assets/images/low attack.png);
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 40vh 40vh;
+  justify-content: center;
+  align-items: center;
+  user-select: none; /* don't highlight text */
+  box-sizing: border-box;
+}
+</style>
