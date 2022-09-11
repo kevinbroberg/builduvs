@@ -1,7 +1,6 @@
 <script setup>
 import { ref, watch } from 'vue'
 import { useQuasar } from 'quasar'
-import { hiOrLow, click3 } from "src/js/hiorlowlogic.js"
 import Player from 'src/components/attack/Player.vue'
 import Counter from 'src/components/attack/Counter.vue'
 import Element from 'components/cards/detail/Element.vue'
@@ -60,6 +59,11 @@ function resetGame() {
   history.value = { p1: [], p2:[] }
 }
 
+const nextZone = {'high': 'mid', 'mid': 'low', 'low': 'high'}
+function goNextZone() {
+  attack_zone.value = nextZone[attack_zone.value]
+}
+
 watch(settings, (nu, _) => {
   try {
     $q.localStorage.set(storage_key, nu)
@@ -82,7 +86,7 @@ watch(settings, (nu, _) => {
     <!-- TODO sometime soon: replace with divs rather than click3() function -->
     <div class="zone text-center"
       :class="`${attack_zone}color`"
-      @click="click3($event, () => attack_zone = 'high', () => attack_zone = 'mid', ()=> attack_zone = 'low')" >
+      @click=goNextZone >
       <h4 class="q-mx-none">
         {{attack_zone}}
       </h4>

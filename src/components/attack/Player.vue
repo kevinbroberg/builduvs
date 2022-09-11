@@ -1,6 +1,5 @@
 <script setup>
     import { ref, watch, computed } from 'vue'
-    import { hiOrLow } from "src/js/hiorlowlogic"
     import Counter from 'src/components/attack/Counter.vue'
     
     const props = defineProps({ start: Number, damage: Number, zone: String, reset: Boolean, label: String })
@@ -37,7 +36,7 @@
         lastHit.value = damageQueue.at(-1)
       }
     }
-    
+
     watch(() => props.start, (newv, _) => p1.value.health = newv)
 
     function resetGame() {
