@@ -21,7 +21,7 @@
 <template>
   <q-layout view="hhr lpR fFf">
 
-    <q-header reveal elevated class="bg-primary text-white" height-hint="98">
+    <q-header reveal elevated class="bg-primary text-white">
       <q-toolbar>
         <!-- <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" /> -->
 
@@ -32,17 +32,17 @@
           </q-avatar>
           BuildUVS
         </q-toolbar-title>
-        <NamePicker />
+        <q-tabs align="center">
+          <q-route-tab to="/" label="Game Tracker" />
+          <!-- <q-route-tab to="/deck" label="Deck Detail" /> -->
+          <q-route-tab to="/search" label="Search" />
+          <q-route-tab to="/settings" label="Settings" />
+        </q-tabs>
+        <!-- <NamePicker /> -->
         <q-btn dense flat round icon="table_view" @click="toggleRightDrawer" >
           <q-tooltip>View current deck</q-tooltip>
         </q-btn>
       </q-toolbar>
-
-      <q-tabs align='left'>
-        <q-route-tab to="/" label="Search" />
-        <q-route-tab to="/deck" label="Deck Detail" />
-        <q-route-tab to="/attack" label="Attack Tracker" />
-      </q-tabs>
     </q-header>
 
     <!-- <q-drawer v-model="leftDrawerOpen" side="left" behavior="mobile" elevated>
