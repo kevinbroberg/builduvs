@@ -1,6 +1,6 @@
 <template>
   <div
-    class="row"
+    class="row body"
     onmouseover="//preview('$extension', '$padded_numero');"
   >
     <!-- Title -->
@@ -18,7 +18,7 @@
           style="height: 600; width: 300px"
           :src="require('assets/images/card_images/' + this.card.asset)"
           :alt="card.name"
-          v-ripple
+          
       />
       <div class="col-4">
         <span :class="'card-list-' + card.type">{{card.type}}</span><br />
@@ -41,9 +41,6 @@
       <h6 style="margin: 0px 15px">{{ card.text || "Missing text" }}</h6>
       <q-btn v-if="card.rochester_url" type="a" :href="'https://www.rochesterccg.com' + card.rochester_url" target="_blank" label="Buy on RochesterCCG" color="orange" />
     </div>
-
-    
-    
     <q-separator />
 </div>
 </template>
