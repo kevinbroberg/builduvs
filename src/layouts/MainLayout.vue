@@ -36,7 +36,6 @@
           <q-route-tab to="/" label="Game Tracker" />
           <!-- <q-route-tab to="/deck" label="Deck Detail" /> -->
           <q-route-tab to="/search" label="Search" />
-          <q-route-tab to="/settings" label="Settings" />
         </q-tabs>
         <!-- <NamePicker /> -->
         <q-btn dense flat round icon="table_view" @click="toggleRightDrawer" >
