@@ -5,6 +5,10 @@ const routes = [
     children: [
       {
         path: "",
+        component: () => import('src/pages/AttackHome.vue')
+      },
+      {
+        path: "search",
         component: () => import("pages/CardHome.vue"),
         props: (route) => ({ query: route.query }),
       },
@@ -23,21 +27,13 @@ const routes = [
         component: () => import("pages/CardHome.vue"),
         props: (route) => ({query: {...route.query, formats: "[\"retro\"]"}})
       },
-      {
-        path: "mha/attack",
-        component: () => import('src/pages/AttackHome.vue')
-      },
       // {
-      //   path: "config",
-      //   component: () => import("pages/Config.vue"),
+      //   path: "settings",
+      //   component: () => import('src/pages/Config.vue'),
       // },
       {
         path: "deck",
         component: () => import("src/pages/DeckHome.vue"),
-      },
-      {
-        path: "attack",
-        component: () => import('src/pages/AttackHome.vue')
       }
       // { path: 'about', component: () => import('../views/About.vue') },
     ],

@@ -1,11 +1,12 @@
 import { ref, computed } from 'vue'
+import heroesclash from 'assets/heroesclash.json'
 import rampage_dlc from 'assets/rampage_dlc.json'
 import rampage from 'assets/rampage.json'
 import provisional from 'assets/provs.json'
 import real_cards from 'assets/cards.json'
 // TODO sooner than later: pull out legacy / retro 
 
-export const cards = [...rampage_dlc, ...provisional, ...rampage, ...real_cards]
+export const cards = [...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
 export const symbolOptions = ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "infinity", "life", "order", "void", "water"]
 export const formatOptions = ["My Hero Academia","MHA banned", "standard","standard banned","retro","retro banned","unreleased","alpha", "alpha legend"]
 /*
