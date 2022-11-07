@@ -8,6 +8,10 @@ const routes = [
         component: () => import('src/pages/AttackHome.vue')
       },
       {
+        path: "attack",
+        component: () => import('src/pages/AttackHome.vue')
+      },
+      {
         path: "search",
         component: () => import("pages/CardHome.vue"),
         props: (route) => ({ query: route.query }),
