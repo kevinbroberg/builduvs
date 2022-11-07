@@ -1,0 +1,4571 @@
+[
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/001-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/001-preview.jpg",
+    "name": "Endeavor (II)",
+    "type": "Character",
+    "rarity": "SE",
+    "text": "Enhance Lose 1 health: Your attack gets +2 speed or +2 damage. \t \tEnhance [Once per turn] Lose 2 health: Your rival's attack gets -4 speed. \t \tEnhance [Once per turn] Lose 2 health: Your rival's attack gets -4 damage.",
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 6,
+    "vitality": 31
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/002-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/002-preview.jpg",
+    "name": "Arctic Conflagration",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Enhance: This attack gains Stun: 2 or Powerful: 3.",
+    "keywords": [
+      "Ally",
+      "Ranged",
+      "Fury"
+    ],
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 2,
+    "attack_zone": "mid",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/003-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/003-preview.jpg",
+    "name": "Blazing Fury",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Enhance: If this attack's damage is 8 or greater, your rival loses 2 health and discards 1 momentum. This effect cannot reduce your rival below 1 health.",
+    "keywords": [
+      "Ranged",
+      "Fury"
+    ],
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 3,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 6
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/004-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/004-preview.jpg",
+    "name": "Flame Scourger",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Enhance: If your rival has more committed foundations than ready foundations, this attack gets +3 damage.",
+    "keywords": [
+      "Stun: 1",
+      "Ranged",
+      "Fury"
+    ],
+    "resources": [
+      "fire",
+      "order",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/005-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/005-preview.jpg",
+    "name": "Hellflame Pounce",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Enhance Reveal 1 Fury attack from your hand: This attack gets +1 speed and +1 damage.",
+    "keywords": [
+      "Slam",
+      "Charge",
+      "Fury"
+    ],
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 3,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 2,
+    "speed": 2,
+    "attack_zone": "low",
+    "damage": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/006-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/006-preview.jpg",
+    "name": "Hellflame Stomp",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Enhance Lose 2 health: This attack gets +2 speed or +2 damage. \t \tEndeavor Response: After this attack deals damage, gain 2 health.",
+    "keywords": [
+      "Kick",
+      "Fury"
+    ],
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 1,
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/007-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/007-preview.jpg",
+    "name": "Ignited Arrow",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Enhance: If this attack is blocked, discard cards from the top of your deck until you discard an attack. Add the discarded attack to your hand.",
+    "keywords": [
+      "Weapon",
+      "Fury",
+      "Ranged"
+    ],
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 2,
+    "speed": 2,
+    "attack_zone": "high",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/008-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/008-preview.jpg",
+    "name": "Prominence Burn",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Enhance Remove the top card of your deck: This attack gets +2 speed. Your next Fury attack gets +2 speed. \t \tEnhance Remove 1 Fury attack from your card pool: Your rival loses 3 health. This effect cannot reduce your rival below 1 health.",
+    "keywords": [
+      "Ranged",
+      "Fury"
+    ],
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 6,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 1,
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 7
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/009-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/009-preview.jpg",
+    "name": "Scorching Aura",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Enhance: If this attack deals damage, you gain 2 health and your rival loses 2 health. This effect cannot reduce your rival below 1 health.",
+    "keywords": [
+      "Breaker: 1",
+      "Ranged",
+      "Fury"
+    ],
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 2,
+    "speed": 2,
+    "attack_zone": "mid",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/010-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/010-preview.jpg",
+    "name": "Arrogant Smirk",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Enhance Commit: Return your attack to its printed damage. \t \tEnhance [Rival's turn] Destroy: If you have lost health this Enhance Step, add 1 Fury attack from your card pool to your hand.",
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/011-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/011-preview.jpg",
+    "name": "Coping With #1",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Enhance Commit: If an attack has dealt damage this turn, draw 1 card.",
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/012-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/012-preview.jpg",
+    "name": "Fast As Flame",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "First Enhance Flip: Your fire attack gets +2 speed.",
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/013-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/013-preview.jpg",
+    "name": "Press Conference",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Enhance Flip, reveal 1 attack in your hand: If the next attack you try to play this turn has the same name as the revealed attack, it gets -1 difficulty.",
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/014-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/014-preview.jpg",
+    "name": "Quick To Act",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Enhance: If your current health is less than half of your maximum health, this attack gets +1 speed.",
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 0,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/015-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/015-preview.jpg",
+    "name": "Soul-Piercing Glare",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Enhance Commit: Flip 1 committed rival foundation. \t \tEnhance Remove: Remove 1 Fury attack from your card pool.",
+    "keywords": [
+      "Unique"
+    ],
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 3,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/016-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/016-preview.jpg",
+    "name": "Stare Down",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Enhance [Your turn] Flip lose 1 health: Freeze 1 committed rival foundation.",
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/017-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/017-preview.jpg",
+    "name": "Thrilled Spectator",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Enhance Commit: This Weapon attack gets -3 speed.",
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 1,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/018-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/018-preview.jpg",
+    "name": "Unnerving Energy",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Enhance [Once per turn] Discard 1 momentum: Your rival's next check to play a card gets -2. Failing that check does not end the Combat Phase.",
+    "resources": [
+      "earth",
+      "evil",
+      "fire"
+    ],
+    "difficulty": 2,
+    "control": 4,
+    "block_zone": "high",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/019-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/019-preview.jpg",
+    "name": "Eraser Head (II)",
+    "type": "Character",
+    "rarity": "SE",
+    "text": "Enhance: Your attack gets +1 speed for each attack in your card pool. If it is completely blocked, draw 1 card. \t \tResponse Commit: After your rival plays an attack, choose 1 ability on that attack. It loses that ability for the rest of the turn.",
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 6,
+    "vitality": 27
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/020-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/020-preview.jpg",
+    "name": "Aerial Drop",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Combo Enhance: This attack gets +2 damage. \t \tEnhance Discard 1 momentum: This attack gains Stun: 2.",
+    "keywords": [
+      "Combo (Combo)",
+      "Weapon"
+    ],
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 2,
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/021-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/021-preview.jpg",
+    "name": "Binding Cloth Drop Kick",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Combo Enhance Discard 1 card: This attack gets +4 damage.",
+    "keywords": [
+      "Kick",
+      "Combo (Weapon",
+      "Weapon"
+    ],
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/022-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/022-preview.jpg",
+    "name": "Binding Cloth Precision",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Combo Enhance: Look at the top card of your deck. You may discard it. \t \tEnhance: If this is the third card in your card pool, it gets +2 speed and +2 damage. If it is the fifth card in your card pool, it gets +3 speed and +3 damage.",
+    "keywords": [
+      "Weapon",
+      "Combo (Weapon)"
+    ],
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 3,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 2,
+    "attack_zone": "low",
+    "damage": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/023-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/023-preview.jpg",
+    "name": "Binding Cloth Whiplash",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Combo Enhance: This attack does not count towards progressive difficulty for the rest of the turn.",
+    "keywords": [
+      "Weapon",
+      "Fury",
+      "Combo (Combo)"
+    ],
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 2,
+    "attack_zone": "low",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/024-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/024-preview.jpg",
+    "name": "Binding Shoulder Rush",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Combo Enhance: Ready 1 foundation that has not been readied this Combat Phase. \t \tEnhance: The next Combo attack you try to play gets -1 difficulty.",
+    "keywords": [
+      "Weapon",
+      "Slam",
+      "Combo (Attack)"
+    ],
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 6
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/025-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/025-preview.jpg",
+    "name": "Erasure Grasp",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Combo Enhance: Seal 1 rival foundation. This attack gets +X speed. X equals the printed difficulty of the sealed foundation. \t \tEnhance: Your next Combo or Weapon attack gets +3 damage.",
+    "keywords": [
+      "Weapon",
+      "Combo (Attack)"
+    ],
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 2,
+    "speed": 2,
+    "attack_zone": "mid",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/026-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/026-preview.jpg",
+    "name": "Roundhouse Exhaust",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Combo Enhance: The speed of this attack cannot be reduced by rival effects. \t \tEnhance: If this attack's speed is 6 or greater, commit 1 rival foundation.",
+    "keywords": [
+      "Combo(Kick)",
+      "Kick",
+      "EX: 2"
+    ],
+    "resources": [
+      "all",
+      "order",
+      "void"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 2,
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/027-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/027-preview.jpg",
+    "name": "Total Erasure Binding",
+    "type": "Attack",
+    "rarity": "SE",
+    "text": "Combo Enhance: Seal 3 rival foundations. \t \tEnhance: Your rival cannot play abilities on their character during this attack.",
+    "keywords": [
+      "Weapon",
+      "Combo (Weapon, Combo)",
+      "Powerful: 3"
+    ],
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 1,
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/028-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/028-preview.jpg",
+    "name": "Acrobatic",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "After you block with this card, remove it. \t \tEnhance Destroy: This attack gets -1 speed. Playable while committed.",
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 0,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/029-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/029-preview.jpg",
+    "name": "Binding Cloth Mastery",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Enhance Flip 1 foundation: This attack gets -1 damage. \t \tEnhance Commit: If the next attack you try to play has \"Binding\" in its name, it gets -2 difficulty.",
+    "keywords": [
+      "Weapon"
+    ],
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 2,
+    "control": 4,
+    "block_zone": "mid",
+    "block_mod": 1
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/030-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/030-preview.jpg",
+    "name": "Closing In",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Enhance Flip: Your Combo attack gets +2 speed.",
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/031-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/031-preview.jpg",
+    "name": "Daunting Message",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Enhance Flip: If your current health is less than half of your maximum health, commit 1 rival foundation.",
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/032-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/032-preview.jpg",
+    "name": "Dedicated Instructor",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Enhance Flip: This Ranged attack gets -3 damage.",
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/033-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/033-preview.jpg",
+    "name": "Dropping In From Above",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Enhance Commit: Your attackhigh attack gets +2 damage. \t \tEnhance: If your first attack this turn was not blocked, your attack gets +1 damage.",
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/034-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/034-preview.jpg",
+    "name": "Exhausted Exclamation",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Enhance Commit: If your character is committed, draw 1 card.",
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/035-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/035-preview.jpg",
+    "name": "Patient Observation",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Enhance Commit, discard 1 momentum: This attack gets -4 speed.",
+    "keywords": [
+      "Breaker: 1"
+    ],
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 2,
+    "control": 6,
+    "block_zone": "low",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/036-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/036-preview.jpg",
+    "name": "Prone to Dry Eyes",
+    "type": "Foundation",
+    "rarity": "SE",
+    "text": "Response [Once per turn]: After this card is committed due to your rival's effect, ready 2 face down foundations. Playable while committed. \t \tEnhance Discard 1 card: Your attacks get +1 damage for the rest of this turn.",
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 3,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/037-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/037-preview.jpg",
+    "name": "Koji Koda",
+    "type": "Character",
+    "rarity": "Uncommon",
+    "text": "Form Commit: Draw 1 card for each Ally attack and Ally action in your card pool. \t \tEnhance Commit 1 foundation: Choose 1 Ally card in your card pool. That card does not count towards progressive difficulty for the rest of this turn.",
+    "resources": [
+      "chaos",
+      "good",
+      "life"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 6,
+    "vitality": 27
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/038-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/038-preview.jpg",
+    "name": "Command Pigeon Flock",
+    "type": "Attack",
+    "rarity": "Rare",
+    "text": "Enhance: Build 1 Ally foundation from your discard pile. \t \tEnhance Discard 1 momentum: This attack gets +1 damage for each Ally card in your card pool.",
+    "keywords": [
+      "Ally",
+      "Ranged"
+    ],
+    "resources": [
+      "chaos",
+      "good",
+      "life"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/039-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/039-preview.jpg",
+    "name": "Friend Of Animals",
+    "type": "Foundation",
+    "rarity": "Rare",
+    "text": "Response: After this card is committed during the Enhance Step, this attack gets +2 speed. Playable while committed. \t \tEnhance Remove: Add 1 Ally attack from your discard pile to your momentum. Playable while committed.",
+    "keywords": [
+      "Ally"
+    ],
+    "resources": [
+      "chaos",
+      "good",
+      "life"
+    ],
+    "difficulty": 3,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/040-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/040-preview.jpg",
+    "name": "Mashirao Ojiro (II)",
+    "type": "Character",
+    "rarity": "Uncommon",
+    "text": "Enhance: This attack gets +1 speed and +1 damage for each different printed attack zone in your card pool. \t \tEnhance [Once per turn]: Add 1 attack from your card pool to your hand. Only playable if there are 3 different printed attack zones in your card pool.",
+    "resources": [
+      "all",
+      "earth",
+      "water"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 6,
+    "vitality": 28
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/041-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/041-preview.jpg",
+    "name": "Karate Chop",
+    "type": "Attack",
+    "rarity": "Rare",
+    "text": "Enhance: Your rival commits 1 foundation for each different printed attack zone in your card pool. Discard 1 rival momentum. \t \tOjiro Enhance: Your rival flips 1 foundation.",
+    "keywords": [
+      "Punch",
+      "Slam"
+    ],
+    "resources": [
+      "all",
+      "earth",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 1,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/042-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/042-preview.jpg",
+    "name": "Student Of The Art",
+    "type": "Foundation",
+    "rarity": "Uncommon",
+    "text": "Enhance Flip: Add 1 attack from your discard pile to your card pool and seal it. If your character is Mashirao Ojiro, that attack does not count towards progressive difficulty for the rest of the turn.",
+    "resources": [
+      "all",
+      "earth",
+      "water"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/043-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/043-preview.jpg",
+    "name": "Mezo Shoji (II)",
+    "type": "Character",
+    "rarity": "Uncommon",
+    "text": "At the start of your turn, remove all Dupli-Arms counters from this card. Add 4 Dupli-Arms counters to this card. \t \tEnhance Remove any number of Dupli-Arms counters. \tIf you removed \t- 1 Counter: Look at the top card of your deck. You may discard it. \t- 2 Counters: This attack gets +2 or -2 speed. \t- 3 Counters: This attack gets +4 damage. \t- 4 Counters: If this attack is blocked, it deals no damage.",
+    "resources": [
+      "death",
+      "fire",
+      "life"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 6,
+    "vitality": 27
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/044-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/044-preview.jpg",
+    "name": "Tentacole Tactics",
+    "type": "Attack",
+    "rarity": "Rare",
+    "text": "Enhance Lose 2 health: This attack gets +2 damage. \t \tShoji Enhance: Add 2 Dupli-Arms counters to your character.",
+    "keywords": [
+      "Fury",
+      "Slam",
+      "Breaker: 1"
+    ],
+    "resources": [
+      "death",
+      "fire",
+      "life"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 6
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/045-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/045-preview.jpg",
+    "name": "Window Shopping",
+    "type": "Foundation",
+    "rarity": "Uncommon",
+    "text": "Form Flip: Reveal the top card of your deck. You may play the revealed card as your next form. \t \tShoji Enhance Discard 1 momentum: add 2 Dupli-Arms counters to your character.",
+    "resources": [
+      "death",
+      "fire",
+      "life"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/046-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/046-preview.jpg",
+    "name": "Rikido Sato (II)",
+    "type": "Character",
+    "rarity": "Uncommon",
+    "text": "First Form: Draw 2 cards. At the start of the End phase, discard 2 cards. \t \tEnhance: Your attack gets +2 damage. Only playable if you have drawn 2 or more cards this Combat Phase.",
+    "resources": [
+      "all",
+      "earth",
+      "fire"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 5,
+    "vitality": 29
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/047-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/047-preview.jpg",
+    "name": "Brutish Swagger",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "Enhance: If this is the only card in your card pool, draw 1 card. \t \tEnhance: If you have drawn 2 or more cards this Combat Phase, this attack gains Stun: 2.",
+    "keywords": [
+      "Taunt",
+      "Fury"
+    ],
+    "resources": [
+      "all",
+      "earth",
+      "fire"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 6
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/048-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/048-preview.jpg",
+    "name": "Talented Baker",
+    "type": "Foundation",
+    "rarity": "Rare",
+    "text": "Enhance: Your attack gets +1 speed. Only playable if you have drawn 1 or more card this Combat Phase. \t \tSato Response: At the start of your End Phase, if you have played 3 or more attacks this turn, draw 1 card.",
+    "resources": [
+      "all",
+      "earth",
+      "fire"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/049-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/049-preview.jpg",
+    "name": "Stain (II)",
+    "type": "Character",
+    "rarity": "Uncommon",
+    "text": "Form [Once per turn]: Your next Weapon attack gets +3 speed. After it resolves, remove it from the game and draw 1 card. \t \tResponse [Once per turn]: After your Weapon attack deals damage, commit and freeze 1 rival foundation.",
+    "resources": [
+      "evil",
+      "order",
+      "void"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 7,
+    "vitality": 20
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/050-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/050-preview.jpg",
+    "name": "Blood Moon Rending",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "Combo Enhance Discard 1 card: Your rival reveals their hand. Choose 1 card revealed this way and remove it. \t \tEnhance Remove 2 Weapon cards from your discard pile: This attack gets +3 damage.",
+    "keywords": [
+      "Weapon",
+      "Combo (Attack, Weapon)"
+    ],
+    "resources": [
+      "evil",
+      "order",
+      "void"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 1,
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/051-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/051-preview.jpg",
+    "name": "Influencing The Youth",
+    "type": "Foundation",
+    "rarity": "Rare",
+    "text": "Form Remove: Name a foundation. Commit all copies of the named card in both stages.",
+    "resources": [
+      "evil",
+      "order",
+      "void"
+    ],
+    "difficulty": 2,
+    "control": 4,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/052-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/052-preview.jpg",
+    "name": "Thirteen",
+    "type": "Character",
+    "rarity": "Uncommon",
+    "text": "Response [Once per turn]: After your rival plays a non-character ability that modifies the speed of an attack, cancel it.  Response [Once per turn] Destroy 1 foundation: After your rival plays a foundation as a form, discard it from their card pool.",
+    "resources": [
+      "air",
+      "order",
+      "void"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 7,
+    "vitality": 22
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/053-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/053-preview.jpg",
+    "name": "Black Hole Void",
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "text": "Thirteen Enhance: Commit 1 rival foundation.  Enhance: Your rival removes 1 card from their hand. If they have 2 or fewer cards in their hand, they draw 1 card.",
+    "keywords": [
+      "Ranged",
+      "Charge"
+    ],
+    "resources": [
+      "air",
+      "order",
+      "void"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 1,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/054-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/054-preview.jpg",
+    "name": "Can't Escape Me",
+    "type": "Foundation",
+    "rarity": "Uncommon",
+    "text": "Response Destroy: After your rival plays an ability on a non-character card that adds any number of cards to their hand, cancel it.  Deadlock Enhance Commit: Your attack gets +1 speed for each committed rival foundation.",
+    "resources": [
+      "air",
+      "order",
+      "void"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/055-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/055-preview.jpg",
+    "name": "Tomura Shigaraki (II)",
+    "type": "Character",
+    "rarity": "Uncommon",
+    "text": "Response Commit 1 foundation: After your non-Throw attack deals damage, add the top card of your deck to your momentum.  Enhance Discard 1 momentum: Remove 1 card from your card pool.",
+    "resources": [
+      "chaos",
+      "death",
+      "evil"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 7,
+    "vitality": 19
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/056-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/056-preview.jpg",
+    "name": "Sudden Death Assault",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "Enhance: If your rival tries to block this attack with a mid block, their check to block gets -3.  Enhance Remove 2 momentum: Your rival loses 5 health. This effect cannot reduce your rival below 1 health. If your character is Shigaraki, remove this attack after it resolves.",
+    "keywords": [
+      "Charge",
+      "Fury",
+      "Powerful: 3"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "evil"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 2,
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/057-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/057-preview.jpg",
+    "name": "Nothing To See Here",
+    "type": "Foundation",
+    "rarity": "Rare",
+    "text": "Enhance Commit: If your attackmid or Fury attack is completely blocked, your rival destroys 1 foundation.  Enhance Discard 1 momentum: This attack gets -3 speed.",
+    "keywords": [
+      "Unique"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "evil"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/058-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/058-preview.jpg",
+    "name": "Toru Hagakure (II)",
+    "type": "Character",
+    "rarity": "Uncommon",
+    "text": "Enhance: Your rival's block modifier to block this attack gets +1. It gets an additional +1 for every 4 foundations in their stage.  Response Commit: After your rival plays an attack, add it back to their hand. Look at the top card of your rival's deck. You may discard it.",
+    "resources": [
+      "air",
+      "good",
+      "water"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 6,
+    "vitality": 27
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/059-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/059-preview.jpg",
+    "name": "Invisible Infiltration",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "Enhance: This attack gets +1 damage for every 4 foundations in your rival's stage.  Enhance: Remove 1 foundation from either player's stage. After this attack resolves, the owner of the removed foundation builds it from their removed from game pile face up.",
+    "keywords": [
+      "Hagakure Breaker:2"
+    ],
+    "resources": [
+      "air",
+      "good",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/060-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/060-preview.jpg",
+    "name": "Cheerleader",
+    "type": "Foundation",
+    "rarity": "Rare",
+    "text": "Response Remove, discard 1 momentum: After an attack is played, it gains Flash.  Hagakure First Form Flip: Both players build the top card of their deck face down. Only playable if your rival has 8 or fewer foundations.",
+    "resources": [
+      "air",
+      "good",
+      "water"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/061-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/061-preview.jpg",
+    "name": "Engine Trouble",
+    "type": "Action",
+    "rarity": "Uncommon",
+    "text": "Enhance Remove: Commit 1 rival asset or foundation.",
+    "keywords": [
+      "Breaker: 1"
+    ],
+    "resources": [
+      "air",
+      "order",
+      "void"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 1
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/062-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/062-preview.jpg",
+    "name": "Flex Your Might",
+    "type": "Action",
+    "rarity": "Ultra",
+    "text": "This card does not count towards progressive difficulty to play attacks.  First Form: Both players may reveal 1 attack from their hand. If you revealed an attack with a higher printed damage than your rival, draw 2 cards.  Response [Card Pool]: After your attack deals damage, your rival commits 1 foundation.",
+    "keywords": [
+      "Taunt"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "order"
+    ],
+    "difficulty": 4,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 1
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/063-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/063-preview.jpg",
+    "name": "Nullify",
+    "type": "Action",
+    "rarity": "Rare",
+    "text": "Response: After your rival plays a non-character enhance ability, cancel it. Remove this card from the game when it leaves your card pool.  Response Remove, discard 2 momentum: After your rival plays an enhance ability on their character, cancel it.",
+    "resources": [
+      "all",
+      "void",
+      "water"
+    ],
+    "difficulty": 3,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/064-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/064-preview.jpg",
+    "name": "Recovery Time",
+    "type": "Action",
+    "rarity": "Rare",
+    "text": "Response Remove: After you take 5 or more damage, gain 4 health.  Response: After this card leaves your hand due to your rival's effect, draw 2 cards.",
+    "keywords": [
+      "Breaker: 1"
+    ],
+    "resources": [
+      "chaos",
+      "life",
+      "water"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 1
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/065-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/065-preview.jpg",
+    "name": "Battle Arena",
+    "type": "Asset",
+    "rarity": "Uncommon",
+    "text": "While this card is in your stage, at the start of the End Phase, players who dealt damage this turn may add the top card of their deck to their momentum.  Response Commit: After you make a check to play an attack, that check gets +2.",
+    "keywords": [
+      "Terrain"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "evil"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/066-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/066-preview.jpg",
+    "name": "Deku's Notebook",
+    "type": "Asset",
+    "rarity": "Rare",
+    "text": "Enhance [Your turn] Remove: Your rival reveals their hand. You may change the zone of this attack.",
+    "keywords": [
+      "Unique"
+    ],
+    "resources": [
+      "good",
+      "life",
+      "order"
+    ],
+    "difficulty": 3,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/067-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/067-preview.jpg",
+    "name": "Grenadier Bracers",
+    "type": "Asset",
+    "rarity": "Rare",
+    "text": "Enhance: If you have destroyed a foundation this Enhance Step, this attack gets +1 damage.  Enhance Commit: This attack gets +1 damage for each foundation you have destroyed this turn.",
+    "keywords": [
+      "Unique"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "fire"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/068-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/068-preview.jpg",
+    "name": "U.A. High",
+    "type": "Asset",
+    "rarity": "Rare",
+    "text": "While this card is in your stage, at the end of each player's turn, that player may draw 1 card and discard 1 card.  Enhance Remove: Add 1 Ally card from your discard pile to your hand.",
+    "keywords": [
+      "Terrain"
+    ],
+    "resources": [
+      "chaos",
+      "good",
+      "life"
+    ],
+    "difficulty": 3,
+    "control": 4,
+    "block_zone": "high",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/069-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/069-preview.jpg",
+    "name": "U.S.J.",
+    "type": "Asset",
+    "rarity": "Uncommon",
+    "text": "While this card is ready in your stage, the second attack each player plays during a turn gets +2 speed and +2 damage.  Response Commit: After you commit a foundation due to your rival's effect, draw 1 card or commit 1 rival foundation.",
+    "keywords": [
+      "Terrain"
+    ],
+    "resources": [
+      "all",
+      "order",
+      "void"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/070-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/070-preview.jpg",
+    "name": "Blitz Knee",
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "text": "Enhance: This attack gets +1 speed for each Kick attack in your card pool.  Deadlock Enhance: Unflip 1 foundation. Flip 1 rival foundation.",
+    "keywords": [
+      "Kick",
+      "Slam",
+      "EX: 2"
+    ],
+    "resources": [
+      "earth",
+      "order",
+      "void"
+    ],
+    "difficulty": 3,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 1,
+    "attack_zone": "high",
+    "damage": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/071-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/071-preview.jpg",
+    "name": "Blue Flame Palm Strike",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Enhance Reveal the top 3 cards of your deck: Add 1 card revealed this way to your momentum and discard the rest.",
+    "keywords": [
+      "Punch",
+      "Powerful: 3"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "fire"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 2,
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/072-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/072-preview.jpg",
+    "name": "Branching Snare",
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "text": "Response: After you play this card, the next attack played this turn gets +2 damage or -2 speed.  Enhance: If your character is committed, change the zone of the next attack you play this turn.",
+    "keywords": [
+      "Slam",
+      "Stun: 1"
+    ],
+    "resources": [
+      "air",
+      "life",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 1,
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/073-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/073-preview.jpg",
+    "name": "Brandish Steel",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "If you have not played at least 1 other Weapon attack this turn, this attack gets -3 damage.  Deadlock Enhance: If this attack is completed blocked, it still deals 4 damage.",
+    "keywords": [
+      "Weapon"
+    ],
+    "resources": [
+      "evil",
+      "order",
+      "void"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 7
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/074-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/074-preview.jpg",
+    "name": "Compression Sphere",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "Response: After you block with this card, your rival discards 1 momentum and loses 1 health. This effect cannot reduce your rival below 1 health.  Enhance: If either player has lost 2 or more health this turn, this attack gains Stun: 2.",
+    "keywords": [
+      "EX: 2",
+      "Ranged",
+      "Charge"
+    ],
+    "resources": [
+      "air",
+      "evil",
+      "void"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 6
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/075-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/075-preview.jpg",
+    "name": "Death Arms Wallop",
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "text": "Enhance: This attack gets +1 speed for each momentum you have discarded this Enhance Step.  Enhance: Flip 1 committed rival foundation.",
+    "keywords": [
+      "Punch",
+      "Powerful: 2",
+      "Charge"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "earth"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 2,
+    "speed": 5,
+    "attack_zone": "low",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/076-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/076-preview.jpg",
+    "name": "Ectoplasm Clones",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "You can have up to 8 copies of this card in your deck.  Ectoplasm Enhance: This attack gets +1 damage. Your next check to play an attack gets +1.  Enhance: This attack gets +1 speed and +1 damage for each copy of \"Ectoplasm Clones\" in your card pool.",
+    "keywords": [
+      "Ally",
+      "Fury"
+    ],
+    "resources": [
+      "chaos",
+      "order",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 2,
+    "attack_zone": "high",
+    "damage": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/077-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/077-preview.jpg",
+    "name": "Engine Boost",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "Response: After you ready 1 or more foundations during this attack, this attack gets +1 damage.  Enhance: If this attack's speed is 6 or greater, add the top card of your deck to your momentum.",
+    "keywords": [
+      "EX: 3",
+      "Kick",
+      "Charge"
+    ],
+    "resources": [
+      "air",
+      "order",
+      "void"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 2,
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 6
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/078-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/078-preview.jpg",
+    "name": "Extend-O-Hair Strike",
+    "type": "Attack",
+    "rarity": "Rare",
+    "text": "Enhance Commit 1 foundation: This attack gets +1 damage and +1 to its EX rating. This enhance is playable any number of times this Enhance Step.  Deadlock Enhance: Your next check to play a card gets +5.",
+    "keywords": [
+      "Stun: 1",
+      "Ranged",
+      "EX: 0"
+    ],
+    "resources": [
+      "air",
+      "chaos",
+      "order"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 1,
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/079-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/079-preview.jpg",
+    "name": "Fierce Whirlwind",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "Response [Card Pool] Flip 1 card in your card pool: After your rival plays an ability on a committed foundation, destroy it.  Enhance Destroy X foundations: Ready X foundations that have not been readied this Combat Phase.",
+    "keywords": [
+      "EX: 2",
+      "Ranged",
+      "Charge"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "void"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 1,
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/080-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/080-preview.jpg",
+    "name": "Focused Attack",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "Combo Enhance: This attack gets +3 damage for each printed attackmid attack in your card pool.  Deadlock Enhance: Commit 3 rival foundations. This attack gets +X damage. X equals the total printed difficulty of the committed foundations.",
+    "keywords": [
+      "Combo(Mid Attack, Mid Attack)",
+      "Punch"
+    ],
+    "resources": [
+      "all",
+      "life",
+      "order"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 1,
+    "speed": 6,
+    "attack_zone": "mid",
+    "damage": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/081-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/081-preview.jpg",
+    "name": "Forceful Blow",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Enhance: If this attack is blocked, add 1 foundation with a printed difficulty of 1 or less from your discard pile to your hand.",
+    "keywords": [
+      "Punch",
+      "Powerful: 4"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "life"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/082-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/082-preview.jpg",
+    "name": "Freezer Burn",
+    "type": "Attack",
+    "rarity": "Rare",
+    "text": "Response Destroy 1 foundation: After your rival plays a non-character ability during this attack, cancel it.  Enhance Discard the top 3 cards of your deck: Your rival readies 1 of your foundations.",
+    "keywords": [
+      "Ranged",
+      "Charge"
+    ],
+    "resources": [
+      "chaos",
+      "fire",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/083-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/083-preview.jpg",
+    "name": "Frozen Slash",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Enhance: If this attack has received a speed and damage bonus, your next Ranged attack gets +2 speed and +2 damage.  Deadlock Enhance: Your rival loses 1 health for each Ranged attack in your card pool.",
+    "keywords": [
+      "Ranged",
+      "Punch"
+    ],
+    "resources": [
+      "chaos",
+      "order",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 2,
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/084-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/084-preview.jpg",
+    "name": "Gargantuan Bellow",
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "text": "Enhance: This attack gets -2 damage. Your other attacks get +2 damage for the rest of this turn.  Deadlock Enhance: Your attacks get +2 damage for the rest of this turn.",
+    "keywords": [
+      "Taunt",
+      "Fury"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "evil"
+    ],
+    "difficulty": 6,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 6
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/085-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/085-preview.jpg",
+    "name": "Hardened Uppercut",
+    "type": "Attack",
+    "rarity": "Rare",
+    "text": "Response: After you block with this card, your rival's next attack gets -2 speed.  Enhance Destroy 2 face down foundations: This attack gets +4 damage.",
+    "keywords": [
+      "EX: 2",
+      "Punch",
+      "Fury"
+    ],
+    "resources": [
+      "all",
+      "earth",
+      "void"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 0,
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/086-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/086-preview.jpg",
+    "name": "Hulking Grimace",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "Response: After your rival blocks this attack, seal their block.  Enhance: If this attack is blocked, draw 1 card. Only playable if your printed hand size is 5 or less.",
+    "keywords": [
+      "Taunt",
+      "Fury"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "evil"
+    ],
+    "difficulty": 6,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 3,
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 0
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/087-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/087-preview.jpg",
+    "name": "Ice Slide Tackle",
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "text": "Response: After you block a attackhigh with this card, that attack deals no damage.  Combo Enhance: This attack gets +2 speed.",
+    "keywords": [
+      "Combo (Low Attack)",
+      "Ranged",
+      "Kick",
+      "Slam"
+    ],
+    "resources": [
+      "chaos",
+      "order",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/088-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/088-preview.jpg",
+    "name": "Laceration",
+    "type": "Attack",
+    "rarity": "Rare",
+    "text": "Stain Combo Enhance: If this attack is completely blocked. It still deals 1 damage during the Damage Step.  Enhance Remove 1 Weapon card from your discard pile: Your rival loses 1 health. This ability cannot reduce your rival below 1 health.",
+    "keywords": [
+      "Combo(Attack)",
+      "Weapon"
+    ],
+    "resources": [
+      "death",
+      "evil",
+      "order"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 2,
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/089-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/089-preview.jpg",
+    "name": "Piercing Needle",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "If this attack is added to your momentum, add it face up.  Response [Momentum] Flip: After your unblocked attack deals damage, your rival loses 2 health.  Enhance: This attack gets +2 speed and -2 damage.",
+    "keywords": [
+      "Stun: 3",
+      "Deadlock EX: 3",
+      "Weapon"
+    ],
+    "resources": [
+      "death",
+      "evil",
+      "life"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 1,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/090-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/090-preview.jpg",
+    "name": "Quick Draw",
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "text": "Enhance: Add 1 card from your rival's discard pile to the top of their deck.  Enhance: The next time your rival loses health during this attack, draw 1 card.",
+    "keywords": [
+      "Weapon",
+      "Ranged"
+    ],
+    "resources": [
+      "air",
+      "chaos",
+      "death"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 1,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/091-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/091-preview.jpg",
+    "name": "Sludge",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "Enhance: If you have 1 or more momentum, this attack gains Stun: 2.  Enhance Ready 1 rival foundation: Ready 1 foundation.",
+    "keywords": [
+      "Ranged",
+      "Fury"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "water"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 6
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/092-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/092-preview.jpg",
+    "name": "Somnambulism",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "Midnight Enhance: Commit your rival's character.  Enhance: If you have 6 or more printed keywords in your card pool, draw 2 cards and discard 1 card.  Enhance Discard 1 momentum: Your rival discards 1 card.",
+    "keywords": [
+      "Stun: 1",
+      "Weapon",
+      "Breaker: 1"
+    ],
+    "resources": [
+      "all",
+      "chaos",
+      "void"
+    ],
+    "difficulty": 5,
+    "control": 2,
+    "block_zone": "mid",
+    "block_mod": 1,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 6
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/093-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/093-preview.jpg",
+    "name": "Spinning Kick",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Enhance: Change the zone of this attack.  Enhance: If the next attack you play is attacklow, unflip 1 committed foundation.",
+    "keywords": [
+      "EX: 2",
+      "Kick"
+    ],
+    "resources": [
+      "all",
+      "earth",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/094-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/094-preview.jpg",
+    "name": "Sticky Ball Pitch",
+    "type": "Attack",
+    "rarity": "Rare",
+    "text": "Response: After you block a Ranged attack with this card, that attack deals no damage.  Enhance: Add this card to your momentum during the End Phase.",
+    "keywords": [
+      "EX: 2",
+      "Ranged",
+      "Fury"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "water"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 6
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/095-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/095-preview.jpg",
+    "name": "Sticky Ball Wail",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Response [Card Pool]: At the start of your End Phase, if your rival has at least 2 cards in their card pool, add this card to your hand.",
+    "keywords": [
+      "Breaker: 1",
+      "Charge",
+      "Fury"
+    ],
+    "resources": [
+      "evil",
+      "order",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/096-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/096-preview.jpg",
+    "name": "Stun Grenade",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "Enhance: This attack gets +1 to its Stun rating for each attack that has left your card pool this turn.  Enhance: Reveal the top 3 cards of your deck and add 1 Fury attack revealed this way to your hand. Discard the remaining cards.",
+    "keywords": [
+      "Stun: 1",
+      "Powerful: 2",
+      "Fury"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "fire"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/097-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/097-preview.jpg",
+    "name": "Swift Cross Detonator",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Combo Enhance: This attack lose Powerful and gains EX:X. X equals the rating of the lost Powerful ability. Only playable if you have not played a Powerful ability this Enhance Step.",
+    "keywords": [
+      "Combo (Fury)",
+      "Powerful: 2",
+      "Charge",
+      "Fury"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "fire"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/098-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/098-preview.jpg",
+    "name": "Tape Lash",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Enhance: Your next Ranged or Stun attack gets +2 damage.  Sero Enhance: If your rival has no cards in their card pool, they add 1 card from their hand to their card pool face up and draw 1 card.",
+    "keywords": [
+      "Stun: 1",
+      "Ranged"
+    ],
+    "resources": [
+      "air",
+      "order",
+      "water"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 3,
+    "speed": 2,
+    "attack_zone": "mid",
+    "damage": 7
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/099-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/099-preview.jpg",
+    "name": "Tentacle Strike",
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "text": "Response [Card Pool] Remove: After a card leaves your rival's card pool, commit 1 rival foundation.  Enhance: If your rival's character is committed, this attack gets +2 damage.",
+    "keywords": [
+      "Ranged",
+      "Slam",
+      "Fury"
+    ],
+    "resources": [
+      "air",
+      "evil",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 1,
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/100-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/100-preview.jpg",
+    "name": "Tetsutetsu Thrashing",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "Enhance: If the number of cards in your hand is equal to or less than the number of cards in your rival's hand, add 1 copy of \"Tetsutetsu Thrashing\" from your discard pile to your hand.  Enhance Reveal the top card of your deck: If the revealed card was a foundation, this attack gets +2 damage. If it was a non-foundation, build it face down.",
+    "keywords": [
+      "Tetsutetsu Stun: 1",
+      "Punch",
+      "Fury"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "void"
+    ],
+    "difficulty": 4,
+    "control": 2,
+    "block_zone": "mid",
+    "block_mod": 1,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/101-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/101-preview.jpg",
+    "name": "Trap Flex",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Enhance: If you have fewer foundations than your rival, this attack gets +2 damage.",
+    "keywords": [
+      "Throw",
+      "Taunt"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "water"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 3,
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/102-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/102-preview.jpg",
+    "name": "Twisting Azure Inferno",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "Enhance: If this attack's damage is 7 or greater, for the rest of the turn your checks get +1 and your rival's checks to play blocks get -1.  Response: After you play an action, this attack gets +2 damage.",
+    "keywords": [
+      "Ranged",
+      "Charge"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "fire"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/103-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/103-preview.jpg",
+    "name": "Vocal Discord",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Enhance Discard the top 2 cards of your deck: Remove the top card of your rival's deck.  Enhance: This attack gets +1 speed for every 4 foundations in your rival's discard pile.",
+    "keywords": [
+      "Ranged",
+      "Charge"
+    ],
+    "resources": [
+      "chaos",
+      "fire",
+      "good"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 2,
+    "speed": 2,
+    "attack_zone": "low",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/104-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/104-preview.jpg",
+    "name": "Water Pump",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Enhance: If this attack deals damage, your rival commits 1 foundation for each card in their card pool.  Backdraft Enhance: Add the top card of your rival's deck to their card pool.",
+    "keywords": [
+      "Ranged",
+      "EX: 2",
+      "Charge"
+    ],
+    "resources": [
+      "good",
+      "order",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 1,
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/105-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/105-preview.jpg",
+    "name": "Wind-Up Punch",
+    "type": "Attack",
+    "rarity": "Ultra",
+    "text": "If your rival has 8 or more foundations, this attack gets -1 difficulty and +1 damage.  Enhance: If you have discarded 1 or more cards this Combat Phase, this attack gains Stun: 2.",
+    "keywords": [
+      "Punch",
+      "Powerful: 3",
+      "Charge"
+    ],
+    "resources": [
+      "good",
+      "life",
+      "order"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 6
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/106-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/106-preview.jpg",
+    "name": "Zip Line Dart",
+    "type": "Attack",
+    "rarity": "Common",
+    "text": "Enhance: If you have 1 or more assets in your stage, this attack gets +2 speed.  Enhance: Your next Slam, Tech or Weapon attack gets +2 speed.",
+    "keywords": [
+      "Slam",
+      "Charge",
+      "Tech"
+    ],
+    "resources": [
+      "all",
+      "evil",
+      "life"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/107-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/107-preview.jpg",
+    "name": "...So Manly",
+    "type": "Foundation",
+    "rarity": "Rare",
+    "text": "Response Flip: After you are dealt damage from an unblocked attack, add the top card of your rival's discard pile to their card pool.",
+    "keywords": [
+      "Unique"
+    ],
+    "resources": [
+      "good",
+      "void",
+      "water"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/108-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/108-preview.jpg",
+    "name": "All Worked Up",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Response: After this card is discarded during the Enhance Step, this attack gets +1 or -1 damage.  Enhance Destroy: Your next check to play a card gets +1. Playable while committed.",
+    "resources": [
+      "all",
+      "chaos",
+      "void"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/109-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/109-preview.jpg",
+    "name": "Basic Training",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Response [Once per turn]: After you play an attack, it gets +1 damage.  Deadlock Response: After an attack is played, it gets +1 speed. Playable while committed.",
+    "resources": [
+      "air",
+      "chaos",
+      "water"
+    ],
+    "difficulty": 0,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/110-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/110-preview.jpg",
+    "name": "Bench Press",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance: If you have lost health this turn, your attack gets +1 damage.  Enhance Flip: If this attack deals damage, gain 2 health.",
+    "resources": [
+      "death",
+      "evil",
+      "life"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/111-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/111-preview.jpg",
+    "name": "Bewildered",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance Flip: If your rival has 3 or more attacks in their card pool, this attack gets -3 speed or -3 damage.",
+    "resources": [
+      "good",
+      "life",
+      "void"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/112-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/112-preview.jpg",
+    "name": "Carbo Loading",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance Commit 1 foundation: This attack gets +X damage. X equals the difficulty of the committed foundation.  Response [Once per turn]: After you gain health, ready this foundation. Playable while committed.",
+    "resources": [
+      "all",
+      "earth",
+      "life"
+    ],
+    "difficulty": 3,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/113-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/113-preview.jpg",
+    "name": "Catching A Ride",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Response Flip: After a card leaves your rival's card pool, discard 1 card from your card pool.  Enhance [Your turn] Commit: Change this attack's speed to the printed speed of the attack immediately preceding this attack.",
+    "resources": [
+      "chaos",
+      "evil",
+      "water"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/114-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/114-preview.jpg",
+    "name": "Confident Inventor",
+    "type": "Foundation",
+    "rarity": "Rare",
+    "text": "Enhance: Your Tech attack gets +1 damage.  Enhance Destroy, remove 1 foundation: Add 1 asset from your discard pile to your hand.",
+    "resources": [
+      "all",
+      "evil",
+      "life"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/115-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/115-preview.jpg",
+    "name": "Conflict of Ideologies",
+    "type": "Foundation",
+    "rarity": "Rare",
+    "text": "Response Commit: After your attack deals damage, freeze 1 rival asset or foundation.  Response Flip: After your Fury attack is not blocked, your rival loses 2 health.",
+    "resources": [
+      "death",
+      "evil",
+      "order"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/116-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/116-preview.jpg",
+    "name": "Constantly Improving",
+    "type": "Foundation",
+    "rarity": "Uncommon",
+    "text": "First Enhance Commit, commit 1 foundation: Your attack gets +X speed. X equals your attack's printed speed.",
+    "resources": [
+      "all",
+      "life",
+      "water"
+    ],
+    "difficulty": 3,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/117-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/117-preview.jpg",
+    "name": "Cool And Tough",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Response Remove: After a card leaves your momentum due to a rival effect, add that card to your hand. Playable while committed.  Deadlock Enhance Ready 1 rival foundation: Ready 2 foundations.",
+    "resources": [
+      "air",
+      "all",
+      "chaos"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/118-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/118-preview.jpg",
+    "name": "Dexterous Appendages",
+    "type": "Foundation",
+    "rarity": "Uncommon",
+    "text": "Enhance Commit, name a card type: Discard the top card of your rival's deck. If it matches the named type, your attack gets +3 speed.  Response Flip: After any number of cards leave your deck due to a rival effect, add 1 card from your discard pile to the top of your deck.",
+    "resources": [
+      "air",
+      "all",
+      "good"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/119-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/119-preview.jpg",
+    "name": "Dreaming Of Glory",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance [Your turn] Remove: If there are 3 or more cards in your rival's card pool, add 1 card with \"Sticky\" in its name from your discard pile to your hand.",
+    "resources": [
+      "death",
+      "evil",
+      "water"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/120-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/120-preview.jpg",
+    "name": "Easily Excited",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Response [Once per turn]: After an attack is played, it gets +1 speed and gains Taunt if it does not already have it.",
+    "resources": [
+      "all",
+      "chaos",
+      "void"
+    ],
+    "difficulty": 0,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/121-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/121-preview.jpg",
+    "name": "En-Denim-ed",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance [Your attack] Destroy 1 foundation: Discard the top 2 cards of either player's deck.",
+    "resources": [
+      "death",
+      "earth",
+      "fire"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/122-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/122-preview.jpg",
+    "name": "Feelin' Cute",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance Destroy 1 foundation: Your attack gets +1 speed.",
+    "resources": [
+      "air",
+      "chaos",
+      "water"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/123-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/123-preview.jpg",
+    "name": "Full-On Attack Mode!",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance Destroy 1 foundation: If your attack deals damage, gain 1 health and your rival loses 1 health.",
+    "resources": [
+      "all",
+      "evil",
+      "life"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/124-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/124-preview.jpg",
+    "name": "Hero's Inspiration",
+    "type": "Foundation",
+    "rarity": "Rare",
+    "text": "Response Remove: After you check this card to play an attack, that attack gets +2 speed or +2 damage.  Enhance Add this card to your card pool: Draw 1 card.",
+    "keywords": [
+      "Ally"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "life"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/125-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/125-preview.jpg",
+    "name": "Honorable Forfeit",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance Commit: If there are at least 2 different attack zones in your card pool, your next check to play a card gets +2.",
+    "resources": [
+      "chaos",
+      "earth",
+      "water"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/126-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/126-preview.jpg",
+    "name": "Hype Man",
+    "type": "Foundation",
+    "rarity": "Uncommon",
+    "text": "Enhance [Your turn] Commit: Both players discard the top card of their decks. If both cards were non-attack cards, ready this foundation.  Response Flip: After your rivals plays an ability that discards any number of your momentum, cancel it. Playable while committed.",
+    "resources": [
+      "chaos",
+      "fire",
+      "good"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/127-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/127-preview.jpg",
+    "name": "Idol Work",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance Destroy 1 foundation: If this attack deals no damage, draw 1 card and discard 1 card.",
+    "resources": [
+      "good",
+      "order",
+      "void"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/128-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/128-preview.jpg",
+    "name": "Lessons From Taiyaki",
+    "type": "Foundation",
+    "rarity": "Rare",
+    "text": "Enhance Commit: Cancel your rival's next non-character ability this Enhance Step.  Deadlock Enhance Remove: Add 1 attack from your card pool to your hand.",
+    "resources": [
+      "good",
+      "life",
+      "void"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/129-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/129-preview.jpg",
+    "name": "Like The Wind",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance Commit: This attack gets +1 speed. If this attack's speed is 6 or greater, your next attack gets +2 speed.  Response: After your EX or Slam attack deals damage, add this card to your momentum.",
+    "resources": [
+      "air",
+      "good",
+      "order"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/130-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/130-preview.jpg",
+    "name": "Male Bonding",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Response Flip: After you take damage from an unblocked attack, build the top card of your deck face down.",
+    "keywords": [
+      "Ally"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "void"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/131-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/131-preview.jpg",
+    "name": "Noble Participation",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Response Flip: After a card is played, reduce 1 of its keyword ratings to 0.",
+    "resources": [
+      "air",
+      "order",
+      "void"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/132-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/132-preview.jpg",
+    "name": "One With Nature",
+    "type": "Foundation",
+    "rarity": "Rare",
+    "text": "Enhance Discard 1 card: Your rival's block modifier to block this attack gets +2.  Response [Once per Enhance Step]: After you discard any number of cards, your attack gets +1 damage.",
+    "resources": [
+      "chaos",
+      "earth",
+      "good"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/133-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/133-preview.jpg",
+    "name": "Prehensile Tail",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance Flip: If you have 4 or more face down foundations (including this card), add 1 momentum to your hand or your rival discards 1 momentum.  Deadlock Enhance Commit: Your Kick, Punch or Slam attack gets +3 damage and gains Throw.",
+    "resources": [
+      "death",
+      "earth",
+      "fire"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/134-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/134-preview.jpg",
+    "name": "Proud Scion",
+    "type": "Foundation",
+    "rarity": "Uncommon",
+    "text": "Response Commit: After your rival's Start Phase, commit 1 of their foundations with an ability that grants a speed bonus or penalty.  Deadlock Response Flip: After your rival plays an ability on a non-character card in their stage, cancel it and flip that card.",
+    "resources": [
+      "earth",
+      "order",
+      "void"
+    ],
+    "difficulty": 3,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/135-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/135-preview.jpg",
+    "name": "Shadow's Aid",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance [Your attack] Commit: Add 1 card from your momentum to your hand. Your rival may ready 1 foundation.",
+    "keywords": [
+      "Ally"
+    ],
+    "resources": [
+      "air",
+      "chaos",
+      "evil"
+    ],
+    "difficulty": 3,
+    "control": 4,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/136-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/136-preview.jpg",
+    "name": "Showing Off",
+    "type": "Foundation",
+    "rarity": "Uncommon",
+    "text": "Enhance Commit: If your attack's speed or damage is at least double its printed value, this attack does not count towards progressive difficulty for the rest of the Combat Phase.",
+    "resources": [
+      "all",
+      "evil",
+      "life"
+    ],
+    "difficulty": 2,
+    "control": 4,
+    "block_zone": "low",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/137-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/137-preview.jpg",
+    "name": "Snack Time",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance Discard 1 card: Your attack gets +1 speed and gains Stun: 1.  Deadlock Enhance Flip 1 foundation: Draw 1 card.",
+    "resources": [
+      "all",
+      "death",
+      "earth"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/138-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/138-preview.jpg",
+    "name": "Spirited Referee",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Response: After this card is committed during the Enhance Step, this attack gets +2 or -1 damage. Playable while committed.",
+    "keywords": [
+      "Breaker: 1"
+    ],
+    "resources": [
+      "all",
+      "chaos",
+      "void"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/139-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/139-preview.jpg",
+    "name": "Sports Festival Champ",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance Commit, discard 1 card: The damage of this non-Throw attack cannot be reduced.  Enhance: If the top 3 cards of your discard pile are foundations, this attack gets +1 damage.",
+    "resources": [
+      "air",
+      "death",
+      "earth"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/140-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/140-preview.jpg",
+    "name": "Successful Results",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance Discard 1 momentum: Ready this foundation. Playable while committed.  Deadlock Enhance Flip: Ready 2 foundations. Add the top card of your deck to your momentum.",
+    "keywords": [
+      "Ally"
+    ],
+    "resources": [
+      "air",
+      "chaos",
+      "evil"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/141-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/141-preview.jpg",
+    "name": "Sudden Appearance",
+    "type": "Foundation",
+    "rarity": "Uncommon",
+    "text": "First Enhance Commit: Your rival's check to block this attack gets -2.  Enhance [Your attack] Flip: End this Enhance Step.",
+    "resources": [
+      "all",
+      "evil",
+      "good"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/142-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/142-preview.jpg",
+    "name": "To The Rescue",
+    "type": "Foundation",
+    "rarity": "Rare",
+    "text": "Enhance [Rival's turn] Flip: Choose 1 card in your card pool. It does not count towards progressive difficulty for the rest of this turn.  Response Remove: After you play a Fury or Punch attack, seal 1 rival foundation.",
+    "resources": [
+      "all",
+      "good",
+      "life"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/143-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/143-preview.jpg",
+    "name": "Valiant Pose",
+    "type": "Foundation",
+    "rarity": "Uncommon",
+    "text": "Enhance Commit: Your Punch, Kick, or Slam attack gets +2 damage. If there are 3 or more attacks in your card pool, it gets an additional +1 damage.  Enhance Flip: Your next Throw attack gets -1 difficulty.",
+    "keywords": [
+      "Taunt"
+    ],
+    "resources": [
+      "all",
+      "earth",
+      "life"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/144-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/144-preview.jpg",
+    "name": "Watching From A Distance",
+    "type": "Foundation",
+    "rarity": "Common",
+    "text": "Enhance Commit, discard 1 momentum: Commit 1 rival asset or foundation. Only playable if there are no cards in your rival's card pool.",
+    "resources": [
+      "air",
+      "all",
+      "earth"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 1
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/145-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/145-preview.jpg",
+    "name": "Aggressive Clash",
+    "type": "Attack",
+    "rarity": "Promo",
+    "text": "Enhance Discard 1 card: Destroy 1 rival foundation with a keyword.  Enhance: If this attack is blocked, both players shuffle all attacks from their discard pile into their decks, then both players reveal the top card of their decks.",
+    "keywords": [
+      "Punch",
+      "Powerful: 2",
+      "Slam",
+      "Fury"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "life"
+    ],
+    "difficulty": 5,
+    "control": 2,
+    "block_zone": "high",
+    "block_mod": 0,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 6
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/146-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/146-preview.jpg",
+    "name": "Heroic Clash",
+    "type": "Attack",
+    "rarity": "Promo",
+    "text": "After you block an attack with this card, that attack deals no damage.  Enhance Discard 1 momentum: After this attack resolves, both players remove all cards from their card pools and draw 2 cards.",
+    "keywords": [
+      "Ranged",
+      "Punch",
+      "Slam",
+      "Fury"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "difficulty": 4,
+    "control": 1,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 7
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/147-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/147-preview.jpg",
+    "name": "Class Line-Up",
+    "type": "Asset",
+    "rarity": "Promo",
+    "text": "{mha03} Enhance Commit: Commit 1 rival void foundation.",
+    "keywords": [
+      "Ally",
+      "Tech",
+      "Unique"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/150-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/150-preview.jpg",
+    "name": "Backdraft",
+    "type": "Character",
+    "rarity": "Promo",
+    "text": "Enhance Commit 1 foundation: This attack gets -2 speed. If it is a fire attack, it gets an additional -1 speed.  Enhance [Your turn] Discard 3 cards from your rival's card pool: Your attack gets +5 speed and +5 damage.",
+    "resources": [
+      "good",
+      "order",
+      "water"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 6,
+    "vitality": 27
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/151-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/151-preview.jpg",
+    "name": "Death Arms",
+    "type": "Character",
+    "rarity": "Promo",
+    "text": "Enhance: Your attack with a printed difficulty of 5 or greater gets +1 speed and +2 damage.  Response Commit, destroy 1 foundation: After your rival's Ready Step, commit 2 of their foundations.",
+    "resources": [
+      "chaos",
+      "death",
+      "earth"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 6,
+    "vitality": 29
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/152-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/152-preview.jpg",
+    "name": "Training Weights",
+    "type": "Asset",
+    "rarity": "Promo",
+    "text": "Enhance Commit 1 foundation: Ready this asset. Playable while committed.  Enhance Discard 1 momentum: Ready this asset. Playable while committed.  Enhance Commit: This attack gets +1 damage for each time this enhance has been played this Combat Phase.",
+    "resources": [
+      "infinity"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/153-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/153-preview.jpg",
+    "name": "Hardened Steel",
+    "type": "Attack",
+    "rarity": "Promo",
+    "text": "Enhance: Add 2 cards from your discard pile to the bottom of your deck in any order.  Enhance Remove the top card of your rival's deck: This attack gets +X damage. X equals the block modifier of the removed card.",
+    "keywords": [
+      "Punch",
+      "Fury"
+    ],
+    "resources": [
+      "all",
+      "earth",
+      "good"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/154-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/154-preview.jpg",
+    "name": "Chivalrous Competitor",
+    "type": "Foundation",
+    "rarity": "Promo",
+    "text": "Enhance Flip: Both players draw 1 card.  Response: Before 1 of your foundations would be destroyed or flipped due to your rival's non-character effect, flip this foundation instead.",
+    "resources": [
+      "all",
+      "chaos",
+      "earth"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/200-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/200-preview.jpg",
+    "name": "Nezu",
+    "type": "Character",
+    "rarity": "Promo",
+    "text": "Response: After your rival draws 1 or more cards during the Combat Phase due to a non-character effect, draw 1 card.  Enhance [Once per turn] Discard 1 card: Add 1 card from your discard pile to your hand with difficulty matching the discarded card.  Enhance [Once per game]: Look at your rival's hand.",
+    "resources": [
+      "all",
+      "chaos",
+      "order"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 6,
+    "vitality": 26
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/201-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/201-preview.jpg",
+    "name": "Evil Vs Good",
+    "type": "Action",
+    "rarity": "Promo",
+    "text": "Response: After your rival plays a non-character response ability, cancel it.  Enhance Lose 2 health: Your next attack this turn gets -2 difficulty and +2 damage.",
+    "resources": [
+      "chaos",
+      "evil",
+      "good"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 3
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/202-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/202-preview.jpg",
+    "name": "Seizing The Advantage",
+    "type": "Action",
+    "rarity": "Promo",
+    "text": "Form: Your next attack gets +2 speed.  Response [Card Pool]: After you play an attack, flip 1 rival foundation. Build this card face down.",
+    "resources": [
+      "air",
+      "earth",
+      "fire"
+    ],
+    "difficulty": 3,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/203-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/203-preview.jpg",
+    "name": "Symbol Of Peace",
+    "type": "Action",
+    "rarity": "Promo",
+    "text": "While this card is in your card pool, your block modifiers get -1 and your rival's block modifiers get +1.  Enhance: Draw 1 card for each attack in your rival's card pool.",
+    "resources": [
+      "all",
+      "good",
+      "order"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/204-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/204-preview.jpg",
+    "name": "Special Edition Collectible",
+    "type": "Asset",
+    "rarity": "Promo",
+    "text": "When you build this card, build it committed.  Form Remove: Reveal the top 10 cards of your deck and add 1 card revealed this way to your hand, then shuffle your deck.",
+    "keywords": [
+      "Unique"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 1
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/205-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/205-preview.jpg",
+    "name": "Dark Shadow Emergence",
+    "type": "Attack",
+    "rarity": "Promo",
+    "text": "Enhance Remove 1 foundation: If this is your first attack this turn, add 1 action from your discard pile to your hand.  First Enhance: If your character is committed, unflip 1 foundation.",
+    "keywords": [
+      "Slam",
+      "Ally",
+      "Ranged"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "life"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 2,
+    "speed": 2,
+    "attack_zone": "mid",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/206-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/206-preview.jpg",
+    "name": "Hardened Barrage",
+    "type": "Attack",
+    "rarity": "Promo",
+    "text": "Enhance: This attack gets +1 speed for each copy of \"Rapid Punches\" in your card pool.  Enhance: This attack gets +1 damage for each copy of \"Hardened Barrage\" in your card pool.  Response: After this attack deals damage, unflip 1 foundation.",
+    "keywords": [
+      "Charge",
+      "Punch",
+      "Slam"
+    ],
+    "resources": [
+      "all",
+      "earth",
+      "fire"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/207-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/207-preview.jpg",
+    "name": "Piercing Thorn Lances",
+    "type": "Attack",
+    "rarity": "Promo",
+    "text": "Enhance: Add 1 other attacklow attack from your card pool to your momentum.  Shiozaki Enhance: Your rival must reveal a high block as an additional cost to block this attack.",
+    "keywords": [
+      "Ranged",
+      "Charge"
+    ],
+    "resources": [
+      "earth",
+      "life",
+      "water"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/208-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/208-preview.jpg",
+    "name": "Rapid Punches",
+    "type": "Attack",
+    "rarity": "Promo",
+    "text": "Enhance: This attack gets +1 speed for each copy of \"Rapid Punches\" in your card pool.  Enhance: This attack gets +1 damage for each copy of \"Hardened Barrage\" in your card pool.  Response: After this attack deals damage, draw 1 card.",
+    "keywords": [
+      "Fury",
+      "Punch",
+      "Charge"
+    ],
+    "resources": [
+      "all",
+      "earth",
+      "fire"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/209-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/209-preview.jpg",
+    "name": "Viscous Lunge",
+    "type": "Attack",
+    "rarity": "Promo",
+    "text": "Enhance: If you have exactly 1 momentum, add the top card of your deck to your momentum.  Enhance Discard your entire momentum: Your rival loses 1 health for each momentum discarded this way. This effect cannot reduce your rival below 1 health.",
+    "keywords": [
+      "Slam",
+      "Fury"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "water"
+    ],
+    "difficulty": 5,
+    "control": 2,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/210-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/210-preview.jpg",
+    "name": "Heroic Aspirations",
+    "type": "Foundation",
+    "rarity": "Promo",
+    "text": "Response: After your attack with \"Smash\" in its name deals damage, gain 1 health.  Deadlock Enhance Commit: Your next attack ignores progressive difficulty.",
+    "resources": [
+      "good",
+      "life",
+      "order"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/211-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/211-preview.jpg",
+    "name": "Petty Squabble",
+    "type": "Foundation",
+    "rarity": "Promo",
+    "text": "Response [Once per turn] Discard 1 card: After your rival plays an ability on a foundation, commit 1 rival copy of that card.  Enhance Commit your character: Both players discard 2 cards and draw 2 cards.",
+    "resources": [
+      "chaos",
+      "earth",
+      "void"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 2
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/240-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/240-preview.jpg",
+    "name": "All Might (V)",
+    "type": "Character",
+    "rarity": "Promo",
+    "text": "Response [Twice per turn]: After you play a card with \"Smash\" in its name, draw 1 card.  Enhance Flip 1 foundation: Your Fury or Punch attack gets +2 speed or +2 damage.  Deadlock First Form [Once per game]: Your attacks with \"Smash\" in their name gain Stun: 2 for the rest of this turn.",
+    "resources": [
+      "all",
+      "good",
+      "life"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 6,
+    "vitality": 27
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/241-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/241-preview.jpg",
+    "name": "Recovery Girl",
+    "type": "Character",
+    "rarity": "Promo",
+    "text": "First Form: Gain 2 health.  Response: After you take damage, build 1 foundation from your discard pile.  Enhance Destroy 2 foundations: Your attack gains Throw.",
+    "resources": [
+      "good",
+      "life",
+      "water"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 5,
+    "vitality": 30
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/242-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/242-preview.jpg",
+    "name": "Living Up To His Example",
+    "type": "Action",
+    "rarity": "Promo",
+    "text": "First Enhance Remove: You may discard 1 card from your hand in addition to momentum to pay the cost of this attack's EX or Powerful ability. If your hand size is 6 or less, draw 1 card.",
+    "keywords": [
+      "Breaker: 1"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "difficulty": 3,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 1
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/243-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/243-preview.jpg",
+    "name": "Flamethrower",
+    "type": "Attack",
+    "rarity": "Promo",
+    "text": "Enhance Discard the top card of your deck: This attack gets +X speed. X equals the printed difficulty of the discarded card.  Enhance: If this attack deals 5 or more damage, destroy 1 rival foundation.",
+    "keywords": [
+      "Ranged",
+      "Powerful: 3",
+      "Charge"
+    ],
+    "resources": [
+      "death",
+      "fire",
+      "order"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/244-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/244-preview.jpg",
+    "name": "Gigantic Explosion",
+    "type": "Attack",
+    "rarity": "Promo",
+    "text": "Combo Enhance Discard 1 momentum: Both players destroy 2 of their rival's foundations. This attack gets +X damage. X equals the total difficulty of the destroyed foundations.  Deadlock Enhance: Add the top 2 cards of your discard pile to your momentum.",
+    "keywords": [
+      "Combo (Fury)",
+      "Fury"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "fire"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 1,
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/245-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/245-preview.jpg",
+    "name": "Villainous Waylay",
+    "type": "Attack",
+    "rarity": "Promo",
+    "text": "Enhance Name a block zone: Your rival must discard a card with the named block zone. If they cannot, they reveal their hand.",
+    "keywords": [
+      "Fury"
+    ],
+    "resources": [
+      "death",
+      "evil",
+      "void"
+    ],
+    "difficulty": 4,
+    "control": 2,
+    "block_zone": "low",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 5
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/246-preview.jpg",
+    "ultra_url_path": "images/extensions/mha03/246-preview.jpg",
+    "name": "Photogenic Hero",
+    "type": "Foundation",
+    "rarity": "Promo",
+    "text": "Enhance Destroy: This attack cannot receive any more speed bonuses this Enhance Step.  Response Remove: After you block with a copy of your starting character, build it.",
+    "keywords": [
+      "Taunt"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "void"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 3
+  }
+]
