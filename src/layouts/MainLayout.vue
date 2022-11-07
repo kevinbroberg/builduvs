@@ -1,12 +1,12 @@
 <script setup>
-  import { ref } from 'vue'
-  import { useStore } from 'vuex';
-  import { useQuasar } from 'quasar'
+  import { ref, computed } from 'vue'
+  import { useStore } from 'vuex'
   import DeckView from 'components/deck/DeckView.vue'
   import NamePicker from 'components/filter/NamePicker.vue'
 
   const store = useStore()
-
+  const hasDeck = computed(() => store.getters['deck/hasDeck'])
+  
   const leftDrawerOpen = ref(false)
   const rightDrawerOpen = ref(false)
 
@@ -38,7 +38,12 @@
           <q-route-tab to="/search" label="Search" />
         </q-tabs>
         <!-- <NamePicker /> -->
-        <q-btn dense flat round icon="table_view" @click="toggleRightDrawer" >
+        <q-btn dense flat round 
+          icon="table_view" 
+          @click="toggleRightDrawer" 
+          v-if=hasDeck
+          label="Deck"
+          >
           <q-tooltip>View current deck</q-tooltip>
         </q-btn>
       </q-toolbar>
