@@ -10,6 +10,7 @@
         return (x % 2) + (x/2 | 0)
     }
     
+    // TODO can this be simplified to a number ref or even a non-reactive value?
     const p1 = ref({
         health : props.start
     })

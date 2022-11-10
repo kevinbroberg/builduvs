@@ -1,5 +1,4 @@
 <script setup>
-  import { ref, watch } from 'vue'
   const emit = defineEmits( ['up', 'down'] )
 </script>
 
