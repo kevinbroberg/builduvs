@@ -17,6 +17,10 @@ const routes = [
         props: (route) => ({ query: route.query }),
       },
       {
+        path: "settings",
+        component: () => import('src/pages/Config.vue'),
+      },
+      {
         path: "mha",
         component: () => import("pages/CardHome.vue"),
         props: (route) => ({ query: { ...route.query, formats: "[\"My Hero Academia\"]" } })
@@ -31,10 +35,6 @@ const routes = [
         component: () => import("pages/CardHome.vue"),
         props: (route) => ({query: {...route.query, formats: "[\"retro\"]"}})
       },
-      // {
-      //   path: "settings",
-      //   component: () => import('src/pages/Config.vue'),
-      // },
       {
         path: "deck",
         component: () => import("src/pages/DeckHome.vue"),

@@ -100,21 +100,13 @@ watch(settings, (nu, _) => {
       <q-tooltip>Reset attack to default</q-tooltip>
     </q-btn>
     <q-btn :fab="true" icon="settings" color="primary" @click="dialog = true">
-      <q-tooltip>Change starting values</q-tooltip>
+      <q-tooltip>Damage history</q-tooltip>
     </q-btn>
   </q-page-sticky>
   <q-dialog v-model="dialog">
     <q-card>
       <q-card-section>
-        <div class="text-h6">Players</div>
-        <q-input v-model.string="settings.p1name" label="Player 1" stack-label />
-        <q-input v-model.number="settings.p1hp" label="Starting life for player 1" stack-label type="number" />
-        
-        <q-input v-model.string="settings.p2name" label="Player 2" stack-label />
-        <q-input v-model.number="settings.p2hp" label="Starting life for player 2" stack-label type="number" />
         <q-btn class="flex-center" @click="resetGame()" color="negative">Reset game</q-btn>
-      </q-card-section>
-      <q-card-section>
         <div class="text-h6">Life total history </div>
         <div class="row justify-between">
           <div class="column">
@@ -126,16 +118,6 @@ watch(settings, (nu, _) => {
             <p v-for="c in history.p2" :key="c">{{c}}</p>
           </div>
         </div>
-      </q-card-section>
-      <q-card-section>
-        <div class="text-h6">Starting attack stats</div>
-        <q-input v-model.number="settings.speed" label="Starting speed" stack-label type="number" />
-        <div class="q-gutter-sm"> 
-          <q-radio v-model="settings.zone" val="high" label="High" />
-          <q-radio v-model="settings.zone" val="mid" label="Mid" />
-          <q-radio v-model="settings.zone" val="low" label="Low" />
-        </div>
-        <q-input v-model.number="settings.damage" label="Starting damage" stack-label type="number" />
       </q-card-section>
     </q-card>
   </q-dialog>

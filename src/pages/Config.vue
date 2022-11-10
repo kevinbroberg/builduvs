@@ -1,40 +1,124 @@
 <script setup>
-  import { ref, computed } from 'vue'
-  const text = ref('')
+  import { useQuasar } from 'quasar'
+  import { ref, watch } from 'vue'
+  import Counter from 'components/attack/Counter.vue'
 
-  import { useStore } from 'vuex'
+  const $q = useQuasar()
 
-  const store = useStore()
-  const deck = computed(() => store.getters['deck/getDeckList'] )
-  const face = computed(() => store.getters['deck/getFace'])
+  const storage_key = "attack_default"
+  const default_defaults = { speed: 4 , damage: 5, zone: 'mid', p1hp: 30, p1name:"Me", p2hp: 30, p2name: "You"}
+  const initial_defaults = $q.localStorage?.getItem(storage_key) || default_defaults
+  
+  const settings = ref(initial_defaults)
+  
+  const nextZone = {'high': 'mid', 'mid': 'low', 'low': 'high'}
+  function goNextZone() {
+    settings.value.zone = nextZone[settings.value.zone]
+  }
+
+  watch(settings, (nu, _) => {
+    try {
+      $q.localStorage.set(storage_key, nu)
+    } catch (e) {
+      console.log(`Error persisting settings ${e}`)
+    }
+  }, { deep: true })
 </script>
 
 <template>
   <div class="q-pa-md">
     <div class="q-gutter-md" style="max-width: 300px">
-      <q-input v-model="text" label="Standard" />
+      <div class="text-h6">
+        Players
+        <q-input v-model.string="settings.p1name" label="Player 1" stack-label 
+          :rules="[val => val.length <= 15 || 'Maximum length 15']" />
+        <Counter @up="settings.p1hp++" @down="settings.p1hp--">
+          <h5>{{settings.p1name}} starting health: {{settings.p1hp}}</h5>
+        </Counter>
 
-      <q-input filled v-model="text" label="Filled" />
+        <q-input v-model.string="settings.p2name" label="Player 2" stack-label 
+          :rules="[val => val.length <= 15 || 'Maximum length 15']" />
+        <Counter @up="settings.p2hp++" @down="settings.p2hp--">
+          <h5>{{settings.p2name}} starting health: {{settings.p2hp}}</h5>
+        </Counter>
 
-      <q-input outlined v-model="text" label="Outlined" />
-
-      <q-input standout v-model="text" label="Standout" />
-
-      <q-input standout="bg-teal text-white" v-model="text" label="Custom standout" />
-
-      <q-input borderless v-model="text" label="Borderless" />
-
-      <q-input rounded filled v-model="text" label="Rounded filled" />
-
-      <q-input rounded outlined v-model="text" label="Rounded outlined" />
-
-      <q-input rounded standout v-model="text" label="Rounded standout" />
-
-      <q-input square filled v-model="text" label="Square filled" />
-
-      <q-input square outlined v-model="text" label="Square outlined" />
-
-      <q-input square standout v-model="text" label="Square standout" />
+      </div>
+      <div>
+        <h6>Attack default</h6>
+        <main>
+          <Counter class="speed" :class="settings.zone" @up="settings.speed++" @down="settings.speed--">
+      <h3>{{settings.speed}}</h3>
+    </Counter>
+    <!-- TODO sometime soon: replace with divs rather than click3() function -->
+    <div class="zone text-center"
+      :class="`${settings.zone}color`"
+      @click=goNextZone >
+      <h4 class="q-mx-none">
+        {{settings.zone}}
+      </h4>
+    </div>
+    <Counter class="damage" @up="settings.damage++" @down="settings.damage--">
+      <h3>{{settings.damage}}</h3>
+    </Counter>
+        </main>
+        <p>The floating reset button will set the current attack to these values</p>
+      </div>
     </div>
   </div>
 </template>
+<style>
+
+.speed {
+  /* padding: 2vh;  */
+  border: 0.5ch solid black;
+  grid-column: span 2 / auto;
+}
+.zone {
+  border: 0.5ch solid black;
+  grid-column: span 1;
+}
+.speed, .damage, .high, .mid, .low {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% center;
+  display: flex; 
+  flex-direction: column;
+}
+.high, .mid, .low {
+  background-position: 55% center;
+}
+.damage {
+  /* padding: 2vh;  */
+  border: 0.5ch solid black;
+  background-image: url(~assets/images/damage.png);
+  grid-column: span 3 / auto;
+}
+.lowcolor {
+  background-color: hsl(53, 91%, 55%)
+}
+.highcolor {
+  background-color: hsl(359, 85%, 53%)
+}
+.midcolor {
+  background-color: hsl(28, 93%, 58%)
+}
+.high {
+  background-image: url(~assets/images/high attack.png);
+}
+.mid {
+  background-image: url(~assets/images/mid attack.png);
+}
+.low {
+  background-image: url(~assets/images/low attack.png);
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* changed from copy-pasted */
+  /* grid-template-rows: 40vh 40vh; */
+  justify-content: center;
+  align-items: center;
+  user-select: none; /* don't highlight text */
+  box-sizing: border-box;
+} 
+</style>
