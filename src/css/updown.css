@@ -1,0 +1,24 @@
+.upper {
+  /* this breaks badly in a large component like AttackHome; works great in a small one like CounterBox */
+  position: absolute;
+  top: 0;
+  background-color: coral;
+  opacity: 0;
+  z-index: 1;
+  height: 50%;
+  width: 100%;
+}
+.lower {
+  position: absolute;
+  bottom: 0;
+  background-color: aquamarine;
+  opacity: 0;
+  z-index: 1;
+  height: 50%;
+  width: 100%;
+}
+
+.upper:active,
+.lower:active {
+  opacity: 0.3;
+}
