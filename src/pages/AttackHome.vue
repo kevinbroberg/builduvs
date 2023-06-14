@@ -42,13 +42,13 @@ const dialog = ref(false);
       class="player"
       :store="p1"
       :damage="damage"
-      :label="settings.p1name"
+      :label="config.p1name"
     />
     <PlayerHealth
       class="player"
       :store="p2"
       :damage="damage"
-      :label="settings.p2name"
+      :label="config.p2name"
     />
 
     <CounterBox
