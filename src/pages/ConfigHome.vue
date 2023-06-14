@@ -11,7 +11,7 @@ const player1 = usePlayer1Store();
 const player2 = usePlayer2Store();
 const nextZone = { high: "mid", mid: "low", low: "high" };
 function goNextZone() {
-  settings.value.zone = nextZone[settings.value.zone];
+  settings.zone = nextZone[settings.zone];
 }
 
 // TODO better communication when starting HP changes
