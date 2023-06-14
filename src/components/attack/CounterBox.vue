@@ -35,7 +35,10 @@ const emit = defineEmits(["up", "down"]);
   height: 50%;
   width: 100%;
 }
-
+.upper:hover,
+.lower:hover {
+  opacity: 0.1;
+}
 .upper:active,
 .lower:active {
   opacity: 0.3;

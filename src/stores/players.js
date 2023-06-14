@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-// import { LocalStorage } from "quasar";
+import { useConfigStore } from "src/stores/config";
 
 class Damage {
   constructor(title, value) {
@@ -21,10 +21,12 @@ class Damage {
   }
 }
 
-const playerArgs = {
+let config = useConfigStore();
+
+const getPlayer = (hp) => ({
   state: () => ({
     history: [],
-    health: 30,
+    health: hp,
   }),
 
   getters: {
@@ -81,15 +83,15 @@ const playerArgs = {
       if (last) this.health -= last.value;
     },
     reset() {
+      console.log(`reseting to ${hp}`);
       // wtf this is still such a sussy way to clear an array
       this.history.length = 0;
-      // TODO starting HP
-      this.health = 30;
+      this.health = hp;
     },
   },
-};
+});
 
-const usePlayer1Store = defineStore("player1", playerArgs);
-const usePlayer2Store = defineStore("player2", playerArgs);
+const usePlayer1Store = defineStore("player1", getPlayer(config.p1hp));
+const usePlayer2Store = defineStore("player2", getPlayer(config.p2hp));
 
 export { usePlayer1Store, usePlayer2Store };

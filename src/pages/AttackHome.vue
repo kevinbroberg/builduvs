@@ -1,41 +1,26 @@
 <script setup>
-import { ref, watch } from "vue";
+import { ref } from "vue";
 import { useQuasar } from "quasar";
 import PlayerHealth from "src/components/attack/PlayerHealth.vue";
 import CounterBox from "src/components/attack/CounterBox.vue";
 import { usePlayer1Store, usePlayer2Store } from "src/stores/players";
+import { useConfigStore } from "src/stores/config";
 
 const $q = useQuasar();
 
 const p1 = usePlayer1Store();
 const p2 = usePlayer2Store();
 
-const storage_key = "attack_default";
-const default_defaults = {
-  speed: 4,
-  damage: 5,
-  p1hp: 30,
-  p1name: "Me",
-  p2hp: 30,
-  p2name: "You",
-  zone: "mid",
-};
-const initial_defaults =
-  $q.localStorage?.getItem(storage_key) || default_defaults;
+const config = useConfigStore();
 
-const settings = ref(initial_defaults);
-const speed = ref(settings.value.speed);
-const damage = ref(settings.value.damage);
-const attack_zone = ref(settings.value.zone);
-
-// const resetFlag = ref(false);
-// dialog flags
-const dialog = ref(false);
+const speed = ref(config.speed);
+const damage = ref(config.damage);
+const attack_zone = ref(config.zone);
 
 function resetAttack() {
-  speed.value = settings.value.speed;
-  damage.value = settings.value.damage;
-  attack_zone.value = settings.value.zone;
+  speed.value = config.speed;
+  damage.value = config.damage;
+  attack_zone.value = config.zone;
 }
 
 function resetGame() {
@@ -48,17 +33,7 @@ function goNextZone() {
   attack_zone.value = nextZone[attack_zone.value];
 }
 
-watch(
-  settings,
-  (nu, _) => {
-    try {
-      $q.localStorage.set(storage_key, nu);
-    } catch (e) {
-      console.log(`Error persisting settings ${e}`);
-    }
-  },
-  { deep: true }
-);
+const dialog = ref(false);
 </script>
 
 <template>
@@ -67,16 +42,12 @@ watch(
       class="player"
       :store="p1"
       :damage="damage"
-      :start="settings.p1hp"
-      :zone="attack_zone"
       :label="settings.p1name"
     />
     <PlayerHealth
       class="player"
       :store="p2"
       :damage="damage"
-      :start="settings.p2hp"
-      :zone="attack_zone"
       :label="settings.p2name"
     />
 
@@ -104,26 +75,27 @@ watch(
     <div class="options">
       <q-btn
         push
-        size="xl"
+        stretch
+        stack
+        size="m"
+        icon="restore_page"
         color="positive"
         @click="resetAttack"
         v-touch-hold.mouse="resetGame"
-        >Reset attack
+        >Reset
         <q-tooltip>Hold to reset game</q-tooltip>
       </q-btn>
-      <q-btn push size="xl" color="black" icon="settings" @click="dialog = true"
+      <q-btn
+        push
+        stretch
+        stack
+        size="m"
+        color="black"
+        icon="history"
+        @click="dialog = true"
         >History</q-btn
       >
     </div>
-
-    <!-- <q-page-sticky position="bottom-right" :offset="[18, 18]">
-    <q-btn :fab="true" icon="settings_backup_restore" color="green" @click="resetAttack()">
-      <q-tooltip>Reset attack to default</q-tooltip>
-    </q-btn>
-    <q-btn :fab="true" icon="settings" color="primary" @click="dialog = true">
-      <q-tooltip>Damage history</q-tooltip>
-    </q-btn>
-  </q-page-sticky> -->
     <q-dialog v-model="dialog">
       <q-card>
         <q-card-section>
