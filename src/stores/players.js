@@ -27,6 +27,8 @@ const getPlayer = (hp) => ({
   state: () => ({
     history: [],
     health: hp,
+    // TODO: this gets mutated willy-nilly by the config page
+    starting_health: hp,
   }),
 
   getters: {
@@ -83,15 +85,15 @@ const getPlayer = (hp) => ({
       if (last) this.health -= last.value;
     },
     reset() {
-      console.log(`reseting to ${hp}`);
       // wtf this is still such a sussy way to clear an array
       this.history.length = 0;
-      this.health = hp;
+      this.health = this.starting_health;
     },
   },
 });
 
-const usePlayer1Store = defineStore("player1", getPlayer(config.p1hp));
-const usePlayer2Store = defineStore("player2", getPlayer(config.p2hp));
+// TODO: refactor getPlayer() now that seed hp is just part of the state
+const usePlayer1Store = defineStore("player1", getPlayer(30));
+const usePlayer2Store = defineStore("player2", getPlayer(30));
 
 export { usePlayer1Store, usePlayer2Store };

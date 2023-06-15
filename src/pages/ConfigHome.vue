@@ -13,8 +13,6 @@ const nextZone = { high: "mid", mid: "low", low: "high" };
 function goNextZone() {
   settings.zone = nextZone[settings.zone];
 }
-
-// TODO better communication when starting HP changes
 </script>
 
 <template>
@@ -28,8 +26,14 @@ function goNextZone() {
           stack-label
           :rules="[(val) => val.length <= 15 || 'Maximum length 15']"
         />
-        <CounterBox @up="settings.p1hp++" @down="settings.p1hp--">
-          <h5>{{ settings.p1name }} starting health: {{ settings.p1hp }}</h5>
+        <CounterBox
+          @up="player1.starting_health++"
+          @down="player1.starting_health--"
+        >
+          <!-- TODO: refactor player handling, the name being in a separate config is just one of the bad code smells -->
+          <h5>
+            {{ settings.p1name }} starting health: {{ player1.starting_health }}
+          </h5>
         </CounterBox>
         <q-btn
           push
@@ -38,7 +42,7 @@ function goNextZone() {
           icon="restore_page"
           color="negative"
           @click="player1.reset()"
-          >Reset {{ settings.p1name }} health
+          >Reset {{ settings.p1name }} health ({{ player1.health }})
         </q-btn>
         <q-input
           v-model.string="settings.p2name"
@@ -46,8 +50,13 @@ function goNextZone() {
           stack-label
           :rules="[(val) => val.length <= 15 || 'Maximum length 15']"
         />
-        <CounterBox @up="settings.p2hp++" @down="settings.p2hp--">
-          <h5>{{ settings.p2name }} starting health: {{ settings.p2hp }}</h5>
+        <CounterBox
+          @up="player2.starting_health++"
+          @down="player2.starting_health--"
+        >
+          <h5>
+            {{ settings.p2name }} starting health: {{ player2.starting_health }}
+          </h5>
         </CounterBox>
       </div>
       <q-btn
@@ -57,7 +66,7 @@ function goNextZone() {
         icon="restore_page"
         color="negative"
         @click="player2.reset()"
-        >Reset {{ settings.p2name }} health
+        >Reset {{ settings.p2name }} health ({{ player2.health }})
       </q-btn>
       <div>
         <h6>Attack default</h6>
@@ -69,7 +78,6 @@ function goNextZone() {
         >
           <h3>{{ settings.speed }}</h3>
         </CounterBox>
-        <!-- TODO sometime soon: replace with divs rather than click3() function -->
         <div
           class="zone text-center"
           :class="`${settings.zone}color`"
