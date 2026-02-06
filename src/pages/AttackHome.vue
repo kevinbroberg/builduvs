@@ -3,34 +3,31 @@ import { ref } from "vue";
 import { useQuasar } from "quasar";
 import PlayerHealth from "src/components/attack/PlayerHealth.vue";
 import CounterBox from "src/components/attack/CounterBox.vue";
-import { usePlayer1Store, usePlayer2Store } from "src/stores/players";
-import { useConfigStore } from "src/stores/config";
+import { useGameStore } from "src/stores/game";
 
 const $q = useQuasar();
 
-const p1 = usePlayer1Store();
-const p2 = usePlayer2Store();
+const game = useGameStore();
 
-const config = useConfigStore();
-
-const speed = ref(config.speed);
-const damage = ref(config.damage);
-const attack_zone = ref(config.zone);
+// Local state for CURRENT attack (separate from defaults in config)
+const currentSpeed = ref(game.defaultSpeed);
+const currentDamage = ref(game.defaultDamage);
+const currentZone = ref(game.defaultZone);
 
 function resetAttack() {
-  speed.value = config.speed;
-  damage.value = config.damage;
-  attack_zone.value = config.zone;
+  currentSpeed.value = game.defaultSpeed;
+  currentDamage.value = game.defaultDamage;
+  currentZone.value = game.defaultZone;
 }
 
 function resetGame() {
-  p1.reset();
-  p2.reset();
+  game.resetPlayer1();
+  game.resetPlayer2();
 }
 
 const nextZone = { high: "mid", mid: "low", low: "high" };
 function goNextZone() {
-  attack_zone.value = nextZone[attack_zone.value];
+  currentZone.value = nextZone[currentZone.value];
 }
 
 const dialog = ref(false);
@@ -40,36 +37,34 @@ const dialog = ref(false);
   <main>
     <PlayerHealth
       class="player"
-      :store="p1"
-      :damage="damage"
-      :label="config.p1name"
+      player-key="player1"
+      :damage="currentDamage"
     />
     <PlayerHealth
       class="player"
-      :store="p2"
-      :damage="damage"
-      :label="config.p2name"
+      player-key="player2"
+      :damage="currentDamage"
     />
 
     <CounterBox
       class="speed"
-      :class="attack_zone"
-      @up="speed++"
-      @down="speed--"
+      :class="currentZone"
+      @up="currentSpeed++"
+      @down="currentSpeed--"
     >
-      <h3>{{ speed }}</h3>
+      <h3>{{ currentSpeed }}</h3>
     </CounterBox>
     <div
       class="zone text-center"
-      :class="`${attack_zone}color`"
+      :class="`${currentZone}color`"
       @click="goNextZone"
     >
       <h4 class="q-mx-none">
-        {{ attack_zone }}
+        {{ currentZone }}
       </h4>
     </div>
-    <CounterBox class="damage" @up="damage++" @down="damage--">
-      <h3>{{ damage }}</h3>
+    <CounterBox class="damage" @up="currentDamage++" @down="currentDamage--">
+      <h3>{{ currentDamage }}</h3>
     </CounterBox>
 
     <div class="options">
@@ -102,15 +97,14 @@ const dialog = ref(false);
           <div class="text-h5">Life total history</div>
           <div class="row justify-between">
             <div class="column">
-              <h6>Player 1</h6>
-              <p v-for="c in p1.history" :key="c">
+              <h6>{{ game.player1.name }}</h6>
+              <p v-for="c in game.player1.history" :key="c">
                 {{ c.value }} {{ c.title }}
               </p>
             </div>
-            <!-- TODO should be a component -->
             <div class="column text-right">
-              <h6>Player 2</h6>
-              <p v-for="c in p2.history" :key="c">
+              <h6>{{ game.player2.name }}</h6>
+              <p v-for="c in game.player2.history" :key="c">
                 {{ c.value }} {{ c.title }}
               </p>
             </div>

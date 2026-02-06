@@ -1,30 +1,65 @@
 <script setup>
+import { computed } from "vue";
 import CounterBox from "src/components/attack/CounterBox.vue";
+import { useGameStore } from "src/stores/game";
+import { calculateHalfDamage } from "src/utils/damage";
 
 const props = defineProps({
-  // TODO really ought to have one big player store and pass these a key like "player1"
-  store: Object,
-  // TODO move 'current damage' into Pinia state
+  playerKey: String, // "player1" or "player2"
   damage: Number,
-  label: String,
 });
-const emitChangeLabel = "healthChange";
-const emit = defineEmits(["healthChange"]);
 
-// FIXME: duplicate logic with the store's halving
-function half(x) {
-  return (x % 2) + ((x / 2) | 0);
+const game = useGameStore();
+const player = computed(() => game[props.playerKey]);
+const lastHit = computed(() =>
+  props.playerKey === "player1" ? game.player1LastHit : game.player2LastHit
+);
+
+function increment() {
+  if (props.playerKey === "player1") {
+    game.incrementPlayer1();
+  } else {
+    game.incrementPlayer2();
+  }
+}
+
+function decrement() {
+  if (props.playerKey === "player1") {
+    game.decrementPlayer1();
+  } else {
+    game.decrementPlayer2();
+  }
 }
 
 function undo() {
-  props.store.undo();
+  if (props.playerKey === "player1") {
+    game.undoPlayer1();
+  } else {
+    game.undoPlayer2();
+  }
+}
+
+function partialBlock() {
+  if (props.playerKey === "player1") {
+    game.player1PartialBlock(props.damage);
+  } else {
+    game.player2PartialBlock(props.damage);
+  }
+}
+
+function unblocked() {
+  if (props.playerKey === "player1") {
+    game.player1Unblocked(props.damage);
+  } else {
+    game.player2Unblocked(props.damage);
+  }
 }
 </script>
 
 <template>
   <div id="playerhealth">
-    <CounterBox class="health" @up="store.increment" @down="store.decrement">
-      <h2 class="text-center">{{ label }}<br />{{ store.health }}</h2>
+    <CounterBox class="health" @up="increment" @down="decrement">
+      <h2 class="text-center">{{ player.name }}<br />{{ player.health }}</h2>
     </CounterBox>
     <q-btn
       push
@@ -32,23 +67,23 @@ function undo() {
       color="positive"
       text-color="black"
       @click="undo()"
-      >Undo {{ store.lastHit }}</q-btn
+      >Undo {{ lastHit }}</q-btn
     >
     <q-btn
       push
       class="playerbutton"
       style="background: hsl(360, 100%, 73%)"
       text-color="black"
-      @click="store.partialBlock(props.damage)"
-      >Half ({{ half(props.damage) }})</q-btn
+      @click="partialBlock()"
+      >Half ({{ calculateHalfDamage(damage) }})</q-btn
     >
     <q-btn
       push
       class="playerbutton"
       style="background: hsl(360, 100%, 43%)"
       text-color="black"
-      @click="store.unblocked(props.damage)"
-      >Hit ({{ props.damage }})</q-btn
+      @click="unblocked()"
+      >Hit ({{ damage }})</q-btn
     >
   </div>
 </template>

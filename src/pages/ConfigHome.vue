@@ -1,17 +1,14 @@
 <script setup>
 import { useQuasar } from "quasar";
 import CounterBox from "src/components/attack/CounterBox.vue";
-import { useConfigStore } from "src/stores/config";
-import { usePlayer1Store, usePlayer2Store } from "src/stores/players";
+import { useGameStore } from "src/stores/game";
 
 const $q = useQuasar();
 
-const settings = useConfigStore();
-const player1 = usePlayer1Store();
-const player2 = usePlayer2Store();
+const game = useGameStore();
 const nextZone = { high: "mid", mid: "low", low: "high" };
 function goNextZone() {
-  settings.zone = nextZone[settings.zone];
+  game.setDefaultZone(nextZone[game.defaultZone]);
 }
 </script>
 
@@ -21,18 +18,18 @@ function goNextZone() {
       <div class="text-h6">
         Players
         <q-input
-          v-model.string="settings.p1name"
+          :model-value="game.player1.name"
+          @update:model-value="game.setPlayer1Name"
           label="Player 1"
           stack-label
           :rules="[(val) => val.length <= 15 || 'Maximum length 15']"
         />
         <CounterBox
-          @up="player1.starting_health++"
-          @down="player1.starting_health--"
+          @up="game.incrementPlayer1StartingHealth()"
+          @down="game.decrementPlayer1StartingHealth()"
         >
-          <!-- TODO: refactor player handling, the name being in a separate config is just one of the bad code smells -->
           <h5>
-            {{ settings.p1name }} starting health: {{ player1.starting_health }}
+            {{ game.player1.name }} starting health: {{ game.player1.startingHealth }}
           </h5>
         </CounterBox>
         <q-btn
@@ -41,21 +38,22 @@ function goNextZone() {
           size="m"
           icon="restore_page"
           color="negative"
-          @click="player1.reset()"
-          >Reset {{ settings.p1name }} health ({{ player1.health }})
+          @click="game.resetPlayer1()"
+          >Reset {{ game.player1.name }} health ({{ game.player1.health }})
         </q-btn>
         <q-input
-          v-model.string="settings.p2name"
+          :model-value="game.player2.name"
+          @update:model-value="game.setPlayer2Name"
           label="Player 2"
           stack-label
           :rules="[(val) => val.length <= 15 || 'Maximum length 15']"
         />
         <CounterBox
-          @up="player2.starting_health++"
-          @down="player2.starting_health--"
+          @up="game.incrementPlayer2StartingHealth()"
+          @down="game.decrementPlayer2StartingHealth()"
         >
           <h5>
-            {{ settings.p2name }} starting health: {{ player2.starting_health }}
+            {{ game.player2.name }} starting health: {{ game.player2.startingHealth }}
           </h5>
         </CounterBox>
       </div>
@@ -65,34 +63,34 @@ function goNextZone() {
         size="m"
         icon="restore_page"
         color="negative"
-        @click="player2.reset()"
-        >Reset {{ settings.p2name }} health ({{ player2.health }})
+        @click="game.resetPlayer2()"
+        >Reset {{ game.player2.name }} health ({{ game.player2.health }})
       </q-btn>
       <div>
         <h6>Attack default</h6>
         <CounterBox
           class="speed"
-          :class="settings.zone"
-          @up="settings.speed++"
-          @down="settings.speed--"
+          :class="game.defaultZone"
+          @up="game.incrementDefaultSpeed()"
+          @down="game.decrementDefaultSpeed()"
         >
-          <h3>{{ settings.speed }}</h3>
+          <h3>{{ game.defaultSpeed }}</h3>
         </CounterBox>
         <div
           class="zone text-center"
-          :class="`${settings.zone}color`"
+          :class="`${game.defaultZone}color`"
           @click="goNextZone"
         >
           <h4 class="q-mx-none">
-            {{ settings.zone }}
+            {{ game.defaultZone }}
           </h4>
         </div>
         <CounterBox
           class="damage"
-          @up="settings.damage++"
-          @down="settings.damage--"
+          @up="game.incrementDefaultDamage()"
+          @down="game.decrementDefaultDamage()"
         >
-          <h3>{{ settings.damage }}</h3>
+          <h3>{{ game.defaultDamage }}</h3>
         </CounterBox>
       </div>
     </div>

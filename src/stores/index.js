@@ -18,7 +18,7 @@ export default store((/* { ssrContext } */) => {
   // You can add Pinia plugins here
   // pinia.use(SomePiniaPlugin)
 
-  let previous_state = LocalStorage.getItem("health_state");
+  let previous_state = LocalStorage.getItem("builduvs_pinia");
 
   if (previous_state) {
     console.log(
