@@ -3,9 +3,89 @@ import heroesclash from 'assets/heroesclash.json'
 import rampage_dlc from 'assets/rampage_dlc.json'
 import rampage from 'assets/rampage.json'
 import provisional from 'assets/provs.json'
+import ggrole from 'assets/gg-critrole.json'
+import sjwtomha4 from 'assets/sjw-mha4.json'
 import real_cards from 'assets/cards.json'
 
-export const cards = [...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
+export const cards = [...ggrole, ...sjwtomha4,...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
+
+// Ensure every card has a unique `asset` key (used by deck store and v-for keys).
+// Newer data files omit `asset`, so synthesize one from extension_short + card_number_image.
+for (const card of cards) {
+  if (!card.asset) {
+    card.asset = `${card.extension_short}/${card.card_number_image}`
+  }
+}
+
+// --- Card schema: expected shape after preprocessing ---
+// 'required' = must be present on every card
+// 'type:X'   = required only when card.type === X
+const CARD_SCHEMA = {
+  // universal
+  name:           { expect: 'string',   when: 'required' },
+  type:           { expect: 'string',   when: 'required' },
+  rarity:         { expect: 'string',   when: 'required' },
+  resources:      { expect: 'array',    when: 'required' },
+  formats:        { expect: 'array',    when: 'required' },
+  text:           { expect: 'string',   when: 'required' },
+  extension:      { expect: 'string',   when: 'required' },
+  extension_short:{ expect: 'string',   when: 'required' },
+  asset:          { expect: 'string',   when: 'required' },
+  // character-only
+  hand_size:      { expect: 'number',   when: 'type:character' },
+  vitality:       { expect: 'number',   when: 'type:character' },
+  // non-character combat stats
+  control:        { expect: 'number',   when: 'type:attack,foundation,action,asset' },
+  difficulty:     { expect: 'number',   when: 'type:attack,foundation,action,asset' },
+  block_modifier: { expect: 'number',   when: 'type:attack,foundation,action,asset' },
+  block_zone:     { expect: 'string',   when: 'type:attack,foundation,action,asset' },
+  // attack-only
+  speed:          { expect: 'number',   when: 'type:attack' },
+  damage:         { expect: 'number',   when: 'type:attack' },
+  attack_zone:    { expect: 'string',   when: 'type:attack' },
+  // optional (no 'when' = never warn if absent, only warn on wrong type)
+  keywords:       { expect: 'array' },
+  limit:          { expect: 'number' },
+}
+
+if (import.meta.env.DEV) {
+  const seen = new Set()
+  for (const card of cards) {
+    for (const [field, rule] of Object.entries(CARD_SCHEMA)) {
+      const val = card[field]
+      const present = val !== undefined && val !== null
+      // check required / conditional presence
+      if (rule.when) {
+        let needed = false
+        if (rule.when === 'required') {
+          needed = true
+        } else if (rule.when.startsWith('type:')) {
+          needed = rule.when.slice(5).split(',').includes(card.type)
+        }
+        if (needed && !present) {
+          const key = `${card.name}||${field}`
+          if (!seen.has(key)) {
+            seen.add(key)
+            console.warn(`[card-schema] "${card.name}" (${card.extension_short}) missing required field "${field}"`)
+          }
+          continue
+        }
+      }
+      // check type when present
+      if (present) {
+        const actual = Array.isArray(val) ? 'array' : typeof val
+        if (actual !== rule.expect) {
+          const key = `${card.name}||${field}||type`
+          if (!seen.has(key)) {
+            seen.add(key)
+            console.warn(`[card-schema] "${card.name}" (${card.extension_short}) field "${field}" expected ${rule.expect}, got ${actual}`)
+          }
+        }
+      }
+    }
+  }
+}
+
 export const symbolOptions = ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "infinity", "life", "order", "void", "water"]
 export const formatOptions = ["My Hero Academia","MHA banned", "standard","standard banned","retro","retro banned","unreleased","alpha", "alpha legend"]
 
