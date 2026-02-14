@@ -29,7 +29,7 @@ const CARD_SCHEMA = {
   formats:        { expect: 'array',    when: 'required' },
   text:           { expect: 'string',   when: 'required' },
   extension:      { expect: 'string',   when: 'required' },
-  extension_short:{ expect: 'string',   when: 'required' },
+  extension_short:{ expect: 'string' /*,   when: 'required' */},
   asset:          { expect: 'string',   when: 'required' },
   // character-only
   hand_size:      { expect: 'number',   when: 'type:character' },
@@ -37,13 +37,13 @@ const CARD_SCHEMA = {
   // non-character combat stats
   control:        { expect: 'number',   when: 'type:attack,foundation,action,asset' },
   difficulty:     { expect: 'number',   when: 'type:attack,foundation,action,asset' },
-  block_modifier: { expect: 'number',   when: 'type:attack,foundation,action,asset' },
-  block_zone:     { expect: 'string',   when: 'type:attack,foundation,action,asset' },
   // attack-only
   speed:          { expect: 'number',   when: 'type:attack' },
   damage:         { expect: 'number',   when: 'type:attack' },
   attack_zone:    { expect: 'string',   when: 'type:attack' },
   // optional (no 'when' = never warn if absent, only warn on wrong type)
+  block_modifier: { expect: 'number' },
+  block_zone:     { expect: 'string' },
   keywords:       { expect: 'array' },
   limit:          { expect: 'number' },
 }
