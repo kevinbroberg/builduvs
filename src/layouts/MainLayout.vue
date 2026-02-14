@@ -1,6 +1,10 @@
 <script setup>
 import { ref } from "vue";
+import { useDeckStore } from "src/stores/deck";
+import { storeToRefs } from "pinia";
+import DeckView from "src/components/deck/DeckView.vue";
 
+const { hasDeck } = storeToRefs(useDeckStore());
 const leftDrawerOpen = ref(false);
 const rightDrawerOpen = ref(false);
 
@@ -32,19 +36,19 @@ function toggleRightDrawer() {
         </q-toolbar-title>
         <q-tabs align="center">
           <q-route-tab to="/" label="Game Tracker" />
-          <!-- <q-route-tab to="/deck" label="Deck Detail" /> -->
-          <!-- <q-route-tab to="/search" label="Search" /> -->
+          <q-route-tab to="/deck" label="Deck Detail" />
+          <q-route-tab to="/cards" label="Search" />
           <q-route-tab to="/settings" label="Settings" />
         </q-tabs>
         <!-- <NamePicker /> -->
-        <!-- <q-btn dense flat round
+        <q-btn dense flat round
           icon="table_view"
           @click="toggleRightDrawer"
-          v-if=hasDeck
+          v-if="hasDeck"
           label="Deck"
           >
           <q-tooltip>View current deck</q-tooltip>
-        </q-btn> -->
+        </q-btn>
       </q-toolbar>
     </q-header>
 
@@ -52,9 +56,9 @@ function toggleRightDrawer() {
       <h4>Deck listing will go here once implemented</h4>
     </q-drawer> -->
 
-    <!-- <q-drawer v-model="rightDrawerOpen" side="right" elevated>
+    <q-drawer v-model="rightDrawerOpen" side="right" elevated>
       <DeckView />
-    </q-drawer> -->
+    </q-drawer>
 
     <q-page-container>
       <router-view />
