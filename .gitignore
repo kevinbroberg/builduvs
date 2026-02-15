@@ -22,6 +22,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# images - download separately with script
+src/assets/images/card_images/**
+
 # Editor directories and files
 .idea
 *.suo
