@@ -343,7 +343,7 @@
       "Charge"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -375,7 +375,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -410,7 +410,7 @@
       "Tension"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -445,7 +445,7 @@
       "Weapon"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -478,7 +478,7 @@
       "Weapon"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -508,7 +508,7 @@
   {
     "name": "Fukyo",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -540,7 +540,7 @@
       "Tension"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -574,7 +574,7 @@
       "Tension"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -604,7 +604,7 @@
   {
     "name": "Gunslinger's Focus",
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -636,7 +636,7 @@
       "Tension"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -671,7 +671,7 @@
       "Tension"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -704,7 +704,7 @@
       "Unique"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -735,7 +735,7 @@
       "Tension"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -769,7 +769,7 @@
       "Weapon"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -802,7 +802,7 @@
       "Unique"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -834,7 +834,7 @@
       "Tension"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -868,7 +868,7 @@
       "Weapon"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -901,7 +901,7 @@
       "Unique"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -928,7 +928,7 @@
   {
     "name": "Hoverdash",
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -960,7 +960,7 @@
       "Tension"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -995,7 +995,7 @@
       "Tension"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -1029,7 +1029,7 @@
       "Tension"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -1064,7 +1064,7 @@
       "Tension"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -1097,7 +1097,7 @@
       "Ally"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -3665,7 +3665,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -3692,7 +3692,7 @@
   {
     "name": "Dive-Bomb Tackle",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -3725,7 +3725,7 @@
       "Kick"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -3760,7 +3760,7 @@
       "Kick"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -3793,7 +3793,7 @@
       "Kick"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -3826,7 +3826,7 @@
       "EX: 2"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -3859,7 +3859,7 @@
       "Powerful: 2"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -3893,7 +3893,7 @@
       "Kick"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -3928,7 +3928,7 @@
       "Slam"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -3962,7 +3962,7 @@
       "Flash"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -3992,7 +3992,7 @@
   {
     "name": "Above the City",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -4019,7 +4019,7 @@
   {
     "name": "Catching Air",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -4046,7 +4046,7 @@
   {
     "name": "Daredevil",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -4073,7 +4073,7 @@
   {
     "name": "Hold on Tight",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -4100,7 +4100,7 @@
   {
     "name": "Scaling Heights",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -4127,7 +4127,7 @@
   {
     "name": "Stunt Specialist",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -4154,7 +4154,7 @@
   {
     "name": "Swooping In",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -4185,7 +4185,7 @@
       "Tech"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -4215,7 +4215,7 @@
       "Weapon"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4246,7 +4246,7 @@
       "Stun: 1"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4281,7 +4281,7 @@
       "Powerful: 2"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4311,7 +4311,7 @@
   {
     "name": "Freaking Out",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4341,7 +4341,7 @@
   {
     "name": "Fully Equipped",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4371,7 +4371,7 @@
   {
     "name": "Holding all the Cards",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4404,7 +4404,7 @@
       "Ally"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4438,7 +4438,7 @@
       "Kick"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4471,7 +4471,7 @@
       "Throw"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4505,7 +4505,7 @@
       "EX: 3"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4539,7 +4539,7 @@
       "Kick"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4572,7 +4572,7 @@
       "Stun: 2"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4607,7 +4607,7 @@
       "Unique"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4638,7 +4638,7 @@
       "Unique"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4665,7 +4665,7 @@
   {
     "name": "Clumsy Entrance",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4692,7 +4692,7 @@
   {
     "name": "Daily Meditation",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4719,7 +4719,7 @@
   {
     "name": "Don't Use That Word",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4744,7 +4744,7 @@
   {
     "name": "Leonardo's Discipline",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4771,7 +4771,7 @@
   {
     "name": "Martial Knowledge",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4798,7 +4798,7 @@
   {
     "name": "Stealth and Cunning",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4825,7 +4825,7 @@
   {
     "name": "The Long Version",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4852,7 +4852,7 @@
   {
     "name": "Unarmed Noncombatant",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -4882,7 +4882,7 @@
       "Powerful: 2"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -4916,7 +4916,7 @@
       "Slam"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -4951,7 +4951,7 @@
       "Fury"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -4984,7 +4984,7 @@
       "Throw"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5018,7 +5018,7 @@
       "Fury"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5048,7 +5048,7 @@
   {
     "name": "Heavy Toss",
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5081,7 +5081,7 @@
       "Charge"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5115,7 +5115,7 @@
       "Slam"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5150,7 +5150,7 @@
       "Stun: 1"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5184,7 +5184,7 @@
       "Stun: 2"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5217,7 +5217,7 @@
       "Charge"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5250,7 +5250,7 @@
       "Fury"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5285,7 +5285,7 @@
       "Unique"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5313,7 +5313,7 @@
   {
     "name": "Brick Wall",
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5340,7 +5340,7 @@
   {
     "name": "Busy Eating",
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5367,7 +5367,7 @@
   {
     "name": "Dumbfounded",
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5394,7 +5394,7 @@
   {
     "name": "Hardheaded",
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5421,7 +5421,7 @@
   {
     "name": "Heavy Feet",
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5448,7 +5448,7 @@
   {
     "name": "Horseplay",
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5475,7 +5475,7 @@
   {
     "name": "Out to Lunch",
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5505,7 +5505,7 @@
       "Deflect: 2"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -5535,7 +5535,7 @@
       "Scheme"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -5563,7 +5563,7 @@
       "Scheme"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -5591,7 +5591,7 @@
       "Scheme"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -5621,7 +5621,7 @@
       "Weapon"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -5655,7 +5655,7 @@
       "Fury"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -5689,7 +5689,7 @@
       "Ranged"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -5723,7 +5723,7 @@
       "Breaker: 1"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -5756,7 +5756,7 @@
       "Ally"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -5789,7 +5789,7 @@
       "Throw"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -5824,7 +5824,7 @@
       "Weapon"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -5859,7 +5859,7 @@
       "Stun: 2"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -5892,7 +5892,7 @@
       "Fury"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -5927,7 +5927,7 @@
       "Ranged"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -5960,7 +5960,7 @@
       "Ally"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -5994,7 +5994,7 @@
       "Fury"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -6024,7 +6024,7 @@
   {
     "name": "Bad Attitude",
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -6051,7 +6051,7 @@
   {
     "name": "Charismatic Approach",
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -6081,7 +6081,7 @@
       "Taunt"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -6111,7 +6111,7 @@
       "Ally"
     ],
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -6138,7 +6138,7 @@
   {
     "name": "Mean Intentions",
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -6165,7 +6165,7 @@
   {
     "name": "Misguided Big Brother",
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -6192,7 +6192,7 @@
   {
     "name": "Replicate His Research",
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -6219,7 +6219,7 @@
   {
     "name": "Villainous Plot",
     "resources": [
-      "evil attune"
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -6250,7 +6250,7 @@
       "Weapon"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6282,7 +6282,7 @@
       "Weapon"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6316,7 +6316,7 @@
       "Fury"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6349,7 +6349,7 @@
       "Fury"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6383,7 +6383,7 @@
       "Punch"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6416,7 +6416,7 @@
       "Fury"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6450,7 +6450,7 @@
       "Punch"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6483,7 +6483,7 @@
       "Fury"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6516,7 +6516,7 @@
       "Fury"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6549,7 +6549,7 @@
       "Fury"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6582,7 +6582,7 @@
       "Weapon"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6617,7 +6617,7 @@
       "Unique"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6645,7 +6645,7 @@
   {
     "name": "Always Angry",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6670,7 +6670,7 @@
   {
     "name": "Dream About Fighting",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6697,7 +6697,7 @@
   {
     "name": "Full Focus",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6724,7 +6724,7 @@
   {
     "name": "Go In Loud",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6751,7 +6751,7 @@
   {
     "name": "Goofing Off",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6778,7 +6778,7 @@
   {
     "name": "I'm Awesome",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6805,7 +6805,7 @@
   {
     "name": "Reckless Abandon",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6832,7 +6832,7 @@
   {
     "name": "So Many Regrets",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -6859,7 +6859,7 @@
   {
     "name": "Sneaking Home",
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -6891,7 +6891,7 @@
       "Pizza"
     ],
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -6925,7 +6925,7 @@
       "Powerful: 2"
     ],
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -6959,7 +6959,7 @@
       "Pizza"
     ],
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -6989,7 +6989,7 @@
   {
     "name": "Setting the Standard",
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7022,7 +7022,7 @@
       "Stun: 2"
     ],
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7061,7 +7061,7 @@
       "Weapon"
     ],
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7094,7 +7094,7 @@
       "Ally"
     ],
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7127,7 +7127,7 @@
       "Ally"
     ],
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7160,7 +7160,7 @@
       "Pizza"
     ],
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7193,7 +7193,7 @@
       "Ally"
     ],
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7227,7 +7227,7 @@
       "Deflect: 2"
     ],
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7254,7 +7254,7 @@
   {
     "name": "Daily Training",
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7281,7 +7281,7 @@
   {
     "name": "Defend the Innocent",
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7311,7 +7311,7 @@
       "Pizza"
     ],
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7338,7 +7338,7 @@
   {
     "name": "Gifts from Splinter",
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7365,7 +7365,7 @@
   {
     "name": "Good Deeds",
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7395,7 +7395,7 @@
       "Pizza"
     ],
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7422,7 +7422,7 @@
   {
     "name": "Let's Stay Out",
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7452,7 +7452,7 @@
       "Pizza"
     ],
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7479,7 +7479,7 @@
   {
     "name": "Youthful Optimism",
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -7509,7 +7509,7 @@
       "Scheme"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -7538,7 +7538,7 @@
       "Weapon"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -7569,7 +7569,7 @@
       "Weapon"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -7599,7 +7599,7 @@
       "Tech"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -7632,7 +7632,7 @@
       "Tech"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -7665,7 +7665,7 @@
       "Tech"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -7699,7 +7699,7 @@
       "Tech"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -7733,7 +7733,7 @@
       "Tech"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -7766,7 +7766,7 @@
       "Weapon"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -7799,7 +7799,7 @@
       "Tech"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -7833,7 +7833,7 @@
       "Tech"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -7866,7 +7866,7 @@
       "Tech"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -7900,7 +7900,7 @@
       "Tech"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -7932,7 +7932,7 @@
       "Unique"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -7959,7 +7959,7 @@
   {
     "name": "Cold and Calculating",
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -7989,7 +7989,7 @@
       "Tech"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -8016,7 +8016,7 @@
   {
     "name": "Hunting Mutants",
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -8043,7 +8043,7 @@
   {
     "name": "Juggling Groceries",
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -8070,7 +8070,7 @@
   {
     "name": "Kamikaze Robots",
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -8100,7 +8100,7 @@
       "Tech"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -8127,7 +8127,7 @@
   {
     "name": "Totally Not Jealous",
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -8154,7 +8154,7 @@
   {
     "name": "Chair Shove",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8184,7 +8184,7 @@
   {
     "name": "Chair Spin",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8218,7 +8218,7 @@
       "Stun: 2"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8251,7 +8251,7 @@
       "Powerful: 3"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8285,7 +8285,7 @@
       "Slam"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8315,7 +8315,7 @@
   {
     "name": "Gator Roll",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8348,7 +8348,7 @@
       "Slam"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8381,7 +8381,7 @@
       "Slam"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8414,7 +8414,7 @@
       "Kick"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8450,7 +8450,7 @@
       "Weapon"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8483,7 +8483,7 @@
       "Throw"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8516,7 +8516,7 @@
       "Throw"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8551,7 +8551,7 @@
       "Unique"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8579,7 +8579,7 @@
   {
     "name": "Concern for Rocksteady",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8604,7 +8604,7 @@
   {
     "name": "Fleeing Danger",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8631,7 +8631,7 @@
   {
     "name": "Funky Breath",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8658,7 +8658,7 @@
   {
     "name": "Grounded",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8685,7 +8685,7 @@
   {
     "name": "Guide to Self Defense",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8712,7 +8712,7 @@
   {
     "name": "Off-Balancing Techniques",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8739,7 +8739,7 @@
   {
     "name": "Reprimand",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8766,7 +8766,7 @@
   {
     "name": "Singing Fish",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -8948,7 +8948,7 @@
   {
     "name": "High Three",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -8983,7 +8983,7 @@
       "Punch"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -9017,7 +9017,7 @@
       "Unique"
     ],
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -9045,7 +9045,7 @@
   {
     "name": "Teenage Downtime",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -9075,7 +9075,7 @@
       "Pizza"
     ],
     "resources": [
-      "good attune"
+      "good-attuned"
     ],
     "formats": [
       "legacy",
@@ -9193,7 +9193,7 @@
       "Kick"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -9226,7 +9226,7 @@
       "Kick"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -9260,7 +9260,7 @@
       "Slam"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -9294,7 +9294,7 @@
       "Kick"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -9330,7 +9330,7 @@
       "Slam"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -9363,7 +9363,7 @@
       "Punch"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -9396,7 +9396,7 @@
       "Ranged"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -9432,7 +9432,7 @@
       "Slam"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -9466,7 +9466,7 @@
       "Stun: 1"
     ],
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -9496,7 +9496,7 @@
   {
     "name": "Battle Holds the Answer",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -9523,7 +9523,7 @@
   {
     "name": "Endlessly Doting",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -9550,7 +9550,7 @@
   {
     "name": "Excessively Buff Forearms",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -9577,7 +9577,7 @@
   {
     "name": "Fist of the Ages",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -9604,7 +9604,7 @@
   {
     "name": "My Fists Solve My Problems",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -9631,7 +9631,7 @@
   {
     "name": "Not Now, I'm Gaming",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -9658,7 +9658,7 @@
   {
     "name": "Strength in Diligence",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -9685,7 +9685,7 @@
   {
     "name": "The Unending Path",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -9712,7 +9712,7 @@
   {
     "name": "Vagrant Truthseeker",
     "resources": [
-      "all attune"
+      "all-attuned"
     ],
     "formats": [
       "legacy",
@@ -9830,7 +9830,7 @@
       "Fury"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -9863,7 +9863,7 @@
       "Kick"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -9896,7 +9896,7 @@
       "Throw"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -9931,7 +9931,7 @@
       "Powerful: 3"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -9965,7 +9965,7 @@
       "Stun: 1"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -9999,7 +9999,7 @@
       "Stun: 1"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -10033,7 +10033,7 @@
       "Kick"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -10066,7 +10066,7 @@
       "Punch"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -10099,7 +10099,7 @@
       "Kick"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -10129,7 +10129,7 @@
   {
     "name": "Azure Kung Fu Instructor",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -10160,7 +10160,7 @@
       "Unique"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -10190,7 +10190,7 @@
       "Kick"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -10217,7 +10217,7 @@
   {
     "name": "Guardian Angel of Chinatown",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -10244,7 +10244,7 @@
   {
     "name": "Hates Lectures",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -10274,7 +10274,7 @@
       "Kick"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -10301,7 +10301,7 @@
   {
     "name": "Shifting Gears",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -10328,7 +10328,7 @@
   {
     "name": "Street Hero",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -10355,7 +10355,7 @@
   {
     "name": "Young Boss of Chinatown",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11091,7 +11091,7 @@
       "Ally"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11123,7 +11123,7 @@
       "Titan"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11158,7 +11158,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11193,7 +11193,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11228,7 +11228,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11263,7 +11263,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11297,7 +11297,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11332,7 +11332,7 @@
       "Titan"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11367,7 +11367,7 @@
       "Unique"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11395,7 +11395,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11430,7 +11430,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11465,7 +11465,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11500,7 +11500,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11534,7 +11534,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11569,7 +11569,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11604,7 +11604,7 @@
       "Unique"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11633,7 +11633,7 @@
   {
     "name": "Aerial Arrival",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11664,7 +11664,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11692,7 +11692,7 @@
   {
     "name": "Dedicate Your Heart",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11720,7 +11720,7 @@
   {
     "name": "Descendant of Hizuru",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11748,7 +11748,7 @@
   {
     "name": "Eluding Fire",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11776,7 +11776,7 @@
   {
     "name": "Hasty Retreat",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11804,7 +11804,7 @@
   {
     "name": "Helping Out",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11832,7 +11832,7 @@
   {
     "name": "I Can't Forgive You",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11860,7 +11860,7 @@
   {
     "name": "Moral Conflict",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11888,7 +11888,7 @@
   {
     "name": "Stables Work",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11916,7 +11916,7 @@
   {
     "name": "This is How It Ends",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -11947,7 +11947,7 @@
       "Ally"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -11979,7 +11979,7 @@
       "Titan"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12015,7 +12015,7 @@
       "Titan"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12049,7 +12049,7 @@
       "Ranged"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12085,7 +12085,7 @@
       "Titan"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12122,7 +12122,7 @@
       "Titan"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12156,7 +12156,7 @@
       "Unique"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12184,7 +12184,7 @@
       "Titan"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12220,7 +12220,7 @@
       "Titan"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12255,7 +12255,7 @@
       "Titan"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12289,7 +12289,7 @@
       "Ally"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12324,7 +12324,7 @@
       "Deadlock Stun: 2"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12360,7 +12360,7 @@
       "Titan"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12394,7 +12394,7 @@
       "Ranged"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12429,7 +12429,7 @@
       "Titan"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12464,7 +12464,7 @@
       "Unique"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12493,7 +12493,7 @@
   {
     "name": "Bound by Blood",
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12521,7 +12521,7 @@
   {
     "name": "Dawning Horror",
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12549,7 +12549,7 @@
   {
     "name": "Finally Free",
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12577,7 +12577,7 @@
   {
     "name": "Finding Strength",
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12605,7 +12605,7 @@
   {
     "name": "Frantic Plea",
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12633,7 +12633,7 @@
   {
     "name": "Need to Act",
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12664,7 +12664,7 @@
       "Titan"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12692,7 +12692,7 @@
   {
     "name": "Titan's Flight",
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12723,7 +12723,7 @@
       "Fury"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12751,7 +12751,7 @@
   {
     "name": "Warrior Training",
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12779,7 +12779,7 @@
   {
     "name": "Young Warrior Candidates",
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -12810,7 +12810,7 @@
       "Ally"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -12841,7 +12841,7 @@
       "Charge"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -12877,7 +12877,7 @@
       "Titan"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -12911,7 +12911,7 @@
       "Weapon"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -12945,7 +12945,7 @@
       "Ranged"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -12979,7 +12979,7 @@
       "Titan"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13013,7 +13013,7 @@
       "Weapon"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13048,7 +13048,7 @@
       "Weapon"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13082,7 +13082,7 @@
       "Fury"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13118,7 +13118,7 @@
       "Titan"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13153,7 +13153,7 @@
       "Weapon"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13189,7 +13189,7 @@
       "Deadlock Stun: 2"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13224,7 +13224,7 @@
       "Titan"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13260,7 +13260,7 @@
       "Titan"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13295,7 +13295,7 @@
       "Unique"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13324,7 +13324,7 @@
       "Unique"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13353,7 +13353,7 @@
   {
     "name": "Abrupt Loss",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13381,7 +13381,7 @@
   {
     "name": "Crossing Enemy Lines",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13409,7 +13409,7 @@
   {
     "name": "Devastating Loss",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13437,7 +13437,7 @@
   {
     "name": "Military Tactics",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13465,7 +13465,7 @@
   {
     "name": "Porco's Noble Goodbye",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13496,7 +13496,7 @@
       "Weapon"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13524,7 +13524,7 @@
   {
     "name": "Setting the Stage",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13552,7 +13552,7 @@
   {
     "name": "Sole Motivation",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13580,7 +13580,7 @@
   {
     "name": "Tense Standoff",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13608,7 +13608,7 @@
   {
     "name": "Time for Battle",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13636,7 +13636,7 @@
   {
     "name": "Tybur Family Influence",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13667,7 +13667,7 @@
       "Unique"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -13698,7 +13698,7 @@
       "Ally"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -13729,7 +13729,7 @@
       "Throw"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -13763,7 +13763,7 @@
       "Ranged"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -13799,7 +13799,7 @@
       "Deadlock Stun: 2"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -13835,7 +13835,7 @@
       "Titan"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -13871,7 +13871,7 @@
       "Weapon"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -13907,7 +13907,7 @@
       "Titan"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -13943,7 +13943,7 @@
       "Weapon"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -13979,7 +13979,7 @@
       "Titan"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14015,7 +14015,7 @@
       "Titan"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14049,7 +14049,7 @@
       "Unique"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14078,7 +14078,7 @@
       "Weapon"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14112,7 +14112,7 @@
       "Titan"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14148,7 +14148,7 @@
       "Titan"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14184,7 +14184,7 @@
       "Titan"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14219,7 +14219,7 @@
       "Unique"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14248,7 +14248,7 @@
   {
     "name": "Advancing Destruction",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14280,7 +14280,7 @@
       "Unique"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14308,7 +14308,7 @@
   {
     "name": "Driven by Retribution",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14339,7 +14339,7 @@
       "Titan"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14370,7 +14370,7 @@
       "Fury"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14398,7 +14398,7 @@
   {
     "name": "Killing the Old Ways",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14429,7 +14429,7 @@
       "Fury"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14457,7 +14457,7 @@
   {
     "name": "Planned Coup",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14485,7 +14485,7 @@
   {
     "name": "Shared Memories",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14513,7 +14513,7 @@
   {
     "name": "This is Freedom",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14541,7 +14541,7 @@
   {
     "name": "Uncomfortable Request",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14569,7 +14569,7 @@
   {
     "name": "Unexpected Reunion",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -14600,7 +14600,7 @@
       "Ally"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -14632,7 +14632,7 @@
       "Titan"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -14667,7 +14667,7 @@
       "Titan"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -14702,7 +14702,7 @@
       "Ranged"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -14738,7 +14738,7 @@
       "Weapon"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -14774,7 +14774,7 @@
       "Titan"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -14808,7 +14808,7 @@
       "Unique"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -14835,7 +14835,7 @@
       "Weapon"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -14871,7 +14871,7 @@
       "Weapon"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -14906,7 +14906,7 @@
       "Ranged"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -14942,7 +14942,7 @@
       "Titan"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -14977,7 +14977,7 @@
       "Weapon"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15013,7 +15013,7 @@
       "Deadlock Stun: 2"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15049,7 +15049,7 @@
       "Weapon"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15084,7 +15084,7 @@
       "Titan"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15119,7 +15119,7 @@
       "Unique"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15148,7 +15148,7 @@
   {
     "name": "Brothers Reunited",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15176,7 +15176,7 @@
   {
     "name": "Catching Up",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15204,7 +15204,7 @@
   {
     "name": "Difficult Decision",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15235,7 +15235,7 @@
       "Unique"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15263,7 +15263,7 @@
   {
     "name": "End the Cycle",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15291,7 +15291,7 @@
   {
     "name": "Frantic Rescue",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15319,7 +15319,7 @@
   {
     "name": "Impassioned Appeal",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15347,7 +15347,7 @@
   {
     "name": "Outnumbered",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15375,7 +15375,7 @@
   {
     "name": "Premature Celebration",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15403,7 +15403,7 @@
   {
     "name": "Revelatory Speech",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15431,7 +15431,7 @@
   {
     "name": "See the Ocean",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15459,7 +15459,7 @@
   {
     "name": "Snap Decision",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -15490,7 +15490,7 @@
       "Ally"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -15520,7 +15520,7 @@
       "Ranged"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -15555,7 +15555,7 @@
       "Titan"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -15589,7 +15589,7 @@
       "Weapon"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -15625,7 +15625,7 @@
       "Titan"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -15659,7 +15659,7 @@
       "Unique"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -15686,7 +15686,7 @@
       "Weapon"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -15722,7 +15722,7 @@
       "Weapon"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -15756,7 +15756,7 @@
       "Ranged"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -15787,7 +15787,7 @@
   {
     "name": "Pit Trap",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -15821,7 +15821,7 @@
       "Titan"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -15857,7 +15857,7 @@
       "Weapon"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -15891,7 +15891,7 @@
       "Ranged"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -15926,7 +15926,7 @@
       "Titan"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -15962,7 +15962,7 @@
       "Weapon"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -15997,7 +15997,7 @@
       "Unique"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -16026,7 +16026,7 @@
   {
     "name": "Bleak Commentary",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -16054,7 +16054,7 @@
   {
     "name": "Grim Discovery",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -16082,7 +16082,7 @@
   {
     "name": "Holding Out Hope",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -16110,7 +16110,7 @@
   {
     "name": "Imprisoned",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -16141,7 +16141,7 @@
       "Titan"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -16169,7 +16169,7 @@
   {
     "name": "Major Victory",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -16197,7 +16197,7 @@
   {
     "name": "Memories of the Fallen",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -16225,7 +16225,7 @@
   {
     "name": "Uneasy Alliance",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -16253,7 +16253,7 @@
   {
     "name": "United Front",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -16281,7 +16281,7 @@
   {
     "name": "Unusual Behavior",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -16309,7 +16309,7 @@
   {
     "name": "Visions of the Survey Corps",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -16337,7 +16337,7 @@
   {
     "name": "Yelena's Machinations",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -17426,7 +17426,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -17459,7 +17459,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -17495,7 +17495,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -17530,7 +17530,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -17567,7 +17567,7 @@
       "Tech"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -17602,7 +17602,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -17637,7 +17637,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -17672,7 +17672,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -17702,7 +17702,7 @@
   {
     "name": "Dedicated Artisan",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -17732,7 +17732,7 @@
       "Ally"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -17759,7 +17759,7 @@
   {
     "name": "Imprisoned Noble",
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -17790,7 +17790,7 @@
       "Weapon"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -17822,7 +17822,7 @@
       "Unique"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -17852,7 +17852,7 @@
       "Tech"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -17882,7 +17882,7 @@
       "Tech"
     ],
     "resources": [
-      "air attune"
+      "air-attuned"
     ],
     "formats": [
       "legacy",
@@ -17912,7 +17912,7 @@
       "Spell"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -17942,7 +17942,7 @@
       "Spell"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -17976,7 +17976,7 @@
       "Spell"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -18009,7 +18009,7 @@
       "Spell"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -18042,7 +18042,7 @@
       "Spell"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -18076,7 +18076,7 @@
       "Spell"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -18110,7 +18110,7 @@
       "Unique"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -18140,7 +18140,7 @@
       "Spell"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -18167,7 +18167,7 @@
   {
     "name": "Holstered Spellbook",
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -18197,7 +18197,7 @@
       "Spell"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -18224,7 +18224,7 @@
   {
     "name": "Leave it to Chance",
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -18254,7 +18254,7 @@
       "Spell"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -18284,7 +18284,7 @@
       "Spell"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -18314,7 +18314,7 @@
       "Spell"
     ],
     "resources": [
-      "chaos attune"
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -18345,7 +18345,7 @@
       "Spell"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -18379,7 +18379,7 @@
       "Weapon"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -18414,7 +18414,7 @@
       "Spell"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -18449,7 +18449,7 @@
       "Weapon"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -18483,7 +18483,7 @@
       "Spell"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -18518,7 +18518,7 @@
       "Weapon"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -18551,7 +18551,7 @@
       "Spell"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -18581,7 +18581,7 @@
   {
     "name": "Collateral Damage",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -18608,7 +18608,7 @@
   {
     "name": "Collecting Components",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -18635,7 +18635,7 @@
   {
     "name": "Cull the Weak",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -18665,7 +18665,7 @@
       "Spell"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -18692,7 +18692,7 @@
   {
     "name": "Macabre Regeneration",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -18722,7 +18722,7 @@
       "Spell"
     ],
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -18749,7 +18749,7 @@
   {
     "name": "Survival of the Fittest",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -18776,7 +18776,7 @@
   {
     "name": "Tranquility of Death",
     "resources": [
-      "death attune"
+      "death-attuned"
     ],
     "formats": [
       "legacy",
@@ -18806,7 +18806,7 @@
       "Spell"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -18837,7 +18837,7 @@
       "Spell"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -18871,7 +18871,7 @@
       "Throw"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -18906,7 +18906,7 @@
       "Weapon"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -18940,7 +18940,7 @@
       "Stun: 1"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -18974,7 +18974,7 @@
       "Spell"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -19008,7 +19008,7 @@
       "Weapon"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -19043,7 +19043,7 @@
       "Slam"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -19073,7 +19073,7 @@
   {
     "name": "Family Hug",
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -19100,7 +19100,7 @@
   {
     "name": "Nature Calls",
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -19127,7 +19127,7 @@
   {
     "name": "Prepared for an Ambush",
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -19154,7 +19154,7 @@
   {
     "name": "Questionable Brew",
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -19181,7 +19181,7 @@
   {
     "name": "Shapechanger's Skill",
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -19208,7 +19208,7 @@
   {
     "name": "Swift Change",
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -19240,7 +19240,7 @@
       "Unique"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -19270,7 +19270,7 @@
       "Spell"
     ],
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -19297,7 +19297,7 @@
   {
     "name": "Woodland Distraction",
     "resources": [
-      "earth attune"
+      "earth-attuned"
     ],
     "formats": [
       "legacy",
@@ -19329,7 +19329,7 @@
       "Weapon"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -19364,7 +19364,7 @@
       "Brute Powerful: 3"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -19400,7 +19400,7 @@
       "Punch"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -19435,7 +19435,7 @@
       "Weapon"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -19469,7 +19469,7 @@
       "Fury"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -19504,7 +19504,7 @@
       "Weapon"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -19538,7 +19538,7 @@
       "Weapon"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -19568,7 +19568,7 @@
   {
     "name": "Bellow of Rage",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -19595,7 +19595,7 @@
   {
     "name": "Cycle of Violence",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -19622,7 +19622,7 @@
   {
     "name": "Everlight's Grace",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -19649,7 +19649,7 @@
   {
     "name": "Radiant Visage",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -19676,7 +19676,7 @@
   {
     "name": "Stoic Enmity",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -19706,7 +19706,7 @@
       "Deflect: 1"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -19733,7 +19733,7 @@
   {
     "name": "Unrelenting Brute",
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -19764,7 +19764,7 @@
       "Fury"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",
@@ -19794,7 +19794,7 @@
       "Spell"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -19827,7 +19827,7 @@
       "Throw"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -19861,7 +19861,7 @@
       "Spell"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -19894,7 +19894,7 @@
       "Ally"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -19924,7 +19924,7 @@
   {
     "name": "Peaceful Rebuke",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -19957,7 +19957,7 @@
       "Spell"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -19992,7 +19992,7 @@
       "Weapon"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -20022,7 +20022,7 @@
   {
     "name": "A Night's Rest",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -20052,7 +20052,7 @@
       "Deflect: 2"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -20079,7 +20079,7 @@
   {
     "name": "Curious Tea Preparation",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -20109,7 +20109,7 @@
       "Spell"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -20139,7 +20139,7 @@
       "Spell"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -20166,7 +20166,7 @@
   {
     "name": "Jaunty Trickster",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -20193,7 +20193,7 @@
   {
     "name": "Night on the Town",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -20220,7 +20220,7 @@
   {
     "name": "Persuasive Talent",
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -20250,7 +20250,7 @@
       "Spell"
     ],
     "resources": [
-      "life attune"
+      "life-attuned"
     ],
     "formats": [
       "legacy",
@@ -20280,7 +20280,7 @@
       "Spell"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20312,7 +20312,7 @@
       "Weapon"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20347,7 +20347,7 @@
       "Weapon"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20380,7 +20380,7 @@
       "Slam"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20414,7 +20414,7 @@
       "Weapon"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20449,7 +20449,7 @@
       "Weapon"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20484,7 +20484,7 @@
       "Weapon"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20522,7 +20522,7 @@
       "Weapon"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20555,7 +20555,7 @@
       "Ally"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20582,7 +20582,7 @@
   {
     "name": "Confidence",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20612,7 +20612,7 @@
       "Breaker: 1"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20642,7 +20642,7 @@
       "Spell"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20669,7 +20669,7 @@
   {
     "name": "Electric Resilience",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20696,7 +20696,7 @@
   {
     "name": "Show of Strength",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20723,7 +20723,7 @@
   {
     "name": "Show Off",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20750,7 +20750,7 @@
   {
     "name": "Tarot Reading",
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20780,7 +20780,7 @@
       "Champion Breaker: 1"
     ],
     "resources": [
-      "order attune"
+      "order-attuned"
     ],
     "formats": [
       "legacy",
@@ -20810,7 +20810,7 @@
       "Spell"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -20840,7 +20840,7 @@
       "Weapon"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -20874,7 +20874,7 @@
       "Weapon"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -20908,7 +20908,7 @@
       "Weapon"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -20941,7 +20941,7 @@
       "Weapon"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -20974,7 +20974,7 @@
       "Spell"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -21008,7 +21008,7 @@
       "Weapon"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -21042,7 +21042,7 @@
       "Weapon"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -21075,7 +21075,7 @@
       "Weapon"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -21102,7 +21102,7 @@
   {
     "name": "Fade to Black",
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -21129,7 +21129,7 @@
   {
     "name": "Joining the Fight",
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -21156,7 +21156,7 @@
   {
     "name": "Keeping Alert",
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -21183,7 +21183,7 @@
   {
     "name": "Nimble Thief",
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -21213,7 +21213,7 @@
       "Unique"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -21240,7 +21240,7 @@
   {
     "name": "Scoundrel's Insight",
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -21267,7 +21267,7 @@
   {
     "name": "Treasure Hunting",
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -21297,7 +21297,7 @@
       "Thief Breaker: 1"
     ],
     "resources": [
-      "void attune"
+      "void-attuned"
     ],
     "formats": [
       "legacy",
@@ -21329,7 +21329,7 @@
       "Punch"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -21362,7 +21362,7 @@
       "Kick"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -21396,7 +21396,7 @@
       "Stun: 1"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -21429,7 +21429,7 @@
       "Spell"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -21463,7 +21463,7 @@
       "Throw"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -21497,7 +21497,7 @@
       "Weapon"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -21530,7 +21530,7 @@
       "Spell"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -21560,7 +21560,7 @@
   {
     "name": "A Day for Relaxing",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -21587,7 +21587,7 @@
   {
     "name": "Combat Evaluation",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -21614,7 +21614,7 @@
   {
     "name": "Martial Prowess",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -21641,7 +21641,7 @@
   {
     "name": "Mystic Recovery",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -21668,7 +21668,7 @@
   {
     "name": "Peerless Footwork",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -21695,7 +21695,7 @@
   {
     "name": "Pocket Bacon",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -21726,7 +21726,7 @@
       "Spell"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -21753,7 +21753,7 @@
   {
     "name": "Subdual Technique",
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -21783,7 +21783,7 @@
       "Ally"
     ],
     "resources": [
-      "water attune"
+      "water-attuned"
     ],
     "formats": [
       "legacy",
@@ -23675,7 +23675,7 @@
       "Unique"
     ],
     "resources": [
-      "fire attune"
+      "fire-attuned"
     ],
     "formats": [
       "legacy",

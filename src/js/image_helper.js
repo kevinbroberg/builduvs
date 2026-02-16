@@ -7,7 +7,15 @@ const cardImageCache = reactive({})
 const placeholderImage = symbolImages['/src/assets/images/set_card.png']?.default || ''
 
 export function getSymbolImage(name) {
-  return symbolImages[`/src/assets/images/${name}.png`]?.default || ''
+  return symbolImages[`/src/assets/images/uvs-icon-${name}.png`]?.default || ''
+}
+
+export function getAttackZoneImage(name) {
+  return symbolImages[`/src/assets/images/aot-icon-attack-${name}-rules.png`]?.default || ''
+}
+
+export function getBlockZoneImage(name) {
+  return symbolImages[`/src/assets/images/aot-icon-block-${name}-.png`]?.default || ''
 }
 
 export function getCardImage(asset) {

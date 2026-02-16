@@ -1,13 +1,13 @@
 <template>
-<div class="isattack" v-if="this.card['type'] == 'attack'" >
-  Attack {{getSpeed()}} <ZoneIcon :attack=this.card /> {{getDamage()}} <br />
+<div class="isattack" v-if="card.type == 'attack'" >
+  Attack {{getSpeed()}} <ResourceSymbol :element="getZone()" isAttackZone /> {{getDamage()}} <br />
   </div>
 </template>
 
 <script>
-import ZoneIcon from "./ZoneIcon.vue"
+import ResourceSymbol from "./ResourceSymbol.vue"
 export default {
-    components: { ZoneIcon },
+    components: { ResourceSymbol },
     name: "AttackData",
     props: {
       card: Object
@@ -17,6 +17,9 @@ export default {
       }
     },
     methods: {
+      getZone() {
+        return this.card['attack_zone']
+      },
       getDamage() {
         return this.card['damage'] // these were made to be durable to badly formed card data, but why bother with that when I can just form it well
       },

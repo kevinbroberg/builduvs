@@ -30,13 +30,13 @@
         <span ref="block_stats">
           <ToggleGroup name="Block" v-model:picks="selections.block_modifier" :options="blockOptions" />
           <ToggleGroup name="Block zone" v-model:picks="selections.block_zone" :options="zoneOptions">
-            <template v-slot:button="{selected}">{{selected}}<ResourceSymbol :element="selected + ' block'" /></template>
+            <template v-slot:button="{selected}">{{selected}}<ResourceSymbol :element="selected" isBlockSymbol /></template>
           </ToggleGroup>
         </span>
         <span ref="attack_stats">
           <ToggleGroup name="Damage" v-model:picks="selections.damage" :options="damageOptions" />
           <ToggleGroup name="Zone" v-model:picks="selections.attack_zone" :options="zoneOptions">
-            <template v-slot:button="{selected}">{{selected}}<ResourceSymbol :element="selected + ' attack'" /></template>
+            <template v-slot:button="{selected}">{{selected}}<ResourceSymbol :element="selected" isAttackZone /></template>
           </ToggleGroup>
           <ToggleGroup name="Speed" v-model:picks="selections.speed" :options="speedOptions" />
         </span>
