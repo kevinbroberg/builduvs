@@ -140,16 +140,64 @@ module.exports = configure(function (/* ctx */) {
 
     // https://v2.quasar.dev/quasar-cli/developing-pwa/configuring-pwa
     pwa: {
-      workboxMode: "generateSW", // or 'injectManifest'
+      workboxMode: "generateSW",
       injectPwaMetaTags: true,
       swFilename: "sw.js",
       manifestFilename: "manifest.json",
       useCredentialsForManifestTag: false,
-      // useFilenameHashes: true,
-      // extendGenerateSWOptions (cfg) {}
-      // extendInjectManifestOptions (cfg) {},
-      // extendManifestJson (json) {}
-      // extendPWACustomSWConf (esbuildConf) {}
+
+      extendGenerateSWOptions(cfg) {
+        cfg.skipWaiting = true;
+        cfg.clientsClaim = true;
+        cfg.navigateFallback = "/index.html";
+
+        // Exclude all image files from precaching — they're runtime-cached on demand
+        cfg.globIgnores = [
+          ...(cfg.globIgnores || []),
+          "assets/**/*.jpg",
+          "assets/**/*.jpeg",
+          "assets/**/*.png",
+          "assets/**/*.webp",
+        ];
+
+        cfg.runtimeCaching = [
+          {
+            urlPattern: /\.(?:png|jpg|jpeg|webp)$/i,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "card-images",
+              expiration: {
+                maxEntries: 500,
+                maxAgeSeconds: 60 * 60 * 24 * 30,
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+          {
+            urlPattern: /^https:\/\/fonts\.googleapis\.com\//,
+            handler: "StaleWhileRevalidate",
+            options: {
+              cacheName: "google-fonts-stylesheets",
+            },
+          },
+          {
+            urlPattern: /^https:\/\/fonts\.gstatic\.com\//,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "google-fonts-webfonts",
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365,
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+        ];
+      },
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli/developing-cordova-apps/configuring-cordova
