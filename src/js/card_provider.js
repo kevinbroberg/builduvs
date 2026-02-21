@@ -88,6 +88,7 @@ if (import.meta.env.DEV) {
 }
 
 export const symbolOptions = ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "infinity", "life", "order", "void", "water"]
+export const attuneOptions = ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "life", "order", "void", "water"]
 export const formatOptions = ["My Hero Academia","MHA banned", "standard","standard banned","retro","retro banned","unreleased","alpha", "alpha legend"]
 
 // Single source of truth for all filter fields.
@@ -112,6 +113,7 @@ const FILTER_FIELDS = [
   { key: 'attack_zone',    type: 'exact' },
   { key: 'vitality',       type: 'exact' },
   { key: 'hand_size',      type: 'exact' },
+  { key: 'attune',         type: 'attune' },
   { key: 'keyword_count',  type: 'keywordCount' },
   { key: 'keyword_search', type: 'keywordSearch' },
   { key: 'keyword_picks',  type: 'keywordPick' },
@@ -202,6 +204,11 @@ const activeFilters = computed(() => {
       case 'symbol':
         filters.push(card =>
           card.resources.some(sym => sym === "infinity" || sel.includes(sym.toLowerCase()))
+        )
+        break
+      case 'attune':
+        filters.push(card =>
+          card.resources.some(sym => sel.some(s => sym === s + '-attuned'))
         )
         break
       case 'keywordCount':

@@ -17,6 +17,12 @@
             </template> -->
             <template v-slot:button="{selected}">{{selected}}<ResourceSymbol :element=selected /></template>
           </ToggleGroup>
+          <ToggleGroup
+            v-model:picks="selections.attune" :options=attuneOptions
+            name="Attune"
+          >
+            <template v-slot:button="{selected}">{{selected}}<ResourceSymbol :element="selected + '-attuned'" /></template>
+          </ToggleGroup>
         <q-separator />
         <ToggleGroup name="Type" v-model:picks="selections.types" :options="typeOptions"/>
         <q-separator />
@@ -77,6 +83,7 @@ export default {
   data() {
     return {
       symbolOptions: provider.symbolOptions,
+      attuneOptions: provider.attuneOptions,
       formatOptions: provider.formatOptions,
       symbolMax: 1,
       keywordTags: [],
