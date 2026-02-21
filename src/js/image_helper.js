@@ -1,6 +1,6 @@
 const symbolImages = import.meta.globEager('/src/assets/images/*.png')
 
-const CDN_BASE = 'https://pub-aa47ca6c03d2428a9e22ac6b5d839945.r2.dev/card_images'
+const CDN_BASE = 'https://pub-aa47ca6c03d2428a9e22ac6b5d839945.r2.dev'
 const placeholderImage = symbolImages['/src/assets/images/set_card.png']?.default || ''
 
 export function getSymbolImage(name) {
