@@ -18,5 +18,5 @@
       @new-value="add"
       use-input standout dense clearable
       new-value-mode="add" 
-      :label="props.label || 'Search by name'" class="q-ml-sm"  />
+      :label="props.label || 'Fuzzy name search (/ for regex)'" class="q-ml-sm"  />
 </template>

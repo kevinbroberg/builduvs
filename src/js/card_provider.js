@@ -1,4 +1,5 @@
 import { ref, computed } from 'vue'
+import Fuse from 'fuse.js'
 import heroesclash from 'assets/heroesclash.json'
 import rampage_dlc from 'assets/rampage_dlc.json'
 import rampage from 'assets/rampage.json'
@@ -93,7 +94,7 @@ export const formatOptions = ["My Hero Academia","MHA banned", "standard","stand
 // To add a new field, add one entry here — selections, URL serialization,
 // query parsing, and filtering all derive from this config.
 const FILTER_FIELDS = [
-  { key: 'name',           type: 'text' },
+  { key: 'name',           type: 'fuzzy' },
   { key: 'text',           type: 'text', allowNone: true },
   { key: 'symbols',        type: 'symbol' },
   { key: 'symbols2',       type: 'symbol' },
@@ -123,7 +124,7 @@ export function initializeSelections() {
   for (const field of FILTER_FIELDS) {
     if (field.preserveOnReset) {
       init[field.key] = prev?.[field.key] || []
-    } else if (field.type === 'text') {
+    } else if (field.type === 'text' || field.type === 'fuzzy') {
       init[field.key] = ''
     } else {
       init[field.key] = []
@@ -157,6 +158,25 @@ const activeFilters = computed(() => {
     const cardKey = field.cardField || field.key
 
     switch (field.type) {
+      case 'fuzzy': {
+        // Fuzzy mode handled by fuzzyScores in filteredCards.
+        // Only add a filter here for regex opt-in (/ prefix).
+        if (sel.startsWith('/')) {
+          try {
+            let pattern = sel.slice(1)
+            let frontanchor = '.*'
+            let backanchor = '.*'
+            if (pattern.startsWith('^')) { frontanchor = '^'; pattern = pattern.slice(1) }
+            if (pattern.endsWith('$')) { backanchor = '$'; pattern = pattern.slice(0, -1) }
+            const regex = new RegExp(frontanchor + pattern + backanchor, 'i')
+            filters.push(card => regex.test(card[cardKey]))
+          } catch {
+            console.error('Error with regex ' + sel)
+            filters.push(() => false)
+          }
+        }
+        break
+      }
       case 'text': {
         if (field.allowNone && sel === "NONE") {
           filters.push(card => !card[cardKey])
@@ -222,9 +242,33 @@ const formatCards = computed(() => {
   return cards
 })
 
+const fuseIndex = computed(() => {
+  return new Fuse(formatCards.value, {
+    keys: ['name'],
+    threshold: 0.4,
+    includeScore: true,
+  })
+})
+
+// When fuzzy name search is active, returns a Map<card, score> for filtering + sorting.
+// Returns null when inactive (no name query, or regex mode via / prefix).
+const fuzzyScores = computed(() => {
+  const sel = selections.value.name
+  if (!sel || sel.length === 0 || sel.startsWith('/')) return null
+  const results = fuseIndex.value.search(sel)
+  const map = new Map()
+  for (const r of results) map.set(r.item, r.score)
+  return map
+})
+
 const filteredCards = computed(() => {
   const filters = activeFilters.value
-  return formatCards.value.filter(card => {
+  const scores = fuzzyScores.value
+
+  let source = formatCards.value
+  if (scores) source = source.filter(card => scores.has(card))
+
+  let result = source.filter(card => {
     try {
       return filters.every(f => f(card))
     } catch (e) {
@@ -232,6 +276,11 @@ const filteredCards = computed(() => {
       return false
     }
   })
+
+  // Sort by fuzzy relevance when active (lower score = better match)
+  if (scores) result.sort((a, b) => scores.get(a) - scores.get(b))
+
+  return result
 })
 
 function stripQuotes(str) {
@@ -244,7 +293,7 @@ function stripQuotes(str) {
 export function handleQuery(query) {
   const queries = {}
   for (const field of FILTER_FIELDS) {
-    if (field.type === 'text') {
+    if (field.type === 'text' || field.type === 'fuzzy') {
       queries[field.key] = query[field.key] ? stripQuotes(query[field.key]) : selections.value[field.key]
     } else {
       queries[field.key] = query[field.key] ? JSON.parse(query[field.key]) : selections.value[field.key]
