@@ -1,9 +1,6 @@
-import { reactive } from 'vue'
-
 const symbolImages = import.meta.globEager('/src/assets/images/*.png')
 
-const cardImageLoaders = import.meta.glob('/src/assets/images/card_images/**/*')
-const cardImageCache = reactive({})
+const CDN_BASE = 'https://pub-aa47ca6c03d2428a9e22ac6b5d839945.r2.dev/card_images'
 const placeholderImage = symbolImages['/src/assets/images/set_card.png']?.default || ''
 
 export function getSymbolImage(name) {
@@ -19,13 +16,6 @@ export function getBlockZoneImage(name) {
 }
 
 export function getCardImage(asset) {
-  const key = `/src/assets/images/card_images/${asset}`
-  if (key in cardImageCache) return cardImageCache[key]
-  const loader = cardImageLoaders[key]
-  if (!loader) return ''
-  cardImageCache[key] = placeholderImage
-  loader().then(module => {
-    cardImageCache[key] = module.default
-  })
-  return placeholderImage
+  if (!asset) return placeholderImage
+  return `${CDN_BASE}/${asset}`
 }
