@@ -7,8 +7,9 @@ import provisional from 'assets/provs.json'
 import ggrole from 'assets/gg-critrole.json'
 import sjwtomha4 from 'assets/sjw-mha4.json'
 import real_cards from 'assets/cards.json'
+import kaiju from 'assets/kaiju.json'
 
-export const cards = [...ggrole, ...sjwtomha4,...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
+export const cards = [...kaiju, ...ggrole, ...sjwtomha4,...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
 
 // Ensure every card has a unique `asset` key (used by deck store and v-for keys).
 // Newer data files omit `asset`, so synthesize one from extension_short + card_number_image.
@@ -89,7 +90,7 @@ if (import.meta.env.DEV) {
 
 export const symbolOptions = ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "infinity", "life", "order", "void", "water"]
 export const attuneOptions = ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "life", "order", "void", "water"]
-export const formatOptions = ["My Hero Academia","MHA banned", "standard","standard banned","retro","retro banned","unreleased","alpha", "alpha legend"]
+export const formatOptions = ["My Hero Academia","MHA banned", "Godzilla", "standard","standard banned","retro","retro banned","unreleased","alpha", "alpha legend"]
 
 // Single source of truth for all filter fields.
 // To add a new field, add one entry here — selections, URL serialization,

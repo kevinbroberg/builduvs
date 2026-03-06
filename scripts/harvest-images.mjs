@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 /**
- * Harvest card images from uvsultra.online for all JSON data files.
+ * Harvest card images from uvsultra.online for all JSON data files,
+ * then optionally upload to Cloudflare R2.
  *
  * Usage:
  *   node scripts/harvest-images.mjs                # download all missing images
+ *   node scripts/harvest-images.mjs --upload gdz01  # download then push gdz01/ to R2
  *   node scripts/harvest-images.mjs --dry-run      # just list what would be downloaded
  *   node scripts/harvest-images.mjs --concurrency 5
  */
@@ -12,13 +14,18 @@ import fs from 'node:fs'
 import path from 'node:path'
 import https from 'node:https'
 import http from 'node:http'
+import { execSync } from 'node:child_process'
 
 // ── Config ──────────────────────────────────────────────────────────
 const BASE_URL = 'https://www.uvsultra.online/images/extensions'
 const CARD_IMAGES_DIR = path.resolve('src/assets/images/card_images')
 
+// R2 upload config
+const R2_REMOTE = 'r2:universus'
+
 // Every JSON data file in the project, in load order.
 const DATA_FILES = [
+  'src/assets/kaiju.json',
   'src/assets/gg-critrole.json',
   'src/assets/sjw-mha4.json',
   'src/assets/heroesclash.json',
@@ -31,6 +38,8 @@ const DATA_FILES = [
 // ── CLI flags ───────────────────────────────────────────────────────
 const args = process.argv.slice(2)
 const DRY_RUN = args.includes('--dry-run')
+const uploadIdx = args.indexOf('--upload')
+const UPLOAD = uploadIdx !== -1 ? (args[uploadIdx + 1] || '') : null
 const concurrencyIdx = args.indexOf('--concurrency')
 const CONCURRENCY = concurrencyIdx !== -1 ? Number(args[concurrencyIdx + 1]) : 8
 
@@ -160,7 +169,7 @@ async function main() {
   console.log(`Found ${tasks.length} images to download (${seen.size} unique cards, ${seen.size - tasks.length} already present)`)
   if (skippedNoInfo) console.log(`  (${skippedNoInfo} cards skipped — missing extension_short or card number)`)
 
-  if (tasks.length === 0) {
+  if (tasks.length === 0 && UPLOAD === null) {
     console.log('Nothing to do.')
     return
   }
@@ -173,22 +182,49 @@ async function main() {
     return
   }
 
-  // Download with concurrency limit
-  let ok = 0, fail = 0
-  const results = await mapConcurrent(tasks, async (t) => {
-    const result = await download(t.url, t.dest)
-    if (result.ok) ok++; else fail++
-    process.stdout.write(`\r  Downloaded ${ok + fail}/${tasks.length} (${fail} failed)`)
-    return { ...t, result }
-  }, CONCURRENCY)
+  if (tasks.length > 0) {
+    // Download with concurrency limit
+    let ok = 0, fail = 0
+    const results = await mapConcurrent(tasks, async (t) => {
+      const result = await download(t.url, t.dest)
+      if (result.ok) ok++; else fail++
+      process.stdout.write(`\r  Downloaded ${ok + fail}/${tasks.length} (${fail} failed)`)
+      return { ...t, result }
+    }, CONCURRENCY)
 
-  console.log(`\nDone: ${ok} downloaded, ${fail} failed.`)
+    console.log(`\nDone: ${ok} downloaded, ${fail} failed.`)
 
-  const failures = results.filter(r => !r.result.ok)
-  if (failures.length > 0) {
-    console.log('\nFailed downloads:')
-    for (const f of failures) {
-      console.log(`  ${f.result.status} ${f.url}`)
+    const failures = results.filter(r => !r.result.ok)
+    if (failures.length > 0) {
+      console.log('\nFailed downloads:')
+      for (const f of failures) {
+        console.log(`  ${f.result.status} ${f.url}`)
+      }
+    }
+  }
+
+  // Upload to Cloudflare R2 via rclone
+  if (UPLOAD !== null) {
+    if (!UPLOAD || UPLOAD.startsWith('-')) {
+      console.error('--upload requires a subfolder argument, e.g. --upload gdz01')
+      process.exit(1)
+    }
+    const localDir = path.join(CARD_IMAGES_DIR, UPLOAD)
+    if (!fs.existsSync(localDir)) {
+      console.error(`Upload folder not found: ${localDir}`)
+      process.exit(1)
+    }
+    const dest = `${R2_REMOTE}/${UPLOAD}`
+    console.log(`\nUploading ${UPLOAD} to ${dest} ...`)
+    try {
+      execSync(
+        `rclone copy "${localDir}" "${dest}" --s3-no-check-bucket --progress`,
+        { stdio: 'inherit' }
+      )
+      console.log('Upload complete.')
+    } catch (err) {
+      console.error('Upload failed:', err.message)
+      process.exit(1)
     }
   }
 }

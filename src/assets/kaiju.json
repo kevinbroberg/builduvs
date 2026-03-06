@@ -1,0 +1,4988 @@
+[
+  {
+    "extension_short": "gdz01",
+    "numero": 0,
+    "numero_image": 0,
+    "name": "Power",
+    "type": "token",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [],
+    "text": "Enhance Sacrifice: Your attack gets +2 damage.",
+    "asset": "gdz01/000-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/000-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 1,
+    "numero_image": 1,
+    "name": "Anguirus, Fierce Dragon",
+    "type": "character",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "fire"
+    ],
+    "keywords": [
+      "Giant",
+      "Monster"
+    ],
+    "text": "Your attacks with printed difficulty 5 or greater get +1 speed and +2 damage.\n\nResponse: After an attack deals damage, add 1 Power token to your stage.",
+    "hand_size": 6,
+    "vitality": 33,
+    "asset": "gdz01/001-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/001-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 2,
+    "numero_image": 2,
+    "name": "Battra, Beast of Destruction",
+    "type": "character",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "order",
+      "void"
+    ],
+    "keywords": [
+      "Giant",
+      "Monster"
+    ],
+    "text": "Enhance Commit: Your attack gets +2 speed and +2 damage.\n\nEnhance Commit: This attack gets -2 speed and your rival commits 1 foundation.\n\nResponse [Tenacious] Commit 1 foundation: After an attack deals damage, ready this card and seal 1 rival foundation.",
+    "hand_size": 7,
+    "vitality": 22,
+    "asset": "gdz01/002-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/002-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 3,
+    "numero_image": 3,
+    "name": "Biollante, Giant Plant Monster",
+    "type": "character",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "life",
+      "water"
+    ],
+    "keywords": [
+      "Giant",
+      "Monster"
+    ],
+    "text": "Enhance [Once per turn]: Add 1 card from your hand to your card pool face down. Add 1 card from your discard pile to your hand. You may spend 1 momentum. If you do, add 1 card from your discard pile to your hand.\n\nEnhance: This attack gets +1 or -1 damage for each face down card in all players' card pools.",
+    "hand_size": 5,
+    "vitality": 36,
+    "asset": "gdz01/003-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/003-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 4,
+    "numero_image": 4,
+    "name": "Burning Godzilla",
+    "type": "character",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "fire",
+      "void"
+    ],
+    "keywords": [
+      "Giant",
+      "Monster"
+    ],
+    "text": "Enhance [Your attack] Mill 4: Your attack with printed difficulty 5 or greater gets +1 damage for every 5 cards in your discard pile.\n\nEnhance [Once per game]: Remove up to 2 cards from each player's card pool. Only playable if you have 15 or less health.",
+    "hand_size": 6,
+    "vitality": 32,
+    "asset": "gdz01/004-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/004-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 5,
+    "numero_image": 5,
+    "name": "Destoroyah, Perfect Lifeform",
+    "type": "character",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "life",
+      "water"
+    ],
+    "keywords": [
+      "Giant",
+      "Monster"
+    ],
+    "text": "At the beginning of your Combat Phase, add 2 Destoroyah counters to this card.\n\nEnhance Remove 1 Destoroyah counter: This attack gets +2 or -3 speed.\n\nEnhance Remove 6 Destoroyah counters: Destroy 2 rival non-character cards.",
+    "hand_size": 6,
+    "vitality": 33,
+    "asset": "gdz01/005-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/005-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 6,
+    "numero_image": 6,
+    "name": "Gigan, Space Monster",
+    "type": "character",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "all",
+      "evil"
+    ],
+    "keywords": [
+      "Giant",
+      "Monster"
+    ],
+    "text": "Enhance Remove the top card of your deck: Your attack gets +2 damage. If the removed card was an attack, your attack gets +2 speed.\n\nResponse: After an attack deals damage, draw 1 card. If your rival's health is 15 or greater, discard 1 card.",
+    "hand_size": 6,
+    "vitality": 31,
+    "asset": "gdz01/006-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/006-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 7,
+    "numero_image": 7,
+    "name": "Godzilla, Shin Godzilla",
+    "type": "character",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "life"
+    ],
+    "keywords": [
+      "Giant",
+      "Monster"
+    ],
+    "text": "Response [Tenacious]: After 1 or more rival foundations are destroyed by your effect, gain 1 health and add 1 Power token to your stage.\n\nEnhance: This attack gets +2 damage. If it deals damage, you may commit this card. If you do, your rival sacrifices 1 foundation.",
+    "hand_size": 7,
+    "vitality": 23,
+    "asset": "gdz01/007-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/007-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 8,
+    "numero_image": 8,
+    "name": "Godzilla, Titan of Terror",
+    "type": "character",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "fire",
+      "water"
+    ],
+    "keywords": [
+      "Giant",
+      "Monster"
+    ],
+    "text": "Response: After you play a card with printed difficulty 5 or greater, add 1 Power token to your stage. If this is the second time or greater you have played this ability this turn, commit this card.\n\nForm [Once per turn]: Play 1 card with printed difficulty 5 from your discard pile as your next form (no check necessary).",
+    "hand_size": 6,
+    "vitality": 28,
+    "asset": "gdz01/008-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/008-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 9,
+    "numero_image": 9,
+    "name": "Hedorah, Smog Monster",
+    "type": "character",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "water"
+    ],
+    "keywords": [
+      "Giant",
+      "Monster"
+    ],
+    "text": "Response Mill 1: After your attack deals damage, your rival loses X health. X equals the block modifier of the card milled this way.\n\nResponse Commit: After you take damage from an unblocked attack, your rival adds the top card of their deck to their card pool face down.",
+    "hand_size": 6,
+    "vitality": 33,
+    "asset": "gdz01/009-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/009-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 10,
+    "numero_image": 10,
+    "name": "Jet Jaguar, Warrior of Justice",
+    "type": "character",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "good",
+      "void"
+    ],
+    "keywords": [
+      "Giant"
+    ],
+    "text": "Form [Once per turn]: Each player chooses 1 foundation in their rival's discard pile, then that rival builds the chosen card.\n\nEnhance: This attack gets +1 damage. Your next check this turn gets +1. If this is the third time you have played this ability this turn, commit this card.",
+    "hand_size": 6,
+    "vitality": 32,
+    "asset": "gdz01/010-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/010-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 11,
+    "numero_image": 11,
+    "name": "King Ghidorah, Three-Headed Monster",
+    "type": "character",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "death",
+      "evil"
+    ],
+    "keywords": [
+      "Giant",
+      "Monster"
+    ],
+    "text": "At the start of the game, add 3 King Ghidorah counters to this card.\n\nResponse Remove 1 King Ghidorah counter: Before the damage step of your rival's attack, reduce its damage to 3.\n\nEnhance Remove 1 card from your hand: Draw 1 card. Your attack gets +2 speed or +3 damage.",
+    "hand_size": 5,
+    "vitality": 33,
+    "asset": "gdz01/011-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/011-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 12,
+    "numero_image": 12,
+    "name": "Mechagodzilla, Modified Type-3 Kiryu",
+    "type": "character",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "order"
+    ],
+    "keywords": [
+      "Giant"
+    ],
+    "text": "You may look at and play cards in your removed pile with Kiryu counters on them as though they were in your hand.\n\nAt the start of your Combat Phase, remove the top card of your deck face down with a Kiryu counter on it.\n\nEnhance: This attack gets +2 damage. If it is completely blocked, commit 1 rival foundation.",
+    "hand_size": 5,
+    "vitality": 32,
+    "asset": "gdz01/012-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/012-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 13,
+    "numero_image": 13,
+    "name": "Mothra, Divine Moth",
+    "type": "character",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "good",
+      "order"
+    ],
+    "keywords": [
+      "Giant",
+      "Monster"
+    ],
+    "text": "Response [Tenacious]: After an attack is blocked, the next attack this turn gets +3 or -2 speed.\n\nEnhance [Rival's turn] Commit: This attack is considered completely blocked during the Block Step.",
+    "hand_size": 7,
+    "vitality": 20,
+    "asset": "gdz01/013-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/013-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 14,
+    "numero_image": 14,
+    "name": "Rodan, Fire Rodan",
+    "type": "character",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "void"
+    ],
+    "keywords": [
+      "Giant",
+      "Monster"
+    ],
+    "text": "Enhance: This attack gets +3 or -2 damage. Only playable if this attack's speed is greater than its printed speed.\n\nEnhance Spend 1 momentum: Seal 1 non-character card in your rival's card pool or stage.",
+    "hand_size": 6,
+    "vitality": 32,
+    "asset": "gdz01/014-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/014-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 15,
+    "numero_image": 15,
+    "name": "SpaceGodzilla, Bio-Quartz Monster",
+    "type": "character",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "keywords": [
+      "Giant",
+      "Monster"
+    ],
+    "text": "First Form Spend 1 momentum: Your checks to play attacks with printed difficulty 5 or greater get +1. Add 2 Power tokens to your stage.\n\nResponse Commit: After your rival makes a check to play a non-foundation card, that check gets -3. Failing that check does not end the Combat Phase. If your rival passes the check, add the top card of your deck to your momentum.",
+    "hand_size": 6,
+    "vitality": 32,
+    "asset": "gdz01/015-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/015-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 16,
+    "numero_image": 16,
+    "name": "Sky Dominance",
+    "type": "action",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "While this card is in your card pool, your  attacks get +1 speed and +1 damage.\n\nForm: Draw 1 card. If your next  attack this turn deals damage, you may clear it from your card pool after it resolves.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "asset": "gdz01/016-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/016-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 17,
+    "numero_image": 17,
+    "name": "Antenna Beams",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "Blitz: If you have a Power token in your stage, this attack gets +2 speed.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "gdz01/017-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/017-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 18,
+    "numero_image": 18,
+    "name": "Plunging Talon",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "keywords": [
+      "Slam"
+    ],
+    "text": "Blitz: Your next check to play a  attack gets +1.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "gdz01/018-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/018-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 19,
+    "numero_image": 19,
+    "name": "Cybertronic Weaponry",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "Enhance Sacrifice, sacrifice 2 Power tokens: Clear 1 card from your card pool.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/019-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/019-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 20,
+    "numero_image": 20,
+    "name": "Hovering Above",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "Enhance Flip: If your rival has cycled this game, this attack gets +4 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/020-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/020-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 21,
+    "numero_image": 21,
+    "name": "Invade from Space",
+    "type": "action",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all"
+    ],
+    "text": "Enhance Remove: Look at the top 3 cards of your deck and put them back in any order. Add 1 Power token to your stage.",
+    "difficulty": 0,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "gdz01/021-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/021-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 22,
+    "numero_image": 22,
+    "name": "Gathered Energy",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all"
+    ],
+    "text": "Blitz: If you have a Power token in your stage, draw 1 card.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "gdz01/022-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/022-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 23,
+    "numero_image": 23,
+    "name": "Otherworldy Power",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all"
+    ],
+    "keywords": [
+      "Fury"
+    ],
+    "text": "Blitz Discard 1 card: Draw 1 card. Look at the top card of your deck.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "gdz01/023-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/023-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 24,
+    "numero_image": 24,
+    "name": "Adapting Tactics",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all"
+    ],
+    "text": "Enhance Flip: If your rival has cycled this game, draw 2 cards.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/024-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/024-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 25,
+    "numero_image": 25,
+    "name": "Built for Battle",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all"
+    ],
+    "text": "Enhance Flip: Choose 1 keyword ability on this attack. Its keyword rating gets +1.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/025-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/025-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 26,
+    "numero_image": 26,
+    "name": "Terrorizing Force",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all"
+    ],
+    "text": "Enhance Sacrifice, sacrifice 2 Power tokens: Draw 2 cards. Add 1 card from your hand to the top of your deck.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "gdz01/026-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/026-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 27,
+    "numero_image": 27,
+    "name": "Crystal Formation",
+    "type": "action",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos"
+    ],
+    "text": "Enhance: Your next check gets +2. Add 1 Power token to your stage.\n\nFirst Enhance: Your rival's next check gets -2.",
+    "difficulty": 0,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/027-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/027-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 28,
+    "numero_image": 28,
+    "name": "Jet Front Kick",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos"
+    ],
+    "keywords": [
+      "Kick",
+      "Tech"
+    ],
+    "text": "Response: After this attack deals damage, your next check gets +1.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "gdz01/028-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/028-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 29,
+    "numero_image": 29,
+    "name": "Paired Beams",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "Blitz Mill 2: This attack gets +X damage. X equals the total printed difficulty of the cards milled this way.\n\nResponse: At the start of the End Phase, add this card to your momentum.",
+    "difficulty": 5,
+    "control": 2,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "gdz01/029-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/029-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 30,
+    "numero_image": 30,
+    "name": "Spiked Tail Whip",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos"
+    ],
+    "text": "Blitz: If you have a Power token in your stage, add the top card of your deck to your momentum.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "gdz01/030-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/030-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 31,
+    "numero_image": 31,
+    "name": "Collateral Destruction",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos"
+    ],
+    "text": "Enhance Flip: If your rival has cycled this game, your next check gets +3.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/031-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/031-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 32,
+    "numero_image": 32,
+    "name": "Volatile Encounter",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos"
+    ],
+    "text": "Enhance Sacrifice, sacrifice 1 Power token: Add 1 card from your discard pile to your momentum.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/032-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/032-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 33,
+    "numero_image": 33,
+    "name": "Monster of the Deep",
+    "type": "action",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death"
+    ],
+    "text": "First Form Remove: Your rival sacrifices 1 foundation.\n\nResponse: After you play this card, gain 2 health or add 1 Destoroyah counter to your character.",
+    "difficulty": 5,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "gdz01/033-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/033-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 34,
+    "numero_image": 34,
+    "name": "Horn Stab",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death"
+    ],
+    "text": "Powerful: 2 - Slam\n\nDeadlock Blitz: Ruin 3.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 7,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "gdz01/034-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/034-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 35,
+    "numero_image": 35,
+    "name": "Sweeping Destruction",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "Blitz: Your rival sacrifices 1 foundation.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 6,
+    "asset": "gdz01/035-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/035-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 36,
+    "numero_image": 36,
+    "name": "Weaponized Wreckage",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death"
+    ],
+    "text": "Blitz: If you have a Power token in your stage, ruin 1.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "gdz01/036-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/036-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 37,
+    "numero_image": 37,
+    "name": "Destoroyah Emerges",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death"
+    ],
+    "text": "First Enhance [Your turn] Sacrifice, sacrifice X Power tokens: Destroy 1 rival foundation with difficulty X.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "gdz01/037-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/037-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 38,
+    "numero_image": 38,
+    "name": "Destructive Tendencies",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death"
+    ],
+    "text": "Enhance Flip: If your rival has cycled this game, destroy 1 rival foundation.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/038-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/038-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 39,
+    "numero_image": 39,
+    "name": "Hold 'Em Down",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "text": "Throw\n\nBlitz: Your next attack gets +2 speed.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 1,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "gdz01/039-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/039-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 40,
+    "numero_image": 40,
+    "name": "Shrouded Swing",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "text": "Blitz: If you have a Power token in your stage, flip 1 rival foundation.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 6,
+    "asset": "gdz01/040-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/040-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 41,
+    "numero_image": 41,
+    "name": "Tail Trip",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "text": "Deadlock Stun: 3 - Throw",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "low",
+    "damage": 8,
+    "asset": "gdz01/041-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/041-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 42,
+    "numero_image": 42,
+    "name": "Defiant Roar",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "text": "Enhance Flip, commit 1 Power token: Draw 1 card.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "gdz01/042-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/042-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 43,
+    "numero_image": 43,
+    "name": "Hedrium Endurance",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "text": "Deflect: 2\n\nEnhance Sacrifice: Add 1 Deflect card from your discard pile to your hand.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 4,
+    "block_zone": "mid",
+    "asset": "gdz01/043-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/043-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 44,
+    "numero_image": 44,
+    "name": "Natural Cover",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "text": "Enhance Sacrifice, sacrifice 2 Power tokens: Reduce this attack's damage to 1.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/044-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/044-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 45,
+    "numero_image": 45,
+    "name": "Towering Stature",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "text": "Enhance Flip: If your rival has cycled this game, flip 2 rival foundations.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/045-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/045-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 46,
+    "numero_image": 46,
+    "name": "Bloody Chainsaws",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Fury"
+    ],
+    "text": "Blitz: If you have a Power token in your stage, your rival's next check to play a card gets -3.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 7,
+    "asset": "gdz01/046-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/046-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 47,
+    "numero_image": 47,
+    "name": "Hammer-Hand Pierce",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Frenzy",
+      "Fury",
+      "Punch",
+      "Weapon"
+    ],
+    "text": "",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "gdz01/047-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/047-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 48,
+    "numero_image": 48,
+    "name": "Mechanical Legion",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Echo",
+      "Tech"
+    ],
+    "text": "You can include up to 6 copies of this card in your deck.\n\nThis attack gets -1 difficulty for each time you have played a copy of \"Mechanical Legion\" this turn.\n\nBlitz: This attack gets +1 damage for each foundation in your rival's stage (max. +8).",
+    "difficulty": 6,
+    "control": 2,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 0,
+    "asset": "gdz01/048-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/048-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 49,
+    "numero_image": 49,
+    "name": "Intimidating Size",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Enhance Flip: If your rival has cycled this game, their next check gets -3.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/049-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/049-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 50,
+    "numero_image": 50,
+    "name": "Need for Destruction",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Enhance: If you have removed a card to pay a cost this Enhance Step, your attack gets +1 speed.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "gdz01/050-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/050-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 51,
+    "numero_image": 51,
+    "name": "Spiteful Intentions",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Enhance Commit: This attack gets -2 speed. If it has the  symbol, it gets -3 speed instead.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "gdz01/051-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/051-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 52,
+    "numero_image": 52,
+    "name": "The Power of SpaceGodzilla",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Response Sacrifice, sacrifice 2 Power tokens: After your rival makes a check, that check gets -4.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/052-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/052-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 53,
+    "numero_image": 53,
+    "name": "Unbelievable Power",
+    "type": "action",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "First Form Remove: Add 1 Power token to your stage and draw 1 card.",
+    "difficulty": 5,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "asset": "gdz01/053-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/053-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 54,
+    "numero_image": 54,
+    "name": "Monster Swing",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Slam",
+      "Weapon"
+    ],
+    "text": "Monster Blitz Lose 2 health: This attack gets +4 speed or +4 damage.\n\nResponse: After this attack is blocked, your rival flips 1 foundation.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "gdz01/054-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/054-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 55,
+    "numero_image": 55,
+    "name": "Rapid Talon Slash",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "Blitz: If you have a Power token in your stage, this attack gets +3 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "gdz01/055-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/055-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 56,
+    "numero_image": 56,
+    "name": "Roar of the Kaiju",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "Enhance Sacrifice, sacrifice 2 Power tokens: This attack gets +3 speed and +6 damage.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/056-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/056-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 57,
+    "numero_image": 57,
+    "name": "Savage Combatants",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "Enhance Flip: If your rival has cycled this game, this attack gets +5 damage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/057-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/057-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 58,
+    "numero_image": 58,
+    "name": "Protector of Life",
+    "type": "action",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Breaker: 1\n\nResponse: After you block with this card, this attack deals no damage. Add 1 Power token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/058-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/058-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 59,
+    "numero_image": 59,
+    "name": "Jet Somersault Kick",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Blitz: If you have a Power token in your stage, build 1 non-Unique foundation from your discard pile committed.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "gdz01/059-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/059-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 60,
+    "numero_image": 60,
+    "name": "Benevolent Kaiju",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Enhance Commit: This attack gets -2 speed. If it has the  symbol, it gets -3 speed instead.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "gdz01/060-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/060-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 61,
+    "numero_image": 61,
+    "name": "Harmonious Spirit",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Enhance Flip: If your rival has cycled this game, add 1 card from your discard pile to your hand.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/061-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/061-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 62,
+    "numero_image": 62,
+    "name": "Standing Tall",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Enhance Sacrifice, sacrifice X Power tokens: Build 1 foundation from your discard pile with difficulty X.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/062-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/062-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 63,
+    "numero_image": 63,
+    "name": "Threat Neutralized",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Tech"
+    ],
+    "text": "This card cannot be destroyed by rival effects.\n\nResponse Commit: After 1 or more of your foundations is destroyed by a rival effect, build 1 foundation from your discard pile committed.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/063-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/063-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 64,
+    "numero_image": 64,
+    "name": "Gale-Force Winds",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "life"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "Blitz: If you have a Power token in your stage, gain 2 health.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "gdz01/064-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/064-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 65,
+    "numero_image": 65,
+    "name": "Scattering Gust",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "life"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "Blitz: Gain 2 health. If you are at maximum health, this attack gets +2 damage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 5,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "gdz01/065-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/065-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 66,
+    "numero_image": 66,
+    "name": "Rampant Growth",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "life"
+    ],
+    "text": "Enhance Sacrifice, sacrifice 2 Power tokens: The next card you play this turn ignores progressive difficulty.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/066-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/066-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 67,
+    "numero_image": 67,
+    "name": "Resilient Spirit",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "life"
+    ],
+    "text": "Enhance Flip: If your rival has cycled this game, choose 1 card in your card pool. It does not count toward progressive difficulty this turn.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/067-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/067-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 68,
+    "numero_image": 68,
+    "name": "Wrath of Godzilla",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "life"
+    ],
+    "text": "Enhance [Tenacious, Once per turn] Sacrifice 1 Power token: Ready this foundation.\n\nResponse Commit: After 1 or more rival foundations is destroyed due to your effect, gain 2 health.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "gdz01/068-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/068-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 69,
+    "numero_image": 69,
+    "name": "Beam Combo",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "order"
+    ],
+    "text": "Breaker: 1 - Ranged - Tech\n\nBlitz: If an attack has been blocked this turn, this attack gets +3 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "gdz01/069-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/069-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 70,
+    "numero_image": 70,
+    "name": "Mouth Cannon",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "order"
+    ],
+    "keywords": [
+      "Ranged",
+      "Tech"
+    ],
+    "text": "Blitz: If you have a Power token in your stage, commit 1 rival foundation.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "gdz01/070-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/070-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 71,
+    "numero_image": 71,
+    "name": "Multiple Interlocking Rockets",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "order"
+    ],
+    "keywords": [
+      "Ranged",
+      "Tech"
+    ],
+    "text": "",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 0,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "gdz01/071-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/071-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 72,
+    "numero_image": 72,
+    "name": "Advanced Preparations",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "order"
+    ],
+    "text": "Enhance Flip: If your rival has cycled this game, commit 2 rival foundations.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/072-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/072-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 73,
+    "numero_image": 73,
+    "name": "Mechagodzilla Arrives",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "order"
+    ],
+    "text": "Enhance Sacrifice, sacrifice 1 Power token: Commit 1 non-character card in your rival's stage.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/073-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/073-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 74,
+    "numero_image": 74,
+    "name": "Crashing Down",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "EX: 2 - Slam\n\nBlitz Flip 1 foundation: This attack gets +2 speed.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 6,
+    "asset": "gdz01/074-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/074-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 75,
+    "numero_image": 75,
+    "name": "Overwhelming Force",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Punch"
+    ],
+    "text": "Blitz: If you have a Power token in your stage, seal 1 rival foundation.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "gdz01/075-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/075-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 76,
+    "numero_image": 76,
+    "name": "Colossal Staredown",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Enhance Sacrifice, sacrifice 3 Power tokens: Your rival reveals their hand. Choose 1 card revealed this way and discard it.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "gdz01/076-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/076-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 77,
+    "numero_image": 77,
+    "name": "Intergalactic Monster",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Enhance Flip: If your rival has cycled this game, they discard 1 card.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/077-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/077-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 78,
+    "numero_image": 78,
+    "name": "Ruthless Guardian",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Enhance Flip: Each player seals 1 rival non-character card.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/078-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/078-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 79,
+    "numero_image": 79,
+    "name": "Valiant Hero",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Enhance Commit: This attack gets +3 or -3 speed.\n\nResponse [Tenacious] Flip: After your rival plays a Blitz ability, cancel it.",
+    "difficulty": 5,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/079-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/079-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 80,
+    "numero_image": 80,
+    "name": "Unnatural Growth",
+    "type": "action",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "First Enhance Remove: Each player adds the top card of their deck to their card pool.",
+    "difficulty": 0,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/080-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/080-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 81,
+    "numero_image": 81,
+    "name": "Acidic Sap",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "Blitz: If you have a Power token in your stage, ready 1 foundation that hasn't been readied this Combat Phase.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "gdz01/081-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/081-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 82,
+    "numero_image": 82,
+    "name": "Aquatic Approach",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "Response: After this attack is blocked, ready 1 foundation.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "gdz01/082-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/082-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 83,
+    "numero_image": 83,
+    "name": "Tangled Grasp",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "Throw\n\nBlitz: This attack gets +1 speed for each face down card in your card pool.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "gdz01/083-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/083-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 84,
+    "numero_image": 84,
+    "name": "Absorbing Pollution",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "Enhance Sacrifice, sacrifice 1 Power token: Ready up to 2 foundations with difficulty 2 or less.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/084-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/084-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 85,
+    "numero_image": 85,
+    "name": "Transforming Body",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "Enhance Flip: If your rival has cycled this game, ready 2 foundations.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/085-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/085-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 86,
+    "numero_image": 86,
+    "name": "Air Force Engage",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "keywords": [
+      "Ranged",
+      "Weapon"
+    ],
+    "text": "Blitz Sacrifice 1 foundation: This attack gets +2 damage.\n\nResponse: After this attack deals damage, add 1  card from your discard pile to your hand.",
+    "difficulty": 4,
+    "control": 2,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 6,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "gdz01/086-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/086-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 87,
+    "numero_image": 87,
+    "name": "Engage the Monster",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "keywords": [
+      "Ranged",
+      "Weapon"
+    ],
+    "text": "Blitz: If your rival has 5 or more Power tokens, they sacrifice 2 Power tokens. Otherwise, they sacrifice 1 Power token.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "gdz01/087-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/087-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 88,
+    "numero_image": 88,
+    "name": "Ground Forces Engage",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "keywords": [
+      "Ranged",
+      "Weapon"
+    ],
+    "text": "Blitz: Your next attack gets +2 speed. If your rival has 10 or more foundations, it gets +5 speed instead.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "gdz01/088-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/088-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 89,
+    "numero_image": 89,
+    "name": "Humanity Fights On",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "text": "Powerful: 3\n\nThis card gets -1 difficulty for each  card in your stage.\n\nBlitz: Change the zone of this attack.",
+    "difficulty": 13,
+    "control": 4,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "speed": 7,
+    "attack_zone": "mid",
+    "damage": 7,
+    "asset": "gdz01/089-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/089-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 90,
+    "numero_image": 90,
+    "name": "Repelling Fire",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "",
+    "difficulty": 6,
+    "control": 4,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "gdz01/090-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/090-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 91,
+    "numero_image": 91,
+    "name": "Combat Submarine",
+    "type": "backup",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "text": "Enhance Commit: Your attack gets +4 damage. Only playable if you have 7 or or more  cards in your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "asset": "gdz01/091-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/091-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 92,
+    "numero_image": 92,
+    "name": "Fighter Jets",
+    "type": "backup",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "text": "Enhance Commit: This attack gets +1 or -2 speed. Your rival sacrifices 1 Power token.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "asset": "gdz01/092-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/092-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 93,
+    "numero_image": 93,
+    "name": "Ancient Research",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "keywords": [
+      "Tech"
+    ],
+    "text": "Enhance Sacrifice: Add 1  card from your card pool to your momentum.",
+    "difficulty": 4,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/093-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/093-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 94,
+    "numero_image": 94,
+    "name": "Defensive Preparations",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "text": "Enhance Commit: This attack gets -2 speed. If you have 3 or more  cards in your stage, it gets -3 speed instead.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/094-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/094-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 95,
+    "numero_image": 95,
+    "name": "Final Wars",
+    "type": "foundation",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "text": "Unique\n\nWhile this card is in your stage, all attacks get +1 damage.\n\nResponse [Once per turn]: After your attack deals damage, draw 1 card.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 4,
+    "block_zone": "mid",
+    "asset": "gdz01/095-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/095-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 96,
+    "numero_image": 96,
+    "name": "High Guard",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "text": "",
+    "difficulty": 0,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "gdz01/096-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/096-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 97,
+    "numero_image": 97,
+    "name": "Low Guard",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "text": "",
+    "difficulty": 0,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "gdz01/097-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/097-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 98,
+    "numero_image": 98,
+    "name": "Strategy Meeting",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "text": "Enhance Flip: Look at the top card of your deck. If you have 3 or more other  cards in your stage, you may draw 1 card.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/098-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/098-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 99,
+    "numero_image": 99,
+    "name": "Emerge from the Depths",
+    "type": "action",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "life",
+      "water"
+    ],
+    "text": "Form: Add 1 card from your discard pile to your hand.",
+    "difficulty": 5,
+    "control": 4,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/099-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/099-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 100,
+    "numero_image": 100,
+    "name": "Power of the Monsters",
+    "type": "action",
+    "rarity": "secret rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "order",
+      "void"
+    ],
+    "text": "Breaker: 1\n\nResponse Sacrifice 1 foundation: After your rival plays the same ability on the same card for the second time or greater this turn, seal 1 card in their stage. Add 1 Power token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/100-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/100-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 101,
+    "numero_image": 101,
+    "name": "Repair",
+    "type": "action",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "good",
+      "life"
+    ],
+    "text": "First Form Remove: Gain 6 health. Add 1 Power token to your stage.",
+    "difficulty": 6,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/101-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/101-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 102,
+    "numero_image": 102,
+    "name": "Sacred Guardian",
+    "type": "action",
+    "rarity": "secret rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "good",
+      "life"
+    ],
+    "text": "Breaker: 1\n\nIf you have no ready foundations, this card gets -2 to its block modifier.\n\nResponse Remove: After you block with this card, draw 2 cards, discard 1 card, and gain 2 health.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/102-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/102-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 103,
+    "numero_image": 103,
+    "name": "Total Destruction",
+    "type": "action",
+    "rarity": "secret rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "evil"
+    ],
+    "text": "First Form Remove: Destroy all assets, backups and foundations in play. Add 2 Power tokens to your stage. Your Combat Phase ends.\n\nResponse Remove: After you block with this card, Ruin 1.",
+    "difficulty": 8,
+    "control": 4,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/103-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/103-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 104,
+    "numero_image": 104,
+    "name": "Xilien Invasion",
+    "type": "action",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "chaos",
+      "evil"
+    ],
+    "text": "Form Remove, remove 1 copy of \"Xilien Invasion\" from your hand: Name a card. Search your deck for up to 3 copies of the named card, reveal them, and add them to your hand.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/104-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/104-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 105,
+    "numero_image": 105,
+    "name": "Acidic Clutches",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "water"
+    ],
+    "text": "When you try to block with this card, reduce the speed of your rival's attack to 1.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 4,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "gdz01/105-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/105-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 106,
+    "numero_image": 106,
+    "name": "Acidic Sludge",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "water"
+    ],
+    "text": "Deflect: 4 - Slam\n\nBlitz: Your rival adds the top card of their deck to their card pool face down.\n\nBlitz Spend 1 momentum: Add 2 cards from your discard pile to the top of your deck in any order. This attack gets +2 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "gdz01/106-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/106-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 107,
+    "numero_image": 107,
+    "name": "Airborne Ambush",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "order",
+      "void"
+    ],
+    "text": "Blitz: Ready your character.",
+    "difficulty": 6,
+    "control": 1,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 6,
+    "attack_zone": "high",
+    "damage": 6,
+    "asset": "gdz01/107-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/107-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 108,
+    "numero_image": 108,
+    "name": "Alien Incursion",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "evil",
+      "order"
+    ],
+    "keywords": [
+      "Ranged",
+      "Tech"
+    ],
+    "text": "Blitz: Look at the top card of your deck. You may mill 1.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "gdz01/108-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/108-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 109,
+    "numero_image": 109,
+    "name": "Anguirus Ball",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "fire"
+    ],
+    "text": "Breaker: 1 - EX: 3 - Fury - Slam\n\nThis attack gets -1 difficulty for each Power token in your stage (max. -4).\n\nResponse: After this attack deals damage, draw 1 card.",
+    "difficulty": 8,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 5,
+    "attack_zone": "low",
+    "damage": 7,
+    "asset": "gdz01/109-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/109-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 110,
+    "numero_image": 110,
+    "name": "Bite and Claw",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "keywords": [
+      "Fury",
+      "Punch"
+    ],
+    "text": "Blitz Sacrifice 1 Power token: This attack gets +4 speed.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "gdz01/110-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/110-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 111,
+    "numero_image": 111,
+    "name": "Bladed Uppercut",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "all",
+      "evil"
+    ],
+    "text": "EX: 2 - Frenzy - Fury - Powerful: 2 - Punch - Stun: 1 - Weapon\n\nBlitz: If your rival has 15 or less health, each of this attack's keywords gets +1 to its rating.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "gdz01/111-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/111-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 112,
+    "numero_image": 112,
+    "name": "Blasting Off",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "order"
+    ],
+    "text": "Deadlock Stun: 3 - EX: 2 - Powerful: 2 - Tech\n\nResponse: After you play a keyword ability, draw 1 card.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "gdz01/112-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/112-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 113,
+    "numero_image": 113,
+    "name": "Brutal Bite",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "fire"
+    ],
+    "keywords": [
+      "Fury"
+    ],
+    "text": "Blitz Commit up to 3 Power tokens: Add 1 Power token to your stage for each Power token committed this way.",
+    "difficulty": 5,
+    "control": 2,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 6,
+    "asset": "gdz01/113-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/113-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 114,
+    "numero_image": 114,
+    "name": "Bug Bite",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "good",
+      "order"
+    ],
+    "text": "Blitz: Add 1 card from your discard pile to the top of your deck.\n\nResponse Spend 1 momentum: After you block with this card, ready your character.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 0,
+    "block_zone": "high",
+    "speed": 1,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "gdz01/114-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/114-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 115,
+    "numero_image": 115,
+    "name": "Burning Fury",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "fire",
+      "void"
+    ],
+    "keywords": [
+      "Fury"
+    ],
+    "text": "Blitz Mill 8: This attack gets +1 speed for each attack in your discard pile (max. +5).",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 7,
+    "asset": "gdz01/115-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/115-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 116,
+    "numero_image": 116,
+    "name": "Corona Beam",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "text": "Breaker: 1\n\nBlitz: If the check to play this card was modified, add 1 Power token to your stage.\n\nBlitz Commit up to 2 Power tokens: Seal 1 rival foundation for each Power token committed this way.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 6,
+    "asset": "gdz01/116-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/116-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 117,
+    "numero_image": 117,
+    "name": "Corrosive Body",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "water"
+    ],
+    "text": "Deflect: 4\n\nResponse: After this attack deals damage, add 1 Power token to your stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 6,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "gdz01/117-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/117-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 118,
+    "numero_image": 118,
+    "name": "Crushing Impact",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "fire",
+      "water"
+    ],
+    "keywords": [
+      "Slam"
+    ],
+    "text": "Blitz: This attack gets +1 speed for each Power token in your stage.\n\nBlitz: If this is the second attack or greater played this turn, ready 1 foundation.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 6,
+    "asset": "gdz01/118-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/118-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 119,
+    "numero_image": 119,
+    "name": "Deep-Sea Shred",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "life"
+    ],
+    "text": "Response: After this attack is blocked, add 1 Power token to your stage and gain 1 health.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 7,
+    "asset": "gdz01/119-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/119-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 120,
+    "numero_image": 120,
+    "name": "Destructive Heat Ray",
+    "type": "attack",
+    "rarity": "secret rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "fire",
+      "water"
+    ],
+    "keywords": [
+      "Fury",
+      "Ranged"
+    ],
+    "text": "Blitz: Add 2 Power tokens to your stage. Flip 1 rival foundation with difficulty less than the number of Power tokens in your stage.\n\nResponse: After this attack deals damage, ready 1 foundation.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "low",
+    "damage": 3,
+    "asset": "gdz01/120-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/120-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 121,
+    "numero_image": 121,
+    "name": "Flying Menace",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "life",
+      "water"
+    ],
+    "text": "Breaker: 1\n\nResponse: After this attack deals damage, add 2 Destoroyah counters to your character.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "gdz01/121-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/121-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 122,
+    "numero_image": 122,
+    "name": "Focused Prism Beams",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "order",
+      "void"
+    ],
+    "text": "Deadlock Powerful: 5 - Ranged\n\nBlitz: This attack gets +3 speed. Only playable if your rival has 4 or more committed foundations.\n\nResponse: After this attack resolves, if it received a speed and damage bonus, commit and freeze 1 rival non-character card.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "gdz01/122-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/122-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 123,
+    "numero_image": 123,
+    "name": "Frenzied Dive",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "void"
+    ],
+    "text": "EX: 2 - Fury - Powerful: 2\n\nWhile this card is in your cardpool, your attacks get +1 speed and you may sacrifice Power tokens as though you were spending momentum to pay for EX abilities.\n\nBlitz: Commit and seal 1 rival asset or foundation.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 2,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "gdz01/123-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/123-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 124,
+    "numero_image": 124,
+    "name": "Fully-Charged Blast",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "water"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "Blitz Sacrifice 2 foundations: Add 3 Power tokens to your stage.\n\nResponse: After you sacrifice 1 or more Power tokens, this attack gets +1 speed.",
+    "difficulty": 7,
+    "control": 4,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 6,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "gdz01/124-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/124-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 125,
+    "numero_image": 125,
+    "name": "Fusion Chest Cannon",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "order"
+    ],
+    "text": "Breaker: 1 - Charge - Ranged - Tech\n\nResponse: After this attack deals damage to a character, your rival commits 2 foundations. Freeze 2 rival foundations.\n\nMechagodzilla Response [Card Pool]: At the start of the End Phase, remove this card with a Kiryu counter on it. Only playable if you blocked with this card this turn.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "gdz01/125-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/125-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 126,
+    "numero_image": 126,
+    "name": "Gliding Approach",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "order",
+      "void"
+    ],
+    "text": "Stun: 1\n\nBlitz Spend 1 momentum: This attack gets +2 to its Stun rating.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "gdz01/126-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/126-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 127,
+    "numero_image": 127,
+    "name": "Golden Destruction",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "death",
+      "evil"
+    ],
+    "keywords": [
+      "Echo",
+      "Ranged"
+    ],
+    "text": "Blitz: If you have 8 or more cards in your removed pile, this attack gets +2 speed.\n\nResponse: After you remove 1 or more cards from your hand, draw 1 card.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "gdz01/127-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/127-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 128,
+    "numero_image": 128,
+    "name": "Gravity-Beam Volley",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "death",
+      "evil"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "You cannot play this card if there is a copy of \"Gravity-Beam Volley\" in your card pool.\n\nResponse [Card Pool]: After you remove 1 or more cards to pay a cost, add this card to your hand.",
+    "difficulty": 4,
+    "control": 1,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "gdz01/128-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/128-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 129,
+    "numero_image": 129,
+    "name": "Growing Grasp",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "life",
+      "water"
+    ],
+    "text": "EX: 3 - Throw\n\nFace down cards do not count toward progressive difficulty to play this card.\n\nBlitz: This attack gets +X damage. X equals the number of cards in all card pools.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "gdz01/129-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/129-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 130,
+    "numero_image": 130,
+    "name": "Hammer-Hand Pummel",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "all",
+      "evil"
+    ],
+    "keywords": [
+      "Fury",
+      "Punch",
+      "Weapon"
+    ],
+    "text": "Blitz: If you have removed a card this turn, add 1 Power token to your stage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "gdz01/130-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/130-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 131,
+    "numero_image": 131,
+    "name": "Hedrium Ray",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "water"
+    ],
+    "text": "Deflect: 2 - Ranged\n\nBlitz Flip 1 foundation: This attack can be blocked only by cards with a printed block modifier of 3 or greater.",
+    "difficulty": 5,
+    "control": 2,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 7,
+    "asset": "gdz01/131-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/131-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 132,
+    "numero_image": 132,
+    "name": "Integrated Weapons",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "order"
+    ],
+    "text": "Stun: 1 - Tech\n\nMechagodzilla Response Commit 1 foundation or spend 1 momentum: At the start of the End Phase, remove this card with a Kiryu counter on it.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "gdz01/132-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/132-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 133,
+    "numero_image": 133,
+    "name": "Jet Haymaker",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "good",
+      "void"
+    ],
+    "text": "Deadlock Powerful: 3 - Punch - Tech\n\nBlitz: Add 2 cards from a player's discard pile to the bottom of their deck in any order.\n\nBlitz: This attack gets +1 speed for each foundation in your rival's stage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 0,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "gdz01/133-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/133-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 134,
+    "numero_image": 134,
+    "name": "Jet Uppercut",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "good",
+      "void"
+    ],
+    "text": "Deadlock Stun: 2 - Punch - Tech\n\nBlitz: Add up to 4 cards from your discard pile to the bottom of your deck in any order. This attack gets +1 damage for each non-attack card added this way.\n\nBlitz: If the check to play this card was modified, draw 1 card.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "low",
+    "damage": 3,
+    "asset": "gdz01/134-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/134-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 135,
+    "numero_image": 135,
+    "name": "Kaiju Brawl",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "fire",
+      "water"
+    ],
+    "keywords": [
+      "Fury"
+    ],
+    "text": "Response: After this attack deals damage, ready 1 foundation that has not been readied this Combat Phase.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "gdz01/135-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/135-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 136,
+    "numero_image": 136,
+    "name": "King Ghidorah Unleashed",
+    "type": "attack",
+    "rarity": "secret rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "evil",
+      "void"
+    ],
+    "keywords": [
+      "Fury",
+      "Ranged"
+    ],
+    "text": "If you have 10 or less health, this attack gets -1 difficulty.\n\nResponse: After this card is removed to pay a cost, you may try to play it from your removed pile for the rest of this turn. If you do, remove this card when it leaves your card pool.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "gdz01/136-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/136-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 137,
+    "numero_image": 137,
+    "name": "Malevolent Slash",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "all",
+      "evil"
+    ],
+    "keywords": [
+      "Fury",
+      "Punch",
+      "Weapon"
+    ],
+    "text": "Blitz: If you have 4 or more cards in your removed pile, look at the top 3 cards of your deck and put them back in any order.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 6,
+    "asset": "gdz01/137-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/137-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 138,
+    "numero_image": 138,
+    "name": "Malicious Assault",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "evil",
+      "void"
+    ],
+    "keywords": [
+      "Fury",
+      "Ranged"
+    ],
+    "text": "Blitz Remove 1 card from your discard pile: Remove up to 2 cards from your rival's discard pile.\n\nResponse: After this attack deals damage, your rival removes 1 card from their hand.",
+    "difficulty": 7,
+    "control": 4,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 6,
+    "attack_zone": "high",
+    "damage": 6,
+    "asset": "gdz01/138-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/138-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 139,
+    "numero_image": 139,
+    "name": "Mecha Bombardment",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "fire",
+      "order",
+      "void"
+    ],
+    "keywords": [
+      "Ranged",
+      "Tech"
+    ],
+    "text": "Blitz: If you have more cards in your removed pile than your rival, this attack gains Stun: 2.\n\nResponse: After this attack resolves, remove it. Only playable if you have fewer foundations than your rival.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "gdz01/139-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/139-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 140,
+    "numero_image": 140,
+    "name": "Mechanical Monster",
+    "type": "attack",
+    "rarity": "secret rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "fire",
+      "order"
+    ],
+    "text": "Powerful: 3 - Ranged - Tech\n\nBlitz: Your rival commits 1 foundation. If they have 10 or more foundations, commit 1 rival foundation.\n\nBlitz: This attack gets +1 speed for each committed rival foundation.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 7,
+    "asset": "gdz01/140-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/140-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 141,
+    "numero_image": 141,
+    "name": "Micro-Oxygen Beam",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "life",
+      "water"
+    ],
+    "text": "Stun: 1\n\nBlitz Remove up to 2 counters from your character: This attack gets +2 damage for each counter removed this way.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "gdz01/141-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/141-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 142,
+    "numero_image": 142,
+    "name": "Might of the Cosmos",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "text": "Breaker: 1\n\nResponse: After this attack is blocked, add it to your momentum.\n\nDeadlock Blitz: Add 2 Power tokens to your stage.",
+    "difficulty": 5,
+    "control": 1,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 7,
+    "asset": "gdz01/142-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/142-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 143,
+    "numero_image": 143,
+    "name": "Monster vs Machine",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "life",
+      "order"
+    ],
+    "text": "Breaker: 2 - Powerful: 2 - Ranged - Tech\n\nBlitz: Commit 1 rival asset or foundation. If your rival has 10 or more foundations, freeze it.\n\nResponse: After this attack deals damage, add 1 Power token to your stage.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "gdz01/143-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/143-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 144,
+    "numero_image": 144,
+    "name": "Monumental Dropkick",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "fire",
+      "water"
+    ],
+    "keywords": [
+      "Fury",
+      "Kick",
+      "Slam"
+    ],
+    "text": "Blitz: If you have 2 or more Power tokens in your stage, draw 2 cards. Discard 2 cards.\n\nDeadlock Blitz: Add 3 Power tokens to your stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "gdz01/144-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/144-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 145,
+    "numero_image": 145,
+    "name": "Oxygen Destroyer",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "life",
+      "water"
+    ],
+    "keywords": [
+      "Fury"
+    ],
+    "text": "Response: After you remove 1 or more counters from your character to pay a cost, add 1 Power token to your stage.\n\nForm [Discard Pile]: Try to play this attack from your discard pile. Only playable if 2 or more rival cards have been destroyed this Combat Phase.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "gdz01/145-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/145-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 146,
+    "numero_image": 146,
+    "name": "Plant Tendrils",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "life",
+      "water"
+    ],
+    "text": "Breaker: 1\n\nResponse: After this attack resolves, flip it.\n\nDeadlock Blitz: Ready 2 foundations.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "gdz01/146-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/146-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 147,
+    "numero_image": 147,
+    "name": "Plummeting Talon Strike",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "void"
+    ],
+    "text": "EX: 3\n\nBlitz: If you have 0 momentum, this attack gets +1 speed and +1 damage.\n\nResponse: After this attack deals damage, add 1 Power token to your stage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "gdz01/147-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/147-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 148,
+    "numero_image": 148,
+    "name": "Queen of the Monsters",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "earth",
+      "good"
+    ],
+    "keywords": [
+      "Charge",
+      "Ranged"
+    ],
+    "text": "Blitz Spend 1 momentum: Add 1 foundation from your discard pile to your card pool and draw 1 card.\n\nBlitz: Build 1 card from your card pool face up or face down.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 7,
+    "asset": "gdz01/148-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/148-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 149,
+    "numero_image": 149,
+    "name": "Rapid-Fire Prism Beams",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "order",
+      "void"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "Blitz: If your character is committed, add 1 Power token to your stage.\n\nDeadlock Blitz: Commit and freeze 2 rival foundations.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 3,
+    "asset": "gdz01/149-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/149-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 150,
+    "numero_image": 150,
+    "name": "Series of Strikes",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "good",
+      "void"
+    ],
+    "keywords": [
+      "Punch",
+      "Tech"
+    ],
+    "text": "Blitz: Add 3 non-attack cards from your discard pile to the bottom of your deck in a random order.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 2,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "gdz01/150-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/150-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 151,
+    "numero_image": 151,
+    "name": "Silk Cocoon",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "good",
+      "order"
+    ],
+    "text": "Powerful: 2 - Ranged\n\nResponse: After this attack deals damage, your next attack gets +2 speed.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "gdz01/151-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/151-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 152,
+    "numero_image": 152,
+    "name": "Silk Rain",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "good",
+      "order"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "Response: After this attack deals damage, build it face down committed.\n\nResponse: After this attack is blocked, add 1 Power token to your stage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "gdz01/152-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/152-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 153,
+    "numero_image": 153,
+    "name": "Sky-Piercing Heat Ray",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "fire",
+      "water"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "Blitz: This attack gets +1 speed and +1 damage for each other card with printed difficulty 5 or greater in your card pool.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "gdz01/153-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/153-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 154,
+    "numero_image": 154,
+    "name": "Thermal Flame",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "life"
+    ],
+    "keywords": [
+      "Echo",
+      "Frenzy",
+      "Ranged"
+    ],
+    "text": "This attack gets -1 difficulty if a rival foundation was destroyed this turn.\n\nThis attack cannot be partially blocked.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "gdz01/154-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/154-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 155,
+    "numero_image": 155,
+    "name": "Triple Beam",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "death",
+      "evil"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "Blitz: This attack gets +1 damage for each foundation in your rival's stage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 0,
+    "asset": "gdz01/155-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/155-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 156,
+    "numero_image": 156,
+    "name": "Winged Death",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "all",
+      "void"
+    ],
+    "text": "Breaker: 2\n\nBlitz Mill 2: Remove 1 card from your discard pile. This attack gets +X speed. X equals the printed difficulty of the removed card.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 0,
+    "attack_zone": "high",
+    "damage": 6,
+    "asset": "gdz01/156-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/156-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 157,
+    "numero_image": 157,
+    "name": "Wrecking the City",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "life"
+    ],
+    "text": "Blitz: If you have gained health this turn, this attack gets +1 speed and +1 damage.\n\nDeadlock Blitz: Destroy 1 rival foundation.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "gdz01/157-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/157-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 158,
+    "numero_image": 158,
+    "name": "Artificial Power",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "evil",
+      "order"
+    ],
+    "keywords": [
+      "Tech"
+    ],
+    "text": "Enhance Flip: Your rival sacrifices 1 Power token. Your attack gets +2 damage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "gdz01/158-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/158-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 159,
+    "numero_image": 159,
+    "name": "Battra Arrives",
+    "type": "foundation",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "order",
+      "void"
+    ],
+    "text": "Response Commit: After your rival plays an ability on a foundation, cancel that ability and seal that foundation.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "gdz01/159-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/159-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 160,
+    "numero_image": 160,
+    "name": "Biollante Arrives",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "life",
+      "water"
+    ],
+    "text": "Face down cards do not count toward progressive difficulty to play this card.\n\nEnhance Flip: Add 1 Power token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/160-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/160-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 161,
+    "numero_image": 161,
+    "name": "Blooming Beast",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "life",
+      "water"
+    ],
+    "text": "Enhance Flip: Face down cards do not count toward progressive difficulty to play foundations this turn.",
+    "difficulty": 2,
+    "control": 6,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/161-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/161-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 162,
+    "numero_image": 162,
+    "name": "Brace for Impact",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "order"
+    ],
+    "text": "Deadlock Breaker: 2\n\nWhen you try to block with this card, return your rival's attack to its printed speed and zone.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/162-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/162-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 163,
+    "numero_image": 163,
+    "name": "Brush Off",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "order"
+    ],
+    "text": "When you completely block with this card, the blocked attack deals 1 damage during the Damage Step.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "asset": "gdz01/163-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/163-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 164,
+    "numero_image": 164,
+    "name": "Brutal Fighting Style",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "all",
+      "evil"
+    ],
+    "text": "Enhance Remove: Reveal the top card of your deck. This attack gets +X damage. X equals the difficulty of the revealed card.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/164-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/164-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 165,
+    "numero_image": 165,
+    "name": "Can't Escape Me",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "order",
+      "void"
+    ],
+    "text": "Response Sacrifice: After your rival plays an ability on a non-character card that adds any number of cards to their hand, cancel it.\n\nDeadlock Enhance Commit: Your attack gets +1 speed for each committed rival foundation.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "gdz01/165-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/165-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 166,
+    "numero_image": 166,
+    "name": "Combined Perfect Form",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "life",
+      "water"
+    ],
+    "text": "Enhance Flip: This attack gets -2 damage. You may remove 1 counter from your character. If you do, this attack gets -4 damage instead.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "gdz01/166-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/166-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 167,
+    "numero_image": 167,
+    "name": "Countermeasure",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "good",
+      "order"
+    ],
+    "text": "Response Flip: After your rival plays a non-character ability that increases the damage of an attack, cancel it.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "gdz01/167-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/167-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 168,
+    "numero_image": 168,
+    "name": "Dangerous Rival",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "text": "Enhance Flip, sacrifice 1 Power token: Add the top card of your deck to your momentum.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "gdz01/168-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/168-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 169,
+    "numero_image": 169,
+    "name": "Deft Approach",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "void"
+    ],
+    "text": "Enhance Commit: This attack gets +2 speed and -2 damage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/169-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/169-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 170,
+    "numero_image": 170,
+    "name": "Divine Defender",
+    "type": "foundation",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "good",
+      "order"
+    ],
+    "text": "Enhance Flip: If this is your rival's third attack or greater this Combat Phase, add 1 card from your card pool to your hand.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "gdz01/170-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/170-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 171,
+    "numero_image": 171,
+    "name": "Drawing Power",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "life"
+    ],
+    "text": "Enhance Flip: Draw 1 card. You may sacrifice 2 Power tokens. If you do, draw 2 cards instead.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/171-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/171-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 172,
+    "numero_image": 172,
+    "name": "Fearsome Durability",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "fire",
+      "life"
+    ],
+    "text": "Deflect: 2\n\nResponse: After you play this card's Deflect ability, draw 1 card and gain 1 health.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "gdz01/172-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/172-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 173,
+    "numero_image": 173,
+    "name": "Godzilla vs Biollante",
+    "type": "foundation",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "life",
+      "water"
+    ],
+    "text": "Enhance Commit: Clear 1 face down card from your card pool and draw 1 card.\n\nDeadlock Enhance [Your attack]: Your rival adds the top card of their deck to their card pool.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "gdz01/173-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/173-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 174,
+    "numero_image": 174,
+    "name": "Godzilla vs Gigan",
+    "type": "foundation",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "all",
+      "evil"
+    ],
+    "text": "Enhance [Tenacious]: Add this card to your hand or the top of your deck.\n\nResponse: After this card is removed, add 1 Power token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/174-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/174-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 175,
+    "numero_image": 175,
+    "name": "Godzilla vs Mechagodzilla",
+    "type": "foundation",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "order"
+    ],
+    "text": "Unique\n\nMechagodzilla Response: After you check this card, remove it with a Kiryu counter on it.\n\nResponse Commit: After you block with a card, return it to your hand.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "gdz01/175-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/175-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 176,
+    "numero_image": 176,
+    "name": "Godzilla vs SpaceGodzilla",
+    "type": "foundation",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "text": "Enhance Commit [Rival's turn]: Your rival's next check gets -2. Failing that check does not end the Combat Phase.\n\nEnhance Commit [Your turn]: Your next check gets +2.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "gdz01/176-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/176-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 177,
+    "numero_image": 177,
+    "name": "Godzilla's First Emergence",
+    "type": "foundation",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "fire",
+      "water"
+    ],
+    "text": "Response: After you play this card, add 1 Power token to your stage.\n\nEnhance: Your attack with printed difficulty 5 or greater gets +1 speed.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/177-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/177-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 178,
+    "numero_image": 178,
+    "name": "Immense Showdown",
+    "type": "foundation",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "good"
+    ],
+    "text": "Enhance Flip: Add 2 cards from a player's discard pile to the bottom of their deck in any order.\n\nDeadlock Form Sacrifice: Add 1 attack with printed difficulty 5 or greater from your discard pile to your hand.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/178-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/178-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 179,
+    "numero_image": 179,
+    "name": "Numbers Advantage",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "death",
+      "evil"
+    ],
+    "text": "Enhance Commit: This attack gets +1 damage for each card in your removed pile (max. +5).\n\nDeadlock Response: After you play this card, build it.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/179-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/179-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 180,
+    "numero_image": 180,
+    "name": "Recombining Body",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "water"
+    ],
+    "text": "Deflect: 2\n\nEnhance [Tenacious]: Add this card to the top of your deck.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 4,
+    "block_zone": "mid",
+    "asset": "gdz01/180-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/180-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 181,
+    "numero_image": 181,
+    "name": "Shin Godzilla Arrives",
+    "type": "foundation",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "life"
+    ],
+    "text": "Enhance Add this card to your momentum: If a rival foundation was destroyed this turn, gain 1 health and draw 1 card.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "gdz01/181-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/181-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 182,
+    "numero_image": 182,
+    "name": "Soaring in the Skies",
+    "type": "foundation",
+    "rarity": "rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "void"
+    ],
+    "text": "Enhance: Your  attack gets +1 speed.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "gdz01/182-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/182-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 183,
+    "numero_image": 183,
+    "name": "Twisted Reflection",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "text": "Enhance Commit: Your rival's next check gets -1. If your rival passes the check, add 1 Power token to your stage. Failing that check does not end the Combat Phase.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "gdz01/183-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/183-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 184,
+    "numero_image": 184,
+    "name": "Unyielding Force",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "fire"
+    ],
+    "text": "Response: At the start of your Combat Phase, add 1 Power token to your stage. If your rival has 10 or more foundations, add 2 Power tokens to your stage instead.\n\nEnhance Commit: Your next check gets +2.",
+    "difficulty": 5,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "gdz01/184-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/184-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 185,
+    "numero_image": 185,
+    "name": "Wrathful Spirit",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "order",
+      "void"
+    ],
+    "text": "Enhance Flip: If your character is committed, this attack gets +2 or -2 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "gdz01/185-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/185-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 186,
+    "numero_image": 186,
+    "name": "Xilien Agent",
+    "type": "foundation",
+    "rarity": "ultra rare",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "chaos",
+      "evil"
+    ],
+    "text": "If your rival is in Deadlock, your attacks get +1 speed and +1 damage.\n\nForm Remove, remove 1 copy of \"Xilien Agent\" from your stage: Search your deck for 1 card and add it to your hand.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 4,
+    "block_zone": "mid",
+    "asset": "gdz01/186-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/186-preview.jpg"
+  },
+  {
+    "extension_short": "gdz01",
+    "numero": 187,
+    "numero_image": 187,
+    "name": "History's Greatest Monster",
+    "type": "foundation",
+    "rarity": "promo",
+    "extension": "Godzilla: Reign of Kaiju",
+    "formats": [
+      "Godzilla",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "water"
+    ],
+    "text": "Response [Once per turn, Tenacious]: After you play a card with printed difficulty 5 or greater, ready this card.\n\nDeadlock Enhance Commit: Your attack gains Throw.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "gdz01/187-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/187-preview.jpg"
+  }
+]
