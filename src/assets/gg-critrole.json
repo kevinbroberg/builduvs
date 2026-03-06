@@ -91,6 +91,30 @@
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/promo2026/004-preview.jpg"
   },
   {
+    "name": "Kevin Broberg",
+    "resources": [
+      "chaos",
+      "death",
+      "life"
+    ],
+    "formats": [
+      "legacy"
+    ],
+    "hand_size": 8,
+    "vitality": 20,
+    "text": "",
+    "text_errata": "At the start of your End Phase, discard 1 card.\n\nForm Commit, Reveal 5 cards from your hand: If all cards revealed this way share a keyword, build 1 card with printed difficulty 4 or less from your discard pile and add 1 other card from your discard pile to the top of your deck. If none of the cards revealed this way share a printed difficulty, all checks gets +1 or -1 until your next Start Phase. Cards revealed this way remain revealed for the rest of the turn.",
+    "card_number": "3",
+    "card_number_image": "3",
+    "type": "character",
+    "rarity": "promo",
+    "extension_short": "promo2026",
+    "extension": "Promo 2026",
+    "rochester_url": "",
+    "asset": "promo2026/003-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/promo2026/003-preview.jpg"
+  },
+  {
     "name": "Roman Cancel",
     "formats": [
       "legacy",

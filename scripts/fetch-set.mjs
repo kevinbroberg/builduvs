@@ -1,18 +1,26 @@
 #!/usr/bin/env node
 /**
- * Fetch all Godzilla: Reign of Kaiju cards from uvsultra.online
- * and output structured JSON to src/assets/kaiju.json.
+ * Fetch all cards for a UVSUltra extension and output structured JSON.
  *
  * Usage:
- *   node scripts/fetch-kaiju.mjs
+ *   node scripts/fetch-set.mjs --id 133 --out src/assets/kaiju.json
+ *   node scripts/fetch-set.mjs --id 130 --out src/assets/promo2026.json
  */
 
 import fs from 'node:fs'
 import https from 'node:https'
 import path from 'node:path'
 
-const EXTENSION_ID = '133'
-const PAGES = 4 // 188 cards, 50 per page
+const args = process.argv.slice(2)
+const get = (flag) => { const i = args.indexOf(flag); return i !== -1 ? args[i + 1] : null }
+
+const EXTENSION_ID = get('--id')
+const OUT_FILE = get('--out')
+
+if (!EXTENSION_ID || !OUT_FILE) {
+  console.error('Usage: node scripts/fetch-set.mjs --id <extension_id> --out <output.json>')
+  process.exit(1)
+}
 
 function fetchPage(page) {
   return new Promise((resolve, reject) => {
@@ -54,16 +62,11 @@ function decodeHtmlEntities(str) {
 
 function parseCards(html) {
   const cards = []
-
-  // Split on card divs
   const cardChunks = html.split(/<div class="card (?:even|odd)">/)
-  // First chunk is the pagination header, skip it
   for (let i = 1; i < cardChunks.length; i++) {
-    const chunk = cardChunks[i]
-    const card = parseCard(chunk)
+    const card = parseCard(cardChunks[i])
     if (card) cards.push(card)
   }
-
   return cards
 }
 
@@ -74,11 +77,10 @@ function parseCard(chunk) {
   const previewMatch = chunk.match(/preview\('(\w+)',\s*'(\w+)'\)/)
   if (!previewMatch) return null
   card.extension_short = previewMatch[1]
-  const cardNumRaw = previewMatch[2]
-  card.numero = parseInt(cardNumRaw, 10)
+  card.numero = parseInt(previewMatch[2], 10)
   card.numero_image = card.numero
 
-  // Name from <h1>
+  // Name
   const nameMatch = chunk.match(/<h1>([^<]+)<\/h1>/)
   if (nameMatch) card.name = decodeHtmlEntities(nameMatch[1].trim())
 
@@ -86,23 +88,29 @@ function parseCard(chunk) {
   const typeMatch = chunk.match(/card-list-(\w+)/)
   if (typeMatch) card.type = typeMatch[1].toLowerCase()
 
-  // Rarity - text after the type label span, before </div>
+  // Rarity
   const rarityMatch = chunk.match(/card-list-\w+">[^<]+<\/span><br \/>\s*\n?\s*(\w[\w\s]*)/)
   if (rarityMatch) card.rarity = rarityMatch[1].trim().toLowerCase()
 
-  // Extension name from the link
+  // Extension name
   const extMatch = chunk.match(/Extension PDF for : ([^"]+)"/)
   if (extMatch) card.extension = decodeHtmlEntities(extMatch[1].trim())
 
-  // Formats from cd1 - look for format-related lines
-  card.formats = ['legacy'] // All Kaiju cards are Legacy format
-  // Check for "Godzilla" sub-format
-  const formatLine = chunk.match(/Godzilla - Block \d+/)
-  if (formatLine) {
-    card.formats.unshift('Godzilla')
+  // Formats — parse from the cd1 div
+  card.formats = []
+  const cd1Match = chunk.match(/class="card_division cd1"[^>]*>([\s\S]*?)<\/div>/)
+  if (cd1Match) {
+    const cd1 = cd1Match[1]
+    // Known format patterns in cd1 text
+    if (/My Hero Academia/i.test(cd1)) card.formats.push('My Hero Academia')
+    if (/Godzilla/i.test(cd1)) card.formats.push('Godzilla')
+    if (/Legacy/i.test(cd1)) card.formats.push('legacy')
+    if (/Standard(?!\s*banned)/i.test(cd1)) card.formats.push('standard')
+    if (/Retro(?!\s*banned)/i.test(cd1)) card.formats.push('retro')
   }
+  if (card.formats.length === 0) card.formats.push('legacy')
 
-  // Resources from cd3 icon images (exclude attack/block zone icons)
+  // Resources from cd3 icon images
   const cd3ForRes = chunk.match(/class="card_division cd3"[^>]*>([\s\S]*?)<\/div>/)
   if (cd3ForRes) {
     const resourceIcons = [...cd3ForRes[1].matchAll(/images\/icons\/(\w+)\.png/g)]
@@ -117,23 +125,15 @@ function parseCard(chunk) {
   // Parse cd2 for keywords and text
   const cd2Match = chunk.match(/class="card_division cd2"[^>]*>([\s\S]*?)<\/div>\s*<div class="card_division cd3"/)
   if (cd2Match) {
-    let cd2 = cd2Match[1]
-    // Remove onclick wrapper
-    cd2 = cd2.replace(/onclick="[^"]*"/g, '')
-
-    // Extract keywords - they appear as <strong>Keyword</strong> at the start,
-    // separated by " - " for characters, or just <strong>Keyword</strong><br/> for attacks
-    const keywordsAndText = parseKeywordsAndText(cd2, card.type)
+    let cd2 = cd2Match[1].replace(/onclick="[^"]*"/g, '')
+    const keywordsAndText = parseKeywordsAndText(cd2)
     if (keywordsAndText.keywords.length > 0) card.keywords = keywordsAndText.keywords
     card.text = keywordsAndText.text
   }
 
   // Parse cd3 for stats
   const cd3Match = chunk.match(/class="card_division cd3"[^>]*>([\s\S]*?)<\/div>/)
-  if (cd3Match) {
-    const cd3 = cd3Match[1]
-    parseStats(cd3, card)
-  }
+  if (cd3Match) parseStats(cd3Match[1], card)
 
   // Asset path
   const padded = String(card.numero).padStart(3, '0')
@@ -145,45 +145,29 @@ function parseCard(chunk) {
 
 function parseKeywordsAndText(cd2) {
   let keywords = []
-  let text = ''
-
-  // Try to find keyword line: consecutive <strong>Word</strong> separated by " - " or just one
   const lines = cd2.trim().split(/<br\s*\/?>\s*/m)
   let textStartIdx = 0
 
-  // Check if the first line is a keyword line
   if (lines.length > 0) {
     const firstLine = lines[0].trim()
-    // A keyword line looks like: <strong>Giant</strong> - <strong>Monster</strong>
-    // or: <strong>Ranged</strong>
-    // or: <strong><abbr title="..."><i>Echo</i></abbr></strong> - <strong>Tech</strong>
     const strongMatches = [...firstLine.matchAll(/<strong>(?:<abbr[^>]*><i>)?([^<]+)(?:<\/i><\/abbr>)?<\/strong>/g)]
 
     if (strongMatches.length > 0) {
-      // Check if ALL strongs in this line are keywords (not ability types like "Enhance")
       const potentialKeywords = strongMatches.map(m => m[1].trim())
       const textRemainder = firstLine
         .replace(/<strong>(?:<abbr[^>]*><i>)?[^<]+(?:<\/i><\/abbr>)?<\/strong>/g, '')
         .replace(/\s*-\s*/g, '')
         .trim()
 
-      // If the line is ONLY strong tags separated by " - ", it's a keyword line
       if (textRemainder === '' || textRemainder === ':') {
         keywords = potentialKeywords
         textStartIdx = 1
       } else {
-        // The first strong might be an ability keyword (Enhance, Response, etc.)
-        // Check if the first strong is a keyword vs ability
-        const isAbility = potentialKeywords.some(k =>
-          /^(Enhance|Response|Form|Blitz)/.test(k)
-        )
+        const isAbility = potentialKeywords.some(k => /^(Enhance|Response|Form|Blitz)/.test(k))
         if (!isAbility && strongMatches.length >= 1) {
-          // Could be mixed - keywords followed by text on the same line
-          // This is the tricky case. Let's check the full pattern
           const kwLineMatch = firstLine.match(/^(?:<strong>(?:<abbr[^>]*><i>)?[\w\s:]+(?:<\/i><\/abbr>)?<\/strong>(?:\s*-\s*)?)+/)
           if (kwLineMatch) {
-            const kwPart = kwLineMatch[0]
-            const rest = firstLine.slice(kwPart.length).trim()
+            const rest = firstLine.slice(kwLineMatch[0].length).trim()
             if (rest === '' || rest.startsWith('<')) {
               keywords = potentialKeywords
               textStartIdx = 1
@@ -194,48 +178,34 @@ function parseKeywordsAndText(cd2) {
     }
   }
 
-  // Build text from remaining lines
-  const textLines = lines.slice(textStartIdx)
-  text = textLines.join('\n')
-
-  // Clean up text: remove HTML tags but preserve structure
+  let text = lines.slice(textStartIdx).join('\n')
   text = text
-    .replace(/<strong>\s*/g, '')
-    .replace(/<\/strong>/g, '')
-    .replace(/<abbr[^>]*>/g, '')
-    .replace(/<\/abbr>/g, '')
-    .replace(/<i>/g, '')
-    .replace(/<\/i>/g, '')
+    .replace(/<strong>\s*/g, '').replace(/<\/strong>/g, '')
+    .replace(/<abbr[^>]*>/g, '').replace(/<\/abbr>/g, '')
+    .replace(/<i>/g, '').replace(/<\/i>/g, '')
     .replace(/<a[^>]*>[^<]*<\/a>/g, '')
     .replace(/<[^>]+>/g, '')
     .replace(/\n{3,}/g, '\n\n')
     .trim()
-
   text = decodeHtmlEntities(text)
-
-  // Clean up: collapse whitespace within lines
   text = text.split('\n').map(l => l.trim()).filter(l => l).join('\n\n')
 
   return { keywords, text }
 }
 
 function parseStats(cd3, card) {
-  // Difficulty
   const diffMatch = cd3.match(/Difficulty\s*:\s*(\d+)/)
   if (diffMatch) card.difficulty = parseInt(diffMatch[1], 10)
 
-  // Control
   const ctrlMatch = cd3.match(/Control\s*:\s*(\d+)/)
   if (ctrlMatch) card.control = parseInt(ctrlMatch[1], 10)
 
-  // Block: +N zone
   const blockMatch = cd3.match(/Block\s*:\s*\+(\d+)\s*(?:<img[^>]*title="(\w+)")?/)
   if (blockMatch) {
     card.block_modifier = parseInt(blockMatch[1], 10)
     if (blockMatch[2]) card.block_zone = blockMatch[2].toLowerCase()
   }
 
-  // Attack: speed zone / damage
   const attackMatch = cd3.match(/Attack\s*:\s*(\d+)\s*(?:<img[^>]*title="(\w+)"[^>]*>)?\s*\/\s*(\d+)/)
   if (attackMatch) {
     card.speed = parseInt(attackMatch[1], 10)
@@ -243,21 +213,25 @@ function parseStats(cd3, card) {
     card.damage = parseInt(attackMatch[3], 10)
   }
 
-  // Hand size (characters)
   const hsMatch = cd3.match(/Hand size\s*:\s*(\d+)/)
   if (hsMatch) card.hand_size = parseInt(hsMatch[1], 10)
 
-  // Vitality (characters)
   const vitMatch = cd3.match(/Vitality\s*:\s*(\d+)/)
   if (vitMatch) card.vitality = parseInt(vitMatch[1], 10)
 }
 
 async function main() {
-  console.log('Fetching Godzilla: Reign of Kaiju card data...')
-  const allCards = []
+  // Fetch page 0 to get total count
+  process.stdout.write('Fetching page 1... ')
+  const firstHtml = await fetchPage(0)
+  const totalMatch = firstHtml.match(/(\d+) Results/)
+  const total = totalMatch ? parseInt(totalMatch[1], 10) : 0
+  const pages = Math.ceil(total / 50)
+  const allCards = parseCards(firstHtml)
+  console.log(`${allCards.length} cards (${total} total across ${pages} page${pages > 1 ? 's' : ''})`)
 
-  for (let page = 0; page < PAGES; page++) {
-    process.stdout.write(`  Page ${page + 1}/${PAGES}... `)
+  for (let page = 1; page < pages; page++) {
+    process.stdout.write(`Fetching page ${page + 1}... `)
     const html = await fetchPage(page)
     const cards = parseCards(html)
     console.log(`${cards.length} cards`)
@@ -265,11 +239,9 @@ async function main() {
   }
 
   console.log(`\nTotal: ${allCards.length} cards`)
-
-  // Sort by card number
   allCards.sort((a, b) => a.numero - b.numero)
 
-  const outPath = path.resolve('src/assets/kaiju.json')
+  const outPath = path.resolve(OUT_FILE)
   fs.writeFileSync(outPath, JSON.stringify(allCards, null, 2) + '\n')
   console.log(`Written to ${outPath}`)
 }
