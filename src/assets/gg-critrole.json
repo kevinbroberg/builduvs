@@ -122,6 +122,7 @@
       "retro",
       "rocretro"
     ],
+    "resources": [],
     "text": "",
     "text_errata": "Remove this card at the beginning of your turn.\n\nYou may play only 1 ability named \"Red\" each turn. The same is true of abilities named \"Purple,\" \"Yellow,\" and \"Blue.\"\n\nRed - Enhance Remove: Change the zone of your attack.\n\nPurple - Response Remove, spend 1 momentum: After your blocked attack resolves, clear it from your card pool and draw 1 card.\n\nYellow - Response Remove, spend 1 momentum: Before you take damage from an unblocked attack, change that attack's damage to 3.\n\nBlue - Form Remove: Freeze 1 rival foundation.",
     "card_number": "0",

@@ -10312,7 +10312,7 @@
   },
   {
     "name": "Izuku Midoriya, On the Move",
-    "resources": "water,air,void,life,good",
+    "resources": ["water","air","void","life","good"],
     "formats": [
       "legacy",
       "standard",
@@ -10335,7 +10335,7 @@
   },
   {
     "name": "Izuku Midoriya, Quirks Unleashed",
-    "resources": "water,air,void,life,good",
+    "resources": ["water","air","void","life","good"],
     "formats": [
       "legacy",
       "standard",
@@ -35569,7 +35569,7 @@
   },
   {
     "name": "Genkai's Guidance",
-    "resources": "air,void,death,chaos,order",
+    "resources": ["air","void","death","chaos","order"],
     "formats": [
       "legacy",
       "standard",
@@ -44836,7 +44836,7 @@
     "keywords": [
       "Ally"
     ],
-    "resources": "water,air,chaos,evil,all",
+    "resources": ["water","air","chaos","evil","all"],
     "formats": [
       "legacy",
       "standard",
