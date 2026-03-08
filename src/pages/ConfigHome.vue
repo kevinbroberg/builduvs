@@ -1,11 +1,19 @@
 <script setup>
 import { useQuasar } from "quasar";
 import CounterBox from "src/components/attack/CounterBox.vue";
+import SimpleTypePicker from "src/components/filter/SimpleTypePicker.vue";
 import { useGameStore } from "src/stores/game";
 
 const $q = useQuasar();
 
 const game = useGameStore();
+
+function onP1Character(card) {
+  if (card?.vitality) game.setPlayer1StartingHealth(card.vitality);
+}
+function onP2Character(card) {
+  if (card?.vitality) game.setPlayer2StartingHealth(card.vitality);
+}
 const nextZone = { high: "mid", mid: "low", low: "high" };
 function goNextZone() {
   game.setDefaultZone(nextZone[game.defaultZone]);
@@ -33,6 +41,11 @@ function goNextZone() {
           </q-card-section>
 
           <q-card-section>
+            <SimpleTypePicker
+              type="character"
+              label="Pick character"
+              @update:choice="onP1Character"
+            />
             <CounterBox
               @up="game.incrementPlayer1StartingHealth()"
               @down="game.decrementPlayer1StartingHealth()"
@@ -75,6 +88,11 @@ function goNextZone() {
           </q-card-section>
 
           <q-card-section>
+            <SimpleTypePicker
+              type="character"
+              label="Pick character"
+              @update:choice="onP2Character"
+            />
             <CounterBox
               @up="game.incrementPlayer2StartingHealth()"
               @down="game.decrementPlayer2StartingHealth()"

@@ -8,12 +8,17 @@ const props = defineProps( {choice: Object, type: String, label: String})
 
 const myCards = computed(() => formatCards.value.filter(c => c.type == props.type).filter(symbolFilter1))
 
-const options = computed(() => myCards.value
-  .map(c => c.name)
-//   .filter(name => name.toLowerCase().indexOf(extraFilter.value) > -1)
-)
+const allOptions = computed(() => myCards.value.map(c => c.name))
+const visibleOptions = ref([])
 
-
+function filterFn(val, update) {
+  update(() => {
+    const needle = val.toLowerCase()
+    visibleOptions.value = needle
+      ? allOptions.value.filter(n => n.toLowerCase().includes(needle))
+      : allOptions.value
+  })
+}
 
 const pick = ref("")
 watch(pick, (val, __) => {
@@ -26,7 +31,8 @@ watch(pick, (val, __) => {
 
 
 <template>
-    <q-select v-model="pick" :options=options
+    <q-select v-model="pick" :options="visibleOptions"
+      use-input input-debounce="0" @filter="filterFn"
       standout dense clearable
       :label="props.label || `Select a ${type}`" class="q-ml-sm" />
 </template>
