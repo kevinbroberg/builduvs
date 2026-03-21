@@ -1,6 +1,13 @@
 <script setup>
   import ManySymbols from 'components/cards/detail/ManySymbols.vue'
   import DeckDialog from './DeckDialog.vue'
+  import CardeioExportDialog from './CardeioExportDialog.vue'
+  import { useQuasar } from 'quasar'
+
+  const $q = useQuasar()
+  function openCardeioExport() {
+    $q.dialog({ component: CardeioExportDialog })
+  }
   import { getCardImage } from 'src/js/image_helper'
   import {
       face,
@@ -37,6 +44,9 @@
           <q-item-label>{{partOpt}}</q-item-label>
         </q-item>
       </q-btn-dropdown>
+      <q-btn push label="Export" icon="upload" @click="openCardeioExport">
+        <q-tooltip>Push this deck to carde.io</q-tooltip>
+      </q-btn>
       <q-btn push label="Copy" icon="content_copy" @click="deck2clipboard" >
         <q-tooltip>Copies your deck to clipboard</q-tooltip>
       </q-btn>

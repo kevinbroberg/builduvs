@@ -5,6 +5,15 @@ export const useDeckStore = defineStore('deck', {
     deck: {},
     side: {},
     face: undefined,
+
+    // Current deck metadata
+    currentDeckId: null,
+    currentDeckName: 'Untitled Deck',
+    currentDeckFormat: null,
+    currentDeckModified: null,
+
+    // Saved decks library: { [id]: { id, name, format, modified, deck, side, face } }
+    savedDecks: {},
   }),
 
   getters: {
@@ -22,6 +31,10 @@ export const useDeckStore = defineStore('deck', {
     sideQuantity: (state) => (asset) => {
       let card = state.side[asset]
       return card ? card.qty : 0
+    },
+    savedDecksList: (state) => {
+      return Object.values(state.savedDecks || {})
+        .sort((a, b) => new Date(b.modified) - new Date(a.modified))
     },
   },
 
@@ -87,6 +100,61 @@ export const useDeckStore = defineStore('deck', {
     send2Main(card) {
       this.decrementSide(card)
       this.increment(card)
+    },
+
+    saveDeck(name, format) {
+      const id = this.currentDeckId || `deck_${Date.now()}`
+      const deckName = name || this.currentDeckName || 'Untitled Deck'
+      const deckFormat = format !== undefined ? format : this.currentDeckFormat
+      const now = new Date().toISOString()
+
+      if (!this.savedDecks) this.savedDecks = {}
+      this.savedDecks[id] = {
+        id,
+        name: deckName,
+        format: deckFormat,
+        modified: now,
+        deck: JSON.parse(JSON.stringify(this.deck)),
+        side: JSON.parse(JSON.stringify(this.side)),
+        face: this.face ? JSON.parse(JSON.stringify(this.face)) : undefined,
+      }
+
+      this.currentDeckId = id
+      this.currentDeckName = deckName
+      this.currentDeckFormat = deckFormat
+      this.currentDeckModified = now
+    },
+
+    loadDeck(deckId) {
+      const saved = this.savedDecks[deckId]
+      if (!saved) return
+
+      this.deck = JSON.parse(JSON.stringify(saved.deck))
+      this.side = JSON.parse(JSON.stringify(saved.side))
+      this.face = saved.face ? JSON.parse(JSON.stringify(saved.face)) : undefined
+
+      this.currentDeckId = saved.id
+      this.currentDeckName = saved.name
+      this.currentDeckFormat = saved.format
+      this.currentDeckModified = saved.modified
+    },
+
+    deleteDeck(deckId) {
+      delete this.savedDecks[deckId]
+      if (this.currentDeckId === deckId) {
+        this.currentDeckId = null
+        this.currentDeckName = 'Untitled Deck'
+        this.currentDeckFormat = null
+        this.currentDeckModified = null
+      }
+    },
+
+    newDeck() {
+      this.nuke()
+      this.currentDeckId = null
+      this.currentDeckName = 'Untitled Deck'
+      this.currentDeckFormat = null
+      this.currentDeckModified = null
     },
   },
 })

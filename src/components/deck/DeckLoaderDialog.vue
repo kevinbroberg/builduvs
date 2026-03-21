@@ -102,6 +102,11 @@ function replaceVuexDeck() {
     }
   }
 
+  $store.currentDeckId = null
+  $store.currentDeckName = 'Imported Deck'
+  $store.currentDeckFormat = null
+  $store.currentDeckModified = null
+
   onDialogOK()
 }
 </script>

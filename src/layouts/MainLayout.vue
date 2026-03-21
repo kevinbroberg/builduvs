@@ -3,6 +3,7 @@ import { ref } from "vue";
 import { useDeckStore } from "src/stores/deck";
 import { storeToRefs } from "pinia";
 import DeckView from "src/components/deck/DeckView.vue";
+import DeckLibrary from "src/components/deck/DeckLibrary.vue";
 
 const { hasDeck } = storeToRefs(useDeckStore());
 const leftDrawerOpen = ref(false);
@@ -20,7 +21,7 @@ function toggleRightDrawer() {
   <q-layout view="hhr lpR fFf">
     <q-header reveal elevated class="bg-primary text-white">
       <q-toolbar>
-        <!-- <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" /> -->
+        <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title>
           <q-avatar>
@@ -52,9 +53,9 @@ function toggleRightDrawer() {
       </q-toolbar>
     </q-header>
 
-    <!-- <q-drawer v-model="leftDrawerOpen" side="left" behavior="mobile" elevated>
-      <h4>Deck listing will go here once implemented</h4>
-    </q-drawer> -->
+    <q-drawer v-model="leftDrawerOpen" side="left" behavior="mobile" elevated>
+      <DeckLibrary />
+    </q-drawer>
 
     <q-drawer v-model="rightDrawerOpen" side="right" elevated>
       <DeckView />
