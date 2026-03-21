@@ -2,6 +2,8 @@
 import CardCard from 'src/components/cards/CardCard.vue'
 import UltraCardDetail from 'src/components/cards/UltraCardDetail.vue'
 import DeckDialog from 'components/deck/DeckDialog.vue'
+import CardeioExportDialog from 'components/deck/CardeioExportDialog.vue'
+import { useQuasar } from 'quasar'
 
 import {
   face,
@@ -14,6 +16,11 @@ import {
   partitionOptions,
   howPartition,
 } from 'components/deck/deck_logic'
+
+const $q = useQuasar()
+function openCardeioExport() {
+  $q.dialog({ component: CardeioExportDialog })
+}
 </script>
 
 <template>
@@ -39,6 +46,7 @@ import {
         <q-item-label>{{ partOpt }}</q-item-label>
       </q-item>
     </q-btn-dropdown>
+    <q-btn push label="Export" icon="upload" @click="openCardeioExport" />
     <q-btn push label="Copy" icon="content_copy" @click="deck2clipboard">
       <q-tooltip>Copies your deck to clipboard</q-tooltip>
     </q-btn>

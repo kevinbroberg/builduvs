@@ -1,4 +1,5 @@
-[{
+[
+  {
     "extension": "Crimson Rampage DLC",
     "formats": [
       "standard",
@@ -20,7 +21,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 6,
-    "vitality": 25
+    "vitality": 25,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb3d",
+    "cardeio_slug": "001-denki-kaminari"
   },
   {
     "extension": "Crimson Rampage DLC",
@@ -33,7 +36,9 @@
     "name": "Indiscriminate Shock",
     "type": "attack",
     "rarity": "promo",
-    "keywords": ["Ranged - Charge"],
+    "keywords": [
+      "Ranged - Charge"
+    ],
     "text": "Enhance: Your rival discards 1 random card and draws 1 card.  Enhance Discard 1 momentum: If this attack deals damage, add the top 2 cards of your deck to your momentum.",
     "resources": [
       "chaos",
@@ -46,7 +51,9 @@
     "block_mod": 2,
     "speed": 5,
     "attack_zone": "low",
-    "damage": 2
+    "damage": 2,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc23",
+    "cardeio_slug": "002-indiscriminate-shock"
   },
   {
     "extension": "Crimson Rampage DLC",
@@ -68,7 +75,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd33",
+    "cardeio_slug": "003-rockin-attitude"
   },
   {
     "extension": "Crimson Rampage DLC",
@@ -92,7 +101,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 6,
-    "vitality": 27
+    "vitality": 27,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb64",
+    "cardeio_slug": "004-eijiro-kirishima"
   },
   {
     "extension": "Crimson Rampage DLC",
@@ -105,7 +116,11 @@
     "name": "Hardened Crusher",
     "type": "attack",
     "rarity": "promo",
-    "keywords": ["Punch", "Powerful: 2", "Fury"],
+    "keywords": [
+      "Punch",
+      "Powerful: 2",
+      "Fury"
+    ],
     "text": "Response: After your play this card, your rival flips 1 foundation.  Enhance Discard the top 2 cards of your deck: If this attack deals damage, build it face down during the End Phase.",
     "resources": [
       "all",
@@ -118,7 +133,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbec",
+    "cardeio_slug": "005-hardened-crusher"
   },
   {
     "extension": "Crimson Rampage DLC",
@@ -140,7 +157,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc09",
+    "cardeio_slug": "006-homage-to-my-hero"
   },
   {
     "extension": "Crimson Rampage DLC",
@@ -164,7 +183,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 7,
-    "vitality": 19
+    "vitality": 19,
+    "cardeio_id": "64e6bcedcc0d62bbb0dacc9f",
+    "cardeio_slug": "007-momo-yaoyorozu"
   },
   {
     "extension": "Crimson Rampage DLC",
@@ -177,7 +198,9 @@
     "name": "Cannon Blast",
     "type": "attack",
     "rarity": "promo",
-    "keywords": ["Weapon - Ranged - Charge"],
+    "keywords": [
+      "Weapon - Ranged - Charge"
+    ],
     "text": "                        Enhance Commit 1 foundation: This attack gets +1 speed and +2 damage.  Enhance Commit 2 foundations: This attack gets +2 speed and +4 damage.",
     "resources": [
       "good",
@@ -190,7 +213,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacadb",
+    "cardeio_slug": "008-cannon-blast"
   },
   {
     "extension": "Crimson Rampage DLC",
@@ -203,7 +228,9 @@
     "name": "Study Group Leader",
     "type": "foundation",
     "rarity": "promo",
-    "keywords": ["Ally"],
+    "keywords": [
+      "Ally"
+    ],
     "text": "Response Flip: After the 2nd or greater copy of an attack is played this turn, it loses 1 keyword ability of your choice.  Yaoyorozu Response [Once per turn]: After you commit this card to pay the cost of an ability, ready this foundation. Playable while committed.",
     "resources": [
       "good",
@@ -213,7 +240,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacd92",
+    "cardeio_slug": "009-study-group-leader"
   },
   {
     "extension": "Crimson Rampage DLC",
@@ -237,7 +266,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 7,
-    "vitality": 20
+    "vitality": 20,
+    "cardeio_id": "64e6bcf0cc0d62bbb0dace23",
+    "cardeio_slug": "010-yuga-aoyama"
   },
   {
     "extension": "Crimson Rampage DLC",
@@ -250,7 +281,10 @@
     "name": "Tummy Ache Laser",
     "type": "attack",
     "rarity": "promo",
-    "keywords": ["Ranged", "Charge"],
+    "keywords": [
+      "Ranged",
+      "Charge"
+    ],
     "text": "Enhance: Flip 1 committed foundation. If you did, ready it.  Enhance Lose1 health: This attack gains Powerful: 3.",
     "resources": [
       "air",
@@ -263,7 +297,9 @@
     "block_mod": 2,
     "speed": 5,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacde3",
+    "cardeio_slug": "011-tummy-ache-laser"
   },
   {
     "extension": "Crimson Rampage DLC",
@@ -276,7 +312,9 @@
     "name": "Midnight's Assistance",
     "type": "foundation",
     "rarity": "promo",
-    "keywords": ["Ally"],
+    "keywords": [
+      "Ally"
+    ],
     "text": "Enhance Add this card to your card pool: Your [mid] attack gets +2 speed.  Response Flip: After this card is committed due to your rival effect, discard 1 rival momentum. Playable while committed.",
     "resources": [
       "air",
@@ -286,6 +324,8 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcedcc0d62bbb0dacc94",
+    "cardeio_slug": "012-midnights-assistance"
   }
 ]

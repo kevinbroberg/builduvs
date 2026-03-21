@@ -22,7 +22,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbd8",
+    "cardeio_slug": "001-gran-torino"
   },
   {
     "extension": "Crimson Rampage",
@@ -53,7 +55,9 @@
     "block_modifier": 1,
     "speed": 3,
     "attack_zone": "high",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bce8cc0d62bbb0daca81",
+    "cardeio_slug": "002-airstream-driver"
   },
   {
     "extension": "Crimson Rampage",
@@ -83,7 +87,9 @@
     "block_modifier": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc3f",
+    "cardeio_slug": "003-jet-stream-crash"
   },
   {
     "extension": "Crimson Rampage",
@@ -114,7 +120,9 @@
     "block_modifier": 2,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd08",
+    "cardeio_slug": "004-rebound-side-kick"
   },
   {
     "extension": "Crimson Rampage",
@@ -144,7 +152,9 @@
     "block_modifier": 2,
     "speed": 2,
     "attack_zone": "high",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd2a",
+    "cardeio_slug": "005-ricochet-charge"
   },
   {
     "extension": "Crimson Rampage",
@@ -167,7 +177,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb9d",
+    "cardeio_slug": "006-first-impressions"
   },
   {
     "extension": "Crimson Rampage",
@@ -193,7 +205,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 4
+    "block_modifier": 4,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbd3",
+    "cardeio_slug": "007-going-out-to-fight-some-villains"
   },
   {
     "extension": "Crimson Rampage",
@@ -216,7 +230,9 @@
     "difficulty": 1,
     "control": 4,
     "block_zone": "mid",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd68",
+    "cardeio_slug": "008-small-and-limber"
   },
   {
     "extension": "Crimson Rampage",
@@ -239,7 +255,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacda6",
+    "cardeio_slug": "009-taiyaki-fanatic"
   },
   {
     "extension": "Crimson Rampage",
@@ -264,7 +282,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc3a",
+    "cardeio_slug": "010-izuku-midoriya"
   },
   {
     "extension": "Crimson Rampage",
@@ -296,7 +316,9 @@
     "block_modifier": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bce9cc0d62bbb0daca9f",
+    "cardeio_slug": "011-back-alley-haymaker"
   },
   {
     "extension": "Crimson Rampage",
@@ -327,7 +349,9 @@
     "block_modifier": 1,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbc0",
+    "cardeio_slug": "012-full-power-clash"
   },
   {
     "extension": "Crimson Rampage",
@@ -357,7 +381,9 @@
     "block_modifier": 2,
     "speed": 3,
     "attack_zone": "high",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc60",
+    "cardeio_slug": "013-leaping-right-hook"
   },
   {
     "extension": "Crimson Rampage",
@@ -383,7 +409,9 @@
     "block_modifier": 3,
     "speed": 3,
     "attack_zone": "low",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcedcc0d62bbb0dacccd",
+    "cardeio_slug": "014-overhead-reversal"
   },
   {
     "extension": "Crimson Rampage",
@@ -429,7 +457,9 @@
     "difficulty": 0,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacaaa",
+    "cardeio_slug": "016-battle-resolve"
   },
   {
     "extension": "Crimson Rampage",
@@ -452,7 +482,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc04",
+    "cardeio_slug": "017-high-value-target"
   },
   {
     "extension": "Crimson Rampage",
@@ -475,7 +507,9 @@
     "difficulty": 2,
     "control": 4,
     "block_zone": "high",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccb5",
+    "cardeio_slug": "018-new-training-method"
   },
   {
     "extension": "Crimson Rampage",
@@ -500,7 +534,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc45",
+    "cardeio_slug": "019-katsuki-bakugo"
   },
   {
     "extension": "Crimson Rampage",
@@ -531,7 +567,9 @@
     "block_modifier": 1,
     "speed": 3,
     "attack_zone": "high",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacacf",
+    "cardeio_slug": "020-brutal-explosion"
   },
   {
     "extension": "Crimson Rampage",
@@ -562,7 +600,9 @@
     "block_modifier": 2,
     "speed": 4,
     "attack_zone": "low",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb44",
+    "cardeio_slug": "021-detonation-launcher"
   },
   {
     "extension": "Crimson Rampage",
@@ -594,7 +634,9 @@
     "block_modifier": 2,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb9a",
+    "cardeio_slug": "022-finishing-blast"
   },
   {
     "extension": "Crimson Rampage",
@@ -626,7 +668,9 @@
     "block_modifier": 2,
     "speed": 3,
     "attack_zone": "high",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc10",
+    "cardeio_slug": "023-howitzer-impact-cyclone"
   },
   {
     "extension": "Crimson Rampage",
@@ -649,7 +693,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbae",
+    "cardeio_slug": "024-forcing-surrender"
   },
   {
     "extension": "Crimson Rampage",
@@ -672,7 +718,9 @@
     "difficulty": 0,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc2f",
+    "cardeio_slug": "025-internship-with-best-jeanist"
   },
   {
     "extension": "Crimson Rampage",
@@ -695,7 +743,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd49",
+    "cardeio_slug": "026-self-propulsion"
   },
   {
     "extension": "Crimson Rampage",
@@ -718,7 +768,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacde5",
+    "cardeio_slug": "027-tutoring-kirishima"
   },
   {
     "extension": "Crimson Rampage",
@@ -743,7 +795,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "66478a89c48f09e14a54d28b",
+    "cardeio_slug": "mhaccg-s7-86-meihatsume-ch"
   },
   {
     "extension": "Crimson Rampage",
@@ -766,7 +820,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacacb",
+    "cardeio_slug": "029-box-full-of-babies"
   },
   {
     "extension": "Crimson Rampage",
@@ -797,7 +853,9 @@
     "block_modifier": 1,
     "speed": 4,
     "attack_zone": "low",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb69",
+    "cardeio_slug": "030-electromagnetic-stomp"
   },
   {
     "extension": "Crimson Rampage",
@@ -829,7 +887,9 @@
     "block_modifier": 2,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccb4",
+    "cardeio_slug": "031-net-gun-surprise"
   },
   {
     "extension": "Crimson Rampage",
@@ -860,7 +920,9 @@
     "block_modifier": 1,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcf0cc0d62bbb0dace1a",
+    "cardeio_slug": "032-wire-arrow"
   },
   {
     "extension": "Crimson Rampage",
@@ -887,7 +949,9 @@
     "difficulty": 0,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 4
+    "block_modifier": 4,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacba5",
+    "cardeio_slug": "033-floating-around-my-babies"
   },
   {
     "extension": "Crimson Rampage",
@@ -914,7 +978,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bcedcc0d62bbb0dacc92",
+    "cardeio_slug": "034-mid-match-advertisement"
   },
   {
     "extension": "Crimson Rampage",
@@ -960,7 +1026,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bcf0cc0d62bbb0dace29",
+    "cardeio_slug": "036-zoom"
   },
   {
     "extension": "Crimson Rampage",
@@ -985,7 +1053,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bcedcc0d62bbb0dacc99",
+    "cardeio_slug": "037-mina-ashido"
   },
   {
     "extension": "Crimson Rampage",
@@ -1015,7 +1085,9 @@
     "block_modifier": 1,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bce8cc0d62bbb0daca72",
+    "cardeio_slug": "038-acid-chop"
   },
   {
     "extension": "Crimson Rampage",
@@ -1046,7 +1118,9 @@
     "block_modifier": 1,
     "speed": 3,
     "attack_zone": "low",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bce8cc0d62bbb0daca73",
+    "cardeio_slug": "039-acid-corrosion-breach"
   },
   {
     "extension": "Crimson Rampage",
@@ -1072,7 +1146,9 @@
     "block_modifier": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bce8cc0d62bbb0daca74",
+    "cardeio_slug": "040-acid-fling"
   },
   {
     "extension": "Crimson Rampage",
@@ -1102,7 +1178,9 @@
     "block_modifier": 2,
     "speed": 5,
     "attack_zone": "low",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacaf0",
+    "cardeio_slug": "041-cheerful-uppercut"
   },
   {
     "extension": "Crimson Rampage",
@@ -1125,7 +1203,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacaf6",
+    "cardeio_slug": "042-choosing-a-hero-name"
   },
   {
     "extension": "Crimson Rampage",
@@ -1148,7 +1228,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbd7",
+    "cardeio_slug": "043-graceful-maneuvers"
   },
   {
     "extension": "Crimson Rampage",
@@ -1171,7 +1253,9 @@
     "difficulty": 2,
     "control": 4,
     "block_zone": "mid",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc78",
+    "cardeio_slug": "044-mall-day"
   },
   {
     "extension": "Crimson Rampage",
@@ -1194,7 +1278,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacd8f",
+    "cardeio_slug": "045-struggling-with-studies"
   },
   {
     "extension": "Crimson Rampage",
@@ -1219,7 +1305,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccc5",
+    "cardeio_slug": "046-ochaco-uraraka"
   },
   {
     "extension": "Crimson Rampage",
@@ -1250,7 +1338,9 @@
     "block_modifier": 1,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb4f",
+    "cardeio_slug": "047-double-jab-pummel"
   },
   {
     "extension": "Crimson Rampage",
@@ -1281,7 +1371,9 @@
     "block_modifier": 2,
     "speed": 2,
     "attack_zone": "high",
-    "damage": 7
+    "damage": 7,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd5b",
+    "cardeio_slug": "048-shrapnel-cloud-release"
   },
   {
     "extension": "Crimson Rampage",
@@ -1312,7 +1404,9 @@
     "block_modifier": 2,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdd7",
+    "cardeio_slug": "049-training-knife-strike"
   },
   {
     "extension": "Crimson Rampage",
@@ -1342,7 +1436,9 @@
     "block_modifier": 1,
     "speed": 3,
     "attack_zone": "low",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bcf0cc0d62bbb0dace24",
+    "cardeio_slug": "050-zero-gravity-barrier"
   },
   {
     "extension": "Crimson Rampage",
@@ -1365,7 +1461,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bce9cc0d62bbb0daca91",
+    "cardeio_slug": "051-ambush-tactics"
   },
   {
     "extension": "Crimson Rampage",
@@ -1388,7 +1486,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb0a",
+    "cardeio_slug": "052-confused"
   },
   {
     "extension": "Crimson Rampage",
@@ -1411,7 +1511,9 @@
     "difficulty": 2,
     "control": 4,
     "block_zone": "mid",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb95",
+    "cardeio_slug": "053-fighting-spirit"
   },
   {
     "extension": "Crimson Rampage",
@@ -1438,7 +1540,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdd9",
+    "cardeio_slug": "054-training-with-gunhead"
   },
   {
     "extension": "Crimson Rampage",
@@ -1463,7 +1567,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd56",
+    "cardeio_slug": "055-shoto-todoroki"
   },
   {
     "extension": "Crimson Rampage",
@@ -1495,7 +1601,9 @@
     "block_modifier": 1,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacaf9",
+    "cardeio_slug": "056-cinder-convection"
   },
   {
     "extension": "Crimson Rampage",
@@ -1525,7 +1633,9 @@
     "block_modifier": 2,
     "speed": 3,
     "attack_zone": "low",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb53",
+    "cardeio_slug": "057-downward-frost-spike"
   },
   {
     "extension": "Crimson Rampage",
@@ -1556,7 +1666,9 @@
     "block_modifier": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbe2",
+    "cardeio_slug": "058-half-hot-ignition"
   },
   {
     "extension": "Crimson Rampage",
@@ -1586,7 +1698,9 @@
     "block_modifier": 1,
     "speed": 2,
     "attack_zone": "high",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd43",
+    "cardeio_slug": "059-searing-glacial-storm"
   },
   {
     "extension": "Crimson Rampage",
@@ -1609,7 +1723,9 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb38",
+    "cardeio_slug": "060-defrosting"
   },
   {
     "extension": "Crimson Rampage",
@@ -1632,7 +1748,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb58",
+    "cardeio_slug": "061-drowning-in-resentment"
   },
   {
     "extension": "Crimson Rampage",
@@ -1655,7 +1773,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc18",
+    "cardeio_slug": "062-ice-gliding"
   },
   {
     "extension": "Crimson Rampage",
@@ -1678,7 +1798,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc76",
+    "cardeio_slug": "063-making-a-stand"
   },
   {
     "extension": "Crimson Rampage",
@@ -1703,7 +1825,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd7f",
+    "cardeio_slug": "064-stain"
   },
   {
     "extension": "Crimson Rampage",
@@ -1734,7 +1858,9 @@
     "block_modifier": 1,
     "speed": 5,
     "attack_zone": "mid",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb4d",
+    "cardeio_slug": "065-double-blade-slash"
   },
   {
     "extension": "Crimson Rampage",
@@ -1765,7 +1891,9 @@
     "block_modifier": 1,
     "speed": 2,
     "attack_zone": "high",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccdb",
+    "cardeio_slug": "066-piercing-descent"
   },
   {
     "extension": "Crimson Rampage",
@@ -1795,7 +1923,9 @@
     "block_modifier": 2,
     "speed": 3,
     "attack_zone": "low",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd5f",
+    "cardeio_slug": "067-sinister-paralyzation"
   },
   {
     "extension": "Crimson Rampage",
@@ -1825,7 +1955,9 @@
     "block_modifier": 1,
     "speed": 5,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd62",
+    "cardeio_slug": "068-slashing-whirlwind"
   },
   {
     "extension": "Crimson Rampage",
@@ -1851,7 +1983,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 4
+    "block_modifier": 4,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacaec",
+    "cardeio_slug": "069-challenging-the-fakes"
   },
   {
     "extension": "Crimson Rampage",
@@ -1874,7 +2008,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bceccc0d62bbb0dacbfa",
+    "cardeio_slug": "070-hero-killer"
   },
   {
     "extension": "Crimson Rampage",
@@ -1900,7 +2036,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc31",
+    "cardeio_slug": "071-intimidating-presence"
   },
   {
     "extension": "Crimson Rampage",
@@ -1923,7 +2061,9 @@
     "difficulty": 0,
     "control": 5,
     "block_zone": "low",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd34",
+    "cardeio_slug": "072-rooftop-vantage"
   },
   {
     "extension": "Crimson Rampage",
@@ -1948,7 +2088,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb24",
+    "cardeio_slug": "073-dabi"
   },
   {
     "extension": "Crimson Rampage",
@@ -1978,7 +2120,9 @@
     "block_modifier": 2,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacac7",
+    "cardeio_slug": "074-blue-flame-spiral"
   },
   {
     "extension": "Crimson Rampage",
@@ -2001,7 +2145,9 @@
     "difficulty": 2,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc5c",
+    "cardeio_slug": "075-league-interview"
   },
   {
     "extension": "Crimson Rampage",
@@ -2026,7 +2172,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb6e",
+    "cardeio_slug": "076-endeavor"
   },
   {
     "extension": "Crimson Rampage",
@@ -2056,7 +2204,9 @@
     "block_modifier": 1,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbf6",
+    "cardeio_slug": "077-hellflame-javelin"
   },
   {
     "extension": "Crimson Rampage",
@@ -2079,7 +2229,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd26",
+    "cardeio_slug": "078-revel-at-his-masterpiece"
   },
   {
     "extension": "Crimson Rampage",
@@ -2104,7 +2256,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbc2",
+    "cardeio_slug": "079-fumikage-tokoyami"
   },
   {
     "extension": "Crimson Rampage",
@@ -2135,7 +2289,9 @@
     "block_modifier": 2,
     "speed": 3,
     "attack_zone": "high",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb29",
+    "cardeio_slug": "080-dark-shadow-dive"
   },
   {
     "extension": "Crimson Rampage",
@@ -2158,7 +2314,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd25",
+    "cardeio_slug": "081-resting-between-bouts"
   },
   {
     "extension": "Crimson Rampage",
@@ -2183,7 +2341,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbe5",
+    "cardeio_slug": "082-hanta-sero"
   },
   {
     "extension": "Crimson Rampage",
@@ -2213,7 +2373,9 @@
     "block_modifier": 2,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdad",
+    "cardeio_slug": "083-tape-stream-jab"
   },
   {
     "extension": "Crimson Rampage",
@@ -2236,7 +2398,9 @@
     "difficulty": 2,
     "control": 4,
     "block_zone": "high",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacddb",
+    "cardeio_slug": "084-travel-by-tape"
   },
   {
     "extension": "Crimson Rampage",
@@ -2261,7 +2425,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "66478a89c48f09e14a54d281",
+    "cardeio_slug": "mhaccg-s7-1-himikotoga-ch"
   },
   {
     "extension": "Crimson Rampage",
@@ -2287,7 +2453,9 @@
     "block_modifier": 1,
     "speed": 5,
     "attack_zone": "low",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc50",
+    "cardeio_slug": "086-knife-slice"
   },
   {
     "extension": "Crimson Rampage",
@@ -2310,7 +2478,9 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb7f",
+    "cardeio_slug": "087-excited-for-blood"
   },
   {
     "extension": "Crimson Rampage",
@@ -2335,7 +2505,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc07",
+    "cardeio_slug": "088-hitoshi-shinso"
   },
   {
     "extension": "Crimson Rampage",
@@ -2365,7 +2537,9 @@
     "block_modifier": 2,
     "speed": 2,
     "attack_zone": "high",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccc6",
+    "cardeio_slug": "089-off-guard-punch"
   },
   {
     "extension": "Crimson Rampage",
@@ -2388,7 +2562,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdf1",
+    "cardeio_slug": "090-unexpected-hero"
   },
   {
     "extension": "Crimson Rampage",
@@ -2413,7 +2589,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc17",
+    "cardeio_slug": "091-ibara-shiozaki"
   },
   {
     "extension": "Crimson Rampage",
@@ -2439,7 +2617,9 @@
     "block_modifier": 3,
     "speed": 2,
     "attack_zone": "low",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb1b",
+    "cardeio_slug": "092-creeping-vine-eruption"
   },
   {
     "extension": "Crimson Rampage",
@@ -2462,7 +2642,9 @@
     "difficulty": 2,
     "control": 4,
     "block_zone": "mid",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb8b",
+    "cardeio_slug": "093-faiths-shield"
   },
   {
     "extension": "Crimson Rampage",
@@ -2487,7 +2669,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bcedcc0d62bbb0dacc9b",
+    "cardeio_slug": "094-minoru-mineta"
   },
   {
     "extension": "Crimson Rampage",
@@ -2517,7 +2701,9 @@
     "block_modifier": 1,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbd9",
+    "cardeio_slug": "095-grape-rush"
   },
   {
     "extension": "Crimson Rampage",
@@ -2540,7 +2726,9 @@
     "difficulty": 0,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacda3",
+    "cardeio_slug": "096-surviving-the-final"
   },
   {
     "extension": "Crimson Rampage",
@@ -2565,7 +2753,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccaf",
+    "cardeio_slug": "097-neito-monoma"
   },
   {
     "extension": "Crimson Rampage",
@@ -2595,7 +2785,9 @@
     "block_modifier": 2,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb14",
+    "cardeio_slug": "098-copy-harden"
   },
   {
     "extension": "Crimson Rampage",
@@ -2621,7 +2813,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb7c",
+    "cardeio_slug": "099-evade-and-copy"
   },
   {
     "extension": "Crimson Rampage",
@@ -2646,7 +2840,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccf2",
+    "cardeio_slug": "100-present-mic"
   },
   {
     "extension": "Crimson Rampage",
@@ -2677,7 +2873,9 @@
     "block_modifier": 1,
     "speed": 2,
     "attack_zone": "mid",
-    "damage": 8
+    "damage": 8,
+    "cardeio_id": "64e6bcf0cc0d62bbb0dace1c",
+    "cardeio_slug": "101-yeeaahhhhhh"
   },
   {
     "extension": "Crimson Rampage",
@@ -2700,7 +2898,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc0d",
+    "cardeio_slug": "102-hottest-performances,-guaranteed"
   },
   {
     "extension": "Crimson Rampage",
@@ -2725,7 +2925,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdb6",
+    "cardeio_slug": "103-tenya-iida"
   },
   {
     "extension": "Crimson Rampage",
@@ -2756,7 +2958,9 @@
     "block_modifier": 2,
     "speed": 2,
     "attack_zone": "high",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb8c",
+    "cardeio_slug": "104-falling-thruster-kick"
   },
   {
     "extension": "Crimson Rampage",
@@ -2782,7 +2986,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bce8cc0d62bbb0daca6b",
+    "cardeio_slug": "105-fusion"
   },
   {
     "extension": "Crimson Rampage",
@@ -2807,7 +3013,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdbb",
+    "cardeio_slug": "106-tetsutetsu-tetsutetsu"
   },
   {
     "extension": "Crimson Rampage",
@@ -2837,7 +3045,9 @@
     "block_modifier": 1,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdba",
+    "cardeio_slug": "107-tetsutetsu-fist"
   },
   {
     "extension": "Crimson Rampage",
@@ -2863,7 +3073,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc7c",
+    "cardeio_slug": "108-manly-friendship"
   },
   {
     "extension": "Crimson Rampage",
@@ -2886,7 +3098,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_modifier": 1
+    "block_modifier": 1,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbd2",
+    "cardeio_slug": "109-go-for-the-win"
   },
   {
     "extension": "Crimson Rampage",
@@ -2909,7 +3123,9 @@
     "difficulty": 4,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 1
+    "block_modifier": 1,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd06",
+    "cardeio_slug": "110-ready-get-set-go"
   },
   {
     "extension": "Crimson Rampage",
@@ -2940,7 +3156,9 @@
     "block_modifier": 3,
     "speed": 3,
     "attack_zone": "high",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacae7",
+    "cardeio_slug": "111-cavalry-chariot-advance"
   },
   {
     "extension": "Crimson Rampage",
@@ -2997,7 +3215,9 @@
     "block_modifier": 2,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb97",
+    "cardeio_slug": "113-final-exam-gut-shot"
   },
   {
     "extension": "Crimson Rampage",
@@ -3028,7 +3248,9 @@
     "block_modifier": 1,
     "speed": 3,
     "attack_zone": "high",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbcb",
+    "cardeio_slug": "114-giant-bite-detention"
   },
   {
     "extension": "Crimson Rampage",
@@ -3052,7 +3274,9 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bce8cc0d62bbb0daca7f",
+    "cardeio_slug": "115-aiming-for-1"
   },
   {
     "extension": "Crimson Rampage",
@@ -3075,7 +3299,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbbc",
+    "cardeio_slug": "116-fruit-of-our-labors"
   },
   {
     "extension": "Crimson Rampage",
@@ -3098,7 +3324,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bce8cc0d62bbb0daca6c",
+    "cardeio_slug": "117-spoooooooky"
   },
   {
     "extension": "Crimson Rampage",
@@ -3128,7 +3356,9 @@
     "block_modifier": 1,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb56",
+    "cardeio_slug": "118-dropkick-slicer"
   },
   {
     "extension": "Crimson Rampage",
@@ -3160,7 +3390,9 @@
     "block_modifier": 1,
     "speed": 2,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc40",
+    "cardeio_slug": "119-joint-effort-offensive"
   },
   {
     "extension": "Crimson Rampage",
@@ -3184,7 +3416,9 @@
     "block_modifier": 2,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bce9cc0d62bbb0daca90",
+    "cardeio_slug": "120-alleyway-ambush"
   },
   {
     "extension": "Crimson Rampage Quirk",
@@ -3209,7 +3443,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc27",
+    "cardeio_slug": "001-ingenium"
   },
   {
     "extension": "Crimson Rampage Quirk",
@@ -3232,7 +3468,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 1
+    "block_modifier": 1,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacd99",
+    "cardeio_slug": "002-sugar-rush-power-up"
   },
   {
     "extension": "Crimson Rampage Quirk",
@@ -3261,7 +3499,9 @@
     "block_modifier": 2,
     "speed": 3,
     "attack_zone": "high",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc34",
+    "cardeio_slug": "003-invincible-clasp"
   },
   {
     "extension": "Crimson Rampage Quirk",
@@ -3284,7 +3524,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bce8cc0d62bbb0daca79",
+    "cardeio_slug": "004-advice-for-winners"
   },
   {
     "extension": "Crimson Rampage",
@@ -3307,7 +3549,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc61",
+    "cardeio_slug": "005-learning-the-standards"
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3332,7 +3576,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbb1",
+    "cardeio_slug": "001-fourth-kind"
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3357,7 +3603,9 @@
     "difficulty": 3,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb5f",
+    "cardeio_slug": "002-ectoplasm"
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3382,7 +3630,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacae9",
+    "cardeio_slug": "003-cementos"
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3407,7 +3657,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd6c",
+    "cardeio_slug": "004-snipe"
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3430,7 +3682,9 @@
     "difficulty": 4,
     "control": 4,
     "block_zone": "mid",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacac4",
+    "cardeio_slug": "005-bloodcurdle"
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3455,7 +3709,9 @@
     "difficulty": 3,
     "control": 4,
     "block_zone": "mid",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdee",
+    "cardeio_slug": "006-ultra-compressed-weights"
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3485,7 +3741,9 @@
     "block_modifier": 3,
     "speed": 2,
     "attack_zone": "high",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb89",
+    "cardeio_slug": "007-facepalm-takedown"
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3515,7 +3773,9 @@
     "block_modifier": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbf5",
+    "cardeio_slug": "008-hellflame-cross-punch"
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3546,7 +3806,9 @@
     "block_modifier": 1,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcedcc0d62bbb0dacc8a",
+    "cardeio_slug": "009-mentor-legacy-punch"
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3577,7 +3839,9 @@
     "block_modifier": 1,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc7a",
+    "cardeio_slug": "010-maneuvering-laser"
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3600,7 +3864,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb4a",
+    "cardeio_slug": "011-dissolving-the-conflict"
   },
   {
     "extension": "Crimson Rampage Plus Ultra",
@@ -3623,7 +3889,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb96",
+    "cardeio_slug": "012-final-exam-failures"
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3648,7 +3916,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbde",
+    "cardeio_slug": "001-gun-head"
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3673,7 +3943,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd4a",
+    "cardeio_slug": "002-selkie"
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3698,7 +3970,9 @@
     "difficulty": 6,
     "control": 6,
     "block_zone": "mid",
-    "block_modifier": 0
+    "block_modifier": 0,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdf9",
+    "cardeio_slug": "003-uwabami"
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3721,7 +3995,9 @@
     "difficulty": 3,
     "control": 4,
     "block_zone": "high",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccca",
+    "cardeio_slug": "004-overflowing-power"
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3744,7 +4020,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 2
+    "block_modifier": 2,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd7c",
+    "cardeio_slug": "005-sports-festival-stadium"
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3767,7 +4045,9 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "high",
-    "block_modifier": 1
+    "block_modifier": 1,
+    "cardeio_id": "64e6bce9cc0d62bbb0daca9e",
+    "cardeio_slug": "006-award-the-victor"
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3794,6 +4074,8 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_modifier": 3
+    "block_modifier": 3,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacaf4",
+    "cardeio_slug": "007-childhood-friends"
   }
 ]

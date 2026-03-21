@@ -1,19 +1,10 @@
 import { defineStore } from 'pinia'
-import cardeioIds from 'src/assets/cardeio-ids.json'
 
 const API = 'https://play-api.carde.io/v1'
 
 const SECTION_CHARACTER = '773a74a1e7536ea7be98d510'
 const SECTION_MAIN      = '773a74a1e7536ea7be98d511'
 const SECTION_SIDE      = '773a74a1e7536ea7be98d512'
-
-function normalizeName(name) {
-  return name.replace(/^"+|"+$/g, '').trim().toLowerCase()
-}
-
-function lookupId(name) {
-  return cardeioIds[normalizeName(name)]?.id ?? null
-}
 
 export const useCardeioStore = defineStore('cardeio', {
   state: () => ({
@@ -48,12 +39,12 @@ export const useCardeioStore = defineStore('cardeio', {
       // fixes: { cardName -> cardeioId }
       const unmatched = []
 
-      const charId = deckStore.face ? (lookupId(deckStore.face.name) ?? fixes[deckStore.face.name] ?? null) : null
+      const charId = deckStore.face ? (deckStore.face.cardeio_id ?? fixes[deckStore.face.name] ?? null) : null
       if (deckStore.face && !charId) unmatched.push({ name: deckStore.face.name, count: 1, sectionId: SECTION_CHARACTER })
 
       const mainCards = []
       for (const card of Object.values(deckStore.deck)) {
-        const id = lookupId(card.name) ?? fixes[card.name] ?? null
+        const id = card.cardeio_id ?? fixes[card.name] ?? null
         if (id) {
           mainCards.push({ cardId: id, count: card.qty })
         } else {
@@ -63,7 +54,7 @@ export const useCardeioStore = defineStore('cardeio', {
 
       const sideCards = []
       for (const card of Object.values(deckStore.side)) {
-        const id = lookupId(card.name) ?? fixes[card.name] ?? null
+        const id = card.cardeio_id ?? fixes[card.name] ?? null
         if (id) {
           sideCards.push({ cardId: id, count: card.qty })
         } else {

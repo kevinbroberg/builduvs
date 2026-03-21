@@ -1,8 +1,16 @@
 [
   {
     "name": "Concentrate",
-    "resources": ["Air", "Chaos", "Fire"],
-    "formats": ["standard", "retro", "My Hero Academia"],
+    "resources": [
+      "Air",
+      "Chaos",
+      "Fire"
+    ],
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
     "control": 5,
     "difficulty": 2,
     "block_modifier": 1,
@@ -14,12 +22,22 @@
     "rarity": "promo",
     "extension_short": "mha01",
     "extension": "MHA Provisional Pack 01",
-    "asset": "mha01/240.jpg"
+    "asset": "mha01/240.jpg",
+    "cardeio_id": "64e6bceacc0d62bbb0dacb05",
+    "cardeio_slug": "001-concentrate"
   },
   {
     "name": "Kurogiri",
-    "resources": ["evil", "order", "void"],
-    "formats": ["standard", "retro", "My Hero Academia"],
+    "resources": [
+      "evil",
+      "order",
+      "void"
+    ],
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
     "control": 6,
     "difficulty": 6,
     "block_modifier": 0,
@@ -33,12 +51,22 @@
     "rarity": "promo",
     "extension_short": "mha01",
     "extension": "MHA Provisional Pack 01",
-    "asset": "mha01/241.jpg"
+    "asset": "mha01/241.jpg",
+    "cardeio_id": "64e6bceccc0d62bbb0dacc54",
+    "cardeio_slug": "002-kurogiri"
   },
   {
     "name": "Midnight",
-    "resources": ["all", "chaos", "void"],
-    "formats": ["standard", "retro", "My Hero Academia"],
+    "resources": [
+      "all",
+      "chaos",
+      "void"
+    ],
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
     "control": 6,
     "difficulty": 6,
     "block_modifier": 0,
@@ -52,12 +80,22 @@
     "rarity": "promo",
     "extension_short": "mha01",
     "extension": "MHA Provisional Pack 01",
-    "asset": "mha01/242.jpg"
+    "asset": "mha01/242.jpg",
+    "cardeio_id": "66478a89c48f09e14a54d28c",
+    "cardeio_slug": "mhaccg-s7-9-midnight-ch"
   },
   {
     "name": "Present Mic",
-    "resources": ["chaos", "fire", "life"],
-    "formats": ["standard", "retro", "My Hero Academia"],
+    "resources": [
+      "chaos",
+      "fire",
+      "life"
+    ],
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
     "control": 6,
     "difficulty": 6,
     "block_modifier": 0,
@@ -71,12 +109,22 @@
     "rarity": "promo",
     "extension_short": "mha01",
     "extension": "MHA Provisional Pack 01",
-    "asset": "mha01/243.jpg"
+    "asset": "mha01/243.jpg",
+    "cardeio_id": "64e6bcedcc0d62bbb0daccf1",
+    "cardeio_slug": "004-present-mic"
   },
   {
     "name": "Rikido Sato",
-    "resources": ["all", "earth", "order"],
-    "formats": ["standard", "retro", "My Hero Academia"],
+    "resources": [
+      "all",
+      "earth",
+      "order"
+    ],
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
     "control": 6,
     "difficulty": 6,
     "block_modifier": 0,
@@ -90,12 +138,22 @@
     "rarity": "promo",
     "extension_short": "mha01",
     "extension": "MHA Provisional Pack 01",
-    "asset": "mha01/244.jpg"
+    "asset": "mha01/244.jpg",
+    "cardeio_id": "64e6bceecc0d62bbb0dacd2c",
+    "cardeio_slug": "005-rikido-sato"
   },
   {
     "name": "The Price For Peace",
-    "resources": ["all", "death", "good"],
-    "formats": ["standard", "retro", "My Hero Academia"],
+    "resources": [
+      "all",
+      "death",
+      "good"
+    ],
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
     "control": 4,
     "difficulty": 1,
     "block_modifier": 3,
@@ -107,12 +165,22 @@
     "rarity": "promo",
     "extension_short": "mha01",
     "extension": "MHA Provisional Pack 01",
-    "asset": "mha01/245.jpg"
+    "asset": "mha01/245.jpg",
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdc1",
+    "cardeio_slug": "006-the-price-for-peace"
   },
   {
     "name": "Toru Hagakure",
-    "resources": ["air", "chaos", "water"],
-    "formats": ["standard", "retro", "My Hero Academia"],
+    "resources": [
+      "air",
+      "chaos",
+      "water"
+    ],
+    "formats": [
+      "standard",
+      "retro",
+      "My Hero Academia"
+    ],
     "control": 6,
     "difficulty": 6,
     "block_modifier": 0,
@@ -126,6 +194,8 @@
     "rarity": "promo",
     "extension_short": "mha01",
     "extension": "MHA Provisional Pack 01",
-    "asset": "mha01/246.jpg"
+    "asset": "mha01/246.jpg",
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdd1",
+    "cardeio_slug": "007-toru-hagakure"
   }
 ]

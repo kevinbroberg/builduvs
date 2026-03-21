@@ -22,7 +22,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 6,
-    "vitality": 31
+    "vitality": 31,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb6f",
+    "cardeio_slug": "001-endeavor"
   },
   {
     "extension": "Heroes Clash",
@@ -53,7 +55,9 @@
     "block_mod": 2,
     "speed": 2,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bce9cc0d62bbb0daca98",
+    "cardeio_slug": "002-arctic-conflagration"
   },
   {
     "extension": "Heroes Clash",
@@ -83,7 +87,9 @@
     "block_mod": 3,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacabe",
+    "cardeio_slug": "003-blazing-fury"
   },
   {
     "extension": "Heroes Clash",
@@ -114,7 +120,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacba0",
+    "cardeio_slug": "004-flame-scourger"
   },
   {
     "extension": "Heroes Clash",
@@ -145,7 +153,9 @@
     "block_mod": 2,
     "speed": 2,
     "attack_zone": "low",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbf7",
+    "cardeio_slug": "005-hellflame-pounce"
   },
   {
     "extension": "Heroes Clash",
@@ -175,7 +185,9 @@
     "block_mod": 1,
     "speed": 4,
     "attack_zone": "low",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbf8",
+    "cardeio_slug": "006-hellflame-stomp"
   },
   {
     "extension": "Heroes Clash",
@@ -206,7 +218,9 @@
     "block_mod": 2,
     "speed": 2,
     "attack_zone": "high",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc1d",
+    "cardeio_slug": "007-ignited-arrow"
   },
   {
     "extension": "Heroes Clash",
@@ -236,7 +250,9 @@
     "block_mod": 1,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 7
+    "damage": 7,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccf4",
+    "cardeio_slug": "008-prominence-burn"
   },
   {
     "extension": "Heroes Clash",
@@ -267,7 +283,9 @@
     "block_mod": 2,
     "speed": 2,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd3f",
+    "cardeio_slug": "009-scorching-aura"
   },
   {
     "extension": "Heroes Clash",
@@ -290,7 +308,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "67b0fdf61d761577b7e3483f",
+    "cardeio_slug": "cr2-29-arrogantsmirk-uc"
   },
   {
     "extension": "Heroes Clash",
@@ -313,7 +333,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb13",
+    "cardeio_slug": "011-coping-with-1"
   },
   {
     "extension": "Heroes Clash",
@@ -336,7 +358,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb8e",
+    "cardeio_slug": "012-fast-as-flame"
   },
   {
     "extension": "Heroes Clash",
@@ -359,7 +383,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccf3",
+    "cardeio_slug": "013-press-conference"
   },
   {
     "extension": "Heroes Clash",
@@ -382,7 +408,9 @@
     "difficulty": 0,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccfe",
+    "cardeio_slug": "014-quick-to-act"
   },
   {
     "extension": "Heroes Clash",
@@ -408,7 +436,9 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd70",
+    "cardeio_slug": "015-soul-piercing-glare"
   },
   {
     "extension": "Heroes Clash",
@@ -431,7 +461,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd85",
+    "cardeio_slug": "016-stare-down"
   },
   {
     "extension": "Heroes Clash",
@@ -454,7 +486,9 @@
     "difficulty": 1,
     "control": 6,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdc5",
+    "cardeio_slug": "017-thrilled-spectator"
   },
   {
     "extension": "Heroes Clash",
@@ -477,7 +511,9 @@
     "difficulty": 2,
     "control": 4,
     "block_zone": "high",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdf3",
+    "cardeio_slug": "018-unnerving-energy"
   },
   {
     "extension": "Heroes Clash",
@@ -502,7 +538,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 6,
-    "vitality": 27
+    "vitality": 27,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb78",
+    "cardeio_slug": "001-eraser-head"
   },
   {
     "extension": "Heroes Clash",
@@ -532,7 +570,9 @@
     "block_mod": 2,
     "speed": 3,
     "attack_zone": "high",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bce8cc0d62bbb0daca7a",
+    "cardeio_slug": "002-aerial-drop"
   },
   {
     "extension": "Heroes Clash",
@@ -563,7 +603,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacab3",
+    "cardeio_slug": "003-binding-cloth-drop-kick"
   },
   {
     "extension": "Heroes Clash",
@@ -593,7 +635,9 @@
     "block_mod": 2,
     "speed": 2,
     "attack_zone": "low",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacab5",
+    "cardeio_slug": "004-binding-cloth-precision"
   },
   {
     "extension": "Heroes Clash",
@@ -624,7 +668,9 @@
     "block_mod": 2,
     "speed": 2,
     "attack_zone": "low",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacab6",
+    "cardeio_slug": "005-binding-cloth-whiplash"
   },
   {
     "extension": "Heroes Clash",
@@ -655,7 +701,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacab8",
+    "cardeio_slug": "006-binding-shoulder-rush"
   },
   {
     "extension": "Heroes Clash",
@@ -685,7 +733,9 @@
     "block_mod": 2,
     "speed": 2,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb7a",
+    "cardeio_slug": "007-erasure-grasp"
   },
   {
     "extension": "Heroes Clash",
@@ -716,7 +766,9 @@
     "block_mod": 2,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd35",
+    "cardeio_slug": "008-roundhouse-exhaust"
   },
   {
     "extension": "Heroes Clash",
@@ -747,7 +799,9 @@
     "block_mod": 1,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdd3",
+    "cardeio_slug": "009-total-erasure-binding"
   },
   {
     "extension": "Heroes Clash",
@@ -770,7 +824,9 @@
     "difficulty": 0,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bce8cc0d62bbb0daca76",
+    "cardeio_slug": "010-acrobatic"
   },
   {
     "extension": "Heroes Clash",
@@ -796,7 +852,9 @@
     "difficulty": 2,
     "control": 4,
     "block_zone": "mid",
-    "block_mod": 1
+    "block_mod": 1,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacab4",
+    "cardeio_slug": "011-binding-cloth-mastery"
   },
   {
     "extension": "Heroes Clash",
@@ -819,7 +877,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb00",
+    "cardeio_slug": "012-closing-in"
   },
   {
     "extension": "Heroes Clash",
@@ -842,7 +902,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb2f",
+    "cardeio_slug": "013-daunting-message"
   },
   {
     "extension": "Heroes Clash",
@@ -865,7 +927,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb37",
+    "cardeio_slug": "014-dedicated-instructor"
   },
   {
     "extension": "Heroes Clash",
@@ -888,7 +952,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb57",
+    "cardeio_slug": "015-dropping-in-from-above"
   },
   {
     "extension": "Heroes Clash",
@@ -911,7 +977,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb81",
+    "cardeio_slug": "016-exhausted-exclamation"
   },
   {
     "extension": "Heroes Clash",
@@ -937,7 +1005,9 @@
     "difficulty": 2,
     "control": 6,
     "block_zone": "low",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccd1",
+    "cardeio_slug": "017-patient-observation"
   },
   {
     "extension": "Heroes Clash",
@@ -960,7 +1030,9 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccf5",
+    "cardeio_slug": "018-prone-to-dry-eyes"
   },
   {
     "extension": "Heroes Clash",
@@ -985,7 +1057,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 6,
-    "vitality": 27
+    "vitality": 27,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc52",
+    "cardeio_slug": "001-koji-koda"
   },
   {
     "extension": "Heroes Clash",
@@ -1015,7 +1089,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb03",
+    "cardeio_slug": "002-command-pigeon-flock"
   },
   {
     "extension": "Heroes Clash",
@@ -1041,7 +1117,9 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbb4",
+    "cardeio_slug": "003-friend-of-animals"
   },
   {
     "extension": "Heroes Clash",
@@ -1066,7 +1144,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 6,
-    "vitality": 28
+    "vitality": 28,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc80",
+    "cardeio_slug": "004-mashirao-ojiro"
   },
   {
     "extension": "Heroes Clash",
@@ -1096,7 +1176,9 @@
     "block_mod": 1,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc43",
+    "cardeio_slug": "005-karate-chop"
   },
   {
     "extension": "Heroes Clash",
@@ -1119,7 +1201,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacd90",
+    "cardeio_slug": "006-student-of-the-art"
   },
   {
     "extension": "Heroes Clash",
@@ -1144,7 +1228,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 6,
-    "vitality": 27
+    "vitality": 27,
+    "cardeio_id": "64e6bcedcc0d62bbb0dacc91",
+    "cardeio_slug": "007-mezo-shoji-2"
   },
   {
     "extension": "Heroes Clash",
@@ -1175,7 +1261,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdb3",
+    "cardeio_slug": "008-tentacole-tactics"
   },
   {
     "extension": "Heroes Clash",
@@ -1198,7 +1286,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bcf0cc0d62bbb0dace18",
+    "cardeio_slug": "009-window-shopping"
   },
   {
     "extension": "Heroes Clash",
@@ -1223,7 +1313,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 5,
-    "vitality": 29
+    "vitality": 29,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd2d",
+    "cardeio_slug": "010-rikido-sato"
   },
   {
     "extension": "Heroes Clash",
@@ -1253,7 +1345,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacad1",
+    "cardeio_slug": "011-brutish-swagger"
   },
   {
     "extension": "Heroes Clash",
@@ -1276,7 +1370,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacda9",
+    "cardeio_slug": "012-talented-baker"
   },
   {
     "extension": "Heroes Clash",
@@ -1301,7 +1397,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 7,
-    "vitality": 20
+    "vitality": 20,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd80",
+    "cardeio_slug": "013-stain"
   },
   {
     "extension": "Heroes Clash",
@@ -1331,7 +1429,9 @@
     "block_mod": 1,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacac2",
+    "cardeio_slug": "014-blood-moon-rending"
   },
   {
     "extension": "Heroes Clash",
@@ -1354,7 +1454,9 @@
     "difficulty": 2,
     "control": 4,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc26",
+    "cardeio_slug": "015-influencing-the-youth"
   },
   {
     "extension": "Heroes Clash",
@@ -1379,7 +1481,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 7,
-    "vitality": 22
+    "vitality": 22,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdc4",
+    "cardeio_slug": "016-thirteen"
   },
   {
     "extension": "Heroes Clash",
@@ -1409,7 +1513,9 @@
     "block_mod": 1,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacab9",
+    "cardeio_slug": "017-black-hole-void"
   },
   {
     "extension": "Heroes Clash",
@@ -1432,7 +1538,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacada",
+    "cardeio_slug": "018-cant-escape-me"
   },
   {
     "extension": "Heroes Clash",
@@ -1457,7 +1565,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 7,
-    "vitality": 19
+    "vitality": 19,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdca",
+    "cardeio_slug": "019-tomura-shigaraki"
   },
   {
     "extension": "Heroes Clash",
@@ -1488,7 +1598,9 @@
     "block_mod": 2,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacd97",
+    "cardeio_slug": "020-sudden-death-assault"
   },
   {
     "extension": "Heroes Clash",
@@ -1514,7 +1626,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccbf",
+    "cardeio_slug": "021-nothing-to-see-here"
   },
   {
     "extension": "Heroes Clash",
@@ -1539,7 +1653,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 6,
-    "vitality": 27
+    "vitality": 27,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdd2",
+    "cardeio_slug": "022-toru-hagakure"
   },
   {
     "extension": "Heroes Clash",
@@ -1568,7 +1684,9 @@
     "block_mod": 2,
     "speed": 3,
     "attack_zone": "low",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc35",
+    "cardeio_slug": "023-invisible-infiltration"
   },
   {
     "extension": "Heroes Clash",
@@ -1591,7 +1709,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacaf1",
+    "cardeio_slug": "024-cheerleader"
   },
   {
     "extension": "Heroes Clash",
@@ -1617,7 +1737,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 1
+    "block_mod": 1,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb74",
+    "cardeio_slug": "025-engine-trouble"
   },
   {
     "extension": "Heroes Clash",
@@ -1643,7 +1765,9 @@
     "difficulty": 4,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 1
+    "block_mod": 1,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacba3",
+    "cardeio_slug": "026-flex-your-might"
   },
   {
     "extension": "Heroes Clash",
@@ -1666,7 +1790,9 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 4
+    "block_mod": 4,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccc1",
+    "cardeio_slug": "027-nullify"
   },
   {
     "extension": "Heroes Clash",
@@ -1692,7 +1818,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 1
+    "block_mod": 1,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd11",
+    "cardeio_slug": "028-recovery-time"
   },
   {
     "extension": "Heroes Clash",
@@ -1718,7 +1846,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacaa8",
+    "cardeio_slug": "029-battle-arena"
   },
   {
     "extension": "Heroes Clash",
@@ -1744,7 +1874,9 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb3a",
+    "cardeio_slug": "030-dekus-notebook"
   },
   {
     "extension": "Heroes Clash",
@@ -1770,7 +1902,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbdd",
+    "cardeio_slug": "031-grenadier-bracers"
   },
   {
     "extension": "Heroes Clash",
@@ -1796,7 +1930,9 @@
     "difficulty": 3,
     "control": 4,
     "block_zone": "high",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdeb",
+    "cardeio_slug": "032-ua-high"
   },
   {
     "extension": "Heroes Clash",
@@ -1822,7 +1958,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdec",
+    "cardeio_slug": "033-usj"
   },
   {
     "extension": "Heroes Clash",
@@ -1853,7 +1991,9 @@
     "block_mod": 2,
     "speed": 1,
     "attack_zone": "high",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacabf",
+    "cardeio_slug": "034-blitz-knee"
   },
   {
     "extension": "Heroes Clash",
@@ -1883,7 +2023,9 @@
     "block_mod": 2,
     "speed": 5,
     "attack_zone": "mid",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacac5",
+    "cardeio_slug": "035-blue-flame-palm-strike"
   },
   {
     "extension": "Heroes Clash",
@@ -1913,7 +2055,9 @@
     "block_mod": 1,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacacc",
+    "cardeio_slug": "036-branching-snare"
   },
   {
     "extension": "Heroes Clash",
@@ -1942,7 +2086,9 @@
     "block_mod": 2,
     "speed": 3,
     "attack_zone": "high",
-    "damage": 7
+    "damage": 7,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacacd",
+    "cardeio_slug": "037-brandish-steel"
   },
   {
     "extension": "Heroes Clash",
@@ -1973,7 +2119,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb04",
+    "cardeio_slug": "038-compression-sphere"
   },
   {
     "extension": "Heroes Clash",
@@ -2004,7 +2152,9 @@
     "block_mod": 2,
     "speed": 5,
     "attack_zone": "low",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb33",
+    "cardeio_slug": "039-death-arms-wallop"
   },
   {
     "extension": "Heroes Clash",
@@ -2034,7 +2184,9 @@
     "block_mod": 2,
     "speed": 2,
     "attack_zone": "high",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb60",
+    "cardeio_slug": "040-ectoplasm-clones"
   },
   {
     "extension": "Heroes Clash",
@@ -2065,7 +2217,9 @@
     "block_mod": 2,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb72",
+    "cardeio_slug": "041-engine-boost"
   },
   {
     "extension": "Heroes Clash",
@@ -2096,7 +2250,9 @@
     "block_mod": 1,
     "speed": 5,
     "attack_zone": "high",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb86",
+    "cardeio_slug": "042-extend-o-hair-strike"
   },
   {
     "extension": "Heroes Clash",
@@ -2127,7 +2283,9 @@
     "block_mod": 1,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb94",
+    "cardeio_slug": "043-fierce-whirlwind"
   },
   {
     "extension": "Heroes Clash",
@@ -2157,7 +2315,9 @@
     "block_mod": 1,
     "speed": 6,
     "attack_zone": "mid",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacba9",
+    "cardeio_slug": "044-focused-attack"
   },
   {
     "extension": "Heroes Clash",
@@ -2187,7 +2347,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbad",
+    "cardeio_slug": "045-forceful-blow"
   },
   {
     "extension": "Heroes Clash",
@@ -2217,7 +2379,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "low",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbb3",
+    "cardeio_slug": "046-freezer-burn"
   },
   {
     "extension": "Heroes Clash",
@@ -2247,7 +2411,9 @@
     "block_mod": 2,
     "speed": 3,
     "attack_zone": "high",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbbb",
+    "cardeio_slug": "047-frozen-slash"
   },
   {
     "extension": "Heroes Clash",
@@ -2277,7 +2443,9 @@
     "block_mod": 0,
     "speed": 5,
     "attack_zone": "mid",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbc6",
+    "cardeio_slug": "048-gargantuan-bellow"
   },
   {
     "extension": "Heroes Clash",
@@ -2308,7 +2476,9 @@
     "block_mod": 0,
     "speed": 3,
     "attack_zone": "low",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbf2",
+    "cardeio_slug": "049-hardened-uppercut"
   },
   {
     "extension": "Heroes Clash",
@@ -2338,7 +2508,9 @@
     "block_mod": 3,
     "speed": 5,
     "attack_zone": "mid",
-    "damage": 0
+    "damage": 0,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc11",
+    "cardeio_slug": "050-hulking-grimace"
   },
   {
     "extension": "Heroes Clash",
@@ -2370,7 +2542,9 @@
     "block_mod": 2,
     "speed": 3,
     "attack_zone": "low",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc19",
+    "cardeio_slug": "051-ice-slide-tackle"
   },
   {
     "extension": "Heroes Clash",
@@ -2400,7 +2574,9 @@
     "block_mod": 2,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc58",
+    "cardeio_slug": "052-laceration"
   },
   {
     "extension": "Heroes Clash",
@@ -2431,7 +2607,9 @@
     "block_mod": 1,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccdd",
+    "cardeio_slug": "053-piercing-needle"
   },
   {
     "extension": "Heroes Clash",
@@ -2461,7 +2639,9 @@
     "block_mod": 1,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccfc",
+    "cardeio_slug": "054-quick-draw"
   },
   {
     "extension": "Heroes Clash",
@@ -2491,7 +2671,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "low",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd66",
+    "cardeio_slug": "055-sludge"
   },
   {
     "extension": "Heroes Clash",
@@ -2522,7 +2704,9 @@
     "block_mod": 1,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd6e",
+    "cardeio_slug": "056-somnambulism"
   },
   {
     "extension": "Heroes Clash",
@@ -2552,7 +2736,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd76",
+    "cardeio_slug": "057-spinning-kick"
   },
   {
     "extension": "Heroes Clash",
@@ -2583,7 +2769,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd87",
+    "cardeio_slug": "058-sticky-ball-pitch"
   },
   {
     "extension": "Heroes Clash",
@@ -2614,7 +2802,9 @@
     "block_mod": 2,
     "speed": 3,
     "attack_zone": "low",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacd89",
+    "cardeio_slug": "059-sticky-ball-wail"
   },
   {
     "extension": "Heroes Clash",
@@ -2645,7 +2835,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacd93",
+    "cardeio_slug": "060-stun-grenade"
   },
   {
     "extension": "Heroes Clash",
@@ -2677,7 +2869,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacda4",
+    "cardeio_slug": "061-swift-cross-detonator"
   },
   {
     "extension": "Heroes Clash",
@@ -2707,7 +2901,9 @@
     "block_mod": 3,
     "speed": 2,
     "attack_zone": "mid",
-    "damage": 7
+    "damage": 7,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdac",
+    "cardeio_slug": "062-tape-lash"
   },
   {
     "extension": "Heroes Clash",
@@ -2738,7 +2934,9 @@
     "block_mod": 1,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdb2",
+    "cardeio_slug": "063-tentacle-strike"
   },
   {
     "extension": "Heroes Clash",
@@ -2769,7 +2967,9 @@
     "block_mod": 1,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdbc",
+    "cardeio_slug": "064-tetsutetsu-thrashing"
   },
   {
     "extension": "Heroes Clash",
@@ -2799,7 +2999,9 @@
     "block_mod": 3,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdda",
+    "cardeio_slug": "065-trap-flex"
   },
   {
     "extension": "Heroes Clash",
@@ -2829,7 +3031,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacde9",
+    "cardeio_slug": "066-twisting-azure-inferno"
   },
   {
     "extension": "Heroes Clash",
@@ -2859,7 +3063,9 @@
     "block_mod": 2,
     "speed": 2,
     "attack_zone": "low",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcefcc0d62bbb0dace09",
+    "cardeio_slug": "067-vocal-discord"
   },
   {
     "extension": "Heroes Clash",
@@ -2890,7 +3096,9 @@
     "block_mod": 1,
     "speed": 3,
     "attack_zone": "high",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcf0cc0d62bbb0dace0e",
+    "cardeio_slug": "068-water-pump"
   },
   {
     "extension": "Heroes Clash",
@@ -2921,7 +3129,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bcf0cc0d62bbb0dace17",
+    "cardeio_slug": "069-wind-up-punch"
   },
   {
     "extension": "Heroes Clash",
@@ -2952,7 +3162,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcf0cc0d62bbb0dace28",
+    "cardeio_slug": "070-zip-line-dart"
   },
   {
     "extension": "Heroes Clash",
@@ -3001,7 +3213,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bce9cc0d62bbb0daca8e",
+    "cardeio_slug": "072-all-worked-up"
   },
   {
     "extension": "Heroes Clash",
@@ -3024,7 +3238,9 @@
     "difficulty": 0,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacaa7",
+    "cardeio_slug": "073-basic-training"
   },
   {
     "extension": "Heroes Clash",
@@ -3047,7 +3263,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacaac",
+    "cardeio_slug": "074-bench-press"
   },
   {
     "extension": "Heroes Clash",
@@ -3070,7 +3288,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacaae",
+    "cardeio_slug": "075-bewildered"
   },
   {
     "extension": "Heroes Clash",
@@ -3093,7 +3313,9 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacadf",
+    "cardeio_slug": "076-carbo-loading"
   },
   {
     "extension": "Heroes Clash",
@@ -3116,7 +3338,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacae6",
+    "cardeio_slug": "077-catching-a-ride"
   },
   {
     "extension": "Heroes Clash",
@@ -3139,7 +3363,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb08",
+    "cardeio_slug": "078-confident-inventor"
   },
   {
     "extension": "Heroes Clash",
@@ -3162,7 +3388,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb09",
+    "cardeio_slug": "079-conflict-of-ideologies"
   },
   {
     "extension": "Heroes Clash",
@@ -3185,7 +3413,9 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 4
+    "block_mod": 4,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb0b",
+    "cardeio_slug": "080-constantly-improving"
   },
   {
     "extension": "Heroes Clash",
@@ -3208,7 +3438,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb0f",
+    "cardeio_slug": "081-cool-and-tough"
   },
   {
     "extension": "Heroes Clash",
@@ -3231,7 +3463,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb48",
+    "cardeio_slug": "082-dexterous-appendages"
   },
   {
     "extension": "Heroes Clash",
@@ -3254,7 +3488,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb54",
+    "cardeio_slug": "083-dreaming-of-glory"
   },
   {
     "extension": "Heroes Clash",
@@ -3277,7 +3513,9 @@
     "difficulty": 0,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb5d",
+    "cardeio_slug": "084-easily-excited"
   },
   {
     "extension": "Heroes Clash",
@@ -3300,7 +3538,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb6a",
+    "cardeio_slug": "085-en-denim-ed"
   },
   {
     "extension": "Heroes Clash",
@@ -3323,7 +3563,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb93",
+    "cardeio_slug": "086-feelin-cute"
   },
   {
     "extension": "Heroes Clash",
@@ -3346,7 +3588,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbbf",
+    "cardeio_slug": "087-full-on-attack-mode"
   },
   {
     "extension": "Heroes Clash",
@@ -3372,7 +3616,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceccc0d62bbb0dacbfb",
+    "cardeio_slug": "088-heros-inspiration"
   },
   {
     "extension": "Heroes Clash",
@@ -3395,7 +3641,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc0b",
+    "cardeio_slug": "089-honorable-forfeit"
   },
   {
     "extension": "Heroes Clash",
@@ -3418,7 +3666,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc14",
+    "cardeio_slug": "090-hype-man"
   },
   {
     "extension": "Heroes Clash",
@@ -3441,7 +3691,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc1b",
+    "cardeio_slug": "091-idol-work"
   },
   {
     "extension": "Heroes Clash",
@@ -3464,7 +3716,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc64",
+    "cardeio_slug": "092-lessons-from-taiyaki"
   },
   {
     "extension": "Heroes Clash",
@@ -3487,7 +3741,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc68",
+    "cardeio_slug": "093-like-the-wind"
   },
   {
     "extension": "Heroes Clash",
@@ -3513,7 +3769,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc77",
+    "cardeio_slug": "094-male-bonding"
   },
   {
     "extension": "Heroes Clash",
@@ -3536,7 +3794,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 4
+    "block_mod": 4,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccbc",
+    "cardeio_slug": "095-noble-participation"
   },
   {
     "extension": "Heroes Clash",
@@ -3559,7 +3819,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccc9",
+    "cardeio_slug": "096-one-with-nature"
   },
   {
     "extension": "Heroes Clash",
@@ -3582,7 +3844,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccef",
+    "cardeio_slug": "097-prehensile-tail"
   },
   {
     "extension": "Heroes Clash",
@@ -3605,7 +3869,9 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 4
+    "block_mod": 4,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccf6",
+    "cardeio_slug": "098-proud-scion"
   },
   {
     "extension": "Heroes Clash",
@@ -3631,7 +3897,9 @@
     "difficulty": 3,
     "control": 4,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd4e",
+    "cardeio_slug": "099-shadows-aid"
   },
   {
     "extension": "Heroes Clash",
@@ -3654,7 +3922,9 @@
     "difficulty": 2,
     "control": 4,
     "block_zone": "low",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd5a",
+    "cardeio_slug": "100-showing-off"
   },
   {
     "extension": "Heroes Clash",
@@ -3677,7 +3947,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd6b",
+    "cardeio_slug": "101-snack-time"
   },
   {
     "extension": "Heroes Clash",
@@ -3703,7 +3975,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd7a",
+    "cardeio_slug": "102-spirited-referee"
   },
   {
     "extension": "Heroes Clash",
@@ -3726,7 +4000,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd7b",
+    "cardeio_slug": "103-sports-festival-champ"
   },
   {
     "extension": "Heroes Clash",
@@ -3752,7 +4028,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacd94",
+    "cardeio_slug": "104-successful-results"
   },
   {
     "extension": "Heroes Clash",
@@ -3775,7 +4053,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacd96",
+    "cardeio_slug": "105-sudden-appearance"
   },
   {
     "extension": "Heroes Clash",
@@ -3798,7 +4078,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdc8",
+    "cardeio_slug": "106-to-the-rescue"
   },
   {
     "extension": "Heroes Clash",
@@ -3824,7 +4106,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdfb",
+    "cardeio_slug": "107-valiant-pose"
   },
   {
     "extension": "Heroes Clash",
@@ -3847,7 +4131,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 1
+    "block_mod": 1,
+    "cardeio_id": "64e6bcf0cc0d62bbb0dace0d",
+    "cardeio_slug": "108-watching-from-a-distance"
   },
   {
     "extension": "Heroes Clash",
@@ -3879,7 +4165,9 @@
     "block_mod": 0,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 6
+    "damage": 6,
+    "cardeio_id": "64e6bce8cc0d62bbb0daca7b",
+    "cardeio_slug": "109-aggressive-clash"
   },
   {
     "extension": "Heroes Clash",
@@ -3909,7 +4197,9 @@
     "block_mod": 2,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 7
+    "damage": 7,
+    "cardeio_id": "64e6bceccc0d62bbb0dacbfe",
+    "cardeio_slug": "110-heroic-clash"
   },
   {
     "extension": "Heroes Clash",
@@ -3935,7 +4225,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceacc0d62bbb0dacafc",
+    "cardeio_slug": "111-class-line-up"
   },
   {
     "extension": "Heroes Clash",
@@ -3960,7 +4252,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 6,
-    "vitality": 27
+    "vitality": 27,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacaa1",
+    "cardeio_slug": "001-backdraft"
   },
   {
     "extension": "Heroes Clash",
@@ -3985,7 +4279,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 6,
-    "vitality": 29
+    "vitality": 29,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb32",
+    "cardeio_slug": "002-death-arms"
   },
   {
     "extension": "Heroes Clash",
@@ -4006,7 +4302,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdd8",
+    "cardeio_slug": "003-training-weights"
   },
   {
     "extension": "Heroes Clash",
@@ -4036,7 +4334,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 3
+    "damage": 3,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbf1",
+    "cardeio_slug": "004-hardened-steel"
   },
   {
     "extension": "Heroes Clash",
@@ -4059,7 +4359,9 @@
     "difficulty": 1,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacaf5",
+    "cardeio_slug": "005-chivalrous-competitor"
   },
   {
     "extension": "Heroes Clash",
@@ -4084,7 +4386,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 6,
-    "vitality": 26
+    "vitality": 26,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccb6",
+    "cardeio_slug": "001-nezu"
   },
   {
     "extension": "Heroes Clash",
@@ -4107,7 +4411,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacb7e",
+    "cardeio_slug": "002-evil-vs-good"
   },
   {
     "extension": "Heroes Clash",
@@ -4130,7 +4436,9 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd45",
+    "cardeio_slug": "003-seizing-the-advantage"
   },
   {
     "extension": "Heroes Clash",
@@ -4153,7 +4461,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacda5",
+    "cardeio_slug": "004-symbol-of-peace"
   },
   {
     "extension": "Heroes Clash",
@@ -4177,7 +4487,9 @@
     "difficulty": 4,
     "control": 3,
     "block_zone": "high",
-    "block_mod": 1
+    "block_mod": 1,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd71",
+    "cardeio_slug": "005-special-edition-collectible"
   },
   {
     "extension": "Heroes Clash",
@@ -4208,7 +4520,9 @@
     "block_mod": 2,
     "speed": 2,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bceacc0d62bbb0dacb2a",
+    "cardeio_slug": "006-dark-shadow-emergence"
   },
   {
     "extension": "Heroes Clash",
@@ -4239,7 +4553,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbe8",
+    "cardeio_slug": "007-hardened-barrage"
   },
   {
     "extension": "Heroes Clash",
@@ -4269,7 +4585,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "low",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccde",
+    "cardeio_slug": "008-piercing-thorn-lances"
   },
   {
     "extension": "Heroes Clash",
@@ -4300,7 +4618,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "low",
-    "damage": 4
+    "damage": 4,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd03",
+    "cardeio_slug": "009-rapid-punches"
   },
   {
     "extension": "Heroes Clash",
@@ -4330,7 +4650,9 @@
     "block_mod": 2,
     "speed": 5,
     "attack_zone": "high",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcefcc0d62bbb0dace07",
+    "cardeio_slug": "010-viscous-lunge"
   },
   {
     "extension": "Heroes Clash",
@@ -4353,7 +4675,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bceccc0d62bbb0dacbfc",
+    "cardeio_slug": "011-heroic-aspirations"
   },
   {
     "extension": "Heroes Clash",
@@ -4376,7 +4700,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 2
+    "block_mod": 2,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccd3",
+    "cardeio_slug": "012-petty-squabble"
   },
   {
     "extension": "Heroes Clash",
@@ -4401,7 +4727,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 6,
-    "vitality": 27
+    "vitality": 27,
+    "cardeio_id": "64e6bce9cc0d62bbb0daca87",
+    "cardeio_slug": "001-all-might-2"
   },
   {
     "extension": "Heroes Clash",
@@ -4426,7 +4754,9 @@
     "block_zone": "mid",
     "block_mod": 0,
     "hand_size": 5,
-    "vitality": 30
+    "vitality": 30,
+    "cardeio_id": "64e6bceecc0d62bbb0dacd0f",
+    "cardeio_slug": "002-recovery-girl"
   },
   {
     "extension": "Heroes Clash",
@@ -4450,7 +4780,9 @@
     "difficulty": 3,
     "control": 5,
     "block_zone": "low",
-    "block_mod": 1
+    "block_mod": 1,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc69",
+    "cardeio_slug": "003-living-up-to-his-example"
   },
   {
     "extension": "Heroes Clash",
@@ -4481,7 +4813,9 @@
     "block_mod": 2,
     "speed": 3,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacba1",
+    "cardeio_slug": "004-flamethrower"
   },
   {
     "extension": "Heroes Clash",
@@ -4511,7 +4845,9 @@
     "block_mod": 1,
     "speed": 4,
     "attack_zone": "high",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbce",
+    "cardeio_slug": "005-gigantic-explosion"
   },
   {
     "extension": "Heroes Clash",
@@ -4540,7 +4876,9 @@
     "block_mod": 2,
     "speed": 4,
     "attack_zone": "mid",
-    "damage": 5
+    "damage": 5,
+    "cardeio_id": "64e6bcefcc0d62bbb0dace04",
+    "cardeio_slug": "006-villainous-waylay"
   },
   {
     "extension": "Heroes Clash",
@@ -4566,6 +4904,8 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "high",
-    "block_mod": 3
+    "block_mod": 3,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccd9",
+    "cardeio_slug": "007-photogenic-hero"
   }
 ]
