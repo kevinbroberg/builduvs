@@ -17,7 +17,7 @@ export const useDeckStore = defineStore('deck', {
   }),
 
   getters: {
-    hasDeck: (state) => Object.keys(state.deck).length > 0,
+    hasDeck: (state) => Object.keys(state.deck).length > 0 || !!state.face,
     hasSide: (state) => Object.keys(state.side).length > 0,
     getDeckList: (state) => Object.keys(state.deck).map(k => state.deck[k]),
     getSideList: (state) => Object.keys(state.side).map(k => state.side[k]),

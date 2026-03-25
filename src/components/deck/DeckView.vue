@@ -1,56 +1,30 @@
 <script setup>
   import ManySymbols from 'components/cards/detail/ManySymbols.vue'
   import DeckDialog from './DeckDialog.vue'
-  import CardeioExportDialog from './CardeioExportDialog.vue'
   import { useQuasar } from 'quasar'
 
+  import { useDeckStore } from "src/stores/deck";
+  import { storeToRefs } from "pinia";
+
   const $q = useQuasar()
-  function openCardeioExport() {
-    $q.dialog({ component: CardeioExportDialog })
-  }
   import { getCardImage } from 'src/js/image_helper'
   import {
       face,
-      deck2clipboard,
       partitions,
-      sorts,
-      sortField,
-      sortedDeck,
       
       increment,
       decrement,
-      trash,
       clearFace,
       
-      partitionOptions,
-      howPartition,
   } from './deck_logic'
+
+  const { hasDeck } = storeToRefs(useDeckStore());
 </script>
 
 <template>
-  <q-btn-group push>
-      <DeckDialog />
-      <!-- <q-btn-dropdown menu-self="bottom middle" push stack auto-close 
-        label="Sort" icon="sort">
-        <q-item v-for="sort in sorts" v-bind:key="sort.label" clickable @click="sortField = sort">
-          <q-item-label standout v-if='sortField == sort'>{{sort.label}}</q-item-label>
-          <q-item-label v-else>{{sort.label}}</q-item-label>
-        </q-item>
-      </q-btn-dropdown> -->
-      
-      <q-btn-dropdown menu-self="bottom middle" push stack auto-close
-        label="Views" icon="grid_view">
-        <q-item v-for="partOpt in partitionOptions" v-bind:key="partOpt" clickable @click="howPartition = partOpt" :active="howPartition === partOpt" active-class="bg-orange-13">
-          <q-item-label>{{partOpt}}</q-item-label>
-        </q-item>
-      </q-btn-dropdown>
-      <q-btn push label="Export" icon="cloud_upload" @click="openCardeioExport">
-        <q-tooltip>Push this deck to carde.io</q-tooltip>
-      </q-btn>
-      <q-btn push label="Copy" icon="content_copy" @click="deck2clipboard" >
-        <q-tooltip>Copies your deck to clipboard</q-tooltip>
-      </q-btn>
-      <q-btn outline label="Wipe" icon="delete" color="negative" @click="trash" />
+  <q-btn-group push v-if="!hasDeck">
+    <!-- TODO - formerly a button group with all the options -->
+      <DeckDialog  />
   </q-btn-group>
 
   <q-item-section avatar v-if="face">

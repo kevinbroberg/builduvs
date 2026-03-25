@@ -1,40 +1,22 @@
 import { store } from "quasar/wrappers";
-import { watch } from "vue";
+import { watch, toRaw } from "vue";
 import { createPinia } from "pinia";
-import { LocalStorage } from "quasar";
-
-/*
- * If not building with SSR mode, you can
- * directly export the Store instantiation;
- *
- * The function below can be async too; either use
- * async/await or return a Promise which resolves
- * with the Store instance.
- */
 
 export default store((/* { ssrContext } */) => {
   const pinia = createPinia();
 
-  // You can add Pinia plugins here
-  // pinia.use(SomePiniaPlugin)
-
-  let previous_state = LocalStorage.getItem("builduvs_pinia");
-
-  if (previous_state) {
-    console.log(
-      `Loaded old state with current p1 hp ${previous_state?.player1?.health}`
-    );
-    // TODO probably a big security hole
-    pinia.state.value = JSON.parse(previous_state);
-  } else {
-    console.log("no previous state");
+  try {
+    const saved = window.localStorage.getItem("builduvs_pinia");
+    if (saved) pinia.state.value = JSON.parse(saved);
+  } catch (e) {
+    console.warn("Could not restore saved state:", e);
+    window.localStorage.removeItem("builduvs_pinia");
   }
 
   watch(
     pinia.state,
     (state) => {
-      // persist the whole state to the local storage whenever it changes
-      localStorage.setItem("builduvs_pinia", JSON.stringify(state));
+      window.localStorage.setItem("builduvs_pinia", JSON.stringify(toRaw(state)));
     },
     { deep: true }
   );
