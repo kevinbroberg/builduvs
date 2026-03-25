@@ -24,6 +24,10 @@ const routes = [
         path: "/deck",
         component: () => import("src/pages/DeckHome.vue"),
       },
+      {
+        path: "/shuffle",
+        component: () => import("src/pages/ShuffleHome.vue"),
+      },
     ],
   },
 ];

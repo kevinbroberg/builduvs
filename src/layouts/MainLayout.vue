@@ -40,6 +40,7 @@ function toggleRightDrawer() {
           <q-route-tab to="/deck" label="Deck Detail" />
           <q-route-tab to="/cards" label="Search" />
           <q-route-tab to="/settings" label="Settings" />
+          <q-route-tab to="/shuffle" label="Shuffle" />
         </q-tabs>
         <!-- <NamePicker /> -->
         <q-btn dense flat round
