@@ -5,6 +5,7 @@
 </script>
 <template>
     <div id="options"> <!-- TODO Use a QList here-->
+      <q-input v-model="selections.name" standout dense clearable label="Search by name" />
       <div>
           <ToggleGroup v-for="name in symbolListsToShow" :key=name
             v-model:picks="selections[name]" :options=symbolOptions

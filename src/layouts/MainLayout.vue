@@ -23,7 +23,7 @@ function toggleRightDrawer() {
       <q-toolbar>
         <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
-        <q-toolbar-title>
+        <q-toolbar-title shrink>
           <q-avatar>
             <!-- TODO make a SVG -->
             <img
@@ -33,14 +33,14 @@ function toggleRightDrawer() {
               alt="logo"
             />
           </q-avatar>
-          BuildUVS
+          <span class="gt-xs">BuildUVS</span>
         </q-toolbar-title>
         <q-tabs align="center">
-          <q-route-tab to="/" label="Game Tracker" />
-          <q-route-tab to="/deck" label="Deck Detail" />
-          <q-route-tab to="/cards" label="Search" />
-          <q-route-tab to="/settings" label="Settings" />
-          <q-route-tab to="/shuffle" label="Shuffle" />
+          <q-route-tab to="/" label="Game Tracker" icon="sports_esports" />
+          <q-route-tab to="/deck" label="Deck Detail" icon="style" />
+          <q-route-tab to="/cards" label="Search" icon="search" />
+          <q-route-tab to="/settings" label="Settings" icon="settings" />
+          <q-route-tab to="/shuffle" label="Shuffle" icon="shuffle" />
         </q-tabs>
         <!-- <NamePicker /> -->
         <q-btn dense flat round
@@ -67,3 +67,9 @@ function toggleRightDrawer() {
     </q-page-container>
   </q-layout>
 </template>
+
+<style>
+@media (max-width: 600px) {
+  .q-tab__label { display: none; }
+}
+</style>

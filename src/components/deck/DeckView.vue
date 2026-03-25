@@ -39,18 +39,18 @@
       </q-btn-dropdown> -->
       
       <q-btn-dropdown menu-self="bottom middle" push stack auto-close
-        label="Partition" icon="group_work">
+        label="Views" icon="grid_view">
         <q-item v-for="partOpt in partitionOptions" v-bind:key="partOpt" clickable @click="howPartition = partOpt" :active="howPartition === partOpt" active-class="bg-orange-13">
           <q-item-label>{{partOpt}}</q-item-label>
         </q-item>
       </q-btn-dropdown>
-      <q-btn push label="Export" icon="upload" @click="openCardeioExport">
+      <q-btn push label="Export" icon="cloud_upload" @click="openCardeioExport">
         <q-tooltip>Push this deck to carde.io</q-tooltip>
       </q-btn>
       <q-btn push label="Copy" icon="content_copy" @click="deck2clipboard" >
         <q-tooltip>Copies your deck to clipboard</q-tooltip>
       </q-btn>
-      <q-btn push label="Wipe" icon="delete" @click="trash" />
+      <q-btn outline label="Wipe" icon="delete" color="negative" @click="trash" />
   </q-btn-group>
 
   <q-item-section avatar v-if="face">
@@ -71,17 +71,13 @@
       <q-item-label header>{{partition.label}}</q-item-label> <!-- v-else -->
       <q-item v-for="card in partition.cards" :key="card.asset" no-wrap dense :class="`card-list-${card.type}`">
         <q-item-section avatar>
-            <q-avatar square>
-              <!-- TODO zoom into just the card art here -->
-              <img
-                :src="getCardImage(card.asset)" @click="increment(card)" 
-              />
-              
-            </q-avatar>  
+            <q-avatar square class="card-thumb" @click="increment(card)">
+              <img :src="getCardImage(card.asset)" class="card-thumb__img" />
+            </q-avatar>
         </q-item-section>
         <q-item-section>
             <q-item-label lines="2">
-              <q-btn flat round no-margin icon="remove" 
+              <q-btn flat round no-margin icon="remove" class="decrement-btn"
                 @click="decrement(card)"/>
               {{card.qty}} {{card.name}}
             </q-item-label>            
@@ -107,7 +103,39 @@
 .card-list-action {
   background-color: #0b64cf;
 }
+.card-list-backup {
+  background-color: #7b3fa0;
+}
 .card-list-side {
   background-color: #999999;
+}
+.decrement-btn {
+  cursor: pointer;
+  transition: filter 0.15s;
+}
+.decrement-btn:hover {
+  filter: brightness(1.15);
+}
+.decrement-btn:active {
+  filter: brightness(0.85);
+}
+.card-thumb {
+  cursor: pointer;
+  overflow: hidden;
+  transition: brightness 0.15s;
+}
+.card-thumb:hover {
+  filter: brightness(1.15);
+}
+.card-thumb:active {
+  filter: brightness(0.85);
+}
+.card-thumb__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transform: scale(1.2);
+  transform-origin: top center;
 }
 </style>

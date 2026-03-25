@@ -14,6 +14,50 @@ const deckStore = useDeckStore()
 const tokenInput = ref('')
 const tokenError = ref('')
 const validating = ref(false)
+const tokenMethod = ref('devtools')
+const bookmarkletCopied = ref(false)
+function copyBookmarkletSource() {
+  navigator.clipboard.writeText(bookmarkletSource).then(() => {
+    bookmarkletCopied.value = true
+    setTimeout(() => { bookmarkletCopied.value = false }, 2000)
+  })
+}
+
+const bookmarkletSource = `(function() {
+  var keys = Object.keys(localStorage).filter(function(k) {
+    return k.indexOf('@@auth0spajs@@') > -1 && k.indexOf('carde.io') > -1;
+  });
+  if (!keys.length) {
+    alert('No Auth0 session found — make sure you are logged in at play.uvsgames.com');
+    return;
+  }
+  var token = null;
+  keys.forEach(function(k) {
+    try {
+      var d = JSON.parse(localStorage.getItem(k));
+      if (d && d.body && d.body.access_token) token = d.body.access_token;
+    } catch(e) {}
+  });
+  if (!token) {
+    alert('Could not extract token. Try the DevTools method instead.');
+    return;
+  }
+  navigator.clipboard.writeText(token)
+    .then(function() { alert('Token copied! Paste it into BuildUVS.'); })
+    .catch(function() { prompt('Copy this token:', token); });
+})()`
+
+const bookmarklet = computed(() => {
+  const code = `(function(){
+    var keys=Object.keys(localStorage).filter(function(k){return k.indexOf('@@auth0spajs@@')>-1&&k.indexOf('carde.io')>-1;});
+    if(!keys.length){alert('No Auth0 session found — make sure you are logged in at play.uvsgames.com');return;}
+    var token=null;
+    keys.forEach(function(k){try{var d=JSON.parse(localStorage.getItem(k));if(d&&d.body&&d.body.access_token)token=d.body.access_token;}catch(e){}});
+    if(!token){alert('Could not extract token. Try the DevTools method instead.');return;}
+    navigator.clipboard.writeText(token).then(function(){alert('Token copied! Paste it into BuildUVS.');}).catch(function(){prompt('Copy this token:',token);});
+  })()`
+  return 'javascript:' + encodeURIComponent(code)
+})
 
 async function saveToken() {
   if (!tokenInput.value.trim()) return
@@ -90,11 +134,34 @@ async function repush() {
       <template v-if="!cardeio.hasToken">
         <q-card-section>
           <div class="text-h6">Connect to carde.io</div>
-          <p class="q-mt-sm">
-            Open <a href="https://play.uvsgames.com" target="_blank">play.uvsgames.com</a>,
-            log in, then open DevTools (F12) → Network tab → click any request →
-            copy the <code>Authorization</code> header value (everything after <code>Bearer </code>).
-          </p>
+
+          <q-tabs v-model="tokenMethod" dense align="left" class="q-mt-sm">
+            <q-tab name="devtools" label="DevTools" icon="code" />
+            <q-tab name="bookmarklet" label="Bookmarklet" icon="bookmark" />
+          </q-tabs>
+          <q-separator />
+
+          <q-tab-panels v-model="tokenMethod" animated>
+            <q-tab-panel name="devtools" class="q-pa-sm">
+              <p>
+                Open <a href="https://play.uvsgames.com" target="_blank">play.uvsgames.com</a>,
+                log in, then open DevTools (F12) → Network tab → click any request →
+                copy the <code>Authorization</code> header value (everything after <code>Bearer </code>).
+              </p>
+            </q-tab-panel>
+            <q-tab-panel name="bookmarklet" class="q-pa-sm">
+              <p>
+                1. Drag this link to your bookmarks bar:
+                <a :href="bookmarklet" class="bookmarklet-btn" @click.prevent="copyBookmarkletSource">{{ bookmarkletCopied ? '✅ Source copied!' : '📋 Copy carde.io token' }}</a>
+              </p>
+              <p>
+                2. Go to <a href="https://play.uvsgames.com" target="_blank">play.uvsgames.com</a> and log in.
+              </p>
+              <p>3. Click the bookmark — your token will be copied to clipboard.</p>
+              <p>4. Paste it below.</p>
+            </q-tab-panel>
+          </q-tab-panels>
+
           <q-input
             v-model="tokenInput"
             type="textarea"
@@ -103,6 +170,17 @@ async function repush() {
             label="Paste Bearer token"
             :error="!!tokenError"
             :error-message="tokenError"
+          />
+          <q-input
+            v-if="tokenMethod === 'bookmarklet'"
+            :model-value="bookmarkletSource"
+            type="textarea"
+            autogrow
+            outlined
+            readonly
+            dense
+            label="Bookmarklet source"
+            class="q-mt-sm"
           />
         </q-card-section>
         <q-card-actions align="right">
@@ -195,3 +273,19 @@ async function repush() {
     </q-card>
   </q-dialog>
 </template>
+
+<style scoped>
+.bookmarklet-btn {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #1976d2;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: grab;
+  user-select: none;
+}
+.bookmarklet-btn:hover {
+  background: #1565c0;
+}
+</style>

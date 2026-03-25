@@ -32,8 +32,8 @@ function openCardeioExport() {
       push
       stack
       auto-close
-      label="Partition"
-      icon="group_work"
+      label="Views"
+      icon="grid_view"
     >
       <q-item
         v-for="partOpt in partitionOptions"
@@ -46,11 +46,13 @@ function openCardeioExport() {
         <q-item-label>{{ partOpt }}</q-item-label>
       </q-item>
     </q-btn-dropdown>
-    <q-btn push label="Export" icon="upload" @click="openCardeioExport" />
+    <q-btn push label="Export" icon="cloud_upload" @click="openCardeioExport">
+      <q-tooltip>Push this deck to carde.io</q-tooltip>
+    </q-btn>
     <q-btn push label="Copy" icon="content_copy" @click="deck2clipboard">
       <q-tooltip>Copies your deck to clipboard</q-tooltip>
     </q-btn>
-    <q-btn push label="Wipe" icon="delete" @click="trash" />
+    <q-btn outline label="Wipe" icon="delete" color="negative" @click="trash" />
   </q-btn-group>
 
   <div class="row items-start q-gutter-md">

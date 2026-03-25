@@ -39,7 +39,7 @@ const { dialogRef, onDialogHide, onDialogOK, onDialogCancel } = useDialogPluginC
 </script>
 
 <template>
-  <q-btn push stack dense round icon="file_upload" @click="deckLoadDialog">
-    <q-tooltip>Load a deck from file or with text input</q-tooltip>
+  <q-btn push stack label="Import" icon="file_upload" @click="deckLoadDialog">
+    <q-tooltip>Load a deck from file or text</q-tooltip>
   </q-btn>
 </template>
