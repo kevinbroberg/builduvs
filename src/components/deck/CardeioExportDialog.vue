@@ -73,7 +73,9 @@ async function saveToken() {
 }
 
 // --- deck ID step ---
-const deckUrl = ref('')
+const deckUrl = ref(deckStore.currentCardeioId
+  ? `https://play.uvsgames.com/decks/${deckStore.currentCardeioId}`
+  : '')
 const pushing = ref(false)
 const unmatched = ref([])
 const fixes = ref({}) // { cardName -> cardeioId }
@@ -95,6 +97,7 @@ async function push(currentFixes = {}) {
     const result = await cardeio.pushDeck(deckId.value, deckStore, currentFixes)
     unmatched.value = result.unmatched
     done.value = true
+    deckStore.currentCardeioId = deckId.value
   } catch (e) {
     pushError.value = e.message
   } finally {

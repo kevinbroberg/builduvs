@@ -11,6 +11,7 @@ export const useDeckStore = defineStore('deck', {
     currentDeckName: 'Untitled Deck',
     currentDeckFormat: null,
     currentDeckModified: null,
+    currentCardeioId: null,
 
     // Saved decks library: { [id]: { id, name, format, modified, deck, side, face } }
     savedDecks: {},
@@ -117,6 +118,7 @@ export const useDeckStore = defineStore('deck', {
         deck: JSON.parse(JSON.stringify(this.deck)),
         side: JSON.parse(JSON.stringify(this.side)),
         face: this.face ? JSON.parse(JSON.stringify(this.face)) : undefined,
+        cardeioId: this.currentCardeioId ?? null,
       }
 
       this.currentDeckId = id
@@ -137,6 +139,7 @@ export const useDeckStore = defineStore('deck', {
       this.currentDeckName = saved.name
       this.currentDeckFormat = saved.format
       this.currentDeckModified = saved.modified
+      this.currentCardeioId = saved.cardeioId ?? null
     },
 
     deleteDeck(deckId) {
@@ -155,6 +158,7 @@ export const useDeckStore = defineStore('deck', {
       this.currentDeckName = 'Untitled Deck'
       this.currentDeckFormat = null
       this.currentDeckModified = null
+      this.currentCardeioId = null
     },
   },
 })

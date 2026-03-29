@@ -3,23 +3,44 @@ import { cards } from 'src/js/card_provider.js'
 import { ref, computed, defineEmits, watch } from 'vue'
 import { useDialogPluginComponent } from 'quasar'
 import { useDeckStore } from 'src/stores/deck'
+import { useCardeioStore } from 'src/stores/cardeio'
 const $store = useDeckStore()
+const cardeio = useCardeioStore()
 const text = ref('')
 const fileModel = ref(null)
 const deckChanged = ref(false)
 
 const uvsultraPattern = /https?:\/\/uvsultra\.online\/deck\.php\?deck=(\w+)/
+const cardeioPattern = /https?:\/\/play\.uvsgames\.com\/decks\/([a-f0-9]{24})/
 const loading = ref(false)
 const loadedDeckName = ref('')
 
 watch(text, async (val) => {
   const trimmed = val.trim()
-  const match = trimmed.match(uvsultraPattern)
-  if (!match || match[0] !== trimmed) return
+
+  const cardeioMatch = trimmed.match(cardeioPattern)
+  if (cardeioMatch && cardeioMatch[0] === trimmed) {
+    loading.value = true
+    loadedDeckName.value = ''
+    try {
+      const { name } = await cardeio.pullDeck(cardeioMatch[1], $store)
+      loadedDeckName.value = name
+      text.value = ''
+      onDialogOK()
+    } catch (e) {
+      console.log('Failed to fetch Cardeio deck', e)
+    } finally {
+      loading.value = false
+    }
+    return
+  }
+
+  const uvsMatch = trimmed.match(uvsultraPattern)
+  if (!uvsMatch || uvsMatch[0] !== trimmed) return
   loading.value = true
   loadedDeckName.value = ''
   try {
-    const res = await fetch(`https://corsproxy.io/?${encodeURIComponent(val.trim())}`)
+    const res = await fetch(`https://corsproxy.io/?${encodeURIComponent(trimmed)}`)
     const html = await res.text()
     const doc = new DOMParser().parseFromString(html, 'text/html')
     const forumCode = doc.querySelector('textarea')?.value
@@ -149,7 +170,7 @@ function replaceVuexDeck() {
         </q-file>
 
         <q-input outlined type="textarea" v-model="text"
-          placeholder="Enter deck as text, upload a file, or paste a UVSUltra deck link"
+          placeholder="Enter deck as text, upload a file, or paste a UVSUltra or carde.io deck link"
           class="loader-textarea"
           :loading="loading"
           :disable="loading"

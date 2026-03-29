@@ -1,4 +1,6 @@
 import { defineStore } from 'pinia'
+import cardeioIds from 'src/assets/cardeio-ids.json'
+import { cards } from 'src/js/card_provider.js'
 
 const API = 'https://play-api.carde.io/v1'
 
@@ -69,6 +71,49 @@ export const useCardeioStore = defineStore('cardeio', {
       ]
 
       return { sections, unmatched }
+    },
+
+    async pullDeck(deckId, deckStore) {
+      const headers = { origin: 'https://play.uvsgames.com' }
+      if (this.token) headers.authorization = `Bearer ${this.token}`
+
+      const res = await fetch(`${API}/decks/${deckId}`, { headers })
+      if (!res.ok) throw new Error(`Fetch failed (${res.status})`)
+      const json = await res.json()
+      const data = json.data.deck
+
+      const idToName = {}
+      for (const [name, info] of Object.entries(cardeioIds)) {
+        idToName[info.id] = name
+      }
+      const nameToCard = {}
+      for (const card of Object.values(cards)) {
+        nameToCard[card.name.toLowerCase()] = card
+      }
+
+      deckStore.nuke()
+      for (const section of data.sections ?? []) {
+        const isChar = section.deckSectionId === SECTION_CHARACTER
+        const isSide = section.deckSectionId === SECTION_SIDE
+        for (const { cardId, count } of section.cards ?? []) {
+          const name = idToName[cardId]
+          if (!name) { console.warn(`pullDeck: no local name for cardeio ID ${cardId}`); continue }
+          const card = nameToCard[name.toLowerCase()]
+          if (!card) { console.warn(`pullDeck: no local card for name "${name}"`); continue }
+          for (let i = 0; i < count; i++) {
+            if (isChar) deckStore.setFace(card)
+            else if (isSide) deckStore.incrementSide(card)
+            else deckStore.increment(card)
+          }
+        }
+      }
+
+      deckStore.currentCardeioId = deckId
+      deckStore.currentDeckName = data.name ?? 'Cardeio Deck'
+      deckStore.currentDeckId = null
+      deckStore.currentDeckFormat = null
+
+      return { name: data.name ?? 'Cardeio Deck' }
     },
 
     async pushDeck(deckId, deckStore, fixes = {}) {
