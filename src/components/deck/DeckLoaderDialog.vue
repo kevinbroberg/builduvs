@@ -1,12 +1,39 @@
 <script setup>
 import { cards } from 'src/js/card_provider.js'
-import { ref, computed, defineEmits } from 'vue'
+import { ref, computed, defineEmits, watch } from 'vue'
 import { useDialogPluginComponent } from 'quasar'
 import { useDeckStore } from 'src/stores/deck'
 const $store = useDeckStore()
 const text = ref('')
 const fileModel = ref(null)
 const deckChanged = ref(false)
+
+const uvsultraPattern = /https?:\/\/uvsultra\.online\/deck\.php\?deck=(\w+)/
+const loading = ref(false)
+const loadedDeckName = ref('')
+
+watch(text, async (val) => {
+  const trimmed = val.trim()
+  const match = trimmed.match(uvsultraPattern)
+  if (!match || match[0] !== trimmed) return
+  loading.value = true
+  loadedDeckName.value = ''
+  try {
+    const res = await fetch(`https://corsproxy.io/?${encodeURIComponent(val.trim())}`)
+    const html = await res.text()
+    const doc = new DOMParser().parseFromString(html, 'text/html')
+    const forumCode = doc.querySelector('textarea')?.value
+    if (forumCode) {
+      const nameMatch = forumCode.match(/\[b\]\[url=[^\]]+\](.+?)\[\/url\]\[\/b\]/)
+      loadedDeckName.value = nameMatch?.[1] || 'Unknown deck'
+      text.value = forumCode
+    }
+  } catch (e) {
+    console.log('Failed to fetch UVSUltra deck', e)
+  } finally {
+    loading.value = false
+  }
+})
 
 
   const emit = defineEmits(
@@ -114,14 +141,23 @@ function replaceVuexDeck() {
 <template>
 <!-- notice dialogRef here -->
 
-  <q-dialog ref="dialogRef" @hide="onDialogHide">    
-    <q-card class="q-dialog-plugin">
-      <q-card-section> 
+  <q-dialog ref="dialogRef" @hide="onDialogHide">
+    <q-card class="q-dialog-plugin loader-card">
+      <q-card-section class="loader-scroll">
         <q-file filled v-model="fileModel" @change="deck2Text($event)" label="Upload deck">
             <q-tooltip>Loads a text or TTS.json deck into the text area below</q-tooltip>
         </q-file>
-        
-        <q-input outlined autogrow type="textarea" v-model="text" placeholder="Enter deck as text" />
+
+        <q-input outlined type="textarea" v-model="text"
+          placeholder="Enter deck as text, upload a file, or paste a UVSUltra deck link"
+          class="loader-textarea"
+          :loading="loading"
+          :disable="loading"
+        />
+        <div v-if="loading" class="q-mt-sm text-caption text-grey">Fetching deck from UVSUltra...</div>
+        <q-chip v-if="loadedDeckName" icon="check_circle" color="positive" text-color="white" class="q-mt-sm">
+          Loaded: {{ loadedDeckName }}
+        </q-chip>
       </q-card-section>
 
       <!-- buttons example -->
@@ -138,6 +174,19 @@ function replaceVuexDeck() {
 </template>
 
 <style>
+.loader-card {
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+}
+.loader-scroll {
+  overflow-y: auto;
+  flex: 1;
+}
+.loader-textarea .q-field__native {
+  min-height: 200px;
+  resize: vertical;
+}
 .load-input {
   position: relative;
   overflow: hidden;
