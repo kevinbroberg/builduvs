@@ -9,6 +9,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [],
@@ -26,6 +27,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -55,6 +57,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -84,6 +87,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -113,6 +117,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -142,6 +147,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -171,6 +177,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -200,6 +207,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -229,6 +237,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -258,6 +267,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -287,6 +297,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -315,6 +326,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -344,6 +356,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -372,6 +385,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -401,6 +415,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -430,6 +445,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -459,10 +475,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "text": "While this card is in your card pool, your  attacks get +1 speed and +1 damage.\n\nForm: Draw 1 card. If your next  attack this turn deals damage, you may clear it from your card pool after it resolves.",
     "difficulty": 3,
@@ -484,10 +501,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "keywords": [
       "Ranged"
@@ -515,10 +533,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "keywords": [
       "Slam"
@@ -546,10 +565,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "text": "Enhance Sacrifice, sacrifice 2 Power tokens: Clear 1 card from your card pool.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
     "difficulty": 2,
@@ -571,10 +591,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "text": "Enhance Flip: If your rival has cycled this game, this attack gets +4 speed.",
     "difficulty": 1,
@@ -596,10 +617,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "text": "Enhance Remove: Look at the top 3 cards of your deck and put them back in any order. Add 1 Power token to your stage.",
     "difficulty": 0,
@@ -621,10 +643,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "text": "Blitz: If you have a Power token in your stage, draw 1 card.",
     "difficulty": 5,
@@ -649,10 +672,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "keywords": [
       "Fury"
@@ -680,10 +704,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "text": "Enhance Flip: If your rival has cycled this game, draw 2 cards.",
     "difficulty": 1,
@@ -705,10 +730,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "text": "Enhance Flip: Choose 1 keyword ability on this attack. Its keyword rating gets +1.",
     "difficulty": 1,
@@ -730,10 +756,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "text": "Enhance Sacrifice, sacrifice 2 Power tokens: Draw 2 cards. Add 1 card from your hand to the top of your deck.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
     "difficulty": 2,
@@ -755,10 +782,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "chaos"
+      "chaos-attuned"
     ],
     "text": "Enhance: Your next check gets +2. Add 1 Power token to your stage.\n\nFirst Enhance: Your rival's next check gets -2.",
     "difficulty": 0,
@@ -780,10 +808,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "chaos"
+      "chaos-attuned"
     ],
     "keywords": [
       "Kick",
@@ -812,10 +841,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "chaos"
+      "chaos-attuned"
     ],
     "keywords": [
       "Ranged"
@@ -843,10 +873,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "chaos"
+      "chaos-attuned"
     ],
     "text": "Blitz: If you have a Power token in your stage, add the top card of your deck to your momentum.",
     "difficulty": 5,
@@ -871,10 +902,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "chaos"
+      "chaos-attuned"
     ],
     "text": "Enhance Flip: If your rival has cycled this game, your next check gets +3.",
     "difficulty": 1,
@@ -896,10 +928,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "chaos"
+      "chaos-attuned"
     ],
     "text": "Enhance Sacrifice, sacrifice 1 Power token: Add 1 card from your discard pile to your momentum.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
     "difficulty": 2,
@@ -921,10 +954,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "death"
+      "death-attuned"
     ],
     "text": "First Form Remove: Your rival sacrifices 1 foundation.\n\nResponse: After you play this card, gain 2 health or add 1 Destoroyah counter to your character.",
     "difficulty": 5,
@@ -944,10 +978,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "death"
+      "death-attuned"
     ],
     "text": "Powerful: 2 - Slam\n\nDeadlock Blitz: Ruin 3.",
     "difficulty": 6,
@@ -972,10 +1007,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "death"
+      "death-attuned"
     ],
     "keywords": [
       "Ranged"
@@ -1003,10 +1039,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "death"
+      "death-attuned"
     ],
     "text": "Blitz: If you have a Power token in your stage, ruin 1.",
     "difficulty": 5,
@@ -1031,10 +1068,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "death"
+      "death-attuned"
     ],
     "text": "First Enhance [Your turn] Sacrifice, sacrifice X Power tokens: Destroy 1 rival foundation with difficulty X.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
     "difficulty": 2,
@@ -1056,10 +1094,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "death"
+      "death-attuned"
     ],
     "text": "Enhance Flip: If your rival has cycled this game, destroy 1 rival foundation.",
     "difficulty": 1,
@@ -1081,10 +1120,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "text": "Throw\n\nBlitz: Your next attack gets +2 speed.",
     "difficulty": 4,
@@ -1109,10 +1149,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "text": "Blitz: If you have a Power token in your stage, flip 1 rival foundation.",
     "difficulty": 5,
@@ -1137,10 +1178,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "text": "Deadlock Stun: 3 - Throw",
     "difficulty": 6,
@@ -1165,10 +1207,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "text": "Enhance Flip, commit 1 Power token: Draw 1 card.",
     "difficulty": 1,
@@ -1190,10 +1233,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "text": "Deflect: 2\n\nEnhance Sacrifice: Add 1 Deflect card from your discard pile to your hand.",
     "difficulty": 3,
@@ -1215,10 +1259,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "text": "Enhance Sacrifice, sacrifice 2 Power tokens: Reduce this attack's damage to 1.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
     "difficulty": 2,
@@ -1240,10 +1285,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "text": "Enhance Flip: If your rival has cycled this game, flip 2 rival foundations.",
     "difficulty": 1,
@@ -1265,10 +1311,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Fury"
@@ -1296,10 +1343,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Frenzy",
@@ -1330,10 +1378,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Echo",
@@ -1362,10 +1411,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Enhance Flip: If your rival has cycled this game, their next check gets -3.",
     "difficulty": 1,
@@ -1387,10 +1437,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Enhance: If you have removed a card to pay a cost this Enhance Step, your attack gets +1 speed.",
     "difficulty": 2,
@@ -1412,10 +1463,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Enhance Commit: This attack gets -2 speed. If it has the  symbol, it gets -3 speed instead.",
     "difficulty": 1,
@@ -1437,10 +1489,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Response Sacrifice, sacrifice 2 Power tokens: After your rival makes a check, that check gets -4.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
     "difficulty": 2,
@@ -1462,10 +1515,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "First Form Remove: Add 1 Power token to your stage and draw 1 card.",
     "difficulty": 5,
@@ -1487,10 +1541,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Slam",
@@ -1519,10 +1574,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "Blitz: If you have a Power token in your stage, this attack gets +3 damage.",
     "difficulty": 4,
@@ -1547,10 +1603,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "Enhance Sacrifice, sacrifice 2 Power tokens: This attack gets +3 speed and +6 damage.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
     "difficulty": 2,
@@ -1572,10 +1629,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "Enhance Flip: If your rival has cycled this game, this attack gets +5 damage.",
     "difficulty": 1,
@@ -1597,10 +1655,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "Breaker: 1\n\nResponse: After you block with this card, this attack deals no damage. Add 1 Power token to your stage.",
     "difficulty": 2,
@@ -1622,10 +1681,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Kick"
@@ -1653,10 +1713,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "Enhance Commit: This attack gets -2 speed. If it has the  symbol, it gets -3 speed instead.",
     "difficulty": 1,
@@ -1678,10 +1739,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "Enhance Flip: If your rival has cycled this game, add 1 card from your discard pile to your hand.",
     "difficulty": 1,
@@ -1703,10 +1765,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "Enhance Sacrifice, sacrifice X Power tokens: Build 1 foundation from your discard pile with difficulty X.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
     "difficulty": 2,
@@ -1728,10 +1791,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Tech"
@@ -1756,10 +1820,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "keywords": [
       "Ranged"
@@ -1787,10 +1852,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "keywords": [
       "Ranged"
@@ -1818,10 +1884,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "text": "Enhance Sacrifice, sacrifice 2 Power tokens: The next card you play this turn ignores progressive difficulty.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
     "difficulty": 2,
@@ -1843,10 +1910,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "text": "Enhance Flip: If your rival has cycled this game, choose 1 card in your card pool. It does not count toward progressive difficulty this turn.",
     "difficulty": 1,
@@ -1868,10 +1936,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "text": "Enhance [Tenacious, Once per turn] Sacrifice 1 Power token: Ready this foundation.\n\nResponse Commit: After 1 or more rival foundations is destroyed due to your effect, gain 2 health.",
     "difficulty": 2,
@@ -1893,10 +1962,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "order"
+      "order-attuned"
     ],
     "text": "Breaker: 1 - Ranged - Tech\n\nBlitz: If an attack has been blocked this turn, this attack gets +3 damage.",
     "difficulty": 4,
@@ -1921,10 +1991,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "order"
+      "order-attuned"
     ],
     "keywords": [
       "Ranged",
@@ -1951,10 +2022,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "order"
+      "order-attuned"
     ],
     "keywords": [
       "Ranged",
@@ -1983,10 +2055,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "order"
+      "order-attuned"
     ],
     "text": "Enhance Flip: If your rival has cycled this game, commit 2 rival foundations.",
     "difficulty": 1,
@@ -2008,10 +2081,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "order"
+      "order-attuned"
     ],
     "text": "Enhance Sacrifice, sacrifice 1 Power token: Commit 1 non-character card in your rival's stage.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
     "difficulty": 2,
@@ -2033,10 +2107,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "EX: 2 - Slam\n\nBlitz Flip 1 foundation: This attack gets +2 speed.",
     "difficulty": 5,
@@ -2061,10 +2136,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Punch"
@@ -2092,10 +2168,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Enhance Sacrifice, sacrifice 3 Power tokens: Your rival reveals their hand. Choose 1 card revealed this way and discard it.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
     "difficulty": 2,
@@ -2117,10 +2194,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Enhance Flip: If your rival has cycled this game, they discard 1 card.",
     "difficulty": 1,
@@ -2142,10 +2220,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Enhance Flip: Each player seals 1 rival non-character card.",
     "difficulty": 1,
@@ -2167,10 +2246,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Enhance Commit: This attack gets +3 or -3 speed.\n\nResponse [Tenacious] Flip: After your rival plays a Blitz ability, cancel it.",
     "difficulty": 5,
@@ -2192,10 +2272,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "First Enhance Remove: Each player adds the top card of their deck to their card pool.",
     "difficulty": 0,
@@ -2217,10 +2298,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Ranged"
@@ -2248,10 +2330,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "Response: After this attack is blocked, ready 1 foundation.",
     "difficulty": 5,
@@ -2276,10 +2359,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "Throw\n\nBlitz: This attack gets +1 speed for each face down card in your card pool.",
     "difficulty": 3,
@@ -2304,10 +2388,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "Enhance Sacrifice, sacrifice 1 Power token: Ready up to 2 foundations with difficulty 2 or less.\n\nDeadlock Enhance [Your turn]: Add 1 Power token to your stage.",
     "difficulty": 2,
@@ -2329,10 +2414,11 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "Enhance Flip: If your rival has cycled this game, ready 2 foundations.",
     "difficulty": 1,
@@ -2354,6 +2440,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2386,6 +2473,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2418,6 +2506,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2450,6 +2539,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2478,6 +2568,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2509,6 +2600,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2534,6 +2626,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2559,6 +2652,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2587,6 +2681,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2612,6 +2707,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2637,6 +2733,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2662,6 +2759,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2687,6 +2785,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2712,6 +2811,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2739,6 +2839,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2766,6 +2867,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2792,6 +2894,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2819,6 +2922,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2846,6 +2950,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2873,6 +2978,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2903,6 +3009,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2933,6 +3040,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2963,6 +3071,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -2997,6 +3106,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3027,6 +3137,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3061,6 +3172,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3091,6 +3203,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3121,6 +3234,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3154,6 +3268,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3184,6 +3299,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3217,6 +3333,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3247,6 +3364,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3277,6 +3395,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3310,6 +3429,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3340,6 +3460,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3374,6 +3495,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3404,6 +3526,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3434,6 +3557,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3464,6 +3588,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3497,6 +3622,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3527,6 +3653,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3557,6 +3684,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3591,6 +3719,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3624,6 +3753,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3654,6 +3784,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3689,6 +3820,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3719,6 +3851,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3749,6 +3882,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3779,6 +3913,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3809,6 +3944,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3842,6 +3978,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3876,6 +4013,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3911,6 +4049,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3945,6 +4084,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -3979,6 +4119,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4009,6 +4150,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4039,6 +4181,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4069,6 +4212,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4099,6 +4243,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4134,6 +4279,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4167,6 +4313,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4197,6 +4344,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4227,6 +4375,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4261,6 +4410,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4294,6 +4444,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4328,6 +4479,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4358,6 +4510,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4391,6 +4544,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4424,6 +4578,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4459,6 +4614,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4492,6 +4648,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4522,6 +4679,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4552,6 +4710,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4582,6 +4741,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4609,6 +4769,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4636,6 +4797,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4663,6 +4825,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4690,6 +4853,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4717,6 +4881,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4744,6 +4909,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4771,6 +4937,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4798,6 +4965,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4825,6 +4993,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4852,6 +5021,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4879,6 +5049,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4906,6 +5077,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4933,6 +5105,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4960,6 +5133,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -4987,6 +5161,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -5014,6 +5189,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -5041,6 +5217,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -5068,6 +5245,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -5095,6 +5273,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -5122,6 +5301,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -5149,6 +5329,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -5176,6 +5357,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -5203,6 +5385,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -5230,6 +5413,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -5257,6 +5441,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -5284,6 +5469,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -5311,6 +5497,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
@@ -5338,6 +5525,7 @@
     "extension": "Godzilla: Reign of Kaiju",
     "formats": [
       "Godzilla",
+      "standard",
       "legacy"
     ],
     "resources": [
