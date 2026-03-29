@@ -1,0 +1,1290 @@
+[
+  {
+    "extension_short": "kf0x",
+    "numero": 1,
+    "numero_image": 1,
+    "name": "Shun'ei, Amped-Up Illusionist",
+    "type": "character",
+    "rarity": "uncommon",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "good"
+    ],
+    "text": "Enhance [Once per turn] Mill 2: Build 1 card with \"Thruster Vision\" in its name from your discard pile committed.\n\nEnhance Sacrifice 1 foundation: This attack gets +1 damage for each card in your card pool (max. +5).",
+    "hand_size": 6,
+    "vitality": 30,
+    "asset": "kf0x/001-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/001-preview.jpg",
+    "cardeio_id": "f50194df71f2c73f08c0afbc",
+    "cardeio_slug": "shunei-amped-up-illusionist"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 2,
+    "numero_image": 2,
+    "name": "Meitenkun, Sleeping Prodigy",
+    "type": "character",
+    "rarity": "uncommon",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "earth",
+      "good"
+    ],
+    "text": "Response Commit: After your non-Throw attack deals 2 or more damage, draw 3 cards.\n\nForm [Once per turn, Tenacious]: If your character is committed, build 1 card from your card pool face up or face down.",
+    "hand_size": 5,
+    "vitality": 36,
+    "asset": "kf0x/002-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/002-preview.jpg",
+    "cardeio_id": "718cbcb28464decaab72e0a9",
+    "cardeio_slug": "meitenkun-sleeping-prodigy"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 3,
+    "numero_image": 3,
+    "name": "Benimaru, Shooting Star",
+    "type": "character",
+    "rarity": "uncommon",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "chaos",
+      "good"
+    ],
+    "text": "Enhance Add 1 foundation from your stage to your momentum: This attack gets -X speed. X equals the printed difficulty of the added foundation.\n\nEnhance: Your attack gets +1 to its Powerful rating or gains Powerful: 2.",
+    "hand_size": 7,
+    "vitality": 22,
+    "asset": "kf0x/003-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/003-preview.jpg",
+    "cardeio_id": "e9aad33ae8d0d32151ad3f56",
+    "cardeio_slug": "benimaru-shooting-star"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 4,
+    "numero_image": 4,
+    "name": "Team Hero XV",
+    "type": "asset",
+    "rarity": "uncommon",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "good"
+    ],
+    "keywords": [
+      "Ally"
+    ],
+    "text": "Enhance: Your attack gets +1 damage for each foundation that has left your stage this turn (max. +2).\n\nEnhance Remove: Build 1 foundation with difficulty 4 or less from your discard pile.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "asset": "kf0x/004-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/004-preview.jpg",
+    "cardeio_id": "1f595d7e38818361f1ca3de2",
+    "cardeio_slug": "team-hero-xv"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 5,
+    "numero_image": 5,
+    "name": "Benimaru Collider",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "Powerful: 1 - Throw\n\nResponse: After you play this attack's Powerful ability, draw 1 card.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "speed": 2,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "kf0x/005-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/005-preview.jpg",
+    "cardeio_id": "341f07e57991b4d4ca91f6a4",
+    "cardeio_slug": "benimaru-collider"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 6,
+    "numero_image": 6,
+    "name": "Chou Geki Hou",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Charge"
+    ],
+    "text": "Response Spend 1 momentum: After you play this card, your rival commits 2 foundations.\n\nBlitz: If you have 8 or more foundations, this attack gets +3 damage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "kf0x/006-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/006-preview.jpg",
+    "cardeio_id": "059be499f15a1ca6185c12e4",
+    "cardeio_slug": "chou-geki-hou"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 7,
+    "numero_image": 7,
+    "name": "Flying Drill",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Blitz: Draw 1 card. Discard 1 card.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "kf0x/007-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/007-preview.jpg",
+    "cardeio_id": "fa2413686258142fe0854c5f",
+    "cardeio_slug": "flying-drill"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 8,
+    "numero_image": 8,
+    "name": "Ground Hammer",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Blitz: Your next attack gets +1 speed and +1 damage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "kf0x/008-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/008-preview.jpg",
+    "cardeio_id": "5f7a3f1021a692cf25c8cefc",
+    "cardeio_slug": "ground-hammer"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 9,
+    "numero_image": 9,
+    "name": "Makura Nage",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "Response: After this attack is blocked, draw 1 card.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "kf0x/009-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/009-preview.jpg",
+    "cardeio_id": "2b7822b9ee1622ce2768b12a",
+    "cardeio_slug": "makura-nage"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 10,
+    "numero_image": 10,
+    "name": "Phantom Singulation",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Punch"
+    ],
+    "text": "This attack gets -1 difficulty for each foundation in your card pool (max. -2).\n\nBlitz: This attack gets +1 speed and +1 damage for each foundation in your card pool.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "kf0x/010-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/010-preview.jpg",
+    "cardeio_id": "d6f3c348f962bd73aad19a37",
+    "cardeio_slug": "phantom-singulation"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 11,
+    "numero_image": 11,
+    "name": "Scarlet Phantom",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Powerful: 2 - Punch\n\nResponse: After this attack is blocked, build 1 foundation from your card pool.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "kf0x/011-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/011-preview.jpg",
+    "cardeio_id": "dc4722e3aa407f63bdeb9db9",
+    "cardeio_slug": "scarlet-phantom"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 12,
+    "numero_image": 12,
+    "name": "Sen-Siss Hou",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Charge",
+      "Punch"
+    ],
+    "text": "Blitz: Add 1 foundation from your stage to your hand. Build the next foundation you play this turn.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "kf0x/012-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/012-preview.jpg",
+    "cardeio_id": "d96258bfc87d290a014e7feb",
+    "cardeio_slug": "sen-siss-hou"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 13,
+    "numero_image": 13,
+    "name": "Upward Rai-Kou Ken",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "keywords": [
+      "Charge",
+      "Punch"
+    ],
+    "text": "Response: After this attack is blocked, clear 1 card from your card pool for each momentum spent to pay the cost of this attack's Powerful ability (max. 3).",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 0,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "kf0x/013-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/013-preview.jpg",
+    "cardeio_id": "30093107ddccb72d24c97f21",
+    "cardeio_slug": "upward-rai-kou-ken"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 14,
+    "numero_image": 14,
+    "name": "Gallant Figure",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Response Flip: After you spend 2 or more momentum, add the top card of your deck to your momentum.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "kf0x/014-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/014-preview.jpg",
+    "cardeio_id": "a1a97e739705fca7666a43f1",
+    "cardeio_slug": "gallant-figure"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 15,
+    "numero_image": 15,
+    "name": "Sleepyhead",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Enhance: If your rival has not lost health this turn, your attack gets +1 damage. If your character is committed, your attack gets +1 damage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "kf0x/015-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/015-preview.jpg",
+    "cardeio_id": "999890436fa76298953a4f43",
+    "cardeio_slug": "sleepyhead"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 16,
+    "numero_image": 16,
+    "name": "Students of Tung Fu Rue",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Unique\n\nEnhance Sacrifice 1 foundation: This attack gets +1 or -1 speed.\n\nResponse [Once per turn]: After 1 or more foundations leave your stage, gain 1 health.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "kf0x/016-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/016-preview.jpg",
+    "cardeio_id": "62c59128c134265d70c100c9",
+    "cardeio_slug": "students-of-tung-fu-rue"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 17,
+    "numero_image": 17,
+    "name": "Substitute Member",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "Enhance Flip: Change this attack's speed to 3.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "kf0x/017-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/017-preview.jpg",
+    "cardeio_id": "144e8940e013cd123bbc7bf3",
+    "cardeio_slug": "substitute-member"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 18,
+    "numero_image": 18,
+    "name": "Thanks a Million!",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "If there are no foundations in your card pool, this card gets -2 difficulty and -2 to its block modifier.\n\nResponse Commit: After you take damage from an unblocked attack, build the top card of your deck face down.",
+    "difficulty": 4,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "kf0x/018-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/018-preview.jpg",
+    "cardeio_id": "9543e5edb71a832ecd507c1c",
+    "cardeio_slug": "thanks-a-million"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 19,
+    "numero_image": 19,
+    "name": "Thruster Vision: Back",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "Enhance [Tenacious] Add this card to your card pool: This attack gets -3 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "kf0x/019-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/019-preview.jpg",
+    "cardeio_id": "0ab08ad4e5ad8367b2687037",
+    "cardeio_slug": "thruster-vision-back"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 20,
+    "numero_image": 20,
+    "name": "Thruster Vision: Front",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "Enhance [Tenacious] Add this card to your card pool: Your attack gets +2 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "kf0x/020-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/020-preview.jpg",
+    "cardeio_id": "b039e5a25d6300f9624182f1",
+    "cardeio_slug": "thruster-vision-front"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 21,
+    "numero_image": 21,
+    "name": "Thruster Vision: Under",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "Enhance [Tenacious] Add this card to your card pool: Draw 1 card.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "kf0x/021-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/021-preview.jpg",
+    "cardeio_id": "0f85b30aa5482d58cc3601e4",
+    "cardeio_slug": "thruster-vision-under"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 22,
+    "numero_image": 22,
+    "name": "Wide Awake",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Response: After your rival seals 1 or more of your cards, unseal 1 of them and seal this card.",
+    "difficulty": 2,
+    "control": 6,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "kf0x/022-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/022-preview.jpg",
+    "cardeio_id": "a0cf1f1ff63c120353f12973",
+    "cardeio_slug": "wide-awake"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 23,
+    "numero_image": 23,
+    "name": "Isla, Dreaming Brilliance",
+    "type": "character",
+    "rarity": "uncommon",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "life",
+      "void"
+    ],
+    "text": "Enhance [Your turn]: Seal 1 rival foundation or flip 1 sealed rival foundation.\n\nResponse Commit: After you make a check to play an Ally card, that check gets +3.",
+    "hand_size": 7,
+    "vitality": 22,
+    "asset": "kf0x/023-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/023-preview.jpg",
+    "cardeio_id": "6f77d980c197b243b0c65af5",
+    "cardeio_slug": "isla-dreaming-brilliance"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 24,
+    "numero_image": 24,
+    "name": "Dolores, Hidden Wisdom",
+    "type": "character",
+    "rarity": "uncommon",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "life",
+      "void"
+    ],
+    "text": "Response Commit: After your rival plays a Blitz ability, cancel that ability. You may sacrifice 3 foundations. If you do, ready this character.\n\nForm [Once per turn]: Reveal the top 2 cards of your deck. You may try to play 1 of them as your next form, ignoring progressive difficulty.",
+    "hand_size": 5,
+    "vitality": 36,
+    "asset": "kf0x/024-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/024-preview.jpg",
+    "cardeio_id": "5511575ffe76e92f6ef774c1",
+    "cardeio_slug": "dolores-hidden-wisdom"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 25,
+    "numero_image": 25,
+    "name": "Heidern, Hard-Boiled Assassin",
+    "type": "character",
+    "rarity": "uncommon",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "life",
+      "void"
+    ],
+    "text": "Enhance: This attack gets +1 speed. If you have exactly 3 attacks in your card pool, your rival reveals their hand. They discard all non-attack cards revealed this way.\n\nResponse: After you play your first attack card this turn, that card does not count toward progressive difficulty this turn.",
+    "hand_size": 6,
+    "vitality": 30,
+    "asset": "kf0x/025-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/025-preview.jpg",
+    "cardeio_id": "55569924e31e83323dee13a2",
+    "cardeio_slug": "heidern-hard-boiled-assassin"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 26,
+    "numero_image": 26,
+    "name": "Team Rival XV",
+    "type": "asset",
+    "rarity": "uncommon",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "life",
+      "void"
+    ],
+    "keywords": [
+      "Ally"
+    ],
+    "text": "Enhance: Your attack gets +1 damage for each of your rival's sealed foundations (max. +2).\n\nResponse Sacrifice: After your attack deals damage, it does not count toward progressive difficulty this turn.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "kf0x/026-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/026-preview.jpg",
+    "cardeio_id": "334c08171486cc45da5f0a9e",
+    "cardeio_slug": "team-rival-xv"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 27,
+    "numero_image": 27,
+    "name": "Assault Saber",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "life"
+    ],
+    "text": "Stun: 1 - Weapon\n\nBlitz: If there are 2 or more attacks in your card pool, draw 1 card and discard 1 card.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "kf0x/027-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/027-preview.jpg",
+    "cardeio_id": "52c32c58dcbb614e373473c9",
+    "cardeio_slug": "assault-saber"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 28,
+    "numero_image": 28,
+    "name": "Fill-In",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Ally",
+      "Ranged"
+    ],
+    "text": "Blitz: Your rival seals 1 ready face up card in their stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "kf0x/028-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/028-preview.jpg",
+    "cardeio_id": "3e61a55745b8fdba69526166",
+    "cardeio_slug": "fill-in"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 29,
+    "numero_image": 29,
+    "name": "Hadir",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "life"
+    ],
+    "keywords": [
+      "Ally"
+    ],
+    "text": "Response [Card Pool] Spend 1 momentum: After another attack resolves, add it to the top of its owner's deck.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "kf0x/029-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/029-preview.jpg",
+    "cardeio_id": "80992919f08f84ff366c34b4",
+    "cardeio_slug": "hadir"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 30,
+    "numero_image": 30,
+    "name": "Heidern End",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Charge",
+      "Weapon"
+    ],
+    "text": "Blitz Spend 1 momentum: Your rival reveals their hand. They discard all attack cards revealed this way. Your rival draws 1 card for each of the discarded attacks.\n\nResponse: After this attack is blocked, seal 1 rival foundation.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 7,
+    "asset": "kf0x/030-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/030-preview.jpg",
+    "cardeio_id": "8f96c5b3dba72aac06b55dd9",
+    "cardeio_slug": "heidern-end"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 31,
+    "numero_image": 31,
+    "name": "Hilzuni",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "EX: 2 - Punch\n\nResponse: After this attack deals damage, seal 1 rival foundation.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "kf0x/031-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/031-preview.jpg",
+    "cardeio_id": "70f6a2fb9248d23f5fd456fd",
+    "cardeio_slug": "hilzuni"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 32,
+    "numero_image": 32,
+    "name": "Nesh",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Slam"
+    ],
+    "text": "Blitz: Add 1 foundation from your stage to the top of your deck. This attack gets +3 damage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "speed": 2,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "kf0x/032-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/032-preview.jpg",
+    "cardeio_id": "7892015a92dc3bc4de62f0ed",
+    "cardeio_slug": "nesh"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 33,
+    "numero_image": 33,
+    "name": "Scribe",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Ally"
+    ],
+    "text": "Response: After you play this card, if your rival has 10 or more foundations, seal 2 rival foundations.\n\nBlitz: This attack gets +1 damage for each of your rival's sealed foundations.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "kf0x/033-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/033-preview.jpg",
+    "cardeio_id": "a881520702bc70bb46a8b147",
+    "cardeio_slug": "scribe"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 34,
+    "numero_image": 34,
+    "name": "Storm Bringer",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "life"
+    ],
+    "text": "Throw - Weapon\n\nResponse: After this attack deals damage, gain health equal to the damage dealt (max. 4).",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "speed": 2,
+    "attack_zone": "low",
+    "damage": 3,
+    "asset": "kf0x/034-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/034-preview.jpg",
+    "cardeio_id": "122211081c42c96504586ffb",
+    "cardeio_slug": "storm-bringer"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 35,
+    "numero_image": 35,
+    "name": "Wild Style",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Ally"
+    ],
+    "text": "Blitz: Seal 1 rival foundation. This attack gets +1 speed for each of your rival's sealed foundations.\n\nBlitz: Your next check to play an Ally attack gets +1. If your rival has 3 or more sealed cards, it gets +2 instead.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 7,
+    "asset": "kf0x/035-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/035-preview.jpg",
+    "cardeio_id": "cbc55b0a171a1b45d3b5225c",
+    "cardeio_slug": "wild-style"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 36,
+    "numero_image": 36,
+    "name": "Amanda's Help",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Ally"
+    ],
+    "text": "Response Flip: After an attack deals damage, seal 1 rival foundation.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "kf0x/036-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/036-preview.jpg",
+    "cardeio_id": "9b8ebd64b94beb2c2f13281e",
+    "cardeio_slug": "amanda-s-help"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 37,
+    "numero_image": 37,
+    "name": "Drips",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "life"
+    ],
+    "keywords": [
+      "Ally"
+    ],
+    "text": "Enhance Commit: This attack gets -2 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "kf0x/037-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/037-preview.jpg",
+    "cardeio_id": "5fca744634d5f60e929d2b83",
+    "cardeio_slug": "drips"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 38,
+    "numero_image": 38,
+    "name": "Graffiti Artist",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Response [Tenacious] Flip: After you seal 1 or more rival foundations, ready this card.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "kf0x/038-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/038-preview.jpg",
+    "cardeio_id": "fa84d1aae1837378fd3e0819",
+    "cardeio_slug": "graffiti-artist"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 39,
+    "numero_image": 39,
+    "name": "Hidden Motives",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "life"
+    ],
+    "text": "Response [Tenacious]: After this foundation is committed due to a rival effect, ready 1 other foundation that hasn't been readied this Combat Phase.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "kf0x/039-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/039-preview.jpg",
+    "cardeio_id": "85dafa0946b9f3c642c563c1",
+    "cardeio_slug": "hidden-motives"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 40,
+    "numero_image": 40,
+    "name": "Holy Soil",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Enhance Sacrifice: This attack gets +3 damage. If there is a sealed foundation in a rival's stage, this ability has [Tenacious].",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "kf0x/040-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/040-preview.jpg",
+    "cardeio_id": "36fbb9cc7180385b37ea3e8c",
+    "cardeio_slug": "holy-soil"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 41,
+    "numero_image": 41,
+    "name": "Investigating Verse",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Form Flip: Draw 1 card. Only playable if a rival foundation has been sealed this Combat Phase.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "kf0x/041-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/041-preview.jpg",
+    "cardeio_id": "6d0bcb3b439fe3dab5584696",
+    "cardeio_slug": "investigating-verse"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 42,
+    "numero_image": 42,
+    "name": "Ready to Sortie",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Enhance Sacrifice 1 foundation: Your attack gets +1 damage. If a rival foundation has been sealed this Combat Phase, your attack gets +1 speed.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "kf0x/042-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/042-preview.jpg",
+    "cardeio_id": "7ab8b7729deee5d331a512ef",
+    "cardeio_slug": "ready-to-sortie"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 43,
+    "numero_image": 43,
+    "name": "Revered Hermit",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "life"
+    ],
+    "keywords": [
+      "Ally"
+    ],
+    "text": "Enhance [Rival's turn, Tenacious] Add this card to your hand: Gain 1 health. If your printed hand size is 5 or less, build the top card of your deck face down committed.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "kf0x/043-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/043-preview.jpg",
+    "cardeio_id": "9504de558e4e5cf960b84b72",
+    "cardeio_slug": "revered-hermit"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 44,
+    "numero_image": 44,
+    "name": "Unit Commander",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Unique\n\nForm Flip: Reveal the top 3 cards of your deck. Add all Ally cards revealed this way to your hand and discard the rest.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "kf0x/044-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/044-preview.jpg",
+    "cardeio_id": "a9c562d27eca705356a89e0f",
+    "cardeio_slug": "unit-commander"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 100,
+    "numero_image": 100,
+    "name": "Robert",
+    "type": "character",
+    "rarity": "promo",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "order"
+    ],
+    "text": "Enhance Check 4: Your Kick attack gets +1 speed for each other attack in your card pool.\n\nEnhance: Your Kick attack gains Powerful: X. X equals the number of face up attacks in your card pool. You may discard up to 2 cards as though you were spending momentum to pay for this attack's Powerful ability.",
+    "difficulty": 6,
+    "control": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 29,
+    "asset": "kf0x/100-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/100-preview.jpg"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 101,
+    "numero_image": 101,
+    "name": "Ryo",
+    "type": "character",
+    "rarity": "promo",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "order"
+    ],
+    "text": "Enhance: Your Punch attack gets +1 damage for each attack in your card pool. You may discard 1 card. If you do, this attack gets +1 speed for each attack in your card pool.\n\nFirst Enhance: If your Punch attack is completely blocked, your rival loses health equal to its printed damage. Only playable if you have no cards in your hand.",
+    "difficulty": 6,
+    "control": 6,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "hand_size": 6,
+    "vitality": 28,
+    "asset": "kf0x/101-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/101-preview.jpg"
+  },
+  {
+    "extension_short": "kf0x",
+    "numero": 102,
+    "numero_image": 102,
+    "name": "King, The Beautiful Kick's Illusion",
+    "type": "character",
+    "rarity": "promo",
+    "extension": "Challenger: King of Fighters XV",
+    "formats": [
+      "standard",
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "life",
+      "order"
+    ],
+    "text": "Enhance [Your attack, Tenacious]: Your non-Throw attack gains Kick. If you have 10 or less health, your Kick attack gets +2 speed and +2 damage. Gain 1 health.\n\nEnhance Commit: Your rival commits 1 foundation for each attack in your card pool.",
+    "hand_size": 7,
+    "vitality": 20,
+    "asset": "kf0x/102-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/102-preview.jpg"
+  }
+]

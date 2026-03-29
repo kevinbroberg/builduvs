@@ -26,6 +26,7 @@ const R2_REMOTE = 'r2:universus'
 // Every JSON data file in the project, in load order.
 const DATA_FILES = [
   'src/assets/kaiju.json',
+  'src/assets/teamhero.json',
   'src/assets/gg-critrole.json',
   'src/assets/sjw-mha4.json',
   'src/assets/heroesclash.json',

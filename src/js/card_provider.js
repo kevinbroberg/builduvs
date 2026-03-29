@@ -8,8 +8,9 @@ import ggrole from 'assets/gg-critrole.json'
 import sjwtomha4 from 'assets/sjw-mha4.json'
 import real_cards from 'assets/cards.json'
 import kaiju from 'assets/kaiju.json'
+import teamhero from 'assets/teamhero.json'
 
-export const cards = [...kaiju, ...ggrole, ...sjwtomha4,...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
+export const cards = [...kaiju, ...teamhero, ...ggrole, ...sjwtomha4,...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
 
 // Ensure every card has a unique `asset` key (used by deck store and v-for keys).
 // Newer data files omit `asset`, so synthesize one from extension_short + card_number_image.
