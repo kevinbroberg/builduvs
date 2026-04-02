@@ -1,0 +1,47 @@
+{
+  "items": [
+    { "id": "promo-deku-s1", "name": "Promo Deku (Season 1)", "category": "Promo Card" },
+    { "id": "promo-bakugo-s1", "name": "Promo Bakugo (Season 1)", "category": "Promo Card" },
+    { "id": "promo-allmight-s1", "name": "Promo All Might (Season 1)", "category": "Promo Card" },
+    { "id": "promo-todoroki-s1", "name": "Promo Todoroki (Season 1)", "category": "Promo Card" },
+    { "id": "sleeve-mha-red", "name": "MHA Red Sleeves", "category": "Sleeve" },
+    { "id": "sleeve-mha-blue", "name": "MHA Blue Sleeves", "category": "Sleeve" },
+    { "id": "playmat-mha", "name": "MHA Playmat", "category": "Playmat" },
+    { "id": "pack-mha01", "name": "MHA Set 1 Booster Pack", "category": "Booster Pack" },
+    { "id": "pack-mha02", "name": "MHA Set 2 Booster Pack", "category": "Booster Pack" }
+  ],
+  "rotations": [
+    {
+      "week": "2026-03-30",
+      "items": ["promo-deku-s1", "sleeve-mha-red", "pack-mha01"]
+    },
+    {
+      "week": "2026-03-23",
+      "items": ["promo-bakugo-s1", "sleeve-mha-blue", "pack-mha02"]
+    },
+    {
+      "week": "2026-03-16",
+      "items": ["promo-allmight-s1", "playmat-mha", "pack-mha01"]
+    },
+    {
+      "week": "2026-03-09",
+      "items": ["promo-todoroki-s1", "sleeve-mha-red", "pack-mha02"]
+    },
+    {
+      "week": "2026-03-02",
+      "items": ["promo-deku-s1", "sleeve-mha-blue", "pack-mha01"]
+    },
+    {
+      "week": "2026-02-23",
+      "items": ["promo-bakugo-s1", "playmat-mha", "pack-mha02"]
+    },
+    {
+      "week": "2026-02-16",
+      "items": ["promo-allmight-s1", "sleeve-mha-red", "pack-mha01"]
+    },
+    {
+      "week": "2026-02-09",
+      "items": ["promo-todoroki-s1", "sleeve-mha-blue", "pack-mha02"]
+    }
+  ]
+}

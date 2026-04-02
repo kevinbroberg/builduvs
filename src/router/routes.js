@@ -28,6 +28,10 @@ const routes = [
         path: "/shuffle",
         component: () => import("src/pages/ShuffleHome.vue"),
       },
+      {
+        path: "/rewards",
+        component: () => import("src/pages/RewardsHome.vue"),
+      },
     ],
   },
 ];
