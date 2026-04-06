@@ -3,7 +3,6 @@ import { ref } from "vue";
 import { useDeckStore } from "src/stores/deck";
 import { storeToRefs } from "pinia";
 import DeckView from "src/components/deck/DeckView.vue";
-import DeckLibrary from "src/components/deck/DeckLibrary.vue";
 
 const { hasDeck } = storeToRefs(useDeckStore());
 const leftDrawerOpen = ref(false);
@@ -35,13 +34,6 @@ function toggleRightDrawer() {
           </q-avatar>
           <span class="gt-xs">BuildUVS</span>
         </q-toolbar-title>
-        <q-tabs align="center">
-          <q-route-tab to="/" label="Game Tracker" icon="sports_esports" />
-          <q-route-tab to="/deck" label="Deck Detail" icon="style" />
-          <q-route-tab to="/cards" label="Search" icon="search" />
-          <q-route-tab to="/settings" label="Settings" icon="settings" />
-          <q-route-tab to="/shuffle" label="Shuffle" icon="shuffle" />
-        </q-tabs>
         <!-- <NamePicker /> -->
         <q-btn dense flat round
           icon="table_view"
@@ -55,7 +47,28 @@ function toggleRightDrawer() {
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" side="left" behavior="mobile" elevated>
-      <DeckLibrary />
+      <q-list>
+        <q-item clickable v-ripple to="/" exact>
+          <q-item-section avatar><q-icon name="sports_esports" /></q-item-section>
+          <q-item-section>Game Tracker</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/deck">
+          <q-item-section avatar><q-icon name="style" /></q-item-section>
+          <q-item-section>Deck Detail</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/cards">
+          <q-item-section avatar><q-icon name="search" /></q-item-section>
+          <q-item-section>Search</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/shuffle">
+          <q-item-section avatar><q-icon name="shuffle" /></q-item-section>
+          <q-item-section>Shuffle</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/settings">
+          <q-item-section avatar><q-icon name="settings" /></q-item-section>
+          <q-item-section>Settings</q-item-section>
+        </q-item>
+      </q-list>
     </q-drawer>
 
     <q-drawer v-model="rightDrawerOpen" side="right" elevated>
@@ -68,8 +81,3 @@ function toggleRightDrawer() {
   </q-layout>
 </template>
 
-<style>
-@media (max-width: 600px) {
-  .q-tab__label { display: none; }
-}
-</style>

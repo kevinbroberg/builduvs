@@ -15,7 +15,7 @@ const SEAT_COLORS = [
 ];
 
 const phase = ref("setup"); // "setup" | "shuffle" | "done"
-const numPiles = ref(7);
+const numPiles = ref(8);
 const deckSize = ref(60);
 
 const currentRound = ref(0);
@@ -23,6 +23,9 @@ const rounds = ref([]); // each entry: { handSize, sequence }
 const collectOrder = ref([]);
 
 const totalRounds = computed(() => rounds.value.length);
+const shufflesNeeded = computed(() =>
+  Math.ceil(Math.log(deckSize.value) / Math.log(numPiles.value))
+);
 const seats = computed(() => SEAT_COLORS.slice(0, numPiles.value));
 const currentRoundData = computed(() => rounds.value[currentRound.value] || { handSize: 0, sequence: [] });
 
@@ -131,35 +134,35 @@ function restart() {
             />
           </div>
           <div>
-            <div class="text-subtitle2 q-mb-sm">
-              Deck size: <strong>{{ deckSize }}</strong>
+            <div class="text-subtitle2 q-mb-sm">Deck size:</div>
+            <div class="row items-center q-gutter-sm">
+              <q-slider
+                v-model="deckSize"
+                :min="10"
+                :max="100"
+                :step="1"
+                snap
+                label
+                color="primary"
+                class="col"
+              />
+              <q-input
+                v-model.number="deckSize"
+                type="number"
+                dense
+                outlined
+                :min="10"
+                :max="100"
+                style="width: 72px"
+              />
             </div>
-            <q-slider
-              v-model="deckSize"
-              :min="10"
-              :max="100"
-              :step="1"
-              snap
-              label
-              color="primary"
-            />
           </div>
         </q-card-section>
       </q-card>
 
-      <div class="full-width">
-        <div class="text-subtitle2 q-mb-sm">Seats (fixed positions on table):</div>
-        <div class="row q-gutter-sm wrap">
-          <q-chip
-            v-for="seat in SEAT_COLORS.slice(0, numPiles)"
-            :key="seat.name"
-            :color="seat.color"
-            :text-color="seat.textColor"
-            size="lg"
-          >
-            {{ seat.name }}
-          </q-chip>
-        </div>
+      <div class="text-body2 text-center text-grey-7">
+        To fairly randomize the deck, repeat this process
+        <strong>{{ shufflesNeeded }}×</strong>.
       </div>
 
       <q-btn color="primary" size="lg" class="full-width" @click="startShuffle">
@@ -170,7 +173,7 @@ function restart() {
     <!-- SHUFFLE -->
     <div
       v-else-if="phase === 'shuffle'"
-      class="row"
+      class="column"
       style="height: calc(100vh - 50px)"
     >
       <div class="col column q-pa-md" style="overflow: hidden">
@@ -217,22 +220,23 @@ function restart() {
         </div>
       </div>
 
-      <div
-        class="column items-center justify-center bg-primary text-white cursor-pointer"
-        style="width: 64px"
+      <q-btn
+        :color="currentRound < totalRounds - 1 ? 'primary' : 'positive'"
+        :icon-right="currentRound < totalRounds - 1 ? 'chevron_right' : 'check'"
+        :label="currentRound < totalRounds - 1 ? 'Next Round' : 'Done Dealing'"
+        size="lg"
+        square
+        unelevated
+        class="full-width"
+        style="height: 56px; flex-shrink: 0"
         @click="nextRound"
-      >
-        <q-icon
-          :name="currentRound < totalRounds - 1 ? 'chevron_right' : 'check'"
-          size="36px"
-        />
-      </div>
+      />
     </div>
 
     <!-- COLLECT -->
     <div
       v-else-if="phase === 'collect'"
-      class="row"
+      class="column"
       style="height: calc(100vh - 50px)"
     >
       <div class="col column q-pa-md" style="overflow: hidden">
@@ -274,13 +278,17 @@ function restart() {
         </div>
       </div>
 
-      <div
-        class="column items-center justify-center bg-positive text-white cursor-pointer"
-        style="width: 64px"
+      <q-btn
+        color="positive"
+        icon-right="check"
+        label="Shuffle Complete"
+        size="lg"
+        square
+        unelevated
+        class="full-width"
+        style="height: 56px; flex-shrink: 0"
         @click="phase = 'done'"
-      >
-        <q-icon name="check" size="36px" />
-      </div>
+      />
     </div>
 
     <!-- DONE -->
