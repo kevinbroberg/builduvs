@@ -4,8 +4,8 @@ import { useDialogPluginComponent, useQuasar } from 'quasar'
 
 const $q = useQuasar()
 
-import DeckLoaderDialog from 'components/deck/DeckLoaderDialog.vue'
-function deckLoadDialog() {
+async function deckLoadDialog() {
+  const { default: DeckLoaderDialog } = await import('components/deck/DeckLoaderDialog.vue')
   $q.dialog({
     // TODO can I put this component itself here, and bring the logic into 1 file?
     component: DeckLoaderDialog,

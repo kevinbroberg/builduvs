@@ -1,6 +1,4 @@
 import { defineStore } from 'pinia'
-import cardeioIds from 'src/assets/cardeio-ids.json'
-import { cards } from 'src/js/card_provider.js'
 
 const API = 'https://play-api.carde.io/v1'
 
@@ -81,6 +79,11 @@ export const useCardeioStore = defineStore('cardeio', {
       if (!res.ok) throw new Error(`Fetch failed (${res.status})`)
       const json = await res.json()
       const data = json.data.deck
+
+      const [{ default: cardeioIds }, { cards }] = await Promise.all([
+        import('src/assets/cardeio-ids.json'),
+        import('src/js/card_provider.js'),
+      ])
 
       const idToName = {}
       for (const [name, info] of Object.entries(cardeioIds)) {
