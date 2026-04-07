@@ -73,9 +73,7 @@ async function saveToken() {
 }
 
 // --- deck ID step ---
-const deckUrl = ref(deckStore.currentCardeioId
-  ? `https://play.uvsgames.com/decks/${deckStore.currentCardeioId}`
-  : '')
+const deckName = ref(deckStore.currentDeckName || 'Untitled Deck')
 const pushing = ref(false)
 const unmatched = ref([])
 const fixes = ref({}) // { cardName -> cardeioId }
@@ -83,21 +81,16 @@ const pushError = ref('')
 const done = ref(false)
 const savedDeckId = ref(null)
 
-const deckId = computed(() => {
-  const m = deckUrl.value.match(/([a-f0-9]{24})/)
-  return m ? m[1] : null
-})
-
 async function push(currentFixes = {}) {
-  if (!deckId.value) return
+  if (!deckName.value.trim()) return
   pushing.value = true
   pushError.value = ''
-  savedDeckId.value = deckId.value
   try {
-    const result = await cardeio.pushDeck(deckId.value, deckStore, currentFixes)
+    const result = await cardeio.createDeck(deckName.value.trim(), deckStore, currentFixes)
+    savedDeckId.value = result.deckId
     unmatched.value = result.unmatched
     done.value = true
-    deckStore.currentCardeioId = deckId.value
+    deckStore.currentCardeioId = result.deckId
   } catch (e) {
     pushError.value = e.message
   } finally {
@@ -124,8 +117,15 @@ function onPick({ id }) {
 async function repush() {
   done.value = false
   repushing.value = true
-  await push(fixes.value)
-  repushing.value = false
+  try {
+    const result = await cardeio.pushDeck(savedDeckId.value, deckStore, fixes.value)
+    unmatched.value = result.unmatched
+    done.value = true
+  } catch (e) {
+    pushError.value = e.message
+  } finally {
+    repushing.value = false
+  }
 }
 </script>
 
@@ -201,19 +201,15 @@ async function repush() {
       <!-- Step 2: Push -->
       <template v-else-if="!done">
         <q-card-section>
-          <div class="text-h6">Push to carde.io</div>
-          <p class="q-mt-sm">
-            Create a blank deck at
-            <a href="https://play.uvsgames.com/decks" target="_blank">play.uvsgames.com/decks</a>,
-            then paste its URL here.
-          </p>
+          <div class="text-h6">Export to carde.io</div>
           <q-input
-            v-model="deckUrl"
+            v-model="deckName"
             outlined
-            label="carde.io deck URL or ID"
-            hint="e.g. https://play.uvsgames.com/decks/694627db9f5abf22ffd0f171"
+            label="Deck name"
+            class="q-mt-sm"
             :error="!!pushError"
             :error-message="pushError"
+            @keyup.enter="push"
           />
         </q-card-section>
         <q-card-actions align="right">
@@ -221,9 +217,9 @@ async function repush() {
           <q-btn flat label="Cancel" @click="onDialogCancel" />
           <q-btn
             color="primary"
-            label="Push deck"
+            label="Create & push"
             :loading="pushing"
-            :disable="!deckId"
+            :disable="!deckName.trim()"
             @click="push"
           />
         </q-card-actions>

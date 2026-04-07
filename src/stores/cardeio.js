@@ -6,6 +6,11 @@ const SECTION_CHARACTER = '773a74a1e7536ea7be98d510'
 const SECTION_MAIN      = '773a74a1e7536ea7be98d511'
 const SECTION_SIDE      = '773a74a1e7536ea7be98d512'
 
+const UVS_GAME_ID_PATH  = '64da688b550ba2f2010a1087'
+const UVS_GAME_ID       = 'a95493de-6660-409c-abcc-8ccbcd446f2c'
+const DEFAULT_FORMAT_ID = '638fd7dedf754b8732e6a920'
+const DEFAULT_DECK_IMG  = 'https://storage.googleapis.com/cardeio-images/defaults/universus/events/1.webp'
+
 export const useCardeioStore = defineStore('cardeio', {
   state: () => ({
     token: localStorage.getItem('cardeio_token') ?? null,
@@ -117,6 +122,38 @@ export const useCardeioStore = defineStore('cardeio', {
       deckStore.currentDeckFormat = null
 
       return { name: data.name ?? 'Cardeio Deck' }
+    },
+
+    async createDeck(name, deckStore, fixes = {}) {
+      const { sections, unmatched } = this.buildSections(deckStore, fixes)
+
+      const res = await fetch(`${API}/game/${UVS_GAME_ID_PATH}/decks`, {
+        method: 'POST',
+        headers: {
+          authorization: `Bearer ${this.token}`,
+          'content-type': 'application/json',
+          'game-id': UVS_GAME_ID,
+          origin: 'https://play.uvsgames.com',
+        },
+        body: JSON.stringify({
+          name,
+          notes: '',
+          deckImageUrl: DEFAULT_DECK_IMG,
+          sections,
+          sharing: { status: 'private' },
+          tags: [],
+          formatId: DEFAULT_FORMAT_ID,
+        }),
+      })
+
+      if (!res.ok) {
+        const text = await res.text()
+        throw new Error(`Create failed (${res.status}): ${text}`)
+      }
+
+      const json = await res.json()
+      const deckId = json.data._id
+      return { deckId, unmatched }
     },
 
     async pushDeck(deckId, deckStore, fixes = {}) {
