@@ -11,14 +11,16 @@
   import {
       face,
       partitions,
-      
+
       increment,
       decrement,
       clearFace,
-      
+
   } from './deck_logic'
 
-  const { hasDeck } = storeToRefs(useDeckStore());
+  const deckStore = useDeckStore()
+  const { hasDeck } = storeToRefs(deckStore)
+  const { decrementSide, incrementSide } = deckStore
 </script>
 
 <template>
@@ -45,14 +47,14 @@
       <q-item-label header>{{partition.label}}</q-item-label> <!-- v-else -->
       <q-item v-for="card in partition.cards" :key="card.asset" no-wrap dense :class="`card-list-${card.type}`">
         <q-item-section avatar>
-            <q-avatar square class="card-thumb" @click="increment(card)">
+            <q-avatar square class="card-thumb" @click="card.type === 'sideboard' ? incrementSide(card) : increment(card)">
               <img :src="getCardImage(card.asset)" class="card-thumb__img" />
             </q-avatar>
         </q-item-section>
         <q-item-section>
             <q-item-label lines="2">
               <q-btn flat round no-margin icon="remove" class="decrement-btn"
-                @click="decrement(card)"/>
+                @click="card.type === 'sideboard' ? decrementSide(card) : decrement(card)"/>
               {{card.qty}} {{card.name}}
             </q-item-label>            
         </q-item-section>
