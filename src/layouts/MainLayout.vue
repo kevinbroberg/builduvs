@@ -64,6 +64,10 @@ function toggleRightDrawer() {
           <q-item-section avatar><q-icon name="shuffle" /></q-item-section>
           <q-item-section>Shuffle</q-item-section>
         </q-item>
+        <q-item clickable v-ripple to="/compare">
+          <q-item-section avatar><q-icon name="difference" /></q-item-section>
+          <q-item-section>Compare Decks</q-item-section>
+        </q-item>
         <q-item clickable v-ripple to="/settings">
           <q-item-section avatar><q-icon name="settings" /></q-item-section>
           <q-item-section>Settings</q-item-section>

@@ -28,6 +28,10 @@ const routes = [
         path: "/shuffle",
         component: () => import("src/pages/ShuffleHome.vue"),
       },
+      {
+        path: "/compare",
+        component: () => import("src/pages/DeckCompare.vue"),
+      },
     ],
   },
 ];
