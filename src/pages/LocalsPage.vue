@@ -123,16 +123,17 @@ function resultClass(result) {
 function opponentRoute(opponentStanding) {
   if (!opponentStanding || !eventId.value) return null
   const s = getStanding(eventId.value, opponentStanding)
-  return s?.deckName ? `/locals/${eventId.value}/${opponentStanding}` : null
+  return s?.deckName ? `/lists/${eventId.value}/${opponentStanding}` : null
 }
 
 // ── Computed views ─────────────────────────────────────────────────────────────
 
-const FORMATS = [
+const LC_FORMATS = [
   { key: 'kaiju',  label: 'Reign of Kaiju' },
   { key: 'april',  label: 'April B&E' },
   { key: 'titan',  label: 'May B&E' },
 ]
+const lcFormatKeys = new Set(LC_FORMATS.map(f => f.key))
 
 function sortEvents(evList) {
   return [...evList].sort((a, b) => {
@@ -144,9 +145,31 @@ function sortEvents(evList) {
   })
 }
 
-const eventsByFormat = Object.fromEntries(
-  FORMATS.map(f => [f.key, sortEvents(events.filter(e => e.formatPeriod === f.key))])
+const lcEvents = events.filter(e => e.round !== 0)
+const regionalEvents = events.filter(e => e.round === 0).sort((a, b) => a.date.localeCompare(b.date))
+
+const regionalTabs = regionalEvents.map(e => ({
+  key: e.id,
+  label: `${e.location} · ${formatDate(e.date)}`,
+  sortDate: e.date,
+}))
+
+const lcFormatSortDate = Object.fromEntries(
+  LC_FORMATS.map(f => {
+    const dates = lcEvents.filter(e => e.formatPeriod === f.key).map(e => e.date).sort()
+    return [f.key, dates[0] ?? '9999']
+  })
 )
+
+const FORMATS = [
+  ...LC_FORMATS.map(f => ({ ...f, sortDate: lcFormatSortDate[f.key] })),
+  ...regionalTabs,
+].sort((a, b) => a.sortDate.localeCompare(b.sortDate))
+
+const eventsByFormat = {
+  ...Object.fromEntries(LC_FORMATS.map(f => [f.key, sortEvents(lcEvents.filter(e => e.formatPeriod === f.key))])),
+  ...Object.fromEntries(regionalEvents.map(e => [e.id, [e]])),
+}
 
 const tab = ref('kaiju')
 
@@ -223,7 +246,7 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
     <!-- ── Player detail (/locals/:event/:id) ─────────────────────────────── -->
     <template v-if="playerId">
       <q-toolbar class="bg-grey-2">
-        <q-btn flat dense icon="arrow_back" @click="router.push(`/locals/${eventId}`)" />
+        <q-btn flat dense icon="arrow_back" @click="router.push(`/lists/${eventId}`)" />
         <q-toolbar-title class="text-body1">
           <strong>{{ playerLabel(currentStanding?.characterName, playerId) }}</strong>
           <span v-if="currentStanding?.deckName" class="text-caption text-grey-6 q-ml-sm">
@@ -312,7 +335,7 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
     <!-- ── Event detail (/locals/:event) ─────────────────────────────────── -->
     <template v-else-if="eventId">
       <q-toolbar class="bg-grey-2">
-        <q-btn flat dense icon="arrow_back" @click="router.push('/locals')" />
+        <q-btn flat dense icon="arrow_back" @click="router.push('/lists')" />
         <q-toolbar-title class="text-body1">
           {{ currentEvent?.location }}
           <span class="text-caption text-grey-6 q-ml-sm">{{ currentEvent?.date }}</span>
@@ -328,7 +351,7 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
             'row-top8':   s.standing > 4 && s.standing <= 8,
           }"
           :clickable="!!s.deckName"
-          @click="s.deckName && router.push(`/locals/${eventId}/${s.standing}`)">
+          @click="s.deckName && router.push(`/lists/${eventId}/${s.standing}`)">
           <q-item-section avatar style="min-width: 52px; position: relative">
             <q-avatar v-if="findCard(s.characterName)" square size="40px" class="standing-avatar">
               <img :src="getCardImage(findCard(s.characterName).asset)" class="card-thumb__img" />
@@ -351,12 +374,12 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
     <template v-else>
       <q-tabs v-model="tab" align="left" dense class="bg-grey-2 text-grey-8">
         <q-tab v-for="f in FORMATS" :key="f.key" :name="f.key"
-          :label="`${f.label} · ${eventsByFormat[f.key].length} events`" />
+          :label="lcFormatKeys.has(f.key) ? `${f.label} · ${eventsByFormat[f.key].length} events` : f.label" />
       </q-tabs>
 
       <q-list separator>
         <q-item v-for="ev in eventsByFormat[tab]" :key="ev.id"
-          clickable v-ripple @click="router.push(`/locals/${ev.id}`)">
+          clickable v-ripple @click="router.push(`/lists/${ev.id}`)">
           <q-item-section avatar style="min-width: 56px">
             <div class="text-caption text-mono text-grey-7">{{ formatDate(ev.date) }}</div>
           </q-item-section>

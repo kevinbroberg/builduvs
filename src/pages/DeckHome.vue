@@ -33,7 +33,7 @@ function openCardeioExport() {
   <div v-if="!hasDeck" class="empty-state">
     <p class="empty-state__text">Import a deck?</p>
     <DeckDialog />
-    <p class="empty-state__text">or browse <router-link to="/locals" class="locals-link">Local Championship decklists</router-link></p>
+    <p class="empty-state__text">or browse <router-link to="/lists" class="locals-link">Local Championship decklists</router-link></p>
   </div>
 
   <template v-else>

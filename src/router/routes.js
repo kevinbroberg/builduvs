@@ -32,16 +32,19 @@ const routes = [
         path: "/compare",
         component: () => import("src/pages/DeckCompare.vue"),
       },
+      { path: "/locals",              redirect: "/lists" },
+      { path: "/locals/:event",       redirect: to => `/lists/${to.params.event}` },
+      { path: "/locals/:event/:id",   redirect: to => `/lists/${to.params.event}/${to.params.id}` },
       {
-        path: "/locals",
+        path: "/lists",
         component: () => import("src/pages/LocalsPage.vue"),
       },
       {
-        path: "/locals/:event",
+        path: "/lists/:event",
         component: () => import("src/pages/LocalsPage.vue"),
       },
       {
-        path: "/locals/:event/:id",
+        path: "/lists/:event/:id",
         component: () => import("src/pages/LocalsPage.vue"),
       },
     ],
