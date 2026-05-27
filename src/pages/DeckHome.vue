@@ -4,6 +4,8 @@ import UltraCardDetail from 'src/components/cards/UltraCardDetail.vue'
 import DeckDialog from 'components/deck/DeckDialog.vue'
 import CardeioExportDialog from 'components/deck/CardeioExportDialog.vue'
 import { useQuasar } from 'quasar'
+import { useDeckStore } from 'src/stores/deck'
+import { storeToRefs } from 'pinia'
 
 import {
   face,
@@ -18,12 +20,23 @@ import {
 } from 'components/deck/deck_logic'
 
 const $q = useQuasar()
+const { hasDeck } = storeToRefs(useDeckStore())
+
 function openCardeioExport() {
   $q.dialog({ component: CardeioExportDialog })
 }
 </script>
 
 <template>
+
+  <!-- Empty state -->
+  <div v-if="!hasDeck" class="empty-state">
+    <p class="empty-state__text">Import a deck?</p>
+    <DeckDialog />
+    <p class="empty-state__text">or browse <router-link to="/locals" class="locals-link">Local Championship decklists</router-link></p>
+  </div>
+
+  <template v-else>
   <q-btn-group push>
     <DeckDialog />
 
@@ -85,9 +98,36 @@ function openCardeioExport() {
     </div>
 
   </div>
-<!-- 
+<!--
   <h3>Sideboard</h3>
   <div class="row items-start q-gutter-md">
     <CardCard v-for="card in side" v-bind:key="card?.name" :card="card" :main="false" />
   </div> -->
+  </template><!-- end v-else -->
+
 </template>
+
+<style scoped>
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 1rem;
+  text-align: center;
+}
+.empty-state__text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+.empty-state__or {
+  color: #888;
+  margin: 0;
+}
+.locals-link {
+  font-size: 1rem;
+  text-decoration: underline;
+}
+</style>

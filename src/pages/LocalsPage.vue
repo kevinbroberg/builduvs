@@ -5,6 +5,8 @@ import indexData from 'src/assets/locals-index.json'
 import DeckCompareList from 'src/components/deck/DeckCompareList.vue'
 import { cards as allCards } from 'src/js/card_provider.js'
 import { getCardImage } from 'src/js/image_helper'
+import { useDeckStore } from 'src/stores/deck'
+import { storeToRefs } from 'pinia'
 
 // Normalize apostrophes and other quote variants to plain straight apostrophe
 function normName(name) {
@@ -31,6 +33,12 @@ function findCard(name) {
   const yearStripped = n.replace(/,\s*\d{4}.*/, '').trim()
   if (yearStripped !== n) {
     card = cardByName.get(yearStripped)
+    if (card) return card
+  }
+
+  // 4. $ → s substitution ("Cardboard Crusader$" → "Cardboard Crusaders")
+  if (n.includes('$')) {
+    card = cardByName.get(n.replaceAll('$', 's'))
     if (card) return card
   }
 
@@ -174,6 +182,30 @@ function resolveCard(dc) {
   return found ? { ...found, qty: dc.qty } : { name: dc.name, qty: dc.qty, asset: null, type: 'unknown' }
 }
 
+// ── Deck store integration ────────────────────────────────────────────────────
+
+const deckStore = useDeckStore()
+const { hasDeck } = storeToRefs(deckStore)
+
+function buildThisDeck() {
+  deckStore.loadFromCards({
+    face: resolvedFace.value,
+    deck: resolvedDeck.value,
+    side: resolvedSide.value,
+    name: currentStanding.value?.deckName || 'Locals Deck',
+  })
+}
+
+function compareThisDeck() {
+  deckStore.setPendingComparison({
+    face: resolvedFace.value,
+    deck: resolvedDeck.value,
+    side: resolvedSide.value,
+    name: currentStanding.value?.deckName || 'Locals Deck',
+  })
+  router.push('/compare')
+}
+
 const resolvedFace = computed(() => {
   const chars = playerCards.value.character
   if (!chars?.length) return null
@@ -199,7 +231,19 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
           </span>
         </q-toolbar-title>
         <q-badge v-if="currentStanding?.swissRecord" color="grey-6"
-          :label="currentStanding.swissRecord" />
+          :label="currentStanding.swissRecord" class="q-mr-sm" />
+        <template v-if="currentStanding?.deckName">
+          <q-btn flat dense icon="style" size="sm" label="Build" class="q-ml-xs"
+            :disable="playerDataLoading || !resolvedDeck.length"
+            @click="buildThisDeck">
+            <q-tooltip>Load this deck into the app</q-tooltip>
+          </q-btn>
+          <q-btn v-if="hasDeck" flat dense icon="difference" size="sm" label="Compare" class="q-ml-xs"
+            :disable="playerDataLoading || !resolvedDeck.length"
+            @click="compareThisDeck">
+            <q-tooltip>Compare against your current deck</q-tooltip>
+          </q-btn>
+        </template>
       </q-toolbar>
 
       <div v-if="playerDataLoading" class="text-center q-pa-xl">

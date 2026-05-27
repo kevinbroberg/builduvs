@@ -15,6 +15,9 @@ export const useDeckStore = defineStore('deck', {
 
     // Saved decks library: { [id]: { id, name, format, modified, deck, side, face } }
     savedDecks: {},
+
+    // Transient handoff for the Compare page
+    pendingComparison: null,
   }),
 
   getters: {
@@ -101,6 +104,30 @@ export const useDeckStore = defineStore('deck', {
     send2Main(card) {
       this.decrementSide(card)
       this.increment(card)
+    },
+
+    loadFromCards({ face, deck, side, name }) {
+      this.nuke()
+      if (face) this.face = { ...face }
+      for (const card of (deck || [])) {
+        if (card.asset) this.deck[card.asset] = { ...card }
+      }
+      for (const card of (side || [])) {
+        if (card.asset) this.side[card.asset] = { ...card }
+      }
+      this.currentDeckName = name || 'Untitled Deck'
+      this.currentDeckId = null
+      this.currentDeckFormat = null
+      this.currentDeckModified = new Date().toISOString()
+      this.currentCardeioId = null
+    },
+
+    setPendingComparison(data) {
+      this.pendingComparison = data
+    },
+
+    clearPendingComparison() {
+      this.pendingComparison = null
     },
 
     saveDeck(name, format) {

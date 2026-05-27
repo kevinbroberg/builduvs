@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useQuasar } from 'quasar'
 import { useDeckStore } from 'src/stores/deck'
 import { storeToRefs } from 'pinia'
@@ -28,6 +28,17 @@ function openImport() {
     })
 }
 
+onMounted(() => {
+  const pending = deckStore.pendingComparison
+  if (pending) {
+    compFace.value = pending.face
+    compDeck.value = pending.deck
+    compSide.value = pending.side
+    compName.value = pending.name || 'Comparison Deck'
+    deckStore.clearPendingComparison()
+  }
+})
+
 function clearCompDeck() {
   compFace.value = null
   compDeck.value = []
@@ -39,12 +50,12 @@ const leftDeckList = computed(() => deckStore.getDeckList)
 const leftSideList = computed(() => deckStore.getSideList)
 
 const leftTotal = computed(() => {
-  const faceQty = face.value ? 1 : 0
-  return faceQty + leftDeckList.value.reduce((s, c) => s + c.qty, 0)
+  const faceQty = face?.value ? 1 : 0
+  return faceQty + (leftDeckList.value || []).reduce((s, c) => s + (c.qty || 0), 0)
 })
 const rightTotal = computed(() => {
   const faceQty = compFace.value ? 1 : 0
-  return faceQty + compDeck.value.reduce((s, c) => s + c.qty, 0)
+  return faceQty + (compDeck.value || []).reduce((s, c) => s + (c.qty || 0), 0)
 })
 
 // Group a flat card list + face card by type
@@ -66,14 +77,14 @@ function groupByType(cardList, faceCard) {
   return map
 }
 
-const leftByType = computed(() => groupByType(leftDeckList.value, face.value))
+const leftByType = computed(() => groupByType(leftDeckList.value, face?.value))
 const rightByType = computed(() => groupByType(compDeck.value, compFace.value))
 
 // Diff
 const diff = computed(() => {
   const leftMap = {}
-  if (face.value) leftMap[face.value.asset] = { card: face.value, qty: 1 }
-  for (const card of leftDeckList.value) {
+  if (face?.value) leftMap[face.value.asset] = { card: face.value, qty: 1 }
+  for (const card of (leftDeckList.value || [])) {
     if (leftMap[card.asset]) leftMap[card.asset].qty += card.qty
     else leftMap[card.asset] = { card, qty: card.qty }
   }
