@@ -1,7 +1,7 @@
 {
   "name": "builduvs",
   "version": "0.0.1",
-  "description": "A companion for playing My Hero Academia CCG and Universus",
+  "description": "Tools for better Universus",
   "productName": "BuildUVS",
   "author": "kevinbroberg <kevin.broberg@gmail.com>",
   "private": true,
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@quasar/app-vite": "^1.0.0",
     "autoprefixer": "^10.4.2",
+    "better-sqlite3": "^12.10.0",
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^9.0.0",

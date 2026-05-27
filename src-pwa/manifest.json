@@ -1,7 +1,7 @@
 {
   "name": "BuildUVS",
   "short_name": "BuildUVS",
-  "description": "Card game companion for MHA CCG / Universus",
+  "description": "Tools for better Universus",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",
