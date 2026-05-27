@@ -68,6 +68,10 @@ function toggleRightDrawer() {
           <q-item-section avatar><q-icon name="difference" /></q-item-section>
           <q-item-section>Compare Decks</q-item-section>
         </q-item>
+        <q-item clickable v-ripple to="/locals">
+          <q-item-section avatar><q-icon name="emoji_events" /></q-item-section>
+          <q-item-section>Locals</q-item-section>
+        </q-item>
         <q-item clickable v-ripple to="/settings">
           <q-item-section avatar><q-icon name="settings" /></q-item-section>
           <q-item-section>Settings</q-item-section>

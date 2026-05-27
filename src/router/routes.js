@@ -32,6 +32,18 @@ const routes = [
         path: "/compare",
         component: () => import("src/pages/DeckCompare.vue"),
       },
+      {
+        path: "/locals",
+        component: () => import("src/pages/LocalsPage.vue"),
+      },
+      {
+        path: "/locals/:event",
+        component: () => import("src/pages/LocalsPage.vue"),
+      },
+      {
+        path: "/locals/:event/:id",
+        component: () => import("src/pages/LocalsPage.vue"),
+      },
     ],
   },
 ];
