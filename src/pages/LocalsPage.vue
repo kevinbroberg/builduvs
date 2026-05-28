@@ -135,8 +135,11 @@ const LC_FORMATS = [
 ]
 const lcFormatKeys = new Set(LC_FORMATS.map(f => f.key))
 
-function sortEvents(evList) {
+const sortOrder = ref('players')
+
+function sortEvents(evList, order = sortOrder.value) {
   return [...evList].sort((a, b) => {
+    if (order === 'date') return b.date.localeCompare(a.date)
     const aHas = getStandings(a.id).some(s => s.deckName) ? 0 : 1
     const bHas = getStandings(b.id).some(s => s.deckName) ? 0 : 1
     if (aHas !== bHas) return aHas - bHas
@@ -166,10 +169,10 @@ const FORMATS = [
   ...regionalTabs,
 ].sort((a, b) => a.sortDate.localeCompare(b.sortDate))
 
-const eventsByFormat = {
+const eventsByFormat = computed(() => ({
   ...Object.fromEntries(LC_FORMATS.map(f => [f.key, sortEvents(lcEvents.filter(e => e.formatPeriod === f.key))])),
   ...Object.fromEntries(regionalEvents.map(e => [e.id, [e]])),
-}
+}))
 
 const tab = ref('kaiju')
 
@@ -372,10 +375,21 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
 
     <!-- ── Event list (/locals) ──────────────────────────────────────────── -->
     <template v-else>
-      <q-tabs v-model="tab" align="left" dense class="bg-grey-2 text-grey-8">
-        <q-tab v-for="f in FORMATS" :key="f.key" :name="f.key"
-          :label="lcFormatKeys.has(f.key) ? `${f.label} · ${eventsByFormat[f.key].length} events` : f.label" />
-      </q-tabs>
+      <div class="row items-center bg-grey-2">
+        <q-tabs v-model="tab" align="left" dense class="col text-grey-8">
+          <q-tab v-for="f in FORMATS" :key="f.key" :name="f.key"
+            :label="lcFormatKeys.has(f.key) ? `${f.label} · ${eventsByFormat[f.key].length} events` : f.label" />
+        </q-tabs>
+        <q-btn-toggle v-model="sortOrder" dense unelevated no-caps
+          class="q-mr-sm"
+          color="grey-3" text-color="grey-7" toggle-color="grey-7" toggle-text-color="white"
+          :options="[
+            { value: 'players', icon: 'group' },
+            { value: 'date',    icon: 'calendar_today' },
+          ]">
+          <q-tooltip :delay="300">{{ sortOrder === 'players' ? 'Sorted by player count' : 'Sorted by date' }}</q-tooltip>
+        </q-btn-toggle>
+      </div>
 
       <q-list separator>
         <q-item v-for="ev in eventsByFormat[tab]" :key="ev.id"
