@@ -8,6 +8,7 @@ const props = defineProps({
   deckList: { type: Array, default: () => [] },
   sideList: { type: Array, default: () => [] },
 })
+const emit = defineEmits(['cardClick'])
 
 const partitions = computed(() => {
   const typeMap = {}
@@ -45,7 +46,8 @@ const partitions = computed(() => {
       <div v-for="partition in partitions" :key="partition.key">
         <q-separator />
         <q-item-label header>{{ partition.label }}</q-item-label>
-        <q-item v-for="card in partition.cards" :key="card.asset" no-wrap dense :class="`card-list-${card.type}`">
+        <q-item v-for="card in partition.cards" :key="card.asset" no-wrap dense clickable
+          :class="`card-list-${card.type}`" @click="emit('cardClick', card)">
           <q-item-section avatar>
             <q-avatar square class="card-thumb">
               <img :src="getCardImage(card.asset)" class="card-thumb__img" />

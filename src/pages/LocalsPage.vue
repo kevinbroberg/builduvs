@@ -13,7 +13,9 @@ function normName(name) {
   return name.toLowerCase().replace(/[‘’‚‛′]/g, "'")
 }
 
-const cardByName = new Map(allCards.map(c => [normName(c.name), c]))
+const cardByName = new Map(
+  allCards.filter(c => c.formats?.includes('standard')).map(c => [normName(c.name), c])
+)
 
 function findCard(name) {
   if (!name) return null
@@ -232,6 +234,9 @@ function compareThisDeck() {
   router.push('/compare')
 }
 
+const focusedCard = ref(null)
+watch(() => currentStanding.value, () => { focusedCard.value = null })
+
 const resolvedFace = computed(() => {
   const chars = playerCards.value.character
   if (!chars?.length) return null
@@ -278,59 +283,62 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
 
       <div v-else-if="currentStanding" class="q-pa-md">
 
-        <!-- Top row: match records left, face card right -->
+        <!-- Face card + decklist -->
         <div class="row q-col-gutter-md q-mb-md">
-          <div class="col">
-
-            <div v-if="playerMatches.swiss?.length" class="deck-section">
-              <div class="deck-section__title">Swiss · {{ currentStanding.swissRecord }}</div>
-              <table class="match-table">
-                <tbody>
-                  <tr v-for="m in playerMatches.swiss" :key="m.round">
-                    <td class="col-rd">Rd {{ m.round }}</td>
-                    <td :class="['col-result', resultClass(m.result)]">{{ m.result }}</td>
-                    <td>
-                      <router-link v-if="opponentRoute(m.opponentStanding)" :to="opponentRoute(m.opponentStanding)" class="opp-link">
-                        {{ playerLabel(m.opponentCharacter, m.opponentStanding) }}
-                      </router-link>
-                      <span v-else>{{ playerLabel(m.opponentCharacter, m.opponentStanding) }}</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div v-if="playerMatches.topcut?.length" class="deck-section">
-              <div class="deck-section__title">Top Cut</div>
-              <table class="match-table">
-                <tbody>
-                  <tr v-for="m in playerMatches.topcut" :key="m.round">
-                    <td class="col-rd">{{ m.round }}</td>
-                    <td :class="['col-result', resultClass(m.result)]">{{ m.result }}</td>
-                    <td>
-                      <router-link v-if="opponentRoute(m.opponentStanding)" :to="opponentRoute(m.opponentStanding)" class="opp-link">
-                        {{ playerLabel(m.opponentCharacter, m.opponentStanding) }}
-                      </router-link>
-                      <span v-else>{{ playerLabel(m.opponentCharacter, m.opponentStanding) }}</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
+          <div v-if="focusedCard || resolvedFace" class="col-auto">
+            <img :src="getCardImage((focusedCard || resolvedFace).asset)" class="face-card-full" />
           </div>
-
-          <div v-if="resolvedFace" class="col-auto">
-            <img :src="getCardImage(resolvedFace.asset)" class="face-card-full" />
+          <div class="col">
+            <DeckCompareList
+              v-if="resolvedDeck.length"
+              :face="null"
+              :deck-list="resolvedDeck"
+              :side-list="resolvedSide"
+              @card-click="focusedCard = $event"
+            />
           </div>
         </div>
 
-        <DeckCompareList
-          v-if="resolvedDeck.length"
-          :face="null"
-          :deck-list="resolvedDeck"
-          :side-list="resolvedSide"
-        />
+        <!-- Match results -->
+        <div v-if="playerMatches.swiss?.length || playerMatches.topcut?.length" class="q-mt-md">
+
+          <div v-if="playerMatches.swiss?.length" class="deck-section">
+            <div class="deck-section__title">Swiss · {{ currentStanding.swissRecord }}</div>
+            <table class="match-table">
+              <tbody>
+                <tr v-for="m in playerMatches.swiss" :key="m.round">
+                  <td class="col-rd">Rd {{ m.round }}</td>
+                  <td :class="['col-result', resultClass(m.result)]">{{ m.result }}</td>
+                  <td>
+                    <router-link v-if="opponentRoute(m.opponentStanding)" :to="opponentRoute(m.opponentStanding)" class="opp-link">
+                      {{ playerLabel(m.opponentCharacter, m.opponentStanding) }}
+                    </router-link>
+                    <span v-else>{{ playerLabel(m.opponentCharacter, m.opponentStanding) }}</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div v-if="playerMatches.topcut?.length" class="deck-section">
+            <div class="deck-section__title">Top Cut</div>
+            <table class="match-table">
+              <tbody>
+                <tr v-for="m in playerMatches.topcut" :key="m.round">
+                  <td class="col-rd">{{ m.round }}</td>
+                  <td :class="['col-result', resultClass(m.result)]">{{ m.result }}</td>
+                  <td>
+                    <router-link v-if="opponentRoute(m.opponentStanding)" :to="opponentRoute(m.opponentStanding)" class="opp-link">
+                      {{ playerLabel(m.opponentCharacter, m.opponentStanding) }}
+                    </router-link>
+                    <span v-else>{{ playerLabel(m.opponentCharacter, m.opponentStanding) }}</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
 
       </div>
     </template>
