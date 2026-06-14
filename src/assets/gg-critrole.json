@@ -104,7 +104,10 @@
       "life"
     ],
     "formats": [
-      "legacy"
+      "legacy",
+      "standard",
+      "retro",
+      "rocretro"
     ],
     "hand_size": 8,
     "vitality": 20,
