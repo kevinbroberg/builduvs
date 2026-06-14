@@ -9445,8 +9445,8 @@
       "Unique"
     ],
     "resources": [
-      "void",
-      "evil"
+      "void-attuned",
+      "evil-attuned"
     ],
     "formats": [
       "legacy",
@@ -9481,8 +9481,8 @@
       "Unique"
     ],
     "resources": [
-      "air",
-      "good"
+      "air-attuned",
+      "good-attuned"
     ],
     "formats": [
       "legacy",

@@ -5,6 +5,7 @@ import indexData from 'src/assets/locals-index.json'
 import DeckCompareList from 'src/components/deck/DeckCompareList.vue'
 import { cards as allCards } from 'src/js/card_provider.js'
 import { getCardImage } from 'src/js/image_helper'
+import ResourceSymbol from 'src/components/cards/detail/ResourceSymbol.vue'
 import cardeioIdsData from 'src/assets/cardeio-ids.json'
 import { useDeckStore } from 'src/stores/deck'
 import { storeToRefs } from 'pinia'
@@ -291,7 +292,7 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
 
         <!-- Face card + decklist -->
         <div class="row q-col-gutter-md q-mb-md">
-          <div v-if="focusedCard || resolvedFace" class="col-auto">
+          <div v-if="focusedCard || resolvedFace" class="col-auto face-card-col">
             <img :src="getCardImage((focusedCard || resolvedFace).asset)" class="face-card-full" />
           </div>
           <div class="col">
@@ -369,12 +370,18 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
           }"
           :clickable="!!s.deckName"
           @click="s.deckName && router.push(`/lists/${eventId}/${s.standing}`)">
-          <q-item-section avatar style="min-width: 52px; position: relative">
-            <q-avatar v-if="findCard(s.characterName)" square size="40px" class="standing-avatar">
-              <img :src="getCardImage(findCard(s.characterName).asset)" class="card-thumb__img" />
-            </q-avatar>
-            <q-avatar v-else square size="40px" class="standing-avatar bg-grey-3" />
-            <div class="standing-num text-caption">{{ s.standing }}</div>
+          <q-item-section avatar style="min-width: 52px">
+            <div style="position: relative; display: inline-block">
+              <q-avatar v-if="findCard(s.characterName)" square size="40px" class="standing-avatar">
+                <img :src="getCardImage(findCard(s.characterName).asset)" class="card-thumb__img" />
+              </q-avatar>
+              <q-avatar v-else square size="40px" class="standing-avatar bg-grey-3" />
+              <ResourceSymbol
+                v-if="s.deckSymbol"
+                :element="s.deckSymbol"
+                class="standing-resource"
+              />
+            </div>
           </q-item-section>
           <q-item-section>
             <q-item-label>{{ playerLabel(s.characterName, s.standing) }}</q-item-label>
@@ -442,15 +449,12 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
   transform: scale(1.4);
   transform-origin: top center;
 }
-.standing-num {
+.standing-resource {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  background: rgba(0,0,0,0.55);
-  color: #fff;
-  padding: 0 3px;
-  line-height: 1.4;
-  border-radius: 2px 0 0 0;
+  bottom: -2px;
+  right: -2px;
+  font-size: 18px;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5));
 }
 
 .row-winner { background: rgba(255, 190, 0, 0.12); }
@@ -479,6 +483,12 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
 
 .opp-link { color: var(--q-primary); text-decoration: none; }
 .opp-link:hover { text-decoration: underline; }
+
+.face-card-col {
+  position: sticky;
+  top: 50px;
+  align-self: flex-start;
+}
 
 .face-card-full {
   display: block;
