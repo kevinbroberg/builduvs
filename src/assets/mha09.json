@@ -1,0 +1,1248 @@
+[
+  {
+    "extension_short": "mha09",
+    "numero": 1,
+    "numero_image": 1,
+    "name": "Armored All Might",
+    "type": "character",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "all",
+      "earth",
+      "good"
+    ],
+    "keywords": [
+      "Pro Hero",
+      "Teacher"
+    ],
+    "text": "Enhance: Your attack gets +2 damage. If it has the  symbol, it gets +1 speed and +1 damage.\n\nEnhance [Once per turn] Sacrifice 1 foundation: Draw 1 card. If you sacrificed an Armor card this way, draw 2 cards instead.\n\nResponse Commit: After you take damage, build 1 Armor foundation from your discard pile.",
+    "hand_size": 6,
+    "vitality": 32,
+    "asset": "mha09/001-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/001-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 2,
+    "numero_image": 2,
+    "name": "Izuku Midoriya, Deku",
+    "type": "character",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "air",
+      "all",
+      "good",
+      "life"
+    ],
+    "keywords": [
+      "1-A"
+    ],
+    "text": "Your deck may include Vestige foundations regardless of symbol restrictions.\n\nEnhance [Tenacious]: This attack gets +2 or -2 speed. If you have 6 or more Vestige foundations, it gets +3 or -3 speed instead.\n\nResponse Commit: After you block with a foundation card, build it. Draw 1 card.",
+    "hand_size": 6,
+    "vitality": 30,
+    "asset": "mha09/002-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/002-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 3,
+    "numero_image": 3,
+    "name": "Heroic Conviction",
+    "type": "action",
+    "rarity": "rare",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "air",
+      "all",
+      "good",
+      "void"
+    ],
+    "text": "This card does not count toward progressive difficulty.\n\nForm: If the next card you play is an attack, it gets +2 speed or +2 damage. If it deals damage, draw 1 card.\n\nResponse Remove: After your rival plays a non-character ability that increases the damage of an attack, cancel it.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "mha09/003-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/003-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 4,
+    "numero_image": 4,
+    "name": "Armored Car Hercules",
+    "type": "asset",
+    "rarity": "ultra rare",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "all",
+      "earth",
+      "good"
+    ],
+    "keywords": [
+      "Armor",
+      "Tech"
+    ],
+    "text": "Enhance [Once per turn] Spend 1 momentum: Add 1 Armor card from your discard pile to your hand.\n\nResponse Commit: After 1 or more of your foundations are destroyed by a rival effect, build 1 Armor foundation from your discard pile.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "mha09/004-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/004-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 5,
+    "numero_image": 5,
+    "name": "1-A Configuration",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "all",
+      "fire",
+      "good"
+    ],
+    "keywords": [
+      "Armor",
+      "Fury",
+      "Tech",
+      "Vestige"
+    ],
+    "text": "Blitz: If there are 2 or more Vestiges in your card pool, change this attack's zone. If there are 3 or more, it gains Frenzy. If there are 4 or more, it gains EX: 3 or Powerful: 4.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "mha09/005-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/005-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 6,
+    "numero_image": 6,
+    "name": "All Might's Armored Punch",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "air",
+      "all",
+      "good"
+    ],
+    "keywords": [
+      "Armor",
+      "Punch",
+      "Tech",
+      "Vestige"
+    ],
+    "text": "Blitz: This attack gets +X damage. X equals the number of differently named cards in your card pool.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 3,
+    "asset": "mha09/006-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/006-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 7,
+    "numero_image": 7,
+    "name": "Armor Rush",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "water"
+    ],
+    "keywords": [
+      "Armor",
+      "Charge",
+      "Tech",
+      "Vestige"
+    ],
+    "text": "Response: After this attack deals damage, destroy 1 rival asset.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "mha09/007-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/007-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 8,
+    "numero_image": 8,
+    "name": "Blackchain",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "order"
+    ],
+    "keywords": [
+      "Vestige"
+    ],
+    "text": "Blitz: If your rival's character is committed, this attack gains Throw.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "mha09/008-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/008-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 9,
+    "numero_image": 9,
+    "name": "Cellophane Sugarman Shoot Style Smash",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "air",
+      "all",
+      "good"
+    ],
+    "keywords": [
+      "Armor",
+      "Kick",
+      "Tech",
+      "Vestige"
+    ],
+    "text": "Blitz: If you have less momentum than your rival, this attack gets +3 speed.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "mha09/009-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/009-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 10,
+    "numero_image": 10,
+    "name": "Incoming Smash Kick",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "life"
+    ],
+    "keywords": [
+      "Kick",
+      "Vestige"
+    ],
+    "text": "Response Discard 1 card: After you make a check to play this card, that check gets +2.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "mha09/010-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/010-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 11,
+    "numero_image": 11,
+    "name": "Overdrive Uppercut",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "air",
+      "good",
+      "life"
+    ],
+    "text": "Powerful: 3 - Punch - Vestige\n\nIf you play this card from anywhere other than your hand, it loses Powerful.\n\nResponse: After you play this attack, add 1 Vestige attack from your discard pile to your momentum.\n\nBlitz: This attack loses Powerful and gains Echo.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "mha09/011-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/011-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 12,
+    "numero_image": 12,
+    "name": "Armored Pro Hero",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "life"
+    ],
+    "keywords": [
+      "Armor",
+      "Tech",
+      "Vestige"
+    ],
+    "text": "Response Commit: After you block with an Armor card, your rival's next attack gets -3 damage.\n\nEnhance [Once per turn, Tenacious] Spend 1 momentum: Ready this foundation.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "mha09/012-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/012-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 13,
+    "numero_image": 13,
+    "name": "Battle Suit HUD",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "void"
+    ],
+    "keywords": [
+      "Armor",
+      "Tech"
+    ],
+    "text": "Enhance Flip: Reveal the top 2 cards of your deck. You may put all attacks revealed this way on the bottom of your deck.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "mha09/013-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/013-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 14,
+    "numero_image": 14,
+    "name": "Bomber Jet Ride",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "air",
+      "all",
+      "good"
+    ],
+    "text": "Enhance Flip: Clear 1 card played as a block from your card pool.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "mha09/014-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/014-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 15,
+    "numero_image": 15,
+    "name": "Briefcase Armor",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "order"
+    ],
+    "keywords": [
+      "Armor",
+      "Tech"
+    ],
+    "text": "Enhance [Rival's turn, Tenacious]: Add this card to your hand.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "mha09/015-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/015-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 16,
+    "numero_image": 16,
+    "name": "Evoking the Wielders",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "keywords": [
+      "Ally",
+      "Vestige"
+    ],
+    "text": "Enhance Commit: If there are at least 3 differently named Vestige foundations in your stage, your attack gets +2 speed and +4 damage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "mha09/016-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/016-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 17,
+    "numero_image": 17,
+    "name": "Gear Shift",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "air",
+      "all",
+      "good"
+    ],
+    "text": "Deflect: 2 - Vestige\n\nEnhance [Card Pool] Flip: This attack gets +2 or -2 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "mha09/017-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/017-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 18,
+    "numero_image": 18,
+    "name": "Giving in to Rage",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "all",
+      "chaos",
+      "good"
+    ],
+    "keywords": [
+      "Fury",
+      "Vestige"
+    ],
+    "text": "Enhance Flip: Each player discards 1 card and draws 1 card. If you discarded a card with the highest difficulty this way, your attack gets +4 damage. Otherwise, it gets +2 damage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "mha09/018-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/018-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 19,
+    "numero_image": 19,
+    "name": "Good & Evil",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "evil",
+      "good"
+    ],
+    "text": "Enhance Commit: This attack gets -1 speed and -1 damage, to a minimum of 1 damage.\n\nResponse Commit Spend 1 momentum: After your rival plays a response ability on a non-character card, cancel its effects.",
+    "difficulty": 2,
+    "control": 4,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "mha09/019-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/019-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 20,
+    "numero_image": 20,
+    "name": "Hercules: Red Riot",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "void"
+    ],
+    "keywords": [
+      "Armor"
+    ],
+    "text": "This foundation cannot be destroyed by rival effects.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "mha09/020-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/020-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 21,
+    "numero_image": 21,
+    "name": "Vestige Slingshot",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "air",
+      "all",
+      "good"
+    ],
+    "keywords": [
+      "Vestige"
+    ],
+    "text": "Response Commit: After this attack receives a speed penalty, your next attack gets +3 speed.\n\nResponse Commit: After this attack receives a speed bonus, your rival's next attack gets -3 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "mha09/021-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/021-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 22,
+    "numero_image": 22,
+    "name": "All For One, Demon Lord",
+    "type": "character",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "keywords": [
+      "Villain"
+    ],
+    "text": "Enhance Commit: You may try to play 1 card from your momentum as your next card this turn. If you play a card this way, remove it when it leaves the card pool.\n\nResponse [Once per turn, Tenacious]: After an attack deals 5 or more damage, ready this character. You may add 1 card from your discard pile to your momentum.",
+    "hand_size": 6,
+    "vitality": 34,
+    "asset": "mha09/022-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/022-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 23,
+    "numero_image": 23,
+    "name": "Tomura Shigaraki, All For One's Successor",
+    "type": "character",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "death",
+      "evil",
+      "void"
+    ],
+    "keywords": [
+      "Villain"
+    ],
+    "text": "Enhance Remove up to 2 cards from your hand: You may try to play 1 card removed this way as your next card this turn. Your attack gets +1 speed. If this attack deals damage, draw 1 card for each card removed this way.\n\nResponse: After you partially block an attack, your block gains Breaker: 1.",
+    "hand_size": 6,
+    "vitality": 33,
+    "asset": "mha09/023-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/023-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 24,
+    "numero_image": 24,
+    "name": "Concealing Power",
+    "type": "action",
+    "rarity": "rare",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Response Remove: After your rival builds 1 or more cards during the Combat Phase, remove 1 of them.\n\nResponse Remove: After you block with this card, your rival's next check to play a card gets -2. If you have played a card from anywhere other than your hand this turn, it gets -4 instead.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "mha09/024-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/024-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 25,
+    "numero_image": 25,
+    "name": "Evil Aura",
+    "type": "asset",
+    "rarity": "ultra rare",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "chaos",
+      "death",
+      "evil"
+    ],
+    "text": "Unique\n\nWhile this card is ready in your stage, your attacks get +1 speed if your character has the  symbol and your rival's attacks get -1 speed if their character has the  symbol.\n\nResponse Commit: After your blocked  attack resolves, remove it. Add the top card of your deck to your momentum.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "mha09/025-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/025-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 26,
+    "numero_image": 26,
+    "name": "Adaptive Stabbing",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "earth",
+      "evil",
+      "void"
+    ],
+    "keywords": [
+      "Fury",
+      "Punch"
+    ],
+    "text": "Blitz: If this attack was played from anywhere other than your hand, it gains Throw and your rival flips 1 foundation.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "mha09/026-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/026-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 27,
+    "numero_image": 27,
+    "name": "Appendage Onslaught",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "death",
+      "evil",
+      "void"
+    ],
+    "keywords": [
+      "Fury"
+    ],
+    "text": "Blitz: If this attack was played from anywhere other than your hand, it gets +1 to its Stun rating.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 2,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "mha09/027-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/027-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 28,
+    "numero_image": 28,
+    "name": "Combination Blast",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "keywords": [
+      "Frenzy"
+    ],
+    "text": "If this attack is played from anywhere other than your hand, it gets +1 speed and +2 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "mha09/028-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/028-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 29,
+    "numero_image": 29,
+    "name": "Combination Salvo",
+    "type": "attack",
+    "rarity": "ultra rare",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "keywords": [
+      "Fury",
+      "Ranged"
+    ],
+    "text": "Blitz: If you have 5 or more cards in your removed pile, this attack gets +3 speed.\n\nResponse: After you play this attack's Powerful ability, add 1 attack card spent to pay the cost of that ability from your discard pile to your hand.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 7,
+    "asset": "mha09/029-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/029-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 30,
+    "numero_image": 30,
+    "name": "Demon Lord's Blast",
+    "type": "attack",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "text": "Deflect: 2 - Ranged\n\nIf this attack was played from anywhere other than your hand, it gets -1 difficulty and +3 damage.\n\nResponse: After this attack deals damage, your rival spends 2 momentum.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 6,
+    "asset": "mha09/030-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/030-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 31,
+    "numero_image": 31,
+    "name": "Massive Optimal Punch",
+    "type": "attack",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "death",
+      "evil",
+      "void"
+    ],
+    "text": "Breaker: 1 - Punch\n\nResponse: After you play this card, seal 1 rival foundation.\n\nBlitz: If you have 5 or more cards in your removed pile, destroy 1 rival asset.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "mha09/031-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/031-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 32,
+    "numero_image": 32,
+    "name": "Persistent Malice",
+    "type": "attack",
+    "rarity": "rare",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "text": "EX: 2 - Ranged\n\nWhen this card is added to your momentum, add it face up.\n\nResponse [Momentum] Flip: After you commit your character, your rival's next check gets -2.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "mha09/032-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/032-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 33,
+    "numero_image": 33,
+    "name": "Gloating",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Enhance Flip: If you have more cards in your removed pile than your rival, your attack gets +2 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "mha09/033-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/033-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 34,
+    "numero_image": 34,
+    "name": "Good & Evil",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "evil",
+      "good"
+    ],
+    "text": "Enhance Commit: This attack gets -1 speed and -1 damage, to a minimum of 1 damage.\n\nResponse Commit Spend 1 momentum: After your rival plays a response ability on a non-character card, cancel its effects.",
+    "difficulty": 2,
+    "control": 4,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "mha09/034-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/034-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 35,
+    "numero_image": 35,
+    "name": "Hopelessness",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Response Flip: After your rival discards 1 or more cards, seal 1 rival foundation.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "mha09/035-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/035-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 36,
+    "numero_image": 36,
+    "name": "Optimal Form",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "death",
+      "evil",
+      "void"
+    ],
+    "text": "First Form Commit: Draw 1 card. Your rival may sacrifice 1 foundation to cancel this effect.\n\nResponse [Tenacious]: After an attack is played, it gets -1 speed. Only playable while this card is committed.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "mha09/036-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/036-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 37,
+    "numero_image": 37,
+    "name": "Panicked Outburst",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Breaker: 1\n\nEnhance Commit: This attack gets -2 speed.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "mha09/037-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/037-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 38,
+    "numero_image": 38,
+    "name": "Reckless Combat",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "evil",
+      "life",
+      "void"
+    ],
+    "text": "Enhance Lose 3 health: If this attack deals damage, gain 4 health.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "mha09/038-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/038-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 39,
+    "numero_image": 39,
+    "name": "Rewind Engaged",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "life"
+    ],
+    "text": "Response [Tenacious]: After your rival's Combat Phase begins, ready this foundation. Only playable if you have 15 or less health.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "mha09/039-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/039-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 40,
+    "numero_image": 40,
+    "name": "Stealing Quirks",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "text": "First Enhance Flip: The next time you play a keyword ability during this attack, you may have your rival spend 1 momentum as though you were spending momentum to pay for that ability.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "mha09/040-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/040-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 41,
+    "numero_image": 41,
+    "name": "Stockpiled Quirks",
+    "type": "foundation",
+    "rarity": "uncommon",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "order"
+    ],
+    "text": "Enhance Commit, Spend 1 momentum: This attack gets +3 speed.\n\nResponse [Tenacious] Flip: After you spend 1 or more momentum, add 1 card with a keyword ability from among the cards spent this way to your hand.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "mha09/041-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/041-preview.jpg"
+  },
+  {
+    "extension_short": "mha09",
+    "numero": 42,
+    "numero_image": 42,
+    "name": "Toying with Endeavor and Hawks",
+    "type": "foundation",
+    "rarity": "common",
+    "extension": "Challenger: My Hero Academia Final Battle",
+    "formats": [
+      "My Hero Academia",
+      "legacy",
+      "standard",
+      "retro"
+    ],
+    "resources": [
+      "chaos",
+      "evil"
+    ],
+    "text": "Response [Tenacious] Flip: After you block an attack, your next check to play a block gets +1.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "mha09/042-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/042-preview.jpg"
+  }
+]
