@@ -52,29 +52,29 @@ function toggleRightDrawer() {
           <q-item-section avatar><q-icon name="sports_esports" /></q-item-section>
           <q-item-section>Game Tracker</q-item-section>
         </q-item>
+        <q-item clickable v-ripple to="/settings">
+          <q-item-section avatar><q-icon name="settings" /></q-item-section>
+          <q-item-section>Tracker Settings</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/lists">
+          <q-item-section avatar><q-icon name="emoji_events" /></q-item-section>
+          <q-item-section>Decklists</q-item-section>
+        </q-item>
         <q-item clickable v-ripple to="/deck">
           <q-item-section avatar><q-icon name="style" /></q-item-section>
-          <q-item-section>Deck Detail</q-item-section>
+          <q-item-section>Your Deck</q-item-section>
         </q-item>
         <q-item clickable v-ripple to="/cards">
           <q-item-section avatar><q-icon name="search" /></q-item-section>
-          <q-item-section>Search</q-item-section>
-        </q-item>
-        <q-item clickable v-ripple to="/shuffle">
-          <q-item-section avatar><q-icon name="shuffle" /></q-item-section>
-          <q-item-section>Shuffle</q-item-section>
+          <q-item-section>Card Search</q-item-section>
         </q-item>
         <q-item clickable v-ripple to="/compare">
           <q-item-section avatar><q-icon name="difference" /></q-item-section>
           <q-item-section>Compare Decks</q-item-section>
         </q-item>
-        <q-item clickable v-ripple to="/lists">
-          <q-item-section avatar><q-icon name="emoji_events" /></q-item-section>
-          <q-item-section>Locals</q-item-section>
-        </q-item>
-        <q-item clickable v-ripple to="/settings">
-          <q-item-section avatar><q-icon name="settings" /></q-item-section>
-          <q-item-section>Settings</q-item-section>
+        <q-item clickable v-ripple to="/shuffle">
+          <q-item-section avatar><q-icon name="shuffle" /></q-item-section>
+          <q-item-section>Shuffle Tool</q-item-section>
         </q-item>
       </q-list>
     </q-drawer>
