@@ -268,8 +268,8 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
             {{ currentStanding.deckName }}
           </span>
         </q-toolbar-title>
-        <q-badge v-if="currentStanding?.swissRecord" color="grey-6"
-          :label="currentStanding.swissRecord" class="q-mr-sm" />
+        <q-badge v-if="currentStanding?.overallRecord ?? currentStanding?.swissRecord" color="grey-6"
+          :label="currentStanding.overallRecord ?? currentStanding.swissRecord" class="q-mr-sm" />
         <template v-if="currentStanding?.deckName">
           <q-btn flat dense icon="style" size="sm" label="Build" class="q-ml-xs"
             :disable="playerDataLoading || !resolvedDeck.length"
@@ -310,7 +310,7 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
         <div v-if="playerMatches.swiss?.length || playerMatches.topcut?.length" class="q-mt-md">
 
           <div v-if="playerMatches.swiss?.length" class="deck-section">
-            <div class="deck-section__title">Swiss · {{ currentStanding.swissRecord }}</div>
+            <div class="deck-section__title">Swiss · {{ currentStanding.swissRecord ?? '' }}</div>
             <table class="match-table">
               <tbody>
                 <tr v-for="m in playerMatches.swiss" :key="m.round">
@@ -385,7 +385,7 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
           </q-item-section>
           <q-item-section>
             <q-item-label>{{ playerLabel(s.characterName, s.standing) }}</q-item-label>
-            <q-item-label v-if="s.swissRecord" caption>{{ s.swissRecord }}</q-item-label>
+            <q-item-label v-if="s.overallRecord ?? s.swissRecord" caption>{{ s.overallRecord ?? s.swissRecord }}</q-item-label>
           </q-item-section>
           <q-item-section side v-if="s.deckName">
             <q-icon name="chevron_right" color="grey-5" />
