@@ -607,7 +607,7 @@
     ],
     "resources": [
       "earth",
-      "good",
+      "good-attuned",
       "void"
     ],
     "keywords": [
@@ -722,7 +722,7 @@
       "retro"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Response Remove: After your rival builds 1 or more cards during the Combat Phase, remove 1 of them.\n\nResponse Remove: After you block with this card, your rival's next check to play a card gets -2. If you have played a card from anywhere other than your hand this turn, it gets -4 instead.",
     "difficulty": 3,
@@ -998,7 +998,7 @@
       "retro"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Enhance Flip: If you have more cards in your removed pile than your rival, your attack gets +2 speed.",
     "difficulty": 1,
@@ -1049,7 +1049,7 @@
       "retro"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Response Flip: After your rival discards 1 or more cards, seal 1 rival foundation.",
     "difficulty": 2,
@@ -1101,7 +1101,7 @@
       "retro"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Breaker: 1\n\nEnhance Commit: This attack gets -2 speed.",
     "difficulty": 2,
