@@ -5,6 +5,7 @@ import indexData from 'src/assets/locals-index.json'
 import DeckCompareList from 'src/components/deck/DeckCompareList.vue'
 import { cards as allCards } from 'src/js/card_provider.js'
 import { getCardImage } from 'src/js/image_helper'
+import cardeioIdsData from 'src/assets/cardeio-ids.json'
 import { useDeckStore } from 'src/stores/deck'
 import { storeToRefs } from 'pinia'
 
@@ -13,8 +14,12 @@ function normName(name) {
   return name.toLowerCase().replace(/[‘’‚‛′]/g, "'")
 }
 
-const cardByName = new Map(
-  allCards.filter(c => c.formats?.includes('standard')).map(c => [normName(c.name), c])
+const standardCards = allCards.filter(c => c.formats?.includes('standard'))
+const cardByName = new Map(standardCards.map(c => [normName(c.name), c]))
+const cardByCardeioId = new Map(
+  Object.entries(cardeioIdsData)
+    .map(([name, data]) => [data.id, cardByName.get(normName(name))])
+    .filter(([, card]) => card != null)
 )
 
 function findCard(name) {
@@ -205,7 +210,7 @@ const playerMatches = computed(() => {
 })
 
 function resolveCard(dc) {
-  const found = findCard(dc.name)
+  const found = (dc.cardeioId && cardByCardeioId.get(dc.cardeioId)) || findCard(dc.name)
   if (!found) console.warn(`[locals] unresolved card: "${dc.name}"`)
   return found ? { ...found, qty: dc.qty } : { name: dc.name, qty: dc.qty, asset: null, type: 'unknown' }
 }
@@ -240,8 +245,9 @@ watch(() => currentStanding.value, () => { focusedCard.value = null })
 const resolvedFace = computed(() => {
   const chars = playerCards.value.character
   if (!chars?.length) return null
-  const found = findCard(chars[0].name)
-  if (!found) console.warn(`[locals] unresolved face card: "${chars[0].name}"`)
+  const dc = chars[0]
+  const found = (dc.cardeioId && cardByCardeioId.get(dc.cardeioId)) || findCard(dc.name)
+  if (!found) console.warn(`[locals] unresolved face card: "${dc.name}"`)
   return found || null
 })
 const resolvedDeck = computed(() => (playerCards.value.main || []).map(resolveCard))
