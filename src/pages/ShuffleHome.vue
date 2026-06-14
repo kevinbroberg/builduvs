@@ -72,10 +72,11 @@ function fisherYates(arr) {
 function startShuffle() {
   const n = numPiles.value;
   const total = Math.ceil(deckSize.value / n);
-  const excess = total * n - deckSize.value; // number of short (n-1) rounds
+  const q = Math.floor(deckSize.value / total);
+  const r = deckSize.value - q * total; // r rounds deal q+1 cards, rest deal q
   const handSizes = fisherYates([
-    ...Array(excess).fill(n - 1),
-    ...Array(total - excess).fill(n),
+    ...Array(r).fill(q + 1),
+    ...Array(total - r).fill(q),
   ]);
   const indices = Array.from({ length: n }, (_, i) => i);
   rounds.value = handSizes.map((handSize) => ({
