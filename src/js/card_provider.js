@@ -9,8 +9,9 @@ import sjwtomha4 from 'assets/sjw-mha4.json'
 import real_cards from 'assets/cards.json'
 import kaiju from 'assets/kaiju.json'
 import teamhero from 'assets/teamhero.json'
+import mha09 from 'assets/mha09.json'
 
-export const cards = [...kaiju, ...teamhero, ...ggrole, ...sjwtomha4,...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
+export const cards = [...mha09, ...kaiju, ...teamhero, ...ggrole, ...sjwtomha4,...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
 
 // Ensure every card has a unique `asset` key (used by deck store and v-for keys).
 // Newer data files omit `asset`, so synthesize one from extension_short + card_number_image.
