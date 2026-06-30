@@ -137,9 +137,10 @@ function opponentRoute(opponentStanding) {
 // ── Computed views ─────────────────────────────────────────────────────────────
 
 const LC_FORMATS = [
-  { key: 'kaiju',  label: 'Reign of Kaiju' },
-  { key: 'april',  label: 'April B&E' },
-  { key: 'titan',  label: 'May B&E' },
+  { key: 'kaiju',    label: 'Reign of Kaiju' },
+  { key: 'april',    label: 'April B&E' },
+  { key: 'titan',    label: 'May B&E' },
+  { key: 'mhafinal', label: 'Round 3' },
 ]
 const lcFormatKeys = new Set(LC_FORMATS.map(f => f.key))
 
