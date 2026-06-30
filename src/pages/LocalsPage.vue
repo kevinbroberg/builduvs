@@ -9,6 +9,7 @@ import ResourceSymbol from 'src/components/cards/detail/ResourceSymbol.vue'
 import cardeioIdsData from 'src/assets/cardeio-ids.json'
 import { useDeckStore } from 'src/stores/deck'
 import { storeToRefs } from 'pinia'
+import { downloadTTSJson } from 'src/js/tts_export'
 
 // Normalize apostrophes and other quote variants to plain straight apostrophe
 function normName(name) {
@@ -231,6 +232,11 @@ function buildThisDeck() {
   })
 }
 
+function downloadTTS() {
+  const name = currentStanding.value?.deckName || 'UVS Deck'
+  downloadTTSJson(name, resolvedFace.value, resolvedDeck.value)
+}
+
 function compareThisDeck() {
   deckStore.setPendingComparison({
     face: resolvedFace.value,
@@ -281,6 +287,11 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
             :disable="playerDataLoading || !resolvedDeck.length"
             @click="compareThisDeck">
             <q-tooltip>Compare against your current deck</q-tooltip>
+          </q-btn>
+          <q-btn flat dense icon="download" size="sm" label="TTS" class="q-ml-xs"
+            :disable="playerDataLoading || !resolvedDeck.length"
+            @click="downloadTTS">
+            <q-tooltip>Download Tabletop Simulator deck</q-tooltip>
           </q-btn>
         </template>
       </q-toolbar>
