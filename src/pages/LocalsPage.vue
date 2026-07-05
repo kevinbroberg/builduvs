@@ -381,7 +381,7 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
             'row-top8':   s.standing > 4 && s.standing <= 8,
           }"
           :clickable="!!s.deckName"
-          @click="s.deckName && router.push(`/lists/${eventId}/${s.standing}`)">
+          :to="s.deckName ? `/lists/${eventId}/${s.standing}` : undefined">
           <q-item-section avatar style="min-width: 52px">
             <div style="position: relative; display: inline-block">
               <q-avatar v-if="findCard(s.characterName)" square size="40px" class="standing-avatar">
@@ -426,7 +426,7 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
 
       <q-list separator>
         <q-item v-for="ev in eventsByFormat[tab]" :key="ev.id"
-          clickable v-ripple @click="router.push(`/lists/${ev.id}`)">
+          clickable v-ripple :to="`/lists/${ev.id}`">
           <q-item-section avatar style="min-width: 56px">
             <div class="text-caption text-mono text-grey-7">{{ formatDate(ev.date) }}</div>
           </q-item-section>
