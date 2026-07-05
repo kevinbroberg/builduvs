@@ -234,7 +234,7 @@ function buildThisDeck() {
 
 function downloadTTS() {
   const name = currentStanding.value?.deckName || 'UVS Deck'
-  downloadTTSJson(name, resolvedFace.value, resolvedDeck.value)
+  downloadTTSJson(name, resolvedFace.value, resolvedDeck.value, resolvedSide.value)
 }
 
 function compareThisDeck() {

@@ -6,6 +6,7 @@ import CardeioExportDialog from 'components/deck/CardeioExportDialog.vue'
 import { useQuasar } from 'quasar'
 import { useDeckStore } from 'src/stores/deck'
 import { storeToRefs } from 'pinia'
+import { downloadTTSJson } from 'src/js/tts_export'
 
 import {
   face,
@@ -20,10 +21,16 @@ import {
 } from 'components/deck/deck_logic'
 
 const $q = useQuasar()
-const { hasDeck } = storeToRefs(useDeckStore())
+const deckStore = useDeckStore()
+const { hasDeck } = storeToRefs(deckStore)
 
 function openCardeioExport() {
   $q.dialog({ component: CardeioExportDialog })
+}
+
+function downloadTTS() {
+  const name = deckStore.currentDeckName || 'UVS Deck'
+  downloadTTSJson(name, deckStore.face, deckStore.getDeckList, deckStore.getSideList)
 }
 </script>
 
@@ -64,6 +71,9 @@ function openCardeioExport() {
     </q-btn>
     <q-btn push label="Copy" icon="content_copy" @click="deck2clipboard">
       <q-tooltip>Copies your deck to clipboard</q-tooltip>
+    </q-btn>
+    <q-btn push label="TTS" icon="download" @click="downloadTTS">
+      <q-tooltip>Download Tabletop Simulator deck</q-tooltip>
     </q-btn>
     <q-btn outline label="Wipe" icon="delete" color="negative" @click="trash" />
   </q-btn-group>
