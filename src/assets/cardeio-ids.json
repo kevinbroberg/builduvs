@@ -16463,5 +16463,210 @@
     "id": "64e6bce8cc0d62bbb0daca68",
     "slug": "071-so-manly",
     "cardType": "Foundation"
+  },
+  "1-a configuration": {
+    "id": "e8615dc9-67cb-41b1-a80e-bf3a83ea27c7",
+    "slug": "005-1-a-configuration",
+    "cardType": "Attack"
+  },
+  "adaptive stabbing": {
+    "id": "9b494597-39ac-4cdb-8baf-bced07091d09",
+    "slug": "026-adaptive-stabbing",
+    "cardType": "Attack"
+  },
+  "all for one, demon lord": {
+    "id": "908d112c-9311-4488-9d25-cde4eea122be",
+    "slug": "022-all-for-one-demon-lord",
+    "cardType": "Character"
+  },
+  "all might’s armored punch": {
+    "id": "2b0ee252-278b-439e-a73d-58addae55ccb",
+    "slug": "all-might-s-armored-punch",
+    "cardType": "Attack"
+  },
+  "appendage onslaught": {
+    "id": "b5fe192b-6a0a-4e5f-b9a0-14121fbeb12f",
+    "slug": "027-appendage-onslaught",
+    "cardType": "Attack"
+  },
+  "armored all might": {
+    "id": "2c955386-9e65-431a-ad72-60c08a7b7f19",
+    "slug": "001-armored-all-might",
+    "cardType": "Character"
+  },
+  "armored car hercules": {
+    "id": "dd8dec0f-04a0-443a-bdfd-a35a854cdf44",
+    "slug": "004-armored-car-hercules",
+    "cardType": "Asset"
+  },
+  "armored pro hero": {
+    "id": "da65fff7-7703-476b-ac8e-a5683cf971a8",
+    "slug": "012-armored-pro-hero",
+    "cardType": "Foundation"
+  },
+  "armor rush": {
+    "id": "7ba5fda1-e220-414c-b693-471a5edc92d7",
+    "slug": "007-armor-rush",
+    "cardType": "Attack"
+  },
+  "battle suit hud": {
+    "id": "88d5a50f-88a7-49a9-b03f-19653f051ad2",
+    "slug": "013-battle-suit-hud",
+    "cardType": "Foundation"
+  },
+  "blackchain": {
+    "id": "4fc3d80b-0110-4775-92cd-3073a5f099e1",
+    "slug": "008-blackchain",
+    "cardType": "Attack"
+  },
+  "bomber jet ride": {
+    "id": "36cfc6eb-7f68-4799-a29d-b2339840894d",
+    "slug": "014-bomber-jet-ride",
+    "cardType": "Foundation"
+  },
+  "briefcase armor": {
+    "id": "c0625e78-92ca-48c8-a0fa-a939f1496cb6",
+    "slug": "015-briefcase-armor",
+    "cardType": "Foundation"
+  },
+  "cellophane sugarman shoot style smash": {
+    "id": "f3cb04fb-d8ee-4468-96d0-7a25ad09430f",
+    "slug": "009-cellophane-sugarman-shoot-style-smash",
+    "cardType": "Attack"
+  },
+  "combination blast": {
+    "id": "cac4cc5f-cf44-41b2-932b-45cceb29d16e",
+    "slug": "028-combination-blast",
+    "cardType": "Attack"
+  },
+  "combination salvo": {
+    "id": "e5f631b1-e467-4182-8d0e-aa2857a04729",
+    "slug": "029-combination-salvo",
+    "cardType": "Attack"
+  },
+  "concealing power": {
+    "id": "6f4f33ae-f22f-496d-9987-a7ff31a064a2",
+    "slug": "024-concealing-power",
+    "cardType": "Action"
+  },
+  "demon lord’s blast": {
+    "id": "e8a1ba4e-cf44-429c-ad4d-ffc781fada78",
+    "slug": "demon-lord-s-blast",
+    "cardType": "Attack"
+  },
+  "evil aura": {
+    "id": "dd443a2c-784c-4520-b6e9-e008a2c00cfb",
+    "slug": "025-evil-aura",
+    "cardType": "Asset"
+  },
+  "evoking the wielders": {
+    "id": "7eac0559-0678-4fa4-8285-947c9169ea32",
+    "slug": "016-evoking-the-wielders",
+    "cardType": "Foundation"
+  },
+  "gear shift": {
+    "id": "ad7539c8-dfdd-4118-978f-4c8d53aa9659",
+    "slug": "017-gear-shift",
+    "cardType": "Foundation"
+  },
+  "giving in to rage": {
+    "id": "738063d3-7f13-48f8-9593-72380bb3cc68",
+    "slug": "018-giving-in-to-rage",
+    "cardType": "Foundation"
+  },
+  "gloating": {
+    "id": "aedbc235-6c76-4493-958a-977d3d13a529",
+    "slug": "033-gloating",
+    "cardType": "Foundation"
+  },
+  "good & evil": {
+    "id": "53bb69ea-6c0a-425a-bb4d-0686e7e4598d",
+    "slug": "034-good-evil",
+    "cardType": "Foundation"
+  },
+  "hercules: red riot": {
+    "id": "bd590704-3d57-408e-8c0b-3676058c28ec",
+    "slug": "020-hercules-red-riot",
+    "cardType": "Foundation"
+  },
+  "heroic conviction": {
+    "id": "de95de51-2515-48f4-ab6d-6ee1fe496a19",
+    "slug": "003-heroic-conviction",
+    "cardType": "Action"
+  },
+  "hopelessness": {
+    "id": "daedc288-b8f1-42ad-a115-96a689400bd4",
+    "slug": "035-hopelessness",
+    "cardType": "Foundation"
+  },
+  "incoming smash kick": {
+    "id": "a29c2fbc-3b71-4e81-98b3-e360a1049451",
+    "slug": "010-incoming-smash-kick",
+    "cardType": "Attack"
+  },
+  "izuku midoriya, deku": {
+    "id": "d4d48ac4-7d63-44c7-82e3-c0e7e51b087b",
+    "slug": "002-izuku-midoriya-deku",
+    "cardType": "Character"
+  },
+  "massive optimal punch": {
+    "id": "686361e8-3af3-4858-ae4a-8c5aa294bf35",
+    "slug": "031-massive-optimal-punch",
+    "cardType": "Attack"
+  },
+  "optimal form": {
+    "id": "4f314625-ed4f-4f08-9311-74b9c5f2d963",
+    "slug": "036-optimal-form",
+    "cardType": "Foundation"
+  },
+  "overdrive uppercut": {
+    "id": "1d0b023a-d884-4cb9-80a9-266313cf0acd",
+    "slug": "011-overdrive-uppercut",
+    "cardType": "Attack"
+  },
+  "panicked outburst": {
+    "id": "dcb1cdba-4ad0-4e1d-8fa1-8c03a69228f4",
+    "slug": "037-panicked-outburst",
+    "cardType": "Foundation"
+  },
+  "persistent malice": {
+    "id": "6599d4a1-bc0d-4801-9f25-4c787b1ec859",
+    "slug": "032-persistent-malice",
+    "cardType": "Attack"
+  },
+  "reckless combat": {
+    "id": "b7d7e816-2c5f-469d-a11a-19723bff3a71",
+    "slug": "038-reckless-combat",
+    "cardType": "Foundation"
+  },
+  "rewind engaged": {
+    "id": "20170168-73b0-40b3-9286-7575567e65f9",
+    "slug": "039-rewind-engaged",
+    "cardType": "Foundation"
+  },
+  "stealing quirks": {
+    "id": "c0d1dc12-1a29-423f-8958-6be13c5d6e64",
+    "slug": "040-stealing-quirks",
+    "cardType": "Foundation"
+  },
+  "stockpiled quirks": {
+    "id": "463f7ac9-4331-4bc9-953a-0b0198fbc16f",
+    "slug": "041-stockpiled-quirks",
+    "cardType": "Foundation"
+  },
+  "tomura shigaraki, all for one’s successor": {
+    "id": "03ca40a5-7c78-4b9e-8f14-6628589985ef",
+    "slug": "tomura-shigaraki-all-for-one-s-successor",
+    "cardType": "Character"
+  },
+  "toying with endeavor and hawks": {
+    "id": "5200c5a3-aa72-4d43-9b37-3fbbc1ac2ddf",
+    "slug": "042-toying-with-endeavor-and-hawks",
+    "cardType": "Foundation"
+  },
+  "vestige slingshot": {
+    "id": "cb15adb0-2a5e-4d2d-8f6b-1d16a60c8097",
+    "slug": "021-vestige-slingshot",
+    "cardType": "Foundation"
   }
 }
