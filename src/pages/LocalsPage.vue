@@ -145,14 +145,16 @@ const LC_FORMATS = [
 ]
 const lcFormatKeys = new Set(LC_FORMATS.map(f => f.key))
 
-const sortOrder = ref('players')
+const sortOrder = ref('decklists')
+
+const deckCount = id => getStandings(id).filter(s => s.deckName).length
 
 function sortEvents(evList, order = sortOrder.value) {
   return [...evList].sort((a, b) => {
     if (order === 'date') return b.date.localeCompare(a.date)
-    const aHas = getStandings(a.id).some(s => s.deckName) ? 0 : 1
-    const bHas = getStandings(b.id).some(s => s.deckName) ? 0 : 1
-    if (aHas !== bHas) return aHas - bHas
+    const aCount = deckCount(a.id)
+    const bCount = deckCount(b.id)
+    if (bCount !== aCount) return bCount - aCount
     if (b.playerCount !== a.playerCount) return b.playerCount - a.playerCount
     return a.date.localeCompare(b.date)
   })
@@ -417,10 +419,10 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
           class="q-mr-sm"
           color="grey-3" text-color="grey-7" toggle-color="grey-7" toggle-text-color="white"
           :options="[
-            { value: 'players', icon: 'group' },
-            { value: 'date',    icon: 'calendar_today' },
+            { value: 'decklists', icon: 'list_alt' },
+            { value: 'date',      icon: 'calendar_today' },
           ]">
-          <q-tooltip :delay="300">{{ sortOrder === 'players' ? 'Sorted by player count' : 'Sorted by date' }}</q-tooltip>
+          <q-tooltip :delay="300">{{ sortOrder === 'decklists' ? 'Sorted by available lists' : 'Sorted by date' }}</q-tooltip>
         </q-btn-toggle>
       </div>
 
@@ -433,7 +435,7 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
           <q-item-section>
             <q-item-label class="text-weight-medium">{{ ev.location }}</q-item-label>
             <q-item-label caption>
-              {{ ev.playerCount }} players
+              {{ deckCount(ev.id) }} lists
               <template v-if="ev.winnerCharacter">
                 · <strong>{{ toTitleCase(ev.winnerCharacter) }}</strong>
               </template>
