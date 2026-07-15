@@ -179,14 +179,14 @@ const lcFormatSortDate = Object.fromEntries(
 const FORMATS = [
   ...LC_FORMATS.map(f => ({ ...f, sortDate: lcFormatSortDate[f.key] })),
   ...regionalTabs,
-].sort((a, b) => a.sortDate.localeCompare(b.sortDate))
+].sort((a, b) => b.sortDate.localeCompare(a.sortDate))
 
 const eventsByFormat = computed(() => ({
   ...Object.fromEntries(LC_FORMATS.map(f => [f.key, sortEvents(lcEvents.filter(e => e.formatPeriod === f.key))])),
   ...Object.fromEntries(regionalEvents.map(e => [e.id, [e]])),
 }))
 
-const tab = ref('kaiju')
+const tab = ref(FORMATS[0]?.key ?? 'kaiju')
 
 const currentEvent     = computed(() => eventId.value ? getEvent(eventId.value) : null)
 const currentStandings = computed(() => eventId.value ? getStandings(eventId.value) : [])
