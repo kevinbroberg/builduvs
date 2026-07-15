@@ -132,7 +132,7 @@ function resultClass(result) {
 function opponentRoute(opponentStanding) {
   if (!opponentStanding || !eventId.value) return null
   const s = getStanding(eventId.value, opponentStanding)
-  return s?.deckName ? `/lists/${eventId.value}/${opponentStanding}` : null
+  return s?.hasDeck ? `/lists/${eventId.value}/${opponentStanding}` : null
 }
 
 // ── Computed views ─────────────────────────────────────────────────────────────
@@ -147,7 +147,7 @@ const lcFormatKeys = new Set(LC_FORMATS.map(f => f.key))
 
 const sortOrder = ref('decklists')
 
-const deckCount = id => getStandings(id).filter(s => s.deckName).length
+const deckCount = id => getStandings(id).filter(s => s.hasDeck).length
 
 function sortEvents(evList, order = sortOrder.value) {
   return [...evList].sort((a, b) => {
@@ -279,7 +279,7 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
         </q-toolbar-title>
         <q-badge v-if="currentStanding?.overallRecord ?? currentStanding?.swissRecord" color="grey-6"
           :label="currentStanding.overallRecord ?? currentStanding.swissRecord" class="q-mr-sm" />
-        <template v-if="currentStanding?.deckName">
+        <template v-if="currentStanding?.hasDeck">
           <q-btn flat dense icon="style" size="sm" label="Build" class="q-ml-xs"
             :disable="playerDataLoading || !resolvedDeck.length"
             @click="buildThisDeck">
@@ -382,8 +382,8 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
             'row-top4':   s.standing > 1 && s.standing <= 4,
             'row-top8':   s.standing > 4 && s.standing <= 8,
           }"
-          :clickable="!!s.deckName"
-          :to="s.deckName ? `/lists/${eventId}/${s.standing}` : undefined">
+          :clickable="!!s.hasDeck"
+          :to="s.hasDeck ? `/lists/${eventId}/${s.standing}` : undefined">
           <q-item-section avatar style="min-width: 52px">
             <div style="position: relative; display: inline-block">
               <q-avatar v-if="findCard(s.characterName)" square size="40px" class="standing-avatar">
@@ -401,7 +401,7 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
             <q-item-label>{{ playerLabel(s.characterName, s.standing) }}</q-item-label>
             <q-item-label v-if="s.overallRecord ?? s.swissRecord" caption>{{ s.overallRecord ?? s.swissRecord }}</q-item-label>
           </q-item-section>
-          <q-item-section side v-if="s.deckName">
+          <q-item-section side v-if="s.hasDeck">
             <q-icon name="chevron_right" color="grey-5" />
           </q-item-section>
         </q-item>
