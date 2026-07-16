@@ -3,6 +3,7 @@ import { ref } from "vue";
 import { useQuasar } from "quasar";
 import PlayerHealth from "src/components/attack/PlayerHealth.vue";
 import CounterBox from "src/components/attack/CounterBox.vue";
+import GameSettings from "src/components/attack/GameSettings.vue";
 import { useGameStore } from "src/stores/game";
 
 const $q = useQuasar();
@@ -31,6 +32,7 @@ function goNextZone() {
 }
 
 const dialog = ref(false);
+const configDialog = ref(false);
 </script>
 
 <template>
@@ -67,30 +69,40 @@ const dialog = ref(false);
       <h3>{{ currentDamage }}</h3>
     </CounterBox>
 
-    <div class="options">
-      <q-btn
-        push
-        stretch
-        stack
-        size="m"
-        icon="restore_page"
+    <q-fab
+      class="fab"
+      icon="menu"
+      active-icon="close"
+      direction="up"
+      color="primary"
+      vertical-actions-align="right"
+      padding="md"
+    >
+      <q-fab-action
         color="positive"
+        icon="restore_page"
+        label="Reset attack"
         @click="resetAttack"
-        v-touch-hold.mouse="resetGame"
-        >Reset
-        <q-tooltip>Hold to reset game</q-tooltip>
-      </q-btn>
-      <q-btn
-        push
-        stretch
-        stack
-        size="m"
+      />
+      <q-fab-action
+        color="negative"
+        icon="replay"
+        label="Reset game"
+        @click="resetGame"
+      />
+      <q-fab-action
         color="black"
         icon="history"
+        label="History"
         @click="dialog = true"
-        >History</q-btn
-      >
-    </div>
+      />
+      <q-fab-action
+        color="secondary"
+        icon="settings"
+        label="Settings"
+        @click="configDialog = true"
+      />
+    </q-fab>
     <q-dialog v-model="dialog">
       <q-card>
         <q-card-section>
@@ -115,6 +127,16 @@ const dialog = ref(false);
         </q-card-section>
       </q-card>
     </q-dialog>
+    <q-dialog v-model="configDialog">
+      <q-card class="config-dialog">
+        <q-card-section>
+          <GameSettings />
+        </q-card-section>
+        <q-card-actions align="right">
+          <q-btn flat label="Close" color="primary" v-close-popup />
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
   </main>
 </template>
 
@@ -131,8 +153,7 @@ const dialog = ref(false);
 }
 .zone,
 .speed,
-.damage,
-.options {
+.damage {
   border: 0.5ch solid black;
   justify-content: center;
   align-items: center;
@@ -140,10 +161,22 @@ const dialog = ref(false);
   flex-direction: column;
   padding: 1ch;
 }
+.zone {
+  grid-column: span 2 / auto;
+}
+.fab {
+  position: fixed;
+  right: 2vw;
+  bottom: 2vh;
+  z-index: 10;
+}
+.config-dialog {
+  width: 700px;
+  max-width: 90vw;
+}
 .speed,
 .damage,
 .zone,
-.options,
 .high,
 .mid,
 .low {
