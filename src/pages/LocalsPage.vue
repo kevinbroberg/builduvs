@@ -188,6 +188,12 @@ const eventsByFormat = computed(() => ({
 
 const tab = ref(FORMATS[0]?.key ?? 'kaiju')
 
+// A regional tab's key is an event id (LC format tabs use a format key). Since a
+// regional is always a single event, page straight into its standings instead of
+// showing a one-row event list.
+const tabEvent     = computed(() => getEvent(tab.value))
+const tabStandings = computed(() => tabEvent.value ? getStandings(tab.value) : [])
+
 const currentEvent     = computed(() => eventId.value ? getEvent(eventId.value) : null)
 const currentStandings = computed(() => eventId.value ? getStandings(eventId.value) : [])
 const currentStanding  = computed(() =>
@@ -415,7 +421,9 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
           <q-tab v-for="f in FORMATS" :key="f.key" :name="f.key"
             :label="lcFormatKeys.has(f.key) ? `${f.label} · ${eventsByFormat[f.key].length} events` : f.label" />
         </q-tabs>
-        <q-btn-toggle v-model="sortOrder" dense unelevated no-caps
+        <q-badge v-if="tabEvent" color="grey-6" class="q-mr-sm"
+          :label="`${tabEvent.playerCount} players`" />
+        <q-btn-toggle v-else v-model="sortOrder" dense unelevated no-caps
           class="q-mr-sm"
           color="grey-3" text-color="grey-7" toggle-color="grey-7" toggle-text-color="white"
           :options="[
@@ -426,7 +434,41 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
         </q-btn-toggle>
       </div>
 
-      <q-list separator>
+      <!-- Regional tab: standings directly (always exactly one event) -->
+      <q-list v-if="tabEvent" separator>
+        <q-item v-for="s in tabStandings" :key="s.standing"
+          :class="{
+            'row-winner': s.standing === 1,
+            'row-top4':   s.standing > 1 && s.standing <= 4,
+            'row-top8':   s.standing > 4 && s.standing <= 8,
+          }"
+          :clickable="!!s.hasDeck"
+          :to="s.hasDeck ? `/lists/${tab}/${s.standing}` : undefined">
+          <q-item-section avatar style="min-width: 52px">
+            <div style="position: relative; display: inline-block">
+              <q-avatar v-if="findCard(s.characterName)" square size="40px" class="standing-avatar">
+                <img :src="getCardImage(findCard(s.characterName).asset)" class="card-thumb__img" />
+              </q-avatar>
+              <q-avatar v-else square size="40px" class="standing-avatar bg-grey-3" />
+              <ResourceSymbol
+                v-if="s.deckSymbol"
+                :element="s.deckSymbol"
+                class="standing-resource"
+              />
+            </div>
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>{{ playerLabel(s.characterName, s.standing) }}</q-item-label>
+            <q-item-label v-if="s.overallRecord ?? s.swissRecord" caption>{{ s.overallRecord ?? s.swissRecord }}</q-item-label>
+          </q-item-section>
+          <q-item-section side v-if="s.hasDeck">
+            <q-icon name="chevron_right" color="grey-5" />
+          </q-item-section>
+        </q-item>
+      </q-list>
+
+      <!-- LC format tab: list of events -->
+      <q-list v-else separator>
         <q-item v-for="ev in eventsByFormat[tab]" :key="ev.id"
           clickable v-ripple :to="`/lists/${ev.id}`">
           <q-item-section avatar style="min-width: 56px">
