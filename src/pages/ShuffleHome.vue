@@ -27,6 +27,11 @@ const shufflesNeeded = computed(() =>
   Math.ceil(Math.log(deckSize.value) / Math.log(numPiles.value))
 );
 const seats = computed(() => SEAT_COLORS.slice(0, numPiles.value));
+
+// The slider is a convenience control for the common 10–100 range, but the text
+// input accepts any positive number (e.g. a 700-card cube). Grow the slider's max
+// to match so a large typed value still shows a sensible thumb position.
+const sliderMax = computed(() => Math.max(100, Number(deckSize.value) || 0));
 const currentRoundData = computed(() => rounds.value[currentRound.value] || { handSize: 0, sequence: [] });
 
 // seatIdx → 1-based deal position for the current round (undefined if skipped)
@@ -70,6 +75,10 @@ function fisherYates(arr) {
 }
 
 function startShuffle() {
+  // The text input allows arbitrary entry, so normalize to a positive integer
+  // (empty field / decimals) before dealing.
+  deckSize.value = Math.max(1, Math.floor(Number(deckSize.value) || 0));
+
   const n = numPiles.value;
   const total = Math.ceil(deckSize.value / n);
   const q = Math.floor(deckSize.value / total);
@@ -140,7 +149,7 @@ function restart() {
               <q-slider
                 v-model="deckSize"
                 :min="10"
-                :max="100"
+                :max="sliderMax"
                 :step="1"
                 snap
                 label
@@ -152,9 +161,8 @@ function restart() {
                 type="number"
                 dense
                 outlined
-                :min="10"
-                :max="100"
-                style="width: 72px"
+                :min="1"
+                style="width: 84px"
               />
             </div>
           </div>
