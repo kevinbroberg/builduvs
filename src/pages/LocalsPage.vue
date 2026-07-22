@@ -60,13 +60,27 @@ const route  = useRoute()
 const router = useRouter()
 
 // ── Deck display view (tiles vs text list) ─────────────────────────────────────
+// A shared link may pin the initial view with ?view=tiles|list and ?cols=N (3–12),
+// e.g. /lists/<event>/<id>?view=tiles&cols=8. The query only seeds the opening
+// view — it never overwrites the visitor's own saved default in localStorage.
 
-const listsView = ref(localStorage.getItem('listsView') || 'list')
+const qView = route.query.view
+const qCols = Number(route.query.cols)
+
+const listsView = ref(
+  (qView === 'tiles' || qView === 'list')
+    ? qView
+    : (localStorage.getItem('listsView') || 'list')
+)
 function setListsView(v) {
   listsView.value = v
   localStorage.setItem('listsView', v)
 }
-const listsColumns = ref(Number(localStorage.getItem('listsColumns')) || 6)
+const listsColumns = ref(
+  (Number.isInteger(qCols) && qCols >= 3 && qCols <= 12)
+    ? qCols
+    : (Number(localStorage.getItem('listsColumns')) || 6)
+)
 function setListsColumns(n) {
   listsColumns.value = n
   localStorage.setItem('listsColumns', String(n))
