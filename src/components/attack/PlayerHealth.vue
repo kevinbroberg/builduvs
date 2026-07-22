@@ -57,7 +57,7 @@ function unblocked() {
 </script>
 
 <template>
-  <div id="playerhealth">
+  <div class="playerhealth">
     <CounterBox class="health" @up="increment" @down="decrement">
       <h2 class="text-center">{{ player.name }}<br />{{ player.health }}</h2>
     </CounterBox>
@@ -88,8 +88,8 @@ function unblocked() {
   </div>
 </template>
 
-<style>
-#playerhealth {
+<style scoped>
+.playerhealth {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 3fr 1fr;

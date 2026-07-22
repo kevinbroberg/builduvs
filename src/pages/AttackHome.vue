@@ -36,7 +36,7 @@ const configDialog = ref(false);
 </script>
 
 <template>
-  <main>
+  <main class="attack-board">
     <PlayerHealth
       class="player"
       player-key="player1"
@@ -217,7 +217,11 @@ const configDialog = ref(false);
 .low {
   background-image: url("assets/low attack.png");
 }
-main {
+/* Scoped to the attack board's root element. This block is intentionally
+   unscoped (GameSettings reuses .speed/.zone/.damage), so target a class
+   instead of the bare `main` tag — QPage also renders as <main> and the
+   grid was leaking onto every other page. */
+.attack-board {
   margin-top: 5vh;
   display: grid;
   grid-template-columns: repeat(6, 1fr);

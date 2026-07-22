@@ -1,7 +1,7 @@
 
 
 <template>
-  <div id="app">
+  <div class="card-home">
     <Filters />
     <InfiniteScrollCardDetailList />
   </div>
@@ -24,15 +24,14 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-  #app {
-    font-family: Montserrat, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-
-  }
+.card-home {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>

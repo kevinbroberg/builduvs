@@ -10,7 +10,7 @@ const emit = defineEmits(["up", "down"]);
   </div>
 </template>
 
-<style>
+<style scoped>
 .enclose {
   border: 0.5ch solid black;
   position: relative;
