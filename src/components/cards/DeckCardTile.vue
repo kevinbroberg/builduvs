@@ -1,11 +1,17 @@
 <script setup>
+import { computed } from 'vue'
 import { getCardImage } from 'src/js/image_helper'
 import { useDeckStore } from 'src/stores/deck'
 
 const props = defineProps({
   card: Object,
   main: { type: Boolean, default: true },
+  // editable = wired to the live deck store (add/remove/side, live quantity).
+  // Non-editable tiles are static displays (tournament lists) that show card.qty
+  // and emit `card-click` so the parent can focus the card.
+  editable: { type: Boolean, default: true },
 })
+const emit = defineEmits(['card-click'])
 
 const store = useDeckStore()
 
@@ -24,10 +30,12 @@ const sideActions = {
 
 const actions = props.main ? mainActions : sideActions
 const swapLabel = props.main ? 'Side' : 'Main'
+
+const qty = computed(() => (props.editable ? actions.quantity() : props.card.qty) || 0)
 </script>
 
 <template>
-  <div class="deck-tile">
+  <div class="deck-tile" :class="{ 'deck-tile--static': !editable }" @click="emit('card-click', card)">
     <q-img
       class="deck-tile__img"
       loading="lazy"
@@ -38,10 +46,10 @@ const swapLabel = props.main ? 'Side' : 'Main'
     />
 
     <!-- Bottom-middle quantity badge -->
-    <div class="deck-tile__qty">{{ actions.quantity() || 0 }}</div>
+    <div class="deck-tile__qty">{{ qty }}</div>
 
-    <!-- Hover controls -->
-    <div class="deck-tile__actions">
+    <!-- Hover controls (editable only) -->
+    <div v-if="editable" class="deck-tile__actions" @click.stop>
       <q-btn round dense size="sm" color="positive" icon="add" @click="actions.increment()">
         <q-tooltip>Add copy</q-tooltip>
       </q-btn>
@@ -65,6 +73,9 @@ const swapLabel = props.main ? 'Side' : 'Main'
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
   transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.deck-tile--static {
+  cursor: pointer;
 }
 .deck-tile:hover {
   transform: translateY(-3px);

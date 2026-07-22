@@ -1,8 +1,10 @@
 <script setup>
-import { ref, computed, watch } from 'vue'
+import { ref, computed, watch, watchEffect } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import { setPageTitle } from 'src/js/page_title'
 import indexData from 'src/assets/locals-index.json'
-import DeckCompareList from 'src/components/deck/DeckCompareList.vue'
+import DeckBody from 'src/components/deck/DeckBody.vue'
+import DeckStage from 'src/components/deck/DeckStage.vue'
 import { cards as allCards } from 'src/js/card_provider.js'
 import { getCardImage } from 'src/js/image_helper'
 import ResourceSymbol from 'src/components/cards/detail/ResourceSymbol.vue'
@@ -56,6 +58,19 @@ function findCard(name) {
 
 const route  = useRoute()
 const router = useRouter()
+
+// ── Deck display view (tiles vs text list) ─────────────────────────────────────
+
+const listsView = ref(localStorage.getItem('listsView') || 'list')
+function setListsView(v) {
+  listsView.value = v
+  localStorage.setItem('listsView', v)
+}
+const listsColumns = ref(Number(localStorage.getItem('listsColumns')) || 6)
+function setListsColumns(n) {
+  listsColumns.value = n
+  localStorage.setItem('listsColumns', String(n))
+}
 
 // ── Route params ──────────────────────────────────────────────────────────────
 
@@ -268,6 +283,18 @@ const resolvedFace = computed(() => {
 })
 const resolvedDeck = computed(() => (playerCards.value.main || []).map(resolveCard))
 const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(resolveCard))
+
+// Describe the current view in the browser tab / history entry.
+watchEffect(() => {
+  if (playerId.value && currentStanding.value) {
+    const label = playerLabel(currentStanding.value.characterName, playerId.value)
+    setPageTitle(currentEvent.value?.location ? `${label} · ${currentEvent.value.location}` : label)
+  } else if (eventId.value && currentEvent.value) {
+    setPageTitle(currentEvent.value.location)
+  } else {
+    setPageTitle('Decklists')
+  }
+})
 </script>
 
 <template>
@@ -285,6 +312,35 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
         </q-toolbar-title>
         <q-badge v-if="currentStanding?.overallRecord ?? currentStanding?.swissRecord" color="grey-6"
           :label="currentStanding.overallRecord ?? currentStanding.swissRecord" class="q-mr-sm" />
+        <template v-if="currentStanding?.hasDeck">
+          <q-btn-toggle
+            :model-value="listsView"
+            @update:model-value="setListsView"
+            flat
+            dense
+            no-caps
+            toggle-color="primary"
+            :options="[
+              { value: 'list', icon: 'view_list', slot: 'list' },
+              { value: 'tiles', icon: 'grid_view', slot: 'tiles' },
+            ]"
+          >
+            <template v-slot:list><q-tooltip>Text list</q-tooltip></template>
+            <template v-slot:tiles><q-tooltip>Card tiles</q-tooltip></template>
+          </q-btn-toggle>
+          <q-slider
+            v-if="listsView === 'tiles'"
+            :model-value="listsColumns"
+            @update:model-value="setListsColumns"
+            :min="3"
+            :max="12"
+            :step="1"
+            snap
+            style="width: 90px"
+            class="q-mx-sm gt-xs"
+            color="primary"
+          />
+        </template>
         <template v-if="currentStanding?.hasDeck">
           <q-btn flat dense icon="style" size="sm" label="Build" class="q-ml-xs"
             :disable="playerDataLoading || !resolvedDeck.length"
@@ -311,20 +367,21 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
       <div v-else-if="currentStanding" class="q-pa-md">
 
         <!-- Face card + decklist -->
-        <div class="row q-col-gutter-md q-mb-md">
-          <div v-if="focusedCard || resolvedFace" class="col-auto face-card-col">
-            <img :src="getCardImage((focusedCard || resolvedFace).asset)" class="face-card-full" />
-          </div>
-          <div class="col">
-            <DeckCompareList
-              v-if="resolvedDeck.length"
-              :face="null"
-              :deck-list="resolvedDeck"
-              :side-list="resolvedSide"
-              @card-click="focusedCard = $event"
-            />
-          </div>
-        </div>
+        <DeckStage
+          :face-asset="(focusedCard || resolvedFace)?.asset ?? null"
+          :face-name="(focusedCard || resolvedFace)?.name ?? ''"
+          :list-view="listsView === 'list'"
+        >
+          <DeckBody
+            v-if="resolvedDeck.length"
+            :deck-list="resolvedDeck"
+            :side-list="resolvedSide"
+            :view="listsView"
+            :columns="listsColumns"
+            :editable="false"
+            @card-click="focusedCard = $event"
+          />
+        </DeckStage>
 
         <!-- Match results -->
         <div v-if="playerMatches.swiss?.length || playerMatches.topcut?.length" class="q-mt-md">
@@ -539,18 +596,4 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
 
 .opp-link { color: var(--q-primary); text-decoration: none; }
 .opp-link:hover { text-decoration: underline; }
-
-.face-card-col {
-  position: sticky;
-  top: 50px;
-  align-self: flex-start;
-}
-
-.face-card-full {
-  display: block;
-  width: 50vw;
-  max-width: 360px;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
 </style>
