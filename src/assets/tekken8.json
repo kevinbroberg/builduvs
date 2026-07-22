@@ -1,0 +1,4782 @@
+[
+  {
+    "extension_short": "tk802",
+    "numero": 0,
+    "numero_image": 0,
+    "type": "token",
+    "name": "Heat",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [],
+    "text": "Unique\n\nAt the start of your End Phase, sacrifice this token.\n\nResponse: After your attack deals no damage, your rival loses 1 health. This effect cannot reduce your rival's health below 1.",
+    "asset": "tk802/000-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/000-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 1,
+    "numero_image": 1,
+    "type": "character",
+    "name": "Alisa Bosconovitch",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "water"
+    ],
+    "text": "Enhance Commit: If you have fewer cards in hand than your hand size, draw 1 card.\n\nResponse [Tenacious]: After you build 1 or more cards during the Combat Phase, ready this character.",
+    "hand_size": 6,
+    "vitality": 32,
+    "asset": "tk802/001-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/001-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 2,
+    "numero_image": 2,
+    "type": "character",
+    "name": "Asuka Kazama",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "fire",
+      "water"
+    ],
+    "text": "At the end of your rival's Combat Phase, add 1 Reversal counter to this card for each card in your card pool.\n\nAt the end of your turn, remove all Reversal counters from this card.\n\nEnhance: Your attack gets +1 speed and +1 damage for each Reversal counter on this card.",
+    "hand_size": 6,
+    "vitality": 30,
+    "asset": "tk802/002-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/002-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 3,
+    "numero_image": 3,
+    "type": "character",
+    "name": "Eddy Gordo",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "good",
+      "life",
+      "water"
+    ],
+    "text": "Enhance [Tenacious]: Your attack gets +1 damage for each attack in your card pool. If it's completely blocked, draw 1 card.\n\nForm Commit: Choose 1 card in your card pool. It does not count toward progressive difficulty this turn.",
+    "hand_size": 6,
+    "vitality": 30,
+    "asset": "tk802/003-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/003-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 4,
+    "numero_image": 4,
+    "type": "character",
+    "name": "Heihachi Mishima",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "evil"
+    ],
+    "text": "Your non-Throw attacks gain Powerful: 4.\n\nFirst Form: Add the top card of your deck to your momentum.\n\nResponse [Once per turn]: After an attack resolves, if its damage was 10 or greater, add the top card of your deck to your momentum.",
+    "hand_size": 5,
+    "vitality": 32,
+    "asset": "tk802/004-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/004-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 5,
+    "numero_image": 5,
+    "type": "character",
+    "name": "Hwoarang",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "life"
+    ],
+    "text": "Enhance Commit: Clear 1 Kick card from your card pool.\n\nEnhance [Tenacious] Mill 2: This attack gets +2 speed.\n\nEnhance [Once per turn, Tenacious]: Ready this card. Only playable if you have cycled this game.",
+    "hand_size": 7,
+    "vitality": 22,
+    "asset": "tk802/005-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/005-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 6,
+    "numero_image": 6,
+    "type": "character",
+    "name": "Jack-8",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "evil",
+      "order",
+      "void"
+    ],
+    "text": "When committing cards to pass a check, each of your face down foundations counts as 2 foundations.\n\nYour face down foundations cannot be frozen or destroyed by rival effects.\n\nResponse Commit: After an attack is played, each player flips 1 foundation.",
+    "hand_size": 5,
+    "vitality": 36,
+    "asset": "tk802/006-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/006-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 7,
+    "numero_image": 7,
+    "type": "character",
+    "name": "Kazuya Mishima",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "text": "Response [Once per turn, Tenacious]: After you remove 1 or more cards, if you have removed 4 or more cards this turn, add 1 Devil Gene counter to this card if it has none.\n\nForm Remove 1 Devil Gene counter from this card: Try to play 1 card from your removed pile.\n\nEnhance Remove 1 card from your stage: This attack gets +3 damage.",
+    "hand_size": 6,
+    "vitality": 31,
+    "asset": "tk802/007-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/007-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 8,
+    "numero_image": 8,
+    "type": "character",
+    "name": "King",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "life"
+    ],
+    "text": "Each Throw attack you try to play ignores progressive difficulty if the preceding card in your card pool is a Throw attack with a different name.\n\nResponse: After you play a Throw attack, gain 2 health. Then if you are at maximum health, that attack gets +2 speed.",
+    "hand_size": 5,
+    "vitality": 30,
+    "asset": "tk802/008-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/008-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 9,
+    "numero_image": 9,
+    "type": "character",
+    "name": "Lars Alexandersson",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "fire",
+      "good",
+      "order"
+    ],
+    "text": "Enhance: If your attack deals damage, build the next non-Unique foundation you play this turn.\n\nResponse: After you build 1 or more cards during the Combat Phase, your next attack gets +1 speed and +2 damage.",
+    "hand_size": 6,
+    "vitality": 32,
+    "asset": "tk802/009-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/009-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 10,
+    "numero_image": 10,
+    "type": "character",
+    "name": "Nina Williams",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "evil"
+    ],
+    "text": "Form [Once per turn]: Try to play 1 attack with printed damage 3 or less from your discard pile. When that card leaves your card pool, remove it.\n\nResponse: After your attack with printed damage 3 or less deals damage, clear it from your card pool.",
+    "hand_size": 6,
+    "vitality": 30,
+    "asset": "tk802/010-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/010-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 11,
+    "numero_image": 11,
+    "type": "character",
+    "name": "Reina",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "chaos",
+      "death"
+    ],
+    "text": "The first time you would lose the game due to your health being reduced below 1, instead your health becomes 5 and add 1 Devil Gene counter to this card.\n\nEnhance: This attack gets +3 or -3 speed. If there are no Devil Gene counters on this card, lose 2 health.\n\nResponse: After your attack deals damage, gain 2 health if there is a Devil Gene counter on this card.",
+    "hand_size": 7,
+    "vitality": 21,
+    "asset": "tk802/011-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/011-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 12,
+    "numero_image": 12,
+    "type": "character",
+    "name": "Sergei Dragunov",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "evil"
+    ],
+    "text": "Enhance: Your attack gets +2 damage. If it is not blocked, unflip 1 card in your stage that has not been unflipped this turn.\n\nResponse Commit: After you play a block, build the top card of your deck face down.",
+    "hand_size": 6,
+    "vitality": 32,
+    "asset": "tk802/012-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/012-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 13,
+    "numero_image": 13,
+    "type": "character",
+    "name": "Victor Chevalier",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "life",
+      "order"
+    ],
+    "text": "Your checks to play asset cards get +1.\n\nResponse [Twice per turn]: After you commit 1 or more Weapon assets, your rival commits 1 foundation.",
+    "hand_size": 6,
+    "vitality": 31,
+    "asset": "tk802/013-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/013-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 14,
+    "numero_image": 14,
+    "type": "character",
+    "name": "Yoshimitsu",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "void"
+    ],
+    "text": "First Form: Discard 1 card. Search your deck for 1 asset with difficulty equal to or less than the discarded card's difficulty, reveal it, and add it to your hand.\n\nResponse [Once per turn]: After you play an ability on an asset, this character gains that ability this turn.",
+    "hand_size": 6,
+    "vitality": 33,
+    "asset": "tk802/014-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/014-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 15,
+    "numero_image": 15,
+    "type": "action",
+    "name": "Phoenix Stance",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "Form: Clear 1 card from your card pool.\n\nResponse [Discard Pile] Remove: After you clear 1 or more cards from your card pool, add 1 of them to your momentum. Only playable if you have a Heat token in your stage.",
+    "difficulty": 2,
+    "control": 4,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "tk802/015-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/015-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 16,
+    "numero_image": 16,
+    "type": "attack",
+    "name": "Quick Hook",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "keywords": [
+      "Punch"
+    ],
+    "text": "Response [Card Pool]: After you play another Punch, clear this card from your card pool.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 3,
+    "asset": "tk802/016-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/016-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 17,
+    "numero_image": 17,
+    "type": "attack",
+    "name": "Sliding Firecracker",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Response: After this attack deals damage, each player adds 1 foundation from their stage to their hand.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 3,
+    "asset": "tk802/017-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/017-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 18,
+    "numero_image": 18,
+    "type": "foundation",
+    "name": "Best Served Cold",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "Response [Tenacious] Flip: After 1 or more of your foundations are commited due to a rival effect, add 1 of them to your hand.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/018-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/018-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 19,
+    "numero_image": 19,
+    "type": "action",
+    "name": "Seize Opportunity",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all"
+    ],
+    "text": "While you have a Heat token in your stage, this card gets -1 difficulty.\n\nEnhance Remove: Name a keyword. Draw 1 card for each card in your card pool with the named keyword.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "asset": "tk802/019-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/019-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 20,
+    "numero_image": 20,
+    "type": "arena",
+    "name": "Descent into Subconscious",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all"
+    ],
+    "text": "When you play or check this card, you may add it to the bottom of the arena deck.\n\nWhen a player's attack deals damage, if their attacks have dealt 8 or more damage this turn while this arena was active, add the bottom card of their deck to their hand and add this card to the bottom of the arena deck.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "tk802/020-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/020-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 21,
+    "numero_image": 21,
+    "type": "asset",
+    "name": "Violet Suit",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all"
+    ],
+    "keywords": [
+      "Armor",
+      "Weapon"
+    ],
+    "text": "When committing cards to pass a check to play an asset or Weapon card, you may commit this card as though it were a foundation.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "tk802/021-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/021-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 22,
+    "numero_image": 22,
+    "type": "attack",
+    "name": "Acid Rain Kick Combination",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all"
+    ],
+    "keywords": [
+      "Kick",
+      "Punch"
+    ],
+    "text": "Blitz: If you did not commit any foundations to play this card, this attack gets +1 speed and +2 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "tk802/022-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/022-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 23,
+    "numero_image": 23,
+    "type": "attack",
+    "name": "Burning Fist",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all"
+    ],
+    "keywords": [
+      "Charge",
+      "Punch"
+    ],
+    "text": "This attack cannot be blocked.\n\nThis attack's damage cannot be greater than its printed damage.\n\nWhen this card enters your discard pile from your card pool or momentum, remove it.",
+    "difficulty": 7,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 0,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "tk802/023-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/023-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 24,
+    "numero_image": 24,
+    "type": "foundation",
+    "name": "Chief Excellent Officer",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all"
+    ],
+    "text": "Enhance Commit: Increase the rating of the next keyword you play during this attack by 1.",
+    "difficulty": 3,
+    "control": 6,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "tk802/024-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/024-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 25,
+    "numero_image": 25,
+    "type": "action",
+    "name": "Channel Chaos",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos"
+    ],
+    "text": "Form: Add 1 card from the top of your deck to your momentum.\n\nForm [Card Pool]: Try to play 1 card from your momentum face up.",
+    "difficulty": 4,
+    "control": 4,
+    "block_modifier": 4,
+    "block_zone": "high",
+    "asset": "tk802/025-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/025-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 26,
+    "numero_image": 26,
+    "type": "attack",
+    "name": "Depraved Savagery",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos"
+    ],
+    "keywords": [
+      "Slam"
+    ],
+    "text": "Combo Blitz: Add the active arena to its owner's discard pile.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 3,
+    "asset": "tk802/026-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/026-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 27,
+    "numero_image": 27,
+    "type": "attack",
+    "name": "Electric Wind God Fist",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos"
+    ],
+    "keywords": [
+      "Punch"
+    ],
+    "text": "If this is the fourth copy or fewer of Electric Wind God Fist you have played this turn, it cannot be flipped.\n\nBlitz Check 5: This attack gains Echo. If you checked an attack this way, add it to your momentum. Your check to play this ability gets +1 if you have a Heat token in your stage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "tk802/027-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/027-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 28,
+    "numero_image": 28,
+    "type": "foundation",
+    "name": "Deal with the Devil",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos"
+    ],
+    "text": "Response [Tenacious] Sacrifice: After you check an attack card, that check gets +1.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/028-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/028-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 29,
+    "numero_image": 29,
+    "type": "action",
+    "name": "Violent Past",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "death"
+    ],
+    "text": "Enhance Remove: Build 2 cards from your discard pile face down. Sacrifice them at the end of this Combat Phase.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "tk802/029-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/029-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 30,
+    "numero_image": 30,
+    "type": "attack",
+    "name": "Gravity Blow",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "death"
+    ],
+    "keywords": [
+      "Slam"
+    ],
+    "text": "Response: After this attack is not blocked, destroy 1 rival foundation with difficulty 1 or less.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "low",
+    "damage": 6,
+    "asset": "tk802/030-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/030-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 31,
+    "numero_image": 31,
+    "type": "attack",
+    "name": "Wine Opener",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "death"
+    ],
+    "keywords": [
+      "Kick",
+      "Taunt"
+    ],
+    "text": "Blitz: If your rival has lost health this turn, your rival loses 2 health. This effect cannot reduce your rival's health below 1.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 3,
+    "asset": "tk802/031-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/031-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 32,
+    "numero_image": 32,
+    "type": "foundation",
+    "name": "Evolved Ninjutsu",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "death"
+    ],
+    "text": "Enhance Commit Sacrifice 1 foundation: This attack gets -3 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/032-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/032-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 33,
+    "numero_image": 33,
+    "type": "action",
+    "name": "Ursine Might",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "text": "Enhance: Flip 1 rival asset or foundation. This attack gets +X or -X damage. X equals the number of face down foundations in your rival's stage plus 1.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/033-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/033-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 34,
+    "numero_image": 34,
+    "type": "attack",
+    "name": "Kuma Musou",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "text": "Powerful: 3 - Punch\n\nResponse: After this attack is blocked, flip 1 rival foundation.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "tk802/034-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/034-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 35,
+    "numero_image": 35,
+    "type": "attack",
+    "name": "Sheng Pao",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Punch"
+    ],
+    "text": "Response: After this attack deals damage, your next attack gets +X damage. X equals the number of face down foundations in play (max. 4).",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "tk802/035-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/035-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 36,
+    "numero_image": 36,
+    "type": "foundation",
+    "name": "Determined Seeker",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "text": "Enhance Flip: This attack gets -2 damage. If it is a Throw, it gets -4 damage instead.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "tk802/036-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/036-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 37,
+    "numero_image": 37,
+    "type": "action",
+    "name": "Devastate",
+    "rarity": "secret rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "First Form Remove: Remove all face up foundations in play with difficulty 1 or less. Draw X cards. X equals the number of your foundations removed this way.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "tk802/037-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/037-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 38,
+    "numero_image": 38,
+    "type": "arena",
+    "name": "Into the Stratosphere",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "When you play or check this card, you may add it to the bottom of the arena deck.\n\nWhen a player's attack deals damage, if their attacks have dealt 7 or more damage this turn while this arena was active, each of their rivals loses 3 health. Add this card to its owner's discard pile.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/038-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/038-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 39,
+    "numero_image": 39,
+    "type": "attack",
+    "name": "Demon's Shaft",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "While this card is in your card pool, your rival's checks to play non-attack cards get -1.\n\nWhen this card enters your discard pile from your card pool, remove it.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "tk802/039-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/039-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 40,
+    "numero_image": 40,
+    "type": "attack",
+    "name": "Xuan Tui Strike",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Kick",
+      "Slam"
+    ],
+    "text": "Response: After this attack deals damage, your rival's next check gets -2.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 5,
+    "attack_zone": "low",
+    "damage": 3,
+    "asset": "tk802/040-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/040-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 41,
+    "numero_image": 41,
+    "type": "backup",
+    "name": "G Corp Soldier",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "At the start of your Combat Phase, this backup gains 1 stamina.\n\nIf you would lose health due to a rival effect, you may have this backup lose 1 stamina. If you do, you lose that much health minus 1.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/041-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/041-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 42,
+    "numero_image": 42,
+    "type": "foundation",
+    "name": "Sadistic Tormentor",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Enhance Commit: This attack gets -2 speed. If you have lost health this turn, it gets -3 speed instead.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "tk802/042-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/042-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 43,
+    "numero_image": 43,
+    "type": "action",
+    "name": "Hotheaded Opener",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "Enhance: Remove the top 3 cards of your deck. You may try to play those cards this turn. If you have a Heat token in your stage, remove this card.",
+    "difficulty": 4,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "tk802/043-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/043-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 44,
+    "numero_image": 44,
+    "type": "attack",
+    "name": "Dragon Raise",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Punch"
+    ],
+    "text": "Blitz Commit up to 2 foundations: This attack gets +2 speed for each foundation committed this way.\n\nResponse: After this attack deals damage, your next attack gets +2 speed.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "tk802/044-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/044-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 45,
+    "numero_image": 45,
+    "type": "attack",
+    "name": "Grande Combo",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Kick",
+      "Punch"
+    ],
+    "text": "Response: After this attack deals damage, add the top card of your deck to your momentum face up. Remove that card at the end of your Combat Phase.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 6,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "tk802/045-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/045-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 46,
+    "numero_image": 46,
+    "type": "foundation",
+    "name": "Espresso Shot",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "Enhance Sacrifice: This attack gets +3 damage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "tk802/046-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/046-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 47,
+    "numero_image": 47,
+    "type": "action",
+    "name": "Impenetrable Defense",
+    "rarity": "secret rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Response: After your rival plays an ability that commits, destroys, flips, removes, or seals a card in your stage, cancel it.\n\nResponse [Card Pool]: Before you take damage from an attack, reduce the damage you would take by 2. Remove this card when it leaves your card pool.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/047-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/047-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 48,
+    "numero_image": 48,
+    "type": "arena",
+    "name": "Ortiz Farm",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "When you play or check this card, you may add it to the bottom of the arena deck.\n\nWhen a player's attack deals damage, if their attacks have dealt 8 or more damage this turn while this arena was active, build the top card of their deck face down. Add this card to its owner's discard pile.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/048-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/048-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 49,
+    "numero_image": 49,
+    "type": "asset",
+    "name": "Jin's Glove",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Enhance Commit: Choose 1 card in your card pool. You may try to block this attack with it.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "tk802/049-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/049-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 50,
+    "numero_image": 50,
+    "type": "attack",
+    "name": "Double Lift Kicks",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "EX: 2 - Kick\n\nBlitz: Your checks to play  attacks cannot be modified by rival effects this turn.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 6,
+    "asset": "tk802/050-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/050-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 51,
+    "numero_image": 51,
+    "type": "attack",
+    "name": "Sand Storm",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Blitz: If you have more foundations than your rival, draw 1 card.\n\nBlitz: Your next  attack gets +3 speed.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "tk802/051-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/051-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 52,
+    "numero_image": 52,
+    "type": "foundation",
+    "name": "Steadfast Bodyguard",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "This card ignores progressive difficulty.",
+    "difficulty": 5,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/052-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/052-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 53,
+    "numero_image": 53,
+    "type": "action",
+    "name": "Restore Ally",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "life"
+    ],
+    "text": "Form: Build 1 backup from your discard pile. Gain X health. X equals the number of backups in your stage.",
+    "difficulty": 5,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "tk802/053-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/053-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 54,
+    "numero_image": 54,
+    "type": "arena",
+    "name": "Yakushima",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "life"
+    ],
+    "text": "When you play or check this card, you may add it to the bottom of the arena deck.\n\nWhen a player's attack deals damage, if their attacks have dealt 6 or more damage this turn while this arena was active, add 1 backup from your discard pile to your hand. Add this card to its owner's discard pile.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/054-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/054-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 55,
+    "numero_image": 55,
+    "type": "attack",
+    "name": "Rock'n Roll Circus",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "life"
+    ],
+    "text": "Throw\n\nBlitz: You may change this card's block zone. This attack gets +1 damage for each different block zone on cards in your card pool.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "tk802/055-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/055-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 56,
+    "numero_image": 56,
+    "type": "foundation",
+    "name": "Bamboo Connoisseur",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "life"
+    ],
+    "text": "Enhance Sacrifice: Each player gains 3 health.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/056-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/056-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 57,
+    "numero_image": 57,
+    "type": "action",
+    "name": "Mandate Order",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "order"
+    ],
+    "text": "Enhance Remove: Return this attack to its printed zone, speed, and damage.",
+    "difficulty": 2,
+    "control": 6,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/057-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/057-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 58,
+    "numero_image": 58,
+    "type": "arena",
+    "name": "Secluded Training Ground",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "order"
+    ],
+    "text": "When you play or check this card, you may add it to the bottom of the arena deck.\n\nWhen a player's attack deals damage, if their attacks have dealt 6 or more damage this turn while this arena was active, add 1 asset from your discard pile to your hand. Add this card to its owner's discard pile.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/058-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/058-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 59,
+    "numero_image": 59,
+    "type": "attack",
+    "name": "Adjourning Sweep",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "order"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Response: After this attack deals damage, rival foundations cannot be readied during this Combat Phase.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "tk802/059-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/059-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 60,
+    "numero_image": 60,
+    "type": "attack",
+    "name": "Assassin's Sting",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "order"
+    ],
+    "text": "Powerful: 2 - Punch\n\nResponse: After your rival blocks this attack, freeze 1 rival foundation committed during this attack.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "tk802/060-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/060-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 61,
+    "numero_image": 61,
+    "type": "foundation",
+    "name": "Seasoned in Hardship",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "order"
+    ],
+    "text": "Response [Tenacious] Flip: After this card is committed due to a rival effect, your rival commits 1 foundation.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/061-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/061-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 62,
+    "numero_image": 62,
+    "type": "action",
+    "name": "Twist Reality",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Enhance [Hand] Discard: Seal 1 foundation in your rival's stage.\n\nResponse [Discard Pile] Remove: After your rival plays an ability that adds 1 or more tokens to their momentum or stage, cancel that ability.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/062-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/062-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 63,
+    "numero_image": 63,
+    "type": "arena",
+    "name": "Sanctum",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "When you play or check this card, you may add it to the bottom of the arena deck.\n\nWhen a player's attack deals damage, if their attacks have dealt 5 or more damage this turn while this arena was active, seal 1 non-character card in their rival's stage. Add this card to its owner's discard pile.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/063-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/063-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 64,
+    "numero_image": 64,
+    "type": "attack",
+    "name": "Earwig Pincer",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Response: After this attack deals damage, remove the top card of your rival's deck.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 3,
+    "asset": "tk802/064-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/064-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 65,
+    "numero_image": 65,
+    "type": "attack",
+    "name": "Vanishing Storm",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Response Spend 1 momentum: After you play this card, remove 1 card from your rival's discard pile.\n\nBlitz: If there are 3 or more cards in your rival's removed pile, this attack gets +1 speed and +2 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "tk802/065-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/065-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 66,
+    "numero_image": 66,
+    "type": "foundation",
+    "name": "Forbidden Exorcism",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Response: After this card is removed, you may try to play it as a form from your removed pile this turn.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "tk802/066-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/066-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 67,
+    "numero_image": 67,
+    "type": "action",
+    "name": "Master's Touch",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "Enhance Remove: Freeze and ready up to 2 foundations in play. If you have a Heat token in your stage, freeze and ready up to 3 foundations instead.",
+    "difficulty": 0,
+    "control": 4,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "tk802/067-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/067-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 68,
+    "numero_image": 68,
+    "type": "attack",
+    "name": "Chain Punch: Sheath",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "EX: 2 - Punch\n\n[Card Pool] Your Punch attacks get +1 speed.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "tk802/068-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/068-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 69,
+    "numero_image": 69,
+    "type": "attack",
+    "name": "Cloisonne",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Blitz: Ready 1 foundation that hasn't been readied this Combat Phase.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 7,
+    "asset": "tk802/069-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/069-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 70,
+    "numero_image": 70,
+    "type": "foundation",
+    "name": "Privileged Upbringing",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "Enhance Commit: This attack gets +1 speed and +1 damage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "tk802/070-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/070-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 71,
+    "numero_image": 71,
+    "type": "action",
+    "name": "Heat Dash",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "text": "Enhance Sacrifice 1 Heat token: Your attack gets +6 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "tk802/071-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/071-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 72,
+    "numero_image": 72,
+    "type": "arena",
+    "name": "Elegant Palace",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "text": "When you play or check this card, you may add it to the bottom of the arena deck.\n\nWhen a player's attack deals damage, if their attacks have dealt 6 or more damage this turn while this arena was active, their next attack gets +1 speed and +1 damage. Add this card to its owner's discard pile.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/072-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/072-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 73,
+    "numero_image": 73,
+    "type": "asset",
+    "name": "Tekken Ball",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "Enhance Remove: Starting with your rival, each player in turn order makes a check against a 4. The first player to fail that check loses 3 health and this effect ends. If all players pass, increase the difficulty by 1 and repeat this process. This effect cannot reduce a player's health below 1.",
+    "difficulty": 0,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/073-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/073-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 74,
+    "numero_image": 74,
+    "type": "action",
+    "name": "Hand of Ambition",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "chaos",
+      "death"
+    ],
+    "text": "Form Remove: Add 1 Heat token to your stage. Lose 3 health unless there is a Devil Gene counter on your character.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/074-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/074-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 75,
+    "numero_image": 75,
+    "type": "action",
+    "name": "Keep Them on Their Toes",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "life"
+    ],
+    "text": "If this card entered your discard pile during your Combat Phase this turn, you may try to play it.\n\nEnhance Remove: Change the zone of this attack.",
+    "difficulty": 1,
+    "control": 6,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/075-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/075-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 76,
+    "numero_image": 76,
+    "type": "asset",
+    "name": "Ancestral Curse",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "void"
+    ],
+    "text": "Form Remove: If there is a non-character card in your stage with printed difficulty 4 or greater, add 1 Heat token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/076-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/076-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 77,
+    "numero_image": 77,
+    "type": "asset",
+    "name": "Detachable Head",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "water"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "When you play this card, build it committed.\n\nForm Commit: Add 1 Heat token to your stage. Add this card to your hand.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 4,
+    "block_zone": "low",
+    "asset": "tk802/077-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/077-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 78,
+    "numero_image": 78,
+    "type": "asset",
+    "name": "Dual Handguns",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "evil"
+    ],
+    "text": "Breaker: 1 - Unique - Weapon\n\nResponse: After you play an attack with printed damage 3 or less, that attack gets +1 damage. If you have a Heat token in your stage, that attack gets +2 damage instead.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/078-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/078-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 79,
+    "numero_image": 79,
+    "type": "asset",
+    "name": "Karambit",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "life",
+      "order"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "Enhance Commit: This attack gets +2 or -2 damage.\n\nAt the start of your End Phase, if you have a Heat token in your stage, ready this card.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/079-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/079-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 80,
+    "numero_image": 80,
+    "type": "asset",
+    "name": "Standard-Issue Sidearm",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "all",
+      "life",
+      "order"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "Response: After you play this card, build it if you have a Heat token in your stage.\n\nEnhance Commit: This attack gets +2 speed and gains Ranged.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/080-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/080-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 81,
+    "numero_image": 81,
+    "type": "asset",
+    "name": "Takemikazuchi",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "life",
+      "order"
+    ],
+    "text": "Unique - Weapon\n\nEnhance Commit: Your attack gets +2 speed or +2 damage.\n\nResponse [Tenacious]: After this card is committed, ready another asset in your stage that hasn't been readied this turn.",
+    "difficulty": 4,
+    "control": 4,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/081-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/081-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 82,
+    "numero_image": 82,
+    "type": "asset",
+    "name": "The Cursed Blade Yoshimitsu",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "void"
+    ],
+    "text": "Unique - Weapon\n\nEnhance Commit: This attack gets +3 speed and +3 damage. If it deals damage, gain 2 health. Your rival may remove 1 card from their hand to cancel this ability.",
+    "difficulty": 5,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "tk802/082-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/082-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 83,
+    "numero_image": 83,
+    "type": "attack",
+    "name": "Abyss Damnation",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "keywords": [
+      "Kick",
+      "Punch"
+    ],
+    "text": "Blitz: Seal 1 rival foundation. Unseal it when this attack resolves unless you have a Heat token in your stage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "speed": 2,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "tk802/083-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/083-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 84,
+    "numero_image": 84,
+    "type": "attack",
+    "name": "Aizen Festival Swing",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "fire",
+      "water"
+    ],
+    "keywords": [
+      "Charge",
+      "Punch"
+    ],
+    "text": "Blitz: Draw 1 card. Discard 1 card unless you have a Heat token in your stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "tk802/084-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/084-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 85,
+    "numero_image": 85,
+    "type": "attack",
+    "name": "Anger of the Beast",
+    "rarity": "secret rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "life"
+    ],
+    "keywords": [
+      "Taunt"
+    ],
+    "text": "If you have 5 or less health, this attack gets -1 difficulty.\n\nBlitz: This attack gets +1 damage for each Throw in your card pool.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 7,
+    "asset": "tk802/085-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/085-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 86,
+    "numero_image": 86,
+    "type": "attack",
+    "name": "Backhand Combo",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "evil"
+    ],
+    "keywords": [
+      "Punch"
+    ],
+    "text": "Blitz Sacrifice 1 asset or foundation: This attack gets +3 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 3,
+    "asset": "tk802/086-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/086-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 87,
+    "numero_image": 87,
+    "type": "attack",
+    "name": "Black Nite",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "life"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "tk802/087-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/087-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 88,
+    "numero_image": 88,
+    "type": "attack",
+    "name": "Blizzard Rush",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "evil"
+    ],
+    "text": "Throw\n\nBlitz: If you have a Heat token in your stage, this attack gains Powerful: 2.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 2,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "tk802/088-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/088-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 89,
+    "numero_image": 89,
+    "type": "attack",
+    "name": "Blonde Bomb",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "evil"
+    ],
+    "text": "Powerful: 2 - Slam\n\nBlitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 2,
+    "asset": "tk802/089-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/089-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 90,
+    "numero_image": 90,
+    "type": "attack",
+    "name": "Carving Cameo",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "life",
+      "order"
+    ],
+    "keywords": [
+      "Kick",
+      "Punch"
+    ],
+    "text": "Blitz: If you have an asset in your stage, add 1 Heat token to your stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "tk802/090-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/090-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 91,
+    "numero_image": 91,
+    "type": "attack",
+    "name": "Cold Fate",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "evil"
+    ],
+    "text": "Throw\n\nBlitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 2,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "tk802/091-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/091-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 92,
+    "numero_image": 92,
+    "type": "attack",
+    "name": "Cossack Kicks",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "evil",
+      "order",
+      "void"
+    ],
+    "keywords": [
+      "Echo",
+      "Kick"
+    ],
+    "text": "Response: After you flip 1 or more foundations, this attack gets +1 speed.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "tk802/092-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/092-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 93,
+    "numero_image": 93,
+    "type": "attack",
+    "name": "Coup de Chevalier",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "life",
+      "order"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "If you have 5 or less health, this attack gets -1 difficulty.\n\nResponse: After you commit 1 or more assets, choose 1 that hasn't been chosen during this attack -\n\n- This card doesn't count toward progressive difficulty.\n\n- Draw 2 cards. Discard 1 card.\n\n- Freeze 1 rival foundation.",
+    "difficulty": 5,
+    "control": 2,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "tk802/093-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/093-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 94,
+    "numero_image": 94,
+    "type": "attack",
+    "name": "Death by Degrees",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "evil"
+    ],
+    "keywords": [
+      "Ranged",
+      "Slam"
+    ],
+    "text": "If you have 5 or less health, this attack gets -1 difficulty.\n\nResponse: After this attack deals damage, you may sacrifice 1 foundation or asset. If you do, destroy 1 card in your rival's stage. Otherwise, your rival sacrifices 1 foundation.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "tk802/094-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/094-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 95,
+    "numero_image": 95,
+    "type": "attack",
+    "name": "Delta Slicer",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "fire",
+      "good",
+      "order"
+    ],
+    "keywords": [
+      "Punch"
+    ],
+    "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "tk802/095-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/095-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 96,
+    "numero_image": 96,
+    "type": "attack",
+    "name": "Demonic Catastrophe",
+    "rarity": "secret rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "text": "Breaker: 2 - Charge - Punch - Slam\n\nIf you have 5 or less health, this attack gets -1 difficulty.\n\nIf this attack was played from anywhere other than your hand, it gets +2 speed and +2 damage.\n\nForm [Discard Pile] Remove 1 other copy of Demonic Catastrophe from your discard pile: Play this card (no check necessary).",
+    "difficulty": 4,
+    "control": 2,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "tk802/096-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/096-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 97,
+    "numero_image": 97,
+    "type": "attack",
+    "name": "Devil Fist",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "keywords": [
+      "Punch"
+    ],
+    "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "tk802/097-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/097-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 98,
+    "numero_image": 98,
+    "type": "attack",
+    "name": "Divine Dominance of Annihilation",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "chaos",
+      "death"
+    ],
+    "text": "Powerful: 2 - Punch\n\nAs an additional cost to play this attack, sacrifice 1 Heat token.\n\nBlitz: Add 1 non-character card from your rival's stage to their hand. Your rival cannot play copies of that card this turn.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "tk802/098-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/098-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 99,
+    "numero_image": 99,
+    "type": "attack",
+    "name": "Dragonfly Blade",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "void"
+    ],
+    "text": "EX: 2 - Weapon\n\nResponse: After you play this card, look at the top 2 cards of your deck. If you have a Heat token in your stage, look at the top 4 cards of your deck instead. Put them back in any order.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "tk802/099-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/099-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 100,
+    "numero_image": 100,
+    "type": "attack",
+    "name": "Dragonfly Slash",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "void"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "Blitz: If you have a Heat token in your stage, build 1 asset from your card pool.\n\nResponse: After you play an enhance ability on an asset, this attack gets +1 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 3,
+    "asset": "tk802/100-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/100-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 101,
+    "numero_image": 101,
+    "type": "attack",
+    "name": "Durandal",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "life",
+      "order"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "tk802/101-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/101-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 102,
+    "numero_image": 102,
+    "type": "attack",
+    "name": "Enchente de Axé",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "good",
+      "life",
+      "water"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "If you have 5 or less health, this attack gets -1 difficulty.\n\nBlitz: If you have a Heat token in your stage, this attack gets +1 speed for each attack in your card pool.\n\nResponse: After this attack deals damage, ready 1 foundation.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 6,
+    "asset": "tk802/102-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/102-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 103,
+    "numero_image": 103,
+    "type": "attack",
+    "name": "Enraged Tettsui Otoshi",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "evil"
+    ],
+    "keywords": [
+      "Slam"
+    ],
+    "text": "As an additional cost to play this attack, sacrifice 1 Heat token.\n\nBlitz: This attack gains Throw.",
+    "difficulty": 7,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 10,
+    "asset": "tk802/103-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/103-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 104,
+    "numero_image": 104,
+    "type": "attack",
+    "name": "Excalibur",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "life",
+      "order"
+    ],
+    "text": "Stun: 1 - Weapon\n\nBlitz: If you have a Heat token in your stage, this attack gets +1 speed and +3 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "tk802/104-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/104-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 105,
+    "numero_image": 105,
+    "type": "attack",
+    "name": "Freedom Face Buster",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "life"
+    ],
+    "text": "Throw\n\nBlitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "tk802/105-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/105-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 106,
+    "numero_image": 106,
+    "type": "attack",
+    "name": "Giant Swing",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "life"
+    ],
+    "text": "Throw\n\nBlitz: If you have more health than your rival, this attack gets +2 damage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "tk802/106-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/106-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 107,
+    "numero_image": 107,
+    "type": "attack",
+    "name": "Guerreiro Explosivo",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "good",
+      "life",
+      "water"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Blitz: If you have 3 or more attacks in your card pool, choose 1 --\n\n- Freeze 1 rival foundation.\n\n- If you have a Heat token in your stage, freeze and commit 1 rival foundation.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "tk802/107-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/107-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 108,
+    "numero_image": 108,
+    "type": "attack",
+    "name": "Heaven's Hammer",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "fire",
+      "water"
+    ],
+    "text": "Deflect: 2 - Slam\n\nBlitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 3,
+    "asset": "tk802/108-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/108-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 109,
+    "numero_image": 109,
+    "type": "attack",
+    "name": "Heaven's Merciless Wrath",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "evil"
+    ],
+    "text": "EX: 2 - Slam\n\nBlitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "tk802/109-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/109-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 110,
+    "numero_image": 110,
+    "type": "attack",
+    "name": "Hertz Blade - Diablo",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "water"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "Blitz: If you have a Heat token in your stage, this attack gets +1 damage for each card you have built this turn.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "tk802/110-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/110-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 111,
+    "numero_image": 111,
+    "type": "attack",
+    "name": "Ignition Barrage",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "life"
+    ],
+    "text": "Deflect: 2 - Kick\n\nResponse: After you play this card, mill 4.\n\nBlitz: If you have cycled this game, add 1 Heat token to your stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "tk802/111-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/111-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 112,
+    "numero_image": 112,
+    "type": "attack",
+    "name": "Image Cutter",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "water"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 2,
+    "attack_zone": "high",
+    "damage": 6,
+    "asset": "tk802/112-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/112-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 113,
+    "numero_image": 113,
+    "type": "attack",
+    "name": "Inferno",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "Response: After this attack deals damage, remove it from your card pool. Only playable if you have a Heat token in your stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 6,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "tk802/113-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/113-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 114,
+    "numero_image": 114,
+    "type": "attack",
+    "name": "Iron Gunman",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "evil",
+      "order",
+      "void"
+    ],
+    "keywords": [
+      "Tech"
+    ],
+    "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 2,
+    "attack_zone": "high",
+    "damage": 6,
+    "asset": "tk802/114-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/114-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 115,
+    "numero_image": 115,
+    "type": "attack",
+    "name": "Kiss Shot Penetrator",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "evil"
+    ],
+    "text": "Flash - Ranged\n\nIf you have a Heat token in your stage, this attack cannot be blocked by foundations.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "tk802/115-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/115-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 116,
+    "numero_image": 116,
+    "type": "attack",
+    "name": "Kuzuryu",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "void"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "tk802/116-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/116-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 117,
+    "numero_image": 117,
+    "type": "attack",
+    "name": "Lunging Brush Fire",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "good",
+      "life",
+      "water"
+    ],
+    "text": "Breaker: 1 - Kick\n\nBlitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "tk802/117-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/117-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 118,
+    "numero_image": 118,
+    "type": "attack",
+    "name": "Meteor Raid",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "evil",
+      "order",
+      "void"
+    ],
+    "keywords": [
+      "Charge",
+      "Punch"
+    ],
+    "text": "As an additional cost to play this attack, sacrifice 1 Heat token.\n\nBlitz: Your rival reveals their hand. You may choose 1 card revealed this way and discard it. If you don't, this attack gets +5 damage.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 7,
+    "asset": "tk802/118-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/118-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 119,
+    "numero_image": 119,
+    "type": "attack",
+    "name": "Muso Basara",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "chaos",
+      "death"
+    ],
+    "keywords": [
+      "Kick",
+      "Punch"
+    ],
+    "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 7,
+    "asset": "tk802/119-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/119-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 120,
+    "numero_image": 120,
+    "type": "attack",
+    "name": "Naniwa Peacemaker Knuckle",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "fire",
+      "water"
+    ],
+    "keywords": [
+      "Charge",
+      "Echo",
+      "Punch"
+    ],
+    "text": "If you have 5 or less health, this attack gets -1 difficulty.\n\nBlitz: If there are 1 or more counters on your character, add the top card of your deck to your momentum.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "tk802/120-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/120-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 121,
+    "numero_image": 121,
+    "type": "attack",
+    "name": "Predator Bardiche",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "life"
+    ],
+    "text": "Breaker: 1 - Kick\n\nIf you have cycled this game, this attack gets +3 damage.\n\nForm [Discard Pile]: Add this card to your hand. Mill 1. Only playable if you have exactly 1 card in your deck.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 3,
+    "asset": "tk802/121-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/121-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 122,
+    "numero_image": 122,
+    "type": "attack",
+    "name": "Radiant Pegasus Bomb",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "water"
+    ],
+    "keywords": [
+      "Ranged",
+      "Weapon"
+    ],
+    "text": "If you have 5 or less health, this attack gets -1 difficulty.\n\nResponse [Card Pool] Discard 1 card: After your attack is not completely blocked, build it face down committed after it resolves.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "tk802/122-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/122-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 123,
+    "numero_image": 123,
+    "type": "attack",
+    "name": "Rebellion",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "fire",
+      "good",
+      "order"
+    ],
+    "keywords": [
+      "Charge",
+      "Slam"
+    ],
+    "text": "Response [Card Pool]: After you build 1 or more cards during the Combat Phase, change the zone of the next attack you play this turn.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "tk802/123-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/123-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 124,
+    "numero_image": 124,
+    "type": "attack",
+    "name": "Reverse Narcissus",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "fire",
+      "water"
+    ],
+    "keywords": [
+      "Kick",
+      "Punch"
+    ],
+    "text": "[Card Pool] Your rival's attacks get -2 speed.\n\nBlitz: This attack does not clear from your card pool during the End Phase.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 3,
+    "asset": "tk802/124-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/124-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 125,
+    "numero_image": 125,
+    "type": "attack",
+    "name": "Russian Sickle",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "evil"
+    ],
+    "keywords": [
+      "Slam"
+    ],
+    "text": "Blitz: Your rival's check to block this attack gets -1. If you have a Heat token in your stage, that check gets -3 instead.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "tk802/125-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/125-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 126,
+    "numero_image": 126,
+    "type": "attack",
+    "name": "Sacred Dismantle Spark",
+    "rarity": "secret rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "chaos",
+      "death"
+    ],
+    "keywords": [
+      "Fury",
+      "Punch",
+      "Slam"
+    ],
+    "text": "If you have 5 or less health, this attack gets -1 difficulty.\n\nBlitz: Your next check gets +1 and your rival spends 1 momentum. If you have less health than your rival, play this ability a second time.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 7,
+    "asset": "tk802/126-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/126-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 127,
+    "numero_image": 127,
+    "type": "attack",
+    "name": "Senjomanji Lethal Fury",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "chaos",
+      "death"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Blitz: If you have a Heat token in your stage, this attack gets +2 damage.\n\nResponse: After this attack is completely blocked, clear it from your card pool.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 3,
+    "asset": "tk802/127-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/127-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 128,
+    "numero_image": 128,
+    "type": "attack",
+    "name": "Shadow Cutter",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "fire",
+      "good",
+      "order"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Blitz: Your rival reveals 1 card from their hand.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "tk802/128-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/128-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 129,
+    "numero_image": 129,
+    "type": "attack",
+    "name": "Sky Burial",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "life"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "If you have 5 or less health, this attack gets -1 difficulty.\n\nBlitz: Discard 1 card and draw 1 card. If you have a Heat token in your stage, this card does not count toward progressive difficulty this turn.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "tk802/129-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/129-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 130,
+    "numero_image": 130,
+    "type": "attack",
+    "name": "Soaring Anvil Smasher",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "evil"
+    ],
+    "keywords": [
+      "Kick",
+      "Slam"
+    ],
+    "text": "Blitz: If you have a Heat token in your stage, this attack's damage cannot be reduced by rival effects.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 6,
+    "asset": "tk802/130-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/130-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 131,
+    "numero_image": 131,
+    "type": "attack",
+    "name": "Spam Bomb",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "water"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "Response: After this attack resolves, if you have a Heat token in your stage, build the top card of your deck face down committed.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "tk802/131-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/131-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 132,
+    "numero_image": 132,
+    "type": "attack",
+    "name": "Tempest Demon God Fist",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "evil"
+    ],
+    "keywords": [
+      "Charge",
+      "Punch"
+    ],
+    "text": "If you have 5 or less health, this attack gets -1 difficulty.\n\nResponse: After this attack resolves, build it face down if you have spent 2 or more momentum this Combat Phase.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 6,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "tk802/132-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/132-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 133,
+    "numero_image": 133,
+    "type": "attack",
+    "name": "Terraforming Cannon",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "evil",
+      "order",
+      "void"
+    ],
+    "keywords": [
+      "Charge",
+      "Slam",
+      "Tech"
+    ],
+    "text": "If you have 5 or less health, this attack gets -1 difficulty.\n\nBlitz: If there are 5 or more face down cards in play, this attack gets +2 speed and +2 damage. If there are 10 or more face down cards in play, it gets +5 speed and +5 damage instead.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 6,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "tk802/133-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/133-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 134,
+    "numero_image": 134,
+    "type": "attack",
+    "name": "Trailokya Pilgrimage",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "void"
+    ],
+    "text": "Breaker: 2 - Charge - Weapon\n\nIf you have 5 or less health, this attack gets -1 difficulty.\n\nBlitz: This attack gets +X speed or +X damage. X equals the highest difficulty among assets in your stage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "tk802/134-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/134-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 135,
+    "numero_image": 135,
+    "type": "attack",
+    "name": "Ultimo Jaguar",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "life"
+    ],
+    "keywords": [
+      "Echo"
+    ],
+    "text": "As an additional cost to play this attack from your hand, sacrifice 1 Heat token.\n\nBlitz: Draw 1 card.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 2,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "tk802/135-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/135-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 136,
+    "numero_image": 136,
+    "type": "attack",
+    "name": "White Angel of Death",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "evil"
+    ],
+    "keywords": [
+      "Punch"
+    ],
+    "text": "If you have 5 or less health, this attack gets -1 difficulty.\n\nResponse [Card Pool]: After your attack is blocked, flip 1 rival foundation. Seal this card.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "tk802/136-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/136-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 137,
+    "numero_image": 137,
+    "type": "attack",
+    "name": "Xangô",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "good",
+      "life",
+      "water"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Blitz: Each player adds 1 card from their discard pile to their card pool and seals it. Add 1 Heat token to your stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "tk802/137-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/137-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 138,
+    "numero_image": 138,
+    "type": "attack",
+    "name": "Zeus Unlimited",
+    "rarity": "secret rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "fire",
+      "good",
+      "order"
+    ],
+    "keywords": [
+      "Punch"
+    ],
+    "text": "If you have 5 or less health, this attack gets -1 difficulty.\n\nBlitz: Look at the top 2 cards of your deck. Build 1 of them face down and return the other to the top of your deck.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "tk802/138-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/138-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 139,
+    "numero_image": 139,
+    "type": "foundation",
+    "name": "Ambush Tackle",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "evil"
+    ],
+    "text": "Unique\n\nResponse [Tenacious] Sacrifice: After an attack is not blocked, your rival's next check gets -1. If you have a Heat token in your stage, it gets -2 to its check instead.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/139-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/139-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 140,
+    "numero_image": 140,
+    "type": "foundation",
+    "name": "Blood Talon",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "life"
+    ],
+    "text": "Enhance Commit: This attack gets -2 damage.\n\nResponse [Tenacious] Flip: After you clear 1 or more cards from your card pool, ready this card.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "tk802/140-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/140-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 141,
+    "numero_image": 141,
+    "type": "foundation",
+    "name": "Brash Challenger",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "life"
+    ],
+    "text": "Form Flip, remove 10 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/141-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/141-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 142,
+    "numero_image": 142,
+    "type": "foundation",
+    "name": "Capoeira Master",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "good",
+      "life",
+      "water"
+    ],
+    "text": "Form Flip, remove 10 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/142-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/142-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 143,
+    "numero_image": 143,
+    "type": "foundation",
+    "name": "Catching a Meteor",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "evil"
+    ],
+    "text": "Response [Tenacious]: After you spend momentum, add that many Meteor counters to this card.\n\nForm Sacrifice: Mill cards from your deck until you mill an attack. Play that attack (no check necessary). Only playable if there are 7 or more Meteor counters on this card.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/143-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/143-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 144,
+    "numero_image": 144,
+    "type": "foundation",
+    "name": "Champion of the Children",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "life"
+    ],
+    "text": "Form Flip, remove 10 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/144-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/144-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 145,
+    "numero_image": 145,
+    "type": "foundation",
+    "name": "Cold-Blooded Oppressor",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "text": "Form Flip, remove 10 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/145-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/145-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 146,
+    "numero_image": 146,
+    "type": "foundation",
+    "name": "Destroying Automaton",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "water"
+    ],
+    "text": "Form Flip, remove 10 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/146-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/146-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 147,
+    "numero_image": 147,
+    "type": "foundation",
+    "name": "Destructive Form",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "water"
+    ],
+    "text": "Unique\n\nWhile this card is in your stage, if your rival loses health due to an effect on your Heat token, they lose that much health plus 2 instead.\n\nResponse [Card Pool] Discard 1 card: After you play an attack, build this card.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/147-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/147-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 148,
+    "numero_image": 148,
+    "type": "foundation",
+    "name": "Devil's Domination",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "text": "Form Flip, check X: Add 1 Heat token to your stage. X equals 8 minus the number of cards in your removed pile.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "tk802/148-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/148-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 149,
+    "numero_image": 149,
+    "type": "foundation",
+    "name": "Devil's Instincts",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "text": "Unique\n\nResponse [Tenacious] Remove: After you make a check to play a card, that check gets +1.\n\nResponse [Discard Pile] Remove, sacrifice 1 Heat token: After you make a check to play a card, that check gets +2.",
+    "difficulty": 2,
+    "control": 4,
+    "block_modifier": 4,
+    "block_zone": "mid",
+    "asset": "tk802/149-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/149-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 150,
+    "numero_image": 150,
+    "type": "foundation",
+    "name": "Elite Operative",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "evil"
+    ],
+    "text": "Form Flip, remove 10 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/150-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/150-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 151,
+    "numero_image": 151,
+    "type": "foundation",
+    "name": "Exploit Weakness",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "evil"
+    ],
+    "text": "Response Flip: After you play an attack with printed damage 3 or less, add 1 Heat token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "tk802/151-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/151-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 152,
+    "numero_image": 152,
+    "type": "foundation",
+    "name": "Following Orders",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "evil",
+      "order",
+      "void"
+    ],
+    "text": "Unique\n\nEnhance Flip: Draw 2 cards. If you don't have a Heat token in your stage, lose 5 health.",
+    "difficulty": 4,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "tk802/152-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/152-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 153,
+    "numero_image": 153,
+    "type": "foundation",
+    "name": "Frenemies",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "fire",
+      "water"
+    ],
+    "text": "Breaker: 1\n\nYou may try to play this card as a block from your stage. If you do, remove it when it leaves your card pool.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "tk802/153-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/153-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 154,
+    "numero_image": 154,
+    "type": "foundation",
+    "name": "G Corp CEO",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "evil",
+      "void"
+    ],
+    "text": "Enhance Flip: Draw 1 card. If there are no Devil Gene counters on your character, remove 1 card from your hand.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "tk802/154-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/154-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 155,
+    "numero_image": 155,
+    "type": "foundation",
+    "name": "Gamma System",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "evil",
+      "order",
+      "void"
+    ],
+    "text": "Form Flip, Check X: Add 1 Heat token to your stage. X equals your printed hand size.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "tk802/155-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/155-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 156,
+    "numero_image": 156,
+    "type": "foundation",
+    "name": "Head of the Mishima Clan",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "evil"
+    ],
+    "text": "Enhance Flip, spend 1 momentum: Draw 1 card. If this attack's damage is 10 or greater, draw 2 cards instead.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/156-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/156-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 157,
+    "numero_image": 157,
+    "type": "foundation",
+    "name": "Heaven's Wrath",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "chaos",
+      "death"
+    ],
+    "text": "Deflect: 2 - Unique\n\nForm Commit: If you have a Heat token in your stage, add the top card of your deck to your momentum.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "tk802/157-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/157-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 158,
+    "numero_image": 158,
+    "type": "foundation",
+    "name": "High Tech Annihilator",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "evil",
+      "order",
+      "void"
+    ],
+    "text": "Form Flip, remove 10 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/158-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/158-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 159,
+    "numero_image": 159,
+    "type": "foundation",
+    "name": "Improvised Riposte",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "fire",
+      "water"
+    ],
+    "text": "Response Add this card to your card pool: After your rival makes a check to play an attack, they re-check.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/159-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/159-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 160,
+    "numero_image": 160,
+    "type": "foundation",
+    "name": "Jaguar Sprint",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "life"
+    ],
+    "text": "Unique\n\nThis card ignores progressive difficulty if the preceding face up card in your card pool is a Throw.\n\nResponse Sacrifice: After you add 1 or more Heat tokens to your stage, add 1 Throw attack from your discard pile to your hand.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/160-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/160-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 161,
+    "numero_image": 161,
+    "type": "foundation",
+    "name": "Journey of Redemption",
+    "rarity": "ultra rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "good",
+      "life",
+      "water"
+    ],
+    "text": "Unique\n\nThis foundation cannot be sealed by rival effects.\n\nResponse Remove: After your rival plays an attack, it gets -1 speed and gains Flash.",
+    "difficulty": 2,
+    "control": 4,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "tk802/161-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/161-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 162,
+    "numero_image": 162,
+    "type": "foundation",
+    "name": "Limited Entry",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "fire",
+      "good",
+      "order"
+    ],
+    "text": "Unique\n\nForm Flip, Mill 4: If you have a Heat token in your stage, add 1 card milled this way to your hand. Otherwise, add 1 non-attack card milled this way to your hand.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "tk802/162-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/162-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 163,
+    "numero_image": 163,
+    "type": "foundation",
+    "name": "Lion of the Rebellion",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "fire",
+      "good",
+      "order"
+    ],
+    "text": "Form Flip: Add 1 Heat token to your stage. Only playable if you have 8 or more foundations.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/163-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/163-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 164,
+    "numero_image": 164,
+    "type": "foundation",
+    "name": "Mandinga",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "good",
+      "life",
+      "water"
+    ],
+    "text": "Enhance Commit: This attack gets +1 or -1 speed for each card in your card pool.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/164-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/164-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 165,
+    "numero_image": 165,
+    "type": "foundation",
+    "name": "Mechanized Space Ninja",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "void"
+    ],
+    "text": "Form Flip, remove 10 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/165-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/165-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 166,
+    "numero_image": 166,
+    "type": "foundation",
+    "name": "Mishima Bloodline",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "chaos",
+      "death"
+    ],
+    "text": "Enhance Flip: This attack gets +2 or -2 damage. If there is a Devil Gene counter on your character, this ability has [Tenacious].",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "tk802/166-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/166-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 167,
+    "numero_image": 167,
+    "type": "foundation",
+    "name": "Muscle Armor",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "life"
+    ],
+    "text": "Form Commit: If you have more health than your rival, flip this foundation and add 1 Heat token to your stage. Otherwise, gain 2 health.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/167-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/167-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 168,
+    "numero_image": 168,
+    "type": "foundation",
+    "name": "Naniwa Gusto",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "fire",
+      "water"
+    ],
+    "text": "Form Flip, remove 10 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/168-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/168-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 169,
+    "numero_image": 169,
+    "type": "foundation",
+    "name": "Next-Gen Model",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "evil",
+      "order",
+      "void"
+    ],
+    "text": "Breaker: 1\n\nResponse: After you play this card, choose a player. That player mills 2.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "tk802/169-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/169-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 170,
+    "numero_image": 170,
+    "type": "foundation",
+    "name": "Outmaneuver",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "evil"
+    ],
+    "text": "Response [Your turn] Flip: After 1 or more other foundations in your stage are unflipped, add 1 Heat token to your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/170-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/170-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 171,
+    "numero_image": 171,
+    "type": "foundation",
+    "name": "Own Free Will",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "water"
+    ],
+    "text": "Response Flip: After 1 or more of your foundations are destroyed due to a rival effect, build 1 foundation from your discard pile committed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "tk802/171-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/171-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 172,
+    "numero_image": 172,
+    "type": "foundation",
+    "name": "Passionate Heart",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "good",
+      "life",
+      "water"
+    ],
+    "text": "Enhance Flip: Gain X health. X equals the number of attack cards in all card pools.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "tk802/172-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/172-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 173,
+    "numero_image": 173,
+    "type": "foundation",
+    "name": "Purple Lightning",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "chaos",
+      "death"
+    ],
+    "text": "Form Flip, remove 10 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/173-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/173-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 174,
+    "numero_image": 174,
+    "type": "foundation",
+    "name": "Rebel Leader",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "fire",
+      "good",
+      "order"
+    ],
+    "text": "Form Flip, remove 10 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/174-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/174-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 175,
+    "numero_image": 175,
+    "type": "foundation",
+    "name": "Refined Violence",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "life",
+      "order"
+    ],
+    "text": "Form Flip, remove 10 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/175-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/175-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 176,
+    "numero_image": 176,
+    "type": "foundation",
+    "name": "Resurrected King of Iron Fist",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "evil"
+    ],
+    "text": "Form Flip, remove 10 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/176-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/176-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 177,
+    "numero_image": 177,
+    "type": "foundation",
+    "name": "Right Flamingo",
+    "rarity": "rare",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "fire",
+      "life"
+    ],
+    "text": "Unique\n\nEnhance: Your Kick attack gets +1 damage.\n\nResponse: After your Kick attack is completely blocked, it still deals 1 damage during the Damage Step. Only playable if you have a Heat token in your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "tk802/177-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/177-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 178,
+    "numero_image": 178,
+    "type": "foundation",
+    "name": "Silent Assassin",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "evil"
+    ],
+    "text": "Form Flip, remove 10 cards from your discard pile: Add 1 Heat token to your stage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "tk802/178-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/178-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 179,
+    "numero_image": 179,
+    "type": "foundation",
+    "name": "Snakeshot",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "evil"
+    ],
+    "text": "Enhance Sacrifice 1 foundation or asset: This attack gets -2 damage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "tk802/179-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/179-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 180,
+    "numero_image": 180,
+    "type": "foundation",
+    "name": "Spirited Peacemaker",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "fire",
+      "water"
+    ],
+    "text": "At the start of your End Phase, ready this foundation if there are 1 or more counters on your character.\n\nEnhance Commit: This attack gets -2 speed.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "tk802/180-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/180-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 181,
+    "numero_image": 181,
+    "type": "foundation",
+    "name": "The Masked Jaguar",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "earth",
+      "good",
+      "life"
+    ],
+    "text": "Enhance [Tenacious] Flip: If you have gained health this turn, ready this foundation.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "tk802/181-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/181-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 182,
+    "numero_image": 182,
+    "type": "foundation",
+    "name": "Warrior Instinct",
+    "rarity": "uncommon",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "evil"
+    ],
+    "text": "Form Flip, spend 1 momentum: Add 1 Heat token to your stage. If you have added 3 or more Heat tokens to your stage this game, your checks get +1 this turn.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "tk802/182-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/182-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 183,
+    "numero_image": 183,
+    "type": "foundation",
+    "name": "Weight of the Accursed",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "all",
+      "good",
+      "void"
+    ],
+    "text": "Your check to play this card gets +X. X equals the highest difficulty among assets in your stage.",
+    "difficulty": 5,
+    "control": 5,
+    "block_modifier": 5,
+    "block_zone": "high",
+    "asset": "tk802/183-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/183-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 184,
+    "numero_image": 184,
+    "type": "foundation",
+    "name": "White Reaper",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "death",
+      "earth",
+      "evil"
+    ],
+    "text": "Enhance Flip: Return this attack to its printed speed.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "tk802/184-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/184-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 185,
+    "numero_image": 185,
+    "type": "foundation",
+    "name": "Yggdrasil Rebel Leader",
+    "rarity": "common",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "fire",
+      "good",
+      "order"
+    ],
+    "text": "Response Flip: After you build 1 or more cards during the Combat Phase, draw 1 card.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "tk802/185-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/185-preview.jpg"
+  },
+  {
+    "extension_short": "tk802",
+    "numero": 225,
+    "numero_image": 225,
+    "type": "character",
+    "name": "Jin Kazama",
+    "rarity": "promo",
+    "extension": "TEKKEN 8",
+    "formats": [
+      "legacy"
+    ],
+    "resources": [
+      "chaos",
+      "good",
+      "life"
+    ],
+    "text": "If there is a Devil Gene counter on this card, your attacks get +2 damage. Otherwise, rival attacks get -2 speed.\n\nEnhance Commit: If there are no Devil Gene counters on this card, add 1 Devil Gene counter to this card and your next check gets +2.\n\nEnhance Commit, Remove 1 Devil Gene counter: Build up to 2 foundations with difficulty 3 or less from your hand.",
+    "hand_size": 6,
+    "vitality": 32,
+    "asset": "tk802/225-preview.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/225-preview.jpg"
+  }
+]
