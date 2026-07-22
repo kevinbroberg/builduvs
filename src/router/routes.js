@@ -57,6 +57,9 @@ const routes = [
         component: () => import("src/pages/LocalsPage.vue"),
         meta: { title: "Decklists" },
       },
+      // Unknown URLs (typos, stale links) fall back to the home tracker
+      // instead of rendering an empty layout.
+      { path: "/:catchAll(.*)*", redirect: "/" },
     ],
   },
 ];

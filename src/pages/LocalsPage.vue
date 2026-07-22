@@ -305,7 +305,11 @@ watchEffect(() => {
       <q-toolbar class="bg-grey-2">
         <q-btn flat dense icon="arrow_back" @click="router.push(`/lists/${eventId}`)" />
         <q-toolbar-title class="text-body1">
-          <strong>{{ playerLabel(currentStanding?.characterName, playerId) }}</strong>
+          <q-breadcrumbs class="text-body2" active-color="primary" gutter="xs">
+            <q-breadcrumbs-el label="Decklists" icon="emoji_events" to="/lists" />
+            <q-breadcrumbs-el :label="currentEvent?.location ?? eventId" :to="`/lists/${eventId}`" />
+            <q-breadcrumbs-el :label="playerLabel(currentStanding?.characterName, playerId)" />
+          </q-breadcrumbs>
           <span v-if="currentStanding?.deckName" class="text-caption text-grey-6 q-ml-sm">
             {{ currentStanding.deckName }}
           </span>
@@ -432,7 +436,10 @@ watchEffect(() => {
       <q-toolbar class="bg-grey-2">
         <q-btn flat dense icon="arrow_back" @click="router.push('/lists')" />
         <q-toolbar-title class="text-body1">
-          {{ currentEvent?.location }}
+          <q-breadcrumbs class="text-body2" active-color="primary" gutter="xs">
+            <q-breadcrumbs-el label="Decklists" icon="emoji_events" to="/lists" />
+            <q-breadcrumbs-el :label="currentEvent?.location ?? eventId" />
+          </q-breadcrumbs>
           <span class="text-caption text-grey-6 q-ml-sm">{{ currentEvent?.date }}</span>
         </q-toolbar-title>
         <q-badge color="grey-6" :label="`${currentEvent?.playerCount} players`" />
