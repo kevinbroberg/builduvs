@@ -319,9 +319,9 @@ watchEffect(() => {
 
     <!-- ── Player detail (/locals/:event/:id) ─────────────────────────────── -->
     <template v-if="playerId">
-      <q-toolbar class="bg-grey-2">
+      <q-toolbar class="bg-grey-2 deck-toolbar">
         <q-btn flat dense icon="arrow_back" @click="router.push(`/lists/${eventId}`)" />
-        <q-toolbar-title class="text-body1">
+        <q-toolbar-title class="text-body1 deck-toolbar__title">
           <q-breadcrumbs class="text-body2" active-color="primary" gutter="xs">
             <q-breadcrumbs-el label="Decklists" icon="emoji_events" to="/lists" />
             <q-breadcrumbs-el :label="currentEvent ? eventName(currentEvent) : eventId" :to="`/lists/${eventId}`" />
@@ -331,54 +331,56 @@ watchEffect(() => {
             {{ currentStanding.deckName }}
           </span>
         </q-toolbar-title>
-        <q-badge v-if="currentStanding?.overallRecord ?? currentStanding?.swissRecord" color="grey-6"
-          :label="currentStanding.overallRecord ?? currentStanding.swissRecord" class="q-mr-sm" />
-        <template v-if="currentStanding?.hasDeck">
-          <q-btn-toggle
-            :model-value="listsView"
-            @update:model-value="setListsView"
-            flat
-            dense
-            no-caps
-            toggle-color="primary"
-            :options="[
-              { value: 'list', icon: 'view_list', slot: 'list' },
-              { value: 'tiles', icon: 'grid_view', slot: 'tiles' },
-            ]"
-          >
-            <template v-slot:list><q-tooltip>Text list</q-tooltip></template>
-            <template v-slot:tiles><q-tooltip>Card tiles</q-tooltip></template>
-          </q-btn-toggle>
-          <q-slider
-            v-if="listsView === 'tiles'"
-            :model-value="listsColumns"
-            @update:model-value="setListsColumns"
-            :min="3"
-            :max="12"
-            :step="1"
-            snap
-            style="width: 90px"
-            class="q-mx-sm gt-xs"
-            color="primary"
-          />
-        </template>
-        <template v-if="currentStanding?.hasDeck">
-          <q-btn flat dense icon="style" size="sm" label="Build" class="q-ml-xs"
-            :disable="playerDataLoading || !resolvedDeck.length"
-            @click="buildThisDeck">
-            <q-tooltip>Load this deck into the app</q-tooltip>
-          </q-btn>
-          <q-btn v-if="hasDeck" flat dense icon="difference" size="sm" label="Compare" class="q-ml-xs"
-            :disable="playerDataLoading || !resolvedDeck.length"
-            @click="compareThisDeck">
-            <q-tooltip>Compare against your current deck</q-tooltip>
-          </q-btn>
-          <q-btn flat dense icon="download" size="sm" label="TTS" class="q-ml-xs"
-            :disable="playerDataLoading || !resolvedDeck.length"
-            @click="downloadTTS">
-            <q-tooltip>Download Tabletop Simulator deck</q-tooltip>
-          </q-btn>
-        </template>
+        <div class="deck-toolbar__actions">
+          <q-badge v-if="currentStanding?.overallRecord ?? currentStanding?.swissRecord" color="grey-6"
+            :label="currentStanding.overallRecord ?? currentStanding.swissRecord" class="q-mr-sm" />
+          <template v-if="currentStanding?.hasDeck">
+            <q-btn-toggle
+              :model-value="listsView"
+              @update:model-value="setListsView"
+              flat
+              dense
+              no-caps
+              toggle-color="primary"
+              :options="[
+                { value: 'list', icon: 'view_list', slot: 'list' },
+                { value: 'tiles', icon: 'grid_view', slot: 'tiles' },
+              ]"
+            >
+              <template v-slot:list><q-tooltip>Text list</q-tooltip></template>
+              <template v-slot:tiles><q-tooltip>Card tiles</q-tooltip></template>
+            </q-btn-toggle>
+            <q-slider
+              v-if="listsView === 'tiles'"
+              :model-value="listsColumns"
+              @update:model-value="setListsColumns"
+              :min="3"
+              :max="12"
+              :step="1"
+              snap
+              style="width: 90px"
+              class="q-mx-sm gt-xs"
+              color="primary"
+            />
+          </template>
+          <template v-if="currentStanding?.hasDeck">
+            <q-btn flat dense icon="style" size="sm" label="Build" class="q-ml-xs"
+              :disable="playerDataLoading || !resolvedDeck.length"
+              @click="buildThisDeck">
+              <q-tooltip>Load this deck into the app</q-tooltip>
+            </q-btn>
+            <q-btn v-if="hasDeck" flat dense icon="difference" size="sm" label="Compare" class="q-ml-xs"
+              :disable="playerDataLoading || !resolvedDeck.length"
+              @click="compareThisDeck">
+              <q-tooltip>Compare against your current deck</q-tooltip>
+            </q-btn>
+            <q-btn flat dense icon="download" size="sm" label="TTS" class="q-ml-xs"
+              :disable="playerDataLoading || !resolvedDeck.length"
+              @click="downloadTTS">
+              <q-tooltip>Download Tabletop Simulator deck</q-tooltip>
+            </q-btn>
+          </template>
+        </div>
       </q-toolbar>
 
       <div v-if="playerDataLoading" class="text-center q-pa-xl">
@@ -576,6 +578,24 @@ watchEffect(() => {
 
 <style scoped>
 .text-mono { font-family: monospace; }
+
+/* Toolbar: keep the breadcrumb title and the action controls from colliding.
+   On phones the actions drop to their own full-width row below the title
+   instead of clipping into the breadcrumbs. */
+.deck-toolbar { flex-wrap: wrap; }
+.deck-toolbar__title { min-width: 0; }
+.deck-toolbar__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 599px) {
+  .deck-toolbar__actions {
+    flex: 1 1 100%;
+    justify-content: flex-end;
+    padding-bottom: 4px;
+  }
+}
 
 .standing-avatar { overflow: hidden; }
 .standing-avatar .card-thumb__img {
