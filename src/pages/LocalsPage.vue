@@ -5,10 +5,10 @@ import { setPageTitle } from 'src/js/page_title'
 import indexData from 'src/assets/locals-index.json'
 import DeckBody from 'src/components/deck/DeckBody.vue'
 import DeckStage from 'src/components/deck/DeckStage.vue'
+import cardeioIdsData from 'src/assets/cardeio-ids.json'
 import { cards as allCards } from 'src/js/card_provider.js'
 import { getCardImage } from 'src/js/image_helper'
 import ResourceSymbol from 'src/components/cards/detail/ResourceSymbol.vue'
-import cardeioIdsData from 'src/assets/cardeio-ids.json'
 import { useDeckStore } from 'src/stores/deck'
 import { storeToRefs } from 'pinia'
 import { downloadTTSJson } from 'src/js/tts_export'
@@ -21,11 +21,19 @@ function normName(name) {
 
 const standardCards = allCards.filter(c => c.formats?.includes('standard'))
 const cardByName = new Map(standardCards.map(c => [normName(c.name), c]))
+// A deck card's cardeioId (assigned by gen-locals from cardeio-ids.json) shares
+// the card DB's own cardeio_id space. Key by both:
+//  - the cardeio-ids.json name-hop (legacy path, covers cards lacking a DB id), then
+//  - each card's own cardeio_id (authoritative; overrides the above), which joins
+//    directly and sidesteps deck↔DB name mismatches — diacritics ("Donny’s Bō
+//    Staff" vs "Bo"), stray quotes ('"I Would Like to Rage!"'), or a dropped word
+//    ("…the Star Razor").
 const cardByCardeioId = new Map(
   Object.entries(cardeioIdsData)
     .map(([name, data]) => [data.id, cardByName.get(normName(name))])
     .filter(([, card]) => card != null)
 )
+for (const c of standardCards) if (c.cardeio_id) cardByCardeioId.set(c.cardeio_id, c)
 
 function findCard(name) {
   if (!name) return null
