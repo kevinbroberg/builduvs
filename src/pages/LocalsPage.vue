@@ -12,6 +12,7 @@ import cardeioIdsData from 'src/assets/cardeio-ids.json'
 import { useDeckStore } from 'src/stores/deck'
 import { storeToRefs } from 'pinia'
 import { downloadTTSJson } from 'src/js/tts_export'
+import { LC_FORMATS, eventName } from 'src/js/event_naming'
 
 // Normalize apostrophes and other quote variants to plain straight apostrophe
 function normName(name) {
@@ -133,7 +134,7 @@ function getPlayerMatches(standingDbId) {
 // ── Display helpers ───────────────────────────────────────────────────────────
 
 function toTitleCase(str) {
-  return str ? str.replace(/\b\w/g, c => c.toUpperCase()) : ''
+  return str ? str.replace(/(?<!['‘’‚‛′])\b\w/g, c => c.toUpperCase()) : ''
 }
 
 // A person is identified by their standing + character name
@@ -166,12 +167,6 @@ function opponentRoute(opponentStanding) {
 
 // ── Computed views ─────────────────────────────────────────────────────────────
 
-const LC_FORMATS = [
-  { key: 'kaiju',    label: 'Reign of Kaiju' },
-  { key: 'april',    label: 'April B&E' },
-  { key: 'titan',    label: 'May B&E' },
-  { key: 'mhafinal', label: 'Round 3' },
-]
 const lcFormatKeys = new Set(LC_FORMATS.map(f => f.key))
 
 const sortOrder = ref('decklists')
@@ -194,7 +189,7 @@ const regionalEvents = events.filter(e => e.round === 0).sort((a, b) => a.date.l
 
 const regionalTabs = regionalEvents.map(e => ({
   key: e.id,
-  label: `${e.location} · ${formatDate(e.date)}`,
+  label: `${eventName(e)} · ${formatDate(e.date)}`,
   sortDate: e.date,
 }))
 
@@ -302,9 +297,9 @@ const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(reso
 watchEffect(() => {
   if (playerId.value && currentStanding.value) {
     const label = playerLabel(currentStanding.value.characterName, playerId.value)
-    setPageTitle(currentEvent.value?.location ? `${label} · ${currentEvent.value.location}` : label)
+    setPageTitle(currentEvent.value ? `${label} · ${eventName(currentEvent.value)}` : label)
   } else if (eventId.value && currentEvent.value) {
-    setPageTitle(currentEvent.value.location)
+    setPageTitle(eventName(currentEvent.value))
   } else {
     setPageTitle('Decklists')
   }
@@ -321,7 +316,7 @@ watchEffect(() => {
         <q-toolbar-title class="text-body1">
           <q-breadcrumbs class="text-body2" active-color="primary" gutter="xs">
             <q-breadcrumbs-el label="Decklists" icon="emoji_events" to="/lists" />
-            <q-breadcrumbs-el :label="currentEvent?.location ?? eventId" :to="`/lists/${eventId}`" />
+            <q-breadcrumbs-el :label="currentEvent ? eventName(currentEvent) : eventId" :to="`/lists/${eventId}`" />
             <q-breadcrumbs-el :label="playerLabel(currentStanding?.characterName, playerId)" />
           </q-breadcrumbs>
           <span v-if="currentStanding?.deckName" class="text-caption text-grey-6 q-ml-sm">
@@ -452,7 +447,7 @@ watchEffect(() => {
         <q-toolbar-title class="text-body1">
           <q-breadcrumbs class="text-body2" active-color="primary" gutter="xs">
             <q-breadcrumbs-el label="Decklists" icon="emoji_events" to="/lists" />
-            <q-breadcrumbs-el :label="currentEvent?.location ?? eventId" />
+            <q-breadcrumbs-el :label="currentEvent ? eventName(currentEvent) : eventId" />
           </q-breadcrumbs>
           <span class="text-caption text-grey-6 q-ml-sm">{{ currentEvent?.date }}</span>
         </q-toolbar-title>

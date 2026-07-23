@@ -21,7 +21,7 @@ function faceUrl(card) {
 }
 
 function toTitleCase(str) {
-  return str ? str.replace(/\b\w/g, c => c.toUpperCase()) : ''
+  return str ? str.replace(/(?<!['‘’‚‛′])\b\w/g, c => c.toUpperCase()) : ''
 }
 
 function gmNotes(card) {
