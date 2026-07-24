@@ -4,7 +4,11 @@ export const useDeckStore = defineStore('deck', {
   state: () => ({
     deck: {},
     side: {},
-    face: undefined,
+    // Must default to null, not undefined: JSON.stringify drops undefined keys,
+    // so an undefined face would vanish from persisted state and Pinia would
+    // hydrate the store without a `face` ref — after which setting a character
+    // never persists (BUVS-0005). null round-trips through JSON and keeps the ref.
+    face: null,
 
     // Current deck metadata
     currentDeckId: null,
@@ -66,7 +70,7 @@ export const useDeckStore = defineStore('deck', {
         this.deck[card.asset] = { ...card, qty: count }
       } else {
         delete this.deck[card.asset]
-        if (this.face === card) this.face = undefined
+        if (this.face === card) this.face = null
       }
     },
     decrementSide(card) {
@@ -76,7 +80,7 @@ export const useDeckStore = defineStore('deck', {
         this.side[card.asset] = { ...card, qty: count }
       } else {
         delete this.side[card.asset]
-        if (this.face === card) this.face = undefined
+        if (this.face === card) this.face = null
       }
     },
     setFace(card) {
@@ -88,7 +92,7 @@ export const useDeckStore = defineStore('deck', {
     nuke() {
       this.deck = {}
       this.side = {}
-      this.face = undefined
+      this.face = null
     },
     setQty(card, qty) {
       let max = card.limit || 4
@@ -144,7 +148,7 @@ export const useDeckStore = defineStore('deck', {
         modified: now,
         deck: JSON.parse(JSON.stringify(this.deck)),
         side: JSON.parse(JSON.stringify(this.side)),
-        face: this.face ? JSON.parse(JSON.stringify(this.face)) : undefined,
+        face: this.face ? JSON.parse(JSON.stringify(this.face)) : null,
         cardeioId: this.currentCardeioId ?? null,
       }
 
@@ -160,7 +164,7 @@ export const useDeckStore = defineStore('deck', {
 
       this.deck = JSON.parse(JSON.stringify(saved.deck))
       this.side = JSON.parse(JSON.stringify(saved.side))
-      this.face = saved.face ? JSON.parse(JSON.stringify(saved.face)) : undefined
+      this.face = saved.face ? JSON.parse(JSON.stringify(saved.face)) : null
 
       this.currentDeckId = saved.id
       this.currentDeckName = saved.name
