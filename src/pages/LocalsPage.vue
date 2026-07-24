@@ -220,6 +220,29 @@ const eventsByFormat = computed(() => ({
 
 const tab = ref(FORMATS[0]?.key ?? 'kaiju')
 
+// ── Character filter (event-list view) ────────────────────────────────────────
+// Typing a character name collapses the tabbed event browser into a flat list of
+// every deck across all events whose face card matches. Partial, case- and
+// apostrophe-insensitive so "shigaraki" or "all might" find their variants.
+const search = ref('')
+const searchNorm = computed(() => normName((search.value || '').trim()))
+const isFiltering = computed(() => searchNorm.value.length > 0)
+
+const filteredStandings = computed(() => {
+  const q = searchNorm.value
+  if (!q) return []
+  const out = []
+  for (const ev of events) {
+    for (const s of getStandings(ev.id)) {
+      if (s.hasDeck && s.characterName && normName(s.characterName).includes(q)) {
+        out.push({ ...s, event: ev })
+      }
+    }
+  }
+  out.sort((a, b) => b.event.date.localeCompare(a.event.date) || a.standing - b.standing)
+  return out
+})
+
 // A regional tab's key is an event id (LC format tabs use a format key). Since a
 // regional is always a single event, page straight into its standings instead of
 // showing a one-row event list.
@@ -500,22 +523,78 @@ watchEffect(() => {
     <!-- ── Event list (/locals) ──────────────────────────────────────────── -->
     <template v-else>
       <div class="row items-center bg-grey-2">
-        <q-tabs v-model="tab" align="left" dense class="col text-grey-8">
+        <q-tabs v-if="!isFiltering" v-model="tab" align="left" dense class="col text-grey-8">
           <q-tab v-for="f in FORMATS" :key="f.key" :name="f.key"
             :label="lcFormatKeys.has(f.key) ? `${f.label} · ${eventsByFormat[f.key].length} events` : f.label" />
         </q-tabs>
-        <q-badge v-if="tabEvent" color="grey-6" class="q-mr-sm"
-          :label="`${tabEvent.playerCount} players`" />
-        <q-btn-toggle v-else v-model="sortOrder" dense unelevated no-caps
-          class="q-mr-sm"
-          color="grey-3" text-color="grey-7" toggle-color="grey-7" toggle-text-color="white"
-          :options="[
-            { value: 'decklists', icon: 'list_alt' },
-            { value: 'date',      icon: 'calendar_today' },
-          ]">
-          <q-tooltip :delay="300">{{ sortOrder === 'decklists' ? 'Sorted by available lists' : 'Sorted by date' }}</q-tooltip>
-        </q-btn-toggle>
+        <div v-else class="col text-grey-8 q-pl-md text-body2">
+          {{ filteredStandings.length }} {{ filteredStandings.length === 1 ? 'deck' : 'decks' }}
+        </div>
+        <q-input
+          v-model="search"
+          dense
+          outlined
+          clearable
+          debounce="150"
+          bg-color="white"
+          placeholder="Character…"
+          class="q-mr-sm locals-search"
+        >
+          <template v-slot:prepend><q-icon name="search" size="xs" /></template>
+        </q-input>
+        <template v-if="!isFiltering">
+          <q-badge v-if="tabEvent" color="grey-6" class="q-mr-sm"
+            :label="`${tabEvent.playerCount} players`" />
+          <q-btn-toggle v-else v-model="sortOrder" dense unelevated no-caps
+            class="q-mr-sm"
+            color="grey-3" text-color="grey-7" toggle-color="grey-7" toggle-text-color="white"
+            :options="[
+              { value: 'decklists', icon: 'list_alt' },
+              { value: 'date',      icon: 'calendar_today' },
+            ]">
+            <q-tooltip :delay="300">{{ sortOrder === 'decklists' ? 'Sorted by available lists' : 'Sorted by date' }}</q-tooltip>
+          </q-btn-toggle>
+        </template>
       </div>
+
+      <!-- Character filter results: every matching deck across all events -->
+      <q-list v-if="isFiltering" separator>
+        <q-item v-for="s in filteredStandings" :key="`${s.event.id}-${s.standing}`"
+          :class="{
+            'row-winner': s.standing === 1,
+            'row-top4':   s.standing > 1 && s.standing <= 4,
+            'row-top8':   s.standing > 4 && s.standing <= 8,
+          }"
+          clickable :to="`/lists/${s.event.id}/${s.standing}`">
+          <q-item-section avatar style="min-width: 52px">
+            <div style="position: relative; display: inline-block">
+              <q-avatar v-if="findCard(s.characterName)" square size="40px" class="standing-avatar">
+                <img :src="getCardImage(findCard(s.characterName).asset)" class="card-thumb__img" />
+              </q-avatar>
+              <q-avatar v-else square size="40px" class="standing-avatar bg-grey-3" />
+              <ResourceSymbol
+                v-if="s.deckSymbol"
+                :element="s.deckSymbol"
+                class="standing-resource"
+              />
+            </div>
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>{{ playerLabel(s.characterName, s.standing) }}</q-item-label>
+            <q-item-label caption>{{ eventName(s.event) }} · {{ formatDate(s.event.date) }}</q-item-label>
+          </q-item-section>
+          <q-item-section side>
+            <q-icon name="chevron_right" color="grey-5" />
+          </q-item-section>
+        </q-item>
+        <q-item v-if="!filteredStandings.length">
+          <q-item-section class="text-grey-6 text-center q-py-lg">
+            No decks match “{{ search }}”
+          </q-item-section>
+        </q-item>
+      </q-list>
+
+      <template v-else>
 
       <!-- Regional tab: standings directly (always exactly one event) -->
       <q-list v-if="tabEvent" separator>
@@ -571,6 +650,7 @@ watchEffect(() => {
           </q-item-section>
         </q-item>
       </q-list>
+      </template>
     </template>
 
   </q-page>
@@ -578,6 +658,20 @@ watchEffect(() => {
 
 <style scoped>
 .text-mono { font-family: monospace; }
+
+/* Character filter box: compact in the toolbar, but it drops to its own
+   full-width row as soon as the tabs start getting cramped, rather than
+   shrinking them further. */
+.locals-search { width: 180px; }
+.locals-search :deep(.q-field__control) { height: 34px; min-height: 34px; }
+@media (max-width: 1023px) {
+  .locals-search {
+    flex: 1 1 100%;
+    order: 1;          /* force onto its own row, below the tabs */
+    width: auto;
+    margin: 4px 8px;
+  }
+}
 
 /* Toolbar: keep the breadcrumb title and the action controls from colliding.
    On phones the actions drop to their own full-width row below the title
