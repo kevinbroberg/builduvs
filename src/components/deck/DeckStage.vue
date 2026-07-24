@@ -65,6 +65,11 @@ defineProps({
   flex: 0 1 560px;
   max-width: 560px;
 }
+/* The narrowed list body doesn't grow, so pin the face to the right edge
+   (matching tiles view) instead of leaving it floating mid-row. */
+.deck-stage--list .deck-stage__face {
+  margin-left: auto;
+}
 
 /* ---- Face preview ---- */
 .deck-stage__face {
