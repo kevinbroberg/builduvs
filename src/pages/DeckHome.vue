@@ -2,6 +2,7 @@
 import DeckBody from 'components/deck/DeckBody.vue'
 import DeckStage from 'components/deck/DeckStage.vue'
 import DeckDialog from 'components/deck/DeckDialog.vue'
+import QuickAddSelect from 'components/deck/QuickAddSelect.vue'
 import CardeioExportDialog from 'components/deck/CardeioExportDialog.vue'
 import { useQuasar } from 'quasar'
 import { useDeckStore } from 'src/stores/deck'
@@ -12,6 +13,7 @@ import { setPageTitle } from 'src/js/page_title'
 
 import {
   face,
+  clearFace,
   deck2clipboard,
   partitions,
   trash,
@@ -98,6 +100,9 @@ function downloadTTS() {
         <q-btn outline label="Wipe" icon="delete" color="negative" @click="trash" />
       </q-btn-group>
 
+      <!-- Quick add by name -->
+      <QuickAddSelect />
+
       <!-- Tiles / list toggle -->
       <q-btn-toggle
         :model-value="view"
@@ -140,7 +145,19 @@ function downloadTTS() {
       :face-asset="face?.asset ?? null"
       :face-name="face?.name ?? ''"
       :list-view="view === 'list'"
+      clearable
+      @clear-face="clearFace"
     >
+      <template #face-empty>
+        <q-icon name="account_circle" size="64px" />
+        <div class="face-empty__label">No face character set</div>
+        <QuickAddSelect
+          charactersOnly
+          label="Add a character"
+          class="face-empty__search"
+        />
+      </template>
+
       <div class="deck-name">
         {{ deckStore.currentDeckName }}
         <q-icon name="edit" class="deck-name__edit" size="18px" />
@@ -194,6 +211,14 @@ function downloadTTS() {
 .locals-link {
   font-size: 1rem;
   text-decoration: underline;
+}
+
+.face-empty__label {
+  color: rgba(255, 255, 255, 0.5);
+}
+.face-empty__search {
+  margin-top: 8px;
+  width: 240px;
 }
 
 .col-control {

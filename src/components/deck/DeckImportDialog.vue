@@ -95,31 +95,64 @@ watch(text, async (val) => {
 
 function tts2Text(input) {
   try {
-    let myson = JSON.parse(input)
-    let contained = myson['ObjectStates'][0]['ContainedObjects']
-    function reducer(prev, card) {
-      let name = card['Nickname'].toLowerCase()
-      prev[name] = 1 + (prev[name] || 0)
-      return prev
+    const myson = JSON.parse(input)
+    // TTS nests objects arbitrarily. Collect each Deck (a pile of cards) separately
+    // plus any loose cards (e.g. the character) so we can split main from sideboard.
+    const decks = []
+    const loose = {}
+    const tally = (target, node) => {
+      const name = node.Nickname.toLowerCase()
+      target[name] = 1 + (target[name] || 0)
     }
-    const deck = contained.reduce(reducer, {})
-    return Object.keys(deck).map(name => `${deck[name]} ${name}`).join('\n')
+    function walk(node, deckCounts) {
+      if (!node || typeof node !== 'object') return
+      if (Array.isArray(node)) { node.forEach(n => walk(n, deckCounts)); return }
+      if (node.Name === 'Card' && node.Nickname) tally(deckCounts || loose, node)
+      if (node.Name === 'Deck') {
+        const counts = {}
+        if (Array.isArray(node.ContainedObjects)) node.ContainedObjects.forEach(n => walk(n, counts))
+        decks.push({ counts, total: Object.values(counts).reduce((a, b) => a + b, 0) })
+        return
+      }
+      if (Array.isArray(node.ContainedObjects)) node.ContainedObjects.forEach(n => walk(n, deckCounts))
+    }
+    walk(myson.ObjectStates || myson, null)
+
+    const merge = (target, src) => { for (const k in src) target[k] = (target[k] || 0) + src[k] }
+    const main = {}
+    let side = null
+    if (decks.length >= 2) {
+      // The smallest pile is the sideboard; everything else is the main deck.
+      const sorted = [...decks].sort((a, b) => a.total - b.total)
+      side = sorted[0].counts
+      sorted.slice(1).forEach(d => merge(main, d.counts))
+    } else if (decks.length === 1) {
+      merge(main, decks[0].counts)
+    }
+    merge(main, loose)
+
+    const lines = counts => Object.keys(counts).map(n => `${counts[n]} ${n}`).join('\n')
+    if (!Object.keys(main).length && !(side && Object.keys(side).length)) return ''
+    let out = lines(main)
+    if (side && Object.keys(side).length) out += '\nSideboard\n' + lines(side)
+    return out
   } catch (err) {
     console.log(err)
     return ''
   }
 }
 
-function deck2Text(event) {
-  const file = event.target.files[0]
+// Watch the q-file v-model directly (more reliable than the native @change event).
+watch(fileModel, (file) => {
+  if (!file) return
   const reader = new FileReader()
-  if (file.type == 'application/json') {
-    reader.onload = e => text.value = tts2Text(e.target.result)
-  } else {
-    reader.onload = e => text.value = e.target.result
+  const isJson = /\.json$/i.test(file.name) || file.type === 'application/json'
+  reader.onload = e => {
+    const raw = e.target.result
+    text.value = isJson ? (tts2Text(raw) || raw) : raw
   }
   reader.readAsText(file)
-}
+})
 
 const showInputComponents = computed(() => !!text.value)
 
@@ -178,7 +211,7 @@ function finalizeFromText() {
   <q-dialog ref="dialogRef" @hide="onDialogHide">
     <q-card class="q-dialog-plugin loader-card">
       <q-card-section class="loader-scroll">
-        <q-file filled v-model="fileModel" @change="deck2Text($event)" label="Upload deck">
+        <q-file filled v-model="fileModel" label="Upload deck">
           <q-tooltip>Loads a text or TTS.json deck into the text area below</q-tooltip>
         </q-file>
 

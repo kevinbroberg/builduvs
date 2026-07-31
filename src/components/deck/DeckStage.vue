@@ -8,7 +8,11 @@ defineProps({
   emptyText: { type: String, default: 'No face character set' },
   // Narrows the body column so list-view color rows don't stretch full width.
   listView: { type: Boolean, default: false },
+  // Show an overlay button to clear the face (edit contexts only).
+  clearable: { type: Boolean, default: false },
 })
+
+defineEmits(['clear-face'])
 </script>
 
 <template>
@@ -28,7 +32,21 @@ defineProps({
           :src="getCardImage(faceAsset)"
           :alt="faceName"
         />
-        <div v-if="faceName" class="face-name">{{ faceName }}</div>
+        <div v-if="faceName || clearable" class="face-name-row">
+          <div v-if="faceName" class="face-name">{{ faceName }}</div>
+          <q-btn
+            v-if="clearable"
+            class="face-clear"
+            round
+            dense
+            color="negative"
+            icon="close"
+            size="sm"
+            @click="$emit('clear-face')"
+          >
+            <q-tooltip>Clear face character</q-tooltip>
+          </q-btn>
+        </div>
       </template>
       <div v-else class="face-empty">
         <slot name="face-empty">
@@ -87,6 +105,12 @@ defineProps({
   max-width: 300px;
   border-radius: 12px;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.7);
+}
+.face-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 .face-name {
   color: #fff;
