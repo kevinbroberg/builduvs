@@ -351,7 +351,7 @@
       "standard"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "text": "Form: Clear 1 card from your card pool.\n\nResponse [Discard Pile] Remove: After you clear 1 or more cards from your card pool, add 1 of them to your momentum. Only playable if you have a Heat token in your stage.",
     "difficulty": 2,
@@ -374,7 +374,7 @@
       "standard"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "keywords": [
       "Punch"
@@ -403,7 +403,7 @@
       "standard"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "keywords": [
       "Kick"
@@ -432,7 +432,7 @@
       "standard"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "text": "Response [Tenacious] Flip: After 1 or more of your foundations are commited due to a rival effect, add 1 of them to your hand.",
     "difficulty": 1,
@@ -455,7 +455,7 @@
       "standard"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "text": "While you have a Heat token in your stage, this card gets -1 difficulty.\n\nEnhance Remove: Name a keyword. Draw 1 card for each card in your card pool with the named keyword.",
     "difficulty": 3,
@@ -478,7 +478,7 @@
       "standard"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "text": "When you play or check this card, you may add it to the bottom of the arena deck.\n\nWhen a player's attack deals damage, if their attacks have dealt 8 or more damage this turn while this arena was active, add the bottom card of their deck to their hand and add this card to the bottom of the arena deck.",
     "difficulty": 3,
@@ -501,7 +501,7 @@
       "standard"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "keywords": [
       "Armor",
@@ -528,7 +528,7 @@
       "standard"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "keywords": [
       "Kick",
@@ -558,7 +558,7 @@
       "standard"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "keywords": [
       "Charge",
@@ -588,7 +588,7 @@
       "standard"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "text": "Enhance Commit: Increase the rating of the next keyword you play during this attack by 1.",
     "difficulty": 3,
@@ -611,7 +611,7 @@
       "standard"
     ],
     "resources": [
-      "chaos"
+      "chaos-attuned"
     ],
     "text": "Form: Add 1 card from the top of your deck to your momentum.\n\nForm [Card Pool]: Try to play 1 card from your momentum face up.",
     "difficulty": 4,
@@ -634,7 +634,7 @@
       "standard"
     ],
     "resources": [
-      "chaos"
+      "chaos-attuned"
     ],
     "keywords": [
       "Slam"
@@ -663,7 +663,7 @@
       "standard"
     ],
     "resources": [
-      "chaos"
+      "chaos-attuned"
     ],
     "keywords": [
       "Punch"
@@ -692,7 +692,7 @@
       "standard"
     ],
     "resources": [
-      "chaos"
+      "chaos-attuned"
     ],
     "text": "Response [Tenacious] Sacrifice: After you check an attack card, that check gets +1.",
     "difficulty": 2,
@@ -715,7 +715,7 @@
       "standard"
     ],
     "resources": [
-      "death"
+      "death-attuned"
     ],
     "text": "Enhance Remove: Build 2 cards from your discard pile face down. Sacrifice them at the end of this Combat Phase.",
     "difficulty": 2,
@@ -738,7 +738,7 @@
       "standard"
     ],
     "resources": [
-      "death"
+      "death-attuned"
     ],
     "keywords": [
       "Slam"
@@ -767,7 +767,7 @@
       "standard"
     ],
     "resources": [
-      "death"
+      "death-attuned"
     ],
     "keywords": [
       "Kick",
@@ -797,7 +797,7 @@
       "standard"
     ],
     "resources": [
-      "death"
+      "death-attuned"
     ],
     "text": "Enhance Commit Sacrifice 1 foundation: This attack gets -3 speed.",
     "difficulty": 1,
@@ -820,7 +820,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "text": "Enhance: Flip 1 rival asset or foundation. This attack gets +X or -X damage. X equals the number of face down foundations in your rival's stage plus 1.",
     "difficulty": 3,
@@ -843,7 +843,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "text": "Powerful: 3 - Punch\n\nResponse: After this attack is blocked, flip 1 rival foundation.",
     "difficulty": 5,
@@ -869,7 +869,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Punch"
@@ -898,7 +898,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "text": "Enhance Flip: This attack gets -2 damage. If it is a Throw, it gets -4 damage instead.",
     "difficulty": 2,
@@ -921,7 +921,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "First Form Remove: Remove all face up foundations in play with difficulty 1 or less. Draw X cards. X equals the number of your foundations removed this way.",
     "difficulty": 5,
@@ -944,7 +944,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "When you play or check this card, you may add it to the bottom of the arena deck.\n\nWhen a player's attack deals damage, if their attacks have dealt 7 or more damage this turn while this arena was active, each of their rivals loses 3 health. Add this card to its owner's discard pile.",
     "difficulty": 3,
@@ -967,7 +967,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Kick"
@@ -996,7 +996,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Kick",
@@ -1026,7 +1026,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "At the start of your Combat Phase, this backup gains 1 stamina.\n\nIf you would lose health due to a rival effect, you may have this backup lose 1 stamina. If you do, you lose that much health minus 1.",
     "difficulty": 1,
@@ -1049,7 +1049,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Enhance Commit: This attack gets -2 speed. If you have lost health this turn, it gets -3 speed instead.",
     "difficulty": 1,
@@ -1072,7 +1072,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "Enhance: Remove the top 3 cards of your deck. You may try to play those cards this turn. If you have a Heat token in your stage, remove this card.",
     "difficulty": 4,
@@ -1095,7 +1095,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Punch"
@@ -1124,7 +1124,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Kick",
@@ -1154,7 +1154,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "Enhance Sacrifice: This attack gets +3 damage.",
     "difficulty": 1,
@@ -1177,7 +1177,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "Response: After your rival plays an ability that commits, destroys, flips, removes, or seals a card in your stage, cancel it.\n\nResponse [Card Pool]: Before you take damage from an attack, reduce the damage you would take by 2. Remove this card when it leaves your card pool.",
     "difficulty": 3,
@@ -1200,7 +1200,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "When you play or check this card, you may add it to the bottom of the arena deck.\n\nWhen a player's attack deals damage, if their attacks have dealt 8 or more damage this turn while this arena was active, build the top card of their deck face down. Add this card to its owner's discard pile.",
     "difficulty": 3,
@@ -1223,7 +1223,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "Enhance Commit: Choose 1 card in your card pool. You may try to block this attack with it.",
     "difficulty": 3,
@@ -1246,7 +1246,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "EX: 2 - Kick\n\nBlitz: Your checks to play  attacks cannot be modified by rival effects this turn.",
     "difficulty": 5,
@@ -1272,7 +1272,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Kick"
@@ -1301,7 +1301,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "This card ignores progressive difficulty.",
     "difficulty": 5,
@@ -1324,7 +1324,7 @@
       "standard"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "text": "Form: Build 1 backup from your discard pile. Gain X health. X equals the number of backups in your stage.",
     "difficulty": 5,
@@ -1347,7 +1347,7 @@
       "standard"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "text": "When you play or check this card, you may add it to the bottom of the arena deck.\n\nWhen a player's attack deals damage, if their attacks have dealt 6 or more damage this turn while this arena was active, add 1 backup from your discard pile to your hand. Add this card to its owner's discard pile.",
     "difficulty": 3,
@@ -1370,7 +1370,7 @@
       "standard"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "text": "Throw\n\nBlitz: You may change this card's block zone. This attack gets +1 damage for each different block zone on cards in your card pool.",
     "difficulty": 4,
@@ -1396,7 +1396,7 @@
       "standard"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "text": "Enhance Sacrifice: Each player gains 3 health.",
     "difficulty": 1,
@@ -1419,7 +1419,7 @@
       "standard"
     ],
     "resources": [
-      "order"
+      "order-attuned"
     ],
     "text": "Enhance Remove: Return this attack to its printed zone, speed, and damage.",
     "difficulty": 2,
@@ -1442,7 +1442,7 @@
       "standard"
     ],
     "resources": [
-      "order"
+      "order-attuned"
     ],
     "text": "When you play or check this card, you may add it to the bottom of the arena deck.\n\nWhen a player's attack deals damage, if their attacks have dealt 6 or more damage this turn while this arena was active, add 1 asset from your discard pile to your hand. Add this card to its owner's discard pile.",
     "difficulty": 3,
@@ -1465,7 +1465,7 @@
       "standard"
     ],
     "resources": [
-      "order"
+      "order-attuned"
     ],
     "keywords": [
       "Kick"
@@ -1494,7 +1494,7 @@
       "standard"
     ],
     "resources": [
-      "order"
+      "order-attuned"
     ],
     "text": "Powerful: 2 - Punch\n\nResponse: After your rival blocks this attack, freeze 1 rival foundation committed during this attack.",
     "difficulty": 4,
@@ -1520,7 +1520,7 @@
       "standard"
     ],
     "resources": [
-      "order"
+      "order-attuned"
     ],
     "text": "Response [Tenacious] Flip: After this card is committed due to a rival effect, your rival commits 1 foundation.",
     "difficulty": 1,
@@ -1543,7 +1543,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Enhance [Hand] Discard: Seal 1 foundation in your rival's stage.\n\nResponse [Discard Pile] Remove: After your rival plays an ability that adds 1 or more tokens to their momentum or stage, cancel that ability.",
     "difficulty": 2,
@@ -1566,7 +1566,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "When you play or check this card, you may add it to the bottom of the arena deck.\n\nWhen a player's attack deals damage, if their attacks have dealt 5 or more damage this turn while this arena was active, seal 1 non-character card in their rival's stage. Add this card to its owner's discard pile.",
     "difficulty": 3,
@@ -1589,7 +1589,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Kick"
@@ -1618,7 +1618,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Response Spend 1 momentum: After you play this card, remove 1 card from your rival's discard pile.\n\nBlitz: If there are 3 or more cards in your rival's removed pile, this attack gets +1 speed and +2 damage.",
     "difficulty": 4,
@@ -1644,7 +1644,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Response: After this card is removed, you may try to play it as a form from your removed pile this turn.",
     "difficulty": 1,
@@ -1667,7 +1667,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "Enhance Remove: Freeze and ready up to 2 foundations in play. If you have a Heat token in your stage, freeze and ready up to 3 foundations instead.",
     "difficulty": 0,
@@ -1690,7 +1690,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "EX: 2 - Punch\n\n[Card Pool] Your Punch attacks get +1 speed.",
     "difficulty": 4,
@@ -1716,7 +1716,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Kick"
@@ -1745,7 +1745,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "Enhance Commit: This attack gets +1 speed and +1 damage.",
     "difficulty": 1,
