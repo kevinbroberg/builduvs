@@ -9,6 +9,7 @@ export const LC_FORMATS = [
   { key: 'april',    label: 'April B&E' },
   { key: 'titan',    label: 'May B&E' },
   { key: 'mhafinal', label: 'Round 3' },
+  { key: 'tekken8',  label: 'Tekken 8' },
 ]
 
 const labelByKey = new Map(LC_FORMATS.map(f => [f.key, f.label]))
@@ -19,7 +20,7 @@ export const cityOf = location => (location || '').split(',')[0].trim()
 
 // Friendly event name:
 //   Regionals (round 0): "<City> Regional"
-//   LCs (round 1–3):     "<Format> <City> Championship"
+//   LCs (round 1–4):     "<Format> <City> Championship"
 export function eventName(ev) {
   const city = cityOf(ev.location)
   if (ev.round === 0) return `${city} Regional`
