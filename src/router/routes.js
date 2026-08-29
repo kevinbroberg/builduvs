@@ -57,6 +57,21 @@ const routes = [
         component: () => import("src/pages/LocalsPage.vue"),
         meta: { title: "Decklists" },
       },
+      {
+        path: "/majors",
+        component: () => import("src/pages/MajorsPage.vue"),
+        meta: { title: "Majors" },
+      },
+      {
+        path: "/majors/:event",
+        component: () => import("src/pages/MajorsPage.vue"),
+        meta: { title: "Majors" },
+      },
+      {
+        path: "/majors/:event/:id",
+        component: () => import("src/pages/MajorsPage.vue"),
+        meta: { title: "Majors" },
+      },
       // Unknown URLs (typos, stale links) fall back to the home tracker
       // instead of rendering an empty layout.
       { path: "/:catchAll(.*)*", redirect: "/" },

@@ -17800,8 +17800,8 @@
   {
     "name": "Marley's Warriors",
     "resources": [
-      "death",
-      "chaos"
+      "death-attuned",
+      "chaos-attuned"
     ],
     "formats": [
       "legacy",
@@ -17834,8 +17834,8 @@
       "Weapon"
     ],
     "resources": [
-      "air",
-      "order"
+      "air-attuned",
+      "order-attuned"
     ],
     "formats": [
       "legacy",

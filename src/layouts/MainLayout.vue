@@ -69,6 +69,10 @@ function toggleRightDrawer() {
           <q-item-section avatar><q-icon name="emoji_events" /></q-item-section>
           <q-item-section>Decklists</q-item-section>
         </q-item>
+        <q-item clickable v-ripple to="/majors" :class="{ 'menu-active': isActive('/majors') }">
+          <q-item-section avatar><q-icon name="military_tech" /></q-item-section>
+          <q-item-section>Majors</q-item-section>
+        </q-item>
         <q-item clickable v-ripple to="/deck" :class="{ 'menu-active': isActive('/deck') }">
           <q-item-section avatar><q-icon name="style" /></q-item-section>
           <q-item-section>Your Deck</q-item-section>

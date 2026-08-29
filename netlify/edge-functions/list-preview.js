@@ -10,7 +10,7 @@
 
 import manifest, { SITE_BASE } from './lib/preview-data.js'
 
-export const config = { path: '/lists/*' }
+export const config = { path: ['/lists/*', '/majors/*'] }
 
 function esc(s) {
   return String(s)
@@ -20,16 +20,24 @@ function esc(s) {
     .replace(/"/g, '&quot;')
 }
 
-// Map a /lists pathname to its preview entry, or null when there's nothing richer
-// than the site default to show.
+// Map a /lists or /majors pathname to its preview entry, or null when there's
+// nothing richer than the site default to show. The two sections have the same
+// URL shape (index / :event / :event/:id) but separate manifest namespaces.
 function lookup(pathname) {
   const parts = pathname.replace(/^\/+|\/+$/g, '').split('/')
-  if (parts[0] !== 'lists') return null
-  if (parts.length === 1) return manifest.index
+
+  const section = parts[0] === 'lists'
+    ? manifest
+    : parts[0] === 'majors'
+      ? manifest.majors
+      : null
+  if (!section) return null
+
+  if (parts.length === 1) return section.index || null
   const event = decodeURIComponent(parts[1])
-  if (parts.length === 2) return manifest.events[event] || null
+  if (parts.length === 2) return section.events?.[event] || null
   const standing = decodeURIComponent(parts[2])
-  return manifest.players[`${event}/${standing}`] || null
+  return section.players?.[`${event}/${standing}`] || null
 }
 
 function buildTags(meta, canonicalUrl) {
