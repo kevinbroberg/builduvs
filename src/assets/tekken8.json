@@ -13,8 +13,8 @@
     ],
     "resources": [],
     "text": "Unique\n\nAt the start of your End Phase, sacrifice this token.\n\nResponse: After your attack deals no damage, your rival loses 1 health. This effect cannot reduce your rival's health below 1.",
-    "asset": "tk802/000-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/000-preview.jpg"
+    "asset": "tk802/000.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/000.jpg"
   },
   {
     "extension_short": "tk802",
@@ -36,8 +36,8 @@
     "text": "Enhance Commit: If you have fewer cards in hand than your hand size, draw 1 card.\n\nResponse [Tenacious]: After you build 1 or more cards during the Combat Phase, ready this character.",
     "hand_size": 6,
     "vitality": 32,
-    "asset": "tk802/001-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/001-preview.jpg"
+    "asset": "tk802/001.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/001.jpg"
   },
   {
     "extension_short": "tk802",
@@ -59,8 +59,8 @@
     "text": "At the end of your rival's Combat Phase, add 1 Reversal counter to this card for each card in your card pool.\n\nAt the end of your turn, remove all Reversal counters from this card.\n\nEnhance: Your attack gets +1 speed and +1 damage for each Reversal counter on this card.",
     "hand_size": 6,
     "vitality": 30,
-    "asset": "tk802/002-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/002-preview.jpg"
+    "asset": "tk802/002.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/002.jpg"
   },
   {
     "extension_short": "tk802",
@@ -82,8 +82,8 @@
     "text": "Enhance [Tenacious]: Your attack gets +1 damage for each attack in your card pool. If it's completely blocked, draw 1 card.\n\nForm Commit: Choose 1 card in your card pool. It does not count toward progressive difficulty this turn.",
     "hand_size": 6,
     "vitality": 30,
-    "asset": "tk802/003-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/003-preview.jpg"
+    "asset": "tk802/003.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/003.jpg"
   },
   {
     "extension_short": "tk802",
@@ -105,8 +105,8 @@
     "text": "Your non-Throw attacks gain Powerful: 4.\n\nFirst Form: Add the top card of your deck to your momentum.\n\nResponse [Once per turn]: After an attack resolves, if its damage was 10 or greater, add the top card of your deck to your momentum.",
     "hand_size": 5,
     "vitality": 32,
-    "asset": "tk802/004-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/004-preview.jpg"
+    "asset": "tk802/004.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/004.jpg"
   },
   {
     "extension_short": "tk802",
@@ -128,8 +128,8 @@
     "text": "Enhance Commit: Clear 1 Kick card from your card pool.\n\nEnhance [Tenacious] Mill 2: This attack gets +2 speed.\n\nEnhance [Once per turn, Tenacious]: Ready this card. Only playable if you have cycled this game.",
     "hand_size": 7,
     "vitality": 22,
-    "asset": "tk802/005-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/005-preview.jpg"
+    "asset": "tk802/005.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/005.jpg"
   },
   {
     "extension_short": "tk802",
@@ -151,8 +151,8 @@
     "text": "When committing cards to pass a check, each of your face down foundations counts as 2 foundations.\n\nYour face down foundations cannot be frozen or destroyed by rival effects.\n\nResponse Commit: After an attack is played, each player flips 1 foundation.",
     "hand_size": 5,
     "vitality": 36,
-    "asset": "tk802/006-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/006-preview.jpg"
+    "asset": "tk802/006.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/006.jpg"
   },
   {
     "extension_short": "tk802",
@@ -174,8 +174,8 @@
     "text": "Response [Once per turn, Tenacious]: After you remove 1 or more cards, if you have removed 4 or more cards this turn, add 1 Devil Gene counter to this card if it has none.\n\nForm Remove 1 Devil Gene counter from this card: Try to play 1 card from your removed pile.\n\nEnhance Remove 1 card from your stage: This attack gets +3 damage.",
     "hand_size": 6,
     "vitality": 31,
-    "asset": "tk802/007-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/007-preview.jpg"
+    "asset": "tk802/007.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/007.jpg"
   },
   {
     "extension_short": "tk802",
@@ -197,8 +197,8 @@
     "text": "Each Throw attack you try to play ignores progressive difficulty if the preceding card in your card pool is a Throw attack with a different name.\n\nResponse: After you play a Throw attack, gain 2 health. Then if you are at maximum health, that attack gets +2 speed.",
     "hand_size": 5,
     "vitality": 30,
-    "asset": "tk802/008-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/008-preview.jpg"
+    "asset": "tk802/008.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/008.jpg"
   },
   {
     "extension_short": "tk802",
@@ -220,8 +220,8 @@
     "text": "Enhance: If your attack deals damage, build the next non-Unique foundation you play this turn.\n\nResponse: After you build 1 or more cards during the Combat Phase, your next attack gets +1 speed and +2 damage.",
     "hand_size": 6,
     "vitality": 32,
-    "asset": "tk802/009-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/009-preview.jpg"
+    "asset": "tk802/009.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/009.jpg"
   },
   {
     "extension_short": "tk802",
@@ -243,8 +243,8 @@
     "text": "Form [Once per turn]: Try to play 1 attack with printed damage 3 or less from your discard pile. When that card leaves your card pool, remove it.\n\nResponse: After your attack with printed damage 3 or less deals damage, clear it from your card pool.",
     "hand_size": 6,
     "vitality": 30,
-    "asset": "tk802/010-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/010-preview.jpg"
+    "asset": "tk802/010.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/010.jpg"
   },
   {
     "extension_short": "tk802",
@@ -266,8 +266,8 @@
     "text": "The first time you would lose the game due to your health being reduced below 1, instead your health becomes 5 and add 1 Devil Gene counter to this card.\n\nEnhance: This attack gets +3 or -3 speed. If there are no Devil Gene counters on this card, lose 2 health.\n\nResponse: After your attack deals damage, gain 2 health if there is a Devil Gene counter on this card.",
     "hand_size": 7,
     "vitality": 21,
-    "asset": "tk802/011-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/011-preview.jpg"
+    "asset": "tk802/011.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/011.jpg"
   },
   {
     "extension_short": "tk802",
@@ -289,8 +289,8 @@
     "text": "Enhance: Your attack gets +2 damage. If it is not blocked, unflip 1 card in your stage that has not been unflipped this turn.\n\nResponse Commit: After you play a block, build the top card of your deck face down.",
     "hand_size": 6,
     "vitality": 32,
-    "asset": "tk802/012-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/012-preview.jpg"
+    "asset": "tk802/012.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/012.jpg"
   },
   {
     "extension_short": "tk802",
@@ -312,8 +312,8 @@
     "text": "Your checks to play asset cards get +1.\n\nResponse [Twice per turn]: After you commit 1 or more Weapon assets, your rival commits 1 foundation.",
     "hand_size": 6,
     "vitality": 31,
-    "asset": "tk802/013-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/013-preview.jpg"
+    "asset": "tk802/013.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/013.jpg"
   },
   {
     "extension_short": "tk802",
@@ -335,8 +335,8 @@
     "text": "First Form: Discard 1 card. Search your deck for 1 asset with difficulty equal to or less than the discarded card's difficulty, reveal it, and add it to your hand.\n\nResponse [Once per turn]: After you play an ability on an asset, this character gains that ability this turn.",
     "hand_size": 6,
     "vitality": 33,
-    "asset": "tk802/014-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/014-preview.jpg"
+    "asset": "tk802/014.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/014.jpg"
   },
   {
     "extension_short": "tk802",
@@ -358,8 +358,8 @@
     "control": 4,
     "block_modifier": 3,
     "block_zone": "high",
-    "asset": "tk802/015-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/015-preview.jpg"
+    "asset": "tk802/015.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/015.jpg"
   },
   {
     "extension_short": "tk802",
@@ -387,8 +387,8 @@
     "speed": 3,
     "attack_zone": "high",
     "damage": 3,
-    "asset": "tk802/016-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/016-preview.jpg"
+    "asset": "tk802/016.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/016.jpg"
   },
   {
     "extension_short": "tk802",
@@ -416,8 +416,8 @@
     "speed": 4,
     "attack_zone": "low",
     "damage": 3,
-    "asset": "tk802/017-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/017-preview.jpg"
+    "asset": "tk802/017.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/017.jpg"
   },
   {
     "extension_short": "tk802",
@@ -439,8 +439,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/018-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/018-preview.jpg"
+    "asset": "tk802/018.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/018.jpg"
   },
   {
     "extension_short": "tk802",
@@ -462,8 +462,8 @@
     "control": 5,
     "block_modifier": 1,
     "block_zone": "low",
-    "asset": "tk802/019-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/019-preview.jpg"
+    "asset": "tk802/019.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/019.jpg"
   },
   {
     "extension_short": "tk802",
@@ -485,8 +485,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "low",
-    "asset": "tk802/020-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/020-preview.jpg"
+    "asset": "tk802/020.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/020.jpg"
   },
   {
     "extension_short": "tk802",
@@ -512,8 +512,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "mid",
-    "asset": "tk802/021-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/021-preview.jpg"
+    "asset": "tk802/021.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/021.jpg"
   },
   {
     "extension_short": "tk802",
@@ -542,8 +542,8 @@
     "speed": 4,
     "attack_zone": "high",
     "damage": 4,
-    "asset": "tk802/022-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/022-preview.jpg"
+    "asset": "tk802/022.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/022.jpg"
   },
   {
     "extension_short": "tk802",
@@ -572,8 +572,8 @@
     "speed": 0,
     "attack_zone": "mid",
     "damage": 5,
-    "asset": "tk802/023-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/023-preview.jpg"
+    "asset": "tk802/023.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/023.jpg"
   },
   {
     "extension_short": "tk802",
@@ -595,8 +595,8 @@
     "control": 6,
     "block_modifier": 2,
     "block_zone": "low",
-    "asset": "tk802/024-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/024-preview.jpg"
+    "asset": "tk802/024.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/024.jpg"
   },
   {
     "extension_short": "tk802",
@@ -618,8 +618,8 @@
     "control": 4,
     "block_modifier": 4,
     "block_zone": "high",
-    "asset": "tk802/025-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/025-preview.jpg"
+    "asset": "tk802/025.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/025.jpg"
   },
   {
     "extension_short": "tk802",
@@ -647,8 +647,8 @@
     "speed": 3,
     "attack_zone": "high",
     "damage": 3,
-    "asset": "tk802/026-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/026-preview.jpg"
+    "asset": "tk802/026.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/026.jpg"
   },
   {
     "extension_short": "tk802",
@@ -676,8 +676,8 @@
     "speed": 3,
     "attack_zone": "mid",
     "damage": 4,
-    "asset": "tk802/027-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/027-preview.jpg"
+    "asset": "tk802/027.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/027.jpg"
   },
   {
     "extension_short": "tk802",
@@ -699,8 +699,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/028-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/028-preview.jpg"
+    "asset": "tk802/028.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/028.jpg"
   },
   {
     "extension_short": "tk802",
@@ -722,8 +722,8 @@
     "control": 5,
     "block_modifier": 1,
     "block_zone": "mid",
-    "asset": "tk802/029-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/029-preview.jpg"
+    "asset": "tk802/029.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/029.jpg"
   },
   {
     "extension_short": "tk802",
@@ -751,8 +751,8 @@
     "speed": 5,
     "attack_zone": "low",
     "damage": 6,
-    "asset": "tk802/030-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/030-preview.jpg"
+    "asset": "tk802/030.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/030.jpg"
   },
   {
     "extension_short": "tk802",
@@ -781,8 +781,8 @@
     "speed": 3,
     "attack_zone": "low",
     "damage": 3,
-    "asset": "tk802/031-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/031-preview.jpg"
+    "asset": "tk802/031.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/031.jpg"
   },
   {
     "extension_short": "tk802",
@@ -804,8 +804,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/032-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/032-preview.jpg"
+    "asset": "tk802/032.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/032.jpg"
   },
   {
     "extension_short": "tk802",
@@ -827,8 +827,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/033-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/033-preview.jpg"
+    "asset": "tk802/033.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/033.jpg"
   },
   {
     "extension_short": "tk802",
@@ -853,8 +853,8 @@
     "speed": 5,
     "attack_zone": "mid",
     "damage": 5,
-    "asset": "tk802/034-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/034-preview.jpg"
+    "asset": "tk802/034.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/034.jpg"
   },
   {
     "extension_short": "tk802",
@@ -882,8 +882,8 @@
     "speed": 5,
     "attack_zone": "mid",
     "damage": 3,
-    "asset": "tk802/035-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/035-preview.jpg"
+    "asset": "tk802/035.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/035.jpg"
   },
   {
     "extension_short": "tk802",
@@ -905,8 +905,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "mid",
-    "asset": "tk802/036-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/036-preview.jpg"
+    "asset": "tk802/036.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/036.jpg"
   },
   {
     "extension_short": "tk802",
@@ -928,8 +928,8 @@
     "control": 3,
     "block_modifier": 2,
     "block_zone": "low",
-    "asset": "tk802/037-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/037-preview.jpg"
+    "asset": "tk802/037.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/037.jpg"
   },
   {
     "extension_short": "tk802",
@@ -951,8 +951,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/038-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/038-preview.jpg"
+    "asset": "tk802/038.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/038.jpg"
   },
   {
     "extension_short": "tk802",
@@ -980,8 +980,8 @@
     "speed": 5,
     "attack_zone": "mid",
     "damage": 5,
-    "asset": "tk802/039-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/039-preview.jpg"
+    "asset": "tk802/039.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/039.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1010,8 +1010,8 @@
     "speed": 5,
     "attack_zone": "low",
     "damage": 3,
-    "asset": "tk802/040-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/040-preview.jpg"
+    "asset": "tk802/040.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/040.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1033,8 +1033,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/041-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/041-preview.jpg"
+    "asset": "tk802/041.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/041.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1056,8 +1056,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "mid",
-    "asset": "tk802/042-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/042-preview.jpg"
+    "asset": "tk802/042.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/042.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1079,8 +1079,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "high",
-    "asset": "tk802/043-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/043-preview.jpg"
+    "asset": "tk802/043.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/043.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1108,8 +1108,8 @@
     "speed": 3,
     "attack_zone": "mid",
     "damage": 5,
-    "asset": "tk802/044-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/044-preview.jpg"
+    "asset": "tk802/044.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/044.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1138,8 +1138,8 @@
     "speed": 6,
     "attack_zone": "mid",
     "damage": 4,
-    "asset": "tk802/045-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/045-preview.jpg"
+    "asset": "tk802/045.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/045.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1161,8 +1161,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "mid",
-    "asset": "tk802/046-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/046-preview.jpg"
+    "asset": "tk802/046.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/046.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1184,8 +1184,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/047-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/047-preview.jpg"
+    "asset": "tk802/047.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/047.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1207,8 +1207,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/048-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/048-preview.jpg"
+    "asset": "tk802/048.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/048.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1230,8 +1230,8 @@
     "control": 5,
     "block_modifier": 1,
     "block_zone": "mid",
-    "asset": "tk802/049-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/049-preview.jpg"
+    "asset": "tk802/049.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/049.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1256,8 +1256,8 @@
     "speed": 4,
     "attack_zone": "low",
     "damage": 6,
-    "asset": "tk802/050-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/050-preview.jpg"
+    "asset": "tk802/050.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/050.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1285,8 +1285,8 @@
     "speed": 4,
     "attack_zone": "low",
     "damage": 5,
-    "asset": "tk802/051-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/051-preview.jpg"
+    "asset": "tk802/051.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/051.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1308,8 +1308,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/052-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/052-preview.jpg"
+    "asset": "tk802/052.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/052.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1331,8 +1331,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "low",
-    "asset": "tk802/053-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/053-preview.jpg"
+    "asset": "tk802/053.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/053.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1354,8 +1354,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/054-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/054-preview.jpg"
+    "asset": "tk802/054.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/054.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1380,8 +1380,8 @@
     "speed": 3,
     "attack_zone": "mid",
     "damage": 3,
-    "asset": "tk802/055-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/055-preview.jpg"
+    "asset": "tk802/055.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/055.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1403,8 +1403,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/056-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/056-preview.jpg"
+    "asset": "tk802/056.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/056.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1426,8 +1426,8 @@
     "control": 6,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/057-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/057-preview.jpg"
+    "asset": "tk802/057.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/057.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1449,8 +1449,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/058-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/058-preview.jpg"
+    "asset": "tk802/058.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/058.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1478,8 +1478,8 @@
     "speed": 4,
     "attack_zone": "low",
     "damage": 4,
-    "asset": "tk802/059-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/059-preview.jpg"
+    "asset": "tk802/059.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/059.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1504,8 +1504,8 @@
     "speed": 4,
     "attack_zone": "low",
     "damage": 4,
-    "asset": "tk802/060-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/060-preview.jpg"
+    "asset": "tk802/060.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/060.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1527,8 +1527,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/061-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/061-preview.jpg"
+    "asset": "tk802/061.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/061.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1550,8 +1550,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/062-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/062-preview.jpg"
+    "asset": "tk802/062.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/062.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1573,8 +1573,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/063-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/063-preview.jpg"
+    "asset": "tk802/063.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/063.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1602,8 +1602,8 @@
     "speed": 3,
     "attack_zone": "low",
     "damage": 3,
-    "asset": "tk802/064-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/064-preview.jpg"
+    "asset": "tk802/064.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/064.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1628,8 +1628,8 @@
     "speed": 4,
     "attack_zone": "mid",
     "damage": 4,
-    "asset": "tk802/065-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/065-preview.jpg"
+    "asset": "tk802/065.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/065.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1651,8 +1651,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "high",
-    "asset": "tk802/066-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/066-preview.jpg"
+    "asset": "tk802/066.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/066.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1674,8 +1674,8 @@
     "control": 4,
     "block_modifier": 3,
     "block_zone": "high",
-    "asset": "tk802/067-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/067-preview.jpg"
+    "asset": "tk802/067.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/067.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1700,8 +1700,8 @@
     "speed": 3,
     "attack_zone": "high",
     "damage": 4,
-    "asset": "tk802/068-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/068-preview.jpg"
+    "asset": "tk802/068.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/068.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1729,8 +1729,8 @@
     "speed": 4,
     "attack_zone": "high",
     "damage": 7,
-    "asset": "tk802/069-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/069-preview.jpg"
+    "asset": "tk802/069.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/069.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1752,8 +1752,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "low",
-    "asset": "tk802/070-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/070-preview.jpg"
+    "asset": "tk802/070.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/070.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1775,8 +1775,8 @@
     "control": 5,
     "block_modifier": 1,
     "block_zone": "mid",
-    "asset": "tk802/071-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/071-preview.jpg"
+    "asset": "tk802/071.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/071.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1798,8 +1798,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/072-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/072-preview.jpg"
+    "asset": "tk802/072.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/072.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1824,8 +1824,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/073-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/073-preview.jpg"
+    "asset": "tk802/073.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/073.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1849,8 +1849,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/074-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/074-preview.jpg"
+    "asset": "tk802/074.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/074.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1874,8 +1874,8 @@
     "control": 6,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/075-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/075-preview.jpg"
+    "asset": "tk802/075.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/075.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1899,8 +1899,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/076-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/076-preview.jpg"
+    "asset": "tk802/076.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/076.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1927,8 +1927,8 @@
     "control": 5,
     "block_modifier": 4,
     "block_zone": "low",
-    "asset": "tk802/077-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/077-preview.jpg"
+    "asset": "tk802/077.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/077.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1952,8 +1952,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/078-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/078-preview.jpg"
+    "asset": "tk802/078.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/078.jpg"
   },
   {
     "extension_short": "tk802",
@@ -1980,8 +1980,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/079-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/079-preview.jpg"
+    "asset": "tk802/079.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/079.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2008,8 +2008,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/080-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/080-preview.jpg"
+    "asset": "tk802/080.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/080.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2033,8 +2033,8 @@
     "control": 4,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/081-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/081-preview.jpg"
+    "asset": "tk802/081.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/081.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2058,8 +2058,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "low",
-    "asset": "tk802/082-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/082-preview.jpg"
+    "asset": "tk802/082.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/082.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2090,8 +2090,8 @@
     "speed": 2,
     "attack_zone": "low",
     "damage": 4,
-    "asset": "tk802/083-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/083-preview.jpg"
+    "asset": "tk802/083.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/083.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2122,8 +2122,8 @@
     "speed": 5,
     "attack_zone": "mid",
     "damage": 5,
-    "asset": "tk802/084-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/084-preview.jpg"
+    "asset": "tk802/084.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/084.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2153,8 +2153,8 @@
     "speed": 3,
     "attack_zone": "mid",
     "damage": 7,
-    "asset": "tk802/085-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/085-preview.jpg"
+    "asset": "tk802/085.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/085.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2184,8 +2184,8 @@
     "speed": 5,
     "attack_zone": "high",
     "damage": 3,
-    "asset": "tk802/086-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/086-preview.jpg"
+    "asset": "tk802/086.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/086.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2215,8 +2215,8 @@
     "speed": 5,
     "attack_zone": "mid",
     "damage": 3,
-    "asset": "tk802/087-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/087-preview.jpg"
+    "asset": "tk802/087.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/087.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2243,8 +2243,8 @@
     "speed": 2,
     "attack_zone": "high",
     "damage": 5,
-    "asset": "tk802/088-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/088-preview.jpg"
+    "asset": "tk802/088.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/088.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2271,8 +2271,8 @@
     "speed": 5,
     "attack_zone": "mid",
     "damage": 2,
-    "asset": "tk802/089-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/089-preview.jpg"
+    "asset": "tk802/089.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/089.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2303,8 +2303,8 @@
     "speed": 5,
     "attack_zone": "high",
     "damage": 5,
-    "asset": "tk802/090-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/090-preview.jpg"
+    "asset": "tk802/090.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/090.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2331,8 +2331,8 @@
     "speed": 2,
     "attack_zone": "low",
     "damage": 4,
-    "asset": "tk802/091-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/091-preview.jpg"
+    "asset": "tk802/091.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/091.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2363,8 +2363,8 @@
     "speed": 4,
     "attack_zone": "low",
     "damage": 5,
-    "asset": "tk802/092-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/092-preview.jpg"
+    "asset": "tk802/092.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/092.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2394,8 +2394,8 @@
     "speed": 4,
     "attack_zone": "mid",
     "damage": 5,
-    "asset": "tk802/093-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/093-preview.jpg"
+    "asset": "tk802/093.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/093.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2426,8 +2426,8 @@
     "speed": 5,
     "attack_zone": "mid",
     "damage": 3,
-    "asset": "tk802/094-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/094-preview.jpg"
+    "asset": "tk802/094.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/094.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2457,8 +2457,8 @@
     "speed": 4,
     "attack_zone": "high",
     "damage": 4,
-    "asset": "tk802/095-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/095-preview.jpg"
+    "asset": "tk802/095.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/095.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2485,8 +2485,8 @@
     "speed": 4,
     "attack_zone": "high",
     "damage": 5,
-    "asset": "tk802/096-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/096-preview.jpg"
+    "asset": "tk802/096.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/096.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2516,8 +2516,8 @@
     "speed": 5,
     "attack_zone": "mid",
     "damage": 5,
-    "asset": "tk802/097-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/097-preview.jpg"
+    "asset": "tk802/097.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/097.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2544,8 +2544,8 @@
     "speed": 4,
     "attack_zone": "low",
     "damage": 5,
-    "asset": "tk802/098-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/098-preview.jpg"
+    "asset": "tk802/098.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/098.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2572,8 +2572,8 @@
     "speed": 5,
     "attack_zone": "mid",
     "damage": 5,
-    "asset": "tk802/099-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/099-preview.jpg"
+    "asset": "tk802/099.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/099.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2603,8 +2603,8 @@
     "speed": 5,
     "attack_zone": "high",
     "damage": 3,
-    "asset": "tk802/100-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/100-preview.jpg"
+    "asset": "tk802/100.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/100.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2634,8 +2634,8 @@
     "speed": 5,
     "attack_zone": "mid",
     "damage": 5,
-    "asset": "tk802/101-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/101-preview.jpg"
+    "asset": "tk802/101.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/101.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2665,8 +2665,8 @@
     "speed": 4,
     "attack_zone": "high",
     "damage": 6,
-    "asset": "tk802/102-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/102-preview.jpg"
+    "asset": "tk802/102.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/102.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2696,8 +2696,8 @@
     "speed": 4,
     "attack_zone": "mid",
     "damage": 10,
-    "asset": "tk802/103-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/103-preview.jpg"
+    "asset": "tk802/103.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/103.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2724,8 +2724,8 @@
     "speed": 4,
     "attack_zone": "mid",
     "damage": 4,
-    "asset": "tk802/104-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/104-preview.jpg"
+    "asset": "tk802/104.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/104.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2752,8 +2752,8 @@
     "speed": 3,
     "attack_zone": "low",
     "damage": 5,
-    "asset": "tk802/105-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/105-preview.jpg"
+    "asset": "tk802/105.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/105.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2780,8 +2780,8 @@
     "speed": 4,
     "attack_zone": "low",
     "damage": 5,
-    "asset": "tk802/106-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/106-preview.jpg"
+    "asset": "tk802/106.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/106.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2811,8 +2811,8 @@
     "speed": 4,
     "attack_zone": "mid",
     "damage": 4,
-    "asset": "tk802/107-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/107-preview.jpg"
+    "asset": "tk802/107.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/107.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2839,8 +2839,8 @@
     "speed": 4,
     "attack_zone": "high",
     "damage": 3,
-    "asset": "tk802/108-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/108-preview.jpg"
+    "asset": "tk802/108.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/108.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2867,8 +2867,8 @@
     "speed": 3,
     "attack_zone": "mid",
     "damage": 6,
-    "asset": "tk802/109-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/109-preview.jpg"
+    "asset": "tk802/109.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/109.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2898,8 +2898,8 @@
     "speed": 5,
     "attack_zone": "mid",
     "damage": 3,
-    "asset": "tk802/110-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/110-preview.jpg"
+    "asset": "tk802/110.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/110.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2926,8 +2926,8 @@
     "speed": 5,
     "attack_zone": "mid",
     "damage": 5,
-    "asset": "tk802/111-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/111-preview.jpg"
+    "asset": "tk802/111.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/111.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2957,8 +2957,8 @@
     "speed": 2,
     "attack_zone": "high",
     "damage": 6,
-    "asset": "tk802/112-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/112-preview.jpg"
+    "asset": "tk802/112.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/112.jpg"
   },
   {
     "extension_short": "tk802",
@@ -2988,8 +2988,8 @@
     "speed": 6,
     "attack_zone": "mid",
     "damage": 3,
-    "asset": "tk802/113-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/113-preview.jpg"
+    "asset": "tk802/113.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/113.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3019,8 +3019,8 @@
     "speed": 2,
     "attack_zone": "high",
     "damage": 6,
-    "asset": "tk802/114-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/114-preview.jpg"
+    "asset": "tk802/114.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/114.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3047,8 +3047,8 @@
     "speed": 4,
     "attack_zone": "mid",
     "damage": 3,
-    "asset": "tk802/115-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/115-preview.jpg"
+    "asset": "tk802/115.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/115.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3078,8 +3078,8 @@
     "speed": 5,
     "attack_zone": "mid",
     "damage": 5,
-    "asset": "tk802/116-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/116-preview.jpg"
+    "asset": "tk802/116.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/116.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3106,8 +3106,8 @@
     "speed": 5,
     "attack_zone": "high",
     "damage": 4,
-    "asset": "tk802/117-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/117-preview.jpg"
+    "asset": "tk802/117.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/117.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3138,8 +3138,8 @@
     "speed": 5,
     "attack_zone": "mid",
     "damage": 7,
-    "asset": "tk802/118-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/118-preview.jpg"
+    "asset": "tk802/118.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/118.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3170,8 +3170,8 @@
     "speed": 5,
     "attack_zone": "mid",
     "damage": 7,
-    "asset": "tk802/119-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/119-preview.jpg"
+    "asset": "tk802/119.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/119.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3203,8 +3203,8 @@
     "speed": 4,
     "attack_zone": "mid",
     "damage": 4,
-    "asset": "tk802/120-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/120-preview.jpg"
+    "asset": "tk802/120.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/120.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3231,8 +3231,8 @@
     "speed": 3,
     "attack_zone": "high",
     "damage": 3,
-    "asset": "tk802/121-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/121-preview.jpg"
+    "asset": "tk802/121.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/121.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3263,8 +3263,8 @@
     "speed": 4,
     "attack_zone": "mid",
     "damage": 6,
-    "asset": "tk802/122-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/122-preview.jpg"
+    "asset": "tk802/122.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/122.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3295,8 +3295,8 @@
     "speed": 4,
     "attack_zone": "mid",
     "damage": 4,
-    "asset": "tk802/123-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/123-preview.jpg"
+    "asset": "tk802/123.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/123.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3327,8 +3327,8 @@
     "speed": 5,
     "attack_zone": "high",
     "damage": 3,
-    "asset": "tk802/124-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/124-preview.jpg"
+    "asset": "tk802/124.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/124.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3358,8 +3358,8 @@
     "speed": 3,
     "attack_zone": "mid",
     "damage": 5,
-    "asset": "tk802/125-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/125-preview.jpg"
+    "asset": "tk802/125.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/125.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3391,8 +3391,8 @@
     "speed": 5,
     "attack_zone": "high",
     "damage": 7,
-    "asset": "tk802/126-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/126-preview.jpg"
+    "asset": "tk802/126.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/126.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3422,8 +3422,8 @@
     "speed": 3,
     "attack_zone": "high",
     "damage": 3,
-    "asset": "tk802/127-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/127-preview.jpg"
+    "asset": "tk802/127.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/127.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3453,8 +3453,8 @@
     "speed": 4,
     "attack_zone": "low",
     "damage": 4,
-    "asset": "tk802/128-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/128-preview.jpg"
+    "asset": "tk802/128.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/128.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3484,8 +3484,8 @@
     "speed": 4,
     "attack_zone": "high",
     "damage": 4,
-    "asset": "tk802/129-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/129-preview.jpg"
+    "asset": "tk802/129.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/129.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3516,8 +3516,8 @@
     "speed": 3,
     "attack_zone": "high",
     "damage": 6,
-    "asset": "tk802/130-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/130-preview.jpg"
+    "asset": "tk802/130.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/130.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3547,8 +3547,8 @@
     "speed": 4,
     "attack_zone": "high",
     "damage": 4,
-    "asset": "tk802/131-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/131-preview.jpg"
+    "asset": "tk802/131.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/131.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3579,8 +3579,8 @@
     "speed": 6,
     "attack_zone": "mid",
     "damage": 6,
-    "asset": "tk802/132-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/132-preview.jpg"
+    "asset": "tk802/132.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/132.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3612,8 +3612,8 @@
     "speed": 6,
     "attack_zone": "mid",
     "damage": 6,
-    "asset": "tk802/133-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/133-preview.jpg"
+    "asset": "tk802/133.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/133.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3640,8 +3640,8 @@
     "speed": 4,
     "attack_zone": "mid",
     "damage": 4,
-    "asset": "tk802/134-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/134-preview.jpg"
+    "asset": "tk802/134.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/134.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3671,8 +3671,8 @@
     "speed": 2,
     "attack_zone": "mid",
     "damage": 5,
-    "asset": "tk802/135-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/135-preview.jpg"
+    "asset": "tk802/135.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/135.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3702,8 +3702,8 @@
     "speed": 3,
     "attack_zone": "mid",
     "damage": 6,
-    "asset": "tk802/136-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/136-preview.jpg"
+    "asset": "tk802/136.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/136.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3733,8 +3733,8 @@
     "speed": 4,
     "attack_zone": "mid",
     "damage": 5,
-    "asset": "tk802/137-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/137-preview.jpg"
+    "asset": "tk802/137.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/137.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3764,8 +3764,8 @@
     "speed": 5,
     "attack_zone": "high",
     "damage": 5,
-    "asset": "tk802/138-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/138-preview.jpg"
+    "asset": "tk802/138.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/138.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3789,8 +3789,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/139-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/139-preview.jpg"
+    "asset": "tk802/139.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/139.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3814,8 +3814,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "low",
-    "asset": "tk802/140-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/140-preview.jpg"
+    "asset": "tk802/140.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/140.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3839,8 +3839,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/141-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/141-preview.jpg"
+    "asset": "tk802/141.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/141.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3864,8 +3864,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/142-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/142-preview.jpg"
+    "asset": "tk802/142.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/142.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3889,8 +3889,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/143-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/143-preview.jpg"
+    "asset": "tk802/143.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/143.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3914,8 +3914,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/144-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/144-preview.jpg"
+    "asset": "tk802/144.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/144.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3939,8 +3939,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/145-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/145-preview.jpg"
+    "asset": "tk802/145.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/145.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3964,8 +3964,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/146-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/146-preview.jpg"
+    "asset": "tk802/146.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/146.jpg"
   },
   {
     "extension_short": "tk802",
@@ -3989,8 +3989,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/147-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/147-preview.jpg"
+    "asset": "tk802/147.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/147.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4014,8 +4014,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "low",
-    "asset": "tk802/148-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/148-preview.jpg"
+    "asset": "tk802/148.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/148.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4039,8 +4039,8 @@
     "control": 4,
     "block_modifier": 4,
     "block_zone": "mid",
-    "asset": "tk802/149-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/149-preview.jpg"
+    "asset": "tk802/149.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/149.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4064,8 +4064,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/150-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/150-preview.jpg"
+    "asset": "tk802/150.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/150.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4089,8 +4089,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "low",
-    "asset": "tk802/151-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/151-preview.jpg"
+    "asset": "tk802/151.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/151.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4114,8 +4114,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "low",
-    "asset": "tk802/152-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/152-preview.jpg"
+    "asset": "tk802/152.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/152.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4139,8 +4139,8 @@
     "control": 5,
     "block_modifier": 1,
     "block_zone": "mid",
-    "asset": "tk802/153-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/153-preview.jpg"
+    "asset": "tk802/153.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/153.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4164,8 +4164,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "high",
-    "asset": "tk802/154-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/154-preview.jpg"
+    "asset": "tk802/154.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/154.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4189,8 +4189,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "high",
-    "asset": "tk802/155-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/155-preview.jpg"
+    "asset": "tk802/155.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/155.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4214,8 +4214,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/156-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/156-preview.jpg"
+    "asset": "tk802/156.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/156.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4239,8 +4239,8 @@
     "control": 5,
     "block_modifier": 1,
     "block_zone": "mid",
-    "asset": "tk802/157-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/157-preview.jpg"
+    "asset": "tk802/157.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/157.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4264,8 +4264,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/158-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/158-preview.jpg"
+    "asset": "tk802/158.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/158.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4289,8 +4289,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/159-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/159-preview.jpg"
+    "asset": "tk802/159.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/159.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4314,8 +4314,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/160-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/160-preview.jpg"
+    "asset": "tk802/160.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/160.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4339,8 +4339,8 @@
     "control": 4,
     "block_modifier": 3,
     "block_zone": "high",
-    "asset": "tk802/161-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/161-preview.jpg"
+    "asset": "tk802/161.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/161.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4364,8 +4364,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "low",
-    "asset": "tk802/162-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/162-preview.jpg"
+    "asset": "tk802/162.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/162.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4389,8 +4389,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/163-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/163-preview.jpg"
+    "asset": "tk802/163.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/163.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4414,8 +4414,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/164-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/164-preview.jpg"
+    "asset": "tk802/164.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/164.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4439,8 +4439,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/165-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/165-preview.jpg"
+    "asset": "tk802/165.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/165.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4464,8 +4464,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "low",
-    "asset": "tk802/166-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/166-preview.jpg"
+    "asset": "tk802/166.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/166.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4489,8 +4489,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/167-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/167-preview.jpg"
+    "asset": "tk802/167.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/167.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4514,8 +4514,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/168-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/168-preview.jpg"
+    "asset": "tk802/168.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/168.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4539,8 +4539,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "low",
-    "asset": "tk802/169-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/169-preview.jpg"
+    "asset": "tk802/169.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/169.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4564,8 +4564,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/170-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/170-preview.jpg"
+    "asset": "tk802/170.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/170.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4589,8 +4589,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "low",
-    "asset": "tk802/171-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/171-preview.jpg"
+    "asset": "tk802/171.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/171.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4614,8 +4614,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "mid",
-    "asset": "tk802/172-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/172-preview.jpg"
+    "asset": "tk802/172.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/172.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4639,8 +4639,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/173-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/173-preview.jpg"
+    "asset": "tk802/173.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/173.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4664,8 +4664,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/174-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/174-preview.jpg"
+    "asset": "tk802/174.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/174.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4689,8 +4689,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/175-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/175-preview.jpg"
+    "asset": "tk802/175.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/175.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4714,8 +4714,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/176-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/176-preview.jpg"
+    "asset": "tk802/176.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/176.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4739,8 +4739,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
-    "asset": "tk802/177-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/177-preview.jpg"
+    "asset": "tk802/177.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/177.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4764,8 +4764,8 @@
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
-    "asset": "tk802/178-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/178-preview.jpg"
+    "asset": "tk802/178.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/178.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4789,8 +4789,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "high",
-    "asset": "tk802/179-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/179-preview.jpg"
+    "asset": "tk802/179.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/179.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4814,8 +4814,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "high",
-    "asset": "tk802/180-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/180-preview.jpg"
+    "asset": "tk802/180.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/180.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4839,8 +4839,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "high",
-    "asset": "tk802/181-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/181-preview.jpg"
+    "asset": "tk802/181.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/181.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4864,8 +4864,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "low",
-    "asset": "tk802/182-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/182-preview.jpg"
+    "asset": "tk802/182.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/182.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4889,8 +4889,8 @@
     "control": 5,
     "block_modifier": 5,
     "block_zone": "high",
-    "asset": "tk802/183-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/183-preview.jpg"
+    "asset": "tk802/183.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/183.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4914,8 +4914,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "low",
-    "asset": "tk802/184-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/184-preview.jpg"
+    "asset": "tk802/184.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/184.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4939,8 +4939,8 @@
     "control": 5,
     "block_modifier": 3,
     "block_zone": "high",
-    "asset": "tk802/185-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/185-preview.jpg"
+    "asset": "tk802/185.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/185.jpg"
   },
   {
     "extension_short": "tk802",
@@ -4962,7 +4962,7 @@
     "text": "If there is a Devil Gene counter on this card, your attacks get +2 damage. Otherwise, rival attacks get -2 speed.\n\nEnhance Commit: If there are no Devil Gene counters on this card, add 1 Devil Gene counter to this card and your next check gets +2.\n\nEnhance Commit, Remove 1 Devil Gene counter: Build up to 2 foundations with difficulty 3 or less from your hand.",
     "hand_size": 6,
     "vitality": 32,
-    "asset": "tk802/225-preview.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/225-preview.jpg"
+    "asset": "tk802/225.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/225.jpg"
   }
 ]
