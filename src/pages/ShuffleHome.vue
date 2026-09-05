@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
 
 const SEAT_COLORS = [
   { name: "Blue", color: "blue", textColor: "white" },
@@ -12,11 +12,22 @@ const SEAT_COLORS = [
   { name: "Pink", color: "pink", textColor: "white" },
   { name: "Indigo", color: "indigo", textColor: "white" },
   { name: "Lime", color: "lime", textColor: "black" },
+  { name: "Cyan", color: "cyan", textColor: "black" },
+  { name: "Brown", color: "brown", textColor: "white" },
+  { name: "Amber", color: "amber", textColor: "black" },
+  { name: "Deep Purple", color: "deep-purple", textColor: "white" },
+  { name: "Deep Orange", color: "deep-orange", textColor: "white" },
+  { name: "Light Blue", color: "light-blue", textColor: "black" },
+  { name: "Light Green", color: "light-green", textColor: "black" },
+  { name: "Blue Grey", color: "blue-grey", textColor: "white" },
+  { name: "Grey", color: "grey", textColor: "black" },
+  { name: "Black", color: "black", textColor: "white" },
 ];
 
 const phase = ref("setup"); // "setup" | "shuffle" | "done"
 const numPiles = ref(8);
 const deckSize = ref(60);
+const gridColsOverride = ref(null);
 
 const currentRound = ref(0);
 const rounds = ref([]); // each entry: { handSize, sequence }
@@ -43,8 +54,29 @@ const dealRank = computed(() => {
   return rank;
 });
 
-// max columns so there are always at least 2 rows
-const gridCols = computed(() => Math.ceil(seats.value.length / 2));
+// exact-factor row×col shapes for the current pile count (e.g. 12 → 3×4, 4×3, 2×6...)
+const gridShapeOptions = computed(() => {
+  const n = numPiles.value;
+  const shapes = [];
+  for (let cols = 2; cols <= n; cols++) {
+    if (n % cols === 0) shapes.push({ rows: n / cols, cols });
+  }
+  shapes.sort(
+    (a, b) => Math.abs(a.rows - a.cols) - Math.abs(b.rows - b.cols) || a.cols - b.cols
+  );
+  return shapes;
+});
+
+// fall back to a 2-row-minimum layout when the pile count has no nice factors (e.g. primes)
+const defaultGridShape = computed(
+  () => gridShapeOptions.value[0] || { rows: 2, cols: Math.ceil(numPiles.value / 2) }
+);
+
+const gridCols = computed(() => gridColsOverride.value ?? defaultGridShape.value.cols);
+
+watch(numPiles, () => {
+  gridColsOverride.value = null;
+});
 
 // seatIdx → 1-based pickup position for the collect step
 const collectRank = computed(() => {
@@ -135,12 +167,28 @@ function restart() {
             <q-slider
               v-model="numPiles"
               :min="2"
-              :max="10"
+              :max="20"
               :step="1"
               snap
               label
-              markers
               color="primary"
+            />
+          </div>
+          <div v-if="gridShapeOptions.length">
+            <div class="text-subtitle2 q-mb-sm">Grid shape:</div>
+            <q-btn-toggle
+              :model-value="gridCols"
+              @update:model-value="(cols) => (gridColsOverride = cols)"
+              spread
+              no-caps
+              toggle-color="primary"
+              color="white"
+              text-color="primary"
+              :options="
+                gridShapeOptions
+                  .slice(0, 4)
+                  .map((s) => ({ label: `${s.rows} × ${s.cols}`, value: s.cols }))
+              "
             />
           </div>
           <div>
