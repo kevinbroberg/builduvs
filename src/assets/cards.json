@@ -53502,6 +53502,30 @@
     "rochester_url": "/catalog/ufs__universus_singles-ufs_retro-warriors_of_the_night/preparing_the_curse/101943"
   },
   {
+    "name": "\"Soul Beats\"",
+    "resources": [
+      "air",
+      "death",
+      "void"
+    ],
+    "formats": [
+      "retro",
+      "universal"
+    ],
+    "control": 5,
+    "difficulty": 1,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "text": "After you review this card, if you have 2 or more foundations that share a resource symbol with it, add it to your staging area.",
+    "numero": 141,
+    "numero_image": 141,
+    "type": "foundation",
+    "rarity": "common",
+    "extension_short": "warriorsofthenight",
+    "extension": "Darkstalkers: Warriors of the night",
+    "asset": "warriorsofthenight/141.jpg"
+  },
+  {
     "name": "Thirst for Power",
     "resources": [
       "air",

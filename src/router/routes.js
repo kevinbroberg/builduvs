@@ -25,6 +25,16 @@ const routes = [
         meta: { title: "Card Search" },
       },
       {
+        path: "/precons",
+        component: () => import("src/pages/PreconsPage.vue"),
+        meta: { title: "Precon Decks" },
+      },
+      {
+        path: "/precons/:deck",
+        component: () => import("src/pages/PreconsPage.vue"),
+        meta: { title: "Precon Decks" },
+      },
+      {
         path: "/deck",
         component: () => import("src/pages/DeckHome.vue"),
         meta: { title: "Your Deck" },

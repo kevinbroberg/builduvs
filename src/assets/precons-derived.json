@@ -1,0 +1,2059 @@
+{
+  "generated": "2026-09-08",
+  "basis": "cards with rarity \"starter exclusive\" in src/assets/*.json",
+  "caveat": "Products are inferred from card rarity; names and dates come from the curated table in scripts/derive-precons.mjs and are null where no source was found. `label` is descriptive, not a catalogue title. A starter-exclusive character is NOT a deck: the Mega Man and Darkstalkers tins paired one fixed deck with booster packs, so the set's other exclusive characters came from those packs. `hadDeck` is true/false only where a source says so.",
+  "entries": [
+    {
+      "label": "Penny Arcade — Gabe",
+      "productName": "Penny Arcade Battle Box",
+      "releaseDate": "2006-02",
+      "releasePrecision": "month",
+      "productNote": "Two 60-card decks. The earliest precon here — and proof the starter-exclusive rarity is not a complete signal.",
+      "productSource": null,
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 65,
+      "extension": "Penny Arcade",
+      "extensionShort": "penny",
+      "character": "Gabe",
+      "asset": null,
+      "starterExclusiveCards": 0,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Tycho"
+        ],
+        [
+          "Gabe"
+        ]
+      ],
+      "exclusivesPerCharacter": 0,
+      "knownProduct": null
+    },
+    {
+      "label": "Penny Arcade — Tycho",
+      "productName": "Penny Arcade Battle Box",
+      "releaseDate": "2006-02",
+      "releasePrecision": "month",
+      "productNote": "Two 60-card decks. The earliest precon here — and proof the starter-exclusive rarity is not a complete signal.",
+      "productSource": null,
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 65,
+      "extension": "Penny Arcade",
+      "extensionShort": "penny",
+      "character": "Tycho",
+      "asset": null,
+      "starterExclusiveCards": 0,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Tycho"
+        ],
+        [
+          "Gabe"
+        ]
+      ],
+      "exclusivesPerCharacter": 0,
+      "knownProduct": null
+    },
+    {
+      "label": "Warhammer Online: Age of Reckoning",
+      "productName": "UFS: Warhammer Online — Age of Reckoning Deck",
+      "releaseDate": "2008-09",
+      "releasePrecision": "month",
+      "productNote": "Known product, contents unrecorded — no cards from this set exist anywhere in src/assets, so nothing here can be resolved against the card data.",
+      "productSource": null,
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": null,
+      "extension": "Warhammer Online: Age of Reckoning",
+      "extensionShort": null,
+      "character": null,
+      "asset": null,
+      "starterExclusiveCards": 0,
+      "hadDeck": null,
+      "deckmates": null,
+      "starterExclusiveCharacters": 0,
+      "deckCount": null,
+      "deckRoster": null,
+      "exclusivesPerCharacter": null,
+      "knownProduct": null
+    },
+    {
+      "label": "ShadoWar — Ragnar2",
+      "productName": "ShadoWar Starter Decks",
+      "releaseDate": "2009-04",
+      "releasePrecision": "month",
+      "productNote": "Four starter decks, one character each. SKUs FFGUF12Ca-d.",
+      "productSource": null,
+      "releaseDateSource": "https://www.nobleknight.com/P/2147914126/ShadoWar---Ragnar-Starter-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 4,
+      "extension": "ShadoWar",
+      "extensionShort": "shadowar",
+      "character": "Ragnar2",
+      "asset": "shadowar/019.jpg",
+      "starterExclusiveCards": 4,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 4,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Ragnar2"
+        ],
+        [
+          "Astrid1"
+        ],
+        [
+          "Zi Mei2"
+        ],
+        [
+          "Yi Shan2"
+        ]
+      ],
+      "exclusivesPerCharacter": 1,
+      "knownProduct": null
+    },
+    {
+      "label": "ShadoWar — Astrid1",
+      "productName": "ShadoWar Starter Decks",
+      "releaseDate": "2009-04",
+      "releasePrecision": "month",
+      "productNote": "Four starter decks, one character each. SKUs FFGUF12Ca-d.",
+      "productSource": null,
+      "releaseDateSource": "https://www.nobleknight.com/P/2147914126/ShadoWar---Ragnar-Starter-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 4,
+      "extension": "ShadoWar",
+      "extensionShort": "shadowar",
+      "character": "Astrid1",
+      "asset": "shadowar/037.jpg",
+      "starterExclusiveCards": 4,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 4,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Ragnar2"
+        ],
+        [
+          "Astrid1"
+        ],
+        [
+          "Zi Mei2"
+        ],
+        [
+          "Yi Shan2"
+        ]
+      ],
+      "exclusivesPerCharacter": 1,
+      "knownProduct": null
+    },
+    {
+      "label": "ShadoWar — Zi Mei2",
+      "productName": "ShadoWar Starter Decks",
+      "releaseDate": "2009-04",
+      "releasePrecision": "month",
+      "productNote": "Four starter decks, one character each. SKUs FFGUF12Ca-d.",
+      "productSource": null,
+      "releaseDateSource": "https://www.nobleknight.com/P/2147914126/ShadoWar---Ragnar-Starter-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 4,
+      "extension": "ShadoWar",
+      "extensionShort": "shadowar",
+      "character": "Zi Mei2",
+      "asset": "shadowar/055.jpg",
+      "starterExclusiveCards": 4,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 4,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Ragnar2"
+        ],
+        [
+          "Astrid1"
+        ],
+        [
+          "Zi Mei2"
+        ],
+        [
+          "Yi Shan2"
+        ]
+      ],
+      "exclusivesPerCharacter": 1,
+      "knownProduct": null
+    },
+    {
+      "label": "ShadoWar — Yi Shan2",
+      "productName": "ShadoWar Starter Decks",
+      "releaseDate": "2009-04",
+      "releasePrecision": "month",
+      "productNote": "Four starter decks, one character each. SKUs FFGUF12Ca-d.",
+      "productSource": null,
+      "releaseDateSource": "https://www.nobleknight.com/P/2147914126/ShadoWar---Ragnar-Starter-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 4,
+      "extension": "ShadoWar",
+      "extensionShort": "shadowar",
+      "character": "Yi Shan2",
+      "asset": "shadowar/073.jpg",
+      "starterExclusiveCards": 4,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 4,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Ragnar2"
+        ],
+        [
+          "Astrid1"
+        ],
+        [
+          "Zi Mei2"
+        ],
+        [
+          "Yi Shan2"
+        ]
+      ],
+      "exclusivesPerCharacter": 1,
+      "knownProduct": null
+    },
+    {
+      "label": "SoulCalibur 4: Tower of Souls — Nightmare1",
+      "productName": "SoulCalibur 4: Tower of Souls Starter Decks",
+      "releaseDate": "2009-04",
+      "releasePrecision": "month",
+      "productNote": "Four starter decks, one character each. Sold as \"Soul Calibur IV - <character> Starter Deck\", SKUs FFGUF12Da-d. DATE CONFLICT: Noble Knight lists publish year 2007, but SoulCalibur IV (the video game) is a 2008 title, and their catalogue years are demonstrably shaky elsewhere (they date Cutting Edge to 2003, three years before UFS existed).",
+      "productSource": null,
+      "releaseDateSource": "https://www.nobleknight.com/P/2147914098/Soul-Calibur-IV---Nightmare-Starter-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 5,
+      "extension": "SoulCalibur 4: Tower of Souls",
+      "extensionShort": "sctos",
+      "character": "Nightmare1",
+      "asset": "sctos/001.jpg",
+      "starterExclusiveCards": 8,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 4,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Nightmare1"
+        ],
+        [
+          "Siegfried1"
+        ],
+        [
+          "Cervantes1"
+        ],
+        [
+          "Ivy1"
+        ]
+      ],
+      "exclusivesPerCharacter": 2,
+      "knownProduct": null
+    },
+    {
+      "label": "SoulCalibur 4: Tower of Souls — Siegfried1",
+      "productName": "SoulCalibur 4: Tower of Souls Starter Decks",
+      "releaseDate": "2009-04",
+      "releasePrecision": "month",
+      "productNote": "Four starter decks, one character each. Sold as \"Soul Calibur IV - <character> Starter Deck\", SKUs FFGUF12Da-d. DATE CONFLICT: Noble Knight lists publish year 2007, but SoulCalibur IV (the video game) is a 2008 title, and their catalogue years are demonstrably shaky elsewhere (they date Cutting Edge to 2003, three years before UFS existed).",
+      "productSource": null,
+      "releaseDateSource": "https://www.nobleknight.com/P/2147914098/Soul-Calibur-IV---Nightmare-Starter-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 5,
+      "extension": "SoulCalibur 4: Tower of Souls",
+      "extensionShort": "sctos",
+      "character": "Siegfried1",
+      "asset": "sctos/019.jpg",
+      "starterExclusiveCards": 8,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 4,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Nightmare1"
+        ],
+        [
+          "Siegfried1"
+        ],
+        [
+          "Cervantes1"
+        ],
+        [
+          "Ivy1"
+        ]
+      ],
+      "exclusivesPerCharacter": 2,
+      "knownProduct": null
+    },
+    {
+      "label": "SoulCalibur 4: Tower of Souls — Cervantes1",
+      "productName": "SoulCalibur 4: Tower of Souls Starter Decks",
+      "releaseDate": "2009-04",
+      "releasePrecision": "month",
+      "productNote": "Four starter decks, one character each. Sold as \"Soul Calibur IV - <character> Starter Deck\", SKUs FFGUF12Da-d. DATE CONFLICT: Noble Knight lists publish year 2007, but SoulCalibur IV (the video game) is a 2008 title, and their catalogue years are demonstrably shaky elsewhere (they date Cutting Edge to 2003, three years before UFS existed).",
+      "productSource": null,
+      "releaseDateSource": "https://www.nobleknight.com/P/2147914098/Soul-Calibur-IV---Nightmare-Starter-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 5,
+      "extension": "SoulCalibur 4: Tower of Souls",
+      "extensionShort": "sctos",
+      "character": "Cervantes1",
+      "asset": "sctos/073.jpg",
+      "starterExclusiveCards": 8,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 4,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Nightmare1"
+        ],
+        [
+          "Siegfried1"
+        ],
+        [
+          "Cervantes1"
+        ],
+        [
+          "Ivy1"
+        ]
+      ],
+      "exclusivesPerCharacter": 2,
+      "knownProduct": null
+    },
+    {
+      "label": "SoulCalibur 4: Tower of Souls — Ivy1",
+      "productName": "SoulCalibur 4: Tower of Souls Starter Decks",
+      "releaseDate": "2009-04",
+      "releasePrecision": "month",
+      "productNote": "Four starter decks, one character each. Sold as \"Soul Calibur IV - <character> Starter Deck\", SKUs FFGUF12Da-d. DATE CONFLICT: Noble Knight lists publish year 2007, but SoulCalibur IV (the video game) is a 2008 title, and their catalogue years are demonstrably shaky elsewhere (they date Cutting Edge to 2003, three years before UFS existed).",
+      "productSource": null,
+      "releaseDateSource": "https://www.nobleknight.com/P/2147914098/Soul-Calibur-IV---Nightmare-Starter-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 5,
+      "extension": "SoulCalibur 4: Tower of Souls",
+      "extensionShort": "sctos",
+      "character": "Ivy1",
+      "asset": "sctos/091.jpg",
+      "starterExclusiveCards": 8,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 4,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Nightmare1"
+        ],
+        [
+          "Siegfried1"
+        ],
+        [
+          "Cervantes1"
+        ],
+        [
+          "Ivy1"
+        ]
+      ],
+      "exclusivesPerCharacter": 2,
+      "knownProduct": null
+    },
+    {
+      "label": "Red Horizon: Tides of Vengeance — Nehtali2",
+      "productName": "Red Horizon: Tides of Vengeance Starter Decks",
+      "releaseDate": "2012-02",
+      "releasePrecision": "month",
+      "productNote": "Four 60-card starter decks, one character each — all four listed by Noble Knight (SKUs JCGUFS16B-*), matching the four starter-exclusive characters. Reported as partly randomised in contents, so treat the deck list as the headline characters, not a contents guarantee.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": "https://www.nobleknight.com/P/2147480203/Red-Horizon---Tides-of-Vengeance-Vespera-Starter-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 28,
+      "extension": "Red Horizon: Tides of Vengeance",
+      "extensionShort": "tov",
+      "character": "Nehtali2",
+      "asset": "tov/065.jpg",
+      "starterExclusiveCards": 48,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 4,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Nehtali2"
+        ],
+        [
+          "Vespera1"
+        ],
+        [
+          "Vincent Grey1"
+        ],
+        [
+          "Satoshi1"
+        ]
+      ],
+      "exclusivesPerCharacter": 12,
+      "knownProduct": null
+    },
+    {
+      "label": "Red Horizon: Tides of Vengeance — Satoshi1",
+      "productName": "Red Horizon: Tides of Vengeance Starter Decks",
+      "releaseDate": "2012-02",
+      "releasePrecision": "month",
+      "productNote": "Four 60-card starter decks, one character each — all four listed by Noble Knight (SKUs JCGUFS16B-*), matching the four starter-exclusive characters. Reported as partly randomised in contents, so treat the deck list as the headline characters, not a contents guarantee.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": "https://www.nobleknight.com/P/2147480203/Red-Horizon---Tides-of-Vengeance-Vespera-Starter-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 28,
+      "extension": "Red Horizon: Tides of Vengeance",
+      "extensionShort": "tov",
+      "character": "Satoshi1",
+      "asset": "tov/085.jpg",
+      "starterExclusiveCards": 48,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 4,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Nehtali2"
+        ],
+        [
+          "Vespera1"
+        ],
+        [
+          "Vincent Grey1"
+        ],
+        [
+          "Satoshi1"
+        ]
+      ],
+      "exclusivesPerCharacter": 12,
+      "knownProduct": null
+    },
+    {
+      "label": "Red Horizon: Tides of Vengeance — Vespera1",
+      "productName": "Red Horizon: Tides of Vengeance Starter Decks",
+      "releaseDate": "2012-02",
+      "releasePrecision": "month",
+      "productNote": "Four 60-card starter decks, one character each — all four listed by Noble Knight (SKUs JCGUFS16B-*), matching the four starter-exclusive characters. Reported as partly randomised in contents, so treat the deck list as the headline characters, not a contents guarantee.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": "https://www.nobleknight.com/P/2147480203/Red-Horizon---Tides-of-Vengeance-Vespera-Starter-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 28,
+      "extension": "Red Horizon: Tides of Vengeance",
+      "extensionShort": "tov",
+      "character": "Vespera1",
+      "asset": "tov/122.jpg",
+      "starterExclusiveCards": 48,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 4,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Nehtali2"
+        ],
+        [
+          "Vespera1"
+        ],
+        [
+          "Vincent Grey1"
+        ],
+        [
+          "Satoshi1"
+        ]
+      ],
+      "exclusivesPerCharacter": 12,
+      "knownProduct": null
+    },
+    {
+      "label": "Red Horizon: Tides of Vengeance — Vincent Grey1",
+      "productName": "Red Horizon: Tides of Vengeance Starter Decks",
+      "releaseDate": "2012-02",
+      "releasePrecision": "month",
+      "productNote": "Four 60-card starter decks, one character each — all four listed by Noble Knight (SKUs JCGUFS16B-*), matching the four starter-exclusive characters. Reported as partly randomised in contents, so treat the deck list as the headline characters, not a contents guarantee.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": "https://www.nobleknight.com/P/2147480203/Red-Horizon---Tides-of-Vengeance-Vespera-Starter-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 28,
+      "extension": "Red Horizon: Tides of Vengeance",
+      "extensionShort": "tov",
+      "character": "Vincent Grey1",
+      "asset": "tov/140.jpg",
+      "starterExclusiveCards": 48,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 4,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Nehtali2"
+        ],
+        [
+          "Vespera1"
+        ],
+        [
+          "Vincent Grey1"
+        ],
+        [
+          "Satoshi1"
+        ]
+      ],
+      "exclusivesPerCharacter": 12,
+      "knownProduct": null
+    },
+    {
+      "label": "Mega Man — Megaman1",
+      "productName": "Mega Man Collector's Tins",
+      "releaseDate": "2014-04",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Mega Man and Protoman had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 67,
+      "extension": "Mega Man",
+      "extensionShort": "megaman",
+      "character": "Megaman1",
+      "asset": "megaman/001.jpg",
+      "starterExclusiveCards": 46,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Megaman1"
+        ],
+        [
+          "Protoman1"
+        ]
+      ],
+      "exclusivesPerCharacter": 5.8,
+      "knownProduct": null
+    },
+    {
+      "label": "Mega Man — Protoman1",
+      "productName": "Mega Man Collector's Tins",
+      "releaseDate": "2014-04",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Mega Man and Protoman had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 67,
+      "extension": "Mega Man",
+      "extensionShort": "megaman",
+      "character": "Protoman1",
+      "asset": "megaman/021.jpg",
+      "starterExclusiveCards": 46,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Megaman1"
+        ],
+        [
+          "Protoman1"
+        ]
+      ],
+      "exclusivesPerCharacter": 5.8,
+      "knownProduct": null
+    },
+    {
+      "label": "Mega Man — Bomb Man1",
+      "productName": "Mega Man Collector's Tins",
+      "releaseDate": "2014-04",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Mega Man and Protoman had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 67,
+      "extension": "Mega Man",
+      "extensionShort": "megaman",
+      "character": "Bomb Man1",
+      "asset": "megaman/041.jpg",
+      "starterExclusiveCards": 46,
+      "hadDeck": false,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Megaman1"
+        ],
+        [
+          "Protoman1"
+        ]
+      ],
+      "exclusivesPerCharacter": 5.8,
+      "knownProduct": null
+    },
+    {
+      "label": "Mega Man — Cut Man1",
+      "productName": "Mega Man Collector's Tins",
+      "releaseDate": "2014-04",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Mega Man and Protoman had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 67,
+      "extension": "Mega Man",
+      "extensionShort": "megaman",
+      "character": "Cut Man1",
+      "asset": "megaman/045.jpg",
+      "starterExclusiveCards": 46,
+      "hadDeck": false,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Megaman1"
+        ],
+        [
+          "Protoman1"
+        ]
+      ],
+      "exclusivesPerCharacter": 5.8,
+      "knownProduct": null
+    },
+    {
+      "label": "Mega Man — Elec Man1",
+      "productName": "Mega Man Collector's Tins",
+      "releaseDate": "2014-04",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Mega Man and Protoman had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 67,
+      "extension": "Mega Man",
+      "extensionShort": "megaman",
+      "character": "Elec Man1",
+      "asset": "megaman/049.jpg",
+      "starterExclusiveCards": 46,
+      "hadDeck": false,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Megaman1"
+        ],
+        [
+          "Protoman1"
+        ]
+      ],
+      "exclusivesPerCharacter": 5.8,
+      "knownProduct": null
+    },
+    {
+      "label": "Mega Man — Fire Man1",
+      "productName": "Mega Man Collector's Tins",
+      "releaseDate": "2014-04",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Mega Man and Protoman had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 67,
+      "extension": "Mega Man",
+      "extensionShort": "megaman",
+      "character": "Fire Man1",
+      "asset": "megaman/053.jpg",
+      "starterExclusiveCards": 46,
+      "hadDeck": false,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Megaman1"
+        ],
+        [
+          "Protoman1"
+        ]
+      ],
+      "exclusivesPerCharacter": 5.8,
+      "knownProduct": null
+    },
+    {
+      "label": "Mega Man — Guts Man1",
+      "productName": "Mega Man Collector's Tins",
+      "releaseDate": "2014-04",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Mega Man and Protoman had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 67,
+      "extension": "Mega Man",
+      "extensionShort": "megaman",
+      "character": "Guts Man1",
+      "asset": "megaman/057.jpg",
+      "starterExclusiveCards": 46,
+      "hadDeck": false,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Megaman1"
+        ],
+        [
+          "Protoman1"
+        ]
+      ],
+      "exclusivesPerCharacter": 5.8,
+      "knownProduct": null
+    },
+    {
+      "label": "Mega Man — Ice Man1",
+      "productName": "Mega Man Collector's Tins",
+      "releaseDate": "2014-04",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Mega Man and Protoman had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 67,
+      "extension": "Mega Man",
+      "extensionShort": "megaman",
+      "character": "Ice Man1",
+      "asset": "megaman/061.jpg",
+      "starterExclusiveCards": 46,
+      "hadDeck": false,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Megaman1"
+        ],
+        [
+          "Protoman1"
+        ]
+      ],
+      "exclusivesPerCharacter": 5.8,
+      "knownProduct": null
+    },
+    {
+      "label": "Darkstalkers — Lilith1",
+      "productName": "Darkstalkers Collector's Tins",
+      "releaseDate": "2014-09",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Morrigan and Lilith had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 68,
+      "extension": "Darkstalkers",
+      "extensionShort": "darkstalkerstin",
+      "character": "Lilith1",
+      "asset": "darkstalkerstin/001.jpg",
+      "starterExclusiveCards": 48,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Morrigan1"
+        ],
+        [
+          "Lilith1"
+        ]
+      ],
+      "exclusivesPerCharacter": 6,
+      "knownProduct": null
+    },
+    {
+      "label": "Darkstalkers — Morrigan1",
+      "productName": "Darkstalkers Collector's Tins",
+      "releaseDate": "2014-09",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Morrigan and Lilith had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 68,
+      "extension": "Darkstalkers",
+      "extensionShort": "darkstalkerstin",
+      "character": "Morrigan1",
+      "asset": "darkstalkerstin/022.jpg",
+      "starterExclusiveCards": 48,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Morrigan1"
+        ],
+        [
+          "Lilith1"
+        ]
+      ],
+      "exclusivesPerCharacter": 6,
+      "knownProduct": null
+    },
+    {
+      "label": "Darkstalkers — Anakaris1",
+      "productName": "Darkstalkers Collector's Tins",
+      "releaseDate": "2014-09",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Morrigan and Lilith had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 68,
+      "extension": "Darkstalkers",
+      "extensionShort": "darkstalkerstin",
+      "character": "Anakaris1",
+      "asset": "darkstalkerstin/043.jpg",
+      "starterExclusiveCards": 48,
+      "hadDeck": false,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Morrigan1"
+        ],
+        [
+          "Lilith1"
+        ]
+      ],
+      "exclusivesPerCharacter": 6,
+      "knownProduct": null
+    },
+    {
+      "label": "Darkstalkers — Donovan1",
+      "productName": "Darkstalkers Collector's Tins",
+      "releaseDate": "2014-09",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Morrigan and Lilith had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 68,
+      "extension": "Darkstalkers",
+      "extensionShort": "darkstalkerstin",
+      "character": "Donovan1",
+      "asset": "darkstalkerstin/047.jpg",
+      "starterExclusiveCards": 48,
+      "hadDeck": false,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Morrigan1"
+        ],
+        [
+          "Lilith1"
+        ]
+      ],
+      "exclusivesPerCharacter": 6,
+      "knownProduct": null
+    },
+    {
+      "label": "Darkstalkers — Huitzil1",
+      "productName": "Darkstalkers Collector's Tins",
+      "releaseDate": "2014-09",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Morrigan and Lilith had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 68,
+      "extension": "Darkstalkers",
+      "extensionShort": "darkstalkerstin",
+      "character": "Huitzil1",
+      "asset": "darkstalkerstin/051.jpg",
+      "starterExclusiveCards": 48,
+      "hadDeck": false,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Morrigan1"
+        ],
+        [
+          "Lilith1"
+        ]
+      ],
+      "exclusivesPerCharacter": 6,
+      "knownProduct": null
+    },
+    {
+      "label": "Darkstalkers — Q-Bee1",
+      "productName": "Darkstalkers Collector's Tins",
+      "releaseDate": "2014-09",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Morrigan and Lilith had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 68,
+      "extension": "Darkstalkers",
+      "extensionShort": "darkstalkerstin",
+      "character": "Q-Bee1",
+      "asset": "darkstalkerstin/055.jpg",
+      "starterExclusiveCards": 48,
+      "hadDeck": false,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Morrigan1"
+        ],
+        [
+          "Lilith1"
+        ]
+      ],
+      "exclusivesPerCharacter": 6,
+      "knownProduct": null
+    },
+    {
+      "label": "Darkstalkers — Sasquatch1",
+      "productName": "Darkstalkers Collector's Tins",
+      "releaseDate": "2014-09",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Morrigan and Lilith had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 68,
+      "extension": "Darkstalkers",
+      "extensionShort": "darkstalkerstin",
+      "character": "Sasquatch1",
+      "asset": "darkstalkerstin/059.jpg",
+      "starterExclusiveCards": 48,
+      "hadDeck": false,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Morrigan1"
+        ],
+        [
+          "Lilith1"
+        ]
+      ],
+      "exclusivesPerCharacter": 6,
+      "knownProduct": null
+    },
+    {
+      "label": "Darkstalkers — Victor1",
+      "productName": "Darkstalkers Collector's Tins",
+      "releaseDate": "2014-09",
+      "releasePrecision": "month",
+      "productNote": "Hybrid product: a fixed 60-card deck plus booster packs. Only Morrigan and Lilith had decks; the other six starter-exclusive characters came out of the boosters.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 68,
+      "extension": "Darkstalkers",
+      "extensionShort": "darkstalkerstin",
+      "character": "Victor1",
+      "asset": "darkstalkerstin/063.jpg",
+      "starterExclusiveCards": 48,
+      "hadDeck": false,
+      "deckmates": [],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Morrigan1"
+        ],
+        [
+          "Lilith1"
+        ]
+      ],
+      "exclusivesPerCharacter": 6,
+      "knownProduct": null
+    },
+    {
+      "label": "Mega Man: Rise of the Masters — Dr. Wily1",
+      "productName": "Mega Man: Rise of the Masters Starter Decks (Mega Man, Dr. Wily)",
+      "releaseDate": "2015-03",
+      "releasePrecision": "month",
+      "productNote": "UFS set 22. Each deck has 4 starter-exclusive foils, 1 foil character, 1 random ultra rare. A collector tin added 3 extra characters.",
+      "productSource": "https://icv2.com/articles/news/view/31166/new-mega-man-darkstalkers-ufs-releases",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 71,
+      "extension": "Mega Man: Rise of the Masters",
+      "extensionShort": "riseofmasters",
+      "character": "Dr. Wily1",
+      "asset": "riseofmasters/028.jpg",
+      "starterExclusiveCards": 26,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Mega Man2"
+        ],
+        [
+          "Dr. Wily1"
+        ]
+      ],
+      "exclusivesPerCharacter": 13,
+      "knownProduct": null
+    },
+    {
+      "label": "Mega Man: Rise of the Masters — Mega Man2",
+      "productName": "Mega Man: Rise of the Masters Starter Decks (Mega Man, Dr. Wily)",
+      "releaseDate": "2015-03",
+      "releasePrecision": "month",
+      "productNote": "UFS set 22. Each deck has 4 starter-exclusive foils, 1 foil character, 1 random ultra rare. A collector tin added 3 extra characters.",
+      "productSource": "https://icv2.com/articles/news/view/31166/new-mega-man-darkstalkers-ufs-releases",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 71,
+      "extension": "Mega Man: Rise of the Masters",
+      "extensionShort": "riseofmasters",
+      "character": "Mega Man2",
+      "asset": "riseofmasters/064.jpg",
+      "starterExclusiveCards": 26,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Mega Man2"
+        ],
+        [
+          "Dr. Wily1"
+        ]
+      ],
+      "exclusivesPerCharacter": 13,
+      "knownProduct": null
+    },
+    {
+      "label": "Darkstalkers: Warriors of the night — Felicia1",
+      "productName": "Darkstalkers: Warriors of the Night Starter Decks (Felicia, J. Talbain)",
+      "releaseDate": "2015-07",
+      "releasePrecision": "month",
+      "productNote": "Starter display held 4 J. Talbain and 4 Felicia decks. DATE CONFLICT: ICv2 announced it for July 2015; Noble Knight catalogues both decks (SKUs JASUFS23S-*) with publish year 2016. The 2015 launch announcement is kept as the more specific claim; the retailer year may reflect stocking rather than release.",
+      "productSource": "https://icv2.com/articles/news/view/31166/new-mega-man-darkstalkers-ufs-releases",
+      "releaseDateSource": null,
+      "releaseDateConflict": {
+        "year": "2016",
+        "source": "https://www.nobleknight.com/P/2147636628/Darkstalkers---J-Talbain-Starter-Deck"
+      },
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 74,
+      "extension": "Darkstalkers: Warriors of the night",
+      "extensionShort": "warriorsofthenight",
+      "character": "Felicia1",
+      "asset": "warriorsofthenight/055.jpg",
+      "starterExclusiveCards": 26,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Felicia1"
+        ],
+        [
+          "J. Talbain1"
+        ]
+      ],
+      "exclusivesPerCharacter": 13,
+      "knownProduct": null
+    },
+    {
+      "label": "Darkstalkers: Warriors of the night — J. Talbain1",
+      "productName": "Darkstalkers: Warriors of the Night Starter Decks (Felicia, J. Talbain)",
+      "releaseDate": "2015-07",
+      "releasePrecision": "month",
+      "productNote": "Starter display held 4 J. Talbain and 4 Felicia decks. DATE CONFLICT: ICv2 announced it for July 2015; Noble Knight catalogues both decks (SKUs JASUFS23S-*) with publish year 2016. The 2015 launch announcement is kept as the more specific claim; the retailer year may reflect stocking rather than release.",
+      "productSource": "https://icv2.com/articles/news/view/31166/new-mega-man-darkstalkers-ufs-releases",
+      "releaseDateSource": null,
+      "releaseDateConflict": {
+        "year": "2016",
+        "source": "https://www.nobleknight.com/P/2147636628/Darkstalkers---J-Talbain-Starter-Deck"
+      },
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 74,
+      "extension": "Darkstalkers: Warriors of the night",
+      "extensionShort": "warriorsofthenight",
+      "character": "J. Talbain1",
+      "asset": "warriorsofthenight/091.jpg",
+      "starterExclusiveCards": 26,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Felicia1"
+        ],
+        [
+          "J. Talbain1"
+        ]
+      ],
+      "exclusivesPerCharacter": 13,
+      "knownProduct": null
+    },
+    {
+      "label": "World of Indines — Eligor1",
+      "productName": "World of Indines Turbo Decks",
+      "releaseDate": "2016",
+      "releasePrecision": "year",
+      "productNote": "Four 42-card Turbo Decks (SKUs JASUFS24S-*), each pairing two characters — the only product here that puts more than one character in a deck. Each is titled for one character of its pair.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": "https://www.nobleknight.com/P/2147636632/World-of-Indines---Eligor-Turbo-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 78,
+      "extension": "World of Indines",
+      "extensionShort": "indines",
+      "character": "Eligor1",
+      "asset": "indines/001.jpg",
+      "starterExclusiveCards": 69,
+      "hadDeck": true,
+      "deckmates": [
+        "Runika1"
+      ],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Khadath1",
+          "Cherri1"
+        ],
+        [
+          "Hikaru1",
+          "Cadenza1"
+        ],
+        [
+          "Eligor1",
+          "Runika1"
+        ],
+        [
+          "Shekhtur1",
+          "Tatsumi1"
+        ]
+      ],
+      "exclusivesPerCharacter": 8.6,
+      "knownProduct": null
+    },
+    {
+      "label": "World of Indines — Runika1",
+      "productName": "World of Indines Turbo Decks",
+      "releaseDate": "2016",
+      "releasePrecision": "year",
+      "productNote": "Four 42-card Turbo Decks (SKUs JASUFS24S-*), each pairing two characters — the only product here that puts more than one character in a deck. Each is titled for one character of its pair.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": "https://www.nobleknight.com/P/2147636632/World-of-Indines---Eligor-Turbo-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 78,
+      "extension": "World of Indines",
+      "extensionShort": "indines",
+      "character": "Runika1",
+      "asset": "indines/002.jpg",
+      "starterExclusiveCards": 69,
+      "hadDeck": true,
+      "deckmates": [
+        "Eligor1"
+      ],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Khadath1",
+          "Cherri1"
+        ],
+        [
+          "Hikaru1",
+          "Cadenza1"
+        ],
+        [
+          "Eligor1",
+          "Runika1"
+        ],
+        [
+          "Shekhtur1",
+          "Tatsumi1"
+        ]
+      ],
+      "exclusivesPerCharacter": 8.6,
+      "knownProduct": null
+    },
+    {
+      "label": "World of Indines — Hikaru1",
+      "productName": "World of Indines Turbo Decks",
+      "releaseDate": "2016",
+      "releasePrecision": "year",
+      "productNote": "Four 42-card Turbo Decks (SKUs JASUFS24S-*), each pairing two characters — the only product here that puts more than one character in a deck. Each is titled for one character of its pair.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": "https://www.nobleknight.com/P/2147636632/World-of-Indines---Eligor-Turbo-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 78,
+      "extension": "World of Indines",
+      "extensionShort": "indines",
+      "character": "Hikaru1",
+      "asset": "indines/019.jpg",
+      "starterExclusiveCards": 69,
+      "hadDeck": true,
+      "deckmates": [
+        "Cadenza1"
+      ],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Khadath1",
+          "Cherri1"
+        ],
+        [
+          "Hikaru1",
+          "Cadenza1"
+        ],
+        [
+          "Eligor1",
+          "Runika1"
+        ],
+        [
+          "Shekhtur1",
+          "Tatsumi1"
+        ]
+      ],
+      "exclusivesPerCharacter": 8.6,
+      "knownProduct": null
+    },
+    {
+      "label": "World of Indines — Cadenza1",
+      "productName": "World of Indines Turbo Decks",
+      "releaseDate": "2016",
+      "releasePrecision": "year",
+      "productNote": "Four 42-card Turbo Decks (SKUs JASUFS24S-*), each pairing two characters — the only product here that puts more than one character in a deck. Each is titled for one character of its pair.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": "https://www.nobleknight.com/P/2147636632/World-of-Indines---Eligor-Turbo-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 78,
+      "extension": "World of Indines",
+      "extensionShort": "indines",
+      "character": "Cadenza1",
+      "asset": "indines/020.jpg",
+      "starterExclusiveCards": 69,
+      "hadDeck": true,
+      "deckmates": [
+        "Hikaru1"
+      ],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Khadath1",
+          "Cherri1"
+        ],
+        [
+          "Hikaru1",
+          "Cadenza1"
+        ],
+        [
+          "Eligor1",
+          "Runika1"
+        ],
+        [
+          "Shekhtur1",
+          "Tatsumi1"
+        ]
+      ],
+      "exclusivesPerCharacter": 8.6,
+      "knownProduct": null
+    },
+    {
+      "label": "World of Indines — Khadath1",
+      "productName": "World of Indines Turbo Decks",
+      "releaseDate": "2016",
+      "releasePrecision": "year",
+      "productNote": "Four 42-card Turbo Decks (SKUs JASUFS24S-*), each pairing two characters — the only product here that puts more than one character in a deck. Each is titled for one character of its pair.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": "https://www.nobleknight.com/P/2147636632/World-of-Indines---Eligor-Turbo-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 78,
+      "extension": "World of Indines",
+      "extensionShort": "indines",
+      "character": "Khadath1",
+      "asset": "indines/037.jpg",
+      "starterExclusiveCards": 69,
+      "hadDeck": true,
+      "deckmates": [
+        "Cherri1"
+      ],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Khadath1",
+          "Cherri1"
+        ],
+        [
+          "Hikaru1",
+          "Cadenza1"
+        ],
+        [
+          "Eligor1",
+          "Runika1"
+        ],
+        [
+          "Shekhtur1",
+          "Tatsumi1"
+        ]
+      ],
+      "exclusivesPerCharacter": 8.6,
+      "knownProduct": null
+    },
+    {
+      "label": "World of Indines — Cherri1",
+      "productName": "World of Indines Turbo Decks",
+      "releaseDate": "2016",
+      "releasePrecision": "year",
+      "productNote": "Four 42-card Turbo Decks (SKUs JASUFS24S-*), each pairing two characters — the only product here that puts more than one character in a deck. Each is titled for one character of its pair.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": "https://www.nobleknight.com/P/2147636632/World-of-Indines---Eligor-Turbo-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 78,
+      "extension": "World of Indines",
+      "extensionShort": "indines",
+      "character": "Cherri1",
+      "asset": "indines/038.jpg",
+      "starterExclusiveCards": 69,
+      "hadDeck": true,
+      "deckmates": [
+        "Khadath1"
+      ],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Khadath1",
+          "Cherri1"
+        ],
+        [
+          "Hikaru1",
+          "Cadenza1"
+        ],
+        [
+          "Eligor1",
+          "Runika1"
+        ],
+        [
+          "Shekhtur1",
+          "Tatsumi1"
+        ]
+      ],
+      "exclusivesPerCharacter": 8.6,
+      "knownProduct": null
+    },
+    {
+      "label": "World of Indines — Shekhtur1",
+      "productName": "World of Indines Turbo Decks",
+      "releaseDate": "2016",
+      "releasePrecision": "year",
+      "productNote": "Four 42-card Turbo Decks (SKUs JASUFS24S-*), each pairing two characters — the only product here that puts more than one character in a deck. Each is titled for one character of its pair.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": "https://www.nobleknight.com/P/2147636632/World-of-Indines---Eligor-Turbo-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 78,
+      "extension": "World of Indines",
+      "extensionShort": "indines",
+      "character": "Shekhtur1",
+      "asset": "indines/055.jpg",
+      "starterExclusiveCards": 69,
+      "hadDeck": true,
+      "deckmates": [
+        "Tatsumi1"
+      ],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Khadath1",
+          "Cherri1"
+        ],
+        [
+          "Hikaru1",
+          "Cadenza1"
+        ],
+        [
+          "Eligor1",
+          "Runika1"
+        ],
+        [
+          "Shekhtur1",
+          "Tatsumi1"
+        ]
+      ],
+      "exclusivesPerCharacter": 8.6,
+      "knownProduct": null
+    },
+    {
+      "label": "World of Indines — Tatsumi1",
+      "productName": "World of Indines Turbo Decks",
+      "releaseDate": "2016",
+      "releasePrecision": "year",
+      "productNote": "Four 42-card Turbo Decks (SKUs JASUFS24S-*), each pairing two characters — the only product here that puts more than one character in a deck. Each is titled for one character of its pair.",
+      "productSource": "https://uvsultra.online/user.php?id=1251",
+      "releaseDateSource": "https://www.nobleknight.com/P/2147636632/World-of-Indines---Eligor-Turbo-Deck",
+      "releaseDateConflict": null,
+      "productProvenance": "community",
+      "uvsultraId": 78,
+      "extension": "World of Indines",
+      "extensionShort": "indines",
+      "character": "Tatsumi1",
+      "asset": "indines/056.jpg",
+      "starterExclusiveCards": 69,
+      "hadDeck": true,
+      "deckmates": [
+        "Shekhtur1"
+      ],
+      "starterExclusiveCharacters": 8,
+      "deckCount": 4,
+      "deckRoster": [
+        [
+          "Khadath1",
+          "Cherri1"
+        ],
+        [
+          "Hikaru1",
+          "Cadenza1"
+        ],
+        [
+          "Eligor1",
+          "Runika1"
+        ],
+        [
+          "Shekhtur1",
+          "Tatsumi1"
+        ]
+      ],
+      "exclusivesPerCharacter": 8.6,
+      "knownProduct": null
+    },
+    {
+      "label": "Street Fighter — Chun-Li1",
+      "productName": "UFS: Street Fighter CCG 2-Player Turbo Box (Ryu, Chun-Li)",
+      "releaseDate": "2017",
+      "releasePrecision": "year",
+      "productNote": "Retail listings confirm the product; no reliable street date found.",
+      "productSource": "https://www.amazon.com/Jasco-Games-Street-Fighter-CCG/dp/B073WYJRT8",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 82,
+      "extension": "Street Fighter",
+      "extensionShort": "sf5",
+      "character": "Chun-Li1",
+      "asset": "sf5/037.jpg",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Ryu1"
+        ],
+        [
+          "Chun-Li1"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "Street Fighter — Ryu1",
+      "productName": "UFS: Street Fighter CCG 2-Player Turbo Box (Ryu, Chun-Li)",
+      "releaseDate": "2017",
+      "releasePrecision": "year",
+      "productNote": "Retail listings confirm the product; no reliable street date found.",
+      "productSource": "https://www.amazon.com/Jasco-Games-Street-Fighter-CCG/dp/B073WYJRT8",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 82,
+      "extension": "Street Fighter",
+      "extensionShort": "sf5",
+      "character": "Ryu1",
+      "asset": "sf5/118.jpg",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Ryu1"
+        ],
+        [
+          "Chun-Li1"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "Cowboy Bebop — Spike1",
+      "productName": "Cowboy Bebop 2-Player Turbo Box — Spike vs. Vicious",
+      "releaseDate": "2017-11",
+      "releasePrecision": "month",
+      "productNote": "84 cards: two 41-card decks + 2 random Ultra Rares. MSRP $24.99.",
+      "productSource": "https://icv2.com/articles/news/view/38611/cowboy-bebop-joins-ufs",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 86,
+      "extension": "Cowboy Bebop",
+      "extensionShort": "bebop",
+      "character": "Spike1",
+      "asset": "bebop/073.jpg",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Spike1"
+        ],
+        [
+          "Vicious1"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "Cowboy Bebop — Vicious1",
+      "productName": "Cowboy Bebop 2-Player Turbo Box — Spike vs. Vicious",
+      "releaseDate": "2017-11",
+      "releasePrecision": "month",
+      "productNote": "84 cards: two 41-card decks + 2 random Ultra Rares. MSRP $24.99.",
+      "productSource": "https://icv2.com/articles/news/view/38611/cowboy-bebop-joins-ufs",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 86,
+      "extension": "Cowboy Bebop",
+      "extensionShort": "bebop",
+      "character": "Vicious1",
+      "asset": "bebop/118.jpg",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Spike1"
+        ],
+        [
+          "Vicious1"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "Mortal Kombat — Scorpion1",
+      "productName": "Mortal Kombat X 2-Player Turbo Box — Sub-Zero vs. Scorpion",
+      "releaseDate": "2018-02",
+      "releasePrecision": "month",
+      "productNote": "Two 41-card decks + 2 random Ultra Rares. Sold as UFS Set 29.",
+      "productSource": "https://icv2.com/articles/news/view/38633/mortal-kombat-x-invades-ufs",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 87,
+      "extension": "Mortal Kombat",
+      "extensionShort": "mortalkombat",
+      "character": "Scorpion1",
+      "asset": "mortalkombat/136.jpg",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Scorpion1"
+        ],
+        [
+          "Sub-Zero1"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "Mortal Kombat — Sub-Zero1",
+      "productName": "Mortal Kombat X 2-Player Turbo Box — Sub-Zero vs. Scorpion",
+      "releaseDate": "2018-02",
+      "releasePrecision": "month",
+      "productNote": "Two 41-card decks + 2 random Ultra Rares. Sold as UFS Set 29.",
+      "productSource": "https://icv2.com/articles/news/view/38633/mortal-kombat-x-invades-ufs",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 87,
+      "extension": "Mortal Kombat",
+      "extensionShort": "mortalkombat",
+      "character": "Sub-Zero1",
+      "asset": "mortalkombat/154.jpg",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Scorpion1"
+        ],
+        [
+          "Sub-Zero1"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "My Hero Academia — Izuku Midoriya",
+      "productName": "My Hero Academia CCG 2-Player Rival Deck",
+      "releaseDate": "2021-10",
+      "releasePrecision": "month",
+      "productNote": "104 cards: two 51-card decks (Izuku Midoriya, Katsuki Bakugo) + 2 random Ultra Rares. MSRP $39.99.",
+      "productSource": "https://mhacardgame.com/my-hero-academia-collectible-card-game-2-player-rival-deck/",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 99,
+      "extension": "My Hero Academia",
+      "extensionShort": "mha01",
+      "character": "Izuku Midoriya",
+      "asset": "mha01/055.png",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Izuku Midoriya"
+        ],
+        [
+          "Katsuki Bakugo"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "My Hero Academia — Katsuki Bakugo",
+      "productName": "My Hero Academia CCG 2-Player Rival Deck",
+      "releaseDate": "2021-10",
+      "releasePrecision": "month",
+      "productNote": "104 cards: two 51-card decks (Izuku Midoriya, Katsuki Bakugo) + 2 random Ultra Rares. MSRP $39.99.",
+      "productSource": "https://mhacardgame.com/my-hero-academia-collectible-card-game-2-player-rival-deck/",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 99,
+      "extension": "My Hero Academia",
+      "extensionShort": "mha01",
+      "character": "Katsuki Bakugo",
+      "asset": "mha01/073.png",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Izuku Midoriya"
+        ],
+        [
+          "Katsuki Bakugo"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "Heroes Clash — Endeavor (II)",
+      "productName": "My Hero Academia CCG Series 3 Starter Decks (Endeavor, Eraser Head)",
+      "releaseDate": "2022",
+      "releasePrecision": "year",
+      "productNote": "Heroes Clash released 2022-10-14; the two starter decks are dated only to that year here.",
+      "productSource": "https://mhacardgame.com/next-steps-endeavor-starter-deck/",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 102,
+      "extension": "Heroes Clash",
+      "extensionShort": null,
+      "character": "Endeavor (II)",
+      "asset": "mha03/001.jpg",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Endeavor (II)"
+        ],
+        [
+          "Eraser Head (II)"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "Heroes Clash — Eraser Head (II)",
+      "productName": "My Hero Academia CCG Series 3 Starter Decks (Endeavor, Eraser Head)",
+      "releaseDate": "2022",
+      "releasePrecision": "year",
+      "productNote": "Heroes Clash released 2022-10-14; the two starter decks are dated only to that year here.",
+      "productSource": "https://mhacardgame.com/next-steps-endeavor-starter-deck/",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 102,
+      "extension": "Heroes Clash",
+      "extensionShort": null,
+      "character": "Eraser Head (II)",
+      "asset": "mha03/019.jpg",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Endeavor (II)"
+        ],
+        [
+          "Eraser Head (II)"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "League of Villains — All For One",
+      "productName": "My Hero Academia CCG Clash Decks (All Might, All For One)",
+      "releaseDate": "2023",
+      "releasePrecision": "year",
+      "productNote": "Named in Jasco’s \"Designing Clash Decks\" dev diary, 2023-05-16; exact street date not established.",
+      "productSource": "https://mhacardgame.com/dev-diary-designing-clash-decks/",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 104,
+      "extension": "League of Villains",
+      "extensionShort": "mha04",
+      "character": "All For One",
+      "asset": "mha04/001.jpg",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "All Might (VI)"
+        ],
+        [
+          "All For One"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "League of Villains — All Might (VI)",
+      "productName": "My Hero Academia CCG Clash Decks (All Might, All For One)",
+      "releaseDate": "2023",
+      "releasePrecision": "year",
+      "productNote": "Named in Jasco’s \"Designing Clash Decks\" dev diary, 2023-05-16; exact street date not established.",
+      "productSource": "https://mhacardgame.com/dev-diary-designing-clash-decks/",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 104,
+      "extension": "League of Villains",
+      "extensionShort": "mha04",
+      "character": "All Might (VI)",
+      "asset": "mha04/019.jpg",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "All Might (VI)"
+        ],
+        [
+          "All For One"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "Undaunted Raid — Mirio Togata",
+      "productName": "My Hero Academia CCG: Undaunted Raid Clash Deck Set (Mirio Togata, Overhaul)",
+      "releaseDate": "2023-06-30",
+      "releasePrecision": "day",
+      "productNote": null,
+      "productSource": "https://www.miniaturemarket.com/my-hero-academia-ccg-undaunted-raid-clash-deck-set-2-jasuvs05cdds-set.html",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 105,
+      "extension": "Undaunted Raid",
+      "extensionShort": "mha05",
+      "character": "Mirio Togata",
+      "asset": "mha05/001.jpg",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Mirio Togata"
+        ],
+        [
+          "Overhaul"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "Undaunted Raid — Overhaul",
+      "productName": "My Hero Academia CCG: Undaunted Raid Clash Deck Set (Mirio Togata, Overhaul)",
+      "releaseDate": "2023-06-30",
+      "releasePrecision": "day",
+      "productNote": null,
+      "productSource": "https://www.miniaturemarket.com/my-hero-academia-ccg-undaunted-raid-clash-deck-set-2-jasuvs05cdds-set.html",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 105,
+      "extension": "Undaunted Raid",
+      "extensionShort": "mha05",
+      "character": "Overhaul",
+      "asset": "mha05/019.jpg",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Mirio Togata"
+        ],
+        [
+          "Overhaul"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "Jet Burn — Himiko Toga (III)",
+      "productName": "My Hero Academia: Jet Burn Clash Decks (Ochaco Uraraka, Himiko Toga)",
+      "releaseDate": "2023-11-17",
+      "releasePrecision": "day",
+      "productNote": null,
+      "productSource": "https://www.tcgplayer.com/product/516201/",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 106,
+      "extension": "Jet Burn",
+      "extensionShort": "mha06",
+      "character": "Himiko Toga (III)",
+      "asset": "mha06/001.jpg",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Ochaco Uraraka (IV)"
+        ],
+        [
+          "Himiko Toga (III)"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "Jet Burn — Ochaco Uraraka (IV)",
+      "productName": "My Hero Academia: Jet Burn Clash Decks (Ochaco Uraraka, Himiko Toga)",
+      "releaseDate": "2023-11-17",
+      "releasePrecision": "day",
+      "productNote": null,
+      "productSource": "https://www.tcgplayer.com/product/516201/",
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": "publisher-or-press",
+      "uvsultraId": 106,
+      "extension": "Jet Burn",
+      "extensionShort": "mha06",
+      "character": "Ochaco Uraraka (IV)",
+      "asset": "mha06/019.jpg",
+      "starterExclusiveCards": 36,
+      "hadDeck": true,
+      "deckmates": [],
+      "starterExclusiveCharacters": 2,
+      "deckCount": 2,
+      "deckRoster": [
+        [
+          "Ochaco Uraraka (IV)"
+        ],
+        [
+          "Himiko Toga (III)"
+        ]
+      ],
+      "exclusivesPerCharacter": 18,
+      "knownProduct": null
+    },
+    {
+      "label": "Attack on Titan: Battle for Humanity — Levi Ackerman, Strong Soldier",
+      "productName": null,
+      "releaseDate": null,
+      "releasePrecision": null,
+      "productNote": null,
+      "productSource": null,
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": null,
+      "uvsultraId": 117,
+      "extension": "Attack on Titan: Battle for Humanity",
+      "extensionShort": "aot01",
+      "character": "Levi Ackerman, Strong Soldier",
+      "asset": "aot01/360.jpg",
+      "starterExclusiveCards": 2,
+      "hadDeck": null,
+      "deckmates": null,
+      "starterExclusiveCharacters": 2,
+      "deckCount": null,
+      "deckRoster": null,
+      "exclusivesPerCharacter": 1,
+      "knownProduct": {
+        "setCode": "AOT01-CD1",
+        "name": "Levi Ackerman Clash Deck",
+        "releaseDate": "2024-08-16"
+      }
+    },
+    {
+      "label": "Attack on Titan: Battle for Humanity — Mikasa Ackerman, Talented Recruit",
+      "productName": null,
+      "releaseDate": null,
+      "releasePrecision": null,
+      "productNote": null,
+      "productSource": null,
+      "releaseDateSource": null,
+      "releaseDateConflict": null,
+      "productProvenance": null,
+      "uvsultraId": 117,
+      "extension": "Attack on Titan: Battle for Humanity",
+      "extensionShort": "aot01",
+      "character": "Mikasa Ackerman, Talented Recruit",
+      "asset": "aot01/361.jpg",
+      "starterExclusiveCards": 2,
+      "hadDeck": null,
+      "deckmates": null,
+      "starterExclusiveCharacters": 2,
+      "deckCount": null,
+      "deckRoster": null,
+      "exclusivesPerCharacter": 1,
+      "knownProduct": {
+        "setCode": "AOT01-CD2",
+        "name": "Mikasa Ackerman Clash Deck",
+        "releaseDate": "2024-08-16"
+      }
+    }
+  ]
+}
