@@ -1,7 +1,8 @@
 <script setup>
+import { computed } from 'vue'
 import { getCardImage } from 'src/js/image_helper'
 
-defineProps({
+const props = defineProps({
   // Card asset shown large in the right-hand preview slot (null = empty state).
   faceAsset: { type: String, default: null },
   faceName: { type: String, default: '' },
@@ -13,6 +14,8 @@ defineProps({
 })
 
 defineEmits(['clear-face'])
+
+const isEpic = computed(() => props.faceName?.trim().toLowerCase() === 'champion of the children')
 </script>
 
 <template>
@@ -25,13 +28,16 @@ defineEmits(['clear-face'])
     <!-- Right: large face preview -->
     <div class="deck-stage__face">
       <template v-if="faceAsset">
-        <q-img
-          class="face-card"
-          fit="contain"
-          :ratio="59 / 86"
-          :src="getCardImage(faceAsset)"
-          :alt="faceName"
-        />
+        <div class="face-card-wrap">
+          <q-img
+            class="face-card"
+            fit="contain"
+            :ratio="59 / 86"
+            :src="getCardImage(faceAsset)"
+            :alt="faceName"
+          />
+          <div v-if="isEpic" class="epic-overlay">EPIC</div>
+        </div>
         <div v-if="faceName || clearable" class="face-name-row">
           <div v-if="faceName" class="face-name">{{ faceName }}</div>
           <q-btn
@@ -100,11 +106,36 @@ defineEmits(['clear-face'])
   top: 60px;
   align-self: flex-start;
 }
+.face-card-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
 .face-card {
   width: 100%;
   max-width: 300px;
   border-radius: 12px;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.7);
+}
+.epic-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: expanded;
+  letter-spacing: 3px;
+  background: linear-gradient(135deg, #7dd3fc 0%, #a78bfa 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.85)) drop-shadow(0 0 4px rgba(0, 0, 0, 0.9));
+  pointer-events: none;
+  user-select: none;
+  z-index: 2;
 }
 .face-name-row {
   display: flex;
