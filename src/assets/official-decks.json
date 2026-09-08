@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-07",
+  "generated": "2026-09-08",
   "source": "https://legacy.play.uvsgames.com/decks/official-decks (carde.io officialDecks API)",
   "note": "Publisher-authored decklists for preconstructed products. Card names resolved against local card data by cardeio id; `name: null` means the id could not be resolved.",
   "entries": [
@@ -272,8 +272,8 @@
             },
             {
               "cardeioId": "659ed00989c2cd55ea9f121d",
-              "name": "hunter's pursuit",
-              "asset": null,
+              "name": "Hunters' Pursuit",
+              "asset": "cb02/009.jpg",
               "count": 3
             },
             {
@@ -542,8 +542,8 @@
             },
             {
               "cardeioId": "65f47917820566ead1743df8",
-              "name": "arrows and daggers",
-              "asset": null,
+              "name": "Arrows & Daggers",
+              "asset": "crvm/005.jpg",
               "count": 3
             },
             {
