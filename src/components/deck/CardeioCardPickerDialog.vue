@@ -12,8 +12,8 @@ const search = ref('')
 
 watch(() => props.unmatchedName, (val) => { search.value = val }, { immediate: true })
 
-const allCards = Object.entries(cardeioIds).map(([name, data]) => ({
-  name, id: data.id, slug: data.slug, cardType: data.cardType,
+const allCards = Object.entries(cardeioIds).map(([id, data]) => ({
+  name: data.name, id, slug: data.slug, cardType: data.cardType,
 }))
 
 const results = computed(() => {

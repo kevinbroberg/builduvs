@@ -43264,7 +43264,9 @@
     "rarity": "uncommon",
     "extension_short": "bloodomen",
     "extension": "Red Horizon: Blood Omen",
-    "asset": "bloodomen/151.jpg"
+    "asset": "bloodomen/151.jpg",
+    "cardeio_id": "f03c71c0-54f2-4529-b294-70ea01373a8a",
+    "cardeio_slug": "034-good-evil"
   },
   {
     "name": "Guardian's Mark",
@@ -165325,7 +165327,9 @@
     "rarity": "promo",
     "extension_short": "6pointpromo",
     "extension": "6 Points Promos",
-    "asset": "6pointpromo/008.jpg"
+    "asset": "6pointpromo/008.jpg",
+    "cardeio_id": "f03c71c0-54f2-4529-b294-70ea01373a8a",
+    "cardeio_slug": "034-good-evil"
   },
   {
     "name": "Dariya1",

@@ -19,3 +19,8 @@ export function getCardImage(asset) {
   if (!asset) return placeholderImage
   return `${CDN_BASE}/${asset}`
 }
+
+// The generic card back, for face-down cards and the top of the deck.
+export function getCardBackImage() {
+  return symbolImages['/src/assets/images/card-back-v1.png']?.default || placeholderImage
+}

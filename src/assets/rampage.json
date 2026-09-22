@@ -419,7 +419,9 @@
     "difficulty": 2,
     "control": 5,
     "block_zone": "mid",
-    "block_modifier": 5
+    "block_modifier": 5,
+    "cardeio_id": "64e6bce9cc0d62bbb0daca96",
+    "cardeio_slug": "015-any-means-necessary"
   },
   {
     "extension": "Crimson Rampage",

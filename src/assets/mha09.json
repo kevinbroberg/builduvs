@@ -26,7 +26,9 @@
     "hand_size": 6,
     "vitality": 32,
     "asset": "mha09/001.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/001.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/001.jpg",
+    "cardeio_id": "2c955386-9e65-431a-ad72-60c08a7b7f19",
+    "cardeio_slug": "001-armored-all-might"
   },
   {
     "extension_short": "mha09",
@@ -55,7 +57,9 @@
     "hand_size": 6,
     "vitality": 30,
     "asset": "mha09/002.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/002.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/002.jpg",
+    "cardeio_id": "d4d48ac4-7d63-44c7-82e3-c0e7e51b087b",
+    "cardeio_slug": "002-izuku-midoriya-deku"
   },
   {
     "extension_short": "mha09",
@@ -83,7 +87,9 @@
     "block_modifier": 1,
     "block_zone": "mid",
     "asset": "mha09/003.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/003.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/003.jpg",
+    "cardeio_id": "de95de51-2515-48f4-ab6d-6ee1fe496a19",
+    "cardeio_slug": "003-heroic-conviction"
   },
   {
     "extension_short": "mha09",
@@ -114,7 +120,9 @@
     "block_modifier": 2,
     "block_zone": "mid",
     "asset": "mha09/004.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/004.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/004.jpg",
+    "cardeio_id": "dd8dec0f-04a0-443a-bdfd-a35a854cdf44",
+    "cardeio_slug": "004-armored-car-hercules"
   },
   {
     "extension_short": "mha09",
@@ -150,7 +158,9 @@
     "attack_zone": "mid",
     "damage": 4,
     "asset": "mha09/005.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/005.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/005.jpg",
+    "cardeio_id": "e8615dc9-67cb-41b1-a80e-bf3a83ea27c7",
+    "cardeio_slug": "005-1-a-configuration"
   },
   {
     "extension_short": "mha09",
@@ -186,7 +196,9 @@
     "attack_zone": "high",
     "damage": 3,
     "asset": "mha09/006.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/006.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/006.jpg",
+    "cardeio_id": "2b0ee252-278b-439e-a73d-58addae55ccb",
+    "cardeio_slug": "all-might-s-armored-punch"
   },
   {
     "extension_short": "mha09",
@@ -222,7 +234,9 @@
     "attack_zone": "low",
     "damage": 5,
     "asset": "mha09/007.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/007.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/007.jpg",
+    "cardeio_id": "7ba5fda1-e220-414c-b693-471a5edc92d7",
+    "cardeio_slug": "007-armor-rush"
   },
   {
     "extension_short": "mha09",
@@ -255,7 +269,9 @@
     "attack_zone": "mid",
     "damage": 6,
     "asset": "mha09/008.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/008.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/008.jpg",
+    "cardeio_id": "4fc3d80b-0110-4775-92cd-3073a5f099e1",
+    "cardeio_slug": "008-blackchain"
   },
   {
     "extension_short": "mha09",
@@ -291,7 +307,9 @@
     "attack_zone": "mid",
     "damage": 5,
     "asset": "mha09/009.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/009.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/009.jpg",
+    "cardeio_id": "f3cb04fb-d8ee-4468-96d0-7a25ad09430f",
+    "cardeio_slug": "009-cellophane-sugarman-shoot-style-smash"
   },
   {
     "extension_short": "mha09",
@@ -325,7 +343,9 @@
     "attack_zone": "high",
     "damage": 4,
     "asset": "mha09/010.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/010.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/010.jpg",
+    "cardeio_id": "a29c2fbc-3b71-4e81-98b3-e360a1049451",
+    "cardeio_slug": "010-incoming-smash-kick"
   },
   {
     "extension_short": "mha09",
@@ -355,7 +375,9 @@
     "attack_zone": "low",
     "damage": 5,
     "asset": "mha09/011.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/011.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/011.jpg",
+    "cardeio_id": "1d0b023a-d884-4cb9-80a9-266313cf0acd",
+    "cardeio_slug": "011-overdrive-uppercut"
   },
   {
     "extension_short": "mha09",
@@ -387,7 +409,9 @@
     "block_modifier": 2,
     "block_zone": "mid",
     "asset": "mha09/012.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/012.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/012.jpg",
+    "cardeio_id": "da65fff7-7703-476b-ac8e-a5683cf971a8",
+    "cardeio_slug": "012-armored-pro-hero"
   },
   {
     "extension_short": "mha09",
@@ -418,7 +442,9 @@
     "block_modifier": 2,
     "block_zone": "high",
     "asset": "mha09/013.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/013.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/013.jpg",
+    "cardeio_id": "88d5a50f-88a7-49a9-b03f-19653f051ad2",
+    "cardeio_slug": "013-battle-suit-hud"
   },
   {
     "extension_short": "mha09",
@@ -445,7 +471,9 @@
     "block_modifier": 3,
     "block_zone": "high",
     "asset": "mha09/014.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/014.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/014.jpg",
+    "cardeio_id": "36cfc6eb-7f68-4799-a29d-b2339840894d",
+    "cardeio_slug": "014-bomber-jet-ride"
   },
   {
     "extension_short": "mha09",
@@ -476,7 +504,9 @@
     "block_modifier": 2,
     "block_zone": "low",
     "asset": "mha09/015.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/015.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/015.jpg",
+    "cardeio_id": "c0625e78-92ca-48c8-a0fa-a939f1496cb6",
+    "cardeio_slug": "015-briefcase-armor"
   },
   {
     "extension_short": "mha09",
@@ -505,7 +535,9 @@
     "block_modifier": 1,
     "block_zone": "mid",
     "asset": "mha09/016.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/016.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/016.jpg",
+    "cardeio_id": "7eac0559-0678-4fa4-8285-947c9169ea32",
+    "cardeio_slug": "016-evoking-the-wielders"
   },
   {
     "extension_short": "mha09",
@@ -532,7 +564,9 @@
     "block_modifier": 3,
     "block_zone": "high",
     "asset": "mha09/017.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/017.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/017.jpg",
+    "cardeio_id": "ad7539c8-dfdd-4118-978f-4c8d53aa9659",
+    "cardeio_slug": "017-gear-shift"
   },
   {
     "extension_short": "mha09",
@@ -563,7 +597,9 @@
     "block_modifier": 2,
     "block_zone": "low",
     "asset": "mha09/018.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/018.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/018.jpg",
+    "cardeio_id": "738063d3-7f13-48f8-9593-72380bb3cc68",
+    "cardeio_slug": "018-giving-in-to-rage"
   },
   {
     "extension_short": "mha09",
@@ -589,7 +625,9 @@
     "block_modifier": 3,
     "block_zone": "low",
     "asset": "mha09/019.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/019.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/019.jpg",
+    "cardeio_id": "f03c71c0-54f2-4529-b294-70ea01373a8a",
+    "cardeio_slug": "034-good-evil"
   },
   {
     "extension_short": "mha09",
@@ -619,7 +657,9 @@
     "block_modifier": 1,
     "block_zone": "mid",
     "asset": "mha09/020.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/020.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/020.jpg",
+    "cardeio_id": "bd590704-3d57-408e-8c0b-3676058c28ec",
+    "cardeio_slug": "020-hercules-red-riot"
   },
   {
     "extension_short": "mha09",
@@ -649,7 +689,9 @@
     "block_modifier": 2,
     "block_zone": "high",
     "asset": "mha09/021.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/021.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/021.jpg",
+    "cardeio_id": "cb15adb0-2a5e-4d2d-8f6b-1d16a60c8097",
+    "cardeio_slug": "021-vestige-slingshot"
   },
   {
     "extension_short": "mha09",
@@ -677,7 +719,9 @@
     "hand_size": 6,
     "vitality": 34,
     "asset": "mha09/022.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/022.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/022.jpg",
+    "cardeio_id": "908d112c-9311-4488-9d25-cde4eea122be",
+    "cardeio_slug": "022-all-for-one-demon-lord"
   },
   {
     "extension_short": "mha09",
@@ -705,7 +749,9 @@
     "hand_size": 6,
     "vitality": 33,
     "asset": "mha09/023.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/023.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/023.jpg",
+    "cardeio_id": "03ca40a5-7c78-4b9e-8f14-6628589985ef",
+    "cardeio_slug": "tomura-shigaraki-all-for-one-s-successor"
   },
   {
     "extension_short": "mha09",
@@ -730,7 +776,9 @@
     "block_modifier": 3,
     "block_zone": "mid",
     "asset": "mha09/024.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/024.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/024.jpg",
+    "cardeio_id": "6f4f33ae-f22f-496d-9987-a7ff31a064a2",
+    "cardeio_slug": "024-concealing-power"
   },
   {
     "extension_short": "mha09",
@@ -757,7 +805,9 @@
     "block_modifier": 2,
     "block_zone": "low",
     "asset": "mha09/025.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/025.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/025.jpg",
+    "cardeio_id": "dd443a2c-784c-4520-b6e9-e008a2c00cfb",
+    "cardeio_slug": "025-evil-aura"
   },
   {
     "extension_short": "mha09",
@@ -791,7 +841,9 @@
     "attack_zone": "mid",
     "damage": 5,
     "asset": "mha09/026.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/026.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/026.jpg",
+    "cardeio_id": "9b494597-39ac-4cdb-8baf-bced07091d09",
+    "cardeio_slug": "026-adaptive-stabbing"
   },
   {
     "extension_short": "mha09",
@@ -824,7 +876,9 @@
     "attack_zone": "mid",
     "damage": 6,
     "asset": "mha09/027.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/027.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/027.jpg",
+    "cardeio_id": "b5fe192b-6a0a-4e5f-b9a0-14121fbeb12f",
+    "cardeio_slug": "027-appendage-onslaught"
   },
   {
     "extension_short": "mha09",
@@ -857,7 +911,9 @@
     "attack_zone": "low",
     "damage": 4,
     "asset": "mha09/028.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/028.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/028.jpg",
+    "cardeio_id": "cac4cc5f-cf44-41b2-932b-45cceb29d16e",
+    "cardeio_slug": "028-combination-blast"
   },
   {
     "extension_short": "mha09",
@@ -891,7 +947,9 @@
     "attack_zone": "high",
     "damage": 7,
     "asset": "mha09/029.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/029.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/029.jpg",
+    "cardeio_id": "e5f631b1-e467-4182-8d0e-aa2857a04729",
+    "cardeio_slug": "029-combination-salvo"
   },
   {
     "extension_short": "mha09",
@@ -921,7 +979,9 @@
     "attack_zone": "low",
     "damage": 6,
     "asset": "mha09/030.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/030.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/030.jpg",
+    "cardeio_id": "e8a1ba4e-cf44-429c-ad4d-ffc781fada78",
+    "cardeio_slug": "demon-lord-s-blast"
   },
   {
     "extension_short": "mha09",
@@ -951,7 +1011,9 @@
     "attack_zone": "high",
     "damage": 5,
     "asset": "mha09/031.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/031.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/031.jpg",
+    "cardeio_id": "686361e8-3af3-4858-ae4a-8c5aa294bf35",
+    "cardeio_slug": "031-massive-optimal-punch"
   },
   {
     "extension_short": "mha09",
@@ -981,7 +1043,9 @@
     "attack_zone": "mid",
     "damage": 5,
     "asset": "mha09/032.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/032.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/032.jpg",
+    "cardeio_id": "6599d4a1-bc0d-4801-9f25-4c787b1ec859",
+    "cardeio_slug": "032-persistent-malice"
   },
   {
     "extension_short": "mha09",
@@ -1006,7 +1070,9 @@
     "block_modifier": 3,
     "block_zone": "high",
     "asset": "mha09/033.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/033.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/033.jpg",
+    "cardeio_id": "aedbc235-6c76-4493-958a-977d3d13a529",
+    "cardeio_slug": "033-gloating"
   },
   {
     "extension_short": "mha09",
@@ -1032,7 +1098,9 @@
     "block_modifier": 3,
     "block_zone": "low",
     "asset": "mha09/034.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/034.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/034.jpg",
+    "cardeio_id": "f03c71c0-54f2-4529-b294-70ea01373a8a",
+    "cardeio_slug": "034-good-evil"
   },
   {
     "extension_short": "mha09",
@@ -1057,7 +1125,9 @@
     "block_modifier": 2,
     "block_zone": "low",
     "asset": "mha09/035.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/035.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/035.jpg",
+    "cardeio_id": "daedc288-b8f1-42ad-a115-96a689400bd4",
+    "cardeio_slug": "035-hopelessness"
   },
   {
     "extension_short": "mha09",
@@ -1084,7 +1154,9 @@
     "block_modifier": 3,
     "block_zone": "mid",
     "asset": "mha09/036.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/036.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/036.jpg",
+    "cardeio_id": "4f314625-ed4f-4f08-9311-74b9c5f2d963",
+    "cardeio_slug": "036-optimal-form"
   },
   {
     "extension_short": "mha09",
@@ -1109,7 +1181,9 @@
     "block_modifier": 1,
     "block_zone": "mid",
     "asset": "mha09/037.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/037.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/037.jpg",
+    "cardeio_id": "dcb1cdba-4ad0-4e1d-8fa1-8c03a69228f4",
+    "cardeio_slug": "037-panicked-outburst"
   },
   {
     "extension_short": "mha09",
@@ -1136,7 +1210,9 @@
     "block_modifier": 3,
     "block_zone": "mid",
     "asset": "mha09/038.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/038.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/038.jpg",
+    "cardeio_id": "b7d7e816-2c5f-469d-a11a-19723bff3a71",
+    "cardeio_slug": "038-reckless-combat"
   },
   {
     "extension_short": "mha09",
@@ -1163,7 +1239,9 @@
     "block_modifier": 2,
     "block_zone": "high",
     "asset": "mha09/039.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/039.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/039.jpg",
+    "cardeio_id": "20170168-73b0-40b3-9286-7575567e65f9",
+    "cardeio_slug": "039-rewind-engaged"
   },
   {
     "extension_short": "mha09",
@@ -1190,7 +1268,9 @@
     "block_modifier": 3,
     "block_zone": "low",
     "asset": "mha09/040.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/040.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/040.jpg",
+    "cardeio_id": "c0d1dc12-1a29-423f-8958-6be13c5d6e64",
+    "cardeio_slug": "040-stealing-quirks"
   },
   {
     "extension_short": "mha09",
@@ -1217,7 +1297,9 @@
     "block_modifier": 2,
     "block_zone": "high",
     "asset": "mha09/041.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/041.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/041.jpg",
+    "cardeio_id": "463f7ac9-4331-4bc9-953a-0b0198fbc16f",
+    "cardeio_slug": "041-stockpiled-quirks"
   },
   {
     "extension_short": "mha09",
@@ -1243,6 +1325,8 @@
     "block_modifier": 3,
     "block_zone": "high",
     "asset": "mha09/042.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/042.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/042.jpg",
+    "cardeio_id": "5200c5a3-aa72-4d43-9b37-3fbbc1ac2ddf",
+    "cardeio_slug": "042-toying-with-endeavor-and-hawks"
   }
 ]

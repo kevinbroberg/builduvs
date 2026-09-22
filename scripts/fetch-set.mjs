@@ -73,12 +73,13 @@ function parseCards(html) {
 function parseCard(chunk) {
   const card = {}
 
-  // Extension short and card number from preview()
-  const previewMatch = chunk.match(/preview\('(\w+)',\s*'(\w+)'\)/)
+  // Extension short and card number from preview2()
+  const previewMatch = chunk.match(/preview2?\('(\w+)',\s*'(\w+)'(?:,\s*'(\w+)')?\)/)
   if (!previewMatch) return null
   card.extension_short = previewMatch[1]
   card.numero = parseInt(previewMatch[2], 10)
   card.numero_image = card.numero
+  if (previewMatch[3]) card.type = previewMatch[3].toLowerCase()
 
   // Name
   const nameMatch = chunk.match(/<h1>([^<]+)<\/h1>/)
@@ -135,10 +136,10 @@ function parseCard(chunk) {
   const cd3Match = chunk.match(/class="card_division cd3"[^>]*>([\s\S]*?)<\/div>/)
   if (cd3Match) parseStats(cd3Match[1], card)
 
-  // Asset path
+  // Asset path — full-resolution image (raw `.jpg`, not `-preview.jpg`)
   const padded = String(card.numero).padStart(3, '0')
-  card.asset = `${card.extension_short}/${padded}-preview.jpg`
-  card.ultra_url_path = `https://www.uvsultra.online/images/extensions/${card.extension_short}/${padded}-preview.jpg`
+  card.asset = `${card.extension_short}/${padded}.jpg`
+  card.ultra_url_path = `https://www.uvsultra.online/images/extensions/${card.extension_short}/${padded}.jpg`
 
   return card
 }

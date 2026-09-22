@@ -91,8 +91,8 @@ export const useCardeioStore = defineStore('cardeio', {
       ])
 
       const idToName = {}
-      for (const [name, info] of Object.entries(cardeioIds)) {
-        idToName[info.id] = name
+      for (const [id, info] of Object.entries(cardeioIds)) {
+        idToName[id] = info.name
       }
       const nameToCard = {}
       for (const card of Object.values(cards)) {

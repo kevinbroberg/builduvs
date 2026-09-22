@@ -30,7 +30,7 @@ const cardByName = new Map(standardCards.map(c => [normName(c.name), c]))
 //    ("…the Star Razor").
 const cardByCardeioId = new Map(
   Object.entries(cardeioIdsData)
-    .map(([name, data]) => [data.id, cardByName.get(normName(name))])
+    .map(([id, data]) => [id, cardByName.get(normName(data.name))])
     .filter(([, card]) => card != null)
 )
 for (const c of standardCards) if (c.cardeio_id) cardByCardeioId.set(c.cardeio_id, c)

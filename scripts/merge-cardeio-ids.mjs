@@ -28,9 +28,9 @@ function normalize(name) {
 const cardeioIds = JSON.parse(readFileSync(resolve(assetsDir, 'cardeio-ids.json'), 'utf8'))
 const idx = {}
 const prefixIdx = {} // prefix → array of hits
-for (const [key, val] of Object.entries(cardeioIds)) {
-  const nk = normalize(key)
-  const hit = { id: val.id, slug: val.slug }
+for (const [id, val] of Object.entries(cardeioIds)) {
+  const nk = normalize(val.name)
+  const hit = { id, slug: val.slug }
   idx[nk] = hit
   // Index two prefix types for fallback matching:
   //   1. Before " //" — catches "Reiner Braun, Warrior" → "reiner braun, warrior // reiner, armored titan advancing"

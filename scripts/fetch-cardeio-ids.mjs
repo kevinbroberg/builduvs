@@ -1,7 +1,12 @@
 #!/usr/bin/env node
 /**
  * Fetch all UVS cards from the carde.io API and build a lookup map:
- *   normalizedName -> { id, slug, cardType }
+ *   id -> { name, slug, cardType }
+ *
+ * Keyed by carde.io's own card id rather than name: id is a true primary key
+ * (one per printing), so this can never lose a card the way a name-keyed map
+ * does when two printings share a name. See src/js/cardeio_index.js for the
+ * name-based lookups built on top of this.
  *
  * Output: src/assets/cardeio-ids.json
  *
@@ -56,25 +61,25 @@ async function main() {
   }
   console.log(`\nFetched ${allCards.length} cards`)
 
-  // Build lookup: normalizedName -> { id, slug, cardType }
+  // Build lookup: id -> { name, slug, cardType }. Keyed by id, so same-named
+  // reprints (still logged below, for visibility) each keep their own entry.
   const lookup = {}
-  const duplicates = []
+  const namesSeen = new Map() // normalizedName -> count, just for the report
 
   for (const card of allCards) {
     const key = normalizeName(card.name)
-    if (lookup[key]) {
-      duplicates.push({ name: card.name, existing: lookup[key].id, new: card.id })
-    }
-    lookup[key] = {
-      id: card.id,
+    namesSeen.set(key, (namesSeen.get(key) ?? 0) + 1)
+    lookup[card.id] = {
+      name: key,
       slug: card.slug,
       cardType: card.cardType.name,
     }
   }
 
-  if (duplicates.length > 0) {
-    console.log(`\nDuplicate names (${duplicates.length}) — last entry wins:`)
-    duplicates.forEach(d => console.log(`  "${d.name}": ${d.existing} -> ${d.new}`))
+  const duplicateNames = [...namesSeen.entries()].filter(([, n]) => n > 1)
+  if (duplicateNames.length > 0) {
+    console.log(`\nNames shared by 2+ printings (${duplicateNames.length}) — all ids kept:`)
+    duplicateNames.forEach(([name, n]) => console.log(`  "${name}": ${n} printings`))
   }
 
   fs.writeFileSync(OUT_FILE, JSON.stringify(lookup, null, 2))

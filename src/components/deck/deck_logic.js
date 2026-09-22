@@ -19,7 +19,11 @@
   export const howPartition = ref(type)
 
 
-  export const sorts = ['Difficulty', 'Control', 'Block_Modifier', 'Speed', 'Damage', 'Name'].map(f => ({ label: f.toLowerCase(), fun: card => card[f]}))
+  // `field` is the actual card property name (cards use lower-case keys); `label`
+  // is what the UI shows. Keep them separate — deriving one from the other by
+  // case-munging silently produced undefined lookups and a no-op sort.
+  export const sorts = ['difficulty', 'control', 'block_modifier', 'speed', 'damage', 'name']
+    .map(f => ({ label: f.replace('_', ' '), field: f, fun: card => card[f] }))
   export const sortField = ref('')
   export function compare(a, b) {
     if (sortField.value) {
