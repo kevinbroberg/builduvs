@@ -13,6 +13,9 @@ import { useDeckStore } from 'src/stores/deck'
 import { storeToRefs } from 'pinia'
 import { downloadTTSJson } from 'src/js/tts_export'
 import { LC_FORMATS, eventName } from 'src/js/event_naming'
+import DeckFilterBar from 'src/components/locals/DeckFilterBar.vue'
+import DeckFilterResultsList from 'src/components/locals/DeckFilterResultsList.vue'
+import { findStandingsWithCard, findStandingsWithFaceCard, getPopularCards } from 'src/js/locals_sql'
 
 // Normalize apostrophes and other quote variants to plain straight apostrophe
 function normName(name) {
@@ -220,34 +223,119 @@ const eventsByFormat = computed(() => ({
 
 const tab = ref(FORMATS[0]?.key ?? 'kaiju')
 
-// ── Character filter (event-list view) ────────────────────────────────────────
-// Typing a character name collapses the tabbed event browser into a flat list of
-// every deck across all events whose face card matches. Partial, case- and
-// apostrophe-insensitive so "shigaraki" or "all might" find their variants.
-const search = ref('')
-const searchNorm = computed(() => normName((search.value || '').trim()))
-const isFiltering = computed(() => searchNorm.value.length > 0)
-
-const filteredStandings = computed(() => {
-  const q = searchNorm.value
-  if (!q) return []
-  const out = []
-  for (const ev of events) {
-    for (const s of getStandings(ev.id)) {
-      if (s.hasDeck && s.characterName && normName(s.characterName).includes(q)) {
-        out.push({ ...s, event: ev })
-      }
-    }
-  }
-  out.sort((a, b) => b.event.date.localeCompare(a.event.date) || a.standing - b.standing)
-  return out
-})
-
 // A regional tab's key is an event id (LC format tabs use a format key). Since a
 // regional is always a single event, page straight into its standings instead of
 // showing a one-row event list.
 const tabEvent     = computed(() => getEvent(tab.value))
 const tabStandings = computed(() => tabEvent.value ? getStandings(tab.value) : [])
+
+// ── Deck filter bar (card-in-deck / element / sort) ───────────────────────────
+// Shared by both the event-list view (/lists) and a single event's page
+// (/lists/:event) — see scopeEvents below for how each scopes it. DeckFilterBar's
+// "Main character" mode supersedes the old flat cross-event character search
+// this replaced.
+const filterMode = ref('card')     // 'card' (any deck slot) | 'character' (face card only)
+const filterCard = ref(null)       // selected card object from card_provider, or null
+const filterElements = ref([])     // selected deckSymbol/'confused' toggles
+const filterSort = ref('finish')   // 'finish' | 'date'
+
+const isDeckFiltering = computed(() => !!filterCard.value || filterElements.value.length > 0)
+
+function clearDeckFilters() {
+  filterMode.value = 'card'
+  filterCard.value = null
+  filterElements.value = []
+}
+
+// event objects the filter bar searches over: a single event on an event-detail
+// page (/lists/:event), otherwise whatever the active tab shows (one LC
+// format's events, or a single regional). currentEvent is declared further
+// down but is safe to reference here — this getter only runs at render time,
+// by which point every top-level const in setup() has already run.
+const scopeEvents = computed(() => {
+  if (eventId.value) return currentEvent.value ? [currentEvent.value] : []
+  return tabEvent.value ? [tabEvent.value] : (eventsByFormat.value[tab.value] || [])
+})
+
+// standing → qty of the selected card, restricted to events in scope. Reset
+// whenever the card selection changes; sql.js is only ever touched once a card
+// is actually picked.
+const cardQtyByKey = ref(null) // Map<"eventId|standing", qty> | null while none selected
+watch([filterCard, filterMode], async ([card, mode]) => {
+  if (!card) { cardQtyByKey.value = null; return }
+  const finder = mode === 'character' ? findStandingsWithFaceCard : findStandingsWithCard
+  const rows = await finder({ cardeioId: card.cardeio_id, cardName: card.name })
+  cardQtyByKey.value = new Map(rows.map((r) => [`${r.eventId}|${r.standing}`, r.qty]))
+})
+
+const deckFilterResults = computed(() => {
+  if (!isDeckFiltering.value) return []
+  const out = []
+  for (const ev of scopeEvents.value) {
+    for (const s of getStandings(ev.id)) {
+      if (!s.hasDeck) continue
+      let qty = null
+      if (filterCard.value) {
+        qty = cardQtyByKey.value?.get(`${ev.id}|${s.standing}`)
+        if (qty == null) continue
+      }
+      if (filterElements.value.length && !filterElements.value.includes(s.deckSymbol)) continue
+      out.push({ ...s, event: ev, cardQty: qty })
+    }
+  }
+  out.sort((a, b) => {
+    if (filterSort.value === 'date') return b.event.date.localeCompare(a.event.date) || a.standing - b.standing
+    return a.standing - b.standing || b.event.date.localeCompare(a.event.date)
+  })
+  return out
+})
+
+const deckFilterEventCount = computed(() => new Set(deckFilterResults.value.map((r) => r.event.id)).size)
+
+const cardSearchOptions = computed(() => standardCards.map((c) => ({ name: c.name, cardeio_id: c.cardeio_id, asset: c.asset, type: c.type })))
+
+// Play-count data for the active tab/mode. Fetched unlimited (every card
+// played, not just the top handful) so DeckFilterBar can attach a deckCount
+// to typed search results too, not only the pre-typing "most played" list.
+// The *first* fetch is lazy — deferred until the dropdown is actually opened
+// (DeckFilterBar's 'request-popular') so the db is never touched if the
+// filter bar goes unused. Once that's happened once, a tab/mode switch
+// refetches eagerly (the db is already resident, so it's just a cheap
+// re-query) rather than waiting for the dropdown to reopen — otherwise a
+// reopened dropdown would flash the previous tab's cards before catching up.
+const popularCards = ref([])       // top 12, for the empty-search state
+const popularityByKey = ref(new Map()) // cardeio_id (or name, if none) -> deckCount, for typed results
+let popularCardsKey = null // `${mode}|${scopeEventIds}` for the currently-loaded set
+let hasLoadedPopularOnce = false
+
+async function loadPopularCards() {
+  const sections = filterMode.value === 'character' ? ['character'] : ['character', 'main']
+  const eventIds = scopeEvents.value.map((e) => e.id)
+  const key = `${filterMode.value}|${eventIds.join(',')}`
+  if (key === popularCardsKey) return
+  popularCardsKey = key
+  hasLoadedPopularOnce = true
+  const rows = await getPopularCards({ sections, eventIds })
+  // still the current tab/mode? (an in-flight fetch can resolve after the
+  // visitor has already switched tabs)
+  if (key !== `${filterMode.value}|${scopeEvents.value.map((e) => e.id).join(',')}`) return
+  popularityByKey.value = new Map(rows.map((r) => [r.cardeioId || r.cardName, r.deckCount]))
+  popularCards.value = rows.slice(0, 12).map((r) => {
+    const known = r.cardeioId && cardByCardeioId.get(r.cardeioId)
+    return known
+      ? { ...known, deckCount: r.deckCount }
+      : { name: r.cardName, cardeio_id: r.cardeioId, asset: null, deckCount: r.deckCount }
+  })
+}
+
+watch([filterMode, scopeEvents], () => {
+  popularCardsKey = null
+  // Clear immediately, don't wait for the refetch to land — showing nothing
+  // (or briefly nothing) beats showing another tab's cards under the new tab.
+  popularCards.value = []
+  popularityByKey.value = new Map()
+  if (hasLoadedPopularOnce) loadPopularCards()
+})
 
 const currentEvent     = computed(() => eventId.value ? getEvent(eventId.value) : null)
 const currentStandings = computed(() => eventId.value ? getStandings(eventId.value) : [])
@@ -487,7 +575,31 @@ watchEffect(() => {
         <q-badge color="grey-6" :label="`${currentEvent?.playerCount} players`" />
       </q-toolbar>
 
-      <q-list separator>
+      <DeckFilterBar
+        v-model:mode="filterMode"
+        v-model:card="filterCard"
+        v-model:elements="filterElements"
+        v-model:sort-by="filterSort"
+        :card-options="cardSearchOptions"
+        :result-count="deckFilterResults.length"
+        :event-count="deckFilterEventCount"
+        :popular-cards="popularCards"
+        :popularity-by-key="popularityByKey"
+        @clear="clearDeckFilters"
+        @request-popular="loadPopularCards"
+      />
+
+      <DeckFilterResultsList
+        v-if="isDeckFiltering"
+        :results="deckFilterResults"
+        :filter-card="filterCard"
+        :show-event-name="false"
+        :find-card="findCard"
+        :format-date="formatDate"
+        :player-label="playerLabel"
+      />
+
+      <q-list v-else separator>
         <q-item v-for="s in currentStandings" :key="s.standing"
           :class="{
             'row-winner': s.standing === 1,
@@ -523,26 +635,11 @@ watchEffect(() => {
     <!-- ── Event list (/locals) ──────────────────────────────────────────── -->
     <template v-else>
       <div class="row items-center bg-grey-2">
-        <q-tabs v-if="!isFiltering" v-model="tab" align="left" dense class="col text-grey-8">
+        <q-tabs v-model="tab" align="left" dense class="col text-grey-8">
           <q-tab v-for="f in FORMATS" :key="f.key" :name="f.key"
             :label="lcFormatKeys.has(f.key) ? `${f.label} · ${eventsByFormat[f.key].length} events` : f.label" />
         </q-tabs>
-        <div v-else class="col text-grey-8 q-pl-md text-body2">
-          {{ filteredStandings.length }} {{ filteredStandings.length === 1 ? 'deck' : 'decks' }}
-        </div>
-        <q-input
-          v-model="search"
-          dense
-          outlined
-          clearable
-          debounce="150"
-          bg-color="white"
-          placeholder="Character…"
-          class="q-mr-sm locals-search"
-        >
-          <template v-slot:prepend><q-icon name="search" size="xs" /></template>
-        </q-input>
-        <template v-if="!isFiltering">
+        <template v-if="!isDeckFiltering">
           <q-badge v-if="tabEvent" color="grey-6" class="q-mr-sm"
             :label="`${tabEvent.playerCount} players`" />
           <q-btn-toggle v-else v-model="sortOrder" dense unelevated no-caps
@@ -557,44 +654,31 @@ watchEffect(() => {
         </template>
       </div>
 
-      <!-- Character filter results: every matching deck across all events -->
-      <q-list v-if="isFiltering" separator>
-        <q-item v-for="s in filteredStandings" :key="`${s.event.id}-${s.standing}`"
-          :class="{
-            'row-winner': s.standing === 1,
-            'row-top4':   s.standing > 1 && s.standing <= 4,
-            'row-top8':   s.standing > 4 && s.standing <= 8,
-          }"
-          clickable :to="`/lists/${s.event.id}/${s.standing}`">
-          <q-item-section avatar style="min-width: 52px">
-            <div style="position: relative; display: inline-block">
-              <q-avatar v-if="findCard(s.characterName)" square size="40px" class="standing-avatar">
-                <img :src="getCardImage(findCard(s.characterName).asset)" class="card-thumb__img" />
-              </q-avatar>
-              <q-avatar v-else square size="40px" class="standing-avatar bg-grey-3" />
-              <ResourceSymbol
-                v-if="s.deckSymbol"
-                :element="s.deckSymbol"
-                class="standing-resource"
-              />
-            </div>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>{{ playerLabel(s.characterName, s.standing) }}</q-item-label>
-            <q-item-label caption>{{ eventName(s.event) }} · {{ formatDate(s.event.date) }}</q-item-label>
-          </q-item-section>
-          <q-item-section side>
-            <q-icon name="chevron_right" color="grey-5" />
-          </q-item-section>
-        </q-item>
-        <q-item v-if="!filteredStandings.length">
-          <q-item-section class="text-grey-6 text-center q-py-lg">
-            No decks match “{{ search }}”
-          </q-item-section>
-        </q-item>
-      </q-list>
+      <DeckFilterBar
+        v-model:mode="filterMode"
+        v-model:card="filterCard"
+        v-model:elements="filterElements"
+        v-model:sort-by="filterSort"
+        :card-options="cardSearchOptions"
+        :result-count="deckFilterResults.length"
+        :event-count="deckFilterEventCount"
+        :popular-cards="popularCards"
+        :popularity-by-key="popularityByKey"
+        @clear="clearDeckFilters"
+        @request-popular="loadPopularCards"
+      />
 
-      <template v-else>
+      <!-- Card-in-deck / element filter results: matching decks within the active tab -->
+      <DeckFilterResultsList
+        v-if="isDeckFiltering"
+        :results="deckFilterResults"
+        :filter-card="filterCard"
+        :find-card="findCard"
+        :format-date="formatDate"
+        :player-label="playerLabel"
+      />
+
+      <template v-if="!isDeckFiltering">
 
       <!-- Regional tab: standings directly (always exactly one event) -->
       <q-list v-if="tabEvent" separator>
@@ -659,20 +743,6 @@ watchEffect(() => {
 <style scoped>
 .text-mono { font-family: monospace; }
 
-/* Character filter box: compact in the toolbar, but it drops to its own
-   full-width row as soon as the tabs start getting cramped, rather than
-   shrinking them further. */
-.locals-search { width: 180px; }
-.locals-search :deep(.q-field__control) { height: 34px; min-height: 34px; }
-@media (max-width: 1023px) {
-  .locals-search {
-    flex: 1 1 100%;
-    order: 1;          /* force onto its own row, below the tabs */
-    width: auto;
-    margin: 4px 8px;
-  }
-}
-
 /* Toolbar: keep the breadcrumb title and the action controls from colliding.
    On phones the actions drop to their own full-width row below the title
    instead of clipping into the breadcrumbs. */
@@ -707,6 +777,8 @@ watchEffect(() => {
   font-size: 18px;
   filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5));
 }
+
+.filter-match-line { color: #c9530a; font-weight: 600; }
 
 .row-winner { background: rgba(255, 190, 0, 0.12); }
 .row-top4   { background: rgba(0, 170, 90, 0.07); }

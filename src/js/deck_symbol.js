@@ -9,6 +9,16 @@
 // Dependency-free so scripts/compute-deck-symbols.mjs can import it alongside
 // the Vue components.
 
+// Printed resource symbols. Alphabetical, matching card_provider.js's
+// symbolOptions (the /cards search filter's own element list) — kept as a
+// literal copy rather than importing that module, since this file is
+// dependency-free so scripts/compute-deck-symbols.mjs (plain Node, no Vite/Vue)
+// can import it too. Used by the /lists filter bar's element toggle row.
+export const ALL_ELEMENTS = [
+  'air', 'all', 'chaos', 'death', 'earth', 'evil',
+  'fire', 'good', 'infinity', 'life', 'order', 'void', 'water',
+]
+
 export const CONFUSED_SYMBOL = 'confused'
 
 export const isConfused = symbol =>
