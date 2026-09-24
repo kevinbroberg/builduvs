@@ -247,11 +247,17 @@ function clearDeckFilters() {
   filterElements.value = []
 }
 
+const currentEvent     = computed(() => eventId.value ? getEvent(eventId.value) : null)
+const currentStandings = computed(() => eventId.value ? getStandings(eventId.value) : [])
+const currentStanding  = computed(() =>
+  eventId.value && playerId.value ? getStanding(eventId.value, playerId.value) : null
+)
+
 // event objects the filter bar searches over: a single event on an event-detail
 // page (/lists/:event), otherwise whatever the active tab shows (one LC
-// format's events, or a single regional). currentEvent is declared further
-// down but is safe to reference here — this getter only runs at render time,
-// by which point every top-level const in setup() has already run.
+// format's events, or a single regional). Must stay below currentEvent: the
+// watcher on scopeEvents evaluates this getter during setup(), so a reference
+// to a const declared later would hit its temporal dead zone.
 const scopeEvents = computed(() => {
   if (eventId.value) return currentEvent.value ? [currentEvent.value] : []
   return tabEvent.value ? [tabEvent.value] : (eventsByFormat.value[tab.value] || [])
@@ -336,12 +342,6 @@ watch([filterMode, scopeEvents], () => {
   popularityByKey.value = new Map()
   if (hasLoadedPopularOnce) loadPopularCards()
 })
-
-const currentEvent     = computed(() => eventId.value ? getEvent(eventId.value) : null)
-const currentStandings = computed(() => eventId.value ? getStandings(eventId.value) : [])
-const currentStanding  = computed(() =>
-  eventId.value && playerId.value ? getStanding(eventId.value, playerId.value) : null
-)
 
 const playerCards = computed(() => {
   if (!currentStanding.value) return {}
