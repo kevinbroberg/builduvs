@@ -35,27 +35,41 @@ function getDb() {
 }
 
 // Rows: { eventId, standing, qty }, one per standing that runs the card in the
-// given deck sections. Matches by cardeio_id when known (stable across name
-// variants/reprints), falling back to an exact card_name match for older rows
-// lacking one.
+// given deck sections.
+//
+// Matching is by uvs_id — the canonical card id (src/js/card_id.js), written by
+// gen-locals.mjs via the offline crosswalk. It covers 100% of deck rows, so the
+// old cardeio_id / exact-card_name pair is only a fallback for a stale db built
+// before the column existed.
+//
+// The name fallback is what this replaced, and it is worth remembering why: it
+// compared raw strings, so "Jin's Glove" (U+0027, from our card data) never
+// equalled "Jin’s Glove" (U+2019, from the vendor) and the filter silently
+// returned nothing for all 46 decks that played it.
 //
 // sections controls what "in deck" means for the caller's filter mode:
 //  - ['character', 'main']: DeckFilterBar's "Card in deck" mode — sideboard-only
 //    copies don't count.
 //  - ['character']: "Main character" mode — the card must actually be the face
 //    card, not just present somewhere in the 60/75.
-async function findStandings({ cardeioId, cardName, sections }) {
+async function findStandings({ uvsId, cardeioId, cardName, sections }) {
   const db = await getDb()
   const placeholders = sections.map((_, i) => `$section${i}`).join(', ')
+  const hasUvs = db.exec(`SELECT 1 FROM pragma_table_info('deck_cards') WHERE name='uvs_id'`).length > 0
+  const match = hasUvs
+    ? `(dc.uvs_id = $uvsId
+        OR (dc.uvs_id IS NULL AND dc.cardeio_id = $cardeioId)
+        OR (dc.uvs_id IS NULL AND dc.cardeio_id IS NULL AND dc.card_name = $cardName))`
+    : `(dc.cardeio_id = $cardeioId OR (dc.cardeio_id IS NULL AND dc.card_name = $cardName))`
   const stmt = db.prepare(`
     SELECT s.event_id AS eventId, s.standing AS standing, SUM(dc.qty) AS qty
     FROM deck_cards dc
     JOIN standings s ON s.id = dc.standing_id
-    WHERE dc.section IN (${placeholders})
-      AND (dc.cardeio_id = $cardeioId OR (dc.cardeio_id IS NULL AND dc.card_name = $cardName))
+    WHERE dc.section IN (${placeholders}) AND ${match}
     GROUP BY s.event_id, s.standing
   `)
   const bindings = { $cardeioId: cardeioId ?? null, $cardName: cardName ?? null }
+  if (hasUvs) bindings.$uvsId = uvsId ?? null
   sections.forEach((s, i) => { bindings[`$section${i}`] = s })
   stmt.bind(bindings)
   const rows = []
@@ -64,20 +78,21 @@ async function findStandings({ cardeioId, cardName, sections }) {
   return rows
 }
 
-export function findStandingsWithCard({ cardeioId, cardName }) {
-  return findStandings({ cardeioId, cardName, sections: ['character', 'main'] })
+export function findStandingsWithCard({ uvsId, cardeioId, cardName }) {
+  return findStandings({ uvsId, cardeioId, cardName, sections: ['character', 'main'] })
 }
 
-export function findStandingsWithFaceCard({ cardeioId, cardName }) {
-  return findStandings({ cardeioId, cardName, sections: ['character'] })
+export function findStandingsWithFaceCard({ uvsId, cardeioId, cardName }) {
+  return findStandings({ uvsId, cardeioId, cardName, sections: ['character'] })
 }
 
-// Rows: { cardeioId, cardName, deckCount }, most-played first, scoped to
-// eventIds (the active tab) and sections (deck-filter mode). Groups by
-// cardeio_id when present; rows predating that column (cardeio_id IS NULL)
-// fall back to grouping by card_name instead, so distinct unresolved cards
-// don't get merged into one NULL bucket. deckCount is standings, not copies —
-// a 4-of counts once, same denominator as the "N decks" summary line above.
+// Rows: { uvsId, cardeioId, cardName, deckCount }, most-played first, scoped to
+// eventIds (the active tab) and sections (deck-filter mode). Groups by uvs_id,
+// falling back to cardeio_id then card_name for rows that have neither, so
+// distinct unresolved cards don't collapse into one NULL bucket. Grouping by the
+// canonical id also merges reprints of the same card, which name grouping split
+// into separate rows. deckCount is standings, not copies — a 4-of counts once,
+// same denominator as the "N decks" summary line above.
 //
 // limit: null/omitted fetches every played card (still one cheap grouped
 // query — a season's distinct card pool is a few hundred rows at most), so
@@ -88,13 +103,15 @@ export async function getPopularCards({ sections, eventIds, limit = null }) {
   const db = await getDb()
   const sectionPh = sections.map((_, i) => `$section${i}`).join(', ')
   const eventPh = eventIds.map((_, i) => `$event${i}`).join(', ')
+  const hasUvs = db.exec(`SELECT 1 FROM pragma_table_info('deck_cards') WHERE name='uvs_id'`).length > 0
   const stmt = db.prepare(`
-    SELECT dc.cardeio_id AS cardeioId, MAX(dc.card_name) AS cardName,
+    SELECT ${hasUvs ? 'MAX(dc.uvs_id)' : 'NULL'} AS uvsId,
+           MAX(dc.cardeio_id) AS cardeioId, MAX(dc.card_name) AS cardName,
            COUNT(DISTINCT dc.standing_id) AS deckCount
     FROM deck_cards dc
     JOIN standings s ON s.id = dc.standing_id
     WHERE dc.section IN (${sectionPh}) AND s.event_id IN (${eventPh})
-    GROUP BY COALESCE(dc.cardeio_id, dc.card_name)
+    GROUP BY COALESCE(${hasUvs ? 'dc.uvs_id, ' : ''}dc.cardeio_id, dc.card_name)
     ORDER BY deckCount DESC
     LIMIT $limit
   `)

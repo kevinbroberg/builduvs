@@ -1,0 +1,10 @@
+{
+  "_note": "Hand-curated decklist-name → canonical uvsId mappings for names no normalization rule could ever derive. Read by scripts/build-card-crosswalk.mjs and folded into card-crosswalk.json's byName index. Keys are matched after normalization (lowercased, curly quotes and diacritics folded), so write them in plain lowercase ASCII. Keep each entry's `why` filled in — an override with no reason is indistinguishable from a mistake later.",
+
+  "overrides": {
+    "ball might (i) (anime expo 2022)": {
+      "uvsId": "mha04-240",
+      "why": "Anime Expo 2022 reskin promo of All Might (VII). Same gameplay card, different art; we hold no record for the promo printing itself, so decklists resolve to the All Might (VII) printing they are actually playing."
+    }
+  }
+}

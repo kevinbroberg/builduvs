@@ -11,6 +11,7 @@ import kaiju from 'assets/kaiju.json'
 import teamhero from 'assets/teamhero.json'
 import mha09 from 'assets/mha09.json'
 import tk802 from 'assets/tekken8.json'
+import { uvsId } from 'src/js/card_id'
 
 export const cards = [...tk802, ...mha09, ...kaiju, ...teamhero, ...ggrole, ...sjwtomha4,...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
 
@@ -21,6 +22,23 @@ for (const card of cards) {
     card.asset = `${card.extension_short}/${card.card_number_image}`
   }
 }
+
+// Stamp the canonical card id ("tk802-049") on every record.
+//
+// The eleven source files never agreed on how to spell a card's identity — some
+// carry `numero`, some `card_number`, three (heroesclash, rampage, rampage_dlc)
+// carry neither and keep set+number only inside `asset`. `uvs_id` is that one
+// identity, derived from `asset` because it is the single field all of them
+// populate. Anything joining cards to decklists should key on this rather than
+// on `name`, which differs from the vendor's spelling by an apostrophe often
+// enough to matter. See src/js/card_id.js.
+for (const card of cards) {
+  card.uvs_id = uvsId(card)
+}
+
+// Canonical id → card. Exported because the /lists pages join decklist rows to
+// cards through it.
+export const cardByUvsId = new Map(cards.filter(c => c.uvs_id).map(c => [c.uvs_id, c]))
 
 // --- Card schema: expected shape after preprocessing ---
 // 'required' = must be present on every card

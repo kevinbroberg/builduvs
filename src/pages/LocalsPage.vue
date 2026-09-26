@@ -6,7 +6,8 @@ import indexData from 'src/assets/locals-index.json'
 import DeckBody from 'src/components/deck/DeckBody.vue'
 import DeckStage from 'src/components/deck/DeckStage.vue'
 import cardeioIdsData from 'src/assets/cardeio-ids.json'
-import { cards as allCards } from 'src/js/card_provider.js'
+import { cards as allCards, cardByUvsId } from 'src/js/card_provider.js'
+import { createCardResolver } from 'src/js/decklist_cards'
 import { getCardImage } from 'src/js/image_helper'
 import ResourceSymbol from 'src/components/cards/detail/ResourceSymbol.vue'
 import { useDeckStore } from 'src/stores/deck'
@@ -17,56 +18,16 @@ import DeckFilterBar from 'src/components/locals/DeckFilterBar.vue'
 import DeckFilterResultsList from 'src/components/locals/DeckFilterResultsList.vue'
 import { findStandingsWithCard, findStandingsWithFaceCard, getPopularCards } from 'src/js/locals_sql'
 
-// Normalize apostrophes and other quote variants to plain straight apostrophe
-function normName(name) {
-  return name.toLowerCase().replace(/[‘’‚‛′]/g, "'")
-}
-
+// Card resolution is the shared implementation in decklist_cards.js — this page
+// used to carry its own near-identical copy of normName / cardByName /
+// cardByCardeioId / findCard, and a second copy lived in MajorsPage. Keeping two
+// name matchers in step by hand is what let "Jin's Glove" (U+2019 from the
+// vendor, U+0027 in our card data) go unfindable on /lists; there is now one.
+//
+// standardOnly: /lists only covers current-format events, so restricting the
+// pool to standard-legal printings keeps lookups unambiguous.
+const { cardByCardeioId, findCard, resolveCard: resolveDeckCard } = createCardResolver({ standardOnly: true })
 const standardCards = allCards.filter(c => c.formats?.includes('standard'))
-const cardByName = new Map(standardCards.map(c => [normName(c.name), c]))
-// A deck card's cardeioId (assigned by gen-locals from cardeio-ids.json) shares
-// the card DB's own cardeio_id space. Key by both:
-//  - the cardeio-ids.json name-hop (legacy path, covers cards lacking a DB id), then
-//  - each card's own cardeio_id (authoritative; overrides the above), which joins
-//    directly and sidesteps deck↔DB name mismatches — diacritics ("Donny’s Bō
-//    Staff" vs "Bo"), stray quotes ('"I Would Like to Rage!"'), or a dropped word
-//    ("…the Star Razor").
-const cardByCardeioId = new Map(
-  Object.entries(cardeioIdsData)
-    .map(([id, data]) => [id, cardByName.get(normName(data.name))])
-    .filter(([, card]) => card != null)
-)
-for (const c of standardCards) if (c.cardeio_id) cardByCardeioId.set(c.cardeio_id, c)
-
-function findCard(name) {
-  if (!name) return null
-  const n = normName(name)
-
-  // 1. Exact match
-  let card = cardByName.get(n)
-  if (card) return card
-
-  // 2. Flip card — try front side only (before " // ")
-  if (n.includes(' // ')) {
-    card = cardByName.get(n.split(' // ')[0].trim())
-    if (card) return card
-  }
-
-  // 3. Year subtitle — "Name, YYYY ..." → try just "Name"
-  const yearStripped = n.replace(/,\s*\d{4}.*/, '').trim()
-  if (yearStripped !== n) {
-    card = cardByName.get(yearStripped)
-    if (card) return card
-  }
-
-  // 4. $ → s substitution ("Cardboard Crusader$" → "Cardboard Crusaders")
-  if (n.includes('$')) {
-    card = cardByName.get(n.replaceAll('$', 's'))
-    if (card) return card
-  }
-
-  return null
-}
 
 const route  = useRoute()
 const router = useRouter()
@@ -270,7 +231,7 @@ const cardQtyByKey = ref(null) // Map<"eventId|standing", qty> | null while none
 watch([filterCard, filterMode], async ([card, mode]) => {
   if (!card) { cardQtyByKey.value = null; return }
   const finder = mode === 'character' ? findStandingsWithFaceCard : findStandingsWithCard
-  const rows = await finder({ cardeioId: card.cardeio_id, cardName: card.name })
+  const rows = await finder({ uvsId: card.uvs_id, cardeioId: card.cardeio_id, cardName: card.name })
   cardQtyByKey.value = new Map(rows.map((r) => [`${r.eventId}|${r.standing}`, r.qty]))
 })
 
@@ -298,7 +259,7 @@ const deckFilterResults = computed(() => {
 
 const deckFilterEventCount = computed(() => new Set(deckFilterResults.value.map((r) => r.event.id)).size)
 
-const cardSearchOptions = computed(() => standardCards.map((c) => ({ name: c.name, cardeio_id: c.cardeio_id, asset: c.asset, type: c.type })))
+const cardSearchOptions = computed(() => standardCards.map((c) => ({ name: c.name, uvs_id: c.uvs_id, cardeio_id: c.cardeio_id, asset: c.asset, type: c.type })))
 
 // Play-count data for the active tab/mode. Fetched unlimited (every card
 // played, not just the top handful) so DeckFilterBar can attach a deckCount
@@ -325,12 +286,14 @@ async function loadPopularCards() {
   // still the current tab/mode? (an in-flight fetch can resolve after the
   // visitor has already switched tabs)
   if (key !== `${filterMode.value}|${scopeEvents.value.map((e) => e.id).join(',')}`) return
-  popularityByKey.value = new Map(rows.map((r) => [r.cardeioId || r.cardName, r.deckCount]))
+  popularityByKey.value = new Map(rows.map((r) => [r.uvsId || r.cardeioId || r.cardName, r.deckCount]))
   popularCards.value = rows.slice(0, 12).map((r) => {
-    const known = r.cardeioId && cardByCardeioId.get(r.cardeioId)
+    // uvs_id is the canonical join; cardeio_id only still matters for a db built
+    // before gen-locals started writing the column.
+    const known = (r.uvsId && cardByUvsId.get(r.uvsId)) || (r.cardeioId && cardByCardeioId.get(r.cardeioId))
     return known
       ? { ...known, deckCount: r.deckCount }
-      : { name: r.cardName, cardeio_id: r.cardeioId, asset: null, deckCount: r.deckCount }
+      : { name: r.cardName, uvs_id: r.uvsId, cardeio_id: r.cardeioId, asset: null, deckCount: r.deckCount }
   })
 }
 
@@ -364,9 +327,9 @@ const playerMatches = computed(() => {
 })
 
 function resolveCard(dc) {
-  const found = (dc.cardeioId && cardByCardeioId.get(dc.cardeioId)) || findCard(dc.name)
-  if (!found) console.warn(`[locals] unresolved card: "${dc.name}"`)
-  return found ? { ...found, qty: dc.qty } : { name: dc.name, qty: dc.qty, asset: null, type: 'unknown' }
+  const card = resolveDeckCard(dc)
+  if (card.type === 'unknown') console.warn(`[locals] unresolved card: "${dc.name}"`)
+  return card
 }
 
 // ── Deck store integration ────────────────────────────────────────────────────
@@ -405,9 +368,9 @@ const resolvedFace = computed(() => {
   const chars = playerCards.value.character
   if (!chars?.length) return null
   const dc = chars[0]
-  const found = (dc.cardeioId && cardByCardeioId.get(dc.cardeioId)) || findCard(dc.name)
-  if (!found) console.warn(`[locals] unresolved face card: "${dc.name}"`)
-  return found || null
+  const card = resolveDeckCard(dc)
+  if (card.type === 'unknown') { console.warn(`[locals] unresolved face card: "${dc.name}"`); return null }
+  return card
 })
 const resolvedDeck = computed(() => (playerCards.value.main || []).map(resolveCard))
 const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(resolveCard))

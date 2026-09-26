@@ -4546,6 +4546,335 @@
       "retro",
       "My Hero Academia"
     ],
+    "asset": "mha03/220.jpg",
+    "ultra_url_path": "images/extensions/mha03/220.jpg",
+    "name": "Mandalay",
+    "type": "character",
+    "rarity": "promo",
+    "text": "Enhance: Name an attack zone. If the next attack played this turn is the named zone, it gets +2 or -2 damage.\n\nResponse: After you play a foundation, if the next card you try to play is an attack, it gets -2 difficulty.",
+    "keywords": [
+      "Pro Hero"
+    ],
+    "resources": [
+      "good",
+      "life",
+      "void"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 6,
+    "vitality": 27,
+    "cardeio_id": "64e6bceccc0d62bbb0dacc79",
+    "cardeio_slug": "001-mandalay"
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/221.jpg",
+    "ultra_url_path": "images/extensions/mha03/221.jpg",
+    "name": "Cat Scratch",
+    "type": "attack",
+    "rarity": "promo",
+    "text": "Enhance Name an attack zone: If the next attack you try to play matches the named zone, build 1 momentum face down.\n\nEnhance: This attack gets +1 speed and +1 damage for each foundation in your card pool.",
+    "keywords": [
+      "Punch"
+    ],
+    "resources": [
+      "good",
+      "life",
+      "void"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "low",
+    "block_mod": 2,
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 5,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacae4",
+    "cardeio_slug": "002-cat-scratch"
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/222.jpg",
+    "ultra_url_path": "images/extensions/mha03/222.jpg",
+    "name": "Adorable Telepath",
+    "type": "foundation",
+    "rarity": "promo",
+    "text": "Enhance: Add this card to your hand. This attack gets +1 or -1 speed.\n\nResponse: After you play this card, the next attack this turn gets +1 or -1 damage.",
+    "resources": [
+      "good",
+      "life",
+      "void"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "high",
+    "block_mod": 3,
+    "cardeio_id": "64e6bce8cc0d62bbb0daca78",
+    "cardeio_slug": "003-adorable-telepath"
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/223.jpg",
+    "ultra_url_path": "images/extensions/mha03/223.jpg",
+    "name": "Pixie Bob",
+    "type": "character",
+    "rarity": "promo",
+    "text": "Enhance [Once per turn, your turn]: Both players add 1 card from their stage to their momentum.\n\nEnhance Commit: This Ally attack gets +2 damage and gains Stun: 1.\n\nResponse Discard 1 momentum: After your Ally attack deals damage, ready this card. Playable while committed.",
+    "keywords": [
+      "Pro Hero"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "fire"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 6,
+    "vitality": 28,
+    "cardeio_id": "64e6bcedcc0d62bbb0dacce1",
+    "cardeio_slug": "004-pixie-bob"
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/224.jpg",
+    "ultra_url_path": "images/extensions/mha03/224.jpg",
+    "name": "Cat's Claw Face Grab",
+    "type": "attack",
+    "rarity": "promo",
+    "text": "Enhance: Commit 1 face down rival foundation.",
+    "keywords": [
+      "Ally"
+    ],
+    "resources": [
+      "chaos",
+      "earth",
+      "fire"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "high",
+    "block_mod": 3,
+    "speed": 1,
+    "attack_zone": "high",
+    "damage": 5,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacae5",
+    "cardeio_slug": "005-cats-claw-face-grab"
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/225.jpg",
+    "ultra_url_path": "images/extensions/mha03/225.jpg",
+    "name": "Playful As A Cat",
+    "type": "foundation",
+    "rarity": "promo",
+    "text": "If this card is added to your momentum, add it face up.\n\nEnhance [Momentum] Flip: Your Ally attack gets +3 speed.\n\nEnhance Commit, discard 1 momentum: Your rival discards 2 momentum.",
+    "resources": [
+      "chaos",
+      "earth",
+      "fire"
+    ],
+    "difficulty": 2,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "cardeio_id": "64e6bcedcc0d62bbb0dacce3",
+    "cardeio_slug": "006-playful-as-a-cat"
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/226.jpg",
+    "ultra_url_path": "images/extensions/mha03/226.jpg",
+    "name": "Rag Doll",
+    "type": "character",
+    "rarity": "promo",
+    "text": "Form [Once per game]: Search your deck for 1 card and add it to your hand.\n\nEnhance [Once per turn] Reveal 2 cards from your hand: If the cards your revealed have the same name, this attack gets +4 or -4 speed.\n\nEnhance Flip 1 foundation: Look at the top card of your deck.",
+    "keywords": [
+      "Pro Hero"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "evil"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 6,
+    "vitality": 26,
+    "cardeio_id": "64e6bcedcc0d62bbb0dacd01",
+    "cardeio_slug": "007-rag-doll"
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/227.jpg",
+    "ultra_url_path": "images/extensions/mha03/227.jpg",
+    "name": "Cat Pounce",
+    "type": "attack",
+    "rarity": "promo",
+    "text": "Stun: 1\n\nEnhance Remove 1 attack from your hand: Choose 1 attack in your discard pile and add it to your hand.\n\nRagdoll Enhance: Change the zone of this attack.",
+    "resources": [
+      "air",
+      "death",
+      "evil"
+    ],
+    "difficulty": 5,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 5,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacae2",
+    "cardeio_slug": "008-cat-pounce"
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/228.jpg",
+    "ultra_url_path": "images/extensions/mha03/228.jpg",
+    "name": "Happy-Go-Lucky",
+    "type": "foundation",
+    "rarity": "promo",
+    "text": "Response: After this foundation is destroyed by your rival's effect, draw 1 card.\n\nEnhance Commit: Add 1 copy of \"Happy-Go-Lucky\" from your discard pile to your hand.",
+    "resources": [
+      "air",
+      "death",
+      "evil"
+    ],
+    "difficulty": 1,
+    "control": 5,
+    "block_zone": "low",
+    "block_mod": 3,
+    "cardeio_id": "64e6bcebcc0d62bbb0dacbe6",
+    "cardeio_slug": "009-happy-go-lucky"
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/229.jpg",
+    "ultra_url_path": "images/extensions/mha03/229.jpg",
+    "name": "Tiger",
+    "type": "character",
+    "rarity": "promo",
+    "text": "Enhance: If your attack deals damage, draw 1 card.\n\nEnhance [Once per turn]: Switch this attack's speed and damage.\n\nResponse [Twice per Enhance Step]: After an effect modifies the speed of your attack, that attack gets +1 damage.",
+    "keywords": [
+      "Pro Hero"
+    ],
+    "resources": [
+      "all",
+      "order",
+      "water"
+    ],
+    "difficulty": 6,
+    "control": 6,
+    "block_zone": "mid",
+    "block_mod": 0,
+    "hand_size": 5,
+    "vitality": 33,
+    "cardeio_id": "64e6bcefcc0d62bbb0dacdc6",
+    "cardeio_slug": "010-tiger"
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/230.jpg",
+    "ultra_url_path": "images/extensions/mha03/230.jpg",
+    "name": "Cat Punch",
+    "type": "attack",
+    "rarity": "promo",
+    "text": "Enhance: If this attack is blocked, draw 1 card.\n\nEnhance Commit 1 foundation: This attack gets +2 speed.",
+    "keywords": [
+      "Punch"
+    ],
+    "resources": [
+      "all",
+      "order",
+      "water"
+    ],
+    "difficulty": 4,
+    "control": 3,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "speed": 2,
+    "attack_zone": "mid",
+    "damage": 6,
+    "cardeio_id": "64e6bce9cc0d62bbb0dacae3",
+    "cardeio_slug": "011-cat-punch"
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "retro",
+      "My Hero Academia"
+    ],
+    "asset": "mha03/231.jpg",
+    "ultra_url_path": "images/extensions/mha03/231.jpg",
+    "name": "Pliabody",
+    "type": "foundation",
+    "rarity": "promo",
+    "text": "Enhance: If your printed hand size is 5 or less, your attack gets +1 speed.\n\nEnhance [Your attack] Commit, flip: If your rival has more foundations than you, they add 1 foundation to their card pool face down.",
+    "resources": [
+      "all",
+      "order",
+      "water"
+    ],
+    "difficulty": 3,
+    "control": 5,
+    "block_zone": "mid",
+    "block_mod": 2,
+    "cardeio_id": "64e6bcedcc0d62bbb0daccdf",
+    "cardeio_slug": "012-pliabody"
+  },
+  {
+    "extension": "Heroes Clash",
+    "formats": [
+      "retro",
+      "My Hero Academia"
+    ],
     "asset": "mha03/240.jpg",
     "ultra_url_path": "images/extensions/mha03/240.jpg",
     "name": "All Might (V)",

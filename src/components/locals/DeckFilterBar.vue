@@ -10,7 +10,7 @@ const MODES = [
 
 const props = defineProps({
   mode: { type: String, default: 'card' },       // 'card' | 'character'
-  card: { type: Object, default: null },         // selected card { name, cardeio_id, asset, type } or null
+  card: { type: Object, default: null },         // selected card { name, uvs_id, cardeio_id, asset, type } or null
   cardOptions: { type: Array, default: () => [] }, // full standard-card list to search against
   elements: { type: Array, default: () => [] },  // selected element toggles (ALL_ELEMENTS + 'confused')
   sortBy: { type: String, default: 'finish' },   // 'finish' | 'date'
@@ -20,7 +20,7 @@ const props = defineProps({
   // shown in place of the plain "type to search" placeholder so there's
   // something to browse before typing anything.
   popularCards: { type: Array, default: () => [] },
-  // cardeio_id (or name, for cards lacking one) -> deckCount, for annotating
+  // uvs_id (or cardeio_id/name, for rows lacking one) -> deckCount, for annotating
   // typed search results with the same play-count popularCards shows.
   popularityByKey: { type: Object, default: () => new Map() },
 })
@@ -50,7 +50,7 @@ const filteredCardOptions = computed(() => {
   if (!q) return props.popularCards
   return searchPool.value
     .filter((c) => normName(c.name).includes(q))
-    .map((c) => ({ ...c, deckCount: props.popularityByKey.get(c.cardeio_id || c.name) ?? 0 }))
+    .map((c) => ({ ...c, deckCount: props.popularityByKey.get(c.uvs_id || c.cardeio_id || c.name) ?? 0 }))
     .sort((a, b) => b.deckCount - a.deckCount)
     .slice(0, 40)
 })
