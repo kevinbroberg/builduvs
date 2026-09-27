@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, watch, watchEffect } from 'vue'
+import { ref, shallowRef, computed, watch, watchEffect } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { setPageTitle } from 'src/js/page_title'
 import indexData from 'src/assets/locals-index.json'
@@ -13,10 +13,10 @@ import ResourceSymbol from 'src/components/cards/detail/ResourceSymbol.vue'
 import { useDeckStore } from 'src/stores/deck'
 import { storeToRefs } from 'pinia'
 import { downloadTTSJson } from 'src/js/tts_export'
-import { LC_FORMATS, eventName } from 'src/js/event_naming'
+import { LC_FORMATS, eventName, shardKeyOf } from 'src/js/event_naming'
 import DeckFilterBar from 'src/components/locals/DeckFilterBar.vue'
 import DeckFilterResultsList from 'src/components/locals/DeckFilterResultsList.vue'
-import { findStandingsWithCard, findStandingsWithFaceCard, getPopularCards } from 'src/js/locals_sql'
+import { createDeckData } from 'src/js/deck_data'
 
 // Card resolution is the shared implementation in decklist_cards.js — this page
 // used to carry its own near-identical copy of normName / cardByName /
@@ -26,7 +26,7 @@ import { findStandingsWithCard, findStandingsWithFaceCard, getPopularCards } fro
 //
 // standardOnly: /lists only covers current-format events, so restricting the
 // pool to standard-legal printings keeps lookups unambiguous.
-const { cardByCardeioId, findCard, resolveCard: resolveDeckCard } = createCardResolver({ standardOnly: true })
+const { findCard, resolveCard: resolveDeckCard } = createCardResolver({ standardOnly: true })
 const standardCards = allCards.filter(c => c.formats?.includes('standard'))
 
 const route  = useRoute()
@@ -82,25 +82,27 @@ function getStanding(eventId, standingNum) {
 
 // ── Player data (lazy-loaded on first player view) ────────────────────────────
 
-const playerData = ref(null)
+// Deck rows live in one static JSON per tab under public/deck-data/locals/,
+// fetched on demand. Everything the page shows at once — the open tab's events,
+// the deck being viewed, the filter's scope — belongs to a single shard, so one
+// fetch covers all of it. See src/js/deck_data.js for why this is no longer
+// bundled or served from a SQLite file.
+const deckData = createDeckData({ index: indexData, basePath: '/deck-data/locals' })
+
+// shallowRef, not ref: the shard is a large immutable blob (thousands of deck
+// rows; the biggest majors season is ~4.8MB). A deep ref would have Vue build a
+// reactive proxy for every object in it, which costs real time on load and buys
+// nothing — the data is replaced wholesale, never mutated in place.
+const playerData = shallowRef(null)          // the loaded shard, or null
 const playerDataLoading = ref(false)
-
-async function ensurePlayerData() {
-  if (playerData.value || playerDataLoading.value) return
-  playerDataLoading.value = true
-  const mod = await import('src/assets/locals-players.json')
-  playerData.value = mod.default ?? mod
-  playerDataLoading.value = false
-}
-
-watch(playerId, (id) => { if (id) ensurePlayerData() }, { immediate: true })
+let loadedShardKey = null
 
 function getPlayerCards(standingDbId) {
-  return playerData.value?.cards?.[standingDbId] || []
+  return deckData.cardsFor(playerData.value, standingDbId)
 }
 
 function getPlayerMatches(standingDbId) {
-  return playerData.value?.matches?.[standingDbId] || []
+  return deckData.matchesFor(playerData.value, standingDbId)
 }
 
 // ── Display helpers ───────────────────────────────────────────────────────────
@@ -224,14 +226,52 @@ const scopeEvents = computed(() => {
   return tabEvent.value ? [tabEvent.value] : (eventsByFormat.value[tab.value] || [])
 })
 
+// Which deck-data shard covers what the page is currently showing. An LC format
+// tab's key IS its shard key; a regional tab and a deck-detail route resolve
+// through their event. shardKeyOf is shared with the generator that wrote the
+// files, so this can't drift from what exists on disk.
+const activeShardKey = computed(() => {
+  if (currentEvent.value) return shardKeyOf(currentEvent.value)
+  if (tabEvent.value) return shardKeyOf(tabEvent.value)
+  return tab.value
+})
+
+// Fetch the active shard. Called when a deck is opened and when the filter is
+// first used — both are user-initiated, so nothing is fetched for a visitor who
+// only browses the event list.
+async function ensurePlayerData() {
+  const key = activeShardKey.value
+  if (!key || key === loadedShardKey) return
+  loadedShardKey = key
+  playerDataLoading.value = true
+  try {
+    const shard = await deckData.load(key)
+    // A slower earlier fetch must not overwrite a newer tab's data.
+    if (loadedShardKey === key) playerData.value = shard
+  } catch (err) {
+    console.error('[locals] deck data failed to load', err)
+    if (loadedShardKey === key) { playerData.value = null; loadedShardKey = null }
+  } finally {
+    if (loadedShardKey === key || loadedShardKey === null) playerDataLoading.value = false
+  }
+}
+
+watch(playerId, (id) => { if (id) ensurePlayerData() }, { immediate: true })
+// Switching tabs while a deck filter is active needs the new tab's rows.
+watch(activeShardKey, () => { if (playerId.value || isDeckFiltering.value || hasLoadedPopularOnce) ensurePlayerData() })
+
 // standing → qty of the selected card, restricted to events in scope. Reset
-// whenever the card selection changes; sql.js is only ever touched once a card
-// is actually picked.
+// whenever the card selection changes; nothing is fetched until a card is
+// actually picked.
 const cardQtyByKey = ref(null) // Map<"eventId|standing", qty> | null while none selected
 watch([filterCard, filterMode], async ([card, mode]) => {
   if (!card) { cardQtyByKey.value = null; return }
-  const finder = mode === 'character' ? findStandingsWithFaceCard : findStandingsWithCard
-  const rows = await finder({ uvsId: card.uvs_id, cardeioId: card.cardeio_id, cardName: card.name })
+  await ensurePlayerData()
+  if (!playerData.value) { cardQtyByKey.value = null; return }
+  const sections = mode === 'character' ? ['character'] : ['character', 'main']
+  const rows = deckData.findStandings(playerData.value, {
+    uvsId: card.uvs_id, cardName: card.name, sections,
+  })
   cardQtyByKey.value = new Map(rows.map((r) => [`${r.eventId}|${r.standing}`, r.qty]))
 })
 
@@ -261,17 +301,17 @@ const deckFilterEventCount = computed(() => new Set(deckFilterResults.value.map(
 
 const cardSearchOptions = computed(() => standardCards.map((c) => ({ name: c.name, uvs_id: c.uvs_id, cardeio_id: c.cardeio_id, asset: c.asset, type: c.type })))
 
-// Play-count data for the active tab/mode. Fetched unlimited (every card
-// played, not just the top handful) so DeckFilterBar can attach a deckCount
-// to typed search results too, not only the pre-typing "most played" list.
-// The *first* fetch is lazy — deferred until the dropdown is actually opened
-// (DeckFilterBar's 'request-popular') so the db is never touched if the
-// filter bar goes unused. Once that's happened once, a tab/mode switch
-// refetches eagerly (the db is already resident, so it's just a cheap
-// re-query) rather than waiting for the dropdown to reopen — otherwise a
-// reopened dropdown would flash the previous tab's cards before catching up.
+// Play-count data for the active tab/mode. Computed over every card played, not
+// just the top handful, so DeckFilterBar can attach a deckCount to typed search
+// results too and not only to the pre-typing "most played" list.
+//
+// The first run is lazy — deferred until the dropdown is actually opened
+// (DeckFilterBar's 'request-popular') so a visitor who never touches the filter
+// never fetches a shard. After that a tab/mode switch recomputes eagerly (the
+// shard is already in memory, so it is just a loop) rather than waiting for the
+// dropdown to reopen, which would flash the previous tab's cards.
 const popularCards = ref([])       // top 12, for the empty-search state
-const popularityByKey = ref(new Map()) // cardeio_id (or name, if none) -> deckCount, for typed results
+const popularityByKey = ref(new Map()) // uvs_id (or name, if none) -> deckCount, for typed results
 let popularCardsKey = null // `${mode}|${scopeEventIds}` for the currently-loaded set
 let hasLoadedPopularOnce = false
 
@@ -282,18 +322,18 @@ async function loadPopularCards() {
   if (key === popularCardsKey) return
   popularCardsKey = key
   hasLoadedPopularOnce = true
-  const rows = await getPopularCards({ sections, eventIds })
+  await ensurePlayerData()
+  if (!playerData.value) return
   // still the current tab/mode? (an in-flight fetch can resolve after the
   // visitor has already switched tabs)
   if (key !== `${filterMode.value}|${scopeEvents.value.map((e) => e.id).join(',')}`) return
-  popularityByKey.value = new Map(rows.map((r) => [r.uvsId || r.cardeioId || r.cardName, r.deckCount]))
+  const rows = deckData.popularCards(playerData.value, { sections, eventIds })
+  popularityByKey.value = new Map(rows.map((r) => [r.uvsId || r.cardName, r.deckCount]))
   popularCards.value = rows.slice(0, 12).map((r) => {
-    // uvs_id is the canonical join; cardeio_id only still matters for a db built
-    // before gen-locals started writing the column.
-    const known = (r.uvsId && cardByUvsId.get(r.uvsId)) || (r.cardeioId && cardByCardeioId.get(r.cardeioId))
+    const known = r.uvsId && cardByUvsId.get(r.uvsId)
     return known
       ? { ...known, deckCount: r.deckCount }
-      : { name: r.cardName, uvs_id: r.uvsId, cardeio_id: r.cardeioId, asset: null, deckCount: r.deckCount }
+      : { name: r.cardName, uvs_id: r.uvsId, asset: null, deckCount: r.deckCount }
   })
 }
 

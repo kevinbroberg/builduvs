@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, watch, watchEffect } from 'vue'
+import { ref, shallowRef, computed, watch, watchEffect } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { setPageTitle } from 'src/js/page_title'
 import indexData from 'src/assets/majors-index.json'
@@ -12,11 +12,12 @@ import { storeToRefs } from 'pinia'
 import { downloadTTSJson } from 'src/js/tts_export'
 import { createCardResolver, normName } from 'src/js/decklist_cards'
 import { TIERS, tierInfo, seasonLabel, compareEvents } from 'src/js/major_naming'
+import { createDeckData } from 'src/js/deck_data'
 
 // Majors reach back to 2024, when most of the field was still legal but has
 // since rotated out, so resolve against every printing rather than the
 // standard-only pool /lists uses. See src/js/decklist_cards.js.
-const { cardByCardeioId, findCard, resolveCard } = createCardResolver({ standardOnly: false })
+const { findCard, resolveCard } = createCardResolver({ standardOnly: false })
 
 const route  = useRoute()
 const router = useRouter()
@@ -60,20 +61,21 @@ const getStanding  = (id, n) => getStandings(id).find(s => s.standing === n) || 
 
 // ── Player data (lazy-loaded on first deck view) ──────────────────────────────
 
-const playerData = ref(null)
+// Deck rows come from one static JSON per SEASON under public/deck-data/majors/,
+// fetched when a deck is opened. Previously this was a single bundled import
+// that Vite inlined into a 7.7MB JS chunk — see src/js/deck_data.js.
+const deckData = createDeckData({ index: indexData, basePath: '/deck-data/majors' })
+
+// shallowRef, not ref: the shard is a large immutable blob (thousands of deck
+// rows; the biggest majors season is ~4.8MB). A deep ref would have Vue build a
+// reactive proxy for every object in it, which costs real time on load and buys
+// nothing — the data is replaced wholesale, never mutated in place.
+const playerData = shallowRef(null)
 const playerDataLoading = ref(false)
+let loadedSeason = null
 
-async function ensurePlayerData() {
-  if (playerData.value || playerDataLoading.value) return
-  playerDataLoading.value = true
-  const mod = await import('src/assets/majors-players.json')
-  playerData.value = mod.default ?? mod
-  playerDataLoading.value = false
-}
-watch(playerId, id => { if (id) ensurePlayerData() }, { immediate: true })
-
-const getPlayerCards   = id => playerData.value?.cards?.[id] || []
-const getPlayerMatches = id => playerData.value?.matches?.[id] || []
+const getPlayerCards   = id => deckData.cardsFor(playerData.value, id)
+const getPlayerMatches = id => deckData.matchesFor(playerData.value, id)
 
 // ── Display helpers ───────────────────────────────────────────────────────────
 
@@ -155,6 +157,24 @@ const filteredStandings = computed(() => {
 // ── Current selection ─────────────────────────────────────────────────────────
 
 const currentEvent     = computed(() => eventId.value ? getEvent(eventId.value) : null)
+
+// The shard is the season of whichever event's deck is open.
+async function ensurePlayerData() {
+  const season = currentEvent.value?.season
+  if (!season || season === loadedSeason) return
+  loadedSeason = season
+  playerDataLoading.value = true
+  try {
+    const shard = await deckData.load(season)
+    if (loadedSeason === season) playerData.value = shard
+  } catch (err) {
+    console.error('[majors] deck data failed to load', err)
+    if (loadedSeason === season) { playerData.value = null; loadedSeason = null }
+  } finally {
+    if (loadedSeason === season || loadedSeason === null) playerDataLoading.value = false
+  }
+}
+watch([playerId, currentEvent], ([id]) => { if (id) ensurePlayerData() }, { immediate: true })
 const currentStandings = computed(() => eventId.value ? getStandings(eventId.value) : [])
 const currentStanding  = computed(() =>
   eventId.value && playerId.value ? getStanding(eventId.value, playerId.value) : null
@@ -184,7 +204,11 @@ watch(currentStanding, () => { focusedCard.value = null })
 const resolvedFace = computed(() => {
   const dc = playerCards.value.character?.[0]
   if (!dc) return null
-  return (dc.cardeioId && cardByCardeioId.get(dc.cardeioId)) || findCard(dc.name) || null
+  // Goes through the shared resolver so the canonical uvsId join is used. This
+  // used to key on dc.cardeioId, which the pipelines no longer export — leaving
+  // it would have silently degraded face-card lookup to name matching.
+  const card = resolveCard(dc)
+  return card.type === 'unknown' ? null : card
 })
 const resolvedDeck = computed(() => (playerCards.value.main || []).map(resolveCard))
 const resolvedSide = computed(() => (playerCards.value.sideboard || []).map(resolveCard))

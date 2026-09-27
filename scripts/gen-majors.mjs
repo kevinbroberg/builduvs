@@ -24,7 +24,10 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const majorsDir  = path.join(root, 'majors')
 const dbPath     = path.join(root, 'data', 'majors.db')
 const outIndex   = path.join(root, 'src', 'assets', 'majors-index.json')
-const outPlayers = path.join(root, 'src', 'assets', 'majors-players.json')
+// Deck rows go to public/ as one shard per SEASON tab, not into the bundle —
+// see the matching note in gen-locals.mjs. majors-players.json was a 7.7MB JS
+// chunk that Vite had to parse on every build.
+const outShardDir = path.join(root, 'public', 'deck-data', 'majors')
 
 // ── Card ID lookup ────────────────────────────────────────────────────────────
 
@@ -288,8 +291,10 @@ const allStandings = db.prepare(`
 `).all()
 
 const allCards = db.prepare(`
-  SELECT standing_id AS standingId, section, qty, card_name AS name,
-         cardeio_id AS cardeioId, uvs_id AS uvsId
+  -- cardeio_id is deliberately NOT exported; see the matching note in
+  -- gen-locals.mjs. uvs_id covers 100% of rows and supersedes it, and the Mongo
+  -- OIDs were the largest field in a file Vite re-emits as an 11MB JS chunk.
+  SELECT standing_id AS standingId, section, qty, card_name AS name, uvs_id AS uvsId
   FROM deck_cards ORDER BY standing_id, section, id
 `).all()
 
@@ -300,19 +305,68 @@ const allMatches = db.prepare(`
   FROM matches ORDER BY standing_id, phase, id
 `).all()
 
-const cardsByStanding = {}
-for (const c of allCards) (cardsByStanding[c.standingId] ??= []).push(c)
+// Exported standings are keyed by "<eventId>#<placing>" rather than the
+// AUTOINCREMENT rowid — the rowid is positional, so one new event renumbers
+// everything ingested after it and rewrites every shard. See gen-locals.mjs.
+// `standingId` is also dropped from each row, since it duplicated its own key.
+const keyById = new Map(allStandings.map(s => [s.id, `${s.eventId}#${s.standing}`]))
+const groupByStanding = (rows) => {
+  const out = {}
+  for (const r of rows) {
+    const key = keyById.get(r.standingId)
+    if (!key) continue
+    const { standingId, ...rest } = r
+    ;(out[key] ??= []).push(rest)
+  }
+  return out
+}
+
+const cardsByStanding = groupByStanding(allCards)
+const matchesByStanding = groupByStanding(allMatches)
 
 const standingsByEvent = {}
 for (const s of allStandings) {
-  (standingsByEvent[s.eventId] ??= []).push({ ...s, hasDeck: (cardsByStanding[s.id]?.length ?? 0) > 0 })
+  const key = keyById.get(s.id)
+  ;(standingsByEvent[s.eventId] ??= []).push({ ...s, id: key, hasDeck: (cardsByStanding[key]?.length ?? 0) > 0 })
 }
 
-const matchesByStanding = {}
-for (const m of allMatches) (matchesByStanding[m.standingId] ??= []).push(m)
+// Sorted-key serialization so the bytes are a pure function of the data and not
+// of SQL row order. See gen-locals.mjs.
+const stableStringify = (value) => JSON.stringify(value, (_k, v) =>
+  (v && typeof v === 'object' && !Array.isArray(v))
+    ? Object.fromEntries(Object.keys(v).sort().map(k => [k, v[k]]))
+    : v)
 
-fs.writeFileSync(outIndex,   JSON.stringify({ events, standings: standingsByEvent }))
-fs.writeFileSync(outPlayers, JSON.stringify({ cards: cardsByStanding, matches: matchesByStanding }))
+fs.writeFileSync(outIndex, stableStringify({ events, standings: standingsByEvent }))
+
+// ── deck-data shards, one per season tab ────────────────────────────────────
+const seasonOfEvent = new Map(events.map(e => [e.id, e.season]))
+const shardOfStanding = new Map()
+for (const [evId, list] of Object.entries(standingsByEvent)) {
+  const season = seasonOfEvent.get(evId)
+  for (const st of list) shardOfStanding.set(st.id, season)
+}
+
+
+const shards = {}
+const bucket = k => (shards[k] ??= { cards: {}, matches: {} })
+for (const [sid, rows] of Object.entries(cardsByStanding)) {
+  const k = shardOfStanding.get(sid)
+  if (k) bucket(k).cards[sid] = rows
+}
+for (const [sid, rows] of Object.entries(matchesByStanding)) {
+  const k = shardOfStanding.get(sid)
+  if (k) bucket(k).matches[sid] = rows
+}
+
+fs.rmSync(outShardDir, { recursive: true, force: true })
+fs.mkdirSync(outShardDir, { recursive: true })
+let shardBytes = 0
+for (const [k, data] of Object.entries(shards)) {
+  const file = path.join(outShardDir, `${k}.json`)
+  fs.writeFileSync(file, stableStringify(data))
+  shardBytes += fs.statSync(file).size
+}
 
 const idCoverage = db.prepare(`SELECT COUNT(*) AS total, SUM(uvs_id IS NOT NULL) AS resolved FROM deck_cards`).get()
 console.log(`\ncanonical card ids: ${idCoverage.resolved}/${idCoverage.total} deck rows (${(100 * idCoverage.resolved / idCoverage.total).toFixed(1)}%)`)
@@ -332,4 +386,5 @@ const bySeason = db.prepare(`SELECT season, COUNT(*) n FROM events GROUP BY seas
 
 console.log(`\nmajors: ${stats.events} events, ${stats.standings} standings, ${stats.cards} cards, ${stats.matches} matches`)
 console.log(bySeason.map(r => `  ${r.season}: ${r.n} events`).join('\n'))
-console.log(`\nWrote ${path.relative(root, outIndex)} and ${path.relative(root, outPlayers)}`)
+console.log(`\nWrote ${path.relative(root, outIndex)}`)
+console.log(`shards: ${Object.keys(shards).length} season files, ${Math.round(shardBytes / 1024)} KB → ${path.relative(root, outShardDir)}`)

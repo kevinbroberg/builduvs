@@ -14,17 +14,26 @@ import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { buildResolver } from '../src/js/card_lookup.js'
+import { shardKeyOf } from '../src/js/event_naming.js'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const dbPath = path.join(root, 'data', 'locals.db')
 const outIndex   = path.join(root, 'src', 'assets', 'locals-index.json')
-const outPlayers = path.join(root, 'src', 'assets', 'locals-players.json')
-// Public copy: the "card in deck" filter bar (LocalsPage.vue) loads this file
-// straight into the browser via sql.js to query card_name/cardeio_id directly,
-// instead of shipping a second precomputed JS index. Keep it in sync with
-// every regen — public/ is served as-is and IS checked into git (unlike the
-// build-only /data folder).
-const outPublicDb = path.join(root, 'public', 'locals.db')
+// Deck rows are written as one shard per /lists tab into public/, NOT as a
+// bundled asset. Two reasons, both learned the hard way:
+//
+//  - Vite inlines every *imported* JSON into a JS chunk and parses it at build
+//    time. locals-players.json became a 5.5MB chunk and majors-players.json a
+//    7.7MB one, which is what ran the Netlify build out of heap. Files under
+//    public/ are copied verbatim and never parsed, so they cost the build zero.
+//  - A visitor opening one deck used to download every deck of every event to
+//    read ~3KB. A tab shard is the exact working set for what the page shows.
+const outShardDir = path.join(root, 'public', 'deck-data', 'locals')
+// NOTE: locals.db is no longer copied to public/. The deck filter used to query
+// it in the browser with sql.js, which meant the same 53k deck rows shipped
+// twice — once as a 6.1MB binary (1.9MB gzipped, since sqlite compresses badly)
+// and again inside the bundled players JSON. The filter now indexes the tab
+// shard it already has in memory; the db here stays a build-time intermediate.
 
 // ── Card ID lookup ────────────────────────────────────────────────────────────
 
@@ -318,8 +327,13 @@ const allStandings = db.prepare(`
 `).all()
 
 const allCards = db.prepare(`
-  SELECT standing_id AS standingId, section, qty, card_name AS name,
-         cardeio_id AS cardeioId, uvs_id AS uvsId
+  -- cardeio_id is deliberately NOT exported. It stays in the db (and in
+  -- locals.db, which the sql.js filter queries), but in this JSON it is dead
+  -- weight: uvs_id covers 100% of rows and supersedes it, while the Mongo OIDs
+  -- are the single largest field here. Dropping it takes locals-players.json
+  -- from 7.97MB to 6.00MB — and this file is parsed and re-emitted as a JS
+  -- chunk by Vite, which is what ran the Netlify build out of heap.
+  SELECT standing_id AS standingId, section, qty, card_name AS name, uvs_id AS uvsId
   FROM deck_cards
   ORDER BY standing_id, section, id
 `).all()
@@ -332,11 +346,34 @@ const allMatches = db.prepare(`
   ORDER BY standing_id, phase, id
 `).all()
 
-const cardsByStanding = {}
-for (const c of allCards) {
-  if (!cardsByStanding[c.standingId]) cardsByStanding[c.standingId] = []
-  cardsByStanding[c.standingId].push(c)
+// ── Stable standing keys ────────────────────────────────────────────────────
+// standings.id is an AUTOINCREMENT rowid, so it is *positional*: rounds ingest
+// in order (round1 → … → round4 → regionals), which means adding a single event
+// to round 1 renumbers every standing in every later round and rewrites every
+// shard from top to bottom. Enormous diffs for a one-event change.
+//
+// The exported key is therefore a natural one — "<eventId>#<placing>" — which
+// depends only on that standing's own identity. Adding an event now adds only
+// its own entries. It is also readable in a diff: you can see which deck moved.
+//
+// Nothing downstream does arithmetic on this; the index, the shards, the pages
+// and compute-deck-symbols all pass it through opaquely as an opaque key.
+const keyById = new Map(allStandings.map(s => [s.id, `${s.eventId}#${s.standing}`]))
+
+// `standingId` is dropped from each row: it duplicated the key it is stored
+// under, 150,695 times over, for 2.5MB of nothing.
+const groupByStanding = (rows) => {
+  const out = {}
+  for (const r of rows) {
+    const key = keyById.get(r.standingId)
+    if (!key) continue
+    const { standingId, ...rest } = r
+    ;(out[key] ??= []).push(rest)
+  }
+  return out
 }
+
+const cardsByStanding = groupByStanding(allCards)
 
 // Group by event/standing. hasDeck marks standings that actually have a decklist
 // (any ingested cards) — distinct from deckName, which is just the optional
@@ -345,17 +382,55 @@ for (const c of allCards) {
 const standingsByEvent = {}
 for (const s of allStandings) {
   if (!standingsByEvent[s.eventId]) standingsByEvent[s.eventId] = []
-  standingsByEvent[s.eventId].push({ ...s, hasDeck: (cardsByStanding[s.id]?.length ?? 0) > 0 })
+  const key = keyById.get(s.id)
+  standingsByEvent[s.eventId].push({ ...s, id: key, hasDeck: (cardsByStanding[key]?.length ?? 0) > 0 })
 }
 
-const matchesByStanding = {}
-for (const m of allMatches) {
-  if (!matchesByStanding[m.standingId]) matchesByStanding[m.standingId] = []
-  matchesByStanding[m.standingId].push(m)
+const matchesByStanding = groupByStanding(allMatches)
+
+// Serialize with object keys in sorted order. JSON.stringify follows insertion
+// order, which here is SQL row order — so an unrelated upstream change could
+// reshuffle a whole file without any content actually differing. Sorting makes
+// the bytes a pure function of the data, which is what keeps diffs readable and
+// reviewable.
+const stableStringify = (value) => JSON.stringify(value, (_k, v) =>
+  (v && typeof v === 'object' && !Array.isArray(v))
+    ? Object.fromEntries(Object.keys(v).sort().map(k => [k, v[k]]))
+    : v)
+
+fs.writeFileSync(outIndex, stableStringify({ events, standings: standingsByEvent }))
+
+// ── deck-data shards, one per tab ───────────────────────────────────────────
+// shardKeyOf is imported from event_naming.js, the same module the page uses to
+// decide which shard to fetch — so writer and reader can't drift apart.
+const eventById = new Map(events.map(e => [e.id, e]))
+const shardOfStanding = new Map()
+for (const [evId, list] of Object.entries(standingsByEvent)) {
+  const shard = shardKeyOf(eventById.get(evId))
+  for (const s of list) shardOfStanding.set(s.id, shard)
 }
 
-fs.writeFileSync(outIndex,   JSON.stringify({ events, standings: standingsByEvent }))
-fs.writeFileSync(outPlayers, JSON.stringify({ cards: cardsByStanding, matches: matchesByStanding }))
+const shards = {}
+const bucket = key => (shards[key] ??= { cards: {}, matches: {} })
+for (const [sid, rows] of Object.entries(cardsByStanding)) {
+  const shard = shardOfStanding.get(sid)
+  if (shard) bucket(shard).cards[sid] = rows
+}
+for (const [sid, rows] of Object.entries(matchesByStanding)) {
+  const shard = shardOfStanding.get(sid)
+  if (shard) bucket(shard).matches[sid] = rows
+}
+
+// Rewrite the directory so a renamed or removed tab can't leave a stale shard
+// behind for the page to fetch.
+fs.rmSync(outShardDir, { recursive: true, force: true })
+fs.mkdirSync(outShardDir, { recursive: true })
+let shardBytes = 0
+for (const [key, data] of Object.entries(shards)) {
+  const file = path.join(outShardDir, `${key}.json`)
+  fs.writeFileSync(file, stableStringify(data))
+  shardBytes += fs.statSync(file).size
+}
 
 const idCoverage = db.prepare(`
   SELECT COUNT(*) AS total, SUM(uvs_id IS NOT NULL) AS resolved FROM deck_cards
@@ -376,10 +451,11 @@ const stats = db.prepare(`
     (SELECT COUNT(*) FROM matches WHERE opponent_standing IS NOT NULL) AS resolved_opponents
 `).get()
 console.log('DB rows:', stats)
-console.log('index:  ', Math.round(fs.statSync(outIndex).size   / 1024), 'KB')
-console.log('players:', Math.round(fs.statSync(outPlayers).size / 1024), 'KB')
+console.log('index:  ', Math.round(fs.statSync(outIndex).size / 1024), 'KB (bundled)')
+const sizes = Object.keys(shards).map(k => fs.statSync(path.join(outShardDir, `${k}.json`)).size)
+sizes.sort((a, b) => a - b)
+console.log(`shards:  ${sizes.length} files, ${Math.round(shardBytes / 1024)} KB total, `
+  + `median ${Math.round(sizes[sizes.length >> 1] / 1024)} KB, max ${Math.round(sizes[sizes.length - 1] / 1024)} KB`
+  + ` → ${path.relative(root, outShardDir)}`)
 
 db.close()
-
-fs.copyFileSync(dbPath, outPublicDb)
-console.log('public db:', Math.round(fs.statSync(outPublicDb).size / 1024), 'KB', '→', path.relative(root, outPublicDb))

@@ -31,13 +31,13 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 // printing or most historical faces and deck cards would not resolve at all.
 const TARGETS = {
   locals: {
-    index: 'locals-index.json', players: 'locals-players.json',
+    index: 'locals-index.json', shardDir: 'locals',
     standardOnly: true, route: 'lists', useFaceOverrides: true,
     // Historically gated on deckName; kept as-is so /lists output is unchanged.
     skip: s => !s.deckName,
   },
   majors: {
-    index: 'majors-index.json', players: 'majors-players.json',
+    index: 'majors-index.json', shardDir: 'majors',
     standardOnly: false, route: 'majors', useFaceOverrides: false,
     // hasDeck is the accurate gate — an unnamed list is still a list.
     skip: s => !s.hasDeck,
@@ -143,10 +143,19 @@ function findCard(nameOrId, cardeioId, uvs) {
 // ── Load target data ──────────────────────────────────────────────────────────
 
 const indexPath   = path.join(assetDir, target.index)
-const playersPath = path.join(assetDir, target.players)
+// Deck rows now live as per-tab shards under public/deck-data/<target>/ rather
+// than one bundled JSON (see src/js/deck_data.js). This script wants them all,
+// so it merges every shard back into the single {cards, matches} shape the rest
+// of the file already expects.
+const shardDir = path.join(root, 'public', 'deck-data', target.shardDir)
 
 const index   = JSON.parse(fs.readFileSync(indexPath,   'utf8'))
-const players = JSON.parse(fs.readFileSync(playersPath, 'utf8'))
+const players = { cards: {}, matches: {} }
+for (const f of fs.readdirSync(shardDir).filter(f => f.endsWith('.json'))) {
+  const shard = JSON.parse(fs.readFileSync(path.join(shardDir, f), 'utf8'))
+  Object.assign(players.cards, shard.cards)
+  Object.assign(players.matches, shard.matches)
+}
 
 // ── Compute deck main symbol ──────────────────────────────────────────────────
 

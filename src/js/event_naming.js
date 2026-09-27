@@ -14,6 +14,21 @@ export const LC_FORMATS = [
 
 const labelByKey = new Map(LC_FORMATS.map(f => [f.key, f.label]))
 
+/**
+ * Which deck-data shard an event's decklists live in.
+ *
+ * Deck rows are split into one file per TAB on /lists — each LC format period is
+ * one tab holding many events, and each regional is a tab of its own. That makes
+ * a shard exactly the working set for whatever the page is showing: the deck
+ * filter's `scopeEvents` is already tab-scoped, so opening a tab fetches its
+ * decks and nothing else.
+ *
+ * Defined here rather than in gen-locals.mjs because the build writes the shards
+ * and the page reads them — two places that must agree, which is precisely the
+ * kind of split that caused the card-id mess. One rule, imported by both.
+ */
+export const shardKeyOf = ev => (ev.round === 0 ? ev.id : ev.formatPeriod)
+
 // "Brownsburg, US" → "Brownsburg"; store names without a country ("Counterspell
 // Games") pass through unchanged.
 export const cityOf = location => (location || '').split(',')[0].trim()
