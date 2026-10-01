@@ -82,6 +82,11 @@ const routes = [
         component: () => import("src/pages/MajorsPage.vue"),
         meta: { title: "Majors" },
       },
+      {
+        path: "/ask",
+        component: () => import("src/pages/AskDataPage.vue"),
+        meta: { title: "Ask the Data" },
+      },
       // Unknown URLs (typos, stale links) fall back to the home tracker
       // instead of rendering an empty layout.
       { path: "/:catchAll(.*)*", redirect: "/" },

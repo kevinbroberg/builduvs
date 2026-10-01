@@ -34,3 +34,6 @@ src/assets/images/card_images/**
 
 # Local Netlify folder
 .netlify
+
+# Build-time intermediates (locals.db, majors.db, builduvs.sqlite)
+/data/

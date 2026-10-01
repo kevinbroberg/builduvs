@@ -1,0 +1,91 @@
+{
+  "generated_from": "https://github.com/kevinbroberg/builduvs (scripts/gen-dataset.mjs)",
+  "date_range": [
+    "2024-03-16",
+    "2026-09-19"
+  ],
+  "row_counts": {
+    "events": 188,
+    "decks": 5021,
+    "deck_cards": 124759,
+    "matches": 25936,
+    "cards": 9873
+  },
+  "tables": {
+    "events": [
+      "event_id",
+      "event_name",
+      "date",
+      "location",
+      "player_count",
+      "event_type",
+      "lc_round",
+      "format_period",
+      "format_label",
+      "season",
+      "source"
+    ],
+    "decks": [
+      "deck_id",
+      "event_id",
+      "standing",
+      "character",
+      "character_card_id",
+      "deck_name",
+      "deck_symbol",
+      "swiss_record",
+      "swiss_wins",
+      "swiss_losses",
+      "swiss_draws",
+      "overall_record",
+      "overall_wins",
+      "overall_losses",
+      "overall_draws",
+      "made_top_cut",
+      "has_decklist",
+      "main_deck_size",
+      "sideboard_size"
+    ],
+    "deck_cards": [
+      "deck_id",
+      "section",
+      "qty",
+      "card_name",
+      "card_id"
+    ],
+    "matches": [
+      "deck_id",
+      "event_id",
+      "phase",
+      "round",
+      "character",
+      "opponent_deck_id",
+      "opponent_character",
+      "result",
+      "games_won",
+      "games_lost"
+    ],
+    "cards": [
+      "card_id",
+      "name",
+      "type",
+      "set_code",
+      "set_name",
+      "rarity",
+      "symbols",
+      "keywords",
+      "difficulty",
+      "control",
+      "block_zone",
+      "block_modifier",
+      "speed",
+      "damage",
+      "attack_zone",
+      "hand_size",
+      "vitality",
+      "deck_limit",
+      "text",
+      "appears_in_decklists"
+    ]
+  }
+}

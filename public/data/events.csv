@@ -1,0 +1,189 @@
+event_id,event_name,date,location,player_count,event_type,lc_round,format_period,format_label,season,source
+2024-03-16_s1-webcam-regional,S1 WebCam Regional,2024-03-16,Online,155,webcamMajor,,,,FY2024,majors
+2024-04-12_s1-oce-major-regional,S1 OCE Major Regional,2024-04-12,"Auckland, NZ",15,majorRegional,,,,FY2024,majors
+2024-04-20_s1-eu-major-regional,S1 EU Major Regional,2024-04-20,"Sheffield, GB",46,majorRegional,,,,FY2024,majors
+2024-04-26_s1-na-major-regional,S1 NA Major Regional,2024-04-26,"Las Vegas, US",111,majorRegional,,,,FY2024,majors
+2024-06-29_webcam-circuit-major-1,Webcam Circuit Major 1,2024-06-29,Online,73,webcamMajor,,,,FY2024,majors
+2024-07-05_s2-oce-regional,S2 OCE Regional,2024-07-05,"Wollongong, AU",35,majorRegional,,,,FY2024,majors
+2024-07-13_s2-na-major-regional,S2 NA Major Regional,2024-07-13,"Collinsville, US",170,majorRegional,,,,FY2024,majors
+2024-07-27_s2-eu-major-regional,S2 EU Major Regional,2024-07-27,"Sheffield, GB",57,majorRegional,,,,FY2024,majors
+2024-09-07_webcam-circuit-major-2,Webcam Circuit Major 2,2024-09-07,Online,68,webcamMajor,,,,FY2024,majors
+2024-10-05_s3-na-major-regional,S3 NA Major Regional,2024-10-05,"Atlanta, US",188,majorRegional,,,,FY2024,majors
+2024-10-26_s3-eu-major-regional,S3 EU Major Regional,2024-10-26,"Sheffield, GB",68,majorRegional,,,,FY2024,majors
+2024-11-09_webcam-circuit-major-3,Webcam Circuit Major 3,2024-11-09,Online,55,webcamMajor,,,,FY2024,majors
+2025-01-10_oce-nationals,OCE Nationals,2025-01-10,"Canberra, AU",49,nationals,,,,FY2024,majors
+2025-01-17_european-nationals,European Nationals,2025-01-17,"Leeds, GB",69,nationals,,,,FY2024,majors
+2025-01-24_north-america-nationals,North America Nationals,2025-01-24,"Grapevine, US",270,nationals,,,,FY2024,majors
+2025-02-14_worlds-festival-lcq,Worlds Festival LCQ,2025-02-14,"Orlando, US",96,worldsLCQ,,,,FY2024,majors
+2025-02-15_2024-world-championship,2024 World Championship,2025-02-15,"Orlando, US",64,worlds,,,,FY2024,majors
+2025-03-15_denver-regional,Denver Regional,2025-03-15,"Denver, US",87,regional,,,,FY2025,majors
+2025-04-19_chelmsford-regional,Chelmsford Regional,2025-04-19,"Chelmsford, GB",59,regional,,,,FY2025,majors
+2025-05-17_albuquerque-regional,Albuquerque Regional,2025-05-17,"Albuquerque, US",92,regional,,,,FY2025,majors
+2025-05-31_melbourne-regional,Melbourne Regional,2025-05-31,"Melbourne, AU",40,regional,,,,FY2025,majors
+2025-07-19_louisville-regional,Louisville Regional,2025-07-19,"Louisville, US",206,regional,,,,FY2025,majors
+2025-08-23_alicante-regional,Alicante Regional,2025-08-23,"Alicante, ES",47,regional,,,,FY2025,majors
+2025-08-29_canberra-regional,Canberra Regional,2025-08-29,"Canberra, AU",48,regional,,,,FY2025,majors
+2025-09-06_ontario-regional,Ontario Regional,2025-09-06,"Clarington, CA",59,regional,,,,FY2025,majors
+2025-10-03_atlanta-regional,Atlanta Regional,2025-10-03,"Atlanta, US",142,regional,,,,FY2025,majors
+2025-11-22_glasgow-regional,Glasgow Regional,2025-11-22,"Glasgow, GB",79,regional,,,,FY2025,majors
+2025-12-20_buffalo-major-regional,Buffalo Major Regional,2025-12-20,"Cheektowaga, US",85,majorRegional,,,,FY2025,majors
+2026-02-27_2025-world-championship-day-1,2025 World Championship — Day 1,2026-02-27,"Grapevine, US",114,worlds,,,,FY2025,majors
+2026-02-28_2025-world-championship-day-2,2025 World Championship — Day 2,2026-02-28,"Grapevine, US",58,worlds,,,,FY2025,majors
+2026-03-21_brownsburg-in-us,Reign of Kaiju Brownsburg Championship,2026-03-21,"Brownsburg, IN, US",24,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-21_elgin-township-il-us,Reign of Kaiju Elgin Township Championship,2026-03-21,"Elgin Township, IL, US",26,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-21_summerville-sc-us,Reign of Kaiju Summerville Championship,2026-03-21,"Summerville, SC, US",34,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-22_courtice-on-ca,Reign of Kaiju Courtice Championship,2026-03-22,"Courtice, ON, CA",12,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-22_metairie-la-us,Reign of Kaiju Metairie Championship,2026-03-22,"Metairie, LA, US",17,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-24_broken-arrow-ok-us,Reign of Kaiju Broken Arrow Championship,2026-03-24,"Broken Arrow, OK, US",18,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-27_amsterdam-ny-us,Reign of Kaiju Amsterdam Championship,2026-03-27,"Amsterdam, NY, US",26,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-27_elkhart-in-us,Reign of Kaiju Elkhart Championship,2026-03-27,"Elkhart, IN, US",11,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-28_alicante-es,Reign of Kaiju Alicante Championship,2026-03-28,"Alicante, ES",25,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-28_brookfield-wi-us,Reign of Kaiju Brookfield Championship,2026-03-28,"Brookfield, WI, US",26,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-28_fairview-heights-il-us,Reign of Kaiju Fairview Heights Championship,2026-03-28,"Fairview Heights, IL, US",13,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-28_moonee-ponds-au,Reign of Kaiju Moonee Ponds Championship,2026-03-28,"Moonee Ponds, AU",6,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-28_pueblo-co-us,Reign of Kaiju Pueblo Championship,2026-03-28,"Pueblo, CO, US",10,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-28_reno-nv-us,Reign of Kaiju Reno Championship,2026-03-28,"Reno, NV, US",27,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-28_san-antonio-tx-us,Reign of Kaiju San Antonio Championship,2026-03-28,"San Antonio, TX, US",29,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-28_sheffield-gb,Reign of Kaiju Sheffield Championship,2026-03-28,"Sheffield, GB",22,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-28_wynne-ar-us,Reign of Kaiju Wynne Championship,2026-03-28,"Wynne, AR, US",19,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-29_lewis-center-oh-us,Reign of Kaiju Lewis Center Championship,2026-03-29,"Lewis Center, OH, US",20,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-29_rochester-ny-us,Reign of Kaiju Rochester Championship,2026-03-29,"Rochester, NY, US",15,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-03-29_san-francisco-ca-us,Reign of Kaiju San Francisco Championship,2026-03-29,"San Francisco, CA, US",21,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-04_concord-nc-us,Reign of Kaiju Concord Championship,2026-04-04,"Concord, NC, US",35,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-04_everett-wa-us,Reign of Kaiju Everett Championship,2026-04-04,"Everett, WA, US",11,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-04_gatineau-qc-ca,Reign of Kaiju Gatineau Championship,2026-04-04,"Gatineau, QC, CA",12,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-04_manhattan-ny-us,Reign of Kaiju Manhattan Championship,2026-04-04,"Manhattan, NY, US",19,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-05_greenway-au,Reign of Kaiju Greenway Championship,2026-04-05,"Greenway, AU",17,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-07_middlesbrough-gb,Reign of Kaiju Middlesbrough Championship,2026-04-07,"Middlesbrough, GB",12,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-10_fleurus-be,Reign of Kaiju Fleurus Championship,2026-04-10,"Fleurus, BE",5,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-11_bussy-saint-georges-fr,Reign of Kaiju Bussy-Saint-Georges Championship,2026-04-11,"Bussy-Saint-Georges, FR",4,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-11_fairfax-va-us,Reign of Kaiju Fairfax Championship,2026-04-11,"Fairfax, VA, US",25,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-11_jacksonville-fl-us,Reign of Kaiju Jacksonville Championship,2026-04-11,"Jacksonville, FL, US",43,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-11_lubbock-tx-us,Reign of Kaiju Lubbock Championship,2026-04-11,"Lubbock, TX, US",27,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-11_novi-mi-us,Reign of Kaiju Novi Championship,2026-04-11,"Novi, MI, US",61,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-11_pittsburg-ca-us,Reign of Kaiju Pittsburg Championship,2026-04-11,"Pittsburg, CA, US",21,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-11_rockingham-au,Reign of Kaiju Rockingham Championship,2026-04-11,"Rockingham, AU",7,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-11_sydenham-nz,Reign of Kaiju Sydenham Championship,2026-04-11,"Sydenham, NZ",17,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-12_alicante-es,Reign of Kaiju Alicante Championship,2026-04-12,"Alicante, ES",22,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-12_anchorage-ak-us,Reign of Kaiju Anchorage Championship,2026-04-12,"Anchorage, AK, US",6,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-12_newcastle-gb,Reign of Kaiju Newcastle Championship,2026-04-12,"Newcastle, GB",8,local_championship,1,kaiju,Reign of Kaiju,,locals
+2026-04-18_rosemont-il-us,Rosemont Regional,2026-04-18,"Rosemont, IL, US",134,regional,,april,April B&E,,locals
+2026-05-02_alicante-es,April B&E Alicante Championship,2026-05-02,"Alicante, ES",20,local_championship,2,april,April B&E,,locals
+2026-05-09_brownsburg-in-us,April B&E Brownsburg Championship,2026-05-09,"Brownsburg, IN, US",23,local_championship,2,april,April B&E,,locals
+2026-05-09_elgin-township-il-us,April B&E Elgin Township Championship,2026-05-09,"Elgin Township, IL, US",23,local_championship,2,april,April B&E,,locals
+2026-05-09_fairfax-va-us,April B&E Fairfax Championship,2026-05-09,"Fairfax, VA, US",15,local_championship,2,april,April B&E,,locals
+2026-05-09_fletcher-nc-us,April B&E Fletcher Championship,2026-05-09,"Fletcher, NC, US",28,local_championship,2,april,April B&E,,locals
+2026-05-09_gatineau-qc-ca,April B&E Gatineau Championship,2026-05-09,"Gatineau, QC, CA",14,local_championship,2,april,April B&E,,locals
+2026-05-09_grand-j-games-au,April B&E Grand J Games Championship,2026-05-09,"Grand J Games, AU",11,local_championship,2,april,April B&E,,locals
+2026-05-09_lubbock-tx-us,April B&E Lubbock Championship,2026-05-09,"Lubbock, TX, US",21,local_championship,2,april,April B&E,,locals
+2026-05-09_pittsburg-ca-us,April B&E Pittsburg Championship,2026-05-09,"Pittsburg, CA, US",17,local_championship,2,april,April B&E,,locals
+2026-05-09_wynne-ar-us,April B&E Wynne Championship,2026-05-09,"Wynne, AR, US",20,local_championship,2,april,April B&E,,locals
+2026-05-10_broken-arrow-ok-us,April B&E Broken Arrow Championship,2026-05-10,"Broken Arrow, OK, US",8,local_championship,2,april,April B&E,,locals
+2026-05-15_elkhart-in-us,May B&E Elkhart Championship,2026-05-15,"Elkhart, IN, US",9,local_championship,2,titan,May B&E,,locals
+2026-05-15_fleurus-be,May B&E Fleurus Championship,2026-05-15,"Fleurus, BE",5,local_championship,2,titan,May B&E,,locals
+2026-05-15_sparks-nv-us,May B&E Sparks Championship,2026-05-15,"Sparks, NV, US",14,local_championship,2,titan,May B&E,,locals
+2026-05-16_amsterdam-ny-us,May B&E Amsterdam Championship,2026-05-16,"Amsterdam, NY, US",18,local_championship,2,titan,May B&E,,locals
+2026-05-16_brookfield-wi-us,May B&E Brookfield Championship,2026-05-16,"Brookfield, WI, US",21,local_championship,2,titan,May B&E,,locals
+2026-05-16_lancashire-gb,May B&E Lancashire Championship,2026-05-16,"Lancashire, GB",4,local_championship,2,titan,May B&E,,locals
+2026-05-16_manhattan-ny-us,May B&E Manhattan Championship,2026-05-16,"Manhattan, NY, US",16,local_championship,2,titan,May B&E,,locals
+2026-05-16_reno-nv-us,May B&E Reno Championship,2026-05-16,"Reno, NV, US",22,local_championship,2,titan,May B&E,,locals
+2026-05-16_san-antonio-tx-us,May B&E San Antonio Championship,2026-05-16,"San Antonio, TX, US",13,local_championship,2,titan,May B&E,,locals
+2026-05-16_summerville-sc-us,May B&E Summerville Championship,2026-05-16,"Summerville, SC, US",39,local_championship,2,titan,May B&E,,locals
+2026-05-17_courtice-on-ca,May B&E Courtice Championship,2026-05-17,"Courtice, ON, CA",9,local_championship,2,titan,May B&E,,locals
+2026-05-17_greenway-au,May B&E Greenway Championship,2026-05-17,"Greenway, AU",21,local_championship,2,titan,May B&E,,locals
+2026-05-17_metairie-la-us,May B&E Metairie Championship,2026-05-17,"Metairie, LA, US",22,local_championship,2,titan,May B&E,,locals
+2026-05-17_rochester-ny-us,May B&E Rochester Championship,2026-05-17,"Rochester, NY, US",17,local_championship,2,titan,May B&E,,locals
+2026-05-17_rockingham-au,May B&E Rockingham Championship,2026-05-17,"Rockingham, AU",9,local_championship,2,titan,May B&E,,locals
+2026-05-23_bussy-saint-georges-fr,May B&E Bussy-Saint-Georges Championship,2026-05-23,"Bussy-Saint-Georges, FR",2,local_championship,2,titan,May B&E,,locals
+2026-05-23_counterspell-games,May B&E Counterspell Games Championship,2026-05-23,Counterspell Games,25,local_championship,2,titan,May B&E,,locals
+2026-05-23_fairview-heights-il-us,May B&E Fairview Heights Championship,2026-05-23,"Fairview Heights, IL, US",22,local_championship,2,titan,May B&E,,locals
+2026-05-23_lewis-center-oh-us,May B&E Lewis Center Championship,2026-05-23,"Lewis Center, OH, US",10,local_championship,2,titan,May B&E,,locals
+2026-05-23_novi-mi-us,May B&E Novi Championship,2026-05-23,"Novi, MI, US",26,local_championship,2,titan,May B&E,,locals
+2026-05-23_sheffield-gb,May B&E Sheffield Championship,2026-05-23,"Sheffield, GB",21,local_championship,2,titan,May B&E,,locals
+2026-05-24_alicante-es,May B&E Alicante Championship,2026-05-24,"Alicante, ES",23,local_championship,2,titan,May B&E,,locals
+2026-05-24_san-francisco-ca-us,May B&E San Francisco Championship,2026-05-24,"San Francisco, CA, US",15,local_championship,2,titan,May B&E,,locals
+2026-05-30_las-vegas-nv-us,Las Vegas Regional,2026-05-30,"Las Vegas, NV, US",104,regional,,titan,May B&E,,locals
+2026-06-20_fairfax-va-us,Round 3 Fairfax Championship,2026-06-20,"Fairfax, VA, US",4,local_championship,3,mhafinal,Round 3,,locals
+2026-06-20_greenfield-in-us,Round 3 Greenfield Championship,2026-06-20,"Greenfield, IN, US",17,local_championship,3,mhafinal,Round 3,,locals
+2026-06-20_jacksonville-fl-us,Round 3 Jacksonville Championship,2026-06-20,"Jacksonville, FL, US",17,local_championship,3,mhafinal,Round 3,,locals
+2026-06-20_lubbock-tx-us,Round 3 Lubbock Championship,2026-06-20,"Lubbock, TX, US",8,local_championship,3,mhafinal,Round 3,,locals
+2026-06-20_pittsburg-ca-us,Round 3 Pittsburg Championship,2026-06-20,"Pittsburg, CA, US",19,local_championship,3,mhafinal,Round 3,,locals
+2026-06-20_richmond-tx-us,Round 3 Richmond Championship,2026-06-20,"Richmond, TX, US",10,local_championship,3,mhafinal,Round 3,,locals
+2026-06-20_wynne-ar-us,Round 3 Wynne Championship,2026-06-20,"Wynne, AR, US",26,local_championship,3,mhafinal,Round 3,,locals
+2026-06-21_green-bay-wi-us,Round 3 Green Bay Championship,2026-06-21,"Green Bay, WI, US",11,local_championship,3,mhafinal,Round 3,,locals
+2026-06-21_jacksonville-fl-us,Round 3 Jacksonville Championship,2026-06-21,"Jacksonville, FL, US",14,local_championship,3,mhafinal,Round 3,,locals
+2026-06-25_hartlepool-gb,Round 3 Hartlepool Championship,2026-06-25,"Hartlepool, GB",1,local_championship,3,mhafinal,Round 3,,locals
+2026-06-25_jerusalem-il,Round 3 Jerusalem Championship,2026-06-25,"Jerusalem, IL",0,local_championship,3,mhafinal,Round 3,,locals
+2026-06-27_amsterdam-ny-us,Round 3 Amsterdam Championship,2026-06-27,"Amsterdam, NY, US",7,local_championship,3,mhafinal,Round 3,,locals
+2026-06-27_austin-tx-us,Round 3 Austin Championship,2026-06-27,"Austin, TX, US",9,local_championship,3,mhafinal,Round 3,,locals
+2026-06-27_barreiro-pt,Round 3 Barreiro Championship,2026-06-27,"Barreiro, PT",10,local_championship,3,mhafinal,Round 3,,locals
+2026-06-27_concord-nc-us,Round 3 Concord Championship,2026-06-27,"Concord, NC, US",9,local_championship,3,mhafinal,Round 3,,locals
+2026-06-27_elgin-township-il-us,Round 3 Elgin Township Championship,2026-06-27,"Elgin Township, IL, US",12,local_championship,3,mhafinal,Round 3,,locals
+2026-06-27_lowell-ar-us,Round 3 Lowell Championship,2026-06-27,"Lowell, AR, US",18,local_championship,3,mhafinal,Round 3,,locals
+2026-06-27_manhattan-ny-us,Round 3 Manhattan Championship,2026-06-27,"Manhattan, NY, US",11,local_championship,3,mhafinal,Round 3,,locals
+2026-06-27_omaha-ne-us,Round 3 Omaha Championship,2026-06-27,"Omaha, NE, US",9,local_championship,3,mhafinal,Round 3,,locals
+2026-06-27_santa-clara-ca-us,Round 3 Santa Clara Championship,2026-06-27,"Santa Clara, CA, US",16,local_championship,3,mhafinal,Round 3,,locals
+2026-06-27_sheffield-gb,Round 3 Sheffield Championship,2026-06-27,"Sheffield, GB",12,local_championship,3,mhafinal,Round 3,,locals
+2026-06-27_summerville-sc-us,Round 3 Summerville Championship,2026-06-27,"Summerville, SC, US",15,local_championship,3,mhafinal,Round 3,,locals
+2026-06-28_alicante-es,Round 3 Alicante Championship,2026-06-28,"Alicante, ES",15,local_championship,3,mhafinal,Round 3,,locals
+2026-06-28_greenway-au,Round 3 Greenway Championship,2026-06-28,"Greenway, AU",9,local_championship,3,mhafinal,Round 3,,locals
+2026-06-28_mission-tx-us,Round 3 Mission Championship,2026-06-28,"Mission, TX, US",10,local_championship,3,mhafinal,Round 3,,locals
+2026-06-28_summerville-sc-us,Round 3 Summerville Championship,2026-06-28,"Summerville, SC, US",17,local_championship,3,mhafinal,Round 3,,locals
+2026-07-04_middlesbrough-gb,Round 3 Middlesbrough Championship,2026-07-04,"Middlesbrough, GB",0,local_championship,3,mhafinal,Round 3,,locals
+2026-07-04_sydenham-nz,Round 3 Sydenham Championship,2026-07-04,"Sydenham, NZ",1,local_championship,3,mhafinal,Round 3,,locals
+2026-07-05_blacksburg-va-us,Round 3 Blacksburg Championship,2026-07-05,"Blacksburg, VA, US",19,local_championship,3,mhafinal,Round 3,,locals
+2026-07-05_glasgow-gb,Round 3 Glasgow Championship,2026-07-05,"Glasgow, GB",8,local_championship,3,mhafinal,Round 3,,locals
+2026-07-05_las-vegas-nv-us,Round 3 Las Vegas Championship,2026-07-05,"Las Vegas, NV, US",5,local_championship,3,mhafinal,Round 3,,locals
+2026-07-05_metairie-la-us,Round 3 Metairie Championship,2026-07-05,"Metairie, LA, US",16,local_championship,3,mhafinal,Round 3,,locals
+2026-07-05_parma-heights-oh-us,Round 3 Parma Heights Championship,2026-07-05,"Parma Heights, OH, US",8,local_championship,3,mhafinal,Round 3,,locals
+2026-07-05_west-babylon-ny-us,Round 3 West Babylon Championship,2026-07-05,"West Babylon, NY, US",8,local_championship,3,mhafinal,Round 3,,locals
+2026-07-08_london-on-ca,Round 3 London Championship,2026-07-08,"London, ON, CA",0,local_championship,3,mhafinal,Round 3,,locals
+2026-07-11_brookfield-wi-us,Round 3 Brookfield Championship,2026-07-11,"Brookfield, WI, US",10,local_championship,3,mhafinal,Round 3,,locals
+2026-07-11_brownsburg-in-us,Round 3 Brownsburg Championship,2026-07-11,"Brownsburg, IN, US",19,local_championship,3,mhafinal,Round 3,,locals
+2026-07-11_fletcher-nc-us,Round 3 Fletcher Championship,2026-07-11,"Fletcher, NC, US",16,local_championship,3,mhafinal,Round 3,,locals
+2026-07-11_hackham-au,Round 3 Hackham Championship,2026-07-11,"Hackham, AU",7,local_championship,3,mhafinal,Round 3,,locals
+2026-07-11_lewis-center-oh-us,Round 3 Lewis Center Championship,2026-07-11,"Lewis Center, OH, US",8,local_championship,3,mhafinal,Round 3,,locals
+2026-07-11_mansfield-ma-us,Round 3 Mansfield Championship,2026-07-11,"Mansfield, MA, US",13,local_championship,3,mhafinal,Round 3,,locals
+2026-07-11_novi-mi-us,Round 3 Novi Championship,2026-07-11,"Novi, MI, US",8,local_championship,3,mhafinal,Round 3,,locals
+2026-07-11_reno-nv-us,Round 3 Reno Championship,2026-07-11,"Reno, NV, US",17,local_championship,3,mhafinal,Round 3,,locals
+2026-07-11_san-antonio-tx-us,Round 3 San Antonio Championship,2026-07-11,"San Antonio, TX, US",12,local_championship,3,mhafinal,Round 3,,locals
+2026-07-11_sheffield-gb,Round 3 Sheffield Championship,2026-07-11,"Sheffield, GB",16,local_championship,3,mhafinal,Round 3,,locals
+2026-07-11_tempe-az-us,Round 3 Tempe Championship,2026-07-11,"Tempe, AZ, US",7,local_championship,3,mhafinal,Round 3,,locals
+2026-07-12_alicante-es,Round 3 Alicante Championship,2026-07-12,"Alicante, ES",20,local_championship,3,mhafinal,Round 3,,locals
+2026-07-12_canberra-au,Round 3 Canberra Championship,2026-07-12,"Canberra, AU",8,local_championship,3,mhafinal,Round 3,,locals
+2026-07-12_courtice-on-ca,Round 3 Courtice Championship,2026-07-12,"Courtice, ON, CA",12,local_championship,3,mhafinal,Round 3,,locals
+2026-07-12_manchester-ct-us,Round 3 Manchester Championship,2026-07-12,"Manchester, CT, US",14,local_championship,3,mhafinal,Round 3,,locals
+2026-07-12_novi-mi-us,Round 3 Novi Championship,2026-07-12,"Novi, MI, US",9,local_championship,3,mhafinal,Round 3,,locals
+2026-07-18_dallas-tx-us,Dallas Regional,2026-07-18,"Dallas, TX, US",108,regional,,mhafinal,Round 3,,locals
+2026-08-22_alicante-es,Tekken 8 Alicante Championship,2026-08-22,"Alicante, ES",18,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-22_austin-tx-us,Tekken 8 Austin Championship,2026-08-22,"Austin, TX, US",8,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-22_brookfield-wi-us,Tekken 8 Brookfield Championship,2026-08-22,"Brookfield, WI, US",9,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-22_gatineau-qc-ca,Tekken 8 Gatineau Championship,2026-08-22,"Gatineau, QC, CA",10,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-22_greenfield-in-us,Tekken 8 Greenfield Championship,2026-08-22,"Greenfield, IN, US",14,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-22_greenway-au,Tekken 8 Greenway Championship,2026-08-22,"Greenway, AU",0,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-22_pittsburg-ca-us,Tekken 8 Pittsburg Championship,2026-08-22,"Pittsburg, CA, US",20,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-22_sheffield-gb,Tekken 8 Sheffield Championship,2026-08-22,"Sheffield, GB",14,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-22_summerville-sc-us,Tekken 8 Summerville Championship,2026-08-22,"Summerville, SC, US",15,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-23_metairie-la-us,Tekken 8 Metairie Championship,2026-08-23,"Metairie, LA, US",17,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-23_summerville-sc-us,Tekken 8 Summerville Championship,2026-08-23,"Summerville, SC, US",14,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-26_menomonie-wi-us,Tekken 8 Menomonie Championship,2026-08-26,"Menomonie, WI, US",4,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-29_amsterdam-ny-us,Tekken 8 Amsterdam Championship,2026-08-29,"Amsterdam, NY, US",6,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-29_elgin-township-il-us,Tekken 8 Elgin Township Championship,2026-08-29,"Elgin Township, IL, US",14,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-29_fairfax-va-us,Tekken 8 Fairfax Championship,2026-08-29,"Fairfax, VA, US",9,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-29_lowell-ar-us,Tekken 8 Lowell Championship,2026-08-29,"Lowell, AR, US",17,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-29_lubbock-tx-us,Tekken 8 Lubbock Championship,2026-08-29,"Lubbock, TX, US",11,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-29_santa-clara-ca-us,Tekken 8 Santa Clara Championship,2026-08-29,"Santa Clara, CA, US",16,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-30_blacksburg-va-us,Tekken 8 Blacksburg Championship,2026-08-30,"Blacksburg, VA, US",16,local_championship,4,tekken8,Tekken 8,,locals
+2026-08-30_glasgow-gb,Tekken 8 Glasgow Championship,2026-08-30,"Glasgow, GB",13,local_championship,4,tekken8,Tekken 8,,locals
+2026-09-05_counterspell-games-fl-us,Tekken 8 counterspell games Championship,2026-09-05,"counterspell games, FL, US",8,local_championship,4,tekken8,Tekken 8,,locals
+2026-09-05_cryptid-gaming-ar-us,Tekken 8 Cryptid Gaming Championship,2026-09-05,"Cryptid Gaming, AR, US",13,local_championship,4,tekken8,Tekken 8,,locals
+2026-09-05_exiled-games-ny-us,Tekken 8 Exiled Games Championship,2026-09-05,"Exiled Games, NY, US",8,local_championship,4,tekken8,Tekken 8,,locals
+2026-09-05_mighty-meeple-nc-us,Tekken 8 Mighty Meeple Championship,2026-09-05,"Mighty Meeple, NC, US",19,local_championship,4,tekken8,Tekken 8,,locals
+2026-09-05_player-s-spot-pt,Tekken 8 Player's Spot Championship,2026-09-05,"Player's Spot, PT",4,local_championship,4,tekken8,Tekken 8,,locals
+2026-09-05_vtc-games-more-ma-us,Tekken 8 VTC Games & More Championship,2026-09-05,"VTC Games & More, MA, US",11,local_championship,4,tekken8,Tekken 8,,locals
+2026-09-06_akikambara-au,Tekken 8 AKIKAMBARA Championship,2026-09-06,"AKIKAMBARA, AU",10,local_championship,4,tekken8,Tekken 8,,locals
+2026-09-06_counterspell-games-fl-us,Tekken 8 counterspell games Championship,2026-09-06,"counterspell games, FL, US",8,local_championship,4,tekken8,Tekken 8,,locals
+2026-09-06_many-realms-arena-nv-us,Tekken 8 Many Realms Arena Championship,2026-09-06,"Many Realms Arena, NV, US",16,local_championship,4,tekken8,Tekken 8,,locals
+2026-09-06_mundo-magic-fantasy-es,Tekken 8 Mundo Magic Fantasy Championship,2026-09-06,"Mundo Magic Fantasy, ES",16,local_championship,4,tekken8,Tekken 8,,locals
+2026-09-06_the-portal-ct-us,Tekken 8 The Portal Championship,2026-09-06,"The Portal, CT, US",11,local_championship,4,tekken8,Tekken 8,,locals
+2026-09-19_atlanta-ga-us,Atlanta Regional,2026-09-19,"Atlanta, GA, US",149,regional,,tekken8,Tekken 8,,locals

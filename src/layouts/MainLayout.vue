@@ -73,6 +73,10 @@ function toggleRightDrawer() {
           <q-item-section avatar><q-icon name="military_tech" /></q-item-section>
           <q-item-section>Majors</q-item-section>
         </q-item>
+        <q-item clickable v-ripple to="/ask" :class="{ 'menu-active': isActive('/ask') }">
+          <q-item-section avatar><q-icon name="query_stats" /></q-item-section>
+          <q-item-section>Ask the Data</q-item-section>
+        </q-item>
         <q-item clickable v-ripple to="/precons" :class="{ 'menu-active': isActive('/precons') }">
           <q-item-section avatar><q-icon name="inventory_2" /></q-item-section>
           <q-item-section>Precon Decks</q-item-section>

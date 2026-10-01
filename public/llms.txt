@@ -1,0 +1,24 @@
+# BuildUVS
+
+> Companion site for the Universus (UVS) collectible card game: decklists,
+> standings and match results from 2024–2026 competitive events, plus card search.
+
+## Tournament dataset
+
+Tidy CSV tables, regenerated whenever new events are added. Player names are not included.
+Read the README first: it defines every column and the caveats (partial coverage,
+format eras, each match appearing once per side).
+
+- [README / schema](https://builduvs.com/data/README.md): start here
+- [events.csv](https://builduvs.com/data/events.csv): one row per tournament
+- [decks.csv](https://builduvs.com/data/decks.csv): one row per placing (character, records, top cut)
+- [matches.csv](https://builduvs.com/data/matches.csv): round-by-round results with opponent character
+- [deck_cards.csv](https://builduvs.com/data/deck_cards.csv): every card line of every known decklist
+- [cards.csv](https://builduvs.com/data/cards.csv): every printed card with stats and rules text
+- [schema.json](https://builduvs.com/data/schema.json): column lists and row counts
+
+## Pages
+
+- [Decklists](https://builduvs.com/lists): 2026 Local Championships and Regionals
+- [Majors](https://builduvs.com/majors): 2024–2025 premier events
+- [Ask the Data](https://builduvs.com/ask): how to analyse the dataset with an AI assistant

@@ -10,7 +10,8 @@
     "format": "prettier --write \"**/*.{js,vue,html,md,json}\" --ignore-path .gitignore",
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
-    "build": "quasar build"
+    "build": "quasar build",
+    "dataset": "node scripts/gen-dataset.mjs"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",

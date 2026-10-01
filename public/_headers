@@ -1,0 +1,5 @@
+# The tournament dataset (scripts/gen-dataset.mjs) is meant to be read by other
+# tools: notebooks, DuckDB, and browser-based assistants. Let them fetch it.
+/data/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
