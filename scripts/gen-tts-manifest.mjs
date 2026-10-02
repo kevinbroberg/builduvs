@@ -6,6 +6,11 @@
  *   /lists/:event/:id/tts.json
  *   /majors/:event/:id/tts.json
  *
+ * plus the listings the importer object browses before picking a deck:
+ *
+ *   /lists/tts.json, /majors/tts.json                 groups (format / season) of events
+ *   /lists/:event/tts.json, /majors/:event/tts.json   the decks of one event
+ *
  * Resolution runs here, at generation time, through the same resolver the
  * pages use (src/js/card_resolver.js), so the endpoint returns exactly what the
  * page's TTS download button does. The edge function then needs neither the
@@ -24,7 +29,8 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import { uvsId } from '../src/js/card_id.js'
 import { createCardResolverFrom } from '../src/js/card_resolver.js'
-import { shardKeyOf } from '../src/js/event_naming.js'
+import { LC_FORMATS, shardKeyOf, eventName, cityOf } from '../src/js/event_naming.js'
+import { seasonLabel, compareEvents } from '../src/js/major_naming.js'
 import { ttsCardFields } from '../src/js/tts_export.js'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
@@ -85,6 +91,7 @@ function buildSection({ indexFile, shardDir, shardOf, standardOnly, deckName }) 
   }
 
   const decks = {}
+  const standingsOf = {} // eventId → standings that have a deck here
   const unresolved = new Set()
   // Mirrors resolveCard → generateTTSJson: an unresolved card or one with no
   // image is dropped from the pile, exactly as the download button drops it.
@@ -107,6 +114,7 @@ function buildSection({ indexFile, shardDir, shardOf, standardOnly, deckName }) 
       for (const r of rows) bySection[r.section]?.push(r)
 
       const face = bySection.character[0] ? resolveRow(bySection.character[0]) : null
+      ;(standingsOf[ev.id] ??= []).push(s)
       decks[`${ev.id}/${s.standing}`] = {
         n: deckName(s, ev),
         f: face ? face[0] : null,
@@ -115,7 +123,7 @@ function buildSection({ indexFile, shardDir, shardOf, standardOnly, deckName }) 
       }
     }
   }
-  return { decks, unresolved }
+  return { decks, unresolved, index, standingsOf }
 }
 
 const lists = buildSection({
@@ -134,10 +142,111 @@ const majors = buildSection({
   deckName: (s, ev) => s.deckName || `${ev.name ?? 'Major'} Deck`, // MajorsPage.vue deckLabel
 })
 
+// ── Browse listings ──────────────────────────────────────────────────────────
+// Labels are finished here so the importer's Lua only has to show them.
+
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+const formatDate = (iso, withYear) => {
+  const [y, m, d] = iso.split('-')
+  return `${MONTHS[+m - 1]} ${+d}${withYear ? `, ${y}` : ''}`
+}
+const toTitleCase = (str) => (str ? str.replace(/(?<!['‘’‚‛′])\b\w/g, (c) => c.toUpperCase()) : '')
+// Button text doesn't wrap or shrink, so long labels are cut here: Lua's string
+// functions count bytes and would split a multi-byte character.
+const MAX_LABEL = 44
+const clip = (str, max = MAX_LABEL) => {
+  const chars = [...str]
+  return chars.length > max ? `${chars.slice(0, max - 1).join('').trimEnd()}…` : str
+}
+
+// "1st · Mikasa Ackerman, Hizuru’s Hope · 9-1-1". The character is what gets
+// shortened, so rank and record always show; a flip card shows its front only.
+function deckLabel(s) {
+  const rank = ordinal(s.standing)
+  const record = s.overallRecord ?? s.swissRecord
+  const name = (toTitleCase(s.characterName) || 'Unknown').split(' // ')[0]
+  const room = MAX_LABEL - [...rank].length - (record ? [...record].length + 3 : 0) - 3
+  return [rank, clip(name, room), record].filter(Boolean).join(' · ')
+}
+const ordinal = (n) => {
+  const s = ['th', 'st', 'nd', 'rd'], v = n % 100
+  return `${n}${s[(v - 20) % 10] || s[v] || s[0]}`
+}
+
+/** Groups of events, each event only if it has decks, newest group first. */
+function browseSection({ index, standingsOf }, { title, groupOf, groupLabel, eventLabel, eventTitle, sortEvents }) {
+  const groups = new Map()
+  const events = {}
+  for (const ev of index.events) {
+    const standings = standingsOf[ev.id]
+    if (!standings?.length) continue
+    const key = groupOf(ev)
+    if (!groups.has(key)) groups.set(key, { label: groupLabel(ev), latest: '', events: [] })
+    const g = groups.get(key)
+    if (ev.date > g.latest) g.latest = ev.date
+    g.events.push(ev)
+    events[ev.id] = {
+      title: eventTitle(ev),
+      decks: standings
+        .sort((a, b) => a.standing - b.standing)
+        .map((s) => [
+          s.standing,
+          deckLabel(s),
+          s.deckName || '',
+        ]),
+    }
+  }
+  return {
+    listing: {
+      title,
+      groups: [...groups.values()]
+        .sort((a, b) => b.latest.localeCompare(a.latest))
+        .map((g) => ({
+          label: g.label,
+          events: g.events.sort(sortEvents).map((ev) => ({
+            id: ev.id,
+            label: `${clip(eventLabel(ev))} (${events[ev.id].decks.length})`,
+          })),
+        })),
+    },
+    events,
+  }
+}
+
+const formatLabel = new Map(LC_FORMATS.map((f) => [f.key, f.label]))
+const listsBrowse = browseSection(lists, {
+  title: 'Decklists',
+  groupOf: shardKeyOf, // one group per /lists tab
+  groupLabel: (ev) => (ev.round === 0 ? eventName(ev) : formatLabel.get(ev.formatPeriod) ?? ev.formatPeriod),
+  eventLabel: (ev) => `${formatDate(ev.date)} · ${ev.round === 0 ? eventName(ev) : cityOf(ev.location)}`,
+  eventTitle: (ev) => `${eventName(ev)} · ${formatDate(ev.date)}`,
+  sortEvents: (a, b) => b.date.localeCompare(a.date),
+})
+const majorsBrowse = browseSection(majors, {
+  title: 'Majors',
+  groupOf: (ev) => ev.season,
+  groupLabel: (ev) => seasonLabel(ev.season),
+  eventLabel: (ev) => `${formatDate(ev.date, true)} · ${ev.name}`,
+  eventTitle: (ev) => `${ev.name} · ${formatDate(ev.date, true)}`,
+  sortEvents: compareEvents,
+})
+
 // ── Write ────────────────────────────────────────────────────────────────────
 
 const outFile = path.join(root, 'netlify', 'edge-functions', 'lib', 'tts-data.js')
-const data = { cards: table, lists: lists.decks, majors: majors.decks }
+const data = {
+  cards: table,
+  lists: lists.decks,
+  majors: majors.decks,
+  browse: {
+    lists: listsBrowse.listing,
+    majors: majorsBrowse.listing,
+  },
+  events: {
+    lists: listsBrowse.events,
+    majors: majorsBrowse.events,
+  },
+}
 fs.writeFileSync(
   outFile,
   `// AUTO-GENERATED by scripts/gen-tts-manifest.mjs — do not edit by hand.\n` +
