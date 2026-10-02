@@ -306,7 +306,7 @@ watchEffect(() => {
             </q-btn>
             <q-btn flat dense :icon="ttsLinkCopied ? 'check' : 'link'" size="sm" class="q-ml-xs"
               @click="copyTTSLink">
-              <q-tooltip>Copy a link Tabletop Simulator can load this deck from</q-tooltip>
+              <q-tooltip>Copy a link for the BuildUVS Deck Importer in Tabletop Simulator</q-tooltip>
             </q-btn>
           </template>
         </div>

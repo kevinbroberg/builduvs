@@ -150,11 +150,13 @@ module.exports = configure(function (/* ctx */) {
         cfg.skipWaiting = true;
         cfg.clientsClaim = true;
         cfg.navigateFallback = "/index.html";
-        // Deck JSON for Tabletop Simulator is served by an edge function, not the
-        // SPA — opening one in the browser must reach the network.
+        // Tabletop Simulator files — deck JSON from an edge function and the
+        // importer object under /tts/ — aren't SPA routes; opening one in the
+        // browser must reach the network.
         cfg.navigateFallbackDenylist = [
           ...(cfg.navigateFallbackDenylist || []),
           /\/tts\.json$/,
+          /^\/tts\//,
         ];
 
         // Exclude all image files from precaching — they're runtime-cached on demand

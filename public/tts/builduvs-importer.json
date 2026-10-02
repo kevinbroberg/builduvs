@@ -1,0 +1,66 @@
+{
+  "SaveName": "BuildUVS Deck Importer",
+  "Date": "",
+  "VersionNumber": "",
+  "GameMode": "",
+  "GameType": "",
+  "GameComplexity": "",
+  "Tags": [],
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Table": "",
+  "Sky": "",
+  "Note": "",
+  "TabStates": {},
+  "LuaScript": "",
+  "LuaScriptState": "",
+  "XmlUI": "",
+  "ObjectStates": [
+    {
+      "GUID": "b0e1d5",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 0,
+        "posY": 1,
+        "posZ": 0,
+        "rotX": 0,
+        "rotY": 180,
+        "rotZ": 0,
+        "scaleX": 2.5,
+        "scaleY": 1,
+        "scaleZ": 2.5
+      },
+      "Nickname": "BuildUVS Deck Importer",
+      "Description": "Paste a builduvs.com deck link into the box and press Import.",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1,
+        "g": 1,
+        "b": 1
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://builduvs.com/icons/icon-512x512.png",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1,
+        "WidthScale": 0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.2,
+          "Stackable": false,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "-- BuildUVS Deck Importer — a Tabletop Simulator object that loads a decklist\n-- straight from builduvs.com.\n--\n-- Paste a deck's link (e.g. https://builduvs.com/lists/<event>/<rank>) into the\n-- box and press Import, or press Enter. The deck is fetched from that page's\n-- /tts.json endpoint (netlify/edge-functions/deck-tts.js) and spawned in front\n-- of the importer: character face up, main deck and sideboard face down.\n--\n-- This is the source. scripts/gen-tts-importer.mjs packs it into the saved\n-- object public/tts/builduvs-importer.json — edit here, then re-run that.\n\n-- Only these hosts are fetched from. The importer spawns whatever the response\n-- describes, so it must not be pointable at an arbitrary URL.\nlocal HOSTS = { [\"builduvs.com\"] = true, [\"www.builduvs.com\"] = true }\nlocal SITE = \"https://builduvs.com\"\n\n-- How far in front of the importer the piles land, in world units.\nlocal SPAWN_DISTANCE = 4.5\n\nlocal link = \"\"\nlocal busy = false\n\nfunction onLoad()\n  self.createInput({\n    input_function = \"onLinkInput\",\n    function_owner = self,\n    label = \"Paste a builduvs.com deck link\",\n    alignment = 3,\n    position = { 0, 0.15, 0.45 },\n    width = 1850,\n    height = 150,\n    font_size = 80,\n    tooltip = \"A deck from builduvs.com/lists or builduvs.com/majors\",\n  })\n  self.createButton({\n    click_function = \"onImportClick\",\n    function_owner = self,\n    label = \"Import\",\n    position = { 0, 0.15, 0.8 },\n    width = 700,\n    height = 160,\n    font_size = 100,\n    color = { 0.1, 0.45, 0.85 },\n    font_color = { 1, 1, 1 },\n    tooltip = \"Spawn the deck in front of this importer\",\n  })\n  self.addContextMenuItem(\"Import deck\", function(color) importDeck(color) end)\nend\n\nlocal function trim(s)\n  return (s:gsub(\"^%s+\", \"\"):gsub(\"%s+$\", \"\"))\nend\n\n-- Turn whatever was pasted into the deck's tts.json URL, or nil plus a reason.\n-- Accepts the deck page link (with or without https://, a query string or a\n-- trailing slash), a bare \"/lists/<event>/<rank>\" path, or the tts.json link.\nfunction ttsUrl(text)\n  local s = trim(text or \"\")\n  s = s:gsub(\"[?#].*$\", \"\"):gsub(\"/+$\", \"\")\n  if s == \"\" then return nil, \"Paste a deck link from builduvs.com first.\" end\n\n  if not s:find(\"^https?://\") then\n    if s:find(\"^/?lists/\") or s:find(\"^/?majors/\") then\n      s = SITE .. \"/\" .. s:gsub(\"^/\", \"\")\n    else\n      s = \"https://\" .. s\n    end\n  end\n\n  local host, path = s:match(\"^https?://([^/]+)(/.*)$\")\n  if not host or not HOSTS[host:lower()] then\n    return nil, \"That isn't a builduvs.com link.\"\n  end\n\n  path = path:gsub(\"/tts%.json$\", \"\")\n  local section, event, rank = path:match(\"^/(%a+)/([^/]+)/(%d+)$\")\n  if (section ~= \"lists\" and section ~= \"majors\") or not event then\n    return nil, \"That link isn't a single deck. Open a deck on builduvs.com and copy its address.\"\n  end\n  return \"https://\" .. host .. \"/\" .. section .. \"/\" .. event .. \"/\" .. rank .. \"/tts.json\"\nend\n\nlocal function tell(color, message, tint)\n  if color and Player[color] and Player[color].seated then\n    broadcastToColor(message, color, tint or { 1, 1, 1 })\n  else\n    broadcastToAll(message, tint or { 1, 1, 1 })\n  end\nend\n\nlocal function setBusy(state)\n  busy = state\n  self.editButton({ index = 0, label = state and \"Loading...\" or \"Import\" })\nend\n\n-- The importer spawns only cards. A script riding along in the response would\n-- run on every player's machine, so strip any, however the JSON was produced.\nlocal function stripScripts(obj)\n  obj.LuaScript, obj.LuaScriptState, obj.XmlUI = \"\", \"\", \"\"\n  for _, child in ipairs(obj.ContainedObjects or {}) do stripScripts(child) end\nend\n\nlocal function spawnDeck(data)\n  local origin = self.getPosition()\n  -- Upright for White is Y 180 (the same as the cards), so measure from there.\n  local turn = self.getRotation().y - 180\n  local count = 0\n  for _, obj in ipairs(data.ObjectStates) do\n    stripScripts(obj)\n    local t = obj.Transform or {}\n    -- Keep the file's left-to-right layout (face, deck, sideboard), turned to\n    -- match the importer so the piles face whoever it is facing.\n    local offset = Vector(t.posX or 0, 1, -SPAWN_DISTANCE):rotateOver(\"y\", turn)\n    spawnObjectJSON({\n      json = JSON.encode(obj),\n      position = origin + offset,\n      rotation = { t.rotX or 0, (t.rotY or 180) + turn, t.rotZ or 0 },\n    })\n    count = count + 1\n  end\n  return count\nend\n\nfunction importDeck(color)\n  if busy then return end\n  local url, problem = ttsUrl(link)\n  if not url then\n    tell(color, problem, { 1, 0.6, 0.3 })\n    return\n  end\n\n  setBusy(true)\n  WebRequest.get(url, function(req)\n    setBusy(false)\n    if req.is_error then\n      tell(color, \"Couldn't reach builduvs.com: \" .. tostring(req.error), { 1, 0.4, 0.4 })\n      return\n    end\n    if req.response_code == 404 then\n      tell(color, \"No decklist found at that link.\", { 1, 0.6, 0.3 })\n      return\n    end\n    if req.response_code ~= 200 then\n      tell(color, \"builduvs.com answered \" .. tostring(req.response_code) .. \". Try again shortly.\", { 1, 0.4, 0.4 })\n      return\n    end\n\n    local ok, data = pcall(JSON.decode, req.text)\n    if not ok or type(data) ~= \"table\" or type(data.ObjectStates) ~= \"table\" then\n      tell(color, \"That link didn't return a deck.\", { 1, 0.4, 0.4 })\n      return\n    end\n    if spawnDeck(data) == 0 then\n      tell(color, \"That deck has no cards with images.\", { 1, 0.6, 0.3 })\n      return\n    end\n    -- The main deck is the first real pile; the face card is a lone card.\n    local name = \"deck\"\n    for _, obj in ipairs(data.ObjectStates) do\n      if obj.Name == \"Deck\" then name = obj.Nickname break end\n    end\n    tell(color, \"Imported \" .. name, { 0.5, 1, 0.5 })\n  end)\nend\n\nfunction onImportClick(_, color)\n  importDeck(color)\nend\n\n-- Enter in the box arrives as a trailing newline: treat it as pressing Import.\nfunction onLinkInput(_, color, value, editing)\n  if value:find(\"\\n\") then\n    link = trim(value:gsub(\"\\n\", \"\"))\n    importDeck(color)\n    return link\n  end\n  link = value\nend\n",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    }
+  ]
+}
