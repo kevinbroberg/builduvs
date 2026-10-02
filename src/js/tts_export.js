@@ -157,7 +157,9 @@ export function ttsCardFields(card) {
   return out
 }
 
-export function generateTTSJson(deckName, faceCard, mainDeck, sideDeck = []) {
+// `face` is the character card, or an array of them: some precons ship with two
+// or three characters, and they all go in the face-up pile.
+export function generateTTSJson(deckName, face, mainDeck, sideDeck = []) {
   // Flatten each zone into one card per copy, skipping cards with no resolvable image URL
   const flatten = (cards) => {
     const out = []
@@ -171,7 +173,7 @@ export function generateTTSJson(deckName, faceCard, mainDeck, sideDeck = []) {
     return out
   }
 
-  const faceCards = faceCard && faceUrl(faceCard) ? [faceCard] : []
+  const faceCards = [].concat(face ?? []).filter(card => card && faceUrl(card))
   const mainCards = flatten(mainDeck)
   const sideCards = flatten(sideDeck)
 
@@ -214,8 +216,8 @@ export function generateTTSJson(deckName, faceCard, mainDeck, sideDeck = []) {
   }
 }
 
-export function downloadTTSJson(deckName, faceCard, mainDeck, sideDeck = []) {
-  const json = generateTTSJson(deckName, faceCard, mainDeck, sideDeck)
+export function downloadTTSJson(deckName, face, mainDeck, sideDeck = []) {
+  const json = generateTTSJson(deckName, face, mainDeck, sideDeck)
   const blob = new Blob([JSON.stringify(json, null, 2)], { type: 'application/json' })
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a')

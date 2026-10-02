@@ -1,0 +1,1153 @@
+[
+  {
+    "extension_short": "sf62x",
+    "numero": 1,
+    "numero_image": 1,
+    "type": "character",
+    "name": "M. Bison, Writhing Evil",
+    "rarity": "uncommon",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "all",
+      "evil",
+      "void"
+    ],
+    "keywords": [
+      "Brawler"
+    ],
+    "text": "Enhance Mill 1: This attack gets -1 speed or +2 damage.\n\nResponse [Once per turn]: After you mill 1 or more Psycho cards, add 1 of them to your hand.",
+    "hand_size": 6,
+    "vitality": 32,
+    "asset": "sf62x/001.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/001.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 2,
+    "numero_image": 2,
+    "type": "character",
+    "name": "JP, Regal Businessman",
+    "rarity": "uncommon",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "all",
+      "evil",
+      "order"
+    ],
+    "keywords": [
+      "Brawler"
+    ],
+    "text": "Before the game begins, search your deck for up to 1 copy of \"Departure\" and add it to your discard pile.\n\nResponse [Twice per Enhance Step, Tenacious]: After you mill 1 or more attack cards, this attack gets +2 or -2 damage.",
+    "hand_size": 7,
+    "vitality": 22,
+    "asset": "sf62x/002.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/002.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 3,
+    "numero_image": 3,
+    "type": "asset",
+    "name": "Psycho Power",
+    "rarity": "ultra rare",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "chaos",
+      "evil"
+    ],
+    "keywords": [
+      "Psycho"
+    ],
+    "text": "Enhance Mill 1: Use 1 effect below that matches the check value of a card milled this way—\n\n- 6 or greater: Your rival loses 1 health.\n\n- 4 or 5: You may discard 1 card. If you do, draw 1 card.\n\n- 3 or less: Your rival's next check gets -1. Failing that check will not end the Combat Phase.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "asset": "sf62x/003.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/003.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 4,
+    "numero_image": 4,
+    "type": "attack",
+    "name": "Departure",
+    "rarity": "uncommon",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "When this card is cleared from your card pool during the Combat Phase, remove it.\n\nForm [Discard Pile] Drive 1: You may try to play this attack this turn.\n\nEnhance [Card Pool] Flip, lose 1 health: Your rival loses 1 health. This effect cannot reduce your rival's health below 1.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "sf62x/004.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/004.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 5,
+    "numero_image": 5,
+    "type": "attack",
+    "name": "Exilio",
+    "rarity": "rare",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "Response Drive 1: After you completely block an attack with this card, try to play this card as an attack after that attack resolves.\n\nResponse: After this attack deals damage, your rival's next check gets -2.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "sf62x/005.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/005.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 6,
+    "numero_image": 6,
+    "type": "attack",
+    "name": "Interdiction",
+    "rarity": "ultra rare",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Fury",
+      "Ranged"
+    ],
+    "text": "This attack gets -1 difficulty for each copy of \"Departure\" in your card pool.\n\nResponse Drive 2: After this attack resolves, remove all face down cards from your card pool. Your rival loses 1 health for each card removed this way.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 5,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "sf62x/006.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/006.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 7,
+    "numero_image": 7,
+    "type": "attack",
+    "name": "Knee Press Nightmare",
+    "rarity": "rare",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "all"
+    ],
+    "keywords": [
+      "Echo",
+      "Fury",
+      "Kick"
+    ],
+    "text": "Blitz Mill 2: If you mill an attack card this way, you may discard cards as though you were spending momentum to pay the cost of this attack's Echo ability.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "sf62x/007.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/007.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 8,
+    "numero_image": 8,
+    "type": "attack",
+    "name": "Psycho Hammer",
+    "rarity": "uncommon",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "all"
+    ],
+    "text": "Powerful: 2 - Psycho - Punch\n\nBlitz: Mill 1. Look at the top card of your deck. You may mill 1.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "sf62x/008.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/008.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 9,
+    "numero_image": 9,
+    "type": "attack",
+    "name": "Psycho Mine",
+    "rarity": "uncommon",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "all"
+    ],
+    "keywords": [
+      "Psycho"
+    ],
+    "text": "Blitz: Look at the top 2 cards of your rival's deck and put them back in any order.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "sf62x/009.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/009.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 10,
+    "numero_image": 10,
+    "type": "attack",
+    "name": "Psycho Punisher",
+    "rarity": "rare",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "all"
+    ],
+    "keywords": [
+      "Fury",
+      "Psycho",
+      "Punch"
+    ],
+    "text": "Blitz Drive 2: Mill 5. This attack gets +2 speed for each attack milled this way.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 2,
+    "attack_zone": "low",
+    "damage": 6,
+    "asset": "sf62x/010.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/010.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 11,
+    "numero_image": 11,
+    "type": "attack",
+    "name": "Torbalan",
+    "rarity": "uncommon",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Ranged"
+    ],
+    "text": "Blitz: Search your deck for 1 copy of \"Departure\", reveal it, shuffle your deck, then put it on top of your deck.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "sf62x/011.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/011.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 12,
+    "numero_image": 12,
+    "type": "attack",
+    "name": "Unlimited Psycho Crusher",
+    "rarity": "ultra rare",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "all"
+    ],
+    "keywords": [
+      "Charge",
+      "Fury",
+      "Psycho"
+    ],
+    "text": "Response [Card Pool]: After you mill 1 or more attack cards, this attack gets +1 speed and +1 damage.\n\nBlitz Drive 1: Mill 2. Then mill 2.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "sf62x/012.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/012.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 13,
+    "numero_image": 13,
+    "type": "foundation",
+    "name": "Bison . . . Who Is That?",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Response [Tenacious] Flip: After this card is committed to pay a Drive cost, your rival's next check to play a card gets -2. Failing that check will not end the Combat Phase.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "sf62x/013.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/013.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 14,
+    "numero_image": 14,
+    "type": "foundation",
+    "name": "Following in Bison's Footsteps",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "all"
+    ],
+    "text": "Enhance Mill 1: Your rival mills 1.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "sf62x/014.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/014.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 15,
+    "numero_image": 15,
+    "type": "foundation",
+    "name": "Former Head Financial Manager",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Enhance [Once per turn]: This attack gets -1 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "sf62x/015.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/015.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 16,
+    "numero_image": 16,
+    "type": "foundation",
+    "name": "Front for My Operation",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Response Remove: After your rival plays a keyword ability, cancel its effects. If that keyword ability has a rating, your rival loses health equal to its rating.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 4,
+    "block_zone": "mid",
+    "asset": "sf62x/016.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/016.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 17,
+    "numero_image": 17,
+    "type": "foundation",
+    "name": "Mysterious Murderer",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "You may remove this foundation from your stage as though you were spending 1 momentum to pay a Drive cost.",
+    "difficulty": 1,
+    "control": 6,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "sf62x/017.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/017.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 18,
+    "numero_image": 18,
+    "type": "foundation",
+    "name": "Nameless Man",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "all"
+    ],
+    "text": "Response Sacrifice: After an attack is played, its damage cannot be modified.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "sf62x/018.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/018.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 19,
+    "numero_image": 19,
+    "type": "foundation",
+    "name": "Nothing But a Squawking Crow",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "all"
+    ],
+    "text": "Response Remove: After this card is milled during the Enhance Step, add 1 card from your discard pile to the top of your deck.",
+    "difficulty": 2,
+    "control": 4,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "sf62x/019.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/019.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 20,
+    "numero_image": 20,
+    "type": "foundation",
+    "name": "Satisfy My Hunger",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "all"
+    ],
+    "keywords": [
+      "Psycho"
+    ],
+    "text": "Enhance Mill 1: Your attack gets +1 damage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "sf62x/020.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/020.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 21,
+    "numero_image": 21,
+    "type": "foundation",
+    "name": "Ticking Time Bomb",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Response Flip: After your rival loses health due to an effect, your rival loses 1 health. This effect cannot reduce your rival's health below 1.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "sf62x/021.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/021.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 22,
+    "numero_image": 22,
+    "type": "character",
+    "name": "Cammy, Killer Bee",
+    "rarity": "uncommon",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "air",
+      "chaos",
+      "life"
+    ],
+    "keywords": [
+      "Brawler"
+    ],
+    "text": "Enhance [Tenacious]: This attack gets +1 or -1 speed.\n\nEnhance [Tenacious] Drive 1: Change the zone of this attack.\n\nResponse Commit, Clear 1 card other than this attack from your card pool: After you pay a Drive cost, add 1 non-Ranged attack from your discard pile to your hand.",
+    "hand_size": 6,
+    "vitality": 31,
+    "asset": "sf62x/022.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/022.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 23,
+    "numero_image": 23,
+    "type": "character",
+    "name": "Juri Han, Thrill-Seeker",
+    "rarity": "uncommon",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "air",
+      "death",
+      "life"
+    ],
+    "keywords": [
+      "Brawler"
+    ],
+    "text": "You may sacrifice 2 foundations instead of paying any Drive cost.\n\nEnhance: Your Kick attack gets +1 speed and +1 damage. If you have played 3 or more attacks this turn, your attack gets +1 speed and +1 damage.",
+    "hand_size": 6,
+    "vitality": 32,
+    "asset": "sf62x/023.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/023.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 24,
+    "numero_image": 24,
+    "type": "asset",
+    "name": "Unlikely Duo",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "air",
+      "life"
+    ],
+    "text": "When paying a Drive cost, you may commit this card as though it were a foundation.\n\nResponse [Once per turn, Tenacious]: After 1 or more cards leave your card pool during the Combat Phase, ready this card.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "sf62x/024.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/024.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 25,
+    "numero_image": 25,
+    "type": "attack",
+    "name": "Countersnipe",
+    "rarity": "rare",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "life"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Response Drive 1: After you completely block an attack with this card, try to play this card as an attack after that attack resolves.\n\nResponse: After this attack deals damage, the next card you try to play ignores progressive difficulty.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 2,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "sf62x/025.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/025.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 26,
+    "numero_image": 26,
+    "type": "attack",
+    "name": "Delta Red Assault",
+    "rarity": "ultra rare",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "life"
+    ],
+    "keywords": [
+      "Fury",
+      "Kick"
+    ],
+    "text": "Blitz Drive 1: This attack gets +3 speed.\n\nBlitz Drive 1: This attack gets +4 damage.\n\nBlitz Drive 2: This card does not count toward progressive difficulty this turn.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "sf62x/026.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/026.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 27,
+    "numero_image": 27,
+    "type": "attack",
+    "name": "Feng Shui Engine",
+    "rarity": "ultra rare",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "air"
+    ],
+    "keywords": [
+      "Fury",
+      "Kick"
+    ],
+    "text": "Blitz Drive 2: Your checks to play Kick attacks get +1 this turn.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "sf62x/027.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/027.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 28,
+    "numero_image": 28,
+    "type": "attack",
+    "name": "Heavy Spiral Arrow",
+    "rarity": "uncommon",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "life"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Blitz: If you have 9 or more foundations, this attack gets +1 speed and +2 damage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "sf62x/028.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/028.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 29,
+    "numero_image": 29,
+    "type": "attack",
+    "name": "Renko Kicks",
+    "rarity": "uncommon",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "EX: 2 - Kick\n\nBlitz: Change the zone of this attack.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "sf62x/029.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/029.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 30,
+    "numero_image": 30,
+    "type": "attack",
+    "name": "Saihasho",
+    "rarity": "uncommon",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "air"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Response Drive 1: After this attack deals 3 or more damage, your rival adds 1 face up foundation from their stage to their hand.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 3,
+    "asset": "sf62x/030.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/030.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 31,
+    "numero_image": 31,
+    "type": "attack",
+    "name": "Sekkan Kick",
+    "rarity": "rare",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "Breaker: 1 - Kick\n\nBlitz Drive 1: Each player can play only 1 enhance ability during this Enhance Step.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "sf62x/031.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/031.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 32,
+    "numero_image": 32,
+    "type": "attack",
+    "name": "Spin Raider",
+    "rarity": "uncommon",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "life"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Blitz Drive 1: Build 1 foundation with difficulty 2 or less from your discard pile committed.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "sf62x/032.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/032.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 33,
+    "numero_image": 33,
+    "type": "attack",
+    "name": "Tensenrin",
+    "rarity": "rare",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "air"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "Response Drive 2: After this attack resolves, clear it from your card pool.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "sf62x/033.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/033.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 34,
+    "numero_image": 34,
+    "type": "foundation",
+    "name": "Assume the Worst",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "life"
+    ],
+    "text": "Response [Tenacious]: After this card is committed to pay a Drive cost, gain 1 health.",
+    "difficulty": 1,
+    "control": 6,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "sf62x/034.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/034.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 35,
+    "numero_image": 35,
+    "type": "foundation",
+    "name": "Beautiful Genius",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "First Enhance [Rival's turn] Remove: Switch this attack's speed and damage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "sf62x/035.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/035.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 36,
+    "numero_image": 36,
+    "type": "foundation",
+    "name": "Fast and with Finesse",
+    "rarity": "ultra rare",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "life"
+    ],
+    "keywords": [
+      "Kick"
+    ],
+    "text": "This card does not count toward progressive difficulty to play Kick attacks.\n\nResponse [Card Pool] Flip: After your attack deals damage, your next Kick attack ignores progressive difficulty.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "sf62x/036.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/036.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 37,
+    "numero_image": 37,
+    "type": "foundation",
+    "name": "For All Our Sakes",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "life"
+    ],
+    "text": "Enhance Flip: Seal 1 non-attack card in your card pool. It does not count toward progressive difficulty this turn.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "sf62x/037.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/037.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 38,
+    "numero_image": 38,
+    "type": "foundation",
+    "name": "Fuhajin",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "life"
+    ],
+    "text": "Response [Tenacious] Flip: After you sacrifice 2 or more foundations, build the top card of your deck face down committed.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "sf62x/038.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/038.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 39,
+    "numero_image": 39,
+    "type": "foundation",
+    "name": "Ki Manipulator",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "Enhance Sacrifice 2 foundations: Ready 1 foundation that has not been readied this Combat Phase.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "sf62x/039.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/039.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 40,
+    "numero_image": 40,
+    "type": "foundation",
+    "name": "Master of Taekwondo",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "Response Commit: Before the Block Step of this attack, return it to its printed speed.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "sf62x/040.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/040.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 41,
+    "numero_image": 41,
+    "type": "foundation",
+    "name": "Money and Destruction",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "air"
+    ],
+    "text": "Enhance Flip: This attack gets -2 speed. If it is completely blocked, ready 1 face down foundation.",
+    "difficulty": 1,
+    "control": 4,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "sf62x/041.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/041.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 42,
+    "numero_image": 42,
+    "type": "foundation",
+    "name": "Noble, Strong, and Beautiful",
+    "rarity": "common",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "life"
+    ],
+    "text": "Enhance Commit: Discard 1 card and draw 1 card. If your rival has 10 or more foundations, add the discarded card to your hand.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "sf62x/042.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/042.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 321,
+    "numero_image": 321,
+    "type": "character",
+    "name": "A.K.I., Mistress of Poison",
+    "rarity": "promo",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "all",
+      "evil",
+      "water"
+    ],
+    "keywords": [
+      "Assassin",
+      "Brawler"
+    ],
+    "text": "At the start of your End Phase, each rival loses health equal to the number of Poison counters on their character. This ability cannot reduce a rival's health below 1. Remove half of the Poison counters on each rival's character (rounded up).\n\nEnhance: Your non-Throw attack gets +2 speed. If it deals damage to a rival, add 2 Poison counters to their character.",
+    "hand_size": 6,
+    "vitality": 31,
+    "asset": "sf62x/321.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/321.jpg"
+  },
+  {
+    "extension_short": "sf62x",
+    "numero": 322,
+    "numero_image": 322,
+    "type": "character",
+    "name": "Rashid, Roaring Wind of the Desert",
+    "rarity": "promo",
+    "extension": "Challenger: Street Fighter 6 (2026)",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "air",
+      "good",
+      "life"
+    ],
+    "keywords": [
+      "Brawler",
+      "Entertainer"
+    ],
+    "text": "Enhance Drive 1: This attack gets +3 or -3 speed.\n\nEnhance Drive 2: Build 1 attack other than this attack from your card pool face down committed.",
+    "hand_size": 7,
+    "vitality": 21,
+    "asset": "sf62x/322.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/322.jpg"
+  }
+]

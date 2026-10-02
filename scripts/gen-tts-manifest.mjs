@@ -10,14 +10,19 @@
  *
  *   /lists/tts.json, /majors/tts.json                 groups (format / season) of events
  *   /lists/:event/tts.json, /majors/:event/tts.json   the decks of one event
+ *   /precons/tts.json                                 precons, grouped by year
+ *
+ * and the precons themselves, at /precons/:deck/tts.json — the same decks, by
+ * the same ids, as the /precons page (src/js/precon_rows.js builds both).
  *
  * Resolution runs here, at generation time, through the same resolver the
  * pages use (src/js/card_resolver.js), so the endpoint returns exactly what the
  * page's TTS download button does. The edge function then needs neither the
  * card database nor the deck-data shards — just this file.
  *
- * Re-run this whenever the decklists or the card data change — i.e. after
- * gen-locals.mjs / gen-majors.mjs, alongside gen-preview-manifest.mjs:
+ * Re-run this whenever the decklists, the precon lists or the card data
+ * change — i.e. after gen-locals.mjs / gen-majors.mjs, alongside
+ * gen-preview-manifest.mjs, and after any precon fetch or derive script:
  *
  *   node scripts/gen-tts-manifest.mjs
  *
@@ -32,6 +37,7 @@ import { createCardResolverFrom } from '../src/js/card_resolver.js'
 import { LC_FORMATS, shardKeyOf, eventName, cityOf } from '../src/js/event_naming.js'
 import { seasonLabel, compareEvents } from '../src/js/major_naming.js'
 import { ttsCardFields } from '../src/js/tts_export.js'
+import { buildPrecons } from '../src/js/precon_rows.js'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const assets = path.join(root, 'src', 'assets')
@@ -141,6 +147,84 @@ const majors = buildSection({
   standardOnly: false,
   deckName: (s, ev) => s.deckName || `${ev.name ?? 'Major'} Deck`, // MajorsPage.vue deckLabel
 })
+
+// ── Precons ──────────────────────────────────────────────────────────────────
+
+// The page's product rows, keeping those that have a decklist. Kinds come from
+// the row's label, the only place the product type is recorded.
+const PRECON_KINDS = [
+  [/quantities inferred/, 'inferred'],
+  [/^Challenger Series/, 'challenger'],
+  [/^Clash Deck/, 'clash'],
+  [/^Starter Deck/, 'starter'],
+]
+
+function buildPreconSection() {
+  // Precons reach back past Standard, as on the page.
+  const { resolveCard } = createCardResolverFrom({ cards, cardByUvsId, cardeioIds, standardOnly: false })
+  const cardByAsset = new Map(cards.map((c) => [c.asset, c]))
+  const { decks: allDecks, rows } = buildPrecons({
+    releaseData: readJson(path.join(assets, 'releases.json')),
+    derivedData: readJson(path.join(assets, 'precons-derived.json')),
+    officialDecks: readJson(path.join(assets, 'official-decks.json')),
+    communityDecks: readJson(path.join(assets, 'precon-decks-uvsultra.json')),
+    inferredDecks: readJson(path.join(assets, 'precon-decks-inferred.json')),
+  })
+
+  const unresolved = new Set()
+  // A list that records its printing by asset gets that printing, as on the
+  // page, but here the whole card: the TTS image comes from the card's own
+  // fields, so swapping only the asset would show another printing's art.
+  const resolveRow = (c) => {
+    const card = (c.asset && cardByAsset.get(c.asset)) ||
+      resolveCard({ cardeioId: c.cardeioId, name: c.name, qty: c.count })
+    if (card.type === 'unknown' || !ttsCardFields(card)) {
+      unresolved.add(c.name)
+      return null
+    }
+    return [cardIndex(card), c.count ?? 1]
+  }
+  const section = (deck, name) => deck.sections.find((s) => s.name === name)?.cards ?? []
+
+  // Every decklist the page can open, not just those a product row lists, so
+  // the page's TTS link works for any /precons/:deck. Named as the page heads it.
+  const decks = {}
+  for (const d of allDecks) {
+    decks[d.id] = {
+      n: d.name,
+      // Every character goes face up: some precons ship two or three.
+      f: section(d, 'character').map(resolveRow).filter(Boolean).map(([i]) => i),
+      m: section(d, 'main').map(resolveRow).filter(Boolean),
+      s: section(d, 'sideboard').map(resolveRow).filter(Boolean),
+    }
+  }
+
+  const byYear = new Map()
+  for (const r of rows) {
+    if (!r.deck) continue
+    const year = r.date?.slice(0, 4) || 'Undated'
+    if (!byYear.has(year)) byYear.set(year, [])
+    byYear.get(year).push(r)
+  }
+
+  const groups = [...byYear.entries()]
+    .sort(([a], [b]) => (a === 'Undated') - (b === 'Undated') || b.localeCompare(a))
+    .map(([year, yearRows]) => ({
+      label: year,
+      decks: yearRows
+        .sort((a, b) => (b.date ?? '').localeCompare(a.date ?? '') || a.title.localeCompare(b.title))
+        .map((r) => ({
+          id: r.deck.id,
+          title: r.title,
+          kind: PRECON_KINDS.find(([re]) => re.test(r.kindLabel))?.[1] ?? 'precon',
+          cards: r.deck.totalCards ?? null,
+          note: r.subtitle ?? null,
+        })),
+    }))
+  return { decks, unresolved, listing: { title: 'Precon Decks', groups } }
+}
+
+const precons = buildPreconSection()
 
 // ── Browse listings ──────────────────────────────────────────────────────────
 // Labels are finished here so the importer's Lua only has to show them.
@@ -259,9 +343,11 @@ const data = {
   cards: table,
   lists: lists.decks,
   majors: majors.decks,
+  precons: precons.decks,
   browse: {
     lists: listsBrowse.listing,
     majors: majorsBrowse.listing,
+    precons: precons.listing,
   },
   events: {
     lists: listsBrowse.events,
@@ -279,7 +365,8 @@ console.log(`Wrote ${path.relative(root, outFile)} (${kb} KB)`)
 console.log(`  cards:  ${table.length}`)
 console.log(`  lists:  ${Object.keys(lists.decks).length} decks`)
 console.log(`  majors: ${Object.keys(majors.decks).length} decks`)
-for (const [label, { unresolved }] of [['lists', lists], ['majors', majors]]) {
+console.log(`  precons: ${Object.keys(precons.decks).length} decks`)
+for (const [label, { unresolved }] of [['lists', lists], ['majors', majors], ['precons', precons]]) {
   if (!unresolved.size) continue
   console.warn(`  ${unresolved.size} /${label} cards unresolved (left out of the TTS deck, as on the page):`)
   for (const n of [...unresolved].slice(0, 15)) console.warn(`    - ${n}`)

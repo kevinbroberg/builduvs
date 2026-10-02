@@ -14,11 +14,16 @@
 //
 //   /lists/tts.json, /majors/tts.json   events, grouped by format or season
 //   /lists/:event/tts.json, …           that event's decks
+//
+// Precons have no events, so their paths are one level shorter:
+//
+//   /precons/tts.json                   precons, grouped by year
+//   /precons/:deck/tts.json             a precon, by its /precons/:deck id
 
 import data from './lib/tts-data.js'
 import { generateTTSJson } from '../../src/js/tts_export.js'
 
-export const config = { pattern: '^/(lists|majors)(/[^/]+){0,2}/tts\\.json$' }
+export const config = { pattern: '^/(lists|majors|precons)(/[^/]+){0,2}/tts\\.json$' }
 
 const HEADERS = {
   'content-type': 'application/json; charset=utf-8',
@@ -35,18 +40,21 @@ export default async (request) => {
   const [section, event, standing] = parts
 
   if (parts.length === 1) return Response.json(data.browse[section], { headers: HEADERS })
-  if (parts.length === 2) {
+  if (parts.length === 2 && section !== 'precons') {
     const listing = data.events[section]?.[event]
     return listing ? Response.json(listing, { headers: HEADERS }) : notFound()
   }
 
-  const deck = data[section]?.[`${event}/${standing}`]
+  const deck = section === 'precons'
+    ? parts.length === 2 && data.precons[event]
+    : parts.length === 3 && data[section]?.[`${event}/${standing}`]
   if (!deck) return notFound()
 
   const card = ([i, qty]) => ({ ...data.cards[i], qty })
   const json = generateTTSJson(
     deck.n,
-    deck.f == null ? null : data.cards[deck.f],
+    // One face card's index, or (a precon with several characters) a list.
+    [].concat(deck.f ?? []).map((i) => data.cards[i]),
     deck.m.map(card),
     deck.s.map(card),
   )

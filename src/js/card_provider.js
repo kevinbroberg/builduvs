@@ -11,9 +11,10 @@ import kaiju from 'assets/kaiju.json'
 import teamhero from 'assets/teamhero.json'
 import mha09 from 'assets/mha09.json'
 import tk802 from 'assets/tekken8.json'
+import sf62x from 'assets/sf6-2026.json'
 import { uvsId } from 'src/js/card_id'
 
-export const cards = [...tk802, ...mha09, ...kaiju, ...teamhero, ...ggrole, ...sjwtomha4,...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
+export const cards = [...sf62x, ...tk802, ...mha09, ...kaiju, ...teamhero, ...ggrole, ...sjwtomha4,...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
 
 // Ensure every card has a unique `asset` key (used by deck store and v-for keys).
 // Newer data files omit `asset`, so synthesize one from extension_short + card_number_image.

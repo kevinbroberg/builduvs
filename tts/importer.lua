@@ -1,11 +1,11 @@
 -- BuildUVS Deck Importer — a Tabletop Simulator object that loads decklists
 -- straight from builduvs.com.
 --
--- Browse with the buttons (Decklists or Majors → format/season → event → deck)
--- and click a deck to spawn it, or paste a deck's link into the box on the home
--- screen. Either way the deck comes from that deck's /tts.json endpoint
--- (netlify/edge-functions/deck-tts.js) and lands in front of the importer:
--- character face up, main deck and sideboard face down.
+-- Browse with the buttons (Decklists or Majors → format/season → event → deck,
+-- or Precons → year → deck) and click a deck to spawn it, or paste a deck's
+-- link into the box on the home screen. Either way the deck comes from that
+-- deck's /tts.json endpoint (netlify/edge-functions/deck-tts.js) and lands in
+-- front of the importer: character(s) face up, main deck and sideboard face down.
 --
 -- This is the source. scripts/gen-tts-importer.mjs packs it into the saved
 -- object public/tts/builduvs-importer.json — edit here, then re-run that.
@@ -53,6 +53,15 @@ end
 local WHITE = { 1, 1, 1 }
 local HEADER = hex("#262D40")
 local REGIONAL = hex("#F5D9A6") -- regionals stand out from the locals seasons
+
+-- Precon kinds, in the colors the /precons page badges them with.
+local PRECON_KIND = {
+  challenger = { text = "Challenger", color = hex("#1976D2") },
+  clash = { text = "Clash", color = hex("#F4511E") },
+  starter = { text = "Starter", color = hex("#009688") },
+  inferred = { text = "Inferred", color = hex("#546E7A") },
+  precon = { text = "Precon", color = hex("#8D6E63") },
+}
 -- Buttons are lit by the table's light like any object, so dark colors on the
 -- dark backdrop all but vanish in play. Rows are light cards; chips are strong.
 local TEXT = hex("#F2F4F8")  -- on dark and colored chips
@@ -271,14 +280,15 @@ end
 
 -- Turn whatever was pasted into the deck's tts.json URL, or nil plus a reason.
 -- Accepts the deck page link (with or without https://, a query string or a
--- trailing slash), a bare "/lists/<event>/<rank>" path, or the tts.json link.
+-- trailing slash), a bare "/lists/<event>/<rank>" or "/precons/<deck>" path, or
+-- the tts.json link.
 function ttsUrl(text)
   local s = trim(text or "")
   s = s:gsub("[?#].*$", ""):gsub("/+$", "")
   if s == "" then return nil, "Paste a deck link from builduvs.com first." end
 
   if not s:find("^https?://") then
-    if s:find("^/?lists/") or s:find("^/?majors/") then
+    if s:find("^/?lists/") or s:find("^/?majors/") or s:find("^/?precons/") then
       s = SITE .. "/" .. s:gsub("^/", "")
     else
       s = "https://" .. s
@@ -291,6 +301,8 @@ function ttsUrl(text)
   end
 
   path = path:gsub("/tts%.json$", "")
+  local precon = path:match("^/precons/([^/]+)$")
+  if precon then return "https://" .. host .. "/precons/" .. precon .. "/tts.json" end
   local section, event, rank = path:match("^/(%a+)/([^/]+)/(%d+)$")
   if (section ~= "lists" and section ~= "majors") or not event then
     return nil, "That link isn't a single deck. Open a deck on builduvs.com and copy its address."
@@ -378,6 +390,44 @@ local function sectionScreen(section, color)
   end)
 end
 
+-- Precons have no events: a year's decks come with the listing, and each one
+-- spawns from /precons/<deck>/tts.json.
+local function preconItems(decks)
+  local items = {}
+  for _, d in ipairs(decks) do
+    local url = SITE .. "/precons/" .. d.id .. "/tts.json"
+    local about = {}
+    if d.note then table.insert(about, d.note) end
+    if d.kind == "inferred" then table.insert(about, "quantities inferred from rarity") end
+    table.insert(about, "click to spawn")
+    local kind = PRECON_KIND[d.kind] or PRECON_KIND.precon
+    table.insert(items, {
+      label = d.title,
+      tooltip = table.concat(about, " — "),
+      open = function(c) importFrom(url, c) end,
+      left = { text = kind.text, color = kind.color, font_color = WHITE },
+      right = d.cards and { text = d.cards .. " cards" } or nil,
+    })
+  end
+  return items
+end
+
+local function preconScreen(color)
+  getJSON(SITE .. "/precons/tts.json", color, true, function(data)
+    local items = {}
+    for _, g in ipairs(data.groups or {}) do
+      table.insert(items, {
+        label = g.label,
+        right = { text = count(#g.decks, "deck") },
+        open = function()
+          push({ title = data.title .. " · " .. g.label, items = preconItems(g.decks), page = 1 })
+        end,
+      })
+    end
+    push({ title = data.title, items = items, page = 1 })
+  end)
+end
+
 local HOME = {
   home = true,
   title = "Deck Importer",
@@ -386,6 +436,8 @@ local HOME = {
       open = function(c) sectionScreen("lists", c) end },
     { label = "Browse majors", right = { text = "by season" },
       open = function(c) sectionScreen("majors", c) end },
+    { label = "Browse precons", right = { text = "by year" },
+      open = function(c) preconScreen(c) end },
   },
   page = 1,
 }

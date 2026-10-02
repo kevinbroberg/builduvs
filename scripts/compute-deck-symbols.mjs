@@ -55,7 +55,7 @@ if (!target) {
 
 const assetDir = path.join(root, 'src', 'assets')
 const cardFiles = [
-  'tekken8.json', 'mha09.json', 'kaiju.json', 'teamhero.json', 'gg-critrole.json',
+  'sf6-2026.json', 'tekken8.json', 'mha09.json', 'kaiju.json', 'teamhero.json', 'gg-critrole.json',
   'sjw-mha4.json', 'heroesclash.json', 'rampage_dlc.json', 'provs.json',
   'rampage.json', 'cards.json',
 ]

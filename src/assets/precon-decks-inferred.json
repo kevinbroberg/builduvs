@@ -1,0 +1,274 @@
+{
+  "generated": "2026-10-02",
+  "basis": "Quantities inferred from rarity (character ×1, common ×4, uncommon ×3, rare/ultra rare ×2), a rule every official Challenger/Clash list holds to. Not publisher data.",
+  "entries": [
+    {
+      "id": "inferred-sf62x-1",
+      "name": "Street Fighter 6 Challenger Series #2 - M. Bison & JP",
+      "product": "Street Fighter 6 Challenger Series #2",
+      "extensionShort": "sf62x",
+      "releaseDate": "2026-10-02",
+      "source": "https://uvsgames.com/news/street-fighter-6-returns-to-universus-with-two-new-challenger-series-decks/",
+      "totalCards": 62,
+      "character": "M. Bison, Writhing Evil",
+      "sections": [
+        {
+          "name": "character",
+          "cardCount": 2,
+          "cards": [
+            {
+              "name": "M. Bison, Writhing Evil",
+              "asset": "sf62x/001.jpg",
+              "count": 1
+            },
+            {
+              "name": "JP, Regal Businessman",
+              "asset": "sf62x/002.jpg",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "main",
+          "cardCount": 60,
+          "cards": [
+            {
+              "name": "Psycho Power",
+              "asset": "sf62x/003.jpg",
+              "count": 2
+            },
+            {
+              "name": "Departure",
+              "asset": "sf62x/004.jpg",
+              "count": 3
+            },
+            {
+              "name": "Exilio",
+              "asset": "sf62x/005.jpg",
+              "count": 2
+            },
+            {
+              "name": "Interdiction",
+              "asset": "sf62x/006.jpg",
+              "count": 2
+            },
+            {
+              "name": "Knee Press Nightmare",
+              "asset": "sf62x/007.jpg",
+              "count": 2
+            },
+            {
+              "name": "Psycho Hammer",
+              "asset": "sf62x/008.jpg",
+              "count": 3
+            },
+            {
+              "name": "Psycho Mine",
+              "asset": "sf62x/009.jpg",
+              "count": 3
+            },
+            {
+              "name": "Psycho Punisher",
+              "asset": "sf62x/010.jpg",
+              "count": 2
+            },
+            {
+              "name": "Torbalan",
+              "asset": "sf62x/011.jpg",
+              "count": 3
+            },
+            {
+              "name": "Unlimited Psycho Crusher",
+              "asset": "sf62x/012.jpg",
+              "count": 2
+            },
+            {
+              "name": "Bison . . . Who Is That?",
+              "asset": "sf62x/013.jpg",
+              "count": 4
+            },
+            {
+              "name": "Following in Bison's Footsteps",
+              "asset": "sf62x/014.jpg",
+              "count": 4
+            },
+            {
+              "name": "Former Head Financial Manager",
+              "asset": "sf62x/015.jpg",
+              "count": 4
+            },
+            {
+              "name": "Front for My Operation",
+              "asset": "sf62x/016.jpg",
+              "count": 4
+            },
+            {
+              "name": "Mysterious Murderer",
+              "asset": "sf62x/017.jpg",
+              "count": 4
+            },
+            {
+              "name": "Nameless Man",
+              "asset": "sf62x/018.jpg",
+              "count": 4
+            },
+            {
+              "name": "Nothing But a Squawking Crow",
+              "asset": "sf62x/019.jpg",
+              "count": 4
+            },
+            {
+              "name": "Satisfy My Hunger",
+              "asset": "sf62x/020.jpg",
+              "count": 4
+            },
+            {
+              "name": "Ticking Time Bomb",
+              "asset": "sf62x/021.jpg",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "name": "sideboard",
+          "cardCount": 0,
+          "cards": []
+        }
+      ]
+    },
+    {
+      "id": "inferred-sf62x-2",
+      "name": "Street Fighter 6 Challenger Series #2 - Cammy & Juri",
+      "product": "Street Fighter 6 Challenger Series #2",
+      "extensionShort": "sf62x",
+      "releaseDate": "2026-10-02",
+      "source": "https://uvsgames.com/news/street-fighter-6-returns-to-universus-with-two-new-challenger-series-decks/",
+      "totalCards": 62,
+      "character": "Cammy, Killer Bee",
+      "sections": [
+        {
+          "name": "character",
+          "cardCount": 2,
+          "cards": [
+            {
+              "name": "Cammy, Killer Bee",
+              "asset": "sf62x/022.jpg",
+              "count": 1
+            },
+            {
+              "name": "Juri Han, Thrill-Seeker",
+              "asset": "sf62x/023.jpg",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "main",
+          "cardCount": 60,
+          "cards": [
+            {
+              "name": "Unlikely Duo",
+              "asset": "sf62x/024.jpg",
+              "count": 4
+            },
+            {
+              "name": "Countersnipe",
+              "asset": "sf62x/025.jpg",
+              "count": 2
+            },
+            {
+              "name": "Delta Red Assault",
+              "asset": "sf62x/026.jpg",
+              "count": 2
+            },
+            {
+              "name": "Feng Shui Engine",
+              "asset": "sf62x/027.jpg",
+              "count": 2
+            },
+            {
+              "name": "Heavy Spiral Arrow",
+              "asset": "sf62x/028.jpg",
+              "count": 3
+            },
+            {
+              "name": "Renko Kicks",
+              "asset": "sf62x/029.jpg",
+              "count": 3
+            },
+            {
+              "name": "Saihasho",
+              "asset": "sf62x/030.jpg",
+              "count": 3
+            },
+            {
+              "name": "Sekkan Kick",
+              "asset": "sf62x/031.jpg",
+              "count": 2
+            },
+            {
+              "name": "Spin Raider",
+              "asset": "sf62x/032.jpg",
+              "count": 3
+            },
+            {
+              "name": "Tensenrin",
+              "asset": "sf62x/033.jpg",
+              "count": 2
+            },
+            {
+              "name": "Assume the Worst",
+              "asset": "sf62x/034.jpg",
+              "count": 4
+            },
+            {
+              "name": "Beautiful Genius",
+              "asset": "sf62x/035.jpg",
+              "count": 4
+            },
+            {
+              "name": "Fast and with Finesse",
+              "asset": "sf62x/036.jpg",
+              "count": 2
+            },
+            {
+              "name": "For All Our Sakes",
+              "asset": "sf62x/037.jpg",
+              "count": 4
+            },
+            {
+              "name": "Fuhajin",
+              "asset": "sf62x/038.jpg",
+              "count": 4
+            },
+            {
+              "name": "Ki Manipulator",
+              "asset": "sf62x/039.jpg",
+              "count": 4
+            },
+            {
+              "name": "Master of Taekwondo",
+              "asset": "sf62x/040.jpg",
+              "count": 4
+            },
+            {
+              "name": "Money and Destruction",
+              "asset": "sf62x/041.jpg",
+              "count": 4
+            },
+            {
+              "name": "Noble, Strong, and Beautiful",
+              "asset": "sf62x/042.jpg",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "name": "sideboard",
+          "cardCount": 0,
+          "cards": []
+        }
+      ]
+    }
+  ]
+}

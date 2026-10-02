@@ -35,7 +35,7 @@ const SITE_BASE = 'https://builduvs.com'
 // identically to what the app shows.
 
 const CARD_FILES = [
-  'tekken8.json', 'mha09.json', 'kaiju.json', 'teamhero.json', 'gg-critrole.json',
+  'sf6-2026.json', 'tekken8.json', 'mha09.json', 'kaiju.json', 'teamhero.json', 'gg-critrole.json',
   'sjw-mha4.json', 'heroesclash.json', 'rampage_dlc.json', 'provs.json',
   'rampage.json', 'cards.json',
 ]

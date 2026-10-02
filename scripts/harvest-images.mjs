@@ -41,6 +41,7 @@ const SOURCE_EXT_OVERRIDE = {
 
 // Every JSON data file in the project, in load order.
 const DATA_FILES = [
+  'src/assets/sf6-2026.json',
   'src/assets/tekken8.json',
   'src/assets/mha09.json',
   'src/assets/kaiju.json',
