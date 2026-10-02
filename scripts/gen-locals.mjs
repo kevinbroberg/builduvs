@@ -223,6 +223,18 @@ const insertStanding = db.prepare(`INSERT INTO standings (event_id,standing,play
 const insertCard     = db.prepare(`INSERT INTO deck_cards (standing_id,section,qty,card_name,cardeio_id,uvs_id) VALUES (?,?,?,?,?,?)`)
 const insertMatch    = db.prepare(`INSERT INTO matches (standing_id,phase,round_label,opponent,opponent_character,result) VALUES (?,?,?,?,?,?)`)
 
+// Standings to leave out entirely (e.g. dummy decks submitted by staff). Applied here
+// rather than by deleting files, since re-running a scraper would bring them back.
+// The player name must match too, so a renumbered re-scrape can't drop the wrong row.
+const excluded = JSON.parse(fs.readFileSync(path.join(root, 'decklist-overrides', 'excluded.json'), 'utf8'))
+const excludedHits = new Set()
+function isExcluded(roundDir, folder, s) {
+  const i = excluded.findIndex(x => x.round === path.basename(roundDir) && x.folder === folder
+    && x.standing === s.standing && x.player === s.player)
+  if (i >= 0) excludedHits.add(i)
+  return i >= 0
+}
+
 const ingest = db.transaction((roundDir, roundNum) => {
   const dirs = fs.readdirSync(roundDir).sort()
   for (const folder of dirs) {
@@ -236,6 +248,7 @@ const ingest = db.transaction((roundDir, roundNum) => {
     insertEvent.run(folder, roundNum, location, date, playerCount, formatPeriod(date))
 
     for (const s of standings) {
+      if (isExcluded(roundDir, folder, s)) continue
       const { lastInsertRowid: sid } = insertStanding.run(
         folder, s.standing, s.player, s.characterName, null, null
       )
@@ -286,6 +299,11 @@ ingest(path.join(root, 'lc-round4'), 4)
 
 const regionalsDir = path.join(root, 'regionals')
 if (fs.existsSync(regionalsDir)) ingest(regionalsDir, 0)
+
+console.log(`excluded: ${excludedHits.size}/${excluded.length} standings`)
+excluded.forEach((x, i) => {
+  if (!excludedHits.has(i)) console.warn(`  ⚠ no match for excluded ${x.round}/${x.folder} #${x.standing} ${x.player} — folder renamed or standings changed?`)
+})
 
 // Resolve opponent_standing: join opponent name back to standings within same event
 db.prepare(`
