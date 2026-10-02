@@ -16,17 +16,25 @@ local HOSTS = { ["builduvs.com"] = true, ["www.builduvs.com"] = true }
 local SITE = "https://builduvs.com"
 
 -- How far in front of the importer the piles land, in world units.
-local SPAWN_DISTANCE = 7.5
+local SPAWN_DISTANCE = 8.5
 
 -- Layout, in the tile's local units: it spans -1..1 on x and z, and local -z is
 -- the far edge (the top, read from the seat the importer faces).
+--
+-- Button width/height/font_size use their own units. U converts: measured in
+-- TTS, the tile's full width (2 local units) is about 1000 button units. If
+-- every button comes out too big or too small, U is the one number to change;
+-- if they're hidden under the tile or float too high, change Y.
+local U = 500
+local Y = 0.6              -- height above the tile's centre
 local ROWS = 9             -- list rows per page
 local TOP = -0.66          -- z of the first row
 local ROW_STEP = 0.16      -- z between rows
+local ROW_H = 0.14         -- row height, leaving a gap between rows
+local ROW_W = 1.9          -- row width, inside the tile's 2
 local HEADER_Z = -0.86
 local NAV_Z = 0.86
-local Y = 0.15             -- just above the tile's surface
-local FONT = 62
+local FONT = math.floor(0.065 * U)
 
 local DARK = { 0.12, 0.12, 0.14 }
 local ROW_COLOR = { 0.95, 0.95, 0.95 }
@@ -287,14 +295,14 @@ render = function()
 
   local title = busy and "Loading..." or screen.title
   if pages > 1 then title = title .. "  (" .. screen.page .. "/" .. pages .. ")" end
-  button({ label = title, z = HEADER_Z, width = 1900, height = 140,
+  button({ label = title, z = HEADER_Z, width = 1.95 * U, height = 0.15 * U,
     color = DARK, font_color = WHITE })
 
   for i = 1, ROWS do
     local item = screen.items[(screen.page - 1) * ROWS + i]
     if item then
       button({ label = item.label, tooltip = item.tooltip or "", click_function = "onRow" .. i,
-        z = TOP + (i - 1) * ROW_STEP, width = 1850, height = 140,
+        z = TOP + (i - 1) * ROW_STEP, width = ROW_W * U, height = ROW_H * U,
         color = ROW_COLOR, font_color = DARK })
     end
   end
@@ -306,27 +314,27 @@ render = function()
       label = "...or paste a builduvs.com deck link",
       alignment = 3,
       position = { 0, Y, TOP + 4 * ROW_STEP },
-      width = 1850,
-      height = 140,
+      width = ROW_W * U,
+      height = ROW_H * U,
       font_size = FONT,
       tooltip = "A deck from builduvs.com/lists or builduvs.com/majors",
       value = link,
     })
     button({ label = "Import link", click_function = "onImportClick",
-      z = TOP + 5 * ROW_STEP, width = 800, height = 140,
+      z = TOP + 5 * ROW_STEP, width = 0.8 * U, height = ROW_H * U,
       color = ACCENT, font_color = WHITE, tooltip = "Spawn the pasted deck" })
     return
   end
 
-  button({ label = "Back", click_function = "onBack", z = NAV_Z, width = 560, height = 130,
+  button({ label = "Back", click_function = "onBack", z = NAV_Z, width = 0.5 * U, height = ROW_H * U,
     color = ACCENT, font_color = WHITE })
   if screen.page > 1 then
     button({ label = "< Prev", click_function = "onPrev", x = -0.7, z = NAV_Z,
-      width = 500, height = 130, color = DARK, font_color = WHITE })
+      width = 0.5 * U, height = ROW_H * U, color = DARK, font_color = WHITE })
   end
   if screen.page < pages then
     button({ label = "Next >", click_function = "onNext", x = 0.7, z = NAV_Z,
-      width = 500, height = 130, color = DARK, font_color = WHITE })
+      width = 0.5 * U, height = ROW_H * U, color = DARK, font_color = WHITE })
   end
 end
 

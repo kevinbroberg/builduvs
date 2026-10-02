@@ -23,7 +23,7 @@ const importer = {
   Transform: {
     posX: 0, posY: 1, posZ: 0,
     rotX: 0, rotY: 180, rotZ: 0,
-    scaleX: 3.5, scaleY: 1, scaleZ: 3.5,
+    scaleX: 4.5, scaleY: 1, scaleZ: 4.5,
   },
   Nickname: 'BuildUVS Deck Importer',
   Description: 'Browse builduvs.com decklists and click a deck to spawn it, or paste a deck link.',
