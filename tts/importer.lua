@@ -17,14 +17,18 @@ local SITE = "https://builduvs.com"
 
 -- How far in front of the importer the piles land, in world units. A deck
 -- whose spot is taken goes a row further out, until one is clear.
-local SPAWN_DISTANCE = 7.5
+local SPAWN_DISTANCE = 8.5
 local ROW_GAP = 4.5        -- between rows of decks (a card is ~3 deep)
 local MAX_ROWS = 8
 local CARD_W, CARD_D = 2.5, 3.5  -- a pile's footprint, with a little margin
 
 -- Layout, in the tile's local units: it spans -1..1 on x and z, and local -z is
--- the far edge (the top, read from the seat the importer faces). A button's
--- width and height are in thousandths of these units. The tile's backdrop
+-- the far edge (the top, read from the seat the importer faces).
+--
+-- Button width/height/font_size use their own units. U converts: measured in
+-- TTS, the tile's full width (2 local units) is about 1000 button units. If
+-- every button comes out too big or too small, U is the one number to change;
+-- if they're hidden under the tile or float too high, change Y. The backdrop
 -- image is drawn to this layout: scripts/gen-tts-importer.mjs reads these
 -- numbers from here, so change them only here and re-run it.
 local ROWS = 9             -- list rows per page
@@ -35,25 +39,28 @@ local ROW_LEFT = -0.925
 local ROW_RIGHT = 0.925
 local HEADER_Z = -0.86
 local NAV_Z = 0.86
-local Y = 0.15             -- just above the tile's surface
-local FONT = 62
+local U = 500
+local Y = 0.6              -- height above the tile's centre
+local FONT = math.floor(0.065 * U)
 local CHAR_W = 0.042       -- about how wide a character is at FONT
 local CHIP_PAD = 0.07      -- room around a chip's text
 local GAP = 0.012          -- between the pieces of a row
-local BAR_W = 0.035        -- the symbol color bar
 
 local function hex(h)
   return { tonumber(h:sub(2, 3), 16) / 255, tonumber(h:sub(4, 5), 16) / 255, tonumber(h:sub(6, 7), 16) / 255 }
 end
 
 local WHITE = { 1, 1, 1 }
-local CLEAR = { 0, 0, 0, 0 }
-local TEXT = hex("#F2F4F8")
-local MUTED = hex("#AEB6C8")
-local INK = hex("#151925")   -- text on the light medal chips
-local ROW_A = hex("#1F2433")
-local ROW_B = hex("#242A3B")
-local CHIP = hex("#2F3649")
+local HEADER = hex("#262D40")
+local REGIONAL = hex("#F5D9A6") -- regionals stand out from the locals seasons
+-- Buttons are lit by the table's light like any object, so dark colors on the
+-- dark backdrop all but vanish in play. Rows are light cards; chips are strong.
+local TEXT = hex("#F2F4F8")  -- on dark and colored chips
+local MUTED = hex("#D5DAE5")
+local INK = hex("#151925")   -- on rows and the light medal chips
+local ROW_A = hex("#ECEFF4")
+local ROW_B = hex("#DDE2EB")
+local CHIP = hex("#3A4460")
 local ACCENT = hex("#1976D2")
 
 -- The same colors the site's share images use for each resource symbol.
@@ -82,23 +89,22 @@ local function lighten(c, t)
   return { c[1] + (1 - c[1]) * t, c[2] + (1 - c[2]) * t, c[3] + (1 - c[3]) * t }
 end
 
--- UTF-8 characters, so shortening never splits one.
-local function chars(s)
-  local out = {}
-  for ch in s:gmatch("[%z\1-\127\194-\244][\128-\191]*") do out[#out + 1] = ch end
-  return out
-end
+-- TTS runs MoonSharp, whose strings are .NET strings: # and sub count
+-- characters, not bytes, so cutting one never splits a curly quote.
 
 -- The text, shortened with "…" if it won't fit in `width` units.
 local function fit(text, width)
-  local cs = chars(text)
   local room = math.floor((width - CHIP_PAD) / CHAR_W)
-  if #cs <= room then return text end
-  return table.concat(cs, "", 1, math.max(room - 1, 1)):gsub("[%s,·—-]+$", "") .. "…"
+  if #text <= room then return text end
+  local cut = text:sub(1, math.max(room - 1, 1))
+  -- An emoji is two .NET characters; don't keep half of one.
+  local last = cut:byte(-1)
+  if last and last >= 0xD800 and last <= 0xDBFF then cut = cut:sub(1, -2) end
+  return cut:gsub("[%s,]+$", "") .. "…"
 end
 
 local function chipWidth(text)
-  return #chars(text) * CHAR_W + CHIP_PAD
+  return #text * CHAR_W + CHIP_PAD
 end
 
 local link = ""
@@ -106,8 +112,9 @@ local busy = false
 
 -- The screen being shown, and the ones under it for Back. A screen is
 -- { title, items, page } or the home screen. An item is
--- { label, tooltip, open, bar, left, right }: bar is an optional color down the
--- left edge, left and right optional chips { text, color, font_color }.
+-- { label, tooltip, open, color, left, right }: color tints the label (rows
+-- are otherwise striped), left and right are optional chips
+-- { text, color, font_color }.
 local stack = {}
 local cache = {}
 
@@ -320,7 +327,8 @@ local function deckScreen(section, event, color)
         label = d[5] or d[2],
         tooltip = table.concat(about, " — "),
         open = function(c) importFrom(url, c) end,
-        bar = d[5] and (SYMBOL[symbol] or CHIP) or nil,
+        -- Tinted with the deck's symbol, pale enough for the dark text.
+        color = SYMBOL[symbol] and lighten(SYMBOL[symbol], 0.5) or nil,
         left = d[5] and rankChip(d[1]) or nil,
         right = (d[6] or "") ~= "" and { text = d[6] } or nil,
       })
@@ -354,7 +362,7 @@ local function sectionScreen(section, color)
       local decks = g.events[1].decks
       table.insert(items, {
         label = g.label,
-        bar = ACCENT,
+        color = g.kind == "regional" and REGIONAL or nil,
         right = { text = n > 1 and count(n, "event") or (decks and count(decks, "deck") or "1 event") },
         -- A group of one (a regional) goes straight to its decks.
         open = function(c)
@@ -374,9 +382,9 @@ local HOME = {
   home = true,
   title = "Deck Importer",
   items = {
-    { label = "Browse decklists", bar = ACCENT, right = { text = "by format" },
+    { label = "Browse decklists", right = { text = "by format" },
       open = function(c) sectionScreen("lists", c) end },
-    { label = "Browse majors", bar = ACCENT, right = { text = "by season" },
+    { label = "Browse majors", right = { text = "by season" },
       open = function(c) sectionScreen("majors", c) end },
   },
   page = 1,
@@ -415,6 +423,9 @@ local function button(params)
   params.position = { params.x or 0, Y, params.z }
   params.x, params.z = nil, nil
   params.font_size = params.font_size or FONT
+  -- Sizes come out of float math (0.14 * 500 is 70.00000000000001).
+  params.width = math.floor((params.width or 0) + 0.5)
+  params.height = math.floor((params.height or 0) + 0.5)
   if params.color and not params.hover_color then
     params.hover_color = lighten(params.color, 0.15)
     params.press_color = lighten(params.color, 0.3)
@@ -436,23 +447,22 @@ local function chipColumns(screen)
   return screen.leftW, screen.rightW
 end
 
--- A row is laid out left to right: bar, left chip, label, right chip. The
+-- A row is laid out left to right: left chip, label, right chip. The
 -- label takes the room the rest leave, and every piece clicks the row.
 local function drawRow(i, item, leftW, rightW)
   local z = TOP + (i - 1) * ROW_STEP
   local x = ROW_LEFT
   local function piece(w, label, color, font_color)
     button({ label = label, tooltip = item.tooltip or "", click_function = "onRow" .. i,
-      x = x + w / 2, z = z, width = w * 1000, height = ROW_H * 1000,
+      x = x + w / 2, z = z, width = w * U, height = ROW_H * U,
       color = color, font_color = font_color })
     x = x + w + GAP
   end
-  if item.bar then piece(BAR_W, "", item.bar, TEXT) end
   if item.left then
     piece(leftW, item.left.text, item.left.color or CHIP, item.left.font_color or MUTED)
   end
   local labelW = ROW_RIGHT - x - (item.right and (rightW + GAP) or 0)
-  piece(labelW, fit(item.label, labelW), i % 2 == 1 and ROW_A or ROW_B, TEXT)
+  piece(labelW, fit(item.label, labelW), item.color or (i % 2 == 1 and ROW_A or ROW_B), INK)
   if item.right then
     piece(rightW, item.right.text, item.right.color or CHIP, item.right.font_color or MUTED)
   end
@@ -464,12 +474,12 @@ render = function()
   local screen = stack[#stack]
   local pages = math.max(1, math.ceil(#screen.items / ROWS))
 
-  -- The title sits on the header band painted into the tile's image.
+  -- A clear button hides its label too, so the title gets a solid one.
   local title = busy and "Loading..." or screen.title
   if pages > 1 then title = title .. "  (" .. screen.page .. "/" .. pages .. ")" end
-  button({ label = fit(title, ROW_RIGHT - ROW_LEFT), z = HEADER_Z, width = 1900, height = 140,
-    color = CLEAR, hover_color = CLEAR, press_color = CLEAR,
-    font_color = busy and MUTED or TEXT, font_size = FONT + 6 })
+  button({ label = fit(title, ROW_RIGHT - ROW_LEFT), z = HEADER_Z, width = 1.95 * U, height = 0.15 * U,
+    color = HEADER, hover_color = HEADER, press_color = HEADER,
+    font_color = busy and MUTED or TEXT, font_size = FONT + 3 })
 
   local leftW, rightW = chipColumns(screen)
   for i = 1, ROWS do
@@ -484,29 +494,29 @@ render = function()
       label = "...or paste a builduvs.com deck link",
       alignment = 3,
       position = { 0, Y, TOP + 4 * ROW_STEP },
-      width = (ROW_RIGHT - ROW_LEFT) * 1000,
-      height = ROW_H * 1000,
+      width = (ROW_RIGHT - ROW_LEFT) * U,
+      height = ROW_H * U,
       font_size = FONT,
       color = ROW_A,
-      font_color = TEXT,
+      font_color = INK,
       tooltip = "A deck from builduvs.com/lists or builduvs.com/majors",
       value = link,
     })
     button({ label = "Import link", click_function = "onImportClick",
-      z = TOP + 5 * ROW_STEP, width = 800, height = ROW_H * 1000,
+      z = TOP + 5 * ROW_STEP, width = 0.8 * U, height = ROW_H * U,
       color = ACCENT, font_color = WHITE, tooltip = "Spawn the pasted deck" })
     return
   end
 
-  button({ label = "Back", click_function = "onBack", z = NAV_Z, width = 560, height = 130,
+  button({ label = "Back", click_function = "onBack", z = NAV_Z, width = 0.5 * U, height = ROW_H * U,
     color = ACCENT, font_color = WHITE })
   if screen.page > 1 then
     button({ label = "< Prev", click_function = "onPrev", x = -0.7, z = NAV_Z,
-      width = 500, height = 130, color = CHIP, font_color = TEXT })
+      width = 0.5 * U, height = ROW_H * U, color = CHIP, font_color = TEXT })
   end
   if screen.page < pages then
     button({ label = "Next >", click_function = "onNext", x = 0.7, z = NAV_Z,
-      width = 500, height = 130, color = CHIP, font_color = TEXT })
+      width = 0.5 * U, height = ROW_H * U, color = CHIP, font_color = TEXT })
   end
 end
 

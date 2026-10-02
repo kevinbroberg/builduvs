@@ -183,14 +183,14 @@ const ordinal = (n) => {
 }
 
 /** Groups of events, each event only if it has decks, newest group first. */
-function browseSection({ index, standingsOf }, { title, groupOf, groupLabel, eventDate, eventPlace, eventTitle, sortEvents }) {
+function browseSection({ index, standingsOf }, { title, groupOf, groupLabel, groupKind = () => undefined, eventDate, eventPlace, eventTitle, sortEvents }) {
   const groups = new Map()
   const events = {}
   for (const ev of index.events) {
     const standings = standingsOf[ev.id]
     if (!standings?.length) continue
     const key = groupOf(ev)
-    if (!groups.has(key)) groups.set(key, { label: groupLabel(ev), latest: '', events: [] })
+    if (!groups.has(key)) groups.set(key, { label: groupLabel(ev), kind: groupKind(ev), latest: '', events: [] })
     const g = groups.get(key)
     if (ev.date > g.latest) g.latest = ev.date
     g.events.push(ev)
@@ -217,6 +217,7 @@ function browseSection({ index, standingsOf }, { title, groupOf, groupLabel, eve
         .sort((a, b) => b.latest.localeCompare(a.latest))
         .map((g) => ({
           label: g.label,
+          kind: g.kind, // 'regional' tints the row in the importer
           events: g.events.sort(sortEvents).map((ev) => ({
             id: ev.id,
             label: `${clip(`${eventDate(ev)} · ${eventPlace(ev)}`)} (${events[ev.id].decks.length})`,
@@ -235,6 +236,7 @@ const listsBrowse = browseSection(lists, {
   title: 'Decklists',
   groupOf: shardKeyOf, // one group per /lists tab
   groupLabel: (ev) => (ev.round === 0 ? eventName(ev) : formatLabel.get(ev.formatPeriod) ?? ev.formatPeriod),
+  groupKind: (ev) => (ev.round === 0 ? 'regional' : undefined),
   eventDate: (ev) => formatDate(ev.date),
   eventPlace: (ev) => (ev.round === 0 ? eventName(ev) : cityOf(ev.location)),
   eventTitle: (ev) => `${eventName(ev)} · ${formatDate(ev.date)}`,
