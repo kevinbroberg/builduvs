@@ -141,6 +141,22 @@ function makePile(nickname, cards, getPrefix, posX, faceDown) {
   return makeDeckObject(nickname, cards, getPrefix, transform)
 }
 
+// The card fields generateTTSJson reads (faceUrl, gmNotes, keyOf). The TTS
+// endpoint's manifest (scripts/gen-tts-manifest.mjs) stores only these, so the
+// edge function can rebuild a deck without bundling the whole card database.
+const TTS_CARD_FIELDS = [
+  'name', 'type', 'asset', 'ultra_url_path', 'extension_short',
+  'numero_image', 'numero', 'card_number_image', 'card_number',
+]
+
+/** The subset of a card generateTTSJson needs, or null if it has no image. */
+export function ttsCardFields(card) {
+  if (!card || !faceUrl(card)) return null
+  const out = {}
+  for (const f of TTS_CARD_FIELDS) if (card[f] != null) out[f] = card[f]
+  return out
+}
+
 export function generateTTSJson(deckName, faceCard, mainDeck, sideDeck = []) {
   // Flatten each zone into one card per copy, skipping cards with no resolvable image URL
   const flatten = (cards) => {

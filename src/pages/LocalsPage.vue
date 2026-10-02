@@ -1,6 +1,7 @@
 <script setup>
 import { ref, shallowRef, computed, watch, watchEffect } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import { copyToClipboard } from 'quasar'
 import { setPageTitle } from 'src/js/page_title'
 import indexData from 'src/assets/locals-index.json'
 import DeckBody from 'src/components/deck/DeckBody.vue'
@@ -391,6 +392,16 @@ function downloadTTS() {
   downloadTTSJson(name, resolvedFace.value, resolvedDeck.value, resolvedSide.value)
 }
 
+// The same JSON, served by netlify/edge-functions/deck-tts.js, so a TTS mod
+// can load the deck from a URL instead of a downloaded file.
+const ttsLinkCopied = ref(false)
+async function copyTTSLink() {
+  const url = `${location.origin}/lists/${encodeURIComponent(eventId.value)}/${playerId.value}/tts.json`
+  await copyToClipboard(url)
+  ttsLinkCopied.value = true
+  setTimeout(() => { ttsLinkCopied.value = false }, 1500)
+}
+
 function compareThisDeck() {
   deckStore.setPendingComparison({
     face: resolvedFace.value,
@@ -492,6 +503,10 @@ watchEffect(() => {
               :disable="playerDataLoading || !resolvedDeck.length"
               @click="downloadTTS">
               <q-tooltip>Download Tabletop Simulator deck</q-tooltip>
+            </q-btn>
+            <q-btn flat dense :icon="ttsLinkCopied ? 'check' : 'link'" size="sm" class="q-ml-xs"
+              @click="copyTTSLink">
+              <q-tooltip>Copy a link for the BuildUVS Deck Importer in Tabletop Simulator</q-tooltip>
             </q-btn>
           </template>
         </div>
