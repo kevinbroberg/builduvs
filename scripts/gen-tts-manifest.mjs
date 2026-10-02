@@ -40,7 +40,7 @@ const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf8'))
 // ── Card pool — mirrors src/js/card_provider.js (file order, asset, uvs_id) ──
 
 const CARD_FILES = [
-  'tekken8.json', 'mha09.json', 'kaiju.json', 'teamhero.json', 'gg-critrole.json',
+  'sf6-2026.json', 'tekken8.json', 'mha09.json', 'kaiju.json', 'teamhero.json', 'gg-critrole.json',
   'sjw-mha4.json', 'heroesclash.json', 'rampage_dlc.json', 'provs.json',
   'rampage.json', 'cards.json',
 ]
@@ -159,12 +159,21 @@ const clip = (str, max = MAX_LABEL) => {
   return chars.length > max ? `${chars.slice(0, max - 1).join('').trimEnd()}…` : str
 }
 
+// "Tsuyu Asui (III)": a flip card shows its front only, and title-casing would
+// otherwise leave a version numeral as "(Iii)".
+const characterOf = (s) =>
+  (toTitleCase(s.characterName) || 'Unknown')
+    .split(' // ')[0]
+    .replace(/\(([ivx]+)\)/gi, (_, n) => `(${n.toUpperCase()})`)
+const recordOf = (s) => s.overallRecord ?? s.swissRecord ?? ''
+
 // "1st · Mikasa Ackerman, Hizuru’s Hope · 9-1-1". The character is what gets
-// shortened, so rank and record always show; a flip card shows its front only.
+// shortened, so rank and record always show. Importers saved before rows were
+// split into pieces show only this.
 function deckLabel(s) {
   const rank = ordinal(s.standing)
-  const record = s.overallRecord ?? s.swissRecord
-  const name = (toTitleCase(s.characterName) || 'Unknown').split(' // ')[0]
+  const record = recordOf(s)
+  const name = characterOf(s)
   const room = MAX_LABEL - [...rank].length - (record ? [...record].length + 3 : 0) - 3
   return [rank, clip(name, room), record].filter(Boolean).join(' · ')
 }
@@ -174,7 +183,7 @@ const ordinal = (n) => {
 }
 
 /** Groups of events, each event only if it has decks, newest group first. */
-function browseSection({ index, standingsOf }, { title, groupOf, groupLabel, eventLabel, eventTitle, sortEvents }) {
+function browseSection({ index, standingsOf }, { title, groupOf, groupLabel, eventDate, eventPlace, eventTitle, sortEvents }) {
   const groups = new Map()
   const events = {}
   for (const ev of index.events) {
@@ -189,10 +198,15 @@ function browseSection({ index, standingsOf }, { title, groupOf, groupLabel, eve
       title: eventTitle(ev),
       decks: standings
         .sort((a, b) => a.standing - b.standing)
+        // The first three are what older importers read; the rest are the
+        // row's pieces — symbol color bar, character, record chip.
         .map((s) => [
           s.standing,
           deckLabel(s),
           s.deckName || '',
+          s.deckSymbol || '',
+          characterOf(s),
+          recordOf(s),
         ]),
     }
   }
@@ -205,7 +219,10 @@ function browseSection({ index, standingsOf }, { title, groupOf, groupLabel, eve
           label: g.label,
           events: g.events.sort(sortEvents).map((ev) => ({
             id: ev.id,
-            label: `${clip(eventLabel(ev))} (${events[ev.id].decks.length})`,
+            label: `${clip(`${eventDate(ev)} · ${eventPlace(ev)}`)} (${events[ev.id].decks.length})`,
+            date: eventDate(ev),
+            place: eventPlace(ev),
+            decks: events[ev.id].decks.length,
           })),
         })),
     },
@@ -218,7 +235,8 @@ const listsBrowse = browseSection(lists, {
   title: 'Decklists',
   groupOf: shardKeyOf, // one group per /lists tab
   groupLabel: (ev) => (ev.round === 0 ? eventName(ev) : formatLabel.get(ev.formatPeriod) ?? ev.formatPeriod),
-  eventLabel: (ev) => `${formatDate(ev.date)} · ${ev.round === 0 ? eventName(ev) : cityOf(ev.location)}`,
+  eventDate: (ev) => formatDate(ev.date),
+  eventPlace: (ev) => (ev.round === 0 ? eventName(ev) : cityOf(ev.location)),
   eventTitle: (ev) => `${eventName(ev)} · ${formatDate(ev.date)}`,
   sortEvents: (a, b) => b.date.localeCompare(a.date),
 })
@@ -226,7 +244,8 @@ const majorsBrowse = browseSection(majors, {
   title: 'Majors',
   groupOf: (ev) => ev.season,
   groupLabel: (ev) => seasonLabel(ev.season),
-  eventLabel: (ev) => `${formatDate(ev.date, true)} · ${ev.name}`,
+  eventDate: (ev) => formatDate(ev.date, true),
+  eventPlace: (ev) => ev.name,
   eventTitle: (ev) => `${ev.name} · ${formatDate(ev.date, true)}`,
   sortEvents: compareEvents,
 })
