@@ -20,7 +20,7 @@ import { fileURLToPath } from 'url'
 import { normName, lookupKeys, buildNameIndex, stripVariantSuffix } from '../src/js/card_name_match.js'
 import { uvsId } from '../src/js/card_id.js'
 import {
-  CONFUSED_SYMBOL, EXCLUDED_SYMBOLS, baseSymbol, faceSymbolsOf, singleLinkCounts,
+  CONFUSED_SYMBOL, EXCLUDED_SYMBOLS, baseSymbol, faceSymbolsOf, singleLinkCounts, fallbackSymbol,
 } from '../src/js/deck_symbol.js'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
@@ -285,14 +285,9 @@ function deckMainSymbol(standingId, eventId, standingNum) {
 
   if (activeSingleLinks.length === 1) return activeSingleLinks[0]
 
-  // Fallback: first face resource present on any deck card
-  const deckResourceSet = new Set(
-    mainCards
-      .flatMap(dc => (findCard(dc.name, dc.cardeioId, dc.uvsId)?.resources || []))
-      .map(baseSymbol)
-      .filter(r => !EXCLUDED_SYMBOLS.has(r))
-  )
-  return faceResources.find(r => deckResourceSet.has(r)) ?? null
+  // No single-link evidence: the symbol every bare-linked card shares.
+  const resolved = mainCards.map(dc => findCard(dc.name, dc.cardeioId, dc.uvsId))
+  return fallbackSymbol(faceResources, resolved)
 }
 
 function overallRecord(standingId) {
@@ -324,6 +319,7 @@ for (const [, eventStandings] of Object.entries(index.standings)) {
       standing.deckSymbol = symbol
       computed++
     } else {
+      delete standing.deckSymbol // the index is edited in place; don't keep a stale symbol
       skipped++
     }
   }

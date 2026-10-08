@@ -88,10 +88,44 @@ export function singleLinkCounts(faceSyms, cards) {
 }
 
 /**
+ * The deck's main symbol when no card is single-link evidence — typical of
+ * faces with many symbols (Izuku Midoriya, On the Move has five), where every
+ * multi-symbol card overlaps the face twice or more.
+ *
+ * A legal deck's one hard symbol is printed bare on every card that links to
+ * the face through a bare symbol, so intersect those cards' bare face symbols:
+ * Defiant Stance (air/life/good) and Godzilla vs Biollante (earth/life/water)
+ * together leave only life. Attuned-only and off-pool cards say nothing and
+ * are skipped. If several symbols survive, take the first in face order; if
+ * none do (dirty data), fall back to the first face symbol printed anywhere.
+ */
+export function sharedBareSymbols(faceSyms, cards) {
+  const faceSet = new Set(faceSyms)
+  let candidates = null
+  for (const c of cards) {
+    if (!c?.resources) continue
+    const bare = [...faceMatches(c.resources, faceSet)]
+      .filter(([, viaBareSymbol]) => viaBareSymbol)
+      .map(([symbol]) => symbol)
+    if (!bare.length) continue
+    candidates = (candidates ?? faceSyms).filter(r => bare.includes(r))
+    if (!candidates.length) break
+  }
+  return candidates ?? []
+}
+
+export function fallbackSymbol(faceSyms, cards) {
+  const candidates = sharedBareSymbols(faceSyms, cards)
+  if (candidates.length) return candidates[0]
+  const deckResources = new Set(cards.flatMap(c => c?.resources ?? []).map(baseSymbol))
+  return faceSyms.find(r => deckResources.has(r)) ?? null
+}
+
+/**
  * A deck's main symbol from its face and resolved main-deck cards — the same
  * answer compute-deck-symbols.mjs gives for a known printing: the single
- * active single-link symbol; CONFUSED_SYMBOL when several are active; else the
- * first face symbol printed anywhere in the deck; else null.
+ * active single-link symbol; CONFUSED_SYMBOL when several are active; else
+ * fallbackSymbol.
  */
 export function mainSymbolOf(face, cards) {
   const syms = faceSymbolsOf(face)
@@ -100,6 +134,5 @@ export function mainSymbolOf(face, cards) {
   const active = syms.filter(r => counts.get(r) > 0)
   if (active.length > 1) return CONFUSED_SYMBOL
   if (active.length === 1) return active[0]
-  const deckResources = new Set(cards.flatMap(c => c?.resources ?? []).map(baseSymbol))
-  return syms.find(r => deckResources.has(r)) ?? null
+  return fallbackSymbol(syms, cards)
 }
