@@ -6,6 +6,7 @@ import { setPageTitle } from 'src/js/page_title'
 import indexData from 'src/assets/locals-index.json'
 import DeckBody from 'src/components/deck/DeckBody.vue'
 import DeckStage from 'src/components/deck/DeckStage.vue'
+import DeckSummary from 'src/components/deck/DeckSummary.vue'
 import cardeioIdsData from 'src/assets/cardeio-ids.json'
 import { cards as allCards, cardByUvsId } from 'src/js/card_provider.js'
 import { createCardResolver } from 'src/js/decklist_cards'
@@ -524,8 +525,12 @@ watchEffect(() => {
           :face-name="(focusedCard || resolvedFace)?.name ?? ''"
           :list-view="listsView === 'list'"
         >
+          <template #face-footer>
+            <DeckSummary :face="resolvedFace" :cards="resolvedDeck" :deck-symbol="currentStanding?.deckSymbol ?? null" />
+          </template>
           <DeckBody
             v-if="resolvedDeck.length"
+            :face-list="resolvedFace ? [resolvedFace] : []"
             :deck-list="resolvedDeck"
             :side-list="resolvedSide"
             :view="listsView"

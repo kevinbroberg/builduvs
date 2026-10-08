@@ -5,10 +5,14 @@ import { useDeckStore } from 'src/stores/deck'
 import DeckCardTile from 'src/components/cards/DeckCardTile.vue'
 
 const SIDEKEY = 'sideboard'
+const FACEKEY = 'face'
 
 const props = defineProps({
   // Pass pre-built partitions ({ key, label, cards }) OR raw deck/side lists.
   partitions: { type: Array, default: null },
+  // Face character(s), shown as their own section between the main deck and
+  // the sideboard (precons can ship two or three).
+  faceList: { type: Array, default: () => [] },
   deckList: { type: Array, default: () => [] },
   sideList: { type: Array, default: () => [] },
 
@@ -22,7 +26,7 @@ const emit = defineEmits(['card-click'])
 const store = useDeckStore()
 
 // Build type-grouped partitions when explicit partitions weren't provided.
-function partitionByType(deckList, sideList) {
+function partitionByType(faceList, deckList, sideList) {
   const typeMap = {}
   for (const card of deckList) {
     const t = card.type || 'unknown'
@@ -33,6 +37,16 @@ function partitionByType(deckList, sideList) {
     label: `${type}: ${cards.reduce((sum, c) => sum + c.qty, 0)}`,
     cards,
   }))
+  // Faces sit after the main deck, not first: the stage already opens on the
+  // (first) face, so this section is for flipping back to it, or between
+  // characters on a multi-character precon.
+  if (faceList?.length) {
+    out.push({
+      key: FACEKEY,
+      label: faceList.length > 1 ? `Characters: ${faceList.length}` : 'Character',
+      cards: faceList.map(c => ({ ...c, qty: c.qty || 1 })),
+    })
+  }
   if (sideList?.length) {
     out.push({
       key: SIDEKEY,
@@ -44,7 +58,7 @@ function partitionByType(deckList, sideList) {
 }
 
 const effectivePartitions = computed(
-  () => props.partitions ?? partitionByType(props.deckList, props.sideList)
+  () => props.partitions ?? partitionByType(props.faceList, props.deckList, props.sideList)
 )
 
 const gridStyle = computed(() => ({ gridTemplateColumns: `repeat(${props.columns}, 1fr)` }))

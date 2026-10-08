@@ -1,12 +1,14 @@
 /**
  * Generates netlify/edge-functions/preview-data.js — a compact manifest the
  * edge function uses to inject per-URL Open Graph / Twitter meta tags so that
- * links to /lists and /majors (index, :event, and :event/:id) get rich previews
- * (title, description, and a character-card image) when shared.
+ * links to /lists and /majors (index, :event, and :event/:id) and /precons
+ * (index and :deck) get rich previews (title, description, and a
+ * character-card image) when shared.
  *
  * Re-run this whenever locals-index.json or majors-index.json changes — i.e.
  * after gen-locals.mjs / gen-majors.mjs and their compute-deck-symbols pass,
- * since the preview description reads deckSymbol and overallRecord:
+ * since the preview description reads deckSymbol and overallRecord — and after
+ * any change to the precon decklists (official-decks.json and friends):
  *
  *   node scripts/gen-preview-manifest.mjs
  *
@@ -21,7 +23,9 @@ import { tierInfo, seasonLabel } from '../src/js/major_naming.js'
 import { normName, lookupKeys, buildNameIndex } from '../src/js/card_name_match.js'
 import { buildResolver } from '../src/js/card_lookup.js'
 import { uvsId } from '../src/js/card_id.js'
-import { deckSymbolLabel } from '../src/js/deck_symbol.js'
+import { deckSymbolLabel, mainSymbolOf } from '../src/js/deck_symbol.js'
+import { createCardResolverFrom } from '../src/js/card_resolver.js'
+import { buildPrecons } from '../src/js/precon_rows.js'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const assets = path.join(root, 'src', 'assets')
@@ -236,6 +240,70 @@ if (fs.existsSync(majorsPath)) {
   }
 }
 
+// ── Precons (/precons, /precons/:deck) ──────────────────────────────────────
+// Built by the same buildPrecons the page uses, so every deck id the page can
+// open has an entry. Cards resolve as on the page: a row's recorded printing
+// (asset) wins, else the shared resolver over every printing — precons reach
+// back past Standard.
+
+const readAsset = f => JSON.parse(fs.readFileSync(path.join(assets, f), 'utf8'))
+{
+  const cardByUvsId = new Map(loadedCards.filter(c => uvsId(c)).map(c => [uvsId(c), c]))
+  const cardByAsset = new Map(loadedCards.map(c => [c.asset, c]))
+  const { resolveCard } = createCardResolverFrom({
+    cards: loadedCards, cardByUvsId, cardeioIds: readAsset('cardeio-ids.json'), standardOnly: false,
+  })
+  const { decks, rows } = buildPrecons({
+    releaseData: readAsset('releases.json'),
+    derivedData: readAsset('precons-derived.json'),
+    officialDecks: readAsset('official-decks.json'),
+    communityDecks: readAsset('precon-decks-uvsultra.json'),
+    inferredDecks: readAsset('precon-decks-inferred.json'),
+  })
+  const resolveRow = c => {
+    const card = (c.asset && cardByAsset.get(c.asset)) ||
+      resolveCard({ cardeioId: c.cardeioId, name: c.name, qty: c.count })
+    return card.type === 'unknown' ? null : { ...card, qty: c.count ?? 1 }
+  }
+  const section = (d, name) =>
+    (d.sections.find(s => s.name === name)?.cards ?? []).map(resolveRow).filter(Boolean)
+  // A deck's release date comes from the product row that lists it.
+  const dateOf = new Map(rows.filter(r => r.deck && r.date).map(r => [r.deck.id, r.date]))
+
+  manifest.precons = {
+    index: {
+      title: 'Precon Decks · BuildUVS',
+      description: `Decklists for ${decks.length} preconstructed Universus decks.`,
+      image: null,
+    },
+    decks: {},
+  }
+  for (const d of decks) {
+    const faces = section(d, 'character')
+    // Every character the box ships: some official lists file the second one
+    // in the sideboard (Cowboy Bebop: Faye beside Spike) rather than as a face.
+    const characters = [...faces, ...[...section(d, 'main'), ...section(d, 'sideboard')]
+      .filter(c => c.type === 'character')]
+    // A multi-character precon's pool serves every character in the box, so
+    // scoring it against one of them reads as "Mixed" — leave the symbol out.
+    const symbol = characters.length === 1 ? mainSymbolOf(faces[0], section(d, 'main')) : null
+    const date = dateOf.get(d.id)
+    manifest.precons.decks[d.id] = {
+      title: d.name,
+      description: joinParts(
+        // Multi-character precons: name them all; a single one is usually
+        // already in the deck's title.
+        characters.length > 1 ? characters.map(f => f.name).join(' & ') : null,
+        symbol ? toTitleCase(deckSymbolLabel(symbol)) : null,
+        d.totalCards ? `${d.totalCards} cards` : null,
+        date ? formatDateY(date) : null,
+        d.provenance === 'inferred' ? 'quantities inferred' : null,
+      ),
+      image: faces[0] ? `${CDN_BASE}/${faces[0].asset}` : null,
+    }
+  }
+}
+
 // Data lives in a subdirectory: Netlify registers only top-level files in
 // netlify/edge-functions/ as functions; subdirectories are import-only helpers.
 const outDir = path.join(root, 'netlify', 'edge-functions', 'lib')
@@ -270,6 +338,15 @@ console.log(`Wrote ${path.relative(root, outFile)}`)
 console.log(`  lists:  ${Object.keys(manifest.events).length} events, ${Object.keys(manifest.players).length} player previews`)
 if (manifest.majors) {
   console.log(`  majors: ${Object.keys(manifest.majors.events).length} events, ${Object.keys(manifest.majors.players).length} player previews`)
+}
+{
+  const deckEntries = Object.entries(manifest.precons.decks)
+  const noImage = deckEntries.filter(([, e]) => !e.image).map(([id, e]) => `${id}  ${e.title}`)
+  console.log(`  precons: ${deckEntries.length} deck previews`)
+  if (noImage.length) {
+    console.warn(`  ${noImage.length} /precons decks had no character image:`)
+    for (const m of noImage.slice(0, 15)) console.warn(`    - ${m}`)
+  }
 }
 if (missing.size) {
   console.warn(`  ${missing.size} /lists characters had no card image:`)

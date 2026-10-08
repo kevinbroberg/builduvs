@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-08",
+  "generated": "2026-10-08",
   "source": "https://legacy.play.uvsgames.com/decks/official-decks (carde.io officialDecks API)",
   "note": "Publisher-authored decklists for preconstructed products. Card names resolved against local card data by cardeio id; `name: null` means the id could not be resolved.",
   "entries": [
@@ -195,7 +195,7 @@
             {
               "cardeioId": "659ed00989c2cd55ea9f1228",
               "name": "Ending the Dream",
-              "asset": "bebop/081.jpg",
+              "asset": "cb02/013.jpg",
               "count": 3
             },
             {
@@ -207,25 +207,25 @@
             {
               "cardeioId": "659ed00989c2cd55ea9f122a",
               "name": "Finally Awake",
-              "asset": "bebop/082.jpg",
+              "asset": "cb02/015.jpg",
               "count": 4
             },
             {
               "cardeioId": "659ed00989c2cd55ea9f122b",
-              "name": "Light it Up",
-              "asset": "bebop/085.jpg",
+              "name": "Light It Up",
+              "asset": "cb02/016.jpg",
               "count": 4
             },
             {
               "cardeioId": "659ed00989c2cd55ea9f122c",
               "name": "Nothing Like Andy",
-              "asset": "bebop/086.jpg",
+              "asset": "cb02/017.jpg",
               "count": 4
             },
             {
               "cardeioId": "659ed00989c2cd55ea9f122d",
               "name": "Sing for Me",
-              "asset": "bebop/088.jpg",
+              "asset": "cb02/018.jpg",
               "count": 4
             },
             {
@@ -237,7 +237,7 @@
             {
               "cardeioId": "659ed00989c2cd55ea9f122f",
               "name": "Syndicate Target",
-              "asset": "bebop/090.jpg",
+              "asset": "cb02/020.jpg",
               "count": 4
             },
             {
@@ -261,13 +261,13 @@
             {
               "cardeioId": "659ed00989c2cd55ea9f121b",
               "name": "Falling Heel Strike",
-              "asset": "bebop/075.jpg",
+              "asset": "cb02/007.jpg",
               "count": 3
             },
             {
               "cardeioId": "659ed00989c2cd55ea9f121c",
               "name": "High Roundhouse Kick",
-              "asset": "bebop/076.jpg",
+              "asset": "cb02/008.jpg",
               "count": 3
             },
             {
@@ -279,7 +279,7 @@
             {
               "cardeioId": "659ed00989c2cd55ea9f121e",
               "name": "Jaw Jammer",
-              "asset": "bebop/077.jpg",
+              "asset": "cb02/010.jpg",
               "count": 4
             },
             {
@@ -984,8 +984,8 @@
             },
             {
               "cardeioId": "6669ee052a3319ce4b1576de",
-              "name": "Death from Above",
-              "asset": "fightfor/050.jpg",
+              "name": "Death From Above",
+              "asset": "cha03krm/006.jpg",
               "count": 2
             },
             {
@@ -1087,7 +1087,7 @@
             {
               "cardeioId": "6669ee042a3319ce4b1576cf",
               "name": "History's Greatest Monster",
-              "asset": "gdz01/187.jpg",
+              "asset": "cha03gmm/014.jpg",
               "count": 2
             },
             {
@@ -1373,7 +1373,7 @@
             {
               "cardeioId": "6765ef672b60c4aa2fb3d7f9",
               "name": "Sung Jinwoo, E Rank Hunter",
-              "asset": "sleb/004.jpg",
+              "asset": "sl01/001.jpg",
               "count": 1
             }
           ]
@@ -2792,8 +2792,8 @@
             },
             {
               "cardeioId": "659ed00989c2cd55ea9f1238",
-              "name": "Seen it All",
-              "asset": "flashofblades/027.jpg",
+              "name": "Seen It All",
+              "asset": "ts01/019.jpg",
               "count": 4
             },
             {

@@ -6,6 +6,7 @@ import { setPageTitle } from 'src/js/page_title'
 import indexData from 'src/assets/majors-index.json'
 import DeckBody from 'src/components/deck/DeckBody.vue'
 import DeckStage from 'src/components/deck/DeckStage.vue'
+import DeckSummary from 'src/components/deck/DeckSummary.vue'
 import { getCardImage } from 'src/js/image_helper'
 import ResourceSymbol from 'src/components/cards/detail/ResourceSymbol.vue'
 import { useDeckStore } from 'src/stores/deck'
@@ -322,8 +323,12 @@ watchEffect(() => {
           :face-name="(focusedCard || resolvedFace)?.name ?? ''"
           :list-view="majorsView === 'list'"
         >
+          <template #face-footer>
+            <DeckSummary :face="resolvedFace" :cards="resolvedDeck" :deck-symbol="currentStanding?.deckSymbol ?? null" />
+          </template>
           <DeckBody
             v-if="resolvedDeck.length"
+            :face-list="resolvedFace ? [resolvedFace] : []"
             :deck-list="resolvedDeck" :side-list="resolvedSide"
             :view="majorsView" :columns="majorsColumns" :editable="false"
             @card-click="focusedCard = $event"

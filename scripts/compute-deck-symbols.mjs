@@ -19,7 +19,9 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import { normName, lookupKeys, buildNameIndex, stripVariantSuffix } from '../src/js/card_name_match.js'
 import { uvsId } from '../src/js/card_id.js'
-import { CONFUSED_SYMBOL } from '../src/js/deck_symbol.js'
+import {
+  CONFUSED_SYMBOL, EXCLUDED_SYMBOLS, baseSymbol, faceSymbolsOf, singleLinkCounts,
+} from '../src/js/deck_symbol.js'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 
@@ -159,35 +161,12 @@ for (const f of fs.readdirSync(shardDir).filter(f => f.endsWith('.json'))) {
 
 // ── Compute deck main symbol ──────────────────────────────────────────────────
 
-const EXCLUDED = new Set(['infinity'])
-
 // Decks that mix hard symbols — illegal under UVS deckbuilding rules. Collected
 // so the run ends with a report you can act on rather than scattered warnings.
 const illegalDecks = []
 
-// Resources are printed either bare ("evil") or attuned ("evil-attuned").
-const baseSymbol = r => r.replace(/-attuned$/, '')
-
-/**
- * Matches a card's resources against the face's symbols.
- *
- * Attuned symbols DO match, so a card is recognised as linking through every
- * symbol it really shares with the face. But an attuned symbol is not evidence
- * of deck identity on its own: attuned cards slot into any deck, so a card
- * whose only link is attuned says nothing about the deck's main symbol.
- *
- * Returns Map<symbol, matchedViaBareSymbol>.
- */
-function faceMatches(resources, faceSet) {
-  const matched = new Map()
-  for (const r of resources) {
-    if (EXCLUDED.has(r)) continue
-    const base = baseSymbol(r)
-    if (EXCLUDED.has(base) || !faceSet.has(base)) continue
-    matched.set(base, (matched.get(base) ?? false) || base === r)
-  }
-  return matched
-}
+// Symbol matching and single-link scoring live in src/js/deck_symbol.js so the
+// deck pages' summary panel scores precons by the same rules.
 
 // Every printing whose variant-suffix-stripped name matches this one's — e.g.
 // "Mt. Lady" and "Mt. Lady (III)". A decklist names a character without
@@ -200,7 +179,9 @@ function printingsOf(name) {
 }
 
 /**
- * Copies in the main deck that share NO symbol with this face and aren't "all".
+ * Copies in the main deck that share NO symbol with this face and aren't
+ * wildcards. The wildcard resource is infinity — NOT "all", which is an
+ * ordinary hard symbol (the gear) that only fits a face printing it.
  *
  * Used ONLY to compare candidate printings of the same character against each
  * other, where it is decisive: a Mt. Lady deck scores 0 off-pool as
@@ -217,30 +198,21 @@ function offPoolCopies(mainCards, faceSet) {
     const card = findCard(dc.name, dc.cardeioId, dc.uvsId)
     if (!card?.resources) continue
     const res = card.resources.map(baseSymbol)
-    if (!res.includes('all') && !res.some(r => faceSet.has(r))) n += dc.qty
+    if (!res.some(r => EXCLUDED_SYMBOLS.has(r) || faceSet.has(r))) n += dc.qty
   }
   return n
 }
-
-const faceSymbolsOf = card => [...new Set(
-  (card.resources ?? []).map(baseSymbol).filter(r => !EXCLUDED.has(r))
-)]
 
 // Score a deck against one candidate printing of its face.
 function scoreFace(card, mainCards) {
   const syms = faceSymbolsOf(card)
   if (!syms.length) return null
   const faceSet = new Set(syms)
-  const singleLinkCount = new Map(syms.map(r => [r, 0]))
-  for (const dc of mainCards) {
+  const resolved = mainCards.map(dc => {
     const c = findCard(dc.name, dc.cardeioId, dc.uvsId)
-    if (!c?.resources) continue
-    const matched = faceMatches(c.resources, faceSet)
-    if (matched.size !== 1) continue
-    const [[symbol, viaBareSymbol]] = [...matched]
-    if (!viaBareSymbol) continue
-    singleLinkCount.set(symbol, (singleLinkCount.get(symbol) ?? 0) + dc.qty)
-  }
+    return c && { resources: c.resources, qty: dc.qty }
+  })
+  const singleLinkCount = singleLinkCounts(syms, resolved)
   const active = syms.filter(r => (singleLinkCount.get(r) ?? 0) > 0)
   return { card, syms, faceSet, singleLinkCount, active, offPool: offPoolCopies(mainCards, faceSet) }
 }
@@ -252,7 +224,7 @@ function scoreFace(card, mainCards) {
 // Only when the direct printing is demonstrably wrong — off-pool cards, or
 // mixed hard symbols — is an alternate printing considered, and then only if it
 // is strictly better. That ordering matters: several printings can tie at zero
-// off-pool (cards carrying "all" are legal under any face), so preferring the
+// off-pool (infinity cards are legal under any face), so preferring the
 // direct match is what keeps e.g. a "Ryukyu" (earth/life/all) deck from being
 // rescored against "Ryukyu (II)" (air/earth/order) and falsely called illegal.
 const isClean = s => s && s.offPool === 0 && s.active.length <= 1
@@ -318,7 +290,7 @@ function deckMainSymbol(standingId, eventId, standingNum) {
     mainCards
       .flatMap(dc => (findCard(dc.name, dc.cardeioId, dc.uvsId)?.resources || []))
       .map(baseSymbol)
-      .filter(r => !EXCLUDED.has(r))
+      .filter(r => !EXCLUDED_SYMBOLS.has(r))
   )
   return faceResources.find(r => deckResourceSet.has(r)) ?? null
 }

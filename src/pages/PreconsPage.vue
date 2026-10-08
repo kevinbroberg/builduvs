@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, watchEffect } from 'vue'
+import { ref, computed, watch, watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
 import { copyToClipboard } from 'quasar'
 import { setPageTitle } from 'src/js/page_title'
@@ -10,6 +10,7 @@ import communityDecks from 'src/assets/precon-decks-uvsultra.json'
 import inferredDecks from 'src/assets/precon-decks-inferred.json'
 import DeckBody from 'src/components/deck/DeckBody.vue'
 import DeckStage from 'src/components/deck/DeckStage.vue'
+import DeckSummary from 'src/components/deck/DeckSummary.vue'
 import { createCardResolver } from 'src/js/decklist_cards'
 import { getCardImage } from 'src/js/image_helper'
 import { cards as allCards } from 'src/js/card_provider'
@@ -53,7 +54,12 @@ const resolvedFaces = computed(() => sectionCards(currentDeck.value, 'character'
 const resolvedFace = computed(() => resolvedFaces.value[0] ?? null)
 const resolvedDeck = computed(() => sectionCards(currentDeck.value, 'main'))
 const resolvedSide = computed(() => sectionCards(currentDeck.value, 'sideboard'))
+// Every character the box ships. Some official lists file the second one in
+// the sideboard (Cowboy Bebop: Faye beside Spike) rather than as a face.
+const characterCount = computed(() => resolvedFaces.value.length +
+  [...resolvedDeck.value, ...resolvedSide.value].filter(c => c.type === 'character').length)
 const focusedCard = ref(null)
+watch(deckId, () => { focusedCard.value = null })
 
 // Mirrors /lists and /majors so the three pages share one saved preference.
 const listsView = ref(localStorage.getItem('listsView') || 'tiles')
@@ -162,8 +168,14 @@ watchEffect(() => setPageTitle(currentDeck.value ? currentDeck.value.name : 'Pre
             :face-name="(focusedCard || resolvedFace)?.name ?? ''"
             :list-view="listsView === 'list'"
           >
+            <template #face-footer>
+              <!-- No face for multi-character precons: their pool serves every
+                   character in the box, so one face's main symbol reads "Mixed" -->
+              <DeckSummary :face="characterCount === 1 ? resolvedFace : null" :cards="resolvedDeck" />
+            </template>
             <DeckBody
               v-if="resolvedDeck.length"
+              :face-list="resolvedFaces"
               :deck-list="resolvedDeck"
               :side-list="resolvedSide"
               :view="listsView"

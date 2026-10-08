@@ -1,5 +1,5 @@
 // Injects per-URL Open Graph / Twitter meta tags into the SPA's index.html for
-// /lists routes, so shared links get a rich preview (title, description, and a
+// /lists, /majors and /precons routes, so shared links get a rich preview (title, description, and a
 // character-card image) instead of the generic site card. Crawlers don't run
 // the app's JS, so the tags must be present in the served HTML — this does that
 // at the edge. Regular visitors get the same HTML plus the tags, then the SPA
@@ -10,7 +10,7 @@
 
 import manifest, { SITE_BASE } from './lib/preview-data.js'
 
-export const config = { path: ['/lists/*', '/majors/*'] }
+export const config = { path: ['/lists/*', '/majors/*', '/precons', '/precons/*'] }
 
 function esc(s) {
   return String(s)
@@ -25,6 +25,13 @@ function esc(s) {
 // URL shape (index / :event / :event/:id) but separate manifest namespaces.
 function lookup(pathname) {
   const parts = pathname.replace(/^\/+|\/+$/g, '').split('/')
+
+  // /precons and /precons/:deck — one level shallower, its own namespace.
+  if (parts[0] === 'precons') {
+    if (parts.length === 1) return manifest.precons?.index || null
+    if (parts.length === 2) return manifest.precons?.decks?.[decodeURIComponent(parts[1])] || null
+    return null
+  }
 
   const section = parts[0] === 'lists'
     ? manifest

@@ -27,3 +27,79 @@ export const isConfused = symbol =>
 // Human-readable label for a deck symbol (used in link previews and tooltips).
 export const deckSymbolLabel = symbol =>
   isConfused(symbol) ? 'Mixed' : symbol
+
+// ── Main-symbol scoring ───────────────────────────────────────────────────────
+// Shared by scripts/compute-deck-symbols.mjs (which bakes deckSymbol into the
+// /lists and /majors indexes) and the deck pages' summary panel (which needs it
+// live for precons, where nothing is precomputed).
+
+// 'infinity' is the wildcard resource — legal under any face — so it is never
+// a deck's defining symbol. ('all', the gear, is an ordinary hard symbol.)
+export const EXCLUDED_SYMBOLS = new Set(['infinity'])
+
+// Resources are printed either bare ("evil") or attuned ("evil-attuned").
+export const baseSymbol = r => r.replace(/-attuned$/, '')
+
+export const faceSymbolsOf = card => [...new Set(
+  (card?.resources ?? []).map(baseSymbol).filter(r => !EXCLUDED_SYMBOLS.has(r))
+)]
+
+/**
+ * Matches a card's resources against the face's symbols.
+ *
+ * Attuned symbols DO match, so a card is recognised as linking through every
+ * symbol it really shares with the face. But an attuned symbol is not evidence
+ * of deck identity on its own: attuned cards slot into any deck, so a card
+ * whose only link is attuned says nothing about the deck's main symbol.
+ *
+ * Returns Map<symbol, matchedViaBareSymbol>.
+ */
+export function faceMatches(resources, faceSet) {
+  const matched = new Map()
+  for (const r of resources) {
+    if (EXCLUDED_SYMBOLS.has(r)) continue
+    const base = baseSymbol(r)
+    if (EXCLUDED_SYMBOLS.has(base) || !faceSet.has(base)) continue
+    matched.set(base, (matched.get(base) ?? false) || base === r)
+  }
+  return matched
+}
+
+/**
+ * For each face symbol, how many main-deck copies link to the face through
+ * that symbol alone, printed bare. The symbol with such copies is the deck's
+ * defining one; more than one means mixed hard symbols.
+ *
+ * `cards` are resolved cards carrying `resources` and `qty`; unresolved ones
+ * (no resources) are skipped.
+ */
+export function singleLinkCounts(faceSyms, cards) {
+  const faceSet = new Set(faceSyms)
+  const counts = new Map(faceSyms.map(r => [r, 0]))
+  for (const c of cards) {
+    if (!c?.resources) continue
+    const matched = faceMatches(c.resources, faceSet)
+    if (matched.size !== 1) continue
+    const [[symbol, viaBareSymbol]] = [...matched]
+    if (!viaBareSymbol) continue
+    counts.set(symbol, (counts.get(symbol) ?? 0) + (c.qty ?? 1))
+  }
+  return counts
+}
+
+/**
+ * A deck's main symbol from its face and resolved main-deck cards — the same
+ * answer compute-deck-symbols.mjs gives for a known printing: the single
+ * active single-link symbol; CONFUSED_SYMBOL when several are active; else the
+ * first face symbol printed anywhere in the deck; else null.
+ */
+export function mainSymbolOf(face, cards) {
+  const syms = faceSymbolsOf(face)
+  if (!syms.length) return null
+  const counts = singleLinkCounts(syms, cards)
+  const active = syms.filter(r => counts.get(r) > 0)
+  if (active.length > 1) return CONFUSED_SYMBOL
+  if (active.length === 1) return active[0]
+  const deckResources = new Set(cards.flatMap(c => c?.resources ?? []).map(baseSymbol))
+  return syms.find(r => deckResources.has(r)) ?? null
+}

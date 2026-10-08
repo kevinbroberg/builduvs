@@ -60,6 +60,8 @@ const isEpic = computed(() => props.faceName?.trim().toLowerCase() === 'champion
           <div>{{ emptyText }}</div>
         </slot>
       </div>
+      <!-- Below the preview: e.g. DeckSummary on read-only decklist pages -->
+      <slot name="face-footer" />
     </div>
   </div>
 </template>
