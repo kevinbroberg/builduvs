@@ -1,6 +1,7 @@
 <script setup>
   import ManySymbols from 'components/cards/detail/ManySymbols.vue'
   import DeckDialog from './DeckDialog.vue'
+  import DeckSummary from './DeckSummary.vue'
   import { useQuasar } from 'quasar'
 
   import { useDeckStore } from "src/stores/deck";
@@ -10,6 +11,7 @@
   import { getCardImage } from 'src/js/image_helper'
   import {
       face,
+      deck,
       partitions,
 
       increment,
@@ -29,16 +31,22 @@
       <DeckDialog  />
   </q-btn-group>
 
-  <q-item-section avatar v-if="face">
-      <q-avatar>
-      <!-- TODO zoom into just the card art here -->
-      <img :src="getCardImage(face.asset)">
-      </q-avatar>  
-      <q-btn icon="clear" @click="clearFace" />
-  </q-item-section>
-  <q-item-section>
-      <q-item-label lines="1" v-if="face">{{face.name}} <ManySymbols :resources="face.resources" /></q-item-label>
-  </q-item-section>
+  <div v-if="face || deck.length" class="deck-view__header">
+    <div v-if="face" class="deck-view__face">
+      <q-avatar square class="card-thumb">
+        <!-- TODO zoom into just the card art here -->
+        <img :src="getCardImage(face.asset)" class="card-thumb__img">
+      </q-avatar>
+      <div class="deck-view__face-text">
+        <div class="deck-view__face-name ellipsis">{{ face.name }}</div>
+        <ManySymbols :resources="face.resources" />
+      </div>
+      <q-btn flat round dense icon="clear" @click="clearFace">
+        <q-tooltip>Remove character</q-tooltip>
+      </q-btn>
+    </div>
+    <DeckSummary light :face="face" :cards="deck" />
+  </div>
 
   <q-list bordered>
     <div v-for="partition in partitions" :key="partition.key">
@@ -65,6 +73,24 @@
 
 <!-- Shared card-list / card-thumb styles now live in src/css/app.sass (global). -->
 <style scoped>
+.deck-view__header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 16px;
+}
+.deck-view__face {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.deck-view__face-text {
+  flex: 1;
+  min-width: 0;
+}
+.deck-view__face-name {
+  font-weight: 700;
+}
 .decrement-btn {
   cursor: pointer;
   transition: filter 0.15s;

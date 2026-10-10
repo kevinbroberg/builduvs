@@ -6,14 +6,16 @@ import {
 } from 'src/js/deck_symbol'
 
 // At-a-glance stats for a read-only decklist, shown under the face preview in
-// DeckStage: symbols, card-type mix, size and average difficulty.
+// DeckStage: symbols, card-type mix, size and average control.
 const props = defineProps({
   face: { type: Object, default: null },
-  // Resolved main-deck cards ({ type, resources, difficulty, qty, ... }).
+  // Resolved main-deck cards ({ type, resources, control, qty, ... }).
   cards: { type: Array, default: () => [] },
   // Precomputed main symbol (/lists, /majors index). Computed live when absent,
   // e.g. for precons.
   deckSymbol: { type: String, default: null },
+  // Dark text for light surfaces (the deck drawer) instead of the dark stage.
+  light: { type: Boolean, default: false },
 })
 
 // Same colors as the global .card-list-* row classes in src/css/app.sass.
@@ -84,19 +86,19 @@ const typeRows = computed(() => {
     }))
 })
 
-const avgDifficulty = computed(() => {
+const avgControl = computed(() => {
   let n = 0, sum = 0
   for (const c of props.cards) {
-    if (typeof c.difficulty !== 'number') continue
+    if (typeof c.control !== 'number') continue
     n += c.qty ?? 1
-    sum += c.difficulty * (c.qty ?? 1)
+    sum += c.control * (c.qty ?? 1)
   }
   return n ? (sum / n).toFixed(1) : null
 })
 </script>
 
 <template>
-  <div v-if="total" class="deck-summary">
+  <div v-if="total" class="deck-summary" :class="{ 'deck-summary--light': light }">
     <!-- Separates the stats from the card name above, which belongs to
          whatever card is being previewed — not necessarily the face. -->
     <div class="deck-summary__divider" role="separator"><span>Deck</span></div>
@@ -145,20 +147,36 @@ const avgDifficulty = computed(() => {
 
     <div class="deck-summary__totals">
       {{ total }} cards
-      <template v-if="avgDifficulty"> · avg difficulty {{ avgDifficulty }}</template>
+      <template v-if="avgControl"> · avg control {{ avgControl }}</template>
     </div>
   </div>
 </template>
 
 <style scoped>
 .deck-summary {
+  --ds-fg: rgba(255, 255, 255, 0.85);
+  --ds-muted: rgba(255, 255, 255, 0.45);
+  --ds-line: rgba(255, 255, 255, 0.2);
+  --ds-chip-border: rgba(255, 255, 255, 0.15);
+  --ds-chip-main-border: rgba(255, 255, 255, 0.6);
+  --ds-chip-main-bg: rgba(255, 255, 255, 0.1);
+  --ds-track: rgba(255, 255, 255, 0.1);
   width: 100%;
   max-width: 300px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--ds-fg);
+}
+.deck-summary--light {
+  --ds-fg: rgba(0, 0, 0, 0.8);
+  --ds-muted: rgba(0, 0, 0, 0.45);
+  --ds-line: rgba(0, 0, 0, 0.15);
+  --ds-chip-border: rgba(0, 0, 0, 0.15);
+  --ds-chip-main-border: rgba(0, 0, 0, 0.5);
+  --ds-chip-main-bg: rgba(0, 0, 0, 0.05);
+  --ds-track: rgba(0, 0, 0, 0.08);
 }
 
 .deck-summary__divider {
@@ -170,14 +188,14 @@ const avgDifficulty = computed(() => {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--ds-muted);
 }
 .deck-summary__divider::before,
 .deck-summary__divider::after {
   content: '';
   flex: 1;
   height: 1px;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--ds-line);
 }
 
 .deck-summary__symbols {
@@ -199,14 +217,14 @@ const avgDifficulty = computed(() => {
   align-items: center;
   gap: 4px;
   padding: 2px 8px 2px 4px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid var(--ds-chip-border);
   border-radius: 999px;
   opacity: 0.55;
 }
 .sym-chip--main {
   opacity: 1;
-  border-color: rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--ds-chip-main-border);
+  background: var(--ds-chip-main-bg);
 }
 .sym-chip__count {
   font-weight: 700;
@@ -218,7 +236,7 @@ const avgDifficulty = computed(() => {
   height: 10px;
   border-radius: 5px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--ds-track);
 }
 .type-bar__seg + .type-bar__seg {
   border-left: 1px solid rgba(0, 0, 0, 0.35);
