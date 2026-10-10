@@ -41,6 +41,39 @@ for (const card of cards) {
 // cards through it.
 export const cardByUvsId = new Map(cards.filter(c => c.uvs_id).map(c => [c.uvs_id, c]))
 
+// asset → card. Assets are unique (see above), and they're what preview slots
+// like DeckStage are handed.
+export const cardByAsset = new Map(cards.map(c => [c.asset, c]))
+
+// ----- Double-sided cards -----------------------------------------------------
+//
+// Double-sided cards are stored as two separate records sharing a collector number,
+// the back side suffixed "B" — e.g. aot01 #285 "Attack Titan Attacks!" (attack) and
+// #285B "The Attack Titan" (backup), each with its own art. There is no explicit link
+// field, so the number suffix IS the join. (Back sides happen to sit immediately after
+// their front in the source arrays, but that's incidental — keying off the number is
+// robust to reordering or a re-scrape.)
+//
+// Note the suffix marks any double-sided back, not just Shift: of the 44 B-records in
+// the pool, 22 are Shift attack backs and 22 are transforming characters.
+
+const cardNumber = (card) =>
+  String(card.numero !== undefined ? card.numero : card.card_number)
+
+let transformIndex = null
+
+export function transformTarget(card) {
+  if (!card || !card.extension_short) return null
+  if (!transformIndex) {
+    transformIndex = new Map()
+    for (const c of cards) transformIndex.set(`${c.extension_short}|${cardNumber(c)}`, c)
+  }
+  const n = cardNumber(card)
+  // Front -> back, and back -> front, so a transform is reversible.
+  const wanted = /B$/i.test(n) ? n.replace(/B$/i, '') : `${n}B`
+  return transformIndex.get(`${card.extension_short}|${wanted}`) || null
+}
+
 // --- Card schema: expected shape after preprocessing ---
 // 'required' = must be present on every card
 // 'type:X'   = required only when card.type === X

@@ -1,6 +1,7 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { getCardImage } from 'src/js/image_helper'
+import { cardByAsset, transformTarget } from 'src/js/card_provider'
 
 const props = defineProps({
   // Card asset shown large in the right-hand preview slot (null = empty state).
@@ -16,6 +17,14 @@ const props = defineProps({
 defineEmits(['clear-face'])
 
 const isEpic = computed(() => props.faceName?.trim().toLowerCase() === 'champion of the children')
+
+// Double-sided cards get a "transform" button that flips the preview over to the
+// other side. Purely a viewing aid — the deck still holds whichever side it holds.
+const otherSide = computed(() => transformTarget(cardByAsset.get(props.faceAsset)))
+const transformed = ref(false)
+watch(() => props.faceAsset, () => { transformed.value = false })
+
+const shownName = computed(() => (transformed.value ? otherSide.value?.name : props.faceName))
 </script>
 
 <template>
@@ -29,17 +38,42 @@ const isEpic = computed(() => props.faceName?.trim().toLowerCase() === 'champion
     <div class="deck-stage__face">
       <template v-if="faceAsset">
         <div class="face-card-wrap">
-          <q-img
-            class="face-card"
-            fit="contain"
-            :ratio="59 / 86"
-            :src="getCardImage(faceAsset)"
-            :alt="faceName"
-          />
-          <div v-if="isEpic" class="epic-overlay">EPIC</div>
+          <div class="face-flipper" :class="{ 'face-flipper--flipped': transformed }">
+            <div class="face-side">
+              <q-img
+                class="face-card"
+                fit="contain"
+                :ratio="59 / 86"
+                :src="getCardImage(faceAsset)"
+                :alt="faceName"
+              />
+              <div v-if="isEpic" class="epic-overlay">EPIC</div>
+            </div>
+            <div v-if="otherSide" class="face-side face-side--back">
+              <q-img
+                class="face-card"
+                fit="contain"
+                :ratio="59 / 86"
+                :src="getCardImage(otherSide.asset)"
+                :alt="otherSide.name"
+              />
+            </div>
+          </div>
+          <q-btn
+            v-if="otherSide"
+            class="face-transform"
+            round
+            dense
+            color="purple-7"
+            icon="flip_camera_android"
+            @click="transformed = !transformed"
+          >
+            <q-tooltip>{{ transformed ? 'Transform back to' : 'Transform into' }}
+              {{ transformed ? faceName : otherSide.name }}</q-tooltip>
+          </q-btn>
         </div>
-        <div v-if="faceName || clearable" class="face-name-row">
-          <div v-if="faceName" class="face-name">{{ faceName }}</div>
+        <div v-if="shownName || clearable" class="face-name-row">
+          <div v-if="shownName" class="face-name">{{ shownName }}</div>
           <q-btn
             v-if="clearable"
             class="face-clear"
@@ -112,6 +146,44 @@ const isEpic = computed(() => props.faceName?.trim().toLowerCase() === 'champion
   position: relative;
   width: 100%;
   max-width: 300px;
+}
+/* 3D flip between the two sides of a double-sided card */
+.face-card-wrap {
+  perspective: 1200px;
+}
+.face-flipper {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.face-flipper--flipped {
+  transform: rotateY(180deg);
+}
+.face-side {
+  position: relative;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.face-side--back {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(180deg);
+}
+.face-transform {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  opacity: 0.9;
+}
+.face-transform:hover {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .face-flipper {
+    transition: none;
+  }
 }
 .face-card {
   width: 100%;
