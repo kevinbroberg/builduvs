@@ -262,19 +262,20 @@ watch(playerId, (id) => { if (id) ensurePlayerData() }, { immediate: true })
 // Switching tabs while a deck filter is active needs the new tab's rows.
 watch(activeShardKey, () => { if (playerId.value || isDeckFiltering.value || hasLoadedPopularOnce) ensurePlayerData() })
 
-// standing → qty of the selected card, restricted to events in scope. Reset
-// whenever the card selection changes; nothing is fetched until a card is
-// actually picked.
-const cardQtyByKey = ref(null) // Map<"eventId|standing", qty> | null while none selected
-watch([filterCard, filterMode], async ([card, mode]) => {
-  if (!card) { cardQtyByKey.value = null; return }
-  await ensurePlayerData()
-  if (!playerData.value) { cardQtyByKey.value = null; return }
-  const sections = mode === 'character' ? ['character'] : ['character', 'main']
+// standing → qty of the selected card, restricted to events in scope. Nothing
+// is fetched until a card is actually picked. Derived from playerData (not
+// snapshotted in a watcher) so a tab switch that swaps in another shard
+// recomputes it — otherwise the old shard's matches are checked against the
+// new tab's events and the filter reports 0 results.
+watch(filterCard, (card) => { if (card) ensurePlayerData() })
+const cardQtyByKey = computed(() => { // Map<"eventId|standing", qty> | null while none selected
+  const card = filterCard.value
+  if (!card || !playerData.value) return null
+  const sections = filterMode.value === 'character' ? ['character'] : ['character', 'main']
   const rows = deckData.findStandings(playerData.value, {
     uvsId: card.uvs_id, cardName: card.name, sections,
   })
-  cardQtyByKey.value = new Map(rows.map((r) => [`${r.eventId}|${r.standing}`, r.qty]))
+  return new Map(rows.map((r) => [`${r.eventId}|${r.standing}`, r.qty]))
 })
 
 const deckFilterResults = computed(() => {
