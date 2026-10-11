@@ -86,6 +86,25 @@ const typeRows = computed(() => {
     }))
 })
 
+// Copies blocking in each zone, high to low, with the per-modifier breakdown
+// for the tooltip. Zones the deck doesn't block in are left out.
+const blockChips = computed(() => ['high', 'mid', 'low'].map(zone => {
+  let count = 0
+  const byMod = new Map()
+  for (const c of props.cards) {
+    if (c.block_zone !== zone) continue
+    const qty = c.qty ?? 1
+    const mod = c.block_modifier || 0
+    count += qty
+    byMod.set(mod, (byMod.get(mod) ?? 0) + qty)
+  }
+  return {
+    zone,
+    count,
+    breakdown: [...byMod].sort(([a], [b]) => a - b).map(([mod, n]) => ({ mod, n })),
+  }
+}).filter(chip => chip.count > 0))
+
 const avgControl = computed(() => {
   let n = 0, sum = 0
   for (const c of props.cards) {
@@ -142,6 +161,18 @@ const avgControl = computed(() => {
         <span class="type-legend__name">{{ row.type }}</span>
         <span class="type-legend__count">{{ row.count }}</span>
         <span class="type-legend__pct">{{ Math.round(row.pct) }}%</span>
+      </span>
+    </div>
+
+    <div v-if="blockChips.length" class="deck-summary__symbols block-zones-summary">
+      <span class="deck-summary__label">Blocks</span>
+      <span v-for="chip in blockChips" :key="chip.zone" class="sym-chip sym-chip--main">
+        <ResourceSymbol :element="chip.zone" is-block-symbol size="20px" />
+        <span class="sym-chip__count">{{ chip.count }}</span>
+        <q-tooltip>
+          <div class="text-weight-bold">{{ cap(chip.zone) }} block</div>
+          <div v-for="b in chip.breakdown" :key="b.mod">+{{ b.mod }}: {{ cardsLabel(b.n) }}</div>
+        </q-tooltip>
       </span>
     </div>
 

@@ -12,7 +12,7 @@ export function getAttackZoneImage(name) {
 }
 
 export function getBlockZoneImage(name) {
-  return symbolImages[`/src/assets/images/aot-icon-block-${name}-.png`]?.default || ''
+  return symbolImages[`/src/assets/images/aot-icon-block-${name}.png`]?.default || ''
 }
 
 export function getCardImage(asset) {
