@@ -81,6 +81,14 @@ module.exports = configure(function (/* ctx */) {
     devServer: {
       // https: true
       open: true, // opens browser window automatically
+      // Mirrors the /hydra-api rule in public/_redirects (see src/stores/hydra.js).
+      proxy: {
+        '/hydra-api': {
+          target: 'https://api-hydra.carde.io',
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/hydra-api/, '/api/v2'),
+        },
+      },
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework

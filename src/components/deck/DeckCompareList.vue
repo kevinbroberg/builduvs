@@ -26,7 +26,7 @@ const partitions = computed(() => {
     main.push({
       key: 'sideboard',
       label: `Sideboard: ${sideQty}`,
-      cards: props.sideList.map(c => ({ ...c, type: 'sideboard' })),
+      cards: props.sideList,
     })
   }
   return main
@@ -47,7 +47,8 @@ const partitions = computed(() => {
         <q-separator />
         <q-item-label header>{{ partition.label }}</q-item-label>
         <q-item v-for="card in partition.cards" :key="card.asset" no-wrap dense clickable
-          :class="`card-list-${card.type}`" @click="emit('cardClick', card)">
+          :class="partition.key === 'sideboard' ? 'card-list-side' : `card-list-${card.type}`"
+          @click="emit('cardClick', card)">
           <q-item-section avatar>
             <q-avatar square class="card-thumb">
               <img :src="getCardImage(card.asset)" class="card-thumb__img" />

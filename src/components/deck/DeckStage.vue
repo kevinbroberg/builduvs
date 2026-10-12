@@ -7,11 +7,15 @@ const props = defineProps({
   // Card asset shown large in the right-hand preview slot (null = empty state).
   faceAsset: { type: String, default: null },
   faceName: { type: String, default: '' },
-  emptyText: { type: String, default: 'No face character set' },
+  emptyText: { type: String, default: 'No character set' },
   // Narrows the body column so list-view color rows don't stretch full width.
   listView: { type: Boolean, default: false },
   // Show an overlay button to clear the face (edit contexts only).
   clearable: { type: Boolean, default: false },
+  // Makes the face slot a card_drag.js drop target with this zone name.
+  faceDropZone: { type: String, default: null },
+  // Highlights the face slot while a valid card hovers it.
+  faceDropActive: { type: Boolean, default: false },
 })
 
 defineEmits(['clear-face'])
@@ -35,7 +39,11 @@ const shownName = computed(() => (transformed.value ? otherSide.value?.name : pr
     </div>
 
     <!-- Right: large face preview -->
-    <div class="deck-stage__face">
+    <div
+      class="deck-stage__face"
+      :class="{ 'deck-stage__face--drop': faceDropActive }"
+      :data-drop-zone="faceDropZone || undefined"
+    >
       <template v-if="faceAsset">
         <div class="face-card-wrap">
           <div class="face-flipper" :class="{ 'face-flipper--flipped': transformed }">
@@ -84,7 +92,7 @@ const shownName = computed(() => (transformed.value ? otherSide.value?.name : pr
             size="sm"
             @click="$emit('clear-face')"
           >
-            <q-tooltip>Clear face character</q-tooltip>
+            <q-tooltip>Clear character</q-tooltip>
           </q-btn>
         </div>
       </template>
@@ -141,6 +149,11 @@ const shownName = computed(() => (transformed.value ? otherSide.value?.name : pr
   position: sticky;
   top: 60px;
   align-self: flex-start;
+}
+.deck-stage__face--drop {
+  outline: 2px dashed #ffab40;
+  outline-offset: 8px;
+  border-radius: 12px;
 }
 .face-card-wrap {
   position: relative;

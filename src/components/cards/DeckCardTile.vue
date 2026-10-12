@@ -5,7 +5,8 @@ import { useDeckStore } from 'src/stores/deck'
 
 const props = defineProps({
   card: Object,
-  main: { type: Boolean, default: true },
+  // Which board the tile sits on: 'main' | 'side' | 'maybe'.
+  board: { type: String, default: 'main' },
   // editable = wired to the live deck store (add/remove/side, live quantity).
   // Non-editable tiles are static displays (tournament lists) that show card.qty
   // and emit `card-click` so the parent can focus the card.
@@ -28,8 +29,17 @@ const sideActions = {
   quantity: () => store.sideQuantity(props.card.asset),
 }
 
-const actions = props.main ? mainActions : sideActions
-const swapLabel = props.main ? 'Side' : 'Main'
+// The button layout is the same on every board; the maybeboard is otherwise
+// reached by drag, so its swap button just promotes a copy to the main deck.
+const maybeActions = {
+  increment: () => store.incrementMaybe(props.card),
+  decrement: () => store.decrementMaybe(props.card),
+  side: () => store.moveCard(props.card, 'maybe', 'main'),
+  quantity: () => store.maybeQuantity(props.card.asset),
+}
+
+const actions = { main: mainActions, side: sideActions, maybe: maybeActions }[props.board]
+const swapLabel = props.board === 'main' ? 'Side' : 'Main'
 
 const qty = computed(() => (props.editable ? actions.quantity() : props.card.qty) || 0)
 </script>

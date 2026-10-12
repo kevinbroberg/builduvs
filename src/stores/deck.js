@@ -4,6 +4,10 @@ export const useDeckStore = defineStore('deck', {
   state: () => ({
     deck: {},
     side: {},
+    // Cards under consideration. Deliberately outside deck/side: exports and the
+    // deck-symbol summary read only those, so the maybeboard never leaks into them.
+    // (New keys here need a backfill in stores/index.js; see BUVS-0005 there.)
+    maybe: {},
     // Must default to null, not undefined: JSON.stringify drops undefined keys,
     // so an undefined face would vanish from persisted state and Pinia would
     // hydrate the store without a `face` ref — after which setting a character
@@ -16,8 +20,11 @@ export const useDeckStore = defineStore('deck', {
     currentDeckFormat: null,
     currentDeckModified: null,
     currentCardeioId: null,
+    // The play.uvsgames.com (Hydra) deck this one was last published to, so a
+    // re-publish overwrites it rather than making a copy.
+    currentHydraId: null,
 
-    // Saved decks library: { [id]: { id, name, format, modified, deck, side, face } }
+    // Saved decks library: { [id]: { id, name, format, modified, deck, side, maybe, face } }
     savedDecks: {},
 
     // Transient handoff for the Compare page
@@ -29,6 +36,8 @@ export const useDeckStore = defineStore('deck', {
     hasSide: (state) => Object.keys(state.side).length > 0,
     getDeckList: (state) => Object.keys(state.deck).map(k => state.deck[k]),
     getSideList: (state) => Object.keys(state.side).map(k => state.side[k]),
+    hasMaybe: (state) => Object.keys(state.maybe).length > 0,
+    getMaybeList: (state) => Object.values(state.maybe),
     getFace: (state) => state.face,
     quantity: (state) => (asset) => {
       let card = state.deck[asset]
@@ -40,6 +49,7 @@ export const useDeckStore = defineStore('deck', {
       let card = state.side[asset]
       return card ? card.qty : 0
     },
+    maybeQuantity: (state) => (asset) => state.maybe[asset]?.qty || 0,
     savedDecksList: (state) => {
       return Object.values(state.savedDecks || {})
         .sort((a, b) => new Date(b.modified) - new Date(a.modified))
@@ -83,6 +93,25 @@ export const useDeckStore = defineStore('deck', {
         if (this.face === card) this.face = null
       }
     },
+    incrementMaybe(card) {
+      let count = this.maybe[card.asset]?.qty || 0
+      let max = card.limit || 4
+      this.maybe[card.asset] = { ...card, qty: Math.min(count + 1, max) }
+    },
+    decrementMaybe(card) {
+      let count = (this.maybe[card.asset]?.qty || 1) - 1
+      if (count > 0) this.maybe[card.asset] = { ...card, qty: count }
+      else delete this.maybe[card.asset]
+    },
+    // Moves one copy between boards: 'main' | 'side' | 'maybe'.
+    moveCard(card, from, to) {
+      if (from === to) return
+      const { qty, ...bare } = card
+      const remove = { main: this.decrement, side: this.decrementSide, maybe: this.decrementMaybe }[from]
+      const add = { main: this.increment, side: this.incrementSide, maybe: this.incrementMaybe }[to]
+      remove.call(this, card)
+      add.call(this, bare)
+    },
     setFace(card) {
       this.face = card
     },
@@ -92,6 +121,7 @@ export const useDeckStore = defineStore('deck', {
     nuke() {
       this.deck = {}
       this.side = {}
+      this.maybe = {}
       this.face = null
     },
     setQty(card, qty) {
@@ -110,7 +140,7 @@ export const useDeckStore = defineStore('deck', {
       this.increment(card)
     },
 
-    loadFromCards({ face, deck, side, name }) {
+    loadFromCards({ face, deck, side, maybe, name }) {
       this.nuke()
       if (face) this.face = { ...face }
       for (const card of (deck || [])) {
@@ -119,11 +149,15 @@ export const useDeckStore = defineStore('deck', {
       for (const card of (side || [])) {
         if (card.asset) this.side[card.asset] = { ...card }
       }
+      for (const card of (maybe || [])) {
+        if (card.asset) this.maybe[card.asset] = { ...card }
+      }
       this.currentDeckName = name || 'Untitled Deck'
       this.currentDeckId = null
       this.currentDeckFormat = null
       this.currentDeckModified = new Date().toISOString()
       this.currentCardeioId = null
+      this.currentHydraId = null
     },
 
     setPendingComparison(data) {
@@ -148,8 +182,10 @@ export const useDeckStore = defineStore('deck', {
         modified: now,
         deck: JSON.parse(JSON.stringify(this.deck)),
         side: JSON.parse(JSON.stringify(this.side)),
+        maybe: JSON.parse(JSON.stringify(this.maybe)),
         face: this.face ? JSON.parse(JSON.stringify(this.face)) : null,
         cardeioId: this.currentCardeioId ?? null,
+        hydraId: this.currentHydraId ?? null,
       }
 
       this.currentDeckId = id
@@ -164,6 +200,7 @@ export const useDeckStore = defineStore('deck', {
 
       this.deck = JSON.parse(JSON.stringify(saved.deck))
       this.side = JSON.parse(JSON.stringify(saved.side))
+      this.maybe = JSON.parse(JSON.stringify(saved.maybe ?? {}))
       this.face = saved.face ? JSON.parse(JSON.stringify(saved.face)) : null
 
       this.currentDeckId = saved.id
@@ -171,6 +208,7 @@ export const useDeckStore = defineStore('deck', {
       this.currentDeckFormat = saved.format
       this.currentDeckModified = saved.modified
       this.currentCardeioId = saved.cardeioId ?? null
+      this.currentHydraId = saved.hydraId ?? null
     },
 
     deleteDeck(deckId) {
@@ -190,6 +228,7 @@ export const useDeckStore = defineStore('deck', {
       this.currentDeckFormat = null
       this.currentDeckModified = null
       this.currentCardeioId = null
+      this.currentHydraId = null
     },
   },
 })

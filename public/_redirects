@@ -1,1 +1,4 @@
+# Deck publishing to play.uvsgames.com (src/stores/hydra.js). Hydra's CORS doesn't
+# admit builduvs.com, so we forward. Must precede the SPA fallback.
+/hydra-api/* https://api-hydra.carde.io/api/v2/:splat 200
 /* /index.html 200

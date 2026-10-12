@@ -14,7 +14,13 @@ export default store((/* { ssrContext } */) => {
       // re-runs the state factory. If an earlier save dropped `face` (JSON.stringify
       // omits undefined keys), the deck store loads with no `face` ref and setting a
       // character can never persist. Backfill the key so the ref always exists.
-      if (parsed.deck && !("face" in parsed.deck)) parsed.deck.face = null;
+      // Same for deck-store keys added after users already had saved state.
+      const DECK_BACKFILL = { face: null, maybe: {}, currentHydraId: null };
+      if (parsed.deck) {
+        for (const [key, value] of Object.entries(DECK_BACKFILL)) {
+          if (!(key in parsed.deck)) parsed.deck[key] = value;
+        }
+      }
       pinia.state.value = parsed;
     }
   } catch (e) {

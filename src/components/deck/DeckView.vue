@@ -17,12 +17,18 @@
       increment,
       decrement,
       clearFace,
-
+      SIDEKEY,
+      MAYBEKEY,
   } from './deck_logic'
 
   const deckStore = useDeckStore()
   const { hasDeck } = storeToRefs(deckStore)
-  const { decrementSide, incrementSide } = deckStore
+
+  // Which board's +/- a row's buttons drive, by the group it's listed under.
+  const boardOps = partition =>
+    partition.key === SIDEKEY ? { inc: deckStore.incrementSide, dec: deckStore.decrementSide }
+    : partition.key === MAYBEKEY ? { inc: deckStore.incrementMaybe, dec: deckStore.decrementMaybe }
+    : { inc: increment, dec: decrement }
 </script>
 
 <template>
@@ -53,16 +59,17 @@
       <q-separator/>
       <!-- <q-item-label v-if="howPartition == symbol" header><ManySymbols :card=partition.cards[0].resources /></q-item-label> -->
       <q-item-label header>{{partition.label}}</q-item-label> <!-- v-else -->
-      <q-item v-for="card in partition.cards" :key="card.asset" no-wrap dense :class="`card-list-${card.type}`">
+      <q-item v-for="card in partition.cards" :key="card.asset" no-wrap dense
+        :class="partition.key === SIDEKEY || partition.key === MAYBEKEY ? 'card-list-side' : `card-list-${card.type}`">
         <q-item-section avatar>
-            <q-avatar square class="card-thumb" @click="card.type === 'sideboard' ? incrementSide(card) : increment(card)">
+            <q-avatar square class="card-thumb" @click="boardOps(partition).inc(card)">
               <img :src="getCardImage(card.asset)" class="card-thumb__img" />
             </q-avatar>
         </q-item-section>
         <q-item-section>
             <q-item-label lines="2">
               <q-btn flat round no-margin icon="remove" class="decrement-btn"
-                @click="card.type === 'sideboard' ? decrementSide(card) : decrement(card)"/>
+                @click="boardOps(partition).dec(card)"/>
               {{card.qty}} {{card.name}}
             </q-item-label>            
         </q-item-section>
