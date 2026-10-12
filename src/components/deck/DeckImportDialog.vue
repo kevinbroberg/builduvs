@@ -1,5 +1,5 @@
 <script setup>
-import { cards } from 'src/js/card_provider.js'
+import { parseDeckText } from 'src/js/deck_text.js'
 import { ref, computed, watch } from 'vue'
 import { useDialogPluginComponent } from 'quasar'
 import { useCardeioStore } from 'src/stores/cardeio'
@@ -8,9 +8,7 @@ const cardeio = useCardeioStore()
 const text = ref('')
 const fileModel = ref(null)
 const loading = ref(false)
-const loadedDeckName = ref('')
 
-const uvsultraPattern = /https?:\/\/uvsultra\.online\/deck\.php\?deck=(\w+)/
 const cardeioPattern = /https?:\/\/play\.uvsgames\.com\/decks\/([a-f0-9]{24})/
 
 const emit = defineEmits([...useDialogPluginComponent.emits])
@@ -57,11 +55,9 @@ watch(text, async (val) => {
   const cardeioMatch = trimmed.match(cardeioPattern)
   if (cardeioMatch && cardeioMatch[0] === trimmed) {
     loading.value = true
-    loadedDeckName.value = ''
     try {
       const vs = createVirtualStore()
       const { name } = await cardeio.pullDeck(cardeioMatch[1], vs)
-      loadedDeckName.value = name
       text.value = ''
       emitParsed(vs, name)
     } catch (e) {
@@ -69,27 +65,6 @@ watch(text, async (val) => {
     } finally {
       loading.value = false
     }
-    return
-  }
-
-  const uvsMatch = trimmed.match(uvsultraPattern)
-  if (!uvsMatch || uvsMatch[0] !== trimmed) return
-  loading.value = true
-  loadedDeckName.value = ''
-  try {
-    const res = await fetch(`https://corsproxy.io/?${encodeURIComponent(trimmed)}`)
-    const html = await res.text()
-    const doc = new DOMParser().parseFromString(html, 'text/html')
-    const forumCode = doc.querySelector('textarea')?.value
-    if (forumCode) {
-      const nameMatch = forumCode.match(/\[b\]\[url=[^\]]+\](.+?)\[\/url\]\[\/b\]/)
-      loadedDeckName.value = nameMatch?.[1] || 'Unknown deck'
-      text.value = forumCode
-    }
-  } catch (e) {
-    console.log('Failed to fetch UVSUltra deck', e)
-  } finally {
-    loading.value = false
   }
 })
 
@@ -157,38 +132,9 @@ watch(fileModel, (file) => {
 const showInputComponents = computed(() => !!text.value)
 
 function parseTextInto(vs) {
-  let regex = /^\s*(\d+)x?\)? (.*?)\s*$/
-  let sideboard = /\n\s*(sideboard|\[b\]Side)/i
-  let trailingDigit = /\d$/
-
-  let decks = text.value.split(sideboard)
-  let splitDecks = decks.map(d => d.split('\n').map(s => s.match(regex)).filter(i => i))
-
-  proc(splitDecks[0], (card) => vs.increment(card))
-  proc(splitDecks[2], (card) => vs.incrementSide(card))
-
-  function proc(deck, action) {
-    if (!deck) return
-    for (let idx in deck) {
-      let match = deck[idx]
-      let qty = Number.parseInt(match[1])
-      let myName = match[2].toLowerCase()
-      let myAlias = trailingDigit.test(myName) ? '' : (myName + 1)
-      let actualCard = null
-      for (let key in cards) {
-        let tlc = cards[key].name.toLowerCase()
-        if (tlc == myName || (myAlias && tlc == myAlias)) {
-          actualCard = cards[key]
-          break
-        }
-      }
-      if (actualCard) {
-        for (let i = 0; i < qty; ++i) action(actualCard)
-      } else {
-        console.log(`Missed ${myName}`)
-      }
-    }
-  }
+  const { main, side } = parseDeckText(text.value)
+  for (const { card, qty } of main) for (let i = 0; i < qty; ++i) vs.increment(card)
+  for (const { card, qty } of side) for (let i = 0; i < qty; ++i) vs.incrementSide(card)
 }
 
 function emitParsed(vs, name) {
@@ -203,7 +149,7 @@ function emitParsed(vs, name) {
 function finalizeFromText() {
   const vs = createVirtualStore()
   parseTextInto(vs)
-  emitParsed(vs, loadedDeckName.value || 'Comparison Deck')
+  emitParsed(vs)
 }
 </script>
 
@@ -216,15 +162,12 @@ function finalizeFromText() {
         </q-file>
 
         <q-input outlined type="textarea" v-model="text"
-          placeholder="Enter deck as text, upload a file, or paste a UVSUltra or carde.io deck link"
+          placeholder="Enter deck as text, upload a file, or paste a carde.io deck link"
           class="loader-textarea"
           :loading="loading"
           :disable="loading"
         />
         <div v-if="loading" class="q-mt-sm text-caption text-grey">Fetching deck...</div>
-        <q-chip v-if="loadedDeckName" icon="check_circle" color="positive" text-color="white" class="q-mt-sm">
-          Loaded: {{ loadedDeckName }}
-        </q-chip>
       </q-card-section>
 
       <q-card-actions align="right">
