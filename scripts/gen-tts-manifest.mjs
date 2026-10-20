@@ -46,7 +46,7 @@ const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf8'))
 // ── Card pool — mirrors src/js/card_provider.js (file order, asset, uvs_id) ──
 
 const CARD_FILES = [
-  'sf6-2026.json', 'tekken8.json', 'mha09.json', 'kaiju.json', 'teamhero.json', 'gg-critrole.json',
+  'fairytail.json', 'sf6-2026.json', 'tekken8.json', 'mha09.json', 'kaiju.json', 'teamhero.json', 'gg-critrole.json',
   'sjw-mha4.json', 'heroesclash.json', 'rampage_dlc.json', 'provs.json',
   'rampage.json', 'cards.json',
 ]

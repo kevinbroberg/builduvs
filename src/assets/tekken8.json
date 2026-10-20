@@ -12,9 +12,12 @@
       "standard"
     ],
     "resources": [],
-    "text": "Unique\n\nAt the start of your End Phase, sacrifice this token.\n\nResponse: After your attack deals no damage, your rival loses 1 health. This effect cannot reduce your rival's health below 1.",
+    "text": "At the start of your End Phase, sacrifice this token.\n\nResponse: After your attack deals no damage, your rival loses 1 health. This effect cannot reduce your rival's health below 1.",
     "asset": "tk802/000.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/000.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/000.jpg",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -637,7 +640,8 @@
       "chaos-attuned"
     ],
     "keywords": [
-      "Slam"
+      "Slam",
+      "Combo(Kick)"
     ],
     "text": "Combo Blitz: Add the active arena to its owner's discard pile.",
     "difficulty": 3,
@@ -845,7 +849,7 @@
     "resources": [
       "earth-attuned"
     ],
-    "text": "Powerful: 3 - Punch\n\nResponse: After this attack is blocked, flip 1 rival foundation.",
+    "text": "Response: After this attack is blocked, flip 1 rival foundation.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 1,
@@ -854,7 +858,11 @@
     "attack_zone": "mid",
     "damage": 5,
     "asset": "tk802/034.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/034.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/034.jpg",
+    "keywords": [
+      "Powerful: 3",
+      "Punch"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -1248,7 +1256,7 @@
     "resources": [
       "good-attuned"
     ],
-    "text": "EX: 2 - Kick\n\nBlitz: Your checks to play  attacks cannot be modified by rival effects this turn.",
+    "text": "Blitz: Your checks to play  attacks cannot be modified by rival effects this turn.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 2,
@@ -1257,7 +1265,11 @@
     "attack_zone": "low",
     "damage": 6,
     "asset": "tk802/050.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/050.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/050.jpg",
+    "keywords": [
+      "EX: 2",
+      "Kick"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -1372,7 +1384,7 @@
     "resources": [
       "life-attuned"
     ],
-    "text": "Throw\n\nBlitz: You may change this card's block zone. This attack gets +1 damage for each different block zone on cards in your card pool.",
+    "text": "Blitz: You may change this card's block zone. This attack gets +1 damage for each different block zone on cards in your card pool.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -1381,7 +1393,10 @@
     "attack_zone": "mid",
     "damage": 3,
     "asset": "tk802/055.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/055.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/055.jpg",
+    "keywords": [
+      "Throw"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -1468,7 +1483,8 @@
       "order-attuned"
     ],
     "keywords": [
-      "Kick"
+      "Kick",
+      "Stun: 1"
     ],
     "text": "Response: After this attack deals damage, rival foundations cannot be readied during this Combat Phase.",
     "difficulty": 4,
@@ -1496,7 +1512,7 @@
     "resources": [
       "order-attuned"
     ],
-    "text": "Powerful: 2 - Punch\n\nResponse: After your rival blocks this attack, freeze 1 rival foundation committed during this attack.",
+    "text": "Response: After your rival blocks this attack, freeze 1 rival foundation committed during this attack.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 1,
@@ -1505,7 +1521,11 @@
     "attack_zone": "low",
     "damage": 4,
     "asset": "tk802/060.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/060.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/060.jpg",
+    "keywords": [
+      "Powerful: 2",
+      "Punch"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -1692,7 +1712,7 @@
     "resources": [
       "water-attuned"
     ],
-    "text": "EX: 2 - Punch\n\n[Card Pool] Your Punch attacks get +1 speed.",
+    "text": "[Card Pool] Your Punch attacks get +1 speed.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -1701,7 +1721,11 @@
     "attack_zone": "high",
     "damage": 4,
     "asset": "tk802/068.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/068.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/068.jpg",
+    "keywords": [
+      "EX: 2",
+      "Punch"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -1947,13 +1971,18 @@
       "death",
       "evil"
     ],
-    "text": "Breaker: 1 - Unique - Weapon\n\nResponse: After you play an attack with printed damage 3 or less, that attack gets +1 damage. If you have a Heat token in your stage, that attack gets +2 damage instead.",
+    "text": "Response: After you play an attack with printed damage 3 or less, that attack gets +1 damage. If you have a Heat token in your stage, that attack gets +2 damage instead.",
     "difficulty": 1,
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
     "asset": "tk802/078.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/078.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/078.jpg",
+    "keywords": [
+      "Breaker: 1",
+      "Unique",
+      "Weapon"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -2028,13 +2057,17 @@
       "life",
       "order"
     ],
-    "text": "Unique - Weapon\n\nEnhance Commit: Your attack gets +2 speed or +2 damage.\n\nResponse [Tenacious]: After this card is committed, ready another asset in your stage that hasn't been readied this turn.",
+    "text": "Enhance Commit: Your attack gets +2 speed or +2 damage.\n\nResponse [Tenacious]: After this card is committed, ready another asset in your stage that hasn't been readied this turn.",
     "difficulty": 4,
     "control": 4,
     "block_modifier": 2,
     "block_zone": "mid",
     "asset": "tk802/081.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/081.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/081.jpg",
+    "keywords": [
+      "Unique",
+      "Weapon"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -2053,13 +2086,17 @@
       "good",
       "void"
     ],
-    "text": "Unique - Weapon\n\nEnhance Commit: This attack gets +3 speed and +3 damage. If it deals damage, gain 2 health. Your rival may remove 1 card from their hand to cancel this ability.",
+    "text": "Enhance Commit: This attack gets +3 speed and +3 damage. If it deals damage, gain 2 health. Your rival may remove 1 card from their hand to cancel this ability.",
     "difficulty": 5,
     "control": 5,
     "block_modifier": 2,
     "block_zone": "low",
     "asset": "tk802/082.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/082.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/082.jpg",
+    "keywords": [
+      "Unique",
+      "Weapon"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -2080,7 +2117,8 @@
     ],
     "keywords": [
       "Kick",
-      "Punch"
+      "Punch",
+      "Throw"
     ],
     "text": "Blitz: Seal 1 rival foundation. Unseal it when this attack resolves unless you have a Heat token in your stage.",
     "difficulty": 4,
@@ -2143,7 +2181,8 @@
       "life"
     ],
     "keywords": [
-      "Taunt"
+      "Taunt",
+      "Throw"
     ],
     "text": "If you have 5 or less health, this attack gets -1 difficulty.\n\nBlitz: This attack gets +1 damage for each Throw in your card pool.",
     "difficulty": 5,
@@ -2205,7 +2244,8 @@
       "life"
     ],
     "keywords": [
-      "Kick"
+      "Kick",
+      "Powerful: 2"
     ],
     "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
     "difficulty": 4,
@@ -2235,7 +2275,7 @@
       "earth",
       "evil"
     ],
-    "text": "Throw\n\nBlitz: If you have a Heat token in your stage, this attack gains Powerful: 2.",
+    "text": "Blitz: If you have a Heat token in your stage, this attack gains Powerful: 2.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -2244,7 +2284,10 @@
     "attack_zone": "high",
     "damage": 5,
     "asset": "tk802/088.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/088.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/088.jpg",
+    "keywords": [
+      "Throw"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -2263,7 +2306,7 @@
       "death",
       "evil"
     ],
-    "text": "Powerful: 2 - Slam\n\nBlitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -2272,7 +2315,11 @@
     "attack_zone": "mid",
     "damage": 2,
     "asset": "tk802/089.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/089.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/089.jpg",
+    "keywords": [
+      "Powerful: 2",
+      "Slam"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -2323,7 +2370,7 @@
       "earth",
       "evil"
     ],
-    "text": "Throw\n\nBlitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -2332,7 +2379,10 @@
     "attack_zone": "low",
     "damage": 4,
     "asset": "tk802/091.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/091.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/091.jpg",
+    "keywords": [
+      "Throw"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -2447,7 +2497,8 @@
       "order"
     ],
     "keywords": [
-      "Punch"
+      "Punch",
+      "Stun: 1"
     ],
     "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
     "difficulty": 5,
@@ -2477,7 +2528,7 @@
       "evil",
       "void"
     ],
-    "text": "Breaker: 2 - Charge - Punch - Slam\n\nIf you have 5 or less health, this attack gets -1 difficulty.\n\nIf this attack was played from anywhere other than your hand, it gets +2 speed and +2 damage.\n\nForm [Discard Pile] Remove 1 other copy of Demonic Catastrophe from your discard pile: Play this card (no check necessary).",
+    "text": "If you have 5 or less health, this attack gets -1 difficulty.\n\nIf this attack was played from anywhere other than your hand, it gets +2 speed and +2 damage.\n\nForm [Discard Pile] Remove 1 other copy of Demonic Catastrophe from your discard pile: Play this card (no check necessary).",
     "difficulty": 4,
     "control": 2,
     "block_modifier": 2,
@@ -2486,7 +2537,13 @@
     "attack_zone": "high",
     "damage": 5,
     "asset": "tk802/096.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/096.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/096.jpg",
+    "keywords": [
+      "Breaker: 2",
+      "Charge",
+      "Punch",
+      "Slam"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -2536,7 +2593,7 @@
       "chaos",
       "death"
     ],
-    "text": "Powerful: 2 - Punch\n\nAs an additional cost to play this attack, sacrifice 1 Heat token.\n\nBlitz: Add 1 non-character card from your rival's stage to their hand. Your rival cannot play copies of that card this turn.",
+    "text": "As an additional cost to play this attack, sacrifice 1 Heat token.\n\nBlitz: Add 1 non-character card from your rival's stage to their hand. Your rival cannot play copies of that card this turn.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 2,
@@ -2545,7 +2602,11 @@
     "attack_zone": "low",
     "damage": 5,
     "asset": "tk802/098.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/098.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/098.jpg",
+    "keywords": [
+      "Powerful: 2",
+      "Punch"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -2564,7 +2625,7 @@
       "good",
       "void"
     ],
-    "text": "EX: 2 - Weapon\n\nResponse: After you play this card, look at the top 2 cards of your deck. If you have a Heat token in your stage, look at the top 4 cards of your deck instead. Put them back in any order.",
+    "text": "Response: After you play this card, look at the top 2 cards of your deck. If you have a Heat token in your stage, look at the top 4 cards of your deck instead. Put them back in any order.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 1,
@@ -2573,7 +2634,11 @@
     "attack_zone": "mid",
     "damage": 5,
     "asset": "tk802/099.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/099.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/099.jpg",
+    "keywords": [
+      "EX: 2",
+      "Weapon"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -2716,7 +2781,7 @@
       "life",
       "order"
     ],
-    "text": "Stun: 1 - Weapon\n\nBlitz: If you have a Heat token in your stage, this attack gets +1 speed and +3 damage.",
+    "text": "Blitz: If you have a Heat token in your stage, this attack gets +1 speed and +3 damage.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -2725,7 +2790,11 @@
     "attack_zone": "mid",
     "damage": 4,
     "asset": "tk802/104.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/104.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/104.jpg",
+    "keywords": [
+      "Stun: 1",
+      "Weapon"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -2744,7 +2813,7 @@
       "good",
       "life"
     ],
-    "text": "Throw\n\nBlitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 2,
@@ -2753,7 +2822,10 @@
     "attack_zone": "low",
     "damage": 5,
     "asset": "tk802/105.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/105.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/105.jpg",
+    "keywords": [
+      "Throw"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -2772,7 +2844,7 @@
       "good",
       "life"
     ],
-    "text": "Throw\n\nBlitz: If you have more health than your rival, this attack gets +2 damage.",
+    "text": "Blitz: If you have more health than your rival, this attack gets +2 damage.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 3,
@@ -2781,7 +2853,10 @@
     "attack_zone": "low",
     "damage": 5,
     "asset": "tk802/106.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/106.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/106.jpg",
+    "keywords": [
+      "Throw"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -2831,7 +2906,7 @@
       "fire",
       "water"
     ],
-    "text": "Deflect: 2 - Slam\n\nBlitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -2840,7 +2915,11 @@
     "attack_zone": "high",
     "damage": 3,
     "asset": "tk802/108.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/108.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/108.jpg",
+    "keywords": [
+      "Deflect: 2",
+      "Slam"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -2859,7 +2938,7 @@
       "earth",
       "evil"
     ],
-    "text": "EX: 2 - Slam\n\nBlitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 1,
@@ -2868,7 +2947,11 @@
     "attack_zone": "mid",
     "damage": 6,
     "asset": "tk802/109.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/109.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/109.jpg",
+    "keywords": [
+      "EX: 2",
+      "Slam"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -2918,7 +3001,7 @@
       "fire",
       "life"
     ],
-    "text": "Deflect: 2 - Kick\n\nResponse: After you play this card, mill 4.\n\nBlitz: If you have cycled this game, add 1 Heat token to your stage.",
+    "text": "Response: After you play this card, mill 4.\n\nBlitz: If you have cycled this game, add 1 Heat token to your stage.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 2,
@@ -2927,7 +3010,11 @@
     "attack_zone": "mid",
     "damage": 5,
     "asset": "tk802/111.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/111.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/111.jpg",
+    "keywords": [
+      "Deflect: 2",
+      "Kick"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -3009,7 +3096,8 @@
       "void"
     ],
     "keywords": [
-      "Tech"
+      "Tech",
+      "Throw"
     ],
     "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
     "difficulty": 6,
@@ -3039,7 +3127,7 @@
       "death",
       "evil"
     ],
-    "text": "Flash - Ranged\n\nIf you have a Heat token in your stage, this attack cannot be blocked by foundations.",
+    "text": "If you have a Heat token in your stage, this attack cannot be blocked by foundations.",
     "difficulty": 3,
     "control": 3,
     "block_modifier": 2,
@@ -3048,7 +3136,11 @@
     "attack_zone": "mid",
     "damage": 3,
     "asset": "tk802/115.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/115.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/115.jpg",
+    "keywords": [
+      "Flash",
+      "Ranged"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -3098,7 +3190,7 @@
       "life",
       "water"
     ],
-    "text": "Breaker: 1 - Kick\n\nBlitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
+    "text": "Blitz Remove 4 cards from your discard pile: Add 1 Heat token to your stage.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 1,
@@ -3107,7 +3199,11 @@
     "attack_zone": "high",
     "damage": 4,
     "asset": "tk802/117.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/117.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/117.jpg",
+    "keywords": [
+      "Breaker: 1",
+      "Kick"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -3223,7 +3319,7 @@
       "fire",
       "life"
     ],
-    "text": "Breaker: 1 - Kick\n\nIf you have cycled this game, this attack gets +3 damage.\n\nForm [Discard Pile]: Add this card to your hand. Mill 1. Only playable if you have exactly 1 card in your deck.",
+    "text": "If you have cycled this game, this attack gets +3 damage.\n\nForm [Discard Pile]: Add this card to your hand. Mill 1. Only playable if you have exactly 1 card in your deck.",
     "difficulty": 3,
     "control": 3,
     "block_modifier": 2,
@@ -3232,7 +3328,11 @@
     "attack_zone": "high",
     "damage": 3,
     "asset": "tk802/121.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/121.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/121.jpg",
+    "keywords": [
+      "Breaker: 1",
+      "Kick"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -3443,7 +3543,8 @@
       "order"
     ],
     "keywords": [
-      "Kick"
+      "Kick",
+      "Powerful: 2"
     ],
     "text": "Blitz: Your rival reveals 1 card from their hand.",
     "difficulty": 4,
@@ -3632,7 +3733,7 @@
       "good",
       "void"
     ],
-    "text": "Breaker: 2 - Charge - Weapon\n\nIf you have 5 or less health, this attack gets -1 difficulty.\n\nBlitz: This attack gets +X speed or +X damage. X equals the highest difficulty among assets in your stage.",
+    "text": "If you have 5 or less health, this attack gets -1 difficulty.\n\nBlitz: This attack gets +X speed or +X damage. X equals the highest difficulty among assets in your stage.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -3641,7 +3742,12 @@
     "attack_zone": "mid",
     "damage": 4,
     "asset": "tk802/134.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/134.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/134.jpg",
+    "keywords": [
+      "Breaker: 2",
+      "Charge",
+      "Weapon"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -3661,7 +3767,8 @@
       "life"
     ],
     "keywords": [
-      "Echo"
+      "Echo",
+      "Throw"
     ],
     "text": "As an additional cost to play this attack from your hand, sacrifice 1 Heat token.\n\nBlitz: Draw 1 card.",
     "difficulty": 4,
@@ -3784,13 +3891,16 @@
       "earth",
       "evil"
     ],
-    "text": "Unique\n\nResponse [Tenacious] Sacrifice: After an attack is not blocked, your rival's next check gets -1. If you have a Heat token in your stage, it gets -2 to its check instead.",
+    "text": "Response [Tenacious] Sacrifice: After an attack is not blocked, your rival's next check gets -1. If you have a Heat token in your stage, it gets -2 to its check instead.",
     "difficulty": 2,
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
     "asset": "tk802/139.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/139.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/139.jpg",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -3984,13 +4094,16 @@
       "good",
       "water"
     ],
-    "text": "Unique\n\nWhile this card is in your stage, if your rival loses health due to an effect on your Heat token, they lose that much health plus 2 instead.\n\nResponse [Card Pool] Discard 1 card: After you play an attack, build this card.",
+    "text": "While this card is in your stage, if your rival loses health due to an effect on your Heat token, they lose that much health plus 2 instead.\n\nResponse [Card Pool] Discard 1 card: After you play an attack, build this card.",
     "difficulty": 3,
     "control": 5,
     "block_modifier": 2,
     "block_zone": "mid",
     "asset": "tk802/147.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/147.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/147.jpg",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -4034,13 +4147,16 @@
       "evil",
       "void"
     ],
-    "text": "Unique\n\nResponse [Tenacious] Remove: After you make a check to play a card, that check gets +1.\n\nResponse [Discard Pile] Remove, sacrifice 1 Heat token: After you make a check to play a card, that check gets +2.",
+    "text": "Response [Tenacious] Remove: After you make a check to play a card, that check gets +1.\n\nResponse [Discard Pile] Remove, sacrifice 1 Heat token: After you make a check to play a card, that check gets +2.",
     "difficulty": 2,
     "control": 4,
     "block_modifier": 4,
     "block_zone": "mid",
     "asset": "tk802/149.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/149.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/149.jpg",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -4109,13 +4225,16 @@
       "order",
       "void"
     ],
-    "text": "Unique\n\nEnhance Flip: Draw 2 cards. If you don't have a Heat token in your stage, lose 5 health.",
+    "text": "Enhance Flip: Draw 2 cards. If you don't have a Heat token in your stage, lose 5 health.",
     "difficulty": 4,
     "control": 5,
     "block_modifier": 2,
     "block_zone": "low",
     "asset": "tk802/152.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/152.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/152.jpg",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -4134,13 +4253,16 @@
       "fire",
       "water"
     ],
-    "text": "Breaker: 1\n\nYou may try to play this card as a block from your stage. If you do, remove it when it leaves your card pool.",
+    "text": "You may try to play this card as a block from your stage. If you do, remove it when it leaves your card pool.",
     "difficulty": 3,
     "control": 5,
     "block_modifier": 1,
     "block_zone": "mid",
     "asset": "tk802/153.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/153.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/153.jpg",
+    "keywords": [
+      "Breaker: 1"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -4234,13 +4356,17 @@
       "chaos",
       "death"
     ],
-    "text": "Deflect: 2 - Unique\n\nForm Commit: If you have a Heat token in your stage, add the top card of your deck to your momentum.",
+    "text": "Form Commit: If you have a Heat token in your stage, add the top card of your deck to your momentum.",
     "difficulty": 2,
     "control": 5,
     "block_modifier": 1,
     "block_zone": "mid",
     "asset": "tk802/157.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/157.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/157.jpg",
+    "keywords": [
+      "Deflect: 2",
+      "Unique"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -4309,13 +4435,16 @@
       "good",
       "life"
     ],
-    "text": "Unique\n\nThis card ignores progressive difficulty if the preceding face up card in your card pool is a Throw.\n\nResponse Sacrifice: After you add 1 or more Heat tokens to your stage, add 1 Throw attack from your discard pile to your hand.",
+    "text": "This card ignores progressive difficulty if the preceding face up card in your card pool is a Throw.\n\nResponse Sacrifice: After you add 1 or more Heat tokens to your stage, add 1 Throw attack from your discard pile to your hand.",
     "difficulty": 3,
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
     "asset": "tk802/160.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/160.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/160.jpg",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -4334,13 +4463,16 @@
       "life",
       "water"
     ],
-    "text": "Unique\n\nThis foundation cannot be sealed by rival effects.\n\nResponse Remove: After your rival plays an attack, it gets -1 speed and gains Flash.",
+    "text": "This foundation cannot be sealed by rival effects.\n\nResponse Remove: After your rival plays an attack, it gets -1 speed and gains Flash.",
     "difficulty": 2,
     "control": 4,
     "block_modifier": 3,
     "block_zone": "high",
     "asset": "tk802/161.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/161.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/161.jpg",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -4359,13 +4491,16 @@
       "good",
       "order"
     ],
-    "text": "Unique\n\nForm Flip, Mill 4: If you have a Heat token in your stage, add 1 card milled this way to your hand. Otherwise, add 1 non-attack card milled this way to your hand.",
+    "text": "Form Flip, Mill 4: If you have a Heat token in your stage, add 1 card milled this way to your hand. Otherwise, add 1 non-attack card milled this way to your hand.",
     "difficulty": 2,
     "control": 5,
     "block_modifier": 2,
     "block_zone": "low",
     "asset": "tk802/162.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/162.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/162.jpg",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -4534,13 +4669,16 @@
       "order",
       "void"
     ],
-    "text": "Breaker: 1\n\nResponse: After you play this card, choose a player. That player mills 2.",
+    "text": "Response: After you play this card, choose a player. That player mills 2.",
     "difficulty": 1,
     "control": 5,
     "block_modifier": 2,
     "block_zone": "low",
     "asset": "tk802/169.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/169.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/169.jpg",
+    "keywords": [
+      "Breaker: 1"
+    ]
   },
   {
     "extension_short": "tk802",
@@ -4734,13 +4872,16 @@
       "fire",
       "life"
     ],
-    "text": "Unique\n\nEnhance: Your Kick attack gets +1 damage.\n\nResponse: After your Kick attack is completely blocked, it still deals 1 damage during the Damage Step. Only playable if you have a Heat token in your stage.",
+    "text": "Enhance: Your Kick attack gets +1 damage.\n\nResponse: After your Kick attack is completely blocked, it still deals 1 damage during the Damage Step. Only playable if you have a Heat token in your stage.",
     "difficulty": 2,
     "control": 5,
     "block_modifier": 2,
     "block_zone": "high",
     "asset": "tk802/177.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/177.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/tk802/177.jpg",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension_short": "tk802",

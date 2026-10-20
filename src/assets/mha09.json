@@ -112,7 +112,8 @@
     ],
     "keywords": [
       "Armor",
-      "Tech"
+      "Tech",
+      "Unique"
     ],
     "text": "Enhance [Once per turn] Spend 1 momentum: Add 1 Armor card from your discard pile to your hand.\n\nResponse Commit: After 1 or more of your foundations are destroyed by a rival effect, build 1 Armor foundation from your discard pile.",
     "difficulty": 2,
@@ -222,6 +223,7 @@
     "keywords": [
       "Armor",
       "Charge",
+      "Stun: 1",
       "Tech",
       "Vestige"
     ],
@@ -366,7 +368,7 @@
       "good",
       "life"
     ],
-    "text": "Powerful: 3 - Punch - Vestige\n\nIf you play this card from anywhere other than your hand, it loses Powerful.\n\nResponse: After you play this attack, add 1 Vestige attack from your discard pile to your momentum.\n\nBlitz: This attack loses Powerful and gains Echo.",
+    "text": "If you play this card from anywhere other than your hand, it loses Powerful.\n\nResponse: After you play this attack, add 1 Vestige attack from your discard pile to your momentum.\n\nBlitz: This attack loses Powerful and gains Echo.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 2,
@@ -377,7 +379,12 @@
     "asset": "mha09/011.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/011.jpg",
     "cardeio_id": "1d0b023a-d884-4cb9-80a9-266313cf0acd",
-    "cardeio_slug": "011-overdrive-uppercut"
+    "cardeio_slug": "011-overdrive-uppercut",
+    "keywords": [
+      "Powerful: 3",
+      "Punch",
+      "Vestige"
+    ]
   },
   {
     "extension_short": "mha09",
@@ -558,7 +565,7 @@
       "all",
       "good"
     ],
-    "text": "Deflect: 2 - Vestige\n\nEnhance [Card Pool] Flip: This attack gets +2 or -2 speed.",
+    "text": "Enhance [Card Pool] Flip: This attack gets +2 or -2 speed.",
     "difficulty": 1,
     "control": 5,
     "block_modifier": 3,
@@ -566,7 +573,11 @@
     "asset": "mha09/017.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/017.jpg",
     "cardeio_id": "ad7539c8-dfdd-4118-978f-4c8d53aa9659",
-    "cardeio_slug": "017-gear-shift"
+    "cardeio_slug": "017-gear-shift",
+    "keywords": [
+      "Deflect: 2",
+      "Vestige"
+    ]
   },
   {
     "extension_short": "mha09",
@@ -799,7 +810,7 @@
       "death",
       "evil"
     ],
-    "text": "Unique\n\nWhile this card is ready in your stage, your attacks get +1 speed if your character has the  symbol and your rival's attacks get -1 speed if their character has the  symbol.\n\nResponse Commit: After your blocked  attack resolves, remove it. Add the top card of your deck to your momentum.",
+    "text": "While this card is ready in your stage, your attacks get +1 speed if your character has the  symbol and your rival's attacks get -1 speed if their character has the  symbol.\n\nResponse Commit: After your blocked  attack resolves, remove it. Add the top card of your deck to your momentum.",
     "difficulty": 2,
     "control": 5,
     "block_modifier": 2,
@@ -807,7 +818,10 @@
     "asset": "mha09/025.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/025.jpg",
     "cardeio_id": "dd443a2c-784c-4520-b6e9-e008a2c00cfb",
-    "cardeio_slug": "025-evil-aura"
+    "cardeio_slug": "025-evil-aura",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension_short": "mha09",
@@ -865,7 +879,8 @@
       "void"
     ],
     "keywords": [
-      "Fury"
+      "Fury",
+      "Stun: 1"
     ],
     "text": "Blitz: If this attack was played from anywhere other than your hand, it gets +1 to its Stun rating.",
     "difficulty": 4,
@@ -936,6 +951,7 @@
     ],
     "keywords": [
       "Fury",
+      "Powerful: 4",
       "Ranged"
     ],
     "text": "Blitz: If you have 5 or more cards in your removed pile, this attack gets +3 speed.\n\nResponse: After you play this attack's Powerful ability, add 1 attack card spent to pay the cost of that ability from your discard pile to your hand.",
@@ -970,7 +986,7 @@
       "evil",
       "void"
     ],
-    "text": "Deflect: 2 - Ranged\n\nIf this attack was played from anywhere other than your hand, it gets -1 difficulty and +3 damage.\n\nResponse: After this attack deals damage, your rival spends 2 momentum.",
+    "text": "If this attack was played from anywhere other than your hand, it gets -1 difficulty and +3 damage.\n\nResponse: After this attack deals damage, your rival spends 2 momentum.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 2,
@@ -981,7 +997,11 @@
     "asset": "mha09/030.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/030.jpg",
     "cardeio_id": "e8a1ba4e-cf44-429c-ad4d-ffc781fada78",
-    "cardeio_slug": "demon-lord-s-blast"
+    "cardeio_slug": "demon-lord-s-blast",
+    "keywords": [
+      "Deflect: 2",
+      "Ranged"
+    ]
   },
   {
     "extension_short": "mha09",
@@ -1002,7 +1022,7 @@
       "evil",
       "void"
     ],
-    "text": "Breaker: 1 - Punch\n\nResponse: After you play this card, seal 1 rival foundation.\n\nBlitz: If you have 5 or more cards in your removed pile, destroy 1 rival asset.",
+    "text": "Response: After you play this card, seal 1 rival foundation.\n\nBlitz: If you have 5 or more cards in your removed pile, destroy 1 rival asset.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 2,
@@ -1013,7 +1033,11 @@
     "asset": "mha09/031.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/031.jpg",
     "cardeio_id": "686361e8-3af3-4858-ae4a-8c5aa294bf35",
-    "cardeio_slug": "031-massive-optimal-punch"
+    "cardeio_slug": "031-massive-optimal-punch",
+    "keywords": [
+      "Breaker: 1",
+      "Punch"
+    ]
   },
   {
     "extension_short": "mha09",
@@ -1034,7 +1058,7 @@
       "evil",
       "void"
     ],
-    "text": "EX: 2 - Ranged\n\nWhen this card is added to your momentum, add it face up.\n\nResponse [Momentum] Flip: After you commit your character, your rival's next check gets -2.",
+    "text": "When this card is added to your momentum, add it face up.\n\nResponse [Momentum] Flip: After you commit your character, your rival's next check gets -2.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -1045,7 +1069,11 @@
     "asset": "mha09/032.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/032.jpg",
     "cardeio_id": "6599d4a1-bc0d-4801-9f25-4c787b1ec859",
-    "cardeio_slug": "032-persistent-malice"
+    "cardeio_slug": "032-persistent-malice",
+    "keywords": [
+      "EX: 2",
+      "Ranged"
+    ]
   },
   {
     "extension_short": "mha09",
@@ -1175,7 +1203,7 @@
     "resources": [
       "evil-attuned"
     ],
-    "text": "Breaker: 1\n\nEnhance Commit: This attack gets -2 speed.",
+    "text": "Enhance Commit: This attack gets -2 speed.",
     "difficulty": 2,
     "control": 5,
     "block_modifier": 1,
@@ -1183,7 +1211,10 @@
     "asset": "mha09/037.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/mha09/037.jpg",
     "cardeio_id": "dcb1cdba-4ad0-4e1d-8fa1-8c03a69228f4",
-    "cardeio_slug": "037-panicked-outburst"
+    "cardeio_slug": "037-panicked-outburst",
+    "keywords": [
+      "Breaker: 1"
+    ]
   },
   {
     "extension_short": "mha09",

@@ -91,7 +91,8 @@
       "good-attuned"
     ],
     "keywords": [
-      "Ally"
+      "Ally",
+      "Unique"
     ],
     "text": "Enhance: Your attack gets +1 damage for each foundation that has left your stage this turn (max. +2).\n\nEnhance Remove: Build 1 foundation with difficulty 4 or less from your discard pile.",
     "difficulty": 2,
@@ -118,7 +119,7 @@
     "resources": [
       "air-attuned"
     ],
-    "text": "Powerful: 1 - Throw\n\nResponse: After you play this attack's Powerful ability, draw 1 card.",
+    "text": "Response: After you play this attack's Powerful ability, draw 1 card.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 3,
@@ -129,7 +130,11 @@
     "asset": "kf0x/005.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/005.jpg",
     "cardeio_id": "341f07e57991b4d4ca91f6a4",
-    "cardeio_slug": "benimaru-collider"
+    "cardeio_slug": "benimaru-collider",
+    "keywords": [
+      "Powerful: 1",
+      "Throw"
+    ]
   },
   {
     "extension_short": "kf0x",
@@ -178,7 +183,8 @@
       "air-attuned"
     ],
     "keywords": [
-      "Kick"
+      "Kick",
+      "Stun: 2"
     ],
     "text": "Blitz: Draw 1 card. Discard 1 card.",
     "difficulty": 5,
@@ -237,7 +243,8 @@
       "air-attuned"
     ],
     "keywords": [
-      "Ranged"
+      "Ranged",
+      "Stun: 1"
     ],
     "text": "Response: After this attack is blocked, draw 1 card.",
     "difficulty": 4,
@@ -298,7 +305,7 @@
     "resources": [
       "good-attuned"
     ],
-    "text": "Powerful: 2 - Punch\n\nResponse: After this attack is blocked, build 1 foundation from your card pool.",
+    "text": "Response: After this attack is blocked, build 1 foundation from your card pool.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 1,
@@ -309,7 +316,11 @@
     "asset": "kf0x/011.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/011.jpg",
     "cardeio_id": "dc4722e3aa407f63bdeb9db9",
-    "cardeio_slug": "scarlet-phantom"
+    "cardeio_slug": "scarlet-phantom",
+    "keywords": [
+      "Powerful: 2",
+      "Punch"
+    ]
   },
   {
     "extension_short": "kf0x",
@@ -328,6 +339,7 @@
     ],
     "keywords": [
       "Charge",
+      "EX: 2",
       "Punch"
     ],
     "text": "Blitz: Add 1 foundation from your stage to your hand. Build the next foundation you play this turn.",
@@ -360,6 +372,7 @@
     ],
     "keywords": [
       "Charge",
+      "Powerful: 3",
       "Punch"
     ],
     "text": "Response: After this attack is blocked, clear 1 card from your card pool for each momentum spent to pay the cost of this attack's Powerful ability (max. 3).",
@@ -440,7 +453,7 @@
     "resources": [
       "good-attuned"
     ],
-    "text": "Unique\n\nEnhance Sacrifice 1 foundation: This attack gets +1 or -1 speed.\n\nResponse [Once per turn]: After 1 or more foundations leave your stage, gain 1 health.",
+    "text": "Enhance Sacrifice 1 foundation: This attack gets +1 or -1 speed.\n\nResponse [Once per turn]: After 1 or more foundations leave your stage, gain 1 health.",
     "difficulty": 2,
     "control": 5,
     "block_modifier": 2,
@@ -448,7 +461,10 @@
     "asset": "kf0x/016.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/016.jpg",
     "cardeio_id": "62c59128c134265d70c100c9",
-    "cardeio_slug": "students-of-tung-fu-rue"
+    "cardeio_slug": "students-of-tung-fu-rue",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension_short": "kf0x",
@@ -692,7 +708,8 @@
       "void-attuned"
     ],
     "keywords": [
-      "Ally"
+      "Ally",
+      "Unique"
     ],
     "text": "Enhance: Your attack gets +1 damage for each of your rival's sealed foundations (max. +2).\n\nResponse Sacrifice: After your attack deals damage, it does not count toward progressive difficulty this turn.",
     "difficulty": 2,
@@ -719,7 +736,7 @@
     "resources": [
       "life-attuned"
     ],
-    "text": "Stun: 1 - Weapon\n\nBlitz: If there are 2 or more attacks in your card pool, draw 1 card and discard 1 card.",
+    "text": "Blitz: If there are 2 or more attacks in your card pool, draw 1 card and discard 1 card.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -730,7 +747,11 @@
     "asset": "kf0x/027.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/027.jpg",
     "cardeio_id": "52c32c58dcbb614e373473c9",
-    "cardeio_slug": "assault-saber"
+    "cardeio_slug": "assault-saber",
+    "keywords": [
+      "Stun: 1",
+      "Weapon"
+    ]
   },
   {
     "extension_short": "kf0x",
@@ -749,6 +770,7 @@
     ],
     "keywords": [
       "Ally",
+      "Powerful: 2",
       "Ranged"
     ],
     "text": "Blitz: Your rival seals 1 ready face up card in their stage.",
@@ -780,7 +802,8 @@
       "life-attuned"
     ],
     "keywords": [
-      "Ally"
+      "Ally",
+      "Breaker: 2"
     ],
     "text": "Response [Card Pool] Spend 1 momentum: After another attack resolves, add it to the top of its owner's deck.",
     "difficulty": 4,
@@ -812,6 +835,7 @@
     ],
     "keywords": [
       "Charge",
+      "EX: 2",
       "Weapon"
     ],
     "text": "Blitz Spend 1 momentum: Your rival reveals their hand. They discard all attack cards revealed this way. Your rival draws 1 card for each of the discarded attacks.\n\nResponse: After this attack is blocked, seal 1 rival foundation.",
@@ -842,7 +866,7 @@
     "resources": [
       "void-attuned"
     ],
-    "text": "EX: 2 - Punch\n\nResponse: After this attack deals damage, seal 1 rival foundation.",
+    "text": "Response: After this attack deals damage, seal 1 rival foundation.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -853,7 +877,11 @@
     "asset": "kf0x/031.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/031.jpg",
     "cardeio_id": "70f6a2fb9248d23f5fd456fd",
-    "cardeio_slug": "hilzuni"
+    "cardeio_slug": "hilzuni",
+    "keywords": [
+      "EX: 2",
+      "Punch"
+    ]
   },
   {
     "extension_short": "kf0x",
@@ -871,7 +899,8 @@
       "void-attuned"
     ],
     "keywords": [
-      "Slam"
+      "Slam",
+      "Throw"
     ],
     "text": "Blitz: Add 1 foundation from your stage to the top of your deck. This attack gets +3 damage.",
     "difficulty": 5,
@@ -902,7 +931,8 @@
       "void-attuned"
     ],
     "keywords": [
-      "Ally"
+      "Ally",
+      "Breaker: 1"
     ],
     "text": "Response: After you play this card, if your rival has 10 or more foundations, seal 2 rival foundations.\n\nBlitz: This attack gets +1 damage for each of your rival's sealed foundations.",
     "difficulty": 4,
@@ -932,7 +962,7 @@
     "resources": [
       "life-attuned"
     ],
-    "text": "Throw - Weapon\n\nResponse: After this attack deals damage, gain health equal to the damage dealt (max. 4).",
+    "text": "Response: After this attack deals damage, gain health equal to the damage dealt (max. 4).",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 3,
@@ -943,7 +973,11 @@
     "asset": "kf0x/034.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/034.jpg",
     "cardeio_id": "122211081c42c96504586ffb",
-    "cardeio_slug": "storm-bringer"
+    "cardeio_slug": "storm-bringer",
+    "keywords": [
+      "Throw",
+      "Weapon"
+    ]
   },
   {
     "extension_short": "kf0x",
@@ -961,7 +995,8 @@
       "void-attuned"
     ],
     "keywords": [
-      "Ally"
+      "Ally",
+      "Powerful: 2"
     ],
     "text": "Blitz: Seal 1 rival foundation. This attack gets +1 speed for each of your rival's sealed foundations.\n\nBlitz: Your next check to play an Ally attack gets +1. If your rival has 3 or more sealed cards, it gets +2 instead.",
     "difficulty": 5,
@@ -1200,7 +1235,7 @@
     "resources": [
       "void-attuned"
     ],
-    "text": "Unique\n\nForm Flip: Reveal the top 3 cards of your deck. Add all Ally cards revealed this way to your hand and discard the rest.",
+    "text": "Form Flip: Reveal the top 3 cards of your deck. Add all Ally cards revealed this way to your hand and discard the rest.",
     "difficulty": 3,
     "control": 5,
     "block_modifier": 2,
@@ -1208,7 +1243,10 @@
     "asset": "kf0x/044.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/kf0x/044.jpg",
     "cardeio_id": "a9c562d27eca705356a89e0f",
-    "cardeio_slug": "unit-commander"
+    "cardeio_slug": "unit-commander",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension_short": "kf0x",

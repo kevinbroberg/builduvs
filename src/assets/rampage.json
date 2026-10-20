@@ -784,7 +784,7 @@
     "name": "Box Full Of Babies",
     "type": "asset",
     "rarity": "rare",
-    "text": "Tech  Enhance [Once per turn, your turn]: Draw 1 card. Discard 1 card unless your character is Mei Hatsume.  Enhance Commit: Your Tech or Weapon attack gets +1 speed and +1 damage.",
+    "text": "Enhance [Once per turn, your turn]: Draw 1 card. Discard 1 card unless your character is Mei Hatsume.  Enhance Commit: Your Tech or Weapon attack gets +1 speed and +1 damage.",
     "resources": [
       "all",
       "evil",
@@ -795,7 +795,10 @@
     "block_zone": "mid",
     "block_modifier": 2,
     "cardeio_id": "64e6bce9cc0d62bbb0dacacb",
-    "cardeio_slug": "029-box-full-of-babies"
+    "cardeio_slug": "029-box-full-of-babies",
+    "keywords": [
+      "Tech"
+    ]
   },
   {
     "extension": "Crimson Rampage",
@@ -3200,7 +3203,7 @@
     "name": "\"SPoOoOoOoKY!\"",
     "type": "foundation",
     "rarity": "rare",
-    "text": "Unique Enhance Commit: Switch the speed and damage of your rival's attack.",
+    "text": "Enhance Commit: Switch the speed and damage of your rival's attack.",
     "resources": [
       "all",
       "death",
@@ -3211,7 +3214,10 @@
     "block_zone": "high",
     "block_modifier": 3,
     "cardeio_id": "64e6bce8cc0d62bbb0daca6c",
-    "cardeio_slug": "117-spoooooooky"
+    "cardeio_slug": "117-spoooooooky",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension": "Crimson Rampage",
@@ -3871,7 +3877,7 @@
     "name": "Sports Festival Stadium",
     "type": "asset",
     "rarity": "promo",
-    "text": "Terrain While this card is in your stage, after a player takes damage from an attack, they lose 1 health. Response Commit: After your rival blocks your attack, discard their block and draw 1 card.",
+    "text": "While this card is in your stage, after a player takes damage from an attack, they lose 1 health. Response Commit: After your rival blocks your attack, discard their block and draw 1 card.",
     "resources": [
       "air",
       "death",
@@ -3882,7 +3888,10 @@
     "block_zone": "mid",
     "block_modifier": 2,
     "cardeio_id": "64e6bceecc0d62bbb0dacd7c",
-    "cardeio_slug": "005-sports-festival-stadium"
+    "cardeio_slug": "005-sports-festival-stadium",
+    "keywords": [
+      "Terrain"
+    ]
   },
   {
     "extension": "Crimson Rampage Provisional",
@@ -3895,7 +3904,7 @@
     "name": "Award The Victor",
     "type": "foundation",
     "rarity": "promo",
-    "text": "Unique Response Flip: After your attack deals damage, add it to the top of your deck. Your next check to play an attack gets +2.",
+    "text": "Response Flip: After your attack deals damage, add it to the top of your deck. Your next check to play an attack gets +2.",
     "resources": [
       "all",
       "chaos",
@@ -3906,7 +3915,10 @@
     "block_zone": "high",
     "block_modifier": 1,
     "cardeio_id": "64e6bce9cc0d62bbb0daca9e",
-    "cardeio_slug": "006-award-the-victor"
+    "cardeio_slug": "006-award-the-victor",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension": "Crimson Rampage Provisional",

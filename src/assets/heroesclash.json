@@ -4746,7 +4746,7 @@
     "name": "Cat Pounce",
     "type": "attack",
     "rarity": "promo",
-    "text": "Stun: 1\n\nEnhance Remove 1 attack from your hand: Choose 1 attack in your discard pile and add it to your hand.\n\nRagdoll Enhance: Change the zone of this attack.",
+    "text": "Enhance Remove 1 attack from your hand: Choose 1 attack in your discard pile and add it to your hand.\n\nRagdoll Enhance: Change the zone of this attack.",
     "resources": [
       "air",
       "death",
@@ -4760,7 +4760,10 @@
     "attack_zone": "mid",
     "damage": 5,
     "cardeio_id": "64e6bce9cc0d62bbb0dacae2",
-    "cardeio_slug": "008-cat-pounce"
+    "cardeio_slug": "008-cat-pounce",
+    "keywords": [
+      "Stun: 1"
+    ]
   },
   {
     "extension": "Heroes Clash",

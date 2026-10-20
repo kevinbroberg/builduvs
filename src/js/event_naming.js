@@ -10,6 +10,7 @@ export const LC_FORMATS = [
   { key: 'titan',    label: 'May B&E' },
   { key: 'mhafinal', label: 'Round 3' },
   { key: 'tekken8',  label: 'Tekken 8' },
+  { key: 'fairytail', label: 'Fairy Tail' },
 ]
 
 const labelByKey = new Map(LC_FORMATS.map(f => [f.key, f.label]))

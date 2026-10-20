@@ -210,12 +210,14 @@ function parsePlayerFile(raw) {
 
 // Apr 3 update effective Apr 13; May 5 update effective May 12
 // Season 4 / Round 4 LCs start 2026-08-22 with Tekken 8 legal.
+// Fairy Tail: All Fired Up! is legal from 2026-11-01.
 function formatPeriod(date) {
   if (date <= '2026-04-12') return 'kaiju'
   if (date <= '2026-05-11') return 'april'
   if (date <= '2026-06-12') return 'titan'
   if (date <= '2026-08-21') return 'mhafinal'
-  return 'tekken8'
+  if (date <= '2026-10-31') return 'tekken8'
+  return 'fairytail'
 }
 
 const insertEvent    = db.prepare(`INSERT INTO events VALUES (?,?,?,?,?,?)`)

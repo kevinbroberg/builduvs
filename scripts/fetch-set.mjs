@@ -144,38 +144,29 @@ function parseCard(chunk) {
   return card
 }
 
+// One item of a printed keyword line: "Quest: 2", "EX:4", "Breaker: X", "Slam",
+// "Deadlock Stun: 3", "1-A", "Combo(Kick)". Ability lines ("Blitz: …",
+// "Enhance Commit: …") never fit.
+const KEYWORD_ITEM = /^[A-Z0-9][\w'’&.-]*(?: [A-Z][\w'’&.-]*)?(?: ?\([^)]*\))?(?: ?: ?(?:\d+|X))?$/
+const ABILITY_WORD = /^(Enhance|Response|Form|Blitz|Combo)\b/
+
+// UVSUltra marks keywords up several ways — <strong>Slam</strong>,
+// <strong><abbr><i>Stun</i></abbr>: 1</strong>, <strong><abbr>Unique</abbr></strong>,
+// <strong><abbr><i>Quest</i></abbr><strong></strong>: 2</strong> — so match the
+// first line's *text*, not its tags. Matching tags silently dropped every
+// variant it didn't know (31 of 186 Fairy Tail cards).
 function parseKeywordsAndText(cd2) {
   let keywords = []
-  const lines = cd2.trim().split(/<br\s*\/?>\s*/m)
+  // abbr titles hold reminder text, which can contain newlines.
+  const lines = cd2.replace(/\stitle="[^"]*"/g, '').trim().split(/<br\s*\/?>\s*/m)
   let textStartIdx = 0
 
   if (lines.length > 0) {
-    const firstLine = lines[0].trim()
-    const strongMatches = [...firstLine.matchAll(/<strong>(?:<abbr[^>]*><i>)?([^<]+)(?:<\/i><\/abbr>)?<\/strong>/g)]
-
-    if (strongMatches.length > 0) {
-      const potentialKeywords = strongMatches.map(m => m[1].trim())
-      const textRemainder = firstLine
-        .replace(/<strong>(?:<abbr[^>]*><i>)?[^<]+(?:<\/i><\/abbr>)?<\/strong>/g, '')
-        .replace(/\s*-\s*/g, '')
-        .trim()
-
-      if (textRemainder === '' || textRemainder === ':') {
-        keywords = potentialKeywords
-        textStartIdx = 1
-      } else {
-        const isAbility = potentialKeywords.some(k => /^(Enhance|Response|Form|Blitz)/.test(k))
-        if (!isAbility && strongMatches.length >= 1) {
-          const kwLineMatch = firstLine.match(/^(?:<strong>(?:<abbr[^>]*><i>)?[\w\s:]+(?:<\/i><\/abbr>)?<\/strong>(?:\s*-\s*)?)+/)
-          if (kwLineMatch) {
-            const rest = firstLine.slice(kwLineMatch[0].length).trim()
-            if (rest === '' || rest.startsWith('<')) {
-              keywords = potentialKeywords
-              textStartIdx = 1
-            }
-          }
-        }
-      }
+    const plain = decodeHtmlEntities(lines[0].replace(/<[^>]+>/g, '')).replace(/\s+/g, ' ').trim()
+    const items = plain.split(/\s+-\s+/).map(s => s.replace(/\s*:\s*/, ': ').trim())
+    if (plain && !ABILITY_WORD.test(plain) && items.every(s => KEYWORD_ITEM.test(s))) {
+      keywords = items
+      textStartIdx = 1
     }
   }
 

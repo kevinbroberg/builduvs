@@ -984,7 +984,7 @@
     "resources": [
       "death-attuned"
     ],
-    "text": "Powerful: 2 - Slam\n\nDeadlock Blitz: Ruin 3.",
+    "text": "Deadlock Blitz: Ruin 3.",
     "difficulty": 6,
     "control": 3,
     "block_modifier": 2,
@@ -995,7 +995,11 @@
     "asset": "gdz01/034.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/034.jpg",
     "cardeio_id": "e02b1bd808554c1b91b54241",
-    "cardeio_slug": "horn-stab"
+    "cardeio_slug": "horn-stab",
+    "keywords": [
+      "Powerful: 2",
+      "Slam"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -1126,7 +1130,7 @@
     "resources": [
       "earth-attuned"
     ],
-    "text": "Throw\n\nBlitz: Your next attack gets +2 speed.",
+    "text": "Blitz: Your next attack gets +2 speed.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 1,
@@ -1137,7 +1141,10 @@
     "asset": "gdz01/039.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/039.jpg",
     "cardeio_id": "043f4b182da9414c8bc047dd",
-    "cardeio_slug": "hold-em-down"
+    "cardeio_slug": "hold-em-down",
+    "keywords": [
+      "Throw"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -1184,7 +1191,7 @@
     "resources": [
       "earth-attuned"
     ],
-    "text": "Deadlock Stun: 3 - Throw",
+    "text": "",
     "difficulty": 6,
     "control": 3,
     "block_modifier": 2,
@@ -1195,7 +1202,11 @@
     "asset": "gdz01/041.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/041.jpg",
     "cardeio_id": "55eb5156850e4f32b2302e99",
-    "cardeio_slug": "tail-trip"
+    "cardeio_slug": "tail-trip",
+    "keywords": [
+      "Deadlock Stun: 3",
+      "Throw"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -1239,7 +1250,7 @@
     "resources": [
       "earth-attuned"
     ],
-    "text": "Deflect: 2\n\nEnhance Sacrifice: Add 1 Deflect card from your discard pile to your hand.",
+    "text": "Enhance Sacrifice: Add 1 Deflect card from your discard pile to your hand.",
     "difficulty": 3,
     "control": 5,
     "block_modifier": 4,
@@ -1247,7 +1258,10 @@
     "asset": "gdz01/043.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/043.jpg",
     "cardeio_id": "d814169d12c34c788cb39d76",
-    "cardeio_slug": "hedrium-endurance"
+    "cardeio_slug": "hedrium-endurance",
+    "keywords": [
+      "Deflect: 2"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -1661,7 +1675,7 @@
     "resources": [
       "good-attuned"
     ],
-    "text": "Breaker: 1\n\nResponse: After you block with this card, this attack deals no damage. Add 1 Power token to your stage.",
+    "text": "Response: After you block with this card, this attack deals no damage. Add 1 Power token to your stage.",
     "difficulty": 2,
     "control": 5,
     "block_modifier": 2,
@@ -1669,7 +1683,10 @@
     "asset": "gdz01/058.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/058.jpg",
     "cardeio_id": "a3edea66001846b38b58e376",
-    "cardeio_slug": "protector-of-life"
+    "cardeio_slug": "protector-of-life",
+    "keywords": [
+      "Breaker: 1"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -1798,7 +1815,8 @@
       "good-attuned"
     ],
     "keywords": [
-      "Tech"
+      "Tech",
+      "Unique"
     ],
     "text": "This card cannot be destroyed by rival effects.\n\nResponse Commit: After 1 or more of your foundations is destroyed by a rival effect, build 1 foundation from your discard pile committed.",
     "difficulty": 2,
@@ -1968,7 +1986,7 @@
     "resources": [
       "order-attuned"
     ],
-    "text": "Breaker: 1 - Ranged - Tech\n\nBlitz: If an attack has been blocked this turn, this attack gets +3 damage.",
+    "text": "Blitz: If an attack has been blocked this turn, this attack gets +3 damage.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 1,
@@ -1979,7 +1997,12 @@
     "asset": "gdz01/069.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/069.jpg",
     "cardeio_id": "3a75d31f4ad64df4aa5e31fc",
-    "cardeio_slug": "beam-combo"
+    "cardeio_slug": "beam-combo",
+    "keywords": [
+      "Breaker: 1",
+      "Ranged",
+      "Tech"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -2030,6 +2053,7 @@
     ],
     "keywords": [
       "Ranged",
+      "Stun: 3",
       "Tech"
     ],
     "text": "",
@@ -2113,7 +2137,7 @@
     "resources": [
       "void-attuned"
     ],
-    "text": "EX: 2 - Slam\n\nBlitz Flip 1 foundation: This attack gets +2 speed.",
+    "text": "Blitz Flip 1 foundation: This attack gets +2 speed.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 2,
@@ -2124,7 +2148,11 @@
     "asset": "gdz01/074.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/074.jpg",
     "cardeio_id": "77e1bdd1ae5948bf975cd6f6",
-    "cardeio_slug": "crashing-down"
+    "cardeio_slug": "crashing-down",
+    "keywords": [
+      "EX: 2",
+      "Slam"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -2365,7 +2393,7 @@
     "resources": [
       "water-attuned"
     ],
-    "text": "Throw\n\nBlitz: This attack gets +1 speed for each face down card in your card pool.",
+    "text": "Blitz: This attack gets +1 speed for each face down card in your card pool.",
     "difficulty": 3,
     "control": 3,
     "block_modifier": 2,
@@ -2376,7 +2404,10 @@
     "asset": "gdz01/083.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/083.jpg",
     "cardeio_id": "7faed509f1664d5ab3fdb56d",
-    "cardeio_slug": "tangled-grasp"
+    "cardeio_slug": "tangled-grasp",
+    "keywords": [
+      "Throw"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -2514,6 +2545,7 @@
     ],
     "keywords": [
       "Ranged",
+      "Stun: 1",
       "Weapon"
     ],
     "text": "Blitz: Your next attack gets +2 speed. If your rival has 10 or more foundations, it gets +5 speed instead.",
@@ -2545,7 +2577,7 @@
     "resources": [
       "infinity"
     ],
-    "text": "Powerful: 3\n\nThis card gets -1 difficulty for each  card in your stage.\n\nBlitz: Change the zone of this attack.",
+    "text": "This card gets -1 difficulty for each  card in your stage.\n\nBlitz: Change the zone of this attack.",
     "difficulty": 13,
     "control": 4,
     "block_modifier": 0,
@@ -2556,7 +2588,10 @@
     "asset": "gdz01/089.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/089.jpg",
     "cardeio_id": "06f62935bbc24b769c73ac17",
-    "cardeio_slug": "humanity-fights-on"
+    "cardeio_slug": "humanity-fights-on",
+    "keywords": [
+      "Powerful: 3"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -2713,7 +2748,7 @@
     "resources": [
       "infinity"
     ],
-    "text": "Unique\n\nWhile this card is in your stage, all attacks get +1 damage.\n\nResponse [Once per turn]: After your attack deals damage, draw 1 card.",
+    "text": "While this card is in your stage, all attacks get +1 damage.\n\nResponse [Once per turn]: After your attack deals damage, draw 1 card.",
     "difficulty": 2,
     "control": 5,
     "block_modifier": 4,
@@ -2721,7 +2756,10 @@
     "asset": "gdz01/095.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/095.jpg",
     "cardeio_id": "9d44f9251dfd40e78d26cd82",
-    "cardeio_slug": "final-wars"
+    "cardeio_slug": "final-wars",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -2847,7 +2885,7 @@
       "order",
       "void"
     ],
-    "text": "Breaker: 1\n\nResponse Sacrifice 1 foundation: After your rival plays the same ability on the same card for the second time or greater this turn, seal 1 card in their stage. Add 1 Power token to your stage.",
+    "text": "Response Sacrifice 1 foundation: After your rival plays the same ability on the same card for the second time or greater this turn, seal 1 card in their stage. Add 1 Power token to your stage.",
     "difficulty": 2,
     "control": 5,
     "block_modifier": 2,
@@ -2855,7 +2893,10 @@
     "asset": "gdz01/100.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/100.jpg",
     "cardeio_id": "80044ba378c744e58f2afbf5",
-    "cardeio_slug": "power-of-the-monsters"
+    "cardeio_slug": "power-of-the-monsters",
+    "keywords": [
+      "Breaker: 1"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -2902,7 +2943,7 @@
       "good",
       "life"
     ],
-    "text": "Breaker: 1\n\nIf you have no ready foundations, this card gets -2 to its block modifier.\n\nResponse Remove: After you block with this card, draw 2 cards, discard 1 card, and gain 2 health.",
+    "text": "If you have no ready foundations, this card gets -2 to its block modifier.\n\nResponse Remove: After you block with this card, draw 2 cards, discard 1 card, and gain 2 health.",
     "difficulty": 2,
     "control": 5,
     "block_modifier": 2,
@@ -2910,7 +2951,10 @@
     "asset": "gdz01/102.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/102.jpg",
     "cardeio_id": "dd3265eec9344de68a908970",
-    "cardeio_slug": "sacred-guardian"
+    "cardeio_slug": "sacred-guardian",
+    "keywords": [
+      "Breaker: 1"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3017,7 +3061,7 @@
       "earth",
       "water"
     ],
-    "text": "Deflect: 4 - Slam\n\nBlitz: Your rival adds the top card of their deck to their card pool face down.\n\nBlitz Spend 1 momentum: Add 2 cards from your discard pile to the top of your deck in any order. This attack gets +2 damage.",
+    "text": "Blitz: Your rival adds the top card of their deck to their card pool face down.\n\nBlitz Spend 1 momentum: Add 2 cards from your discard pile to the top of your deck in any order. This attack gets +2 damage.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -3028,7 +3072,11 @@
     "asset": "gdz01/106.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/106.jpg",
     "cardeio_id": "59dea53fc5ea404cba73cc11",
-    "cardeio_slug": "acidic-sludge"
+    "cardeio_slug": "acidic-sludge",
+    "keywords": [
+      "Deflect: 4",
+      "Slam"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3114,7 +3162,7 @@
       "earth",
       "fire"
     ],
-    "text": "Breaker: 1 - EX: 3 - Fury - Slam\n\nThis attack gets -1 difficulty for each Power token in your stage (max. -4).\n\nResponse: After this attack deals damage, draw 1 card.",
+    "text": "This attack gets -1 difficulty for each Power token in your stage (max. -4).\n\nResponse: After this attack deals damage, draw 1 card.",
     "difficulty": 8,
     "control": 3,
     "block_modifier": 2,
@@ -3125,7 +3173,13 @@
     "asset": "gdz01/109.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/109.jpg",
     "cardeio_id": "fdace58192224ce08696f160",
-    "cardeio_slug": "anguirus-ball"
+    "cardeio_slug": "anguirus-ball",
+    "keywords": [
+      "Breaker: 1",
+      "EX: 3",
+      "Fury",
+      "Slam"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3180,7 +3234,7 @@
       "all",
       "evil"
     ],
-    "text": "EX: 2 - Frenzy - Fury - Powerful: 2 - Punch - Stun: 1 - Weapon\n\nBlitz: If your rival has 15 or less health, each of this attack's keywords gets +1 to its rating.",
+    "text": "Blitz: If your rival has 15 or less health, each of this attack's keywords gets +1 to its rating.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 1,
@@ -3191,7 +3245,16 @@
     "asset": "gdz01/111.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/111.jpg",
     "cardeio_id": "c796cbeee2b1426e9838dedf",
-    "cardeio_slug": "bladed-uppercut"
+    "cardeio_slug": "bladed-uppercut",
+    "keywords": [
+      "EX: 2",
+      "Frenzy",
+      "Fury",
+      "Powerful: 2",
+      "Punch",
+      "Stun: 1",
+      "Weapon"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3211,7 +3274,7 @@
       "good",
       "order"
     ],
-    "text": "Deadlock Stun: 3 - EX: 2 - Powerful: 2 - Tech\n\nResponse: After you play a keyword ability, draw 1 card.",
+    "text": "Response: After you play a keyword ability, draw 1 card.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 3,
@@ -3222,7 +3285,13 @@
     "asset": "gdz01/112.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/112.jpg",
     "cardeio_id": "6f4058dcf46d459eab60a653",
-    "cardeio_slug": "blasting-off"
+    "cardeio_slug": "blasting-off",
+    "keywords": [
+      "Deadlock Stun: 3",
+      "EX: 2",
+      "Powerful: 2",
+      "Tech"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3341,7 +3410,7 @@
       "evil",
       "void"
     ],
-    "text": "Breaker: 1\n\nBlitz: If the check to play this card was modified, add 1 Power token to your stage.\n\nBlitz Commit up to 2 Power tokens: Seal 1 rival foundation for each Power token committed this way.",
+    "text": "Blitz: If the check to play this card was modified, add 1 Power token to your stage.\n\nBlitz Commit up to 2 Power tokens: Seal 1 rival foundation for each Power token committed this way.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 1,
@@ -3352,7 +3421,10 @@
     "asset": "gdz01/116.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/116.jpg",
     "cardeio_id": "9cf076d9056541a79b1ea76a",
-    "cardeio_slug": "corona-beam"
+    "cardeio_slug": "corona-beam",
+    "keywords": [
+      "Breaker: 1"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3372,7 +3444,7 @@
       "earth",
       "water"
     ],
-    "text": "Deflect: 4\n\nResponse: After this attack deals damage, add 1 Power token to your stage.",
+    "text": "Response: After this attack deals damage, add 1 Power token to your stage.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 3,
@@ -3383,7 +3455,10 @@
     "asset": "gdz01/117.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/117.jpg",
     "cardeio_id": "42f47192107044708a66617a",
-    "cardeio_slug": "corrosive-body"
+    "cardeio_slug": "corrosive-body",
+    "keywords": [
+      "Deflect: 4"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3503,7 +3578,7 @@
       "life",
       "water"
     ],
-    "text": "Breaker: 1\n\nResponse: After this attack deals damage, add 2 Destoroyah counters to your character.",
+    "text": "Response: After this attack deals damage, add 2 Destoroyah counters to your character.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 2,
@@ -3514,7 +3589,10 @@
     "asset": "gdz01/121.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/121.jpg",
     "cardeio_id": "b66059d931b14545acd12d76",
-    "cardeio_slug": "flying-menace"
+    "cardeio_slug": "flying-menace",
+    "keywords": [
+      "Breaker: 1"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3534,7 +3612,7 @@
       "order",
       "void"
     ],
-    "text": "Deadlock Powerful: 5 - Ranged\n\nBlitz: This attack gets +3 speed. Only playable if your rival has 4 or more committed foundations.\n\nResponse: After this attack resolves, if it received a speed and damage bonus, commit and freeze 1 rival non-character card.",
+    "text": "Blitz: This attack gets +3 speed. Only playable if your rival has 4 or more committed foundations.\n\nResponse: After this attack resolves, if it received a speed and damage bonus, commit and freeze 1 rival non-character card.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -3545,7 +3623,11 @@
     "asset": "gdz01/122.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/122.jpg",
     "cardeio_id": "fa9627db278d472e9d5475f5",
-    "cardeio_slug": "focused-prism-beams"
+    "cardeio_slug": "focused-prism-beams",
+    "keywords": [
+      "Deadlock Powerful: 5",
+      "Ranged"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3565,7 +3647,7 @@
       "fire",
       "void"
     ],
-    "text": "EX: 2 - Fury - Powerful: 2\n\nWhile this card is in your cardpool, your attacks get +1 speed and you may sacrifice Power tokens as though you were spending momentum to pay for EX abilities.\n\nBlitz: Commit and seal 1 rival asset or foundation.",
+    "text": "While this card is in your cardpool, your attacks get +1 speed and you may sacrifice Power tokens as though you were spending momentum to pay for EX abilities.\n\nBlitz: Commit and seal 1 rival asset or foundation.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -3576,7 +3658,12 @@
     "asset": "gdz01/123.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/123.jpg",
     "cardeio_id": "a4974b13feb947ab87c31435",
-    "cardeio_slug": "frenzied-dive"
+    "cardeio_slug": "frenzied-dive",
+    "keywords": [
+      "EX: 2",
+      "Fury",
+      "Powerful: 2"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3630,7 +3717,7 @@
       "good",
       "order"
     ],
-    "text": "Breaker: 1 - Charge - Ranged - Tech\n\nResponse: After this attack deals damage to a character, your rival commits 2 foundations. Freeze 2 rival foundations.\n\nMechagodzilla Response [Card Pool]: At the start of the End Phase, remove this card with a Kiryu counter on it. Only playable if you blocked with this card this turn.",
+    "text": "Response: After this attack deals damage to a character, your rival commits 2 foundations. Freeze 2 rival foundations.\n\nMechagodzilla Response [Card Pool]: At the start of the End Phase, remove this card with a Kiryu counter on it. Only playable if you blocked with this card this turn.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 1,
@@ -3641,7 +3728,13 @@
     "asset": "gdz01/125.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/125.jpg",
     "cardeio_id": "ccfb7db8e0424c40adc690aa",
-    "cardeio_slug": "fusion-chest-cannon"
+    "cardeio_slug": "fusion-chest-cannon",
+    "keywords": [
+      "Breaker: 1",
+      "Charge",
+      "Ranged",
+      "Tech"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3661,7 +3754,7 @@
       "order",
       "void"
     ],
-    "text": "Stun: 1\n\nBlitz Spend 1 momentum: This attack gets +2 to its Stun rating.",
+    "text": "Blitz Spend 1 momentum: This attack gets +2 to its Stun rating.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 1,
@@ -3672,7 +3765,10 @@
     "asset": "gdz01/126.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/126.jpg",
     "cardeio_id": "808fe0bea526458093c6381e",
-    "cardeio_slug": "gliding-approach"
+    "cardeio_slug": "gliding-approach",
+    "keywords": [
+      "Stun: 1"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3761,7 +3857,7 @@
       "life",
       "water"
     ],
-    "text": "EX: 3 - Throw\n\nFace down cards do not count toward progressive difficulty to play this card.\n\nBlitz: This attack gets +X damage. X equals the number of cards in all card pools.",
+    "text": "Face down cards do not count toward progressive difficulty to play this card.\n\nBlitz: This attack gets +X damage. X equals the number of cards in all card pools.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 2,
@@ -3772,7 +3868,11 @@
     "asset": "gdz01/129.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/129.jpg",
     "cardeio_id": "e4f4da57549e42de9fdb85f4",
-    "cardeio_slug": "growing-grasp"
+    "cardeio_slug": "growing-grasp",
+    "keywords": [
+      "EX: 3",
+      "Throw"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3794,6 +3894,7 @@
     ],
     "keywords": [
       "Fury",
+      "Powerful: 3",
       "Punch",
       "Weapon"
     ],
@@ -3828,7 +3929,7 @@
       "earth",
       "water"
     ],
-    "text": "Deflect: 2 - Ranged\n\nBlitz Flip 1 foundation: This attack can be blocked only by cards with a printed block modifier of 3 or greater.",
+    "text": "Blitz Flip 1 foundation: This attack can be blocked only by cards with a printed block modifier of 3 or greater.",
     "difficulty": 5,
     "control": 2,
     "block_modifier": 1,
@@ -3839,7 +3940,11 @@
     "asset": "gdz01/131.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/131.jpg",
     "cardeio_id": "89f3d2c23e51435ea5af7e12",
-    "cardeio_slug": "hedrium-ray"
+    "cardeio_slug": "hedrium-ray",
+    "keywords": [
+      "Deflect: 2",
+      "Ranged"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3859,7 +3964,7 @@
       "good",
       "order"
     ],
-    "text": "Stun: 1 - Tech\n\nMechagodzilla Response Commit 1 foundation or spend 1 momentum: At the start of the End Phase, remove this card with a Kiryu counter on it.",
+    "text": "Mechagodzilla Response Commit 1 foundation or spend 1 momentum: At the start of the End Phase, remove this card with a Kiryu counter on it.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 1,
@@ -3870,7 +3975,11 @@
     "asset": "gdz01/132.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/132.jpg",
     "cardeio_id": "4a0859c39b4e404597419c86",
-    "cardeio_slug": "integrated-weapons"
+    "cardeio_slug": "integrated-weapons",
+    "keywords": [
+      "Stun: 1",
+      "Tech"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3890,7 +3999,7 @@
       "good",
       "void"
     ],
-    "text": "Deadlock Powerful: 3 - Punch - Tech\n\nBlitz: Add 2 cards from a player's discard pile to the bottom of their deck in any order.\n\nBlitz: This attack gets +1 speed for each foundation in your rival's stage.",
+    "text": "Blitz: Add 2 cards from a player's discard pile to the bottom of their deck in any order.\n\nBlitz: This attack gets +1 speed for each foundation in your rival's stage.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -3901,7 +4010,12 @@
     "asset": "gdz01/133.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/133.jpg",
     "cardeio_id": "6c42a2640ffc4dfb8eb413b5",
-    "cardeio_slug": "jet-haymaker"
+    "cardeio_slug": "jet-haymaker",
+    "keywords": [
+      "Deadlock Powerful: 3",
+      "Punch",
+      "Tech"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -3921,7 +4035,7 @@
       "good",
       "void"
     ],
-    "text": "Deadlock Stun: 2 - Punch - Tech\n\nBlitz: Add up to 4 cards from your discard pile to the bottom of your deck in any order. This attack gets +1 damage for each non-attack card added this way.\n\nBlitz: If the check to play this card was modified, draw 1 card.",
+    "text": "Blitz: Add up to 4 cards from your discard pile to the bottom of your deck in any order. This attack gets +1 damage for each non-attack card added this way.\n\nBlitz: If the check to play this card was modified, draw 1 card.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 2,
@@ -3932,7 +4046,12 @@
     "asset": "gdz01/134.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/134.jpg",
     "cardeio_id": "702bb6e8008e420ebc19eebd",
-    "cardeio_slug": "jet-uppercut"
+    "cardeio_slug": "jet-uppercut",
+    "keywords": [
+      "Deadlock Stun: 2",
+      "Punch",
+      "Tech"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -4127,7 +4246,7 @@
       "fire",
       "order"
     ],
-    "text": "Powerful: 3 - Ranged - Tech\n\nBlitz: Your rival commits 1 foundation. If they have 10 or more foundations, commit 1 rival foundation.\n\nBlitz: This attack gets +1 speed for each committed rival foundation.",
+    "text": "Blitz: Your rival commits 1 foundation. If they have 10 or more foundations, commit 1 rival foundation.\n\nBlitz: This attack gets +1 speed for each committed rival foundation.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 1,
@@ -4138,7 +4257,12 @@
     "asset": "gdz01/140.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/140.jpg",
     "cardeio_id": "f685141d9afc4e01a0a5695b",
-    "cardeio_slug": "mechanical-monster"
+    "cardeio_slug": "mechanical-monster",
+    "keywords": [
+      "Powerful: 3",
+      "Ranged",
+      "Tech"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -4158,7 +4282,7 @@
       "life",
       "water"
     ],
-    "text": "Stun: 1\n\nBlitz Remove up to 2 counters from your character: This attack gets +2 damage for each counter removed this way.",
+    "text": "Blitz Remove up to 2 counters from your character: This attack gets +2 damage for each counter removed this way.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 2,
@@ -4169,7 +4293,10 @@
     "asset": "gdz01/141.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/141.jpg",
     "cardeio_id": "819ceccb85104e02a69f9d4f",
-    "cardeio_slug": "micro-oxygen-beam"
+    "cardeio_slug": "micro-oxygen-beam",
+    "keywords": [
+      "Stun: 1"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -4189,7 +4316,7 @@
       "evil",
       "void"
     ],
-    "text": "Breaker: 1\n\nResponse: After this attack is blocked, add it to your momentum.\n\nDeadlock Blitz: Add 2 Power tokens to your stage.",
+    "text": "Response: After this attack is blocked, add it to your momentum.\n\nDeadlock Blitz: Add 2 Power tokens to your stage.",
     "difficulty": 5,
     "control": 1,
     "block_modifier": 1,
@@ -4200,7 +4327,10 @@
     "asset": "gdz01/142.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/142.jpg",
     "cardeio_id": "d23aca2baaf542c7bd6be716",
-    "cardeio_slug": "might-of-the-cosmos"
+    "cardeio_slug": "might-of-the-cosmos",
+    "keywords": [
+      "Breaker: 1"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -4220,7 +4350,7 @@
       "life",
       "order"
     ],
-    "text": "Breaker: 2 - Powerful: 2 - Ranged - Tech\n\nBlitz: Commit 1 rival asset or foundation. If your rival has 10 or more foundations, freeze it.\n\nResponse: After this attack deals damage, add 1 Power token to your stage.",
+    "text": "Blitz: Commit 1 rival asset or foundation. If your rival has 10 or more foundations, freeze it.\n\nResponse: After this attack deals damage, add 1 Power token to your stage.",
     "difficulty": 3,
     "control": 3,
     "block_modifier": 1,
@@ -4231,7 +4361,13 @@
     "asset": "gdz01/143.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/143.jpg",
     "cardeio_id": "891faaa0bec34c9a9ba6ba59",
-    "cardeio_slug": "monster-vs-machine"
+    "cardeio_slug": "monster-vs-machine",
+    "keywords": [
+      "Breaker: 2",
+      "Powerful: 2",
+      "Ranged",
+      "Tech"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -4288,7 +4424,8 @@
       "water"
     ],
     "keywords": [
-      "Fury"
+      "Fury",
+      "Powerful: 3"
     ],
     "text": "Response: After you remove 1 or more counters from your character to pay a cost, add 1 Power token to your stage.\n\nForm [Discard Pile]: Try to play this attack from your discard pile. Only playable if 2 or more rival cards have been destroyed this Combat Phase.",
     "difficulty": 4,
@@ -4321,7 +4458,7 @@
       "life",
       "water"
     ],
-    "text": "Breaker: 1\n\nResponse: After this attack resolves, flip it.\n\nDeadlock Blitz: Ready 2 foundations.",
+    "text": "Response: After this attack resolves, flip it.\n\nDeadlock Blitz: Ready 2 foundations.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 1,
@@ -4332,7 +4469,10 @@
     "asset": "gdz01/146.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/146.jpg",
     "cardeio_id": "ef90a8e8ea344420a3492d56",
-    "cardeio_slug": "plant-tendrils"
+    "cardeio_slug": "plant-tendrils",
+    "keywords": [
+      "Breaker: 1"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -4352,7 +4492,7 @@
       "fire",
       "void"
     ],
-    "text": "EX: 3\n\nBlitz: If you have 0 momentum, this attack gets +1 speed and +1 damage.\n\nResponse: After this attack deals damage, add 1 Power token to your stage.",
+    "text": "Blitz: If you have 0 momentum, this attack gets +1 speed and +1 damage.\n\nResponse: After this attack deals damage, add 1 Power token to your stage.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 3,
@@ -4363,7 +4503,10 @@
     "asset": "gdz01/147.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/147.jpg",
     "cardeio_id": "3da169231d1f4d4b82747ee0",
-    "cardeio_slug": "plummeting-talon-strike"
+    "cardeio_slug": "plummeting-talon-strike",
+    "keywords": [
+      "EX: 3"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -4487,7 +4630,7 @@
       "good",
       "order"
     ],
-    "text": "Powerful: 2 - Ranged\n\nResponse: After this attack deals damage, your next attack gets +2 speed.",
+    "text": "Response: After this attack deals damage, your next attack gets +2 speed.",
     "difficulty": 4,
     "control": 3,
     "block_modifier": 2,
@@ -4498,7 +4641,11 @@
     "asset": "gdz01/151.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/151.jpg",
     "cardeio_id": "9868b6e1a9ae4afcadb753c2",
-    "cardeio_slug": "silk-cocoon"
+    "cardeio_slug": "silk-cocoon",
+    "keywords": [
+      "Powerful: 2",
+      "Ranged"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -4656,7 +4803,7 @@
       "all",
       "void"
     ],
-    "text": "Breaker: 2\n\nBlitz Mill 2: Remove 1 card from your discard pile. This attack gets +X speed. X equals the printed difficulty of the removed card.",
+    "text": "Blitz Mill 2: Remove 1 card from your discard pile. This attack gets +X speed. X equals the printed difficulty of the removed card.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 2,
@@ -4667,7 +4814,10 @@
     "asset": "gdz01/156.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/156.jpg",
     "cardeio_id": "0b0928add01e4db4b281e27b",
-    "cardeio_slug": "winged-death"
+    "cardeio_slug": "winged-death",
+    "keywords": [
+      "Breaker: 2"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -4833,7 +4983,7 @@
       "good",
       "order"
     ],
-    "text": "Deadlock Breaker: 2\n\nWhen you try to block with this card, return your rival's attack to its printed speed and zone.",
+    "text": "When you try to block with this card, return your rival's attack to its printed speed and zone.",
     "difficulty": 2,
     "control": 5,
     "block_modifier": 2,
@@ -4841,7 +4991,10 @@
     "asset": "gdz01/162.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/162.jpg",
     "cardeio_id": "1e427dd0058b4870942a032b",
-    "cardeio_slug": "brace-for-impact"
+    "cardeio_slug": "brace-for-impact",
+    "keywords": [
+      "Deadlock Breaker: 2"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -5113,7 +5266,7 @@
       "fire",
       "life"
     ],
-    "text": "Deflect: 2\n\nResponse: After you play this card's Deflect ability, draw 1 card and gain 1 health.",
+    "text": "Response: After you play this card's Deflect ability, draw 1 card and gain 1 health.",
     "difficulty": 2,
     "control": 5,
     "block_modifier": 3,
@@ -5121,7 +5274,10 @@
     "asset": "gdz01/172.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/172.jpg",
     "cardeio_id": "90bed50d92074179abd77376",
-    "cardeio_slug": "fearsome-durability"
+    "cardeio_slug": "fearsome-durability",
+    "keywords": [
+      "Deflect: 2"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -5197,7 +5353,7 @@
       "good",
       "order"
     ],
-    "text": "Unique\n\nMechagodzilla Response: After you check this card, remove it with a Kiryu counter on it.\n\nResponse Commit: After you block with a card, return it to your hand.",
+    "text": "Mechagodzilla Response: After you check this card, remove it with a Kiryu counter on it.\n\nResponse Commit: After you block with a card, return it to your hand.",
     "difficulty": 3,
     "control": 5,
     "block_modifier": 3,
@@ -5205,7 +5361,10 @@
     "asset": "gdz01/175.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/175.jpg",
     "cardeio_id": "8a75061934ac4199a2f56bcb",
-    "cardeio_slug": "godzilla-vs-mechagodzilla"
+    "cardeio_slug": "godzilla-vs-mechagodzilla",
+    "keywords": [
+      "Unique"
+    ]
   },
   {
     "extension_short": "gdz01",
@@ -5337,7 +5496,7 @@
       "earth",
       "water"
     ],
-    "text": "Deflect: 2\n\nEnhance [Tenacious]: Add this card to the top of your deck.",
+    "text": "Enhance [Tenacious]: Add this card to the top of your deck.",
     "difficulty": 2,
     "control": 5,
     "block_modifier": 4,
@@ -5345,7 +5504,10 @@
     "asset": "gdz01/180.jpg",
     "ultra_url_path": "https://www.uvsultra.online/images/extensions/gdz01/180.jpg",
     "cardeio_id": "7e106afd96f047b1967d5cee",
-    "cardeio_slug": "recombining-body"
+    "cardeio_slug": "recombining-body",
+    "keywords": [
+      "Deflect: 2"
+    ]
   },
   {
     "extension_short": "gdz01",

@@ -30,6 +30,7 @@ const CARD_FILES = [
   'heroesclash.json', 'rampage_dlc.json', 'rampage.json', 'provs.json',
   'gg-critrole.json', 'sjw-mha4.json', 'cards.json', 'kaiju.json',
   'teamhero.json', 'mha09.json', 'tekken8.json', 'sf6-2026.json',
+  'fairytail.json',
 ]
 
 // The comparison Hydra's importer effectively makes.

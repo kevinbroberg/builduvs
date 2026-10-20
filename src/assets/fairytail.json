@@ -1,0 +1,5069 @@
+[
+  {
+    "extension_short": "ft01",
+    "numero": 1,
+    "numero_image": 1,
+    "type": "character",
+    "name": "Cana Alberona, Cardslinger",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good",
+      "void"
+    ],
+    "keywords": [
+      "Mage"
+    ],
+    "text": "At the start of the game, add 5 Quest counters to this card.\n\nWhen you make a check to play a card, that check gets +1 for each copy of that card in your card pool (max. +3).",
+    "hand_size": 6,
+    "vitality": 31,
+    "asset": "ft01/001.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/001.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 2,
+    "numero_image": 2,
+    "type": "character",
+    "name": "Elfman Strauss, Manly Man",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth",
+      "fire"
+    ],
+    "keywords": [
+      "Brute",
+      "Mage"
+    ],
+    "text": "If your rival has 2 or more cards in their card pool, your checks to play attack cards get +1.\n\nEnhance: Your Fury or Slam attack gets +1 damage. If it is blocked, your next attack gets +4 damage.",
+    "hand_size": 6,
+    "vitality": 32,
+    "asset": "ft01/002.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/002.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 3,
+    "numero_image": 3,
+    "type": "character",
+    "name": "Erza Scarlet, Fairy Queen",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire",
+      "void"
+    ],
+    "keywords": [
+      "Champion",
+      "Mage"
+    ],
+    "text": "Enhance [Your turn]: Each player mills 2. Your attack gets +1 damage for each attack milled this way.\n\nEnhance [Once per turn] Remove 1 Spell from your discard pile: Your attack gains Echo or Stun: 2 if it has the same name as the removed card.",
+    "hand_size": 6,
+    "vitality": 31,
+    "asset": "ft01/003.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/003.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 4,
+    "numero_image": 4,
+    "type": "character",
+    "name": "Gajeel Redfox, Iron Dragon Slayer",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil",
+      "fire"
+    ],
+    "keywords": [
+      "Mage",
+      "Spy"
+    ],
+    "text": "If you have 10 or less health, your checks to play Spells get +2.\n\nResponse Discard 1 card, lose 2 health: After 1 or more Spells enter your discard pile from your deck, add 1 of them to your hand.",
+    "hand_size": 6,
+    "vitality": 30,
+    "asset": "ft01/004.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/004.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 5,
+    "numero_image": 5,
+    "type": "character",
+    "name": "Gray Fullbuster, Unclothed Mage",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire",
+      "water"
+    ],
+    "keywords": [
+      "Brawler",
+      "Mage"
+    ],
+    "text": "Enhance Freeze 2 foundations: Freeze 1 rival foundation.\n\nEnhance [Your turn]: Ready 1 frozen foundation that has not been readied this Combat Phase.",
+    "hand_size": 6,
+    "vitality": 33,
+    "asset": "ft01/005.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/005.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 6,
+    "numero_image": 6,
+    "type": "character",
+    "name": "Jellal Fernandes, Dark Mage",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth",
+      "evil"
+    ],
+    "keywords": [
+      "Mage",
+      "Occultist"
+    ],
+    "text": "Response: After your Slam or Spell attack is completely blocked, your rival loses 2 health. This ability cannot reduce your rival's health below 1.\n\nEnhance: This attack gets -1 speed for each attack in your rival's card pool (max. -3).",
+    "hand_size": 6,
+    "vitality": 31,
+    "asset": "ft01/006.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/006.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 7,
+    "numero_image": 7,
+    "type": "character",
+    "name": "Jose Porla, Wizard Saint",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil",
+      "void"
+    ],
+    "keywords": [
+      "Mage",
+      "Pactbound"
+    ],
+    "text": "Response: After an attack is not completely blocked, your rival's next check gets -1.\n\nResponse: After your rival fails a check, they lose 1 health.",
+    "hand_size": 7,
+    "vitality": 23,
+    "asset": "ft01/007.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/007.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 8,
+    "numero_image": 8,
+    "type": "character",
+    "name": "Juvia Lockser, Rain Woman",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil",
+      "water"
+    ],
+    "keywords": [
+      "Mage"
+    ],
+    "text": "Response [Tenacious]: After an attack is completely blocked, choose 1 card in your rival's card pool. That card cannot leave their card pool this turn.\n\nResponse [Tenacious]: After an attack deals damage, ready this card. If it is your rival's turn, add 1 Quest counter to this card.",
+    "hand_size": 5,
+    "vitality": 37,
+    "asset": "ft01/008.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/008.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 9,
+    "numero_image": 9,
+    "type": "character",
+    "name": "Laxus Dreyar, Lightning Dragon Slayer",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil",
+      "good"
+    ],
+    "keywords": [
+      "Mage"
+    ],
+    "text": "At the start of your first Combat Phase of the game, draw 2 cards.\n\nEnhance: If you have more  foundations than  foundations, your rival's next check to play a block gets -3. If you have more  foundations than  foundations, your next check to play a block gets +3.",
+    "hand_size": 6,
+    "vitality": 30,
+    "asset": "ft01/009.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/009.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 10,
+    "numero_image": 10,
+    "type": "character",
+    "name": "Lucy Heartfilia, Celestial Wizard",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth",
+      "water"
+    ],
+    "keywords": [
+      "Mage"
+    ],
+    "text": "If 1 or more Quest counters would be added to this card, that many plus 1 Quest counters are added instead.\n\nYour hand size gets +1 for every 4 Quest counters on this card (max. +5).\n\nResponse: After you take 2 or more damage, seal and unflip 1 foundation.",
+    "hand_size": 5,
+    "vitality": 36,
+    "asset": "ft01/010.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/010.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 11,
+    "numero_image": 11,
+    "type": "character",
+    "name": "Makarov Dreyar, Guild Master",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth",
+      "good"
+    ],
+    "keywords": [
+      "Mage",
+      "Warden"
+    ],
+    "text": "Enhance: Your attack with printed speed 3 or less gets +3 damage. This attack gets -1 damage for each Throw attack in your card pool.\n\nEnhance Sacrifice 1 foundation: Build 1 Armor foundation from your hand.",
+    "hand_size": 6,
+    "vitality": 33,
+    "asset": "ft01/011.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/011.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 12,
+    "numero_image": 12,
+    "type": "character",
+    "name": "Mirajane Strauss, The Demon",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void",
+      "water"
+    ],
+    "keywords": [
+      "Mage"
+    ],
+    "text": "Response Commit: Before this attack's block step, it gets +3 or -3 speed.\n\nResponse [Once per turn, Tenacious]: After an attack is not blocked, ready this card. Draw 1 card. Discard 1 card.",
+    "hand_size": 7,
+    "vitality": 22,
+    "asset": "ft01/012.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/012.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 13,
+    "numero_image": 13,
+    "type": "character",
+    "name": "Mystogan, Mysterious Mage",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth",
+      "void"
+    ],
+    "keywords": [
+      "Mage"
+    ],
+    "text": "Enhance: If your rival has 3 or fewer foundations with abilities, this attack gets +2 or -2 damage.\n\nResponse [Once per turn] Spend 1 momentum: After your rival plays a non-attack card, flip that card.",
+    "hand_size": 7,
+    "vitality": 22,
+    "asset": "ft01/013.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/013.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 14,
+    "numero_image": 14,
+    "type": "character",
+    "name": "Natsu Dragneel, Fire Dragon Slayer",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire",
+      "good"
+    ],
+    "keywords": [
+      "Champion",
+      "Mage"
+    ],
+    "text": "Response [Once per turn]: After your attack deals damage, add 1 Quest counter to this card.\n\nEnhance: Your attack gets +1 speed. If it is a Quest attack, it gets +2 damage.\n\nEnhance Commit, Remove 3 Quest counters: The next block you try to play this turn passes (no check necessary).",
+    "hand_size": 6,
+    "vitality": 32,
+    "asset": "ft01/014.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/014.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 15,
+    "numero_image": 15,
+    "type": "character",
+    "name": "Wendy Marvell, Sky Dragon Slayer",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good",
+      "water"
+    ],
+    "keywords": [
+      "Healer",
+      "Mage"
+    ],
+    "text": "When you add 1 or more Quest counters to this card, gain 1 health.\n\nEnhance Sacrifice 1 foundation: Add 1 Quest counter to this card. Ready 1 foundation that has not been readied this Combat Phase.",
+    "hand_size": 7,
+    "vitality": 23,
+    "asset": "ft01/015.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/015.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 16,
+    "numero_image": 16,
+    "type": "attack",
+    "name": "Beast Arm: Scale Bull",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Spell"
+    ],
+    "text": "Response [Card Pool] Flip, Commit 1 foundation: After your rival plays an attack, it gets -X damage. X equals the number of face down foundations in your rival's stage.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 2,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "ft01/016.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/016.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 17,
+    "numero_image": 17,
+    "type": "attack",
+    "name": "Beast Slam",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Fury",
+      "Powerful: 2",
+      "Slam"
+    ],
+    "text": "Blitz: Your next Slam attack gets +3 damage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 6,
+    "asset": "ft01/017.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/017.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 18,
+    "numero_image": 18,
+    "type": "attack",
+    "name": "Beast Soul",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Quest: 2",
+      "Slam"
+    ],
+    "text": "Your rival cannot play character abilities during this attack.\n\nThis attack's speed and damage cannot be reduced below printed.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "ft01/018.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/018.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 19,
+    "numero_image": 19,
+    "type": "attack",
+    "name": "Beast Soul: Lizardman",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Quest: 1",
+      "Spell"
+    ],
+    "text": "Blitz: If there are 2 or more Quest counters on your character, flip 1 rival foundation.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/019.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/019.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 20,
+    "numero_image": 20,
+    "type": "attack",
+    "name": "Dark Rondo",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Fury",
+      "Quest: 1",
+      "Spell"
+    ],
+    "text": "Blitz: If you have exactly 3 attacks in your card pool, this attack gains Echo.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "ft01/020.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/020.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 21,
+    "numero_image": 21,
+    "type": "attack",
+    "name": "Darkness Cage",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Spell",
+      "Stun: 1"
+    ],
+    "text": "Response [Card Pool]: After your rival plays an Action, they flip 1 foundation.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "ft01/021.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/021.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 22,
+    "numero_image": 22,
+    "type": "attack",
+    "name": "Fairy Law",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Quest: 2",
+      "Slam",
+      "Spell"
+    ],
+    "text": "Blitz Add 1 foundation from your stage to your hand: Your Fury and Slam attacks get +2 damage this turn.\n\nBlitz: If you have 2 or more Armor foundations, this attack gets +2 speed.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 9,
+    "asset": "ft01/022.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/022.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 23,
+    "numero_image": 23,
+    "type": "attack",
+    "name": "Fleuve d'Etoiles",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Breaker: 2",
+      "Charge",
+      "Weapon"
+    ],
+    "text": "Response: After you block with this card, add 1 Quest counter to your character.\n\nResponse: After this attack is blocked, your rival loses 2 health.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 3,
+    "asset": "ft01/023.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/023.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 24,
+    "numero_image": 24,
+    "type": "attack",
+    "name": "Heavenly Reckoning",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Quest: 1",
+      "Slam",
+      "Spell"
+    ],
+    "text": "Blitz: If your rival has a facedown foundation in their stage, your next Slam attack gets -1 difficulty.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "ft01/024.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/024.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 25,
+    "numero_image": 25,
+    "type": "attack",
+    "name": "Manly Rage",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "EX: 2",
+      "Fury",
+      "Slam"
+    ],
+    "text": "Blitz: Your next Fury attack gets +1 speed and gains Powerful: 2.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "ft01/025.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/025.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 26,
+    "numero_image": 26,
+    "type": "attack",
+    "name": "Meteor",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Charge",
+      "Spell",
+      "Stun: 2"
+    ],
+    "text": "Response [Card Pool] Flip: After you play a Spell attack, it gets +X damage. X equals the number of face down foundations in your rival's stage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 2,
+    "attack_zone": "high",
+    "damage": 6,
+    "asset": "ft01/026.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/026.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 27,
+    "numero_image": 27,
+    "type": "attack",
+    "name": "Monster Mash",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Fury",
+      "Quest: 1",
+      "Slam"
+    ],
+    "text": "Blitz Remove 2 Quest counters from your character: This attack gets +5 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "ft01/027.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/027.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 28,
+    "numero_image": 28,
+    "type": "attack",
+    "name": "Scorpio: Sand Buster",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Ally",
+      "Quest: 2",
+      "Slam",
+      "Spell"
+    ],
+    "text": "Response: After you play this card, choose 2 rival foundations with difficulty 2 or less. Your rival flips 1 of the chosen foundations.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 7,
+    "asset": "ft01/028.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/028.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 29,
+    "numero_image": 29,
+    "type": "attack",
+    "name": "Spectre Scepter",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Quest: 3",
+      "Slam",
+      "Weapon"
+    ],
+    "text": "Response: After this attack deals damage, flip 1 non-character card in your rival's stage with printed difficulty 2 or less.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/029.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/029.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 30,
+    "numero_image": 30,
+    "type": "attack",
+    "name": "Thought Projection",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Spell",
+      "Stun: 1"
+    ],
+    "text": "",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 0,
+    "attack_zone": "mid",
+    "damage": 7,
+    "asset": "ft01/030.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/030.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 31,
+    "numero_image": 31,
+    "type": "attack",
+    "name": "Urano Metria",
+    "rarity": "secret rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Fury",
+      "Slam",
+      "Spell"
+    ],
+    "text": "Blitz: Choose 1 type of counter on your character. Change this attack's damage to the number of counters of that type on your character.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "ft01/031.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/031.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 32,
+    "numero_image": 32,
+    "type": "foundation",
+    "name": "A Master's Resolve",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Armor"
+    ],
+    "text": "Enhance Flip: This attack gets -2 damage. Add 1 Quest counter to your character.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "ft01/032.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/032.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 33,
+    "numero_image": 33,
+    "type": "foundation",
+    "name": "Brotherly Protector",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Armor"
+    ],
+    "text": "Response [Tenacious]: After this card is committed by a rival effect, ready 1 Armor foundation that has not been readied this Combat Phase.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 4,
+    "block_zone": "mid",
+    "asset": "ft01/033.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/033.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 34,
+    "numero_image": 34,
+    "type": "foundation",
+    "name": "Calm Down!",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Armor"
+    ],
+    "text": "Enhance Flip: This attack gets -2 speed and +2 damage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "ft01/034.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/034.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 35,
+    "numero_image": 35,
+    "type": "foundation",
+    "name": "Giant's Wrath",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Armor"
+    ],
+    "text": "Enhance [Tenacious] Flip: Choose 1 card in a card pool. That card cannot leave the card pool during this Combat Phase.\n\nEnhance Commit: This attack gets -2 damage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "ft01/035.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/035.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 36,
+    "numero_image": 36,
+    "type": "foundation",
+    "name": "Jellal's Face-Off",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Spell"
+    ],
+    "text": "Response: After you play this card, if your rival has more face down foundations than you, draw 1 card.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "ft01/036.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/036.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 37,
+    "numero_image": 37,
+    "type": "foundation",
+    "name": "Playing the Game",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "text": "Response [Tenacious]: After you deal 5 or more damage with a Slam attack, ready this foundation.",
+    "difficulty": 2,
+    "control": 4,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "ft01/037.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/037.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 38,
+    "numero_image": 38,
+    "type": "foundation",
+    "name": "Prepare for Punishment",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Armor"
+    ],
+    "text": "Enhance Flip: Add 1 Quest counter to your character. This attack cannot be added to its owner's momentum.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "ft01/038.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/038.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 39,
+    "numero_image": 39,
+    "type": "foundation",
+    "name": "Scary Lucy",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "text": "Enhance Flip: This  attack gains Quest: 1.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "ft01/039.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/039.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 40,
+    "numero_image": 40,
+    "type": "foundation",
+    "name": "This Means War!",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "text": "Enhance Sacrifice: This Slam or Spell attack gets +4 damage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "ft01/040.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/040.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 41,
+    "numero_image": 41,
+    "type": "foundation",
+    "name": "Unyielding Strength",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "keywords": [
+      "Armor"
+    ],
+    "text": "Enhance Commit: This attack with printed speed 3 or less gets +4 damage.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "ft01/041.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/041.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 42,
+    "numero_image": 42,
+    "type": "foundation",
+    "name": "Whip-Cracking Warrior",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "earth"
+    ],
+    "text": "Response: After you build this foundation, add 1 Quest counter to your character.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "ft01/042.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/042.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 43,
+    "numero_image": 43,
+    "type": "attack",
+    "name": "Altairis",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Spell"
+    ],
+    "text": "Response [Card Pool]: After you play an attack, your rival checks against X. X equals their health. If they fail, they lose 1 health.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/043.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/043.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 44,
+    "numero_image": 44,
+    "type": "attack",
+    "name": "Bind Snake",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Spell",
+      "Stun: 1"
+    ],
+    "text": "Blitz: Your next Spell attack gets +3 speed.",
+    "difficulty": 7,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 7,
+    "asset": "ft01/044.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/044.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 45,
+    "numero_image": 45,
+    "type": "attack",
+    "name": "Dark Blast",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Quest: 1",
+      "Spell"
+    ],
+    "text": "Response: After this attack deals damage, each player loses 2 health.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "ft01/045.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/045.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 46,
+    "numero_image": 46,
+    "type": "attack",
+    "name": "Dead Wave",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Spell"
+    ],
+    "text": "Blitz: Your rival checks against a 6. If they fail, remove 1 card from your card pool. You may spend 1 momentum. If you do, play this ability a second time.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "ft01/046.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/046.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 47,
+    "numero_image": 47,
+    "type": "attack",
+    "name": "Double Dragon Smash",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Charge",
+      "Spell"
+    ],
+    "text": "Blitz Lose X health: This attack gets +X damage and gains Quest: X (max. 4).",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "ft01/047.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/047.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 48,
+    "numero_image": 48,
+    "type": "attack",
+    "name": "Guardian's Vortex",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "EX: 3",
+      "Spell"
+    ],
+    "text": "Response: After this attack is blocked, gain 2 health. Your rival may lose 1 health to cancel this ability.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "low",
+    "damage": 3,
+    "asset": "ft01/048.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/048.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 49,
+    "numero_image": 49,
+    "type": "attack",
+    "name": "Iron Dragon's Club",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Powerful: 2"
+    ],
+    "text": "Blitz Remove 2 Quest counters from your character: This attack gets +2 speed.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 2,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "ft01/049.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/049.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 50,
+    "numero_image": 50,
+    "type": "attack",
+    "name": "Iron Dragon's Lance",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Quest: 1"
+    ],
+    "text": "Response [Hand] Remove, lose 3 health: After your rival plays an attack with printed difficulty 4 or less, add it to their momentum and they draw 1 card.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 7,
+    "asset": "ft01/050.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/050.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 51,
+    "numero_image": 51,
+    "type": "attack",
+    "name": "Iron Dragon's Scales",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Punch",
+      "Stun: 1"
+    ],
+    "text": "Blitz Lose 1 health: This attack gets +2 damage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "ft01/051.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/051.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 52,
+    "numero_image": 52,
+    "type": "attack",
+    "name": "Lightning Dragon Heavenly Spear",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "Blitz Remove 1 foundation: This attack gets +2 damage. If you removed a  foundation this way, build it at the end of your Combat Phase.\n\nBlitz: If you have more foundations with  than without, draw 1 card.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "ft01/052.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/052.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 53,
+    "numero_image": 53,
+    "type": "attack",
+    "name": "Raging Bolt",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Fury",
+      "Quest: 3",
+      "Spell"
+    ],
+    "text": "Blitz: Remove up to 3 foundations from your stage. This attack gets +2 damage for each foundation removed this way. If you removed 3  foundations, you may change this attack's zone.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/053.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/053.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 54,
+    "numero_image": 54,
+    "type": "attack",
+    "name": "Shade Troopers",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Ally",
+      "EX: 2",
+      "Weapon"
+    ],
+    "text": "Blitz: Your rival's next check gets -1.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "ft01/054.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/054.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 55,
+    "numero_image": 55,
+    "type": "attack",
+    "name": "Shy No More",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Fury",
+      "Quest: 2"
+    ],
+    "text": "Blitz Remove 2 Quest counters from your character: Choose 6 foundations in each stage. Add each foundation not chosen this way to its owner's hand.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 0,
+    "block_zone": "low",
+    "speed": 6,
+    "attack_zone": "low",
+    "damage": 6,
+    "asset": "ft01/055.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/055.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 56,
+    "numero_image": 56,
+    "type": "attack",
+    "name": "Super Magic Giant: Phantom Mk II",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Ranged",
+      "Spell"
+    ],
+    "text": "Blitz Lose 2 health, mill 4: This attack gets +2 speed for each attack milled this way.\n\nBlitz: This attack gets +2 damage for each copy of \"Super Magic Giant: Phantom Mk II\" in your card pool.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 3,
+    "asset": "ft01/056.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/056.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 57,
+    "numero_image": 57,
+    "type": "attack",
+    "name": "The Raijin Tribe",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Ally",
+      "Quest: 1"
+    ],
+    "text": "Blitz: If there are 2 or more Quest counters on your character, your rival removes 1 Quest counter from their character and this attack gets +1 damage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/057.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/057.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 58,
+    "numero_image": 58,
+    "type": "attack",
+    "name": "Unison Raid",
+    "rarity": "secret rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Ally",
+      "Breaker: 1",
+      "Fury",
+      "Spell"
+    ],
+    "text": "When you make a check to play this card, you may sacrifice X foundations. If you do, that check passes. X equals your printed hand size.\n\nBlitz: This attack gets +1 damage for each card in your rival's card pool.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "ft01/058.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/058.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 59,
+    "numero_image": 59,
+    "type": "foundation",
+    "name": "Altar of Ambition",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Enhance Flip: Your rival checks against a 5. If they fail, this attack gets -3 speed. Otherwise, it gets -1 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "ft01/059.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/059.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 60,
+    "numero_image": 60,
+    "type": "foundation",
+    "name": "Boiling-Hot Jealousy",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Unique"
+    ],
+    "text": "First Enhance Remove, spend 1 momentum: Before you take damage from this attack, change its damage to any amount (0 or greater).",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "ft01/060.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/060.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 61,
+    "numero_image": 61,
+    "type": "foundation",
+    "name": "Come at Me",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "keywords": [
+      "Unique"
+    ],
+    "text": "Enhance [Once per turn] Sacrifice 1 foundation: Draw 1 card.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "ft01/061.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/061.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 62,
+    "numero_image": 62,
+    "type": "foundation",
+    "name": "Confident Brawler",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Response: After you build this foundation, add 1 Quest counter to your character.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "ft01/062.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/062.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 63,
+    "numero_image": 63,
+    "type": "foundation",
+    "name": "For Your Own Protection",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Enhance [Tenacious] Flip: Your rival removes 1 Quest counter from their character. If they do, add 1 Quest counter to your character.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "ft01/063.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/063.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 64,
+    "numero_image": 64,
+    "type": "foundation",
+    "name": "Heaven's Game",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Enhance Remove 1 Quest counter from your character: Your Spell attack gets +2 damage.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "ft01/064.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/064.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 65,
+    "numero_image": 65,
+    "type": "foundation",
+    "name": "Mad With Power",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Response Flip: After your rival loses health due to an effect, remove 1 non-attack card from their discard pile and gain 1 health.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "ft01/065.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/065.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 66,
+    "numero_image": 66,
+    "type": "foundation",
+    "name": "Projected Menace",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Enhance Flip: Add 1 Quest counter to your character. Your rival's next check gets -1.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "ft01/066.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/066.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 67,
+    "numero_image": 67,
+    "type": "foundation",
+    "name": "Seeking Redemption",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Enhance Lose 2 health: Your attack gets +1 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "ft01/067.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/067.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 68,
+    "numero_image": 68,
+    "type": "foundation",
+    "name": "Steady and Gentle",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "When you build this card, if you have 3 or more copies of it in your stage, flip this card, lose 2 health, and draw 2 cards.\n\nEnhance: If you have readied a card in your stage this Combat Phase, this attack gets +1 damage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "ft01/068.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/068.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 69,
+    "numero_image": 69,
+    "type": "foundation",
+    "name": "Total Opposite",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "evil"
+    ],
+    "text": "Enhance Flip: This  attack gains Quest: 1.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "ft01/069.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/069.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 70,
+    "numero_image": 70,
+    "type": "action",
+    "name": "Panther Lily",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "Enhance Remove X Quest counters from your character: This attack gets -X speed or +X damage.\n\nEnhance [Card Pool]: This attack gains Quest: 1.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "asset": "ft01/070.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/070.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 71,
+    "numero_image": 71,
+    "type": "attack",
+    "name": "All Fired Up",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Echo",
+      "Quest: 2"
+    ],
+    "text": "Blitz Remove 3 Quest counters from your character: You may remove other Quest attacks from your card pool as though you were spending momentum to pay the cost of this attack's Echo ability.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "ft01/071.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/071.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 72,
+    "numero_image": 72,
+    "type": "attack",
+    "name": "Beast Fury",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Fury",
+      "Stun: 1"
+    ],
+    "text": "Blitz: Your next Slam attack gains Stun: 1.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "ft01/072.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/072.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 73,
+    "numero_image": 73,
+    "type": "attack",
+    "name": "Beast Swipe",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Fury",
+      "Throw"
+    ],
+    "text": "Response: After this attack deals 5 or more damage, discard up to 3 cards. Draw 1 card for each card discarded this way.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 2,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "ft01/073.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/073.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 74,
+    "numero_image": 74,
+    "type": "attack",
+    "name": "Cheap Trick",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Quest: 3"
+    ],
+    "text": "Response: After this attack is not blocked, mill 4. Add 1 attack milled this way to your hand. If you did not mill an attack this way, add 1 card with a check value of 2 from your discard pile to your hand.",
+    "difficulty": 3,
+    "control": 2,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "ft01/074.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/074.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 75,
+    "numero_image": 75,
+    "type": "attack",
+    "name": "Elfman's Anger",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Fury",
+      "Spell",
+      "Stun: 1"
+    ],
+    "text": "Response: After this attack deals damage, your next attack gets +X speed. X equals the damage dealt by this attack.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "ft01/075.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/075.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 76,
+    "numero_image": 76,
+    "type": "attack",
+    "name": "Erza's Armor Array",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Armor",
+      "Spell",
+      "Stun: 1"
+    ],
+    "text": "If you have 7 or more foundations, this attack gets +2 difficulty.\n\nBlitz: This attack gets +1 speed and +1 damage for each foundation committed to pass the check to play it.\n\nBlitz Remove 3 Quest counters from your character: This attack gets +2 to its Stun rating.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "ft01/076.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/076.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 77,
+    "numero_image": 77,
+    "type": "attack",
+    "name": "Etherion Smash",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Slam"
+    ],
+    "text": "Blitz: If your rival has lost health this turn, this attack gets +2 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "ft01/077.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/077.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 78,
+    "numero_image": 78,
+    "type": "attack",
+    "name": "Fire Dragon's Talon",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Quest: 1"
+    ],
+    "text": "Blitz: Your attacks get +1 damage this turn.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "ft01/078.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/078.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 79,
+    "numero_image": 79,
+    "type": "attack",
+    "name": "Fire Dragon's Wing Attack",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Quest: 1"
+    ],
+    "text": "Blitz: If there are 2 or more Quest counters on your character, this attack gets +1 speed and +1 damage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "ft01/079.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/079.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 80,
+    "numero_image": 80,
+    "type": "attack",
+    "name": "Four-Limb Flourish",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Spell"
+    ],
+    "text": "You may include up to 6 copies of this card in your deck.\n\nResponse: After you remove this card, each player loses 1 health. This effect cannot reduce a player's health below 1.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "ft01/080.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/080.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 81,
+    "numero_image": 81,
+    "type": "attack",
+    "name": "Ice Blade: Seven Slice Dance",
+    "rarity": "secret rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Powerful: 3",
+      "Spell",
+      "Weapon"
+    ],
+    "text": "Blitz Mill 3: Add this card to your momentum during the End Phase.\n\nBlitz: If you have lost health this Combat Phase, this attack gains Stun: 2.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 6,
+    "asset": "ft01/081.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/081.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 82,
+    "numero_image": 82,
+    "type": "attack",
+    "name": "Ice Bringer",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "EX: 2",
+      "Spell",
+      "Weapon"
+    ],
+    "text": "Response Remove: After you block with this card, unfreeze 1 foundation.\n\nResponse: After this attack deals damage, your rival loses 1 health for each frozen and/or sealed foundation in your stage. Unfreeze all foundations in your stage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "ft01/082.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/082.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 83,
+    "numero_image": 83,
+    "type": "attack",
+    "name": "Iron Dragon's Roar",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Fury",
+      "Quest: 3",
+      "Spell"
+    ],
+    "text": "Response: After this attack deals damage, your next attack gets +3 damage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/083.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/083.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 84,
+    "numero_image": 84,
+    "type": "attack",
+    "name": "Outta My Way!",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Quest: 1",
+      "Throw"
+    ],
+    "text": "Blitz Remove 2 Quest counters from your character: This attack gets +3 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "speed": 1,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "ft01/084.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/084.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 85,
+    "numero_image": 85,
+    "type": "attack",
+    "name": "Second Origin Release",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "EX: 3",
+      "Spell"
+    ],
+    "text": "Blitz: This attack gets +1 damage for each other Spell in your card pool.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "ft01/085.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/085.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 86,
+    "numero_image": 86,
+    "type": "attack",
+    "name": "Slashing Blades",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "EX: 2",
+      "Weapon"
+    ],
+    "text": "Blitz: This attack cannot be blocked by foundations.\n\nBlitz Commit X foundations: This attack gets +X damage.",
+    "difficulty": 7,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 7,
+    "attack_zone": "low",
+    "damage": 7,
+    "asset": "ft01/086.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/086.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 87,
+    "numero_image": 87,
+    "type": "foundation",
+    "name": "Beast-Arm Elfman",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "keywords": [
+      "Spell"
+    ],
+    "text": "Enhance Commit: This attack gets +2 or -2 damage.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "asset": "ft01/087.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/087.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 88,
+    "numero_image": 88,
+    "type": "foundation",
+    "name": "Boss Rush",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "Enhance Flip: If there are 1 or more Quest counters on your character, this attack gets +2 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "ft01/088.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/088.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 89,
+    "numero_image": 89,
+    "type": "foundation",
+    "name": "Dragon Slayer Wizards",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "Enhance Lose 1 health: This attack gets +1 damage.\n\nResponse: After you discard this card, your attack gets +1 damage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "ft01/089.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/089.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 90,
+    "numero_image": 90,
+    "type": "foundation",
+    "name": "Erza's Face Off",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "Enhance Commit, Mill 2: This attack gets +1 speed for each foundation milled this way.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "ft01/090.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/090.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 91,
+    "numero_image": 91,
+    "type": "foundation",
+    "name": "Fairy Hunter",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "Enhance Flip: This  attack gains Quest: 1.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "ft01/091.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/091.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 92,
+    "numero_image": 92,
+    "type": "foundation",
+    "name": "Frozen Resolve",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "Response [Tenacious] Flip: After 1 or more foundations are frozen, ready 1 of them.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "ft01/092.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/092.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 93,
+    "numero_image": 93,
+    "type": "foundation",
+    "name": "Improvised Rations",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "Enhance [Tenacious] Sacrifice: This attack gets +2 speed and +1 damage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "ft01/093.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/093.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 94,
+    "numero_image": 94,
+    "type": "foundation",
+    "name": "Little Punk",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "Enhance Remove X Quest counters from your character: This attack gets +X damage (max. 3).",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "ft01/094.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/094.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 95,
+    "numero_image": 95,
+    "type": "foundation",
+    "name": "Royal Military Commander",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "Response: After you build this foundation, add 1 Quest counter to your character.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "ft01/095.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/095.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 96,
+    "numero_image": 96,
+    "type": "foundation",
+    "name": "Taking a Shortcut",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "fire"
+    ],
+    "text": "Enhance Flip: Add 1 Quest counter to your character. This attack gets +2 speed.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "ft01/096.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/096.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 97,
+    "numero_image": 97,
+    "type": "attack",
+    "name": "Becoming the Sky Dragon",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "EX: 3",
+      "Spell"
+    ],
+    "text": "Blitz Remove 1 Quest counter from your character: Build 1 Armor foundation from your hand.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 7,
+    "asset": "ft01/097.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/097.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 98,
+    "numero_image": 98,
+    "type": "attack",
+    "name": "Divine Rehabilitation",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Spell"
+    ],
+    "text": "Enhance [Card Pool] Remove: Build 1 foundation from your card pool.\n\nResponse [Discard Pile]: After you block with a card with a printed block modifier of 3 or greater, add this card to your card pool.",
+    "difficulty": 4,
+    "control": 2,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "ft01/098.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/098.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 99,
+    "numero_image": 99,
+    "type": "attack",
+    "name": "Dragon Force",
+    "rarity": "secret rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Quest: 1",
+      "Spell"
+    ],
+    "text": "This card does not count toward progressive difficulty to play cards whose printed block modifier is 3 or greater.\n\nBlitz Remove 7 Quest counters from your character: This attack is unblockable.\n\nResponse: After this attack deals damage, gain 2 health.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/099.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/099.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 100,
+    "numero_image": 100,
+    "type": "attack",
+    "name": "Dragon Slayer Ultimate Attack",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Spell"
+    ],
+    "text": "Response: After you block with this card, your rival's next attack gets -2 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 2,
+    "attack_zone": "low",
+    "damage": 6,
+    "asset": "ft01/100.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/100.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 101,
+    "numero_image": 101,
+    "type": "attack",
+    "name": "Expert Cardistry",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "EX: 2",
+      "Slam"
+    ],
+    "text": "Blitz: Your next attack gets +2 speed.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 8,
+    "asset": "ft01/101.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/101.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 102,
+    "numero_image": 102,
+    "type": "attack",
+    "name": "Frame-Break",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Quest: 1"
+    ],
+    "text": "Response Remove 2 Quest counters from your character: After this attack resolves, build it face down.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "ft01/102.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/102.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 103,
+    "numero_image": 103,
+    "type": "attack",
+    "name": "Giant Guardian",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Quest: 2",
+      "Stun: 2"
+    ],
+    "text": "Blitz: Add 1 Armor foundation from your discard pile to your hand.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/103.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/103.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 104,
+    "numero_image": 104,
+    "type": "attack",
+    "name": "Lightning Dragon's Iron Fist",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Punch",
+      "Spell"
+    ],
+    "text": "Blitz: Build up to 2 foundations with a combined printed difficulty of 3 or less from your hand.",
+    "difficulty": 8,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 6,
+    "attack_zone": "mid",
+    "damage": 9,
+    "asset": "ft01/104.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/104.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 105,
+    "numero_image": 105,
+    "type": "attack",
+    "name": "Lightning Stomp",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Kick",
+      "Quest: 1",
+      "Slam"
+    ],
+    "text": "Blitz: This attack gets +X damage. X equals the printed block modifier of the preceding attack in your card pool.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "ft01/105.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/105.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 106,
+    "numero_image": 106,
+    "type": "attack",
+    "name": "Never Again!",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "EX: 4"
+    ],
+    "text": "Response: After you block with this card, your rival spends 1 momentum. Your next check to play a block gets +X. X equals the check value of the spent momentum.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "speed": 1,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "ft01/106.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/106.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 107,
+    "numero_image": 107,
+    "type": "attack",
+    "name": "Pillow-Pummel",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Quest: 4",
+      "Slam"
+    ],
+    "text": "Response: After this attack is not blocked, gain 4 health.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "ft01/107.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/107.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 108,
+    "numero_image": 108,
+    "type": "attack",
+    "name": "River of Light",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Quest: 1"
+    ],
+    "text": "Blitz: If there are 2 or more Quest counters on your character, build the next foundation you play this turn.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/108.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/108.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 109,
+    "numero_image": 109,
+    "type": "attack",
+    "name": "Sky Dragon's Talons",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Powerful: 2",
+      "Spell"
+    ],
+    "text": "Response: After you block with this card, draw 1 card.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 3,
+    "asset": "ft01/109.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/109.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 110,
+    "numero_image": 110,
+    "type": "attack",
+    "name": "Spelling It Out",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Stun: 1",
+      "Weapon"
+    ],
+    "text": "Blitz Sacrifice 1 foundation: This attack gets +2 speed.\n\nBlitz: If you have more foundations with  than without, build 1 non- foundation with difficulty 1 or less from your discard pile.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "ft01/110.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/110.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 111,
+    "numero_image": 111,
+    "type": "attack",
+    "name": "Thunder Kick",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Kick",
+      "Quest: 1"
+    ],
+    "text": "Blitz: If you have an Armor foundation, this attack gets +2 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "ft01/111.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/111.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 112,
+    "numero_image": 112,
+    "type": "attack",
+    "name": "Wings of Fury",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Ally",
+      "Quest: 3"
+    ],
+    "text": "Response: After this attack deals damage, build the next foundation you play this turn.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/112.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/112.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 113,
+    "numero_image": 113,
+    "type": "foundation",
+    "name": "A Father's Embrace",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Enhance [Tenacious] Flip: If you have more foundations with  than without, this attack gets +2 damage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "ft01/113.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/113.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 114,
+    "numero_image": 114,
+    "type": "foundation",
+    "name": "Cana's Drive",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Enhance Flip: Your next check to play a card with a printed block modifier of 3 or greater gets +1.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "ft01/114.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/114.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 115,
+    "numero_image": 115,
+    "type": "foundation",
+    "name": "Drinking Games",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Enhance Remove 2 Quest counters from your character: This attack gets +X speed. X equals its printed block modifier.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "ft01/115.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/115.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 116,
+    "numero_image": 116,
+    "type": "foundation",
+    "name": "Fight to the End",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Enhance [Your turn] Commit: Build 1 foundation from your card pool.",
+    "difficulty": 3,
+    "control": 4,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "ft01/116.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/116.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 117,
+    "numero_image": 117,
+    "type": "foundation",
+    "name": "Flare Burst: Sky Drill",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Armor"
+    ],
+    "text": "Enhance Flip: If you try to block this attack with an attack or Armor card, your block modifier gets -4, to a minimum of 0.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "ft01/117.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/117.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 118,
+    "numero_image": 118,
+    "type": "foundation",
+    "name": "Igneel's Protege",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Armor"
+    ],
+    "text": "Enhance Commit: Change this attack's zone to . If your rival has 10 or more foundations, your attacks gain Frenzy this turn.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "ft01/118.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/118.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 119,
+    "numero_image": 119,
+    "type": "foundation",
+    "name": "Lend a Hand",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Armor"
+    ],
+    "text": "Response Remove: After this card is destroyed, add 1 Armor foundation from your discard pile to your hand.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "ft01/119.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/119.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 120,
+    "numero_image": 120,
+    "type": "foundation",
+    "name": "Light Lunch",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Response [Once per attack]: After you gain health during your attack, you lose X health and your attack gets +X damage. X equals the amount of health you gained.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "ft01/120.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/120.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 121,
+    "numero_image": 121,
+    "type": "foundation",
+    "name": "Makarov's Counterpart",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Response: After you build this foundation, add 1 Quest counter to your character.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "ft01/121.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/121.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 122,
+    "numero_image": 122,
+    "type": "foundation",
+    "name": "Slow Burn",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "keywords": [
+      "Armor"
+    ],
+    "text": "Enhance Commit: This attack gets -2 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "ft01/122.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/122.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 123,
+    "numero_image": 123,
+    "type": "foundation",
+    "name": "The Fireball",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "good"
+    ],
+    "text": "Enhance Flip: This  attack gains Quest: 1.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "ft01/123.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/123.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 124,
+    "numero_image": 124,
+    "type": "action",
+    "name": "Wheel of Heaven: 200 Swords",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Spell"
+    ],
+    "text": "Enhance Remove, Commit your character: Seal 2 cards in your rival's stage.",
+    "difficulty": 0,
+    "control": 2,
+    "asset": "ft01/124.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/124.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 125,
+    "numero_image": 125,
+    "type": "attack",
+    "name": "Calling out the Truth",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "EX: 3",
+      "Taunt"
+    ],
+    "text": "Response: After you play this card, your rival's next check gets -1.\n\nResponse: After your rival plays a non-character enhance ability, they check against a 5. If they fail, cancel that ability.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "high",
+    "damage": 5,
+    "asset": "ft01/125.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/125.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 126,
+    "numero_image": 126,
+    "type": "attack",
+    "name": "Cana's Flying Cards",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Spell",
+      "Stun: 2"
+    ],
+    "text": "",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "speed": 0,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "ft01/126.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/126.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 127,
+    "numero_image": 127,
+    "type": "attack",
+    "name": "Cana's Rage",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Fury",
+      "Quest: 2"
+    ],
+    "text": "Your rival cannot play abilities on cards in their hand during this attack.\n\nBlitz Remove 2 Quest counters from your character: If you have 2 or more copies of a card in your card pool, flip 1 of them. If you do, this attack gets +4 speed and +4 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "ft01/127.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/127.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 128,
+    "numero_image": 128,
+    "type": "attack",
+    "name": "Clear Heart Clothing",
+    "rarity": "secret rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Armor"
+    ],
+    "text": "Response: After you play this card, flip 1 non-character card in your rival's stage, momentum, or card pool.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "speed": 7,
+    "attack_zone": "high",
+    "damage": 3,
+    "asset": "ft01/128.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/128.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 129,
+    "numero_image": 129,
+    "type": "attack",
+    "name": "Drunken Boxing",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Punch",
+      "Quest: 1"
+    ],
+    "text": "Blitz: Add 1 card from your rival's discard pile to the top of their deck.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "ft01/129.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/129.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 130,
+    "numero_image": 130,
+    "type": "attack",
+    "name": "Fairy Glitter",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Quest: 1",
+      "Spell",
+      "Weapon"
+    ],
+    "text": "You may include up to 6 copies of this card in your deck.\n\nBlitz Remove 2 Quest counters from your character: Seal 1 rival foundation. This attack gets +1 damage for each foundation in your rival's stage with no abilities (max +3).",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 0,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "ft01/130.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/130.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 131,
+    "numero_image": 131,
+    "type": "attack",
+    "name": "Heavenly Body: Sema",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Throw"
+    ],
+    "text": "Response: After this attack is not blocked, your rival seals 1 face up foundation.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "ft01/131.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/131.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 132,
+    "numero_image": 132,
+    "type": "attack",
+    "name": "Light Punch",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Punch",
+      "Quest: 1"
+    ],
+    "text": "Blitz: If there are 2 or more Quest counters on your character, seal 1 rival asset or foundation.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/132.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/132.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 133,
+    "numero_image": 133,
+    "type": "attack",
+    "name": "Requip: Purgatory Armor",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Armor",
+      "Powerful: 2",
+      "Spell"
+    ],
+    "text": "Blitz Commit 2 foundations: Your rival discards 1 card.\n\nResponse: After this card is removed, your Spell attack gets +2 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "ft01/133.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/133.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 134,
+    "numero_image": 134,
+    "type": "attack",
+    "name": "Satan Soul",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Breaker: 1",
+      "Spell"
+    ],
+    "text": "Blitz: If you have discarded a card this Combat Phase, draw 1 card.\n\nResponse: After you block with this card, your rival discards 1 card.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "ft01/134.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/134.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 135,
+    "numero_image": 135,
+    "type": "attack",
+    "name": "Satan Soul: Sitri",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "EX: 2"
+    ],
+    "text": "Response: After you block an attack with this card, your rival reveals their hand.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 4,
+    "asset": "ft01/135.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/135.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 136,
+    "numero_image": 136,
+    "type": "attack",
+    "name": "Shade Entangle",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "This attack gets -1 difficulty for each check your rival has failed this turn (max. -5).\n\nBlitz: Your rival checks against a 6. If they fail, this attack gets +2 speed.\n\nBlitz: Your rival checks against a 6. If they fail, this attack gets +2 damage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/136.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/136.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 137,
+    "numero_image": 137,
+    "type": "attack",
+    "name": "Sky-Scraping",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "EX: 3",
+      "Weapon"
+    ],
+    "text": "Blitz: Your rival mills 3. This attack gains all Blitz abilities printed on cards milled this way.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "ft01/137.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/137.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 138,
+    "numero_image": 138,
+    "type": "attack",
+    "name": "Soul Extinctor",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Powerful: 3"
+    ],
+    "text": "Response: After this attack is blocked, seal 1 card in your rival's card pool.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/138.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/138.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 139,
+    "numero_image": 139,
+    "type": "attack",
+    "name": "Turning the Tables",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Spell"
+    ],
+    "text": "Blitz: Your rival spends 1 momentum. If they cannot, this attack gains Stun: 2.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 6,
+    "asset": "ft01/139.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/139.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 140,
+    "numero_image": 140,
+    "type": "attack",
+    "name": "Wheel of Heaven: Scattered Petals",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Quest: 2",
+      "Spell"
+    ],
+    "text": "Response: After this attack is not blocked, remove the top 2 cards of your rival's deck.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/140.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/140.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 141,
+    "numero_image": 141,
+    "type": "foundation",
+    "name": "Devil's Poison",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Response Flip: After an attack is played, it loses all response abilities.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "ft01/141.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/141.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 142,
+    "numero_image": 142,
+    "type": "foundation",
+    "name": "Finally My Turn",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Form Flip: Add 2 Quest counters to your character. Your rival may discard 1 card to cancel this ability.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "ft01/142.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/142.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 143,
+    "numero_image": 143,
+    "type": "foundation",
+    "name": "Just Like Home",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Response: After you build this foundation, add 1 Quest counter to your character.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "ft01/143.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/143.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 144,
+    "numero_image": 144,
+    "type": "foundation",
+    "name": "One Too Many",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Enhance Commit: This attack gets +2 damage for each copy of it in your card pool.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "ft01/144.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/144.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 145,
+    "numero_image": 145,
+    "type": "foundation",
+    "name": "Polite and Demure",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Enhance Flip: This  attack gains Quest: 1.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "ft01/145.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/145.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 146,
+    "numero_image": 146,
+    "type": "foundation",
+    "name": "Reverse the Anima",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Response Flip: After your rival builds 1 or more foundations during the Combat Phase, flip 1 of them.",
+    "difficulty": 2,
+    "control": 6,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "ft01/146.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/146.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 147,
+    "numero_image": 147,
+    "type": "foundation",
+    "name": "Satan's Heel",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "If your rival has 1 or more cards in their hand, this card does not count toward progressive difficulty.\n\nEnhance [Card Pool]: This attack gets +1 or -1 speed.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "ft01/147.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/147.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 148,
+    "numero_image": 148,
+    "type": "foundation",
+    "name": "Stress Reliever",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Enhance Flip: This attack gets -2 damage. Your rival may remove 2 Quest counters from their character to cancel this effect.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "ft01/148.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/148.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 149,
+    "numero_image": 149,
+    "type": "foundation",
+    "name": "Three-Layered Magic Circle: Mirror Pool",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "text": "Enhance Flip: This attack gets -1 damage and -1 speed. Add 1 Quest counter to your character.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "ft01/149.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/149.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 150,
+    "numero_image": 150,
+    "type": "foundation",
+    "name": "Unstoppable Guild",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "void"
+    ],
+    "keywords": [
+      "Unique"
+    ],
+    "text": "When you build this foundation, add 1 Quest counter to your character.\n\nEnhance Sacrifice, remove 2 Quest counters from your character: Each player discards 1 card.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "ft01/150.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/150.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 151,
+    "numero_image": 151,
+    "type": "attack",
+    "name": "Aquarian Surge",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Ally",
+      "Breaker: 1",
+      "Spell"
+    ],
+    "text": "When you play this card, add 1 Quest counter to your character.\n\nBlitz Remove 2 Quest counters from your character: Change this attack's damage to X. X equals your hand size.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "low",
+    "damage": 3,
+    "asset": "ft01/151.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/151.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 152,
+    "numero_image": 152,
+    "type": "attack",
+    "name": "Ice Impact",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Quest: 1",
+      "Spell",
+      "Weapon"
+    ],
+    "text": "Blitz Remove 1 Quest counter from your character: Freeze 1 rival foundation. If your rival has 2 or more frozen foundations, this attack gets +2 speed.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "ft01/152.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/152.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 153,
+    "numero_image": 153,
+    "type": "attack",
+    "name": "Ice-Make: Death Scythe",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Spell",
+      "Stun: 1",
+      "Weapon"
+    ],
+    "text": "Blitz: If your rival has a frozen foundation, this attack gets +2 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "ft01/153.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/153.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 154,
+    "numero_image": 154,
+    "type": "attack",
+    "name": "Ice-Make: Gungnir",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Quest: 3",
+      "Spell"
+    ],
+    "text": "Response: After this attack deals damage, freeze 1 rival foundation.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/154.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/154.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 155,
+    "numero_image": 155,
+    "type": "attack",
+    "name": "Ice-Make: Hammer",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Spell",
+      "Weapon"
+    ],
+    "text": "Blitz Freeze 1 foundation: This attack gets +2 speed.\n\nBlitz: Ready each frozen foundation committed to pass the check to play this attack.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "ft01/155.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/155.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 156,
+    "numero_image": 156,
+    "type": "attack",
+    "name": "Ice-Make: Ice Geyser",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Powerful: 2",
+      "Spell"
+    ],
+    "text": "Blitz Freeze 1 foundation: This attack gets +X speed. X equals the number of frozen and/or sealed foundations in your stage.\n\nResponse: After this attack deals damage to a character, commit 1 rival foundation.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "ft01/156.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/156.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 157,
+    "numero_image": 157,
+    "type": "attack",
+    "name": "Ice-Make: Super Freeze Arrow",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "EX: 3",
+      "Spell"
+    ],
+    "text": "Blitz: Freeze 1 ready rival foundation.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "ft01/157.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/157.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 158,
+    "numero_image": 158,
+    "type": "attack",
+    "name": "Liquid Sentinel",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Quest: 2"
+    ],
+    "text": "Response: After this attack is not blocked, if your rival has more foundations than you, add 1 foundation from their stage to their momentum.\n\nResponse Remove X Quest counters from your character: After this attack resolves, your rival spends momentum equal to half of X (rounded down).",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "low",
+    "damage": 3,
+    "asset": "ft01/158.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/158.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 159,
+    "numero_image": 159,
+    "type": "attack",
+    "name": "Satan Swipe",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "EX: 4",
+      "Weapon"
+    ],
+    "text": "Response: After this attack is not blocked, draw 1 card and add 2 Quest counters to your character.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "low",
+    "damage": 2,
+    "asset": "ft01/159.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/159.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 160,
+    "numero_image": 160,
+    "type": "attack",
+    "name": "Sky Dragon's Roar",
+    "rarity": "secret rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Fury",
+      "Spell"
+    ],
+    "text": "Blitz: Choose 1 foundation in your stage. Gain X health. X equals the chosen foundation's printed difficulty. Draw 1 card and add 1 Quest counter to your character each time the chosen foundation is committed during this attack.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 0,
+    "block_zone": "mid",
+    "speed": 5,
+    "attack_zone": "mid",
+    "damage": 5,
+    "asset": "ft01/160.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/160.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 161,
+    "numero_image": 161,
+    "type": "attack",
+    "name": "Sky Dragon's Shattering Fang",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Quest: 1"
+    ],
+    "text": "Blitz Remove 2 Quest counters from your character: Your rival adds the top card of their deck to their card pool face down.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 8,
+    "asset": "ft01/161.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/161.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 162,
+    "numero_image": 162,
+    "type": "attack",
+    "name": "Sky Dragon's Wing Attack",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Quest: 1",
+      "Spell"
+    ],
+    "text": "Response: After this attack is blocked, gain 2 health.\n\nResponse: After you ready 1 or more foundations, this attack gets +2 damage.",
+    "difficulty": 4,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 4,
+    "attack_zone": "high",
+    "damage": 4,
+    "asset": "ft01/162.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/162.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 163,
+    "numero_image": 163,
+    "type": "attack",
+    "name": "Vernier",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Quest: 1",
+      "Spell"
+    ],
+    "text": "Blitz Commit 2 foundations: This attack gets +2 speed and +2 damage.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "speed": 5,
+    "attack_zone": "low",
+    "damage": 5,
+    "asset": "ft01/163.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/163.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 164,
+    "numero_image": 164,
+    "type": "attack",
+    "name": "Water Cane",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "Blitz: If you have readied a card in your stage this Combat Phase, this attack gains Frenzy.",
+    "difficulty": 3,
+    "control": 3,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "speed": 3,
+    "attack_zone": "mid",
+    "damage": 3,
+    "asset": "ft01/164.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/164.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 165,
+    "numero_image": 165,
+    "type": "attack",
+    "name": "Water Magic: Spiral Explosion",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "text": "Enhance [Card Pool]: If this attack's speed is greater than its damage, it gets +1 damage.\n\nResponse: After you discard this card, add it to your card pool. Ready 2 face down foundations.",
+    "difficulty": 5,
+    "control": 3,
+    "block_modifier": 0,
+    "block_zone": "low",
+    "speed": 6,
+    "attack_zone": "mid",
+    "damage": 4,
+    "asset": "ft01/165.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/165.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 166,
+    "numero_image": 166,
+    "type": "attack",
+    "name": "Water Slicer",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Quest: 1"
+    ],
+    "text": "Blitz: If there are 2 or more Quest counters on your character, ready 1 face down foundation.",
+    "difficulty": 6,
+    "control": 3,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "speed": 6,
+    "attack_zone": "mid",
+    "damage": 6,
+    "asset": "ft01/166.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/166.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 167,
+    "numero_image": 167,
+    "type": "foundation",
+    "name": "Aries: Wool Bomb",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Breaker: 1"
+    ],
+    "text": "Response: After you block with this card, add 1 Quest counter to your character.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "ft01/167.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/167.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 168,
+    "numero_image": 168,
+    "type": "foundation",
+    "name": "Arms! Armor! Vernier!",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "Enhance Commit: This attack gets +2 or -2 speed.\n\nEnhance Commit: If you have gained health this turn, this attack gets +3 damage.",
+    "difficulty": 3,
+    "control": 6,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "ft01/168.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/168.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 169,
+    "numero_image": 169,
+    "type": "foundation",
+    "name": "Doting Lover",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "Enhance Flip: This  attack gains Quest: 1.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "ft01/169.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/169.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 170,
+    "numero_image": 170,
+    "type": "foundation",
+    "name": "Forced Gate Closure",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "After you build this foundation, add 1 Quest counter to your character.\n\nEnhance Commit, Remove 1 Quest counter from your character: This attack gets +3 damage. Freeze 1 rival foundation.",
+    "difficulty": 3,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "ft01/170.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/170.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 171,
+    "numero_image": 171,
+    "type": "foundation",
+    "name": "Get This Thing Going",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "Enhance Commit: This attack gets +2 speed and +2 damage. Freeze this foundation.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "ft01/171.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/171.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 172,
+    "numero_image": 172,
+    "type": "foundation",
+    "name": "Ice-Make: Freeze Lancer",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Spell"
+    ],
+    "text": "Enhance Flip: If your rival has a frozen foundation, your attack gets +1 speed and +1 damage. If your rival has 10 or more foundations, your attack gets +1 speed and +1 damage.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "ft01/172.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/172.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 173,
+    "numero_image": 173,
+    "type": "foundation",
+    "name": "Ice-Make: Unlimited",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "keywords": [
+      "Spell"
+    ],
+    "text": "Enhance Commit: Ready 2 face down foundations that have not been readied this Combat Phase. If your hand size is 6 or greater, freeze this foundation.",
+    "difficulty": 2,
+    "control": 4,
+    "block_modifier": 3,
+    "block_zone": "low",
+    "asset": "ft01/173.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/173.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 174,
+    "numero_image": 174,
+    "type": "foundation",
+    "name": "No Time for This",
+    "rarity": "uncommon",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "Enhance Flip: If you have a frozen foundation, draw 1 card.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "ft01/174.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/174.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 175,
+    "numero_image": 175,
+    "type": "foundation",
+    "name": "Older Counterpart",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "Response: After you build this foundation, add 1 Quest counter to your character.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "ft01/175.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/175.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 176,
+    "numero_image": 176,
+    "type": "foundation",
+    "name": "Water Lock",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "Enhance Flip: This attack gets -2 speed. Add 1 Quest counter to your character.",
+    "difficulty": 1,
+    "control": 5,
+    "block_modifier": 3,
+    "block_zone": "high",
+    "asset": "ft01/176.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/176.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 177,
+    "numero_image": 177,
+    "type": "foundation",
+    "name": "What Makes a Guild?",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "water"
+    ],
+    "text": "Response [Tenacious] Flip: After you take damage, ready 1 foundation.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "low",
+    "asset": "ft01/177.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/177.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 178,
+    "numero_image": 178,
+    "type": "action",
+    "name": "Fairy Tail Guild",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "keywords": [
+      "Ally"
+    ],
+    "text": "Response Remove: After an attack is played, add it to its owner's hand.",
+    "difficulty": 2,
+    "control": 4,
+    "asset": "ft01/178.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/178.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 179,
+    "numero_image": 179,
+    "type": "asset",
+    "name": "Carla, Exceed Princess",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "keywords": [
+      "Ally"
+    ],
+    "text": "While this card is in your stage, your maximum health is increased by 5.\n\nEnhance Commit: This attack gets -1 damage.",
+    "difficulty": 0,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "high",
+    "asset": "ft01/179.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/179.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 180,
+    "numero_image": 180,
+    "type": "asset",
+    "name": "Happy, Magical Companion",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "keywords": [
+      "Ally",
+      "Unique"
+    ],
+    "text": "While this card is in your stage, your rival's first attack each turn gets -2 speed.\n\nEnhance Commit: This attack gets +2 speed. If it is blocked, ready this card.",
+    "difficulty": 2,
+    "control": 6,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "ft01/180.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/180.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 181,
+    "numero_image": 181,
+    "type": "asset",
+    "name": "Lacrima Crystal",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "keywords": [
+      "Unique"
+    ],
+    "text": "While this card is in your stage, your hand size gets +1.",
+    "difficulty": 4,
+    "control": 4,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "ft01/181.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/181.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 182,
+    "numero_image": 182,
+    "type": "asset",
+    "name": "Porlyusica, Medical Expert",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "keywords": [
+      "Unique"
+    ],
+    "text": "Form Commit, Discard 1 card: Gain 4 health.\n\nEnhance [Tenacious] Remove: Choose 1 foundation. Unfreeze, unseal, and ready that foundation.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "low",
+    "asset": "ft01/182.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/182.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 183,
+    "numero_image": 183,
+    "type": "asset",
+    "name": "Satellite Square Etherion",
+    "rarity": "ultra rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "keywords": [
+      "Unique"
+    ],
+    "text": "Enhance Commit: This attack gets +X damage. X equals the number of Quest counters on your character (max. 10). Only playable if you have a copy of \"Let's Go, Team!\" in your stage.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 1,
+    "block_zone": "high",
+    "asset": "ft01/183.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/183.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 184,
+    "numero_image": 184,
+    "type": "foundation",
+    "name": "Gale-Force Reading Glasses",
+    "rarity": "common",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "text": "After you build this foundation, add 1 Quest counter to your character.\n\nEnhance Flip: Draw 1 card.",
+    "difficulty": 3,
+    "control": 6,
+    "block_modifier": 1,
+    "block_zone": "mid",
+    "asset": "ft01/184.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/184.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 185,
+    "numero_image": 185,
+    "type": "foundation",
+    "name": "Let's Go, Team!",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "keywords": [
+      "Unique"
+    ],
+    "text": "Enhance Commit: Your attack gains Quest: 2.\n\nResponse Remove: After you block with this card, add 1 copy of \"Satellite Square Etherion\" from your discard pile to your hand.",
+    "difficulty": 2,
+    "control": 5,
+    "block_modifier": 2,
+    "block_zone": "mid",
+    "asset": "ft01/185.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/185.jpg"
+  },
+  {
+    "extension_short": "ft01",
+    "numero": 186,
+    "numero_image": 186,
+    "type": "foundation",
+    "name": "The Oracion Seis",
+    "rarity": "rare",
+    "extension": "Fairy Tail: All Fired Up!",
+    "formats": [
+      "legacy",
+      "standard"
+    ],
+    "resources": [
+      "infinity"
+    ],
+    "keywords": [
+      "Unique"
+    ],
+    "text": "Enhance Commit: This attack loses Quest.\n\nEnhance Remove: Draw 1 card.",
+    "difficulty": 1,
+    "control": 4,
+    "block_modifier": 3,
+    "block_zone": "mid",
+    "asset": "ft01/186.jpg",
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/ft01/186.jpg"
+  }
+]

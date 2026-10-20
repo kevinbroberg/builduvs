@@ -68,7 +68,8 @@
       "evil"
     ],
     "keywords": [
-      "Psycho"
+      "Psycho",
+      "Unique"
     ],
     "text": "Enhance Mill 1: Use 1 effect below that matches the check value of a card milled this way—\n\n- 6 or greater: Your rival loses 1 health.\n\n- 4 or 5: You may discard 1 card. If you do, draw 1 card.\n\n- 3 or less: Your rival's next check gets -1. Failing that check will not end the Combat Phase.",
     "difficulty": 3,
@@ -212,7 +213,7 @@
     "resources": [
       "all"
     ],
-    "text": "Powerful: 2 - Psycho - Punch\n\nBlitz: Mill 1. Look at the top card of your deck. You may mill 1.",
+    "text": "Blitz: Mill 1. Look at the top card of your deck. You may mill 1.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 1,
@@ -221,7 +222,12 @@
     "attack_zone": "high",
     "damage": 5,
     "asset": "sf62x/008.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/008.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/008.jpg",
+    "keywords": [
+      "Powerful: 2",
+      "Psycho",
+      "Punch"
+    ]
   },
   {
     "extension_short": "sf62x",
@@ -270,7 +276,8 @@
     "keywords": [
       "Fury",
       "Psycho",
-      "Punch"
+      "Punch",
+      "Stun: 2"
     ],
     "text": "Blitz Drive 2: Mill 5. This attack gets +2 speed for each attack milled this way.",
     "difficulty": 5,
@@ -705,7 +712,8 @@
     ],
     "keywords": [
       "Fury",
-      "Kick"
+      "Kick",
+      "Powerful: 3"
     ],
     "text": "Blitz Drive 2: Your checks to play Kick attacks get +1 this turn.",
     "difficulty": 4,
@@ -734,7 +742,8 @@
       "life"
     ],
     "keywords": [
-      "Kick"
+      "Kick",
+      "Stun: 1"
     ],
     "text": "Blitz: If you have 9 or more foundations, this attack gets +1 speed and +2 damage.",
     "difficulty": 5,
@@ -762,7 +771,7 @@
     "resources": [
       "air"
     ],
-    "text": "EX: 2 - Kick\n\nBlitz: Change the zone of this attack.",
+    "text": "Blitz: Change the zone of this attack.",
     "difficulty": 5,
     "control": 3,
     "block_modifier": 1,
@@ -771,7 +780,11 @@
     "attack_zone": "mid",
     "damage": 5,
     "asset": "sf62x/029.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/029.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/029.jpg",
+    "keywords": [
+      "EX: 2",
+      "Kick"
+    ]
   },
   {
     "extension_short": "sf62x",
@@ -817,7 +830,7 @@
     "resources": [
       "air"
     ],
-    "text": "Breaker: 1 - Kick\n\nBlitz Drive 1: Each player can play only 1 enhance ability during this Enhance Step.",
+    "text": "Blitz Drive 1: Each player can play only 1 enhance ability during this Enhance Step.",
     "difficulty": 3,
     "control": 3,
     "block_modifier": 2,
@@ -826,7 +839,11 @@
     "attack_zone": "mid",
     "damage": 3,
     "asset": "sf62x/031.jpg",
-    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/031.jpg"
+    "ultra_url_path": "https://www.uvsultra.online/images/extensions/sf62x/031.jpg",
+    "keywords": [
+      "Breaker: 1",
+      "Kick"
+    ]
   },
   {
     "extension_short": "sf62x",
