@@ -45,6 +45,11 @@ const routes = [
         meta: { title: "Shuffle Tool" },
       },
       {
+        path: "/tiers",
+        component: () => import("src/pages/TierMaker.vue"),
+        meta: { title: "Tier Maker" },
+      },
+      {
         path: "/compare",
         component: () => import("src/pages/DeckCompare.vue"),
         meta: { title: "Compare Decks" },

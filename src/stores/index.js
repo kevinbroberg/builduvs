@@ -21,6 +21,13 @@ export default store((/* { ssrContext } */) => {
           if (!(key in parsed.deck)) parsed.deck[key] = value;
         }
       }
+      // Same for tier-maker keys added after the first saves.
+      const TIERS_BACKFILL = { title: "", rowColor: null, viewMode: "avatar" };
+      if (parsed.tiers) {
+        for (const [key, value] of Object.entries(TIERS_BACKFILL)) {
+          if (!(key in parsed.tiers)) parsed.tiers[key] = value;
+        }
+      }
       pinia.state.value = parsed;
     }
   } catch (e) {

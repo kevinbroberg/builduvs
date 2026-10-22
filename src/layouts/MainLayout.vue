@@ -89,6 +89,10 @@ function toggleRightDrawer() {
           <q-item-section avatar><q-icon name="difference" /></q-item-section>
           <q-item-section>Compare Decks</q-item-section>
         </q-item>
+        <q-item clickable v-ripple to="/tiers" :class="{ 'menu-active': isActive('/tiers') }">
+          <q-item-section avatar><q-icon name="leaderboard" /></q-item-section>
+          <q-item-section>Tier Maker</q-item-section>
+        </q-item>
         <q-item clickable v-ripple to="/shuffle" :class="{ 'menu-active': isActive('/shuffle') }">
           <q-item-section avatar><q-icon name="shuffle" /></q-item-section>
           <q-item-section>Shuffle Tool</q-item-section>
