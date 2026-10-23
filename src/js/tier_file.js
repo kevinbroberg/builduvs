@@ -1,5 +1,5 @@
 // Tier lists as shareable .json files. A file carries everything the board needs
-// (criteria, tiers, placements, look) but not the session phase. Cards are
+// (criteria, tiers, placements, look). Cards are
 // referenced by `asset`, same as the persisted store; on import, assets this build
 // doesn't know (and placements in tiers the file doesn't define) are dropped rather
 // than failing the whole file.
@@ -64,6 +64,11 @@ export function fromTierFile(text) {
   } catch {
     throw new Error("That file isn't valid JSON.")
   }
+  return fromTierData(data)
+}
+
+// The same, from an already-parsed file (or anything shaped like one).
+export function fromTierData(data) {
   if (Array.isArray(data)) data = { kind: KIND, cards: data }
   if (data?.kind !== KIND) {
     throw new Error("That file isn't a BuildUVS tier list.")
@@ -114,6 +119,7 @@ export function fromTierFile(text) {
     sets: data.criteria?.sets ? strings(data.criteria.sets) : defaults.sets,
     rarities: strings(data.criteria?.rarities),
     cards: pick,
+    extra: pick ? [] : toAssets(strings(data.criteria?.extra)),
   }
 
   return {
@@ -126,6 +132,19 @@ export function fromTierFile(text) {
       viewMode: ['avatar', 'art', 'card'].includes(data.viewMode) ? data.viewMode : 'avatar',
     },
     unresolved: [...new Set(unresolved)],
+  }
+}
+
+// A link that opens the tier maker on exactly these cards (one per card, in the
+// order given), e.g. /tiers?cards=ft01-049,ft01-050&title=… — see TierMaker.vue.
+// Cards the site can't resolve (a decklist's unknown entries) are left out.
+export const LINK_CARDS = 'cards'
+export const LINK_TITLE = 'title'
+export function tierLink(title, list) {
+  const refs = list.filter(c => c && cardByAsset.has(c.asset)).map(c => c.uvs_id ?? c.asset)
+  return {
+    path: '/tiers',
+    query: { [LINK_CARDS]: [...new Set(refs)].join(','), [LINK_TITLE]: title || undefined },
   }
 }
 

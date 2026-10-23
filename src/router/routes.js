@@ -44,8 +44,14 @@ const routes = [
         component: () => import("src/pages/ShuffleHome.vue"),
         meta: { title: "Shuffle Tool" },
       },
+      // /tiers is the setup page (where links land); /tiers/rank is the board.
       {
         path: "/tiers",
+        component: () => import("src/pages/TierMaker.vue"),
+        meta: { title: "Tier Maker" },
+      },
+      {
+        path: "/tiers/rank",
         component: () => import("src/pages/TierMaker.vue"),
         meta: { title: "Tier Maker" },
       },

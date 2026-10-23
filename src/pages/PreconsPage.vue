@@ -11,6 +11,7 @@ import inferredDecks from 'src/assets/precon-decks-inferred.json'
 import DeckBody from 'src/components/deck/DeckBody.vue'
 import DeckStage from 'src/components/deck/DeckStage.vue'
 import DeckSummary from 'src/components/deck/DeckSummary.vue'
+import RankDeckBtn from 'src/components/tiers/RankDeckBtn.vue'
 import { createCardResolver } from 'src/js/decklist_cards'
 import { getCardImage } from 'src/js/image_helper'
 import { cards as allCards } from 'src/js/card_provider'
@@ -150,6 +151,8 @@ watchEffect(() => setPageTitle(currentDeck.value ? currentDeck.value.name : 'Pre
               </template>
             </div>
           </div>
+          <RankDeckBtn class="q-mr-xs" :title="currentDeck.name"
+            :cards="[...resolvedFaces, ...resolvedDeck, ...resolvedSide]" />
           <q-btn flat dense icon="download" size="sm" label="TTS" class="q-mr-xs"
             :disable="!resolvedDeck.length"
             @click="downloadTTS">

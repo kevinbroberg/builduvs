@@ -7,6 +7,7 @@ import indexData from 'src/assets/majors-index.json'
 import DeckBody from 'src/components/deck/DeckBody.vue'
 import DeckStage from 'src/components/deck/DeckStage.vue'
 import DeckSummary from 'src/components/deck/DeckSummary.vue'
+import RankDeckBtn from 'src/components/tiers/RankDeckBtn.vue'
 import { getCardImage } from 'src/js/image_helper'
 import ResourceSymbol from 'src/components/cards/detail/ResourceSymbol.vue'
 import { useDeckStore } from 'src/stores/deck'
@@ -301,6 +302,8 @@ watchEffect(() => {
               :disable="playerDataLoading || !resolvedDeck.length" @click="compareThisDeck">
               <q-tooltip>Compare against your current deck</q-tooltip>
             </q-btn>
+            <RankDeckBtn class="q-ml-xs" :title="deckLabel()"
+              :cards="playerDataLoading ? [] : [resolvedFace, ...resolvedDeck, ...resolvedSide]" />
             <q-btn flat dense icon="download" size="sm" label="TTS" class="q-ml-xs"
               :disable="playerDataLoading || !resolvedDeck.length" @click="downloadTTS">
               <q-tooltip>Download Tabletop Simulator deck</q-tooltip>
@@ -391,6 +394,9 @@ watchEffect(() => {
         <q-badge v-if="currentEvent" :color="tierInfo(currentEvent.tier).color"
           :label="tierInfo(currentEvent.tier).label" class="q-mr-sm" />
         <q-badge color="grey-6" :label="`${currentEvent?.playerCount} players`" />
+        <RankDeckBtn class="q-ml-sm" :title="`${currentEvent?.name ?? eventId} characters`"
+          :cards="currentStandings.map(s => findCard(s.characterName))"
+          tooltip="Rank this event's characters in the Tier Maker" />
       </q-toolbar>
 
       <q-list separator>

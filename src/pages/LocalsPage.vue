@@ -7,6 +7,7 @@ import indexData from 'src/assets/locals-index.json'
 import DeckBody from 'src/components/deck/DeckBody.vue'
 import DeckStage from 'src/components/deck/DeckStage.vue'
 import DeckSummary from 'src/components/deck/DeckSummary.vue'
+import RankDeckBtn from 'src/components/tiers/RankDeckBtn.vue'
 import cardeioIdsData from 'src/assets/cardeio-ids.json'
 import { cards as allCards, cardByUvsId } from 'src/js/card_provider.js'
 import { createCardResolver } from 'src/js/decklist_cards'
@@ -118,6 +119,9 @@ function playerLabel(characterName, standing) {
   const rank = `Rank ${standing}`
   return characterName ? `${rank} ${toTitleCase(characterName)}` : rank
 }
+
+// The tier list title an event's "Rank" button gives its characters.
+const eventRankTitle = (event, id) => `${event ? eventName(event) : id} characters`
 
 function formatDate(iso) {
   const [, m, d] = iso.split('-')
@@ -501,6 +505,8 @@ watchEffect(() => {
               @click="compareThisDeck">
               <q-tooltip>Compare against your current deck</q-tooltip>
             </q-btn>
+            <RankDeckBtn class="q-ml-xs" :title="currentStanding.deckName || 'Locals Deck'"
+              :cards="playerDataLoading ? [] : [resolvedFace, ...resolvedDeck, ...resolvedSide]" />
             <q-btn flat dense icon="download" size="sm" label="TTS" class="q-ml-xs"
               :disable="playerDataLoading || !resolvedDeck.length"
               @click="downloadTTS">
@@ -597,6 +603,9 @@ watchEffect(() => {
           <span class="text-caption text-grey-6 q-ml-sm">{{ currentEvent?.date }}</span>
         </q-toolbar-title>
         <q-badge color="grey-6" :label="`${currentEvent?.playerCount} players`" />
+        <RankDeckBtn class="q-ml-sm" :title="eventRankTitle(currentEvent, eventId)"
+          :cards="currentStandings.map(s => findCard(s.characterName))"
+          tooltip="Rank this event's characters in the Tier Maker" />
       </q-toolbar>
 
       <DeckFilterBar
@@ -664,8 +673,12 @@ watchEffect(() => {
             :label="lcFormatKeys.has(f.key) ? `${f.label} · ${eventsByFormat[f.key].length} events` : f.label" />
         </q-tabs>
         <template v-if="!isDeckFiltering">
-          <q-badge v-if="tabEvent" color="grey-6" class="q-mr-sm"
-            :label="`${tabEvent.playerCount} players`" />
+          <template v-if="tabEvent">
+            <q-badge color="grey-6" :label="`${tabEvent.playerCount} players`" />
+            <RankDeckBtn class="q-mx-sm" :title="eventRankTitle(tabEvent, tab)"
+              :cards="tabStandings.map(s => findCard(s.characterName))"
+              tooltip="Rank this event's characters in the Tier Maker" />
+          </template>
           <q-btn-toggle v-else v-model="sortOrder" dense unelevated no-caps
             class="q-mr-sm"
             color="grey-3" text-color="grey-7" toggle-color="grey-7" toggle-text-color="white"

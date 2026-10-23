@@ -12,6 +12,7 @@ import { useDeckStore } from 'src/stores/deck'
 import { storeToRefs } from 'pinia'
 import { ref, computed, watchEffect } from 'vue'
 import { downloadTTSJson } from 'src/js/tts_export'
+import { tierLink } from 'src/js/tier_file'
 import { useCardDrag } from 'src/js/card_drag'
 import { getCardImage } from 'src/js/image_helper'
 import { setPageTitle } from 'src/js/page_title'
@@ -131,6 +132,9 @@ function downloadTTS() {
   const name = deckStore.currentDeckName || 'UVS Deck'
   downloadTTSJson(name, deckStore.face, deckStore.getDeckList, deckStore.getSideList)
 }
+
+const rankLink = computed(() => tierLink(deckStore.currentDeckName,
+  [deckStore.face, ...deckStore.getDeckList, ...deckStore.getSideList]))
 </script>
 
 <template>
@@ -232,6 +236,9 @@ function downloadTTS() {
 
       <q-btn flat round icon="cloud_upload" @click="openHydraExport">
         <q-tooltip>Publish to play.uvsgames.com</q-tooltip>
+      </q-btn>
+      <q-btn flat round icon="leaderboard" :to="rankLink">
+        <q-tooltip>Open this deck's cards in the Tier Maker</q-tooltip>
       </q-btn>
       <q-btn flat round icon="download" @click="downloadTTS">
         <q-tooltip>Download Tabletop Simulator deck</q-tooltip>

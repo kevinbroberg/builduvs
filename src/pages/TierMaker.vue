@@ -5,10 +5,14 @@
 // see src/js/card_drag.js) or by right-clicking and choosing a tier. Shift/ctrl-click
 // or a box drawn over empty space selects several, which then move as one; with a
 // selection, clicking a tier sends it there. Each row has TierMaker-style settings
-// (gear); board-wide actions live in the tray's header.
-import { computed, ref, onMounted, onBeforeUnmount } from 'vue'
+// (gear); board-wide actions live in the tray's header, beside a quick add for
+// cards outside the selection. Setup lives at /tiers and the board at /tiers/rank,
+// so links (the menu, a deck page's "Rank" — see tierLink in src/js/tier_file.js)
+// land on setup and back/forward moves between the two.
+import { computed, ref, watch, nextTick, onMounted, onBeforeUnmount } from 'vue'
 import { storeToRefs } from 'pinia'
 import { useQuasar } from 'quasar'
+import { useRoute, useRouter } from 'vue-router'
 import { cards, cardByAsset } from 'src/js/card_provider'
 import { useCardDrag } from 'src/js/card_drag'
 import { LABEL_PALETTE, ROW_PALETTE, textOn } from 'src/js/tier_colors'
@@ -20,12 +24,21 @@ import PoolViewDialog from 'src/components/tiers/PoolViewDialog.vue'
 import TierRowDialog from 'src/components/tiers/TierRowDialog.vue'
 import EmojiPicker from 'src/components/tiers/EmojiPicker.vue'
 import ColorSwatches from 'src/components/tiers/ColorSwatches.vue'
+import TierQuickAdd from 'src/components/tiers/TierQuickAdd.vue'
 import { defaultPoolView, applyPoolView, activeFilterCount, RARITY_ORDER } from 'src/js/tier_pool_view'
-import { fromTierFile, downloadTierFile } from 'src/js/tier_file'
+import {
+  fromTierFile, fromTierData, toTierFile, downloadTierFile, LINK_CARDS, LINK_TITLE,
+} from 'src/js/tier_file'
 
 const store = useTiersStore()
-const { phase, criteria, tiers, placements, title, rowColor, viewMode } = storeToRefs(store)
+const { criteria, tiers, placements, title, rowColor, viewMode } = storeToRefs(store)
 const $q = useQuasar()
+const route = useRoute()
+const router = useRouter()
+
+const SETUP_PATH = '/tiers'
+const RANK_PATH = '/tiers/rank'
+const ranking = computed(() => route.path === RANK_PATH)
 
 // ----- setup ------------------------------------------------------------------
 
@@ -69,6 +82,7 @@ function removeSet(name) {
 // Saves from before the rarity filter (or hand-picked lists) existed lack these.
 criteria.value.rarities ??= []
 criteria.value.cards ??= null
+criteria.value.extra ??= []
 
 // Rarities present among the chosen types and sets, in rarity order.
 const rarityOptions = computed(() => {
@@ -83,6 +97,15 @@ const inScope = computed(() => cardsFor(criteria.value))
 
 const hasPlacements = computed(() =>
   Object.values(placements.value).some(list => list.length))
+
+// The board needs something to rank and somewhere to put it; a bookmarked or
+// reloaded /tiers/rank without either goes back to setup.
+const canRank = computed(() => inScope.value.length > 0 && tiers.value.length > 0)
+watch(ranking, (on) => {
+  if (!on) return
+  if (canRank.value) store.start()
+  else router.replace(SETUP_PATH)
+}, { immediate: true })
 
 // Labels take Discord-style :emoji: codes; the picker just appends one.
 function addEmoji(tier, name) {
@@ -251,7 +274,7 @@ function selectShown() {
 function onKeydown(evt) {
   if (evt.key === 'Escape') clearSelection()
   // Ctrl/Cmd+A selects the tray, unless you're typing somewhere or a dialog is up.
-  if (phase.value === 'rank' && (evt.ctrlKey || evt.metaKey) && evt.key.toLowerCase() === 'a'
+  if (ranking.value && (evt.ctrlKey || evt.metaKey) && evt.key.toLowerCase() === 'a'
     && !evt.target.closest?.('input, textarea, [contenteditable], .q-dialog')) {
     evt.preventDefault()
     selectShown()
@@ -262,6 +285,37 @@ onBeforeUnmount(() => {
   window.removeEventListener('keydown', onKeydown)
   onBoxEnd()
 })
+
+// ----- quick add ------------------------------------------------------------------
+
+// The quick add offers one printing per name, so a card already on the board is
+// matched by name and just found; anything else joins the list, unranked. Either
+// way it ends up selected and scrolled to, so one click on a tier sends it.
+const quickAddNote = ref('')
+let noteTimer = null
+function note(text) {
+  quickAddNote.value = text
+  clearTimeout(noteTimer)
+  noteTimer = setTimeout(() => { quickAddNote.value = '' }, 2500)
+}
+const plainLabel = (tier) => tier.label.replace(/:[\w+-]+:/g, '').trim() || 'a tier'
+
+function onQuickAdd(card) {
+  const existing = inScope.value.find(c => c.name === card.name)
+  const asset = existing?.asset ?? card.asset
+  if (!existing) store.addCard(asset)
+  selection.value = new Set([asset])
+  const tier = tiers.value.find(t => placements.value[t.id]?.includes(asset))
+  if (tier) note(`${shortName(card)} is already in ${plainLabel(tier)}`)
+  else if (!applyPoolView([cardByAsset.get(asset)], poolView.value).length) {
+    note(`${existing ? '' : 'Added · '}hidden by the tray's filters`)
+  } else if (existing) note(`${shortName(card)} is already unranked`)
+  nextTick(() => document.querySelector(`.tm-board [data-asset="${CSS.escape(asset)}"]`)
+    ?.scrollIntoView({ block: 'nearest', behavior: 'smooth' }))
+}
+
+// Cards quick-added on top of the filters, for the setup page.
+const extraCount = computed(() => (criteria.value.cards ? 0 : criteria.value.extra.length))
 
 // ----- dragging -----------------------------------------------------------------
 
@@ -312,9 +366,37 @@ async function onFilePicked(evt) {
     $q.dialog({ title: "Couldn't import", message: e.message })
     return
   }
-  const { state, unresolved } = parsed
+  // A file is usually a finished (or half-finished) list, so it opens on the board.
+  offerLoad(parsed, `Importing "${parsed.state.title || file.name}"`, () => router.push(RANK_PATH))
+}
+
+// A deck page's "Rank" link: /tiers?cards=<uvs ids>&title=<deck name>. It keeps
+// this list's tiers and look and swaps in the deck's cards, all unranked, then
+// leaves you on setup to look it over. The query comes off the URL once read, so
+// a reload doesn't offer the swap again.
+function loadFromLink() {
+  const refs = String(route.query[LINK_CARDS] ?? '').split(',').map(s => s.trim()).filter(Boolean)
+  if (!refs.length) return
+  const linkTitle = String(route.query[LINK_TITLE] ?? '')
+  router.replace(SETUP_PATH)
+  let parsed
+  try {
+    parsed = fromTierData({
+      ...toTierFile(store.$state), title: linkTitle, cards: refs, placements: {},
+    })
+  } catch (e) {
+    $q.dialog({ title: "Couldn't open that deck", message: e.message })
+    return
+  }
+  offerLoad(parsed, `Opening "${linkTitle || 'this deck'}"`)
+}
+watch(() => route.query[LINK_CARDS], loadFromLink, { immediate: true })
+
+// Load imported state, asking first if it would throw away rankings.
+function offerLoad({ state, unresolved }, what, then = () => {}) {
   const load = () => {
     store.load(state)
+    then()
     if (unresolved.length) {
       $q.dialog({
         title: `${unresolved.length} card${unresolved.length === 1 ? '' : 's'} not found`,
@@ -325,7 +407,7 @@ async function onFilePicked(evt) {
   if (!hasPlacements.value) return load()
   $q.dialog({
     title: 'Replace this tier list?',
-    message: `Importing "${state.title || file.name}" replaces your current list and its rankings.`,
+    message: `${what} replaces your current list and its rankings.`,
     cancel: true,
     ok: { label: 'Replace', color: 'negative', flat: true },
   }).onOk(load)
@@ -335,7 +417,7 @@ async function onFilePicked(evt) {
 <template>
   <q-page class="tm-page">
     <!-- SETUP ----------------------------------------------------------------->
-    <div v-if="phase === 'setup'" class="tm-setup q-pa-md q-gutter-y-md">
+    <div v-if="!ranking" class="tm-setup q-pa-md q-gutter-y-md">
       <div class="row items-center">
         <div class="text-h5 col">Tier Maker</div>
         <q-btn flat dense no-caps icon="file_upload" label="Import" title="Import a tier list (.json)"
@@ -349,7 +431,7 @@ async function onFilePicked(evt) {
 
       <q-btn unelevated color="primary" class="full-width" size="lg"
         :label="hasPlacements ? 'Resume ranking' : 'Start ranking'"
-        :disable="!inScope.length || !tiers.length" @click="store.start()" />
+        :disable="!canRank" :to="RANK_PATH" />
 
       <q-card flat bordered>
         <q-card-section class="q-gutter-y-sm">
@@ -357,7 +439,7 @@ async function onFilePicked(evt) {
           <!-- An imported card list stands in for the filters until it's dropped. -->
           <div v-if="criteria.cards" class="row items-center no-wrap">
             <q-icon name="playlist_add_check" size="sm" color="primary" class="q-mr-sm" />
-            <div class="col">Custom card list from an import</div>
+            <div class="col">Custom card list</div>
             <q-btn flat dense no-caps size="sm" label="Use filters instead" @click="criteria.cards = null" />
           </div>
           <template v-else>
@@ -398,6 +480,11 @@ async function onFilePicked(evt) {
             <q-select v-model="criteria.rarities" :options="rarityOptions" label="Rarity"
               multiple use-chips outlined dense options-dense clearable
               hint="Leave empty for any rarity" @clear="criteria.rarities = []" />
+            <div v-if="extraCount" class="row items-center no-wrap">
+              <q-icon name="add_circle_outline" size="sm" color="primary" class="q-mr-sm" />
+              <div class="col">Plus {{ extraCount }} quick-added card{{ extraCount === 1 ? '' : 's' }}</div>
+              <q-btn flat dense no-caps size="sm" label="Remove" @click="criteria.extra = []" />
+            </div>
           </template>
           <div class="text-caption text-grey-7">
             {{ inScope.length }} card{{ inScope.length === 1 ? '' : 's' }} to rank
@@ -503,7 +590,9 @@ async function onFilePicked(evt) {
             Unranked ·
             <template v-if="shownPool.length !== pool.length">{{ shownPool.length }} of </template>{{ pool.length }}
           </span>
-          <span class="tm-pool__hint text-grey-6 q-ml-sm gt-sm">
+          <TierQuickAdd class="q-ml-sm" @pick="onQuickAdd" />
+          <span v-if="quickAddNote" class="tm-pool__hint text-grey-7 q-ml-sm">{{ quickAddNote }}</span>
+          <span v-else class="tm-pool__hint text-grey-6 q-ml-sm gt-sm">
             drag or right-click to send · shift-click or drag a box to select, then click a tier
           </span>
           <q-space />
@@ -514,7 +603,7 @@ async function onFilePicked(evt) {
             <q-badge v-if="poolFilterCount" floating rounded color="primary">{{ poolFilterCount }}</q-badge>
           </q-btn>
           <q-btn flat dense no-caps size="sm" icon="tune" :label="wide ? 'Edit setup' : undefined"
-            title="Edit setup" @click="store.phase = 'setup'" />
+            title="Edit setup" :to="SETUP_PATH" />
           <q-btn flat dense no-caps size="sm" :icon="copied ? 'check' : 'content_copy'" title="Copy as text"
             :label="wide ? (copied ? 'Copied' : 'Copy as text') : undefined" @click="copyAsText" />
           <q-btn flat dense no-caps size="sm" icon="file_download" title="Save this tier list as .json"
@@ -568,6 +657,10 @@ async function onFilePicked(evt) {
   min-height: inherit;
   user-select: none; /* shift-click and box select shouldn't highlight text */
 }
+/* A grey board, so the gaps between rows (and light row colors) don't wash out
+   into a white page. */
+body.body--light .tm-board { background: #dcdcdc; }
+body.body--dark .tm-board { background: #2a2a2a; }
 .tm-tiers {
   flex: 1;
   padding: 0 8px 8px;

@@ -19,13 +19,16 @@ export const DEFAULT_TIERS = () => [
 ]
 
 // `rarities` empty means any rarity. Older saves lack it; treat absent as empty.
-// `cards`, when set, is a hand-picked list of assets (usually from an imported file)
-// that replaces the type/set/rarity filters entirely; null means "use the filters".
+// `cards`, when set, is a hand-picked list of assets (usually from an imported file
+// or a deck's "Rank" link) that replaces the type/set/rarity filters entirely; null
+// means "use the filters". `extra` is cards quick-added on top of the filters (with
+// a hand-picked list, quick adds just join `cards`).
 export const DEFAULT_CRITERIA = () => ({
   types: ['character'],
   sets: FAIRY_TAIL ? [FAIRY_TAIL] : [],
   rarities: [],
   cards: null,
+  extra: [],
 })
 
 export const POOL = 'pool'
@@ -62,6 +65,7 @@ export const FORMAT_SETS = {
 // so a reprint resolves to its latest printing (within the chosen sets and rarities).
 // Transform back sides ("285B") are skipped: they're the same card as their front
 // for ranking purposes. A hand-picked list is taken as given, in its own order.
+// Quick-added extras follow, unless the filters already caught that card.
 export function cardsFor(criteria) {
   if (criteria.cards) {
     return [...new Set(criteria.cards)].map(a => cardByAsset.get(a)).filter(Boolean)
@@ -74,17 +78,25 @@ export function cardsFor(criteria) {
   for (const c of cards) {
     if (!types.has(c.type) || !sets.has(c.extension)) continue
     if (rarities.size && !rarities.has(c.rarity)) continue
-    if (/B$/i.test(String(c.numero ?? c.card_number ?? ''))) continue
+    if (isBackSide(c)) continue
     if (seen.has(c.name)) continue
+    seen.add(c.name)
+    out.push(c)
+  }
+  for (const c of (criteria.extra ?? []).map(a => cardByAsset.get(a))) {
+    if (!c || seen.has(c.name)) continue
     seen.add(c.name)
     out.push(c)
   }
   return out
 }
 
+export const isBackSide = (c) => /B$/i.test(String(c.numero ?? c.card_number ?? ''))
+
 export const useTiersStore = defineStore('tiers', {
+  // Setup vs. board is the route (/tiers vs. /tiers/rank), not state. Saves from
+  // before that still carry a stale `phase`; nothing reads it.
   state: () => ({
-    phase: 'setup',                        // 'setup' | 'rank'
     criteria: DEFAULT_CRITERIA(),
     tiers: DEFAULT_TIERS(),
     placements: {},                        // tierId -> [asset, ...] in display order
@@ -94,8 +106,9 @@ export const useTiersStore = defineStore('tiers', {
   }),
 
   actions: {
-    // Enter the ranking board. Placements for cards still in scope (and tiers that
-    // still exist) carry over, so tweaking the criteria doesn't throw away work.
+    // Run on entering the ranking board. Placements for cards still in scope (and
+    // tiers that still exist) carry over, so tweaking the criteria doesn't throw
+    // away work.
     start() {
       const inScope = new Set(cardsFor(this.criteria).map(c => c.asset))
       const next = {}
@@ -103,7 +116,17 @@ export const useTiersStore = defineStore('tiers', {
         next[t.id] = (this.placements[t.id] || []).filter(a => inScope.has(a))
       }
       this.placements = next
-      this.phase = 'rank'
+    },
+
+    // Bring a card into the list from outside the current selection (the tray's
+    // quick add). It lands unranked.
+    addCard(asset) {
+      if (this.criteria.cards) {
+        if (!this.criteria.cards.includes(asset)) this.criteria.cards.push(asset)
+      } else {
+        const extra = this.criteria.extra ??= []
+        if (!extra.includes(asset)) extra.push(asset)
+      }
     },
 
     // Move cards (in the given order) into a tier, or back to the pool, at `index`
@@ -159,8 +182,7 @@ export const useTiersStore = defineStore('tiers', {
       this.placements = Object.fromEntries(this.tiers.map(t => [t.id, []]))
     },
 
-    // Replace the whole list with an imported one (see src/js/tier_file.js) and open
-    // it on the board.
+    // Replace the whole list with an imported one (see src/js/tier_file.js).
     load(state) {
       this.$patch(s => Object.assign(s, state))
       this.start()
