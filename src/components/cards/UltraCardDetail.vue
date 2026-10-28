@@ -14,8 +14,9 @@
       <!-- TODO onclick detail popup / dialog / lightbox -->
       <q-img class="col-8"
           :fit="'contain'"
+          :ratio="744 / 1039"
           loading="lazy"
-          style="height: 600; width: 300px"
+          style="width: 300px"
           :src="getCardImage(this.card.asset)"
           :alt="card.name"
           

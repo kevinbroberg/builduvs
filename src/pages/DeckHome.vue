@@ -1,12 +1,11 @@
 <script setup>
 import DeckBody from 'components/deck/DeckBody.vue'
 import DeckStage from 'components/deck/DeckStage.vue'
-import DeckDialog from 'components/deck/DeckDialog.vue'
+import DeckEmptyState from 'components/deck/DeckEmptyState.vue'
+import AddCardsDialog from 'components/deck/AddCardsDialog.vue'
 import QuickAddSelect from 'components/deck/QuickAddSelect.vue'
 import DeckSummary from 'components/deck/DeckSummary.vue'
 import HydraExportDialog from 'components/deck/HydraExportDialog.vue'
-import Filters from 'components/filter/Filters.vue'
-import InfiniteScrollCardDetailList from 'components/cards/InfiniteScrollCardDetailList.vue'
 import { useQuasar } from 'quasar'
 import { useDeckStore } from 'src/stores/deck'
 import { storeToRefs } from 'pinia'
@@ -42,13 +41,7 @@ function setView(v) {
   localStorage.setItem('deckView', v)
 }
 
-// Add Cards: the full card search in a maximized dialog, so you can build
-// without leaving the deck.
 const addCardsOpen = ref(false)
-
-const deckSize = computed(() =>
-  deckStore.getDeckList.reduce((n, c) => n + c.qty, 0) + (face.value ? 1 : 0)
-)
 
 const sortLabel = computed(() =>
   sorts.find(s => s.field === sortField.value)?.label ?? 'deck order'
@@ -140,16 +133,7 @@ const rankLink = computed(() => tierLink(deckStore.currentDeckName,
 <template>
   <!-- Empty state -->
   <!-- A maybeboard alone still counts: emptying the main deck mustn't hide it. -->
-  <div v-if="!hasDeck && !hasMaybe" class="empty-state">
-    <p class="empty-state__text">Import a deck?</p>
-    <DeckDialog />
-    <p class="empty-state__text">or start from scratch</p>
-    <q-btn push icon="search" label="Add Cards" @click="addCardsOpen = true" />
-    <p class="empty-state__text">
-      or browse
-      <router-link to="/lists" class="locals-link">Local Championship decklists</router-link>
-    </p>
-  </div>
+  <DeckEmptyState v-if="!hasDeck && !hasMaybe" />
 
   <template v-else>
     <!-- Toolbar rail: build on the left, arrange the view on the right -->
@@ -168,7 +152,7 @@ const rankLink = computed(() => tierLink(deckStore.currentDeckName,
       <q-space />
 
       <!-- View As (+ image size for tiles) -->
-      <q-btn-dropdown flat no-caps :icon="view === 'tiles' ? 'grid_view' : 'view_list'"
+      <q-btn-dropdown flat no-caps class="rail-dropdown" :icon="view === 'tiles' ? 'grid_view' : 'view_list'"
         :label="'View: ' + (view === 'tiles' ? 'Tiles' : 'Text list')">
         <q-list style="min-width: 220px">
           <q-item clickable v-close-popup :active="view === 'tiles'" active-class="bg-orange-13"
@@ -209,7 +193,7 @@ const rankLink = computed(() => tierLink(deckStore.currentDeckName,
       </q-btn-dropdown>
 
       <!-- Group By -->
-      <q-btn-dropdown flat no-caps icon="dashboard" :label="'Group: ' + howPartition">
+      <q-btn-dropdown flat no-caps class="rail-dropdown" icon="dashboard" :label="'Group: ' + howPartition">
         <q-list>
           <q-item v-for="opt in partitionOptions" :key="opt" clickable v-close-popup
             :active="howPartition === opt" active-class="bg-orange-13" @click="howPartition = opt">
@@ -219,7 +203,7 @@ const rankLink = computed(() => tierLink(deckStore.currentDeckName,
       </q-btn-dropdown>
 
       <!-- Sort By -->
-      <q-btn-dropdown flat no-caps icon="sort" :label="'Sort: ' + sortLabel">
+      <q-btn-dropdown flat no-caps class="rail-dropdown" icon="sort" :label="'Sort: ' + sortLabel">
         <q-list>
           <q-item clickable v-close-popup :active="!sortField" active-class="bg-orange-13"
             @click="sortField = ''">
@@ -232,23 +216,25 @@ const rankLink = computed(() => tierLink(deckStore.currentDeckName,
         </q-list>
       </q-btn-dropdown>
 
-      <q-separator vertical inset dark />
-
-      <q-btn flat round icon="cloud_upload" @click="openHydraExport">
-        <q-tooltip>Publish to play.uvsgames.com</q-tooltip>
-      </q-btn>
-      <q-btn flat round icon="leaderboard" :to="rankLink">
-        <q-tooltip>Open this deck's cards in the Tier Maker</q-tooltip>
-      </q-btn>
-      <q-btn flat round icon="download" @click="downloadTTS">
-        <q-tooltip>Download Tabletop Simulator deck</q-tooltip>
-      </q-btn>
-      <q-btn flat round icon="content_copy" @click="deck2clipboard">
-        <q-tooltip>Copy decklist to clipboard</q-tooltip>
-      </q-btn>
-      <q-btn flat round icon="delete" color="negative" @click="trash">
-        <q-tooltip>Wipe deck</q-tooltip>
-      </q-btn>
+      <!-- One unit, so if the rail does wrap, the actions move together -->
+      <div class="rail-actions row no-wrap items-center">
+        <q-separator vertical inset dark />
+        <q-btn flat round icon="cloud_upload" @click="openHydraExport">
+          <q-tooltip>Publish to play.uvsgames.com</q-tooltip>
+        </q-btn>
+        <q-btn flat round icon="leaderboard" :to="rankLink">
+          <q-tooltip>Open this deck's cards in the Tier Maker</q-tooltip>
+        </q-btn>
+        <q-btn flat round icon="download" @click="downloadTTS">
+          <q-tooltip>Download Tabletop Simulator deck</q-tooltip>
+        </q-btn>
+        <q-btn flat round icon="content_copy" @click="deck2clipboard">
+          <q-tooltip>Copy decklist to clipboard</q-tooltip>
+        </q-btn>
+        <q-btn flat round icon="delete" color="negative" @click="trash">
+          <q-tooltip>Wipe deck</q-tooltip>
+        </q-btn>
+      </div>
     </div>
 
     <!-- Stage -->
@@ -329,43 +315,11 @@ const rankLink = computed(() => tierLink(deckStore.currentDeckName,
     </div>
   </template>
 
-  <!-- Add Cards: the real search stack, maximized over the deck -->
-  <q-dialog v-model="addCardsOpen" maximized transition-show="slide-up" transition-hide="slide-down">
-    <q-card>
-      <q-toolbar class="bg-secondary text-white">
-        <q-icon name="search" size="sm" class="q-mr-sm" />
-        <q-toolbar-title>Add Cards</q-toolbar-title>
-        <div class="text-caption q-mr-md">Deck size: {{ deckSize }}</div>
-        <q-btn flat round dense icon="close" v-close-popup />
-      </q-toolbar>
-      <q-card-section class="scroll" style="max-height: calc(100vh - 50px)">
-        <Filters />
-        <InfiniteScrollCardDetailList />
-      </q-card-section>
-    </q-card>
-  </q-dialog>
+  <!-- The rail's Add Cards (the empty state brings its own) -->
+  <AddCardsDialog v-model="addCardsOpen" />
 </template>
 
 <style scoped>
-.empty-state {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem 2rem;
-  gap: 1rem;
-  text-align: center;
-}
-.empty-state__text {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin: 0;
-}
-.locals-link {
-  font-size: 1rem;
-  text-decoration: underline;
-}
-
 .face-empty__label {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -383,6 +337,18 @@ const rankLink = computed(() => tierLink(deckStore.currentDeckName,
   background: linear-gradient(#2c2f36, #1f2128);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   color: #f1f1f4;
+  /* Sized by the space the page leaves it (the right drawer squeezes it), not the screen */
+  container-type: inline-size;
+}
+/* Too narrow for everything: the View/Group/Sort dropdowns drop to their icons
+   rather than shove the action buttons onto a second line. */
+@container (max-width: 1440px) {
+  .rail-dropdown :deep(.q-btn__content > .block) {
+    display: none;
+  }
+}
+.rail-actions {
+  gap: 8px;
 }
 .deck-rail :deep(.q-btn--flat) {
   color: #f1f1f4;

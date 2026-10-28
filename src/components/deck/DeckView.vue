@@ -1,6 +1,6 @@
 <script setup>
   import ManySymbols from 'components/cards/detail/ManySymbols.vue'
-  import DeckDialog from './DeckDialog.vue'
+  import DeckEmptyState from './DeckEmptyState.vue'
   import DeckSummary from './DeckSummary.vue'
   import { useQuasar } from 'quasar'
 
@@ -16,13 +16,18 @@
 
       increment,
       decrement,
-      clearFace,
+      trash,
       SIDEKEY,
       MAYBEKEY,
   } from './deck_logic'
 
   const deckStore = useDeckStore()
-  const { hasDeck } = storeToRefs(deckStore)
+  const { hasDeck, hasMaybe } = storeToRefs(deckStore)
+
+  // Typing live keeps the badge in step; only a name left empty gets the default back.
+  function nameDeckIfBlank() {
+    if (!deckStore.currentDeckName?.trim()) deckStore.currentDeckName = 'Untitled Deck'
+  }
 
   // Which board's +/- a row's buttons drive, by the group it's listed under.
   const boardOps = partition =>
@@ -32,12 +37,24 @@
 </script>
 
 <template>
-  <q-btn-group push v-if="!hasDeck">
-    <!-- TODO - formerly a button group with all the options -->
-      <DeckDialog  />
-  </q-btn-group>
+  <!-- Same rule as the deck page: a maybeboard alone still counts as a deck. -->
+  <DeckEmptyState v-if="!hasDeck && !hasMaybe" compact />
 
   <div v-if="face || deck.length" class="deck-view__header">
+    <div class="deck-view__title">
+      <q-input
+        v-model="deckStore.currentDeckName"
+        dense
+        label="Deck name"
+        class="deck-view__name"
+        @blur="nameDeckIfBlank"
+      >
+        <template #prepend><q-icon name="edit" size="18px" /></template>
+      </q-input>
+      <q-btn flat round dense icon="delete" color="negative" @click="trash">
+        <q-tooltip>Wipe deck</q-tooltip>
+      </q-btn>
+    </div>
     <div v-if="face" class="deck-view__face">
       <q-avatar square class="card-thumb">
         <!-- TODO zoom into just the card art here -->
@@ -47,14 +64,11 @@
         <div class="deck-view__face-name ellipsis">{{ face.name }}</div>
         <ManySymbols :resources="face.resources" />
       </div>
-      <q-btn flat round dense icon="clear" @click="clearFace">
-        <q-tooltip>Remove character</q-tooltip>
-      </q-btn>
     </div>
     <DeckSummary light :face="face" :cards="deck" />
   </div>
 
-  <q-list bordered>
+  <q-list v-if="hasDeck || hasMaybe" bordered>
     <div v-for="partition in partitions" :key="partition.key">
       <q-separator/>
       <!-- <q-item-label v-if="howPartition == symbol" header><ManySymbols :card=partition.cards[0].resources /></q-item-label> -->
@@ -85,6 +99,18 @@
   flex-direction: column;
   gap: 10px;
   padding: 12px 16px;
+}
+.deck-view__title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.deck-view__name {
+  flex: 1;
+  min-width: 0;
+}
+.deck-view__name :deep(input) {
+  font-weight: 700;
 }
 .deck-view__face {
   display: flex;

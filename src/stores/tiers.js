@@ -6,7 +6,7 @@ import { cards, cardByAsset } from 'src/js/card_provider'
 //
 // An options store, like the rest: stores/index.js persists `toRaw(pinia.state)`,
 // and a setup store's slice holds raw refs there, which JSON.stringify chokes on.
-// Keys added later need a backfill in stores/index.js (see BUVS-0005).
+// Keys added later get their defaults on load (stores/index.js, BUVS-0005).
 
 const FAIRY_TAIL = cards.find(c => c.extension_short === 'ft01')?.extension
 

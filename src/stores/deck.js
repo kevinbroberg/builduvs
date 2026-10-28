@@ -6,7 +6,6 @@ export const useDeckStore = defineStore('deck', {
     side: {},
     // Cards under consideration. Deliberately outside deck/side: exports and the
     // deck-symbol summary read only those, so the maybeboard never leaks into them.
-    // (New keys here need a backfill in stores/index.js; see BUVS-0005 there.)
     maybe: {},
     // Must default to null, not undefined: JSON.stringify drops undefined keys,
     // so an undefined face would vanish from persisted state and Pinia would

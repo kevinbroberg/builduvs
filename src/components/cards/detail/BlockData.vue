@@ -1,7 +1,7 @@
 <template>
 <div class="hasblock" v-if="card.block_zone">
   <span>
-    Block : +{{card['block_modifier']}} <ResourceSymbol element="card.block_zone" isBlockSymbol /> <br/>
+    Block : +{{card['block_modifier']}} <ResourceSymbol :element="card.block_zone" isBlockSymbol /> <br/>
   </span>
 </div>
 </template>

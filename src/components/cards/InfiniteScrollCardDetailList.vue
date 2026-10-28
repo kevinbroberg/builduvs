@@ -4,22 +4,19 @@
       <q-tooltip>{{detailType.tip}}</q-tooltip>
     </q-btn>
   </div>
-  <div id="scroll-target-id">
-    <q-infinite-scroll class="row" @load="addMore" :offset=500 
-      :scroll-target="'scroll-target-id'">
-      <component :is=detailType.component
-        :class=detailType.class
-        v-for="card in scrolledCards"
-        :key="card.asset"
-        v-bind="{card: card, main: true}"
-      />
-      <template v-slot:loading>
-        <div class="row justify-center q-my-md">
-          <q-spinner-dots color="primary" size="40px" />
-        </div>
-      </template>
-    </q-infinite-scroll>
-  </div>
+  <q-infinite-scroll ref="scroller" class="row" @load="addMore" :offset=1000>
+    <component :is=detailType.component
+      :class=detailType.class
+      v-for="card in scrolledCards"
+      :key="card.asset"
+      v-bind="{card: card, main: true}"
+    />
+    <template v-slot:loading>
+      <div class="row justify-center q-my-md">
+        <q-spinner-dots color="primary" size="40px" />
+      </div>
+    </template>
+  </q-infinite-scroll>
 </template>
 
 <script>
@@ -36,52 +33,40 @@ export default {
     return {
       swapDisplay: true,
       filteredCards: filteredCards,
-      scrollLimit: 1,
-      scrollPageSize: 6,
+      pages: 1,
+      // A multiple of every tile row width (1, 2, 4, 6), so each page fills whole rows.
+      scrollPageSize: 12,
     };
   },
   computed: {
     detailType() {
       return this.swapDisplay
-        ? { label: "Show Details", tip: "View card details, one per row", 
-          component: CardCard, class: "col-lg-2 col-md-3 col-sm-6 col-xs-12" } 
+        ? { label: "Show Details", tip: "View card details, one per row",
+          component: CardCard, class: "col-lg-2 col-md-3 col-sm-6 col-xs-12" }
         : { label: "Show Tiles", tip: "View cards as tiles", component: UltraCardDetail}
     },
     scrolledCards() {
-      return this.filteredCards.slice(
-        0,
-        this.scrollLimit * this.scrollPageSize
-      );
+      return this.filteredCards.slice(0, this.pages * this.scrollPageSize);
     },
   },
   methods: {
-    addMore(index, done) {
-      this.scrollLimit = index;
-      done()
+    // Count pages here rather than trusting QInfiniteScroll's own index: that one
+    // kept climbing while idle at the bottom and survived filter changes, so the
+    // next load after a new search jumped straight to dozens of pages.
+    addMore(_, done) {
+      this.pages++
+      done(this.scrolledCards.length >= this.filteredCards.length)
     },
   },
   watch: {
-    filteredCards: function(_, __) {
+    filteredCards() {
       // page froze up if user scrolled down then removed filters, as the page tried to render 100s of new cards
-      console.log("Resetting scroll after search results changed")
-      this.scrollLimit = 1
+      this.pages = 1
+      this.$nextTick(() => {
+        this.$refs.scroller?.reset()
+        this.$refs.scroller?.resume()
+      })
     }
   }
 };
 </script>
-
-<style scoped>
-button.page-link {
-  display: inline-block;
-  font-size: 20px;
-  color: #29b3ed;
-  font-weight: 500;
-}
-.offset {
-  width: 500px !important;
-  margin: 20px auto;
-}
-.scroll {
-  overflow-anchor: none;
-}
-</style>

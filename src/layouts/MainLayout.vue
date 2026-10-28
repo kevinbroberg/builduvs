@@ -4,6 +4,7 @@ import { useRoute } from "vue-router";
 import { useDeckStore } from "src/stores/deck";
 import { storeToRefs } from "pinia";
 import DeckView from "src/components/deck/DeckView.vue";
+import NowBuilding from "src/components/deck/NowBuilding.vue";
 
 const { hasDeck } = storeToRefs(useDeckStore());
 
@@ -44,14 +45,8 @@ function toggleRightDrawer() {
           <span class="gt-xs">BuildUVS</span>
         </q-toolbar-title>
         <!-- <NamePicker /> -->
-        <q-btn dense flat round
-          icon="table_view"
-          @click="toggleRightDrawer"
-          v-if="hasDeck"
-          label="Deck"
-          >
-          <q-tooltip>View current deck</q-tooltip>
-        </q-btn>
+        <q-space />
+        <NowBuilding v-if="hasDeck" @click="toggleRightDrawer" />
       </q-toolbar>
     </q-header>
 

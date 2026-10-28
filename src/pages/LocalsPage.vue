@@ -173,17 +173,15 @@ const regionalTabs = regionalEvents.map(e => ({
   sortDate: e.date,
 }))
 
-const lcFormatSortDate = Object.fromEntries(
-  LC_FORMATS.map(f => {
-    const dates = lcEvents.filter(e => e.formatPeriod === f.key).map(e => e.date).sort()
-    return [f.key, dates[0] ?? '9999']
-  })
-)
+// A format with no events yet (announced ahead of its first LC) gets no tab;
+// it would otherwise sort first and open as an empty default.
+const lcFormatTabs = LC_FORMATS.flatMap(f => {
+  const dates = lcEvents.filter(e => e.formatPeriod === f.key).map(e => e.date).sort()
+  return dates.length ? [{ ...f, sortDate: dates[0] }] : []
+})
 
-const FORMATS = [
-  ...LC_FORMATS.map(f => ({ ...f, sortDate: lcFormatSortDate[f.key] })),
-  ...regionalTabs,
-].sort((a, b) => b.sortDate.localeCompare(a.sortDate))
+const FORMATS = [...lcFormatTabs, ...regionalTabs]
+  .sort((a, b) => b.sortDate.localeCompare(a.sortDate))
 
 const eventsByFormat = computed(() => ({
   ...Object.fromEntries(LC_FORMATS.map(f => [f.key, sortEvents(lcEvents.filter(e => e.formatPeriod === f.key))])),
