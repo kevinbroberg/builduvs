@@ -6,7 +6,7 @@ import { storeToRefs } from "pinia";
 import DeckView from "src/components/deck/DeckView.vue";
 import NowBuilding from "src/components/deck/NowBuilding.vue";
 
-const { hasDeck } = storeToRefs(useDeckStore());
+const { hasDeck, hasMaybe } = storeToRefs(useDeckStore());
 
 // Route records for /lists are siblings (not nested), so router-link's own
 // active matching won't highlight "Decklists" on a player page. Match by path.
@@ -46,7 +46,9 @@ function toggleRightDrawer() {
         </q-toolbar-title>
         <!-- <NamePicker /> -->
         <q-space />
-        <NowBuilding v-if="hasDeck" @click="toggleRightDrawer" />
+        <!-- Also while the drawer is open: it's the drawer's only toggle, and wiping
+             the deck from inside the drawer would otherwise strand it open. -->
+        <NowBuilding v-if="hasDeck || hasMaybe || rightDrawerOpen" @click="toggleRightDrawer" />
       </q-toolbar>
     </q-header>
 
