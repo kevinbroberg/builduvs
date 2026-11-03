@@ -148,9 +148,9 @@ export function tierLink(title, list) {
   }
 }
 
-export function tierFileName(title) {
+export function tierFileName(title, ext = 'json') {
   const slug = (title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
-  return `${slug || 'tier-list'}.json`
+  return `${slug || 'tier-list'}.${ext}`
 }
 
 export function downloadTierFile(state) {

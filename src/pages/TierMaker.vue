@@ -25,6 +25,7 @@ import TierRowDialog from 'src/components/tiers/TierRowDialog.vue'
 import EmojiPicker from 'src/components/tiers/EmojiPicker.vue'
 import ColorSwatches from 'src/components/tiers/ColorSwatches.vue'
 import TierQuickAdd from 'src/components/tiers/TierQuickAdd.vue'
+import TierImageDialog from 'src/components/tiers/TierImageDialog.vue'
 import { defaultPoolView, applyPoolView, activeFilterCount, RARITY_ORDER } from 'src/js/tier_pool_view'
 import {
   fromTierFile, fromTierData, toTierFile, downloadTierFile, LINK_CARDS, LINK_TITLE,
@@ -353,6 +354,7 @@ async function copyAsText() {
 // ----- import / export ------------------------------------------------------------
 
 const exportJson = () => downloadTierFile(store.$state)
+const imageOpen = ref(false)
 
 const fileInput = ref(null)
 async function onFilePicked(evt) {
@@ -556,6 +558,8 @@ function offerLoad({ state, unresolved }, what, then = () => {}) {
             </q-card>
           </q-popup-proxy>
         </q-btn>
+        <q-btn flat dense no-caps color="primary" icon="image" :label="wide ? 'Share image' : undefined"
+          title="Share as image" @click="imageOpen = true" />
       </div>
 
       <div class="tm-tiers">
@@ -623,6 +627,8 @@ function offerLoad({ state, unresolved }, what, then = () => {}) {
       </div>
 
       <TierRowDialog v-model:open="rowSettingsOpen" :tier-id="rowSettingsId" />
+
+      <TierImageDialog v-model:open="imageOpen" />
 
       <PoolViewDialog v-model:open="poolViewOpen" v-model:view="poolView" :cards="inScope"
         :shown-count="shownPool.length" @select-shown="selectShown" />

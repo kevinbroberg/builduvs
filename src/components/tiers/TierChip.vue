@@ -29,7 +29,8 @@ const emit = defineEmits(['send'])
     <TierFace :card="card" :mode="mode" />
     <q-menu context-menu auto-close>
       <div class="tier-chip__menu">
-        <img class="tier-chip__menu-card" :src="getCardImage(card.asset)" :alt="card.name" />
+        <img class="tier-chip__menu-card" :src="getCardImage(card.asset)" :alt="card.name"
+          crossorigin="anonymous" />
         <q-list dense class="tier-chip__menu-list">
           <q-item-label header class="q-py-xs">
             {{ count > 1 ? `Move ${count} cards to…` : card.name }}

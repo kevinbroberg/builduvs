@@ -4,9 +4,12 @@
 // the same top-of-art crop the square thumbnails use. With `showName`, the card
 // name sits across the top edge in an outlined, tilted label tinted from the art.
 // With `square`, a wider square of the art around the same face instead of a circle.
+// The crop and label math lives in src/js/card_avatar.js, shared with the tier image export.
 import { computed } from 'vue'
-import avatars from 'assets/avatars.json'
 import { getCardImage } from 'src/js/image_helper'
+import {
+  CARD_ASPECT, avatarCrop, avatarFrame, avatarLines, avatarFontSize,
+} from 'src/js/card_avatar'
 
 const props = defineProps({
   card: { type: Object, required: true },
@@ -15,32 +18,8 @@ const props = defineProps({
   square: { type: Boolean, default: false },
 })
 
-const CARD_ASPECT = 1039 / 744                // card image height / width
-const FALLBACK = [0.5, 0.256, 0.357, null]    // matches .standing-avatar's scale(1.4) top crop
-
-// How much more of the art a square shows around a detected face, and the bounds
-// on its half-width (in card widths): enough to read as art, never the frame.
-const SQUARE_ZOOM = 2.4
-const SQUARE_HALF = [0.3, 0.45]
-// Roughly where the art gives way to the name bar and text box, as a fraction of
-// the card's height. A square stops above it, sliding up (or shrinking) to fit.
-const ART_BOTTOM = 0.55
-
-const crop = computed(() => avatars[props.card.asset] ?? FALLBACK)
-
-// [cx, cy, r]: centre as fractions of the card's width/height, r (half the visible
-// width) as a fraction of its width.
-const frame = computed(() => {
-  const [cx, cy, r] = crop.value
-  if (!props.square || !avatars[props.card.asset]) return [cx, cy, r]
-  const artBottom = ART_BOTTOM * CARD_ASPECT  // in card widths, like `half`
-  const half = Math.min(SQUARE_HALF[1], Math.max(SQUARE_HALF[0], r * SQUARE_ZOOM), artBottom / 2)
-  // Slide the wider square back inside the art rather than show past its edge.
-  const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v))
-  const x = clamp(cx, half, 1 - half)
-  const y = clamp(cy * CARD_ASPECT, half, artBottom - half) / CARD_ASPECT
-  return [x, y, half]
-})
+const crop = computed(() => avatarCrop(props.card))
+const frame = computed(() => avatarFrame(props.card, props.square))
 
 const imgStyle = computed(() => {
   const [cx, cy, r] = frame.value
@@ -52,31 +31,12 @@ const imgStyle = computed(() => {
   }
 })
 
-// "Erwin Smith, Strategic Mastermind" -> "Erwin Smith": the title won't fit.
-const label = computed(() => props.card.name.split(',')[0])
-
-// Past 10 characters a name breaks onto two lines, at the space nearest its middle:
-// a long single line shrinks to illegible. The break is explicit because the browser
-// only wraps text that overflows, and this label is sized to fit, not to overflow.
-const lines = computed(() => {
-  const text = label.value
-  if (text.length <= 10 || !text.includes(' ')) return [text]
-  const mid = text.length / 2
-  let at = -1
-  for (let i = 0; i < text.length; i++) {
-    if (text[i] === ' ' && (at < 0 || Math.abs(i - mid) < Math.abs(at - mid))) at = i
-  }
-  return [text.slice(0, at), text.slice(at + 1)]
-})
+// The line break is explicit because the browser only wraps text that overflows, and
+// this label is sized to fit, not to overflow.
+const lines = computed(() => avatarLines(props.card))
 const labelText = computed(() => lines.value.join('\n'))
 
-// Size the text so its longest line fits. The square's level banner spans the tile's
-// width; the slanted label hangs past it (116%), so has more room.
-const labelStyle = computed(() => {
-  const longest = Math.max(...lines.value.map(l => l.length))
-  const room = props.square ? 100 / 116 : 1
-  return { fontSize: `${Math.min(15, (100 * room) / (longest * 0.68))}cqw` }
-})
+const labelStyle = computed(() => ({ fontSize: `${avatarFontSize(lines.value, props.square)}cqw` }))
 
 const rootStyle = computed(() => {
   const hue = crop.value[3]
@@ -94,7 +54,8 @@ const rootStyle = computed(() => {
 <template>
   <div class="card-avatar" :class="{ 'card-avatar--square': square }" :style="rootStyle">
     <div class="card-avatar__circle">
-      <img :src="getCardImage(card.asset)" :alt="card.name" :style="imgStyle" draggable="false" />
+      <img :src="getCardImage(card.asset)" :alt="card.name" :style="imgStyle" draggable="false"
+        crossorigin="anonymous" />
     </div>
     <div v-if="showName" class="card-avatar__name" :style="labelStyle" aria-hidden="true">
       <span class="card-avatar__name-outer">{{ labelText }}</span>

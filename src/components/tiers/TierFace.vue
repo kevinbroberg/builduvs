@@ -18,7 +18,7 @@ defineProps({
 <template>
   <div class="tier-face" :class="`tier-face--${mode}`">
     <img v-if="mode === 'card'" data-face class="tier-face__card" :src="getCardImage(card.asset)"
-      :alt="card.name" draggable="false" />
+      :alt="card.name" draggable="false" crossorigin="anonymous" />
     <CardAvatar v-else data-face :card="card" :square="mode === 'art'"
       :size="mode === 'art' ? '96px' : '88px'" :show-name="showName" />
   </div>
