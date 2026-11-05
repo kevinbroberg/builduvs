@@ -9,6 +9,7 @@
 
   const $q = useQuasar()
   import { getCardImage } from 'src/js/image_helper'
+  import { openCardDetail } from 'src/js/card_detail'
   import {
       face,
       deck,
@@ -84,7 +85,7 @@
             <q-item-label lines="2">
               <q-btn flat round no-margin icon="remove" class="decrement-btn"
                 @click="boardOps(partition).dec(card)"/>
-              {{card.qty}} {{card.name}}
+              {{card.qty}} <span class="deck-view__name" @click="openCardDetail(card)">{{card.name}}</span>
             </q-item-label>            
         </q-item-section>
       </q-item>
@@ -94,6 +95,12 @@
 
 <!-- Shared card-list / card-thumb styles now live in src/css/app.sass (global). -->
 <style scoped>
+.deck-view__name {
+  cursor: pointer;
+}
+.deck-view__name:hover {
+  text-decoration: underline;
+}
 .deck-view__header {
   display: flex;
   flex-direction: column;

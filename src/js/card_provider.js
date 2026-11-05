@@ -1,5 +1,4 @@
-import { ref, computed } from 'vue'
-import Fuse from 'fuse.js'
+import { ref, computed, watch } from 'vue'
 import heroesclash from 'assets/heroesclash.json'
 import rampage_dlc from 'assets/rampage_dlc.json'
 import rampage from 'assets/rampage.json'
@@ -14,6 +13,7 @@ import tk802 from 'assets/tekken8.json'
 import sf62x from 'assets/sf6-2026.json'
 import ft01 from 'assets/fairytail.json'
 import { uvsId } from 'src/js/card_id'
+import { createCardSearch, FUZZY_DELAY_MS } from 'src/js/card_search'
 
 export const cards = [...ft01, ...sf62x,...tk802, ...mha09, ...kaiju, ...teamhero, ...ggrole, ...sjwtomha4,...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
 
@@ -306,20 +306,22 @@ const formatCards = computed(() => {
   return cards
 })
 
-const fuseIndex = computed(() => {
-  return new Fuse(formatCards.value, {
-    keys: ['name'],
-    threshold: 0.4,
-    includeScore: true,
-  })
+const nameIndex = computed(() => createCardSearch(formatCards.value))
+
+// The name query once typing has paused; that's when fuzzy extras join in.
+const settledName = ref('')
+let settleTimer = null
+watch(() => selections.value.name, name => {
+  clearTimeout(settleTimer)
+  settleTimer = setTimeout(() => { settledName.value = name }, FUZZY_DELAY_MS)
 })
 
-// When fuzzy name search is active, returns a Map<card, score> for filtering + sorting.
+// When name search is active, returns a Map<card, score> for filtering + sorting.
 // Returns null when inactive (no name query, or regex mode via / prefix).
 const fuzzyScores = computed(() => {
   const sel = selections.value.name
   if (!sel || sel.length === 0 || sel.startsWith('/')) return null
-  const results = fuseIndex.value.search(sel)
+  const results = nameIndex.value.search(sel, { fuzzyExtras: settledName.value === sel })
   const map = new Map()
   for (const r of results) map.set(r.item, r.score)
   return map

@@ -2,6 +2,7 @@
 import { computed, ref, watch } from 'vue'
 import { getCardImage } from 'src/js/image_helper'
 import { cardByAsset, transformTarget } from 'src/js/card_provider'
+import { openCardDetail } from 'src/js/card_detail'
 
 const props = defineProps({
   // Card asset shown large in the right-hand preview slot (null = empty state).
@@ -49,21 +50,23 @@ const shownName = computed(() => (transformed.value ? otherSide.value?.name : pr
           <div class="face-flipper" :class="{ 'face-flipper--flipped': transformed }">
             <div class="face-side">
               <q-img
-                class="face-card"
+                class="face-card face-card--open"
                 fit="contain"
                 :ratio="59 / 86"
                 :src="getCardImage(faceAsset)"
                 :alt="faceName"
+                @click="openCardDetail(cardByAsset.get(faceAsset))"
               />
               <div v-if="isEpic" class="epic-overlay">EPIC</div>
             </div>
             <div v-if="otherSide" class="face-side face-side--back">
               <q-img
-                class="face-card"
+                class="face-card face-card--open"
                 fit="contain"
                 :ratio="59 / 86"
                 :src="getCardImage(otherSide.asset)"
                 :alt="otherSide.name"
+                @click="openCardDetail(otherSide)"
               />
             </div>
           </div>
@@ -203,6 +206,9 @@ const shownName = computed(() => (transformed.value ? otherSide.value?.name : pr
   max-width: 300px;
   border-radius: 12px;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.7);
+}
+.face-card--open {
+  cursor: zoom-in;
 }
 .epic-overlay {
   position: absolute;

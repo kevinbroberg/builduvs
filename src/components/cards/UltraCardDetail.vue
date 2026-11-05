@@ -10,8 +10,7 @@
     </div>
     
     <!-- Image + fundamentals section -->
-    <div class="col-6 row no-wrap" @click="increment()">
-      <!-- TODO onclick detail popup / dialog / lightbox -->
+    <div class="col-6 row no-wrap ultra-card__open" @click="openCardDetail(card)">
       <q-img class="col-8"
           :fit="'contain'"
           :ratio="744 / 1039"
@@ -37,7 +36,6 @@
     </div>
 
     <div class="col-sm-6 col-xs-12 col-grow">
-      <!-- TODO onclick detail popup / dialog / lightbox -->
       <h4>{{ (card.keywords ? card.keywords : []).join(" - ") }}</h4>
       <h6 style="margin: 0px 15px">{{ card.text || "Missing text" }}</h6>
       <q-btn v-if="card.rochester_url" type="a" :href="'https://www.rochesterccg.com' + card.rochester_url" target="_blank" label="Buy on RochesterCCG" color="orange" />
@@ -51,6 +49,7 @@ import BlockData from "components/cards/detail/BlockData.vue";
 import AttackData from "components/cards/detail/AttackData.vue";
 import ManySymbols from "components/cards/detail/ManySymbols.vue";
 import { getCardImage } from "src/js/image_helper";
+import { openCardDetail } from "src/js/card_detail";
 import { useDeckStore } from "src/stores/deck";
 import { computed } from "vue";
 
@@ -81,7 +80,7 @@ export default {
     const amMain = computed(() => $store.getFace?.name == props.card["name"])
 
     return {
-        increment, decrement, isCharacter, myQty, amMain, getCardImage
+        increment, decrement, isCharacter, myQty, amMain, getCardImage, openCardDetail
     }
   },
   props: {
@@ -97,6 +96,10 @@ body {
   max-width: 1400px;
   margin: auto;
   background-color: #eee;
+}
+
+.ultra-card__open {
+  cursor: zoom-in;
 }
 
 #options > div {

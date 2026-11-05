@@ -5,6 +5,8 @@ import { useDeckStore } from "src/stores/deck";
 import { storeToRefs } from "pinia";
 import DeckView from "src/components/deck/DeckView.vue";
 import NowBuilding from "src/components/deck/NowBuilding.vue";
+import NavCardSearch from "src/components/NavCardSearch.vue";
+import CardDetailDialog from "src/components/cards/CardDetailDialog.vue";
 
 const { hasDeck, hasMaybe } = storeToRefs(useDeckStore());
 
@@ -45,6 +47,7 @@ function toggleRightDrawer() {
           <span class="gt-xs">BuildUVS</span>
         </q-toolbar-title>
         <!-- <NamePicker /> -->
+        <NavCardSearch />
         <q-space />
         <!-- Also while the drawer is open: it's the drawer's only toggle, and wiping
              the deck from inside the drawer would otherwise strand it open. -->
@@ -104,6 +107,9 @@ function toggleRightDrawer() {
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <CardDetailDialog />
+
   </q-layout>
 </template>
 

@@ -30,7 +30,7 @@ import { buildPrecons } from '../src/js/precon_rows.js'
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const assets = path.join(root, 'src', 'assets')
 
-const CDN_BASE = 'https://pub-aa47ca6c03d2428a9e22ac6b5d839945.r2.dev'
+const CDN_BASE = 'https://img.builduvs.com'
 const SITE_BASE = 'https://builduvs.com'
 
 // ── Card name → CDN image URL ───────────────────────────────────────────────

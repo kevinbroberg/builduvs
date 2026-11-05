@@ -3,6 +3,7 @@
   import { useDeckStore } from 'src/stores/deck'
   import { getCardImage } from 'src/js/image_helper'
   import ResourceSymbol from 'src/components/cards/detail/ResourceSymbol.vue'
+  import { openCardDetail } from 'src/js/card_detail'
   const props = defineProps({ card: Object, main: Boolean })
   const data = ref(props.card)
 
@@ -31,11 +32,13 @@
   <!-- The ratio reserves the card's full height before the image arrives, so
        tiles don't grow under the reader and jolt the infinite scroll. -->
   <q-img
+    class="card-card__image"
     loading="lazy"
     fit="cover"
     :ratio="CARD_RATIO"
     :src="getCardImage(data.asset)"
-    :alt="data.name">
+    :alt="data.name"
+    @click="openCardDetail(data)">
     <div class="absolute-bottom" text-subtitle2 flex flex-center>
       {{actions.quantity() || ""}} {{data.name}}
     </div>
@@ -81,6 +84,9 @@
 </template>
 
 <style scoped>
+.card-card__image {
+  cursor: zoom-in;
+}
 /* Stand-in shown while the card image loads: its basic stats on a card-shaped panel. */
 .card-stub {
   position: absolute;

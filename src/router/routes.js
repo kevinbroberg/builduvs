@@ -24,6 +24,19 @@ const routes = [
         props: (route) => ({ query: route.query }),
         meta: { title: "Card Search" },
       },
+      // A card's own link: the browser with that card's popup open.
+      {
+        path: "/cards/:set/:number",
+        component: () => import("src/pages/CardHome.vue"),
+        props: (route) => ({ query: route.query }),
+        meta: { title: "Card Search" },
+      },
+      // Trimming a card link down to its set lands here until sets get pages.
+      {
+        path: "/cards/:set",
+        component: () => import("src/pages/ComingSoon.vue"),
+        meta: { title: "Coming Soon" },
+      },
       {
         path: "/precons",
         component: () => import("src/pages/PreconsPage.vue"),

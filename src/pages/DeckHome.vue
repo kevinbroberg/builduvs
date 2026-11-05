@@ -15,6 +15,7 @@ import { tierLink } from 'src/js/tier_file'
 import { useCardDrag } from 'src/js/card_drag'
 import { getCardImage } from 'src/js/image_helper'
 import { setPageTitle } from 'src/js/page_title'
+import { openCardDetail } from 'src/js/card_detail'
 
 import {
   face,
@@ -305,6 +306,7 @@ const rankLink = computed(() => tierLink(deckStore.currentDeckName,
         :columns="columns"
         :editable="true"
         :drag="drag"
+        @card-click="openCardDetail"
       />
     </DeckStage>
 

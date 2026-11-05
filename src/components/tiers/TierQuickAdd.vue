@@ -3,37 +3,44 @@
 // the board, it's one entry per name (newest printing, front sides only), so a
 // reprint doesn't show up as several choices.
 import { ref } from 'vue'
-import Fuse from 'fuse.js'
 import { cards } from 'src/js/card_provider'
+import { createCardSearch, FUZZY_DELAY_MS } from 'src/js/card_search'
 import { isBackSide } from 'src/stores/tiers'
 import { getCardImage } from 'src/js/image_helper'
 
 const emit = defineEmits(['pick'])
 
-let fuse = null
+let search = null
 function index() {
-  if (!fuse) {
+  if (!search) {
     const seen = new Set()
     const unique = cards.filter(c => !isBackSide(c) && !seen.has(c.name) && seen.add(c.name))
-    fuse = new Fuse(unique, { keys: ['name'], threshold: 0.4 })
+    search = createCardSearch(unique)
   }
-  return fuse
+  return search
 }
 
 const options = ref([])
+const find = (needle, fuzzyExtras) =>
+  index().search(needle, { limit: 20, fuzzyExtras }).map(r => r.item)
+// Fuzzy extras join the list once typing pauses.
+let lateFuzzy = null
 // Empty the box after each pick, so several cards can go in one after another.
 const field = ref(null)
 function onPick(card) {
   if (!card) return
   emit('pick', card)
+  clearTimeout(lateFuzzy)
   field.value?.updateInputValue('', true)
   options.value = []
 }
 function filterFn(val, update) {
+  clearTimeout(lateFuzzy)
+  const needle = val.trim()
   update(() => {
-    const needle = val.trim()
-    options.value = needle ? index().search(needle, { limit: 20 }).map(r => r.item) : []
+    options.value = needle ? find(needle, false) : []
   })
+  if (needle) lateFuzzy = setTimeout(() => { options.value = find(needle, true) }, FUZZY_DELAY_MS)
 }
 </script>
 

@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
-import Fuse from 'fuse.js'
 import { cards } from 'src/js/card_provider'
+import { createCardSearch, FUZZY_DELAY_MS } from 'src/js/card_search'
 import { useDeckStore } from 'src/stores/deck'
 import { getCardImage } from 'src/js/image_helper'
 import { baseSymbol, faceSymbolsOf, mainSymbolOf, isConfused } from 'src/js/deck_symbol'
@@ -52,19 +52,21 @@ const pool = computed(() => {
   const others = cards.filter(c => c.type !== 'character')
   return symbolFilterActive.value ? others.filter(playable) : others
 })
-const fuse = computed(() => new Fuse(pool.value, { keys: ['name'], threshold: 0.4 }))
+const index = computed(() => createCardSearch(pool.value))
 
 const options = ref([])
+const find = (needle, fuzzyExtras) =>
+  index.value.search(needle, { limit: 20, fuzzyExtras }).map(r => r.item)
 
+// Fuzzy extras join the list once typing pauses.
+let lateFuzzy = null
 function filterFn(val, update) {
+  clearTimeout(lateFuzzy)
+  const needle = val.trim()
   update(() => {
-    const needle = val.trim()
-    if (needle.length === 0) {
-      options.value = []
-    } else {
-      options.value = fuse.value.search(needle, { limit: 20 }).map(r => r.item)
-    }
+    options.value = needle ? find(needle, false) : []
   })
+  if (needle) lateFuzzy = setTimeout(() => { options.value = find(needle, true) }, FUZZY_DELAY_MS)
 }
 
 function onPick(card) {
