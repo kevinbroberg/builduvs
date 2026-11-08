@@ -118,7 +118,8 @@ function parseCard(chunk) {
     card.resources = resourceIcons
       .map(m => m[1])
       .filter(r => !r.startsWith('attack') && !r.startsWith('block'))
-      .map(r => r.startsWith('at_') ? r.slice(3) : r)
+      // at_X.png is UVSUltra's attuned icon, stored as "X-attuned" like the other sets
+      .map(r => r.startsWith('at_') ? `${r.slice(3)}-attuned` : r)
   } else {
     card.resources = []
   }

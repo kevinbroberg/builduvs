@@ -396,7 +396,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Spell"
@@ -425,7 +425,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Fury",
@@ -456,7 +456,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Quest: 2",
@@ -486,7 +486,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Quest: 1",
@@ -516,7 +516,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Fury",
@@ -547,7 +547,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Spell",
@@ -577,7 +577,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Quest: 2",
@@ -608,7 +608,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Breaker: 2",
@@ -639,7 +639,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Quest: 1",
@@ -670,7 +670,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "EX: 2",
@@ -701,7 +701,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Charge",
@@ -732,7 +732,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Fury",
@@ -763,7 +763,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Ally",
@@ -795,7 +795,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Quest: 3",
@@ -826,7 +826,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Spell",
@@ -856,7 +856,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Fury",
@@ -887,7 +887,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Armor"
@@ -913,7 +913,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Armor"
@@ -939,7 +939,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Armor"
@@ -965,7 +965,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Armor"
@@ -991,7 +991,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Spell"
@@ -1017,7 +1017,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "text": "Response [Tenacious]: After you deal 5 or more damage with a Slam attack, ready this foundation.",
     "difficulty": 2,
@@ -1040,7 +1040,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Armor"
@@ -1066,7 +1066,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "text": "Enhance Flip: This  attack gains Quest: 1.",
     "difficulty": 1,
@@ -1089,7 +1089,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "text": "Enhance Sacrifice: This Slam or Spell attack gets +4 damage.",
     "difficulty": 2,
@@ -1112,7 +1112,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "keywords": [
       "Armor"
@@ -1138,7 +1138,7 @@
       "standard"
     ],
     "resources": [
-      "earth"
+      "earth-attuned"
     ],
     "text": "Response: After you build this foundation, add 1 Quest counter to your character.",
     "difficulty": 2,
@@ -1161,7 +1161,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Spell"
@@ -1190,7 +1190,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Spell",
@@ -1220,7 +1220,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Quest: 1",
@@ -1250,7 +1250,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Spell"
@@ -1279,7 +1279,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Charge",
@@ -1309,7 +1309,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "EX: 3",
@@ -1339,7 +1339,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Powerful: 2"
@@ -1368,7 +1368,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Quest: 1"
@@ -1397,7 +1397,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Punch",
@@ -1427,7 +1427,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Weapon"
@@ -1456,7 +1456,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Fury",
@@ -1487,7 +1487,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Ally",
@@ -1518,7 +1518,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Fury",
@@ -1548,7 +1548,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Ranged",
@@ -1578,7 +1578,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Ally",
@@ -1608,7 +1608,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Ally",
@@ -1640,7 +1640,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Enhance Flip: Your rival checks against a 5. If they fail, this attack gets -3 speed. Otherwise, it gets -1 speed.",
     "difficulty": 1,
@@ -1663,7 +1663,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Unique"
@@ -1689,7 +1689,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Unique"
@@ -1715,7 +1715,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Response: After you build this foundation, add 1 Quest counter to your character.",
     "difficulty": 2,
@@ -1738,7 +1738,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Enhance [Tenacious] Flip: Your rival removes 1 Quest counter from their character. If they do, add 1 Quest counter to your character.",
     "difficulty": 2,
@@ -1761,7 +1761,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Enhance Remove 1 Quest counter from your character: Your Spell attack gets +2 damage.",
     "difficulty": 3,
@@ -1784,7 +1784,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Response Flip: After your rival loses health due to an effect, remove 1 non-attack card from their discard pile and gain 1 health.",
     "difficulty": 1,
@@ -1807,7 +1807,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Enhance Flip: Add 1 Quest counter to your character. Your rival's next check gets -1.",
     "difficulty": 2,
@@ -1830,7 +1830,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Enhance Lose 2 health: Your attack gets +1 speed.",
     "difficulty": 1,
@@ -1853,7 +1853,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "When you build this card, if you have 3 or more copies of it in your stage, flip this card, lose 2 health, and draw 2 cards.\n\nEnhance: If you have readied a card in your stage this Combat Phase, this attack gets +1 damage.",
     "difficulty": 2,
@@ -1876,7 +1876,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Enhance Flip: This  attack gains Quest: 1.",
     "difficulty": 1,
@@ -1899,7 +1899,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "Enhance Remove X Quest counters from your character: This attack gets -X speed or +X damage.\n\nEnhance [Card Pool]: This attack gains Quest: 1.",
     "difficulty": 1,
@@ -1922,7 +1922,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Echo",
@@ -1952,7 +1952,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Fury",
@@ -1982,7 +1982,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Fury",
@@ -2012,7 +2012,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Quest: 3"
@@ -2041,7 +2041,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Fury",
@@ -2072,7 +2072,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Armor",
@@ -2103,7 +2103,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Slam"
@@ -2132,7 +2132,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Quest: 1"
@@ -2161,7 +2161,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Quest: 1"
@@ -2190,7 +2190,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Spell"
@@ -2219,7 +2219,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Powerful: 3",
@@ -2250,7 +2250,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "EX: 2",
@@ -2281,7 +2281,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Fury",
@@ -2312,7 +2312,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Quest: 1",
@@ -2342,7 +2342,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "EX: 3",
@@ -2372,7 +2372,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "EX: 2",
@@ -2402,7 +2402,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "keywords": [
       "Spell"
@@ -2428,7 +2428,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "Enhance Flip: If there are 1 or more Quest counters on your character, this attack gets +2 speed.",
     "difficulty": 1,
@@ -2451,7 +2451,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "Enhance Lose 1 health: This attack gets +1 damage.\n\nResponse: After you discard this card, your attack gets +1 damage.",
     "difficulty": 2,
@@ -2474,7 +2474,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "Enhance Commit, Mill 2: This attack gets +1 speed for each foundation milled this way.",
     "difficulty": 1,
@@ -2497,7 +2497,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "Enhance Flip: This  attack gains Quest: 1.",
     "difficulty": 1,
@@ -2520,7 +2520,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "Response [Tenacious] Flip: After 1 or more foundations are frozen, ready 1 of them.",
     "difficulty": 1,
@@ -2543,7 +2543,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "Enhance [Tenacious] Sacrifice: This attack gets +2 speed and +1 damage.",
     "difficulty": 2,
@@ -2566,7 +2566,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "Enhance Remove X Quest counters from your character: This attack gets +X damage (max. 3).",
     "difficulty": 3,
@@ -2589,7 +2589,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "Response: After you build this foundation, add 1 Quest counter to your character.",
     "difficulty": 2,
@@ -2612,7 +2612,7 @@
       "standard"
     ],
     "resources": [
-      "fire"
+      "fire-attuned"
     ],
     "text": "Enhance Flip: Add 1 Quest counter to your character. This attack gets +2 speed.",
     "difficulty": 2,
@@ -2635,7 +2635,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "EX: 3",
@@ -2665,7 +2665,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Spell"
@@ -2694,7 +2694,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Quest: 1",
@@ -2724,7 +2724,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Spell"
@@ -2753,7 +2753,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "EX: 2",
@@ -2783,7 +2783,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Quest: 1"
@@ -2812,7 +2812,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Quest: 2",
@@ -2842,7 +2842,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Punch",
@@ -2872,7 +2872,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Kick",
@@ -2903,7 +2903,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "EX: 4"
@@ -2932,7 +2932,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Quest: 4",
@@ -2962,7 +2962,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Quest: 1"
@@ -2991,7 +2991,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Powerful: 2",
@@ -3021,7 +3021,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Stun: 1",
@@ -3051,7 +3051,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Kick",
@@ -3081,7 +3081,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Ally",
@@ -3111,7 +3111,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "Enhance [Tenacious] Flip: If you have more foundations with  than without, this attack gets +2 damage.",
     "difficulty": 1,
@@ -3134,7 +3134,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "Enhance Flip: Your next check to play a card with a printed block modifier of 3 or greater gets +1.",
     "difficulty": 1,
@@ -3157,7 +3157,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "Enhance Remove 2 Quest counters from your character: This attack gets +X speed. X equals its printed block modifier.",
     "difficulty": 3,
@@ -3180,7 +3180,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "Enhance [Your turn] Commit: Build 1 foundation from your card pool.",
     "difficulty": 3,
@@ -3203,7 +3203,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Armor"
@@ -3229,7 +3229,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Armor"
@@ -3255,7 +3255,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Armor"
@@ -3281,7 +3281,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "Response [Once per attack]: After you gain health during your attack, you lose X health and your attack gets +X damage. X equals the amount of health you gained.",
     "difficulty": 3,
@@ -3304,7 +3304,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "Response: After you build this foundation, add 1 Quest counter to your character.",
     "difficulty": 2,
@@ -3327,7 +3327,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "keywords": [
       "Armor"
@@ -3353,7 +3353,7 @@
       "standard"
     ],
     "resources": [
-      "good"
+      "good-attuned"
     ],
     "text": "Enhance Flip: This  attack gains Quest: 1.",
     "difficulty": 1,
@@ -3376,7 +3376,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Spell"
@@ -3400,7 +3400,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "EX: 3",
@@ -3430,7 +3430,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Spell",
@@ -3460,7 +3460,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Fury",
@@ -3490,7 +3490,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Armor"
@@ -3519,7 +3519,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Punch",
@@ -3549,7 +3549,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Quest: 1",
@@ -3580,7 +3580,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Throw"
@@ -3609,7 +3609,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Punch",
@@ -3639,7 +3639,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Armor",
@@ -3670,7 +3670,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Breaker: 1",
@@ -3700,7 +3700,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "EX: 2"
@@ -3729,7 +3729,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Weapon"
@@ -3758,7 +3758,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "EX: 3",
@@ -3788,7 +3788,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Powerful: 3"
@@ -3817,7 +3817,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Spell"
@@ -3846,7 +3846,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Quest: 2",
@@ -3876,7 +3876,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Response Flip: After an attack is played, it loses all response abilities.",
     "difficulty": 2,
@@ -3899,7 +3899,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Form Flip: Add 2 Quest counters to your character. Your rival may discard 1 card to cancel this ability.",
     "difficulty": 2,
@@ -3922,7 +3922,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Response: After you build this foundation, add 1 Quest counter to your character.",
     "difficulty": 2,
@@ -3945,7 +3945,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Enhance Commit: This attack gets +2 damage for each copy of it in your card pool.",
     "difficulty": 2,
@@ -3968,7 +3968,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Enhance Flip: This  attack gains Quest: 1.",
     "difficulty": 1,
@@ -3991,7 +3991,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Response Flip: After your rival builds 1 or more foundations during the Combat Phase, flip 1 of them.",
     "difficulty": 2,
@@ -4014,7 +4014,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "If your rival has 1 or more cards in their hand, this card does not count toward progressive difficulty.\n\nEnhance [Card Pool]: This attack gets +1 or -1 speed.",
     "difficulty": 1,
@@ -4037,7 +4037,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Enhance Flip: This attack gets -2 damage. Your rival may remove 2 Quest counters from their character to cancel this effect.",
     "difficulty": 1,
@@ -4060,7 +4060,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "text": "Enhance Flip: This attack gets -1 damage and -1 speed. Add 1 Quest counter to your character.",
     "difficulty": 1,
@@ -4083,7 +4083,7 @@
       "standard"
     ],
     "resources": [
-      "void"
+      "void-attuned"
     ],
     "keywords": [
       "Unique"
@@ -4109,7 +4109,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Ally",
@@ -4140,7 +4140,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Quest: 1",
@@ -4171,7 +4171,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Spell",
@@ -4202,7 +4202,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Quest: 3",
@@ -4232,7 +4232,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Spell",
@@ -4262,7 +4262,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Powerful: 2",
@@ -4292,7 +4292,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "EX: 3",
@@ -4322,7 +4322,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Quest: 2"
@@ -4351,7 +4351,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "EX: 4",
@@ -4381,7 +4381,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Fury",
@@ -4411,7 +4411,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Quest: 1"
@@ -4440,7 +4440,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Quest: 1",
@@ -4470,7 +4470,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Quest: 1",
@@ -4500,7 +4500,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Weapon"
@@ -4529,7 +4529,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Weapon"
@@ -4558,7 +4558,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Quest: 1"
@@ -4587,7 +4587,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Breaker: 1"
@@ -4613,7 +4613,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "Enhance Commit: This attack gets +2 or -2 speed.\n\nEnhance Commit: If you have gained health this turn, this attack gets +3 damage.",
     "difficulty": 3,
@@ -4636,7 +4636,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "Enhance Flip: This  attack gains Quest: 1.",
     "difficulty": 1,
@@ -4659,7 +4659,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "After you build this foundation, add 1 Quest counter to your character.\n\nEnhance Commit, Remove 1 Quest counter from your character: This attack gets +3 damage. Freeze 1 rival foundation.",
     "difficulty": 3,
@@ -4682,7 +4682,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "Enhance Commit: This attack gets +2 speed and +2 damage. Freeze this foundation.",
     "difficulty": 2,
@@ -4705,7 +4705,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Spell"
@@ -4731,7 +4731,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "keywords": [
       "Spell"
@@ -4757,7 +4757,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "Enhance Flip: If you have a frozen foundation, draw 1 card.",
     "difficulty": 1,
@@ -4780,7 +4780,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "Response: After you build this foundation, add 1 Quest counter to your character.",
     "difficulty": 2,
@@ -4803,7 +4803,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "Enhance Flip: This attack gets -2 speed. Add 1 Quest counter to your character.",
     "difficulty": 1,
@@ -4826,7 +4826,7 @@
       "standard"
     ],
     "resources": [
-      "water"
+      "water-attuned"
     ],
     "text": "Response [Tenacious] Flip: After you take damage, ready 1 foundation.",
     "difficulty": 2,

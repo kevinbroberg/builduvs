@@ -64,8 +64,8 @@
       "standard"
     ],
     "resources": [
-      "chaos",
-      "evil"
+      "chaos-attuned",
+      "evil-attuned"
     ],
     "keywords": [
       "Psycho",
@@ -92,7 +92,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Ranged"
@@ -121,7 +121,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Weapon"
@@ -150,7 +150,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Fury",
@@ -180,7 +180,7 @@
       "standard"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "keywords": [
       "Echo",
@@ -211,7 +211,7 @@
       "standard"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "text": "Blitz: Mill 1. Look at the top card of your deck. You may mill 1.",
     "difficulty": 5,
@@ -242,7 +242,7 @@
       "standard"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "keywords": [
       "Psycho"
@@ -271,7 +271,7 @@
       "standard"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "keywords": [
       "Fury",
@@ -303,7 +303,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "keywords": [
       "Ranged"
@@ -332,7 +332,7 @@
       "standard"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "keywords": [
       "Charge",
@@ -363,7 +363,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Response [Tenacious] Flip: After this card is committed to pay a Drive cost, your rival's next check to play a card gets -2. Failing that check will not end the Combat Phase.",
     "difficulty": 1,
@@ -386,7 +386,7 @@
       "standard"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "text": "Enhance Mill 1: Your rival mills 1.",
     "difficulty": 1,
@@ -409,7 +409,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Enhance [Once per turn]: This attack gets -1 speed.",
     "difficulty": 1,
@@ -432,7 +432,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Response Remove: After your rival plays a keyword ability, cancel its effects. If that keyword ability has a rating, your rival loses health equal to its rating.",
     "difficulty": 2,
@@ -455,7 +455,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "You may remove this foundation from your stage as though you were spending 1 momentum to pay a Drive cost.",
     "difficulty": 1,
@@ -478,7 +478,7 @@
       "standard"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "text": "Response Sacrifice: After an attack is played, its damage cannot be modified.",
     "difficulty": 2,
@@ -501,7 +501,7 @@
       "standard"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "text": "Response Remove: After this card is milled during the Enhance Step, add 1 card from your discard pile to the top of your deck.",
     "difficulty": 2,
@@ -524,7 +524,7 @@
       "standard"
     ],
     "resources": [
-      "all"
+      "all-attuned"
     ],
     "keywords": [
       "Psycho"
@@ -550,7 +550,7 @@
       "standard"
     ],
     "resources": [
-      "evil"
+      "evil-attuned"
     ],
     "text": "Response Flip: After your rival loses health due to an effect, your rival loses 1 health. This effect cannot reduce your rival's health below 1.",
     "difficulty": 1,
@@ -625,8 +625,8 @@
       "standard"
     ],
     "resources": [
-      "air",
-      "life"
+      "air-attuned",
+      "life-attuned"
     ],
     "text": "When paying a Drive cost, you may commit this card as though it were a foundation.\n\nResponse [Once per turn, Tenacious]: After 1 or more cards leave your card pool during the Combat Phase, ready this card.",
     "difficulty": 2,
@@ -649,7 +649,7 @@
       "standard"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "keywords": [
       "Kick"
@@ -678,7 +678,7 @@
       "standard"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "keywords": [
       "Fury",
@@ -708,7 +708,7 @@
       "standard"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "keywords": [
       "Fury",
@@ -739,7 +739,7 @@
       "standard"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "keywords": [
       "Kick",
@@ -769,7 +769,7 @@
       "standard"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "text": "Blitz: Change the zone of this attack.",
     "difficulty": 5,
@@ -799,7 +799,7 @@
       "standard"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "keywords": [
       "Kick"
@@ -828,7 +828,7 @@
       "standard"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "text": "Blitz Drive 1: Each player can play only 1 enhance ability during this Enhance Step.",
     "difficulty": 3,
@@ -858,7 +858,7 @@
       "standard"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "keywords": [
       "Kick"
@@ -887,7 +887,7 @@
       "standard"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "keywords": [
       "Kick"
@@ -916,7 +916,7 @@
       "standard"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "text": "Response [Tenacious]: After this card is committed to pay a Drive cost, gain 1 health.",
     "difficulty": 1,
@@ -939,7 +939,7 @@
       "standard"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "text": "First Enhance [Rival's turn] Remove: Switch this attack's speed and damage.",
     "difficulty": 1,
@@ -962,7 +962,7 @@
       "standard"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "keywords": [
       "Kick"
@@ -988,7 +988,7 @@
       "standard"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "text": "Enhance Flip: Seal 1 non-attack card in your card pool. It does not count toward progressive difficulty this turn.",
     "difficulty": 1,
@@ -1011,7 +1011,7 @@
       "standard"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "text": "Response [Tenacious] Flip: After you sacrifice 2 or more foundations, build the top card of your deck face down committed.",
     "difficulty": 2,
@@ -1034,7 +1034,7 @@
       "standard"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "text": "Enhance Sacrifice 2 foundations: Ready 1 foundation that has not been readied this Combat Phase.",
     "difficulty": 2,
@@ -1057,7 +1057,7 @@
       "standard"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "text": "Response Commit: Before the Block Step of this attack, return it to its printed speed.",
     "difficulty": 2,
@@ -1080,7 +1080,7 @@
       "standard"
     ],
     "resources": [
-      "air"
+      "air-attuned"
     ],
     "text": "Enhance Flip: This attack gets -2 speed. If it is completely blocked, ready 1 face down foundation.",
     "difficulty": 1,
@@ -1103,7 +1103,7 @@
       "standard"
     ],
     "resources": [
-      "life"
+      "life-attuned"
     ],
     "text": "Enhance Commit: Discard 1 card and draw 1 card. If your rival has 10 or more foundations, add the discarded card to your hand.",
     "difficulty": 1,
