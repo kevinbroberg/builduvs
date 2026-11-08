@@ -27,7 +27,9 @@
         <q-separator />
         <ToggleGroup name="Type" v-model:picks="selections.types" :options="typeOptions"/>
         <q-separator />
-        <ToggleGroup name="Format" v-model:picks="selections.formats" :options="formatOptions" />
+        <ToggleGroup name="Legal in" v-model:picks="selections.legal_in" :options="legalInOptions">
+          <template v-slot:button="{selected}">{{ formatLabels[selected] }}</template>
+        </ToggleGroup>
         <q-separator />
         <ToggleGroup name="Rarity" v-model:picks="selections.rarity" :options="rarityOptions" />
         <q-separator />
@@ -77,6 +79,7 @@
 <script>
 import { copyToClipboard } from 'quasar'
 import * as provider from 'src/js/card_provider.js'
+import { FORMAT_LABELS } from 'src/js/formats'
 import { useDeckStore } from 'src/stores/deck'
 
 export default {
@@ -85,7 +88,8 @@ export default {
     return {
       symbolOptions: provider.symbolOptions,
       attuneOptions: provider.attuneOptions,
-      formatOptions: provider.formatOptions,
+      legalInOptions: provider.legalInOptions,
+      formatLabels: FORMAT_LABELS,
       symbolMax: 1,
       keywordTags: [],
       textTags: [],

@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia'
 import { cards, cardByAsset } from 'src/js/card_provider'
+import { printingFormat, fitsFormat } from 'src/js/formats'
 
 // Tier list state. Small enough to persist (cards are referenced by `asset`, never
 // copied in), so a half-finished ranking survives a reload.
@@ -36,29 +37,14 @@ export const POOL = 'pool'
 // Set names newest first: `cards` (src/js/card_provider.js) is assembled that way.
 export const ALL_SETS = [...new Set(cards.map(c => c.extension))]
 
-// A set belongs to a format when at least half its cards carry the format's tag; a
-// handful of legal reprints shouldn't drag a whole old promo set in.
-function setsTagged(...tags) {
-  const counts = new Map()
-  for (const c of cards) {
-    const e = counts.get(c.extension) ?? counts.set(c.extension, { n: 0, hit: 0 }).get(c.extension)
-    e.n++
-    if (tags.some(t => c.formats?.includes(t))) e.hit++
-  }
-  return ALL_SETS.filter(s => counts.get(s).hit * 2 >= counts.get(s).n)
-}
-
-// Quick picks for the setup page's set list.
-//   Standard — tagged standard.
-//   HeroToo  — My Hero Academia (set 1) and everything released since. Not tagged on
-//              cards anywhere, so it's a release-order cut of ALL_SETS.
-//   Retro    — tagged retro, plus everything in Standard: the newest sets' scrapes
-//              carry no retro tag yet, and Retro includes all Standard-legal cards.
-const HERO_TOO_FIRST = 'My Hero Academia'
+// Quick picks for the setup page's set list: the sets each format draws from,
+// per the set table in src/js/formats.js.
+const setFormat = new Map(cards.map(c => [c.extension, printingFormat(c)]))
+const setsIn = format => ALL_SETS.filter(s => fitsFormat(setFormat.get(s), format))
 export const FORMAT_SETS = {
-  Standard: setsTagged('standard'),
-  HeroToo: ALL_SETS.slice(0, ALL_SETS.indexOf(HERO_TOO_FIRST) + 1),
-  Retro: setsTagged('retro', 'standard'),
+  Standard: setsIn('standard'),
+  HeroToo: setsIn('heroToo'),
+  Retro: setsIn('retro'),
 }
 
 // The cards a criteria object selects, one per name. `cards` runs newest set first,

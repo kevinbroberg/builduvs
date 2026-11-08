@@ -1,4 +1,6 @@
 import { defineStore } from 'pinia'
+import { formatOf } from 'src/js/card_provider'
+import { deckFormatOf } from 'src/js/formats'
 
 export const useDeckStore = defineStore('deck', {
   state: () => ({
@@ -38,6 +40,10 @@ export const useDeckStore = defineStore('deck', {
     hasMaybe: (state) => Object.keys(state.maybe).length > 0,
     getMaybeList: (state) => Object.values(state.maybe),
     getFace: (state) => state.face,
+    // The narrowest format (src/js/formats.js) the face, main deck and sideboard
+    // all fit; null for an empty deck. The maybeboard doesn't count.
+    format: (state) => deckFormatOf(formatOf,
+      [state.face, ...Object.values(state.deck), ...Object.values(state.side)]),
     quantity: (state) => (asset) => {
       let card = state.deck[asset]
       let qty = card ? card.qty : 0

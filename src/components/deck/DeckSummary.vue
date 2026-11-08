@@ -4,9 +4,11 @@ import ResourceSymbol from 'src/components/cards/detail/ResourceSymbol.vue'
 import {
   EXCLUDED_SYMBOLS, baseSymbol, faceSymbolsOf, mainSymbolOf, isConfused, deckSymbolLabel,
 } from 'src/js/deck_symbol'
+import { formatOf } from 'src/js/card_provider'
+import { FORMAT_LABELS, deckFormatOf } from 'src/js/formats'
 
 // At-a-glance stats for a read-only decklist, shown under the face preview in
-// DeckStage: symbols, card-type mix, size and average control.
+// DeckStage: symbols, card-type mix, size, average control and format.
 const props = defineProps({
   face: { type: Object, default: null },
   // Resolved main-deck cards ({ type, resources, control, qty, ... }).
@@ -14,6 +16,9 @@ const props = defineProps({
   // Precomputed main symbol (/lists, /majors index). Computed live when absent,
   // e.g. for precons.
   deckSymbol: { type: String, default: null },
+  // Precomputed format (the deck store's, which also counts the sideboard).
+  // Judged from face + cards when absent.
+  format: { type: String, default: null },
   // Dark text for light surfaces (the deck drawer) instead of the dark stage.
   light: { type: Boolean, default: false },
 })
@@ -105,6 +110,12 @@ const blockChips = computed(() => ['high', 'mid', 'low'].map(zone => {
   }
 }).filter(chip => chip.count > 0))
 
+const format = computed(() => props.format ?? deckFormatOf(formatOf, [props.face, ...props.cards]))
+
+// The cards that keep the deck out of narrower formats, for the tooltip.
+const widestCards = computed(() => format.value === 'standard' ? [] :
+  [...new Set([props.face, ...props.cards].filter(c => c && formatOf(c) === format.value).map(c => c.name))])
+
 const avgControl = computed(() => {
   let n = 0, sum = 0
   for (const c of props.cards) {
@@ -172,6 +183,18 @@ const avgControl = computed(() => {
         <q-tooltip>
           <div class="text-weight-bold">{{ cap(chip.zone) }} block</div>
           <div v-for="b in chip.breakdown" :key="b.mod">+{{ b.mod }}: {{ cardsLabel(b.n) }}</div>
+        </q-tooltip>
+      </span>
+    </div>
+
+    <div v-if="format" class="deck-summary__symbols">
+      <span class="deck-summary__label">Format</span>
+      <span class="sym-chip sym-chip--main sym-chip--text">
+        {{ FORMAT_LABELS[format] }}
+        <q-tooltip v-if="widestCards.length">
+          <div class="text-weight-bold">{{ FORMAT_LABELS[format] }} because of</div>
+          <div v-for="name in widestCards.slice(0, 8)" :key="name">{{ name }}</div>
+          <div v-if="widestCards.length > 8">and {{ widestCards.length - 8 }} more</div>
         </q-tooltip>
       </span>
     </div>
@@ -256,6 +279,10 @@ const avgControl = computed(() => {
   opacity: 1;
   border-color: var(--ds-chip-main-border);
   background: var(--ds-chip-main-bg);
+}
+.sym-chip--text {
+  padding: 2px 10px;
+  font-weight: 700;
 }
 .sym-chip__count {
   font-weight: 700;

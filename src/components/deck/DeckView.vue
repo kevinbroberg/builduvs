@@ -66,7 +66,7 @@
         <ManySymbols :resources="face.resources" />
       </div>
     </div>
-    <DeckSummary light :face="face" :cards="deck" />
+    <DeckSummary light :face="face" :cards="deck" :format="deckStore.format" />
   </div>
 
   <q-list v-if="hasDeck || hasMaybe" bordered>

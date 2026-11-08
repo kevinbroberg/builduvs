@@ -14,6 +14,8 @@ import sf62x from 'assets/sf6-2026.json'
 import ft01 from 'assets/fairytail.json'
 import { uvsId } from 'src/js/card_id'
 import { createCardSearch, FUZZY_DELAY_MS } from 'src/js/card_search'
+import { faceSymbolsOf, mainSymbolOf, isConfused } from 'src/js/deck_symbol'
+import { FORMATS, buildFormatIndex, fitsFormat } from 'src/js/formats'
 
 export const cards = [...ft01, ...sf62x,...tk802, ...mha09, ...kaiju, ...teamhero, ...ggrole, ...sjwtomha4,...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
 
@@ -148,6 +150,11 @@ export const symbolOptions = ["air", "all", "chaos", "death", "earth", "evil", "
 export const attuneOptions = ["air", "all", "chaos", "death", "earth", "evil", "fire", "good", "life", "order", "void", "water"]
 export const formatOptions = ["My Hero Academia","MHA banned", "Godzilla", "standard","standard banned","retro","retro banned","unreleased","alpha", "alpha legend"]
 
+// The narrowest constructed format a card is legal in (src/js/formats.js), and
+// the "Legal in" filter row's choices. Legacy is every card, so it isn't one.
+export const formatOf = buildFormatIndex(cards)
+export const legalInOptions = FORMATS.filter(f => f !== 'legacy')
+
 // Single source of truth for all filter fields.
 // To add a new field, add one entry here — selections, URL serialization,
 // query parsing, and filtering all derive from this config.
@@ -171,6 +178,7 @@ const FILTER_FIELDS = [
   { key: 'vitality',       type: 'exact' },
   { key: 'hand_size',      type: 'exact' },
   { key: 'attune',         type: 'attune' },
+  { key: 'legal_in',       type: 'legalIn' },
   { key: 'keyword_count',  type: 'keywordCount' },
   { key: 'keyword_search', type: 'keywordSearch' },
   { key: 'keyword_picks',  type: 'keywordPick' },
@@ -210,6 +218,12 @@ export function getFilterPath(skips = []) {
 // Inactive filters (empty selection) are skipped entirely.
 const activeFilters = computed(() => {
   const filters = []
+  // Symbol rows and the attune row are collected apart and joined below as
+  // (every symbol row) OR (attune): an attuned card is playable in a deck
+  // without printing its hard symbol, so attune widens the symbol search
+  // rather than narrowing it.
+  const symbolFilters = []
+  let attuneFilter = null
   for (const field of FILTER_FIELDS) {
     if (field.type === 'format') continue // handled as pre-filter by formatCards
     const sel = selections.value[field.key]
@@ -259,14 +273,18 @@ const activeFilters = computed(() => {
         filters.push(card => sel.includes(card[cardKey]))
         break
       case 'symbol':
-        filters.push(card =>
+        symbolFilters.push(card =>
           card.resources.some(sym => sym === "infinity" || sel.includes(sym.toLowerCase()))
         )
         break
       case 'attune':
-        filters.push(card =>
+        attuneFilter = card =>
           card.resources.some(sym => sel.some(s => sym === s + '-attuned'))
-        )
+        break
+      case 'legalIn':
+        // Each format's pool contains the narrower ones, so several picks
+        // reduce to the widest.
+        filters.push(card => sel.some(f => fitsFormat(formatOf(card), f)))
         break
       case 'keywordCount':
         filters.push(card => sel.includes(card.keywords?.length || 0))
@@ -286,8 +304,31 @@ const activeFilters = computed(() => {
         break
     }
   }
+  if (symbolFilters.length && attuneFilter) {
+    filters.push(card => symbolFilters.every(f => f(card)) || attuneFilter(card))
+  } else if (attuneFilter) {
+    filters.push(attuneFilter)
+  } else {
+    filters.push(...symbolFilters)
+  }
   return filters
 })
+
+// Points the filters at what a deck can play: its main symbol printed bare
+// (symbol row 1), or any face symbol attuned. Until the main symbol is settled
+// (empty or mixed deck) every face symbol counts in row 1. "Legal in" gets the
+// deck's format (deck store's `format`); Legacy leaves it empty. Other filters
+// are untouched.
+export function selectDeckFilters(face, deckCards, format) {
+  const faceSyms = faceSymbolsOf(face)
+  if (!faceSyms.length) return
+  const main = mainSymbolOf(face, deckCards)
+  selections.value.symbols = main && !isConfused(main) ? [main] : [...faceSyms]
+  selections.value.symbols2 = []
+  selections.value.symbols3 = []
+  selections.value.attune = faceSyms.filter(s => attuneOptions.includes(s))
+  selections.value.legal_in = legalInOptions.includes(format) ? [format] : []
+}
 
 // Exported for use in SimpleTypePicker
 export function symbolFilter1(card) {

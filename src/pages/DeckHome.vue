@@ -271,7 +271,7 @@ const rankLink = computed(() => tierLink(deckStore.currentDeckName,
           <div class="side-dropbox__hint">{{ box.hint }}</div>
         </div>
         <!-- Main deck only: the sideboard and maybeboard don't define the deck. -->
-        <DeckSummary :face="face" :cards="deckStore.getDeckList" />
+        <DeckSummary :face="face" :cards="deckStore.getDeckList" :format="deckStore.format" />
 
       </template>
 

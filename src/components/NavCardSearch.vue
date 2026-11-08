@@ -1,30 +1,35 @@
 <script setup>
 // The navbar's card search, available on every page. Picking a card opens its
 // detail popup; Enter without picking opens the card browser on everything the
-// text matches.
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+// text matches. While the deck symbol toggle is lit, both are limited to cards
+// the deck can play.
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import { useRouter } from 'vue-router'
-import { cards } from 'src/js/card_provider'
+import { cards, selectDeckFilters } from 'src/js/card_provider'
 import { createCardSearch, FUZZY_DELAY_MS } from 'src/js/card_search'
 import { openCardDetail, showInCardBrowser } from 'src/js/card_detail'
 import { getCardImage } from 'src/js/image_helper'
+import { useDeckStore } from 'src/stores/deck'
+import { useDeckPlayable } from 'src/js/deck_playable'
+import DeckSymbolToggle from 'src/components/deck/DeckSymbolToggle.vue'
 
 const router = useRouter()
+const deckStore = useDeckStore()
+const { faceSyms, symbolFilterActive, playable } = useDeckPlayable()
 
 // One entry per name (the newest printing; card files are newest first), so a
 // reprint doesn't show up as several choices. The browser shows every printing.
-let search = null
-function index() {
-  if (!search) {
-    const seen = new Set()
-    search = createCardSearch(cards.filter(c => !seen.has(c.name) && seen.add(c.name)))
-  }
-  return search
-}
+// Computed, so neither index is built until the first search.
+const unique = computed(() => {
+  const seen = new Set()
+  return cards.filter(c => !seen.has(c.name) && seen.add(c.name))
+})
+const index = computed(() => createCardSearch(
+  symbolFilterActive.value ? unique.value.filter(playable) : unique.value))
 
 const options = ref([])
 const find = (needle, fuzzyExtras) =>
-  index().search(needle, { limit: 12, fuzzyExtras }).map(r => r.item)
+  index.value.search(needle, { limit: 12, fuzzyExtras }).map(r => r.item)
 
 // Fuzzy extras join the list once typing pauses.
 let lateFuzzy = null
@@ -57,6 +62,7 @@ function onEnter(val, done) {
   if (!val.trim()) return
   reset()
   showInCardBrowser(router, val.trim())
+  if (symbolFilterActive.value) selectDeckFilters(deckStore.face, deckStore.getDeckList, deckStore.format)
 }
 
 // "/" focuses the search from anywhere that isn't already taking text.
@@ -79,6 +85,7 @@ onBeforeUnmount(() => {
     :model-value="null" :options="options" option-label="name" input-debounce="150"
     placeholder="Search cards…" @filter="filterFn" @update:model-value="onPick" @new-value="onEnter">
     <template #prepend><q-icon name="search" size="20px" /></template>
+    <template v-if="faceSyms.length" #append><DeckSymbolToggle /></template>
     <template #option="{ opt, itemProps }">
       <q-item v-bind="itemProps" dense>
         <q-item-section avatar>

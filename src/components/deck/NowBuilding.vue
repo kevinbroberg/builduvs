@@ -6,6 +6,7 @@ import { computed } from 'vue'
 import { storeToRefs } from 'pinia'
 import { useDeckStore } from 'src/stores/deck'
 import { mainSymbolOf, deckSymbolLabel } from 'src/js/deck_symbol'
+import { FORMAT_LABELS } from 'src/js/formats'
 import CardAvatar from 'src/components/cards/CardAvatar.vue'
 import ResourceSymbol from 'src/components/cards/detail/ResourceSymbol.vue'
 
@@ -25,6 +26,7 @@ const tooltip = computed(() => {
   const parts = [title.value]
   if (face.value && face.value.name.split(',')[0] !== title.value) parts.push(face.value.name)
   if (mainSymbol.value) parts.push(deckSymbolLabel(mainSymbol.value))
+  if (store.format) parts.push(FORMAT_LABELS[store.format])
   return parts.join(' · ')
 })
 </script>

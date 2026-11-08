@@ -4,8 +4,8 @@ import { cards } from 'src/js/card_provider'
 import { createCardSearch, FUZZY_DELAY_MS } from 'src/js/card_search'
 import { useDeckStore } from 'src/stores/deck'
 import { getCardImage } from 'src/js/image_helper'
-import { baseSymbol, faceSymbolsOf, mainSymbolOf, isConfused } from 'src/js/deck_symbol'
-import ResourceSymbol from 'src/components/cards/detail/ResourceSymbol.vue'
+import { useDeckPlayable } from 'src/js/deck_playable'
+import DeckSymbolToggle from 'src/components/deck/DeckSymbolToggle.vue'
 
 const props = defineProps({
   // Restrict the search pool to face characters (used by the empty-face state).
@@ -16,32 +16,9 @@ const props = defineProps({
 const deckStore = useDeckStore()
 
 // ----- Symbol filter --------------------------------------------------------
-// Once there's a face, offer only cards the deck could play: the deck's main
-// symbol (bare or attuned), any face symbol attuned, or the infinity wildcard.
-// Until the main symbol is settled (empty or mixed deck), any face symbol counts.
+// Once there's a face, offer only cards the deck could play (deck_playable.js).
 // (Characters never reach this: see `pool`.)
-const symbolFilterOn = ref(true)
-
-const faceSyms = computed(() => faceSymbolsOf(deckStore.face))
-const mainSymbol = computed(() => {
-  const main = mainSymbolOf(deckStore.face, deckStore.getDeckList)
-  return main && !isConfused(main) ? main : null
-})
-const symbolFilterActive = computed(() =>
-  !props.charactersOnly && symbolFilterOn.value && faceSyms.value.length > 0)
-
-function playable(card) {
-  const bare = mainSymbol.value ? [mainSymbol.value] : faceSyms.value
-  return (card.resources ?? []).some(r => r === 'infinity'
-    || bare.includes(baseSymbol(r))
-    || (r !== baseSymbol(r) && faceSyms.value.includes(baseSymbol(r))))
-}
-
-const filterTip = computed(() => {
-  if (!symbolFilterActive.value) return 'Showing every card. Click to show only cards this deck can play.'
-  const main = mainSymbol.value ?? faceSyms.value.join(' / ')
-  return `Showing ${main} cards, attuned ${faceSyms.value.join(' / ')}, and infinity. Click to show every card.`
-})
+const { faceSyms, symbolFilterActive, playable } = useDeckPlayable()
 
 // Local index so quick-add searching never touches the card browser's filters.
 // Characters are offered only while the deck has none: picking one then sets the
@@ -98,19 +75,7 @@ function onPick(card) {
     </template>
 
     <template v-if="!charactersOnly && faceSyms.length" v-slot:append>
-      <q-btn
-        flat
-        dense
-        round
-        size="sm"
-        class="symbol-toggle"
-        :class="{ 'symbol-toggle--off': !symbolFilterActive }"
-        @click.stop="symbolFilterOn = !symbolFilterOn"
-      >
-        <ResourceSymbol v-if="mainSymbol" :element="mainSymbol" size="18px" />
-        <q-icon v-else name="filter_alt" size="18px" />
-        <q-tooltip>{{ filterTip }}</q-tooltip>
-      </q-btn>
+      <DeckSymbolToggle />
     </template>
 
     <template v-slot:option="scope">
@@ -143,10 +108,5 @@ function onPick(card) {
 <style scoped>
 .quick-add {
   min-width: 220px;
-}
-/* Off: greyed out, so it's clear the search is unfiltered. */
-.symbol-toggle--off {
-  opacity: 0.35;
-  filter: grayscale(1);
 }
 </style>
