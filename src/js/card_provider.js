@@ -12,12 +12,17 @@ import mha09 from 'assets/mha09.json'
 import tk802 from 'assets/tekken8.json'
 import sf62x from 'assets/sf6-2026.json'
 import ft01 from 'assets/fairytail.json'
+import { custom } from 'src/js/custom'
 import { uvsId } from 'src/js/card_id'
 import { createCardSearch, FUZZY_DELAY_MS } from 'src/js/card_search'
 import { faceSymbolsOf, mainSymbolOf, isConfused } from 'src/js/deck_symbol'
 import { FORMATS, buildFormatIndex, fitsFormat } from 'src/js/formats'
 
-export const cards = [...ft01, ...sf62x,...tk802, ...mha09, ...kaiju, ...teamhero, ...ggrole, ...sjwtomha4,...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
+// On a custom-cards project's pages the pool is its cards and nothing else
+// (src/js/custom.js).
+export const cards = custom
+  ? custom.cards
+  : [...ft01, ...sf62x,...tk802, ...mha09, ...kaiju, ...teamhero, ...ggrole, ...sjwtomha4,...heroesclash, ...rampage_dlc, ...provisional, ...rampage, ...real_cards]
 
 // Ensure every card has a unique `asset` key (used by deck store and v-for keys).
 // Newer data files omit `asset`, so synthesize one from extension_short + card_number_image.
@@ -152,8 +157,10 @@ export const formatOptions = ["My Hero Academia","MHA banned", "Godzilla", "stan
 
 // The narrowest constructed format a card is legal in (src/js/formats.js), and
 // the "Legal in" filter row's choices. Legacy is every card, so it isn't one.
-export const formatOf = buildFormatIndex(cards)
-export const legalInOptions = FORMATS.filter(f => f !== 'legacy')
+// Custom cards aren't in any constructed format: a null format hides the deck's
+// format badge, and no options hides the "Legal in" row.
+export const formatOf = custom ? () => null : buildFormatIndex(cards)
+export const legalInOptions = custom ? [] : FORMATS.filter(f => f !== 'legacy')
 
 // Single source of truth for all filter fields.
 // To add a new field, add one entry here — selections, URL serialization,

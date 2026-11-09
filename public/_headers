@@ -1,0 +1,6 @@
+# Custom-cards projects (src/js/custom.js) are fan-made and opt-in by link
+# only: keep them out of search results. One pair of rules per project.
+/naruto
+  X-Robots-Tag: noindex
+/naruto/*
+  X-Robots-Tag: noindex

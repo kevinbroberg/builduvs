@@ -16,6 +16,7 @@ import { useCardDrag } from 'src/js/card_drag'
 import { getCardImage } from 'src/js/image_helper'
 import { setPageTitle } from 'src/js/page_title'
 import { openCardDetail } from 'src/js/card_detail'
+import { custom } from 'src/js/custom'
 
 import {
   face,
@@ -220,7 +221,8 @@ const rankLink = computed(() => tierLink(deckStore.currentDeckName,
       <!-- One unit, so if the rail does wrap, the actions move together -->
       <div class="rail-actions row no-wrap items-center">
         <q-separator vertical inset dark />
-        <q-btn flat round icon="cloud_upload" @click="openHydraExport">
+        <!-- Custom cards don't exist on play.uvsgames.com. -->
+        <q-btn v-if="!custom" flat round icon="cloud_upload" @click="openHydraExport">
           <q-tooltip>Publish to play.uvsgames.com</q-tooltip>
         </q-btn>
         <q-btn flat round icon="leaderboard" :to="rankLink">

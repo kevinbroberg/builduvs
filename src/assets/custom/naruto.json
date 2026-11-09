@@ -1,0 +1,4848 @@
+[
+ {
+  "extension_short": "nrc01",
+  "numero": 1,
+  "numero_image": 1,
+  "type": "character",
+  "name": "Naruto Uzumaki, Unrelenting",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "chaos",
+   "good"
+  ],
+  "text": "At the end of the draft, if this card is in your draft pool, add 3 Shadow Clones to your draft pool.\nFirst Form: Build 1 card with a check value of 6 from your discard pile committed.\nEnhance, discard 1 card: Your attack gets +2 damage for each character card in your stage.",
+  "asset": "nrc01/001.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/001.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Team 7",
+   "Jinchuriki"
+  ],
+  "hand_size": 6,
+  "vitality": 28
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 2,
+  "numero_image": 2,
+  "type": "attack",
+  "name": "Uzumaki Barrage",
+  "rarity": "ultra rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "chaos",
+   "good"
+  ],
+  "text": "Enhance: This attack gets +1 speed and +1 damage for each attack that dealt damage this turn.\nResponse [card pool]: After a character card leaves your stage, you may play this card from your card pool as your next form.",
+  "asset": "nrc01/002.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/002.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Shadow",
+   "Punch",
+   "Kick",
+   "Slam"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 1,
+  "block_zone": "high",
+  "speed": 1,
+  "attack_zone": "mid",
+  "damage": 3
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 3,
+  "numero_image": 3,
+  "type": "attack",
+  "name": "Burrowing Uppercut",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "chaos",
+   "good"
+  ],
+  "text": "Enhance: If you did not commit any foundations to pass the check to play this attack, it gets +3 damage and Stun 1.\nEnhance: Add 1 shadow card from your discard pile to your card pool or the top of your deck.",
+  "asset": "nrc01/003.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/003.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Shadow",
+   "Punch"
+  ],
+  "difficulty": 6,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "speed": 5,
+  "attack_zone": "low",
+  "damage": 6
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 4,
+  "numero_image": 4,
+  "type": "attack",
+  "name": "Clone Substitution Jutsu",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "chaos",
+   "good"
+  ],
+  "text": "Response: after you play this card or use its deflect ability, build 1 other shadow card from your card pool face up or face down.",
+  "asset": "nrc01/004.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/004.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Shadow",
+   "Taunt",
+   "Deflect: 2"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "high",
+  "speed": 2,
+  "attack_zone": "high",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 5,
+  "numero_image": 5,
+  "type": "foundation",
+  "name": "Ramen Lover",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "chaos",
+   "good"
+  ],
+  "text": "Enhance, flip: Gain 1 health.\nDeadlock form [once per turn]: Build 1 copy of \"Ichiraku Ramen\" from your discard pile.",
+  "asset": "nrc01/005.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/005.jpg",
+  "cube_copies": 3,
+  "difficulty": 0,
+  "control": 6,
+  "block_modifier": 3,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 6,
+  "numero_image": 6,
+  "type": "foundation",
+  "name": "I'm Gonna Be Hokage!",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "chaos",
+   "good"
+  ],
+  "text": "Enhance, flip, mill 3: this attack gets +1 speed.\nResponse, Sacrifice: After you play a block, if your block modifier was less than +1, build that card face up or face down.",
+  "asset": "nrc01/006.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/006.jpg",
+  "cube_copies": 4,
+  "difficulty": 1,
+  "control": 6,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 7,
+  "numero_image": 7,
+  "type": "foundation",
+  "name": "Believe it!",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "chaos",
+   "good"
+  ],
+  "text": "response, (tenacious) sacrifice: after you make a check to play an attack card, your check gets +1.\nenhance, commit: your block modifier to block this attack gets -2",
+  "asset": "nrc01/007.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/007.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Shadow"
+  ],
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 8,
+  "numero_image": 8,
+  "type": "character",
+  "name": "Naruto's Shadow Clone",
+  "rarity": "token",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "chaos",
+   "good"
+  ],
+  "text": "This card cannot be your starting character.\nEnhance, spend 1 momentum, remove: clear an attack card from its owner's card pool.\nResponse, remove: After your attack is completely blocked, remove it.",
+  "asset": "nrc01/008.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/008.jpg",
+  "cube_copies": 6,
+  "keywords": [
+   "Shadow"
+  ],
+  "difficulty": 4,
+  "control": 6,
+  "block_modifier": 0,
+  "block_zone": "mid",
+  "hand_size": 1,
+  "vitality": 1
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 9,
+  "numero_image": 9,
+  "type": "character",
+  "name": "Sasuke Uchiha",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "fire",
+   "good"
+  ],
+  "text": "First Form, spend 1 momentum: Add a copy of \"Sharingan!\" from your discard pile to your hand.\nEnhance: Your rival checks against a 5. If they fail, your next check to play an attack card gets +2.\nEnhance, discard 1 card: this attack gets +1 speed for each card in your card pool.",
+  "asset": "nrc01/009.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/009.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Team 7",
+   "Sharingan"
+  ],
+  "hand_size": 7,
+  "vitality": 24
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 10,
+  "numero_image": 10,
+  "type": "attack",
+  "name": "Chidori: 1000 Birds!",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "fire",
+   "good"
+  ],
+  "text": "Response [Card Pool]: After your rival fails a check, this attack gets +3 damage.\nEnhance: Each player checks against a 5. For each check that passed, draw 1 card.",
+  "asset": "nrc01/010.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/010.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "EX: 2",
+   "Charge"
+  ],
+  "difficulty": 6,
+  "control": 3,
+  "block_modifier": 0,
+  "block_zone": "high",
+  "speed": 5,
+  "attack_zone": "mid",
+  "damage": 7
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 11,
+  "numero_image": 11,
+  "type": "attack",
+  "name": "Copied Techniques",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "fire",
+   "good"
+  ],
+  "text": "You may clear an attack that dealt damage from your card pool instead of paying a momentum to use this attack's echo ability.",
+  "asset": "nrc01/011.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/011.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Echo",
+   "Punch"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "speed": 4,
+  "attack_zone": "low",
+  "damage": 5
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 12,
+  "numero_image": 12,
+  "type": "attack",
+  "name": "Lion's Barrage",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "fire",
+   "good"
+  ],
+  "text": "Enhance: Your rival checks against a 6. If they fail the check, this attack gets +2 damage.\nDeadlock enhance: This attack does not count toward progressive difficulty this turn.",
+  "asset": "nrc01/012.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/012.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Kick"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 1,
+  "block_zone": "mid",
+  "speed": 4,
+  "attack_zone": "high",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 13,
+  "numero_image": 13,
+  "type": "action",
+  "name": "Sharingan!",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "fire",
+   "good"
+  ],
+  "text": "Enhance, discard 1 card: add the top card of your deck to your momentum, draw 1 card.\nSharingan Response, remove: after your rival blocks with an attack card, as your next form, you may try to play the top card of your deck face down as a copy of that attack.",
+  "asset": "nrc01/013.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/013.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Breaker: 1"
+  ],
+  "difficulty": 2,
+  "control": 4,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 14,
+  "numero_image": 14,
+  "type": "foundation",
+  "name": "Seeking Vengeance",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "fire",
+   "good"
+  ],
+  "text": "response: at the start of your combat phase, add the top card of your deck to your momentum.\nDeadlock form, remove: Add 1 action card from your discard pile to your hand.",
+  "asset": "nrc01/014.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/014.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Unique"
+  ],
+  "difficulty": 4,
+  "control": 4,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 15,
+  "numero_image": 15,
+  "type": "foundation",
+  "name": "Pencil Movement Mimicry",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "fire",
+   "good"
+  ],
+  "text": "enhance, flip: choose a rival foundation, this card becomes a copy of that foundation until end of turn (you will not be able to pay flip costs if this card is face down)",
+  "asset": "nrc01/015.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/015.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 16,
+  "numero_image": 16,
+  "type": "foundation",
+  "name": "Last Minute Arrival",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "fire",
+   "good"
+  ],
+  "text": "response, remove: after this card enters your discard pile from your hand or deck during the enhance step, the next action card you play has -2 difficulty and -2 to its block modifier.",
+  "asset": "nrc01/016.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/016.jpg",
+  "cube_copies": 4,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 17,
+  "numero_image": 17,
+  "type": "character",
+  "name": "Sakura Haruno",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "good",
+   "fire"
+  ],
+  "text": "first form: Permanently increase your hand size by 1 (max 10)\nenhance, discard 1 card: this attack gets +X or -X speed. X equals the block modifier of the discarded card.",
+  "asset": "nrc01/017.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/017.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Team 7"
+  ],
+  "hand_size": 5,
+  "vitality": 31
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 18,
+  "numero_image": 18,
+  "type": "attack",
+  "name": "Inner Sakura Outburst",
+  "rarity": "ultra rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "good",
+   "fire"
+  ],
+  "text": "Enhance, discard 1 attack card: This attack's damage becomes the printed damage of the discarded card.\nEnhance, discard 1 attack card: This attack's speed becomes the printed speed of the discarded card.",
+  "asset": "nrc01/018.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/018.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Powerful: 3",
+   "EX: 3",
+   "Taunt"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 1,
+  "block_zone": "high",
+  "speed": 0,
+  "attack_zone": "mid",
+  "damage": 0
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 19,
+  "numero_image": 19,
+  "type": "attack",
+  "name": "Haircut Escape",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "good",
+   "fire"
+  ],
+  "text": "enhance, remove the top card of your discard pile: this attack gets +X damage. X equals the block modifier of the removed card.\nResponse, remove: after you block a low attack with this card, draw 1 card.",
+  "asset": "nrc01/019.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/019.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Weapon"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "mid",
+  "speed": 3,
+  "attack_zone": "low",
+  "damage": 3
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 20,
+  "numero_image": 20,
+  "type": "action",
+  "name": "Repressed Fury",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "good",
+   "fire"
+  ],
+  "text": "enhance, remove: add up to 3 cards from your hand to your momentum. \nResponse, after you block with this card, build it face down.",
+  "asset": "nrc01/020.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/020.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Breaker: 2"
+  ],
+  "difficulty": 3,
+  "control": 4,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 21,
+  "numero_image": 21,
+  "type": "foundation",
+  "name": "Protect The Bridge Builder",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "good",
+   "fire"
+  ],
+  "text": "enhance, commit: if your hand size is less than 7, this attack gets -3 damage. If your hand size is 7 or more, this attack gets -3 speed.",
+  "asset": "nrc01/021.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/021.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Deflect: 2"
+  ],
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 4,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 22,
+  "numero_image": 22,
+  "type": "foundation",
+  "name": "Natural Intelligence",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "good",
+   "fire"
+  ],
+  "text": "enhance (tenacious): add this card to your hand. \nDeadlock enhance, flip: draw 2 cards.",
+  "asset": "nrc01/022.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/022.jpg",
+  "cube_copies": 4,
+  "difficulty": 1,
+  "control": 6,
+  "block_modifier": 3,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 23,
+  "numero_image": 23,
+  "type": "foundation",
+  "name": "Internal Monologue",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "good",
+   "fire"
+  ],
+  "text": "Form, remove: Permanently reduce your hand size by 1. draw 3 cards.\nResponse, flip: after you discard 1 or more cards due to a rival effect, draw 2 cards.",
+  "asset": "nrc01/023.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/023.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Unique"
+  ],
+  "difficulty": 3,
+  "control": 5,
+  "block_modifier": 5,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 24,
+  "numero_image": 24,
+  "type": "character",
+  "name": "Neji Hyuga",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "order",
+   "water"
+  ],
+  "text": "response: after your attack deals 3 or less damage, commit or freeze 1 rival foundation.\nEnhance, sacrifice 1 foundation: (once per turn) if this attack is completely blocked, it still deals 1 damage.",
+  "asset": "nrc01/024.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/024.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Team Guy",
+   "Byakugan"
+  ],
+  "hand_size": 6,
+  "vitality": 33
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 25,
+  "numero_image": 25,
+  "type": "attack",
+  "name": "8 Trigrams 64 Palms",
+  "rarity": "ultra rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "order",
+   "water"
+  ],
+  "text": "enhance: this attack gets +1 speed for each committed rival foundation.\nCombo enhance: this attack gets +2 damage for each frozen rival foundation",
+  "asset": "nrc01/025.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/025.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Stun: 1",
+   "Punch",
+   "Combo (low attack, high attack)"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 1,
+  "block_zone": "high",
+  "speed": 3,
+  "attack_zone": "mid",
+  "damage": 3
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 26,
+  "numero_image": 26,
+  "type": "attack",
+  "name": "8 Trigrams 32 Palms",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "order",
+   "water"
+  ],
+  "text": "combo enhance: if this attack deals damage, draw 2 cards.",
+  "asset": "nrc01/026.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/026.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Stun: 1",
+   "Punch",
+   "Combo (punch)"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 3,
+  "block_zone": "low",
+  "speed": 4,
+  "attack_zone": "high",
+  "damage": 3
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 27,
+  "numero_image": 27,
+  "type": "attack",
+  "name": "8 Trigrams 16 Palms",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "order",
+   "water"
+  ],
+  "text": "Response: after you play this card, if it is the only card in your card pool, your next check to play a card gets +1",
+  "asset": "nrc01/027.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/027.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Stun: 1",
+   "Punch"
+  ],
+  "difficulty": 3,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "mid",
+  "speed": 3,
+  "attack_zone": "low",
+  "damage": 3
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 28,
+  "numero_image": 28,
+  "type": "foundation",
+  "name": "Perfect Defense",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "order",
+   "water"
+  ],
+  "text": "enhance, sacrifice: set this attack's damage to 3.\nresponse, flip: (tenacious) after your rival commits a foundation due to your ability, ready this foundation.",
+  "asset": "nrc01/028.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/028.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Deflect: 2"
+  ],
+  "difficulty": 2,
+  "control": 4,
+  "block_modifier": 3,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 29,
+  "numero_image": 29,
+  "type": "foundation",
+  "name": "Branch Family's Sacrifice",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "order",
+   "water"
+  ],
+  "text": "enhance: your stun attack gets +1 speed.\nForm, remove: freeze 1 rival foundation. You may not play additional forms this turn",
+  "asset": "nrc01/029.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/029.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 30,
+  "numero_image": 30,
+  "type": "foundation",
+  "name": "Hyuga Clan Cursed Seal",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "order",
+   "water"
+  ],
+  "text": "response, remove: after this card enters your discard pile during the enhance step, your rival commits 1 foundation.",
+  "asset": "nrc01/030.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/030.jpg",
+  "cube_copies": 3,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 31,
+  "numero_image": 31,
+  "type": "character",
+  "name": "Shikamaru Nara",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "void",
+   "water"
+  ],
+  "text": "Enhance: (once per turn) add 1 face up foundation from your stage to your hand, build 1 face down card from your card pool.\nEnhance: add a card from your hand to your card pool face down. This attack gets -3 or +2 speed.",
+  "asset": "nrc01/031.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/031.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Team 10"
+  ],
+  "hand_size": 7,
+  "vitality": 22
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 32,
+  "numero_image": 32,
+  "type": "attack",
+  "name": "Shadow Possession",
+  "rarity": "ultra rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "void",
+   "water"
+  ],
+  "text": "This attack gets -2 difficulty for each face down card in a card pool (max -8)\nEnhance: Each player discards 1 card.\nEnhance: Each player commits 2 foundations.\nEnhance: Each player loses 3 health.",
+  "asset": "nrc01/032.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/032.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Charge",
+   "Shadow"
+  ],
+  "difficulty": 8,
+  "control": 3,
+  "block_modifier": 1,
+  "block_zone": "low",
+  "speed": 6,
+  "attack_zone": "low",
+  "damage": 6
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 33,
+  "numero_image": 33,
+  "type": "attack",
+  "name": "Shadow Paralysis",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "void",
+   "water"
+  ],
+  "text": "combo enhance: this attack gains stun 2\nenhance: freeze 1 commited rival foundation.",
+  "asset": "nrc01/033.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/033.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Shadow",
+   "Combo (face down)",
+   "Deadlock Stun: 2"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "mid",
+  "speed": 3,
+  "attack_zone": "mid",
+  "damage": 5
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 34,
+  "numero_image": 34,
+  "type": "attack",
+  "name": "Parachute Kunai Ploy",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "void",
+   "water"
+  ],
+  "text": "response [card pool], flip: after you block with this card, this attack deals no damage.\nResponse: after this attack is blocked, your next attack gets +3 damage and -1 difficulty.",
+  "asset": "nrc01/034.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/034.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Ranged",
+   "Weapon"
+  ],
+  "difficulty": 3,
+  "control": 3,
+  "block_modifier": 3,
+  "block_zone": "high",
+  "speed": 4,
+  "attack_zone": "high",
+  "damage": 2
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 35,
+  "numero_image": 35,
+  "type": "foundation",
+  "name": "Five Moves Ahead",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "void",
+   "water"
+  ],
+  "text": "outwit! Response, unflip, commit: after your rival draws their second or greater card during the combat phase, draw 2 cards.",
+  "asset": "nrc01/035.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/035.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 4,
+  "block_modifier": 3,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 36,
+  "numero_image": 36,
+  "type": "foundation",
+  "name": "Shogi Expert",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "void",
+   "water"
+  ],
+  "text": "outwit! Response, unflip, commit: after your rival plays an ability that commits, flips, or freezes a card in your stage, cancel that ability and seal 1 rival foundation",
+  "asset": "nrc01/036.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/036.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 37,
+  "numero_image": 37,
+  "type": "foundation",
+  "name": "What a Drag",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "void",
+   "water"
+  ],
+  "text": "outwit! Response, unflip, commit: after your rival's combat phase ends, if they did not play an attack as a form this turn, they commit 2 foundations",
+  "asset": "nrc01/037.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/037.jpg",
+  "cube_copies": 4,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 4,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 38,
+  "numero_image": 38,
+  "type": "character",
+  "name": "Gaara of the Sand",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "evil",
+   "life"
+  ],
+  "text": "Your attacks get +1 damage for every 4 face-down foundations among stages.\nResponse, commit: before you would take damage from an unblocked attack, reduce the damage taken by 4. If you take damage from this attack, your rival flips 1 foundation.\nEnhance, lose 1 health: this attack gets -2 damage.",
+  "asset": "nrc01/038.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/038.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Sand",
+   "Jinchuriki"
+  ],
+  "hand_size": 5,
+  "vitality": 25
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 39,
+  "numero_image": 39,
+  "type": "attack",
+  "name": "Sand Coffin",
+  "rarity": "ultra rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "evil",
+   "life"
+  ],
+  "text": "Response: after this attack deals damage, if your rival has 7 or less health, they lose the game.\nGaara Enhance, spend 2 momentum: This attack gains Throw.",
+  "asset": "nrc01/039.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/039.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Fury"
+  ],
+  "difficulty": 6,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "speed": 4,
+  "attack_zone": "mid",
+  "damage": 6
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 40,
+  "numero_image": 40,
+  "type": "attack",
+  "name": "Sand Barrier",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "evil",
+   "life"
+  ],
+  "text": "When you try to block with this card, return your rival's attack to its printed speed and zone.",
+  "asset": "nrc01/040.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/040.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Deflect: 3",
+   "Armor"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 3,
+  "block_zone": "mid",
+  "speed": 3,
+  "attack_zone": "low",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 41,
+  "numero_image": 41,
+  "type": "attack",
+  "name": "Crushing Sands",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "evil",
+   "life"
+  ],
+  "text": "Your rival must flip 1 foundation as an additional cost to attempt to block this attack.\nDeadlock enhance: Each player flips 1 foundation.",
+  "asset": "nrc01/041.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/041.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Slam",
+   "Throw"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "high",
+  "speed": 3,
+  "attack_zone": "mid",
+  "damage": 5
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 42,
+  "numero_image": 42,
+  "type": "foundation",
+  "name": "BLOOOOOD????!!!",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "evil",
+   "life"
+  ],
+  "text": "Response, commit: After you take damage from an unblocked attack, the first attack on your next turn gets +1 speed and +2 damage.\nDeadlock form, remove: flip 2 rival foundations.",
+  "asset": "nrc01/042.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/042.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Fury"
+  ],
+  "difficulty": 1,
+  "control": 4,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 43,
+  "numero_image": 43,
+  "type": "foundation",
+  "name": "Sentient Sand",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "evil",
+   "life"
+  ],
+  "text": "Response: After your blocked attack resolves, your rival's checks to play blocks get -1 this turn.\nEnhance, spend 1 momentum: Draw 1 card. You may remove this foundation. If you do, draw 1 card.",
+  "asset": "nrc01/043.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/043.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Unique",
+   "Ally"
+  ],
+  "difficulty": 4,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 44,
+  "numero_image": 44,
+  "type": "foundation",
+  "name": "Sand Eye Observation",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "evil",
+   "life"
+  ],
+  "text": "Outwit! Response, unflip, commit: after your rival adds a card to their momentum, they spend 1 momentum.\nEnhance: this attack gets -1 speed and +1 damage.",
+  "asset": "nrc01/044.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/044.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 45,
+  "numero_image": 45,
+  "type": "character",
+  "name": "Rock Lee",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "fire",
+   "order"
+  ],
+  "text": "You may spend X health as if it were one momentum when activating a Powerful or EX ability. X equals the keyword rating of the ability.\nWhile you are at 8 or less health, your attacks get +2 speed and +2 damage",
+  "asset": "nrc01/045.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/045.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Team Guy"
+  ],
+  "hand_size": 6,
+  "vitality": 30
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 46,
+  "numero_image": 46,
+  "type": "attack",
+  "name": "Hidden Lotus",
+  "rarity": "ultra rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "fire",
+   "order"
+  ],
+  "text": "Enhance: if you have lost 6 health during this attack, it gets +2 speed and +2 damage.\nEnhance: if you have 5 or less health: commit 1 rival foundation.",
+  "asset": "nrc01/046.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/046.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Powerful: 3",
+   "EX: 3",
+   "Echo",
+   "Slam"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 0,
+  "block_zone": "high",
+  "speed": 4,
+  "attack_zone": "high",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 47,
+  "numero_image": 47,
+  "type": "attack",
+  "name": "Gate of Life: Open",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "fire",
+   "order"
+  ],
+  "text": "Combo enhance: this attack gets powerful 2\nResponse: After you play this card, gain 1 health",
+  "asset": "nrc01/047.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/047.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Powerful: 1",
+   "EX: 1",
+   "Combo (EX)",
+   "Charge"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "speed": 4,
+  "attack_zone": "mid",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 48,
+  "numero_image": 48,
+  "type": "attack",
+  "name": "Leaf Whirlwind",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "fire",
+   "order"
+  ],
+  "text": "combo enhance: ready 1 foundation.",
+  "asset": "nrc01/048.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/048.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "EX: 2",
+   "Kick",
+   "Punch",
+   "Combo (attack)"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 1,
+  "block_zone": "low",
+  "speed": 3,
+  "attack_zone": "mid",
+  "damage": 5
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 49,
+  "numero_image": 49,
+  "type": "foundation",
+  "name": "Remove the Weights",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "fire",
+   "order"
+  ],
+  "text": "Your attacks have -1 speed.\nFirst form, remove: add the top card of your deck to your momentum. If you have 10 or less health, your EX attacks have -1 difficulty this turn.\nEnhance, commit: if you block this attack, your block gains breaker 1.",
+  "asset": "nrc01/049.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/049.jpg",
+  "cube_copies": 2,
+  "difficulty": 3,
+  "control": 4,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 50,
+  "numero_image": 50,
+  "type": "foundation",
+  "name": "Open the Gate of Rest",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "fire",
+   "order"
+  ],
+  "text": "response, remove: after you lose health during the combat phase, gain 3 health.\nDeadlock enhance (your turn): Gain 1 health.",
+  "asset": "nrc01/050.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/050.jpg",
+  "cube_copies": 3,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 51,
+  "numero_image": 51,
+  "type": "foundation",
+  "name": "Rigorous Training",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "fire",
+   "order"
+  ],
+  "text": "enhance, flip, commit: this attack gains powerful 1 and stun 1",
+  "asset": "nrc01/051.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/051.jpg",
+  "cube_copies": 4,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 52,
+  "numero_image": 52,
+  "type": "character",
+  "name": "Orochimaru",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "death",
+   "evil"
+  ],
+  "text": "Response (your turn): after you play an ability on a backup, add it to your momentum.\nResponse: after you play your 4th card this turn, build 1 backup card with difficulty 2 or less from your discard pile.",
+  "asset": "nrc01/052.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/052.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Sannin"
+  ],
+  "hand_size": 5,
+  "vitality": 37
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 53,
+  "numero_image": 53,
+  "type": "action",
+  "name": "Reanimation Technique",
+  "rarity": "ultra rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "death",
+   "evil"
+  ],
+  "text": "Response (rival's turn), remove 2 backups from your stage: Before your health would be reduced to 0 or less, it becomes 10 instead.\nForm: Add 1 non-attack card from your discard pile to your hand.\nOrochimaru Response [Card pool], Spend 1 momentum: At the end of the combat phase, add this card to your hand.",
+  "asset": "nrc01/053.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/053.jpg",
+  "cube_copies": 2,
+  "difficulty": 3,
+  "control": 4,
+  "block_modifier": 4,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 54,
+  "numero_image": 54,
+  "type": "attack",
+  "name": "The First and Second Hokage",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "death",
+   "evil"
+  ],
+  "text": "Enhance: If an ally backup entered your stage this turn: this attack gets +4 speed and +4 damage.\nEnhance, Spend 1 momentum: The next card you try to play ignores progressive difficulty.",
+  "asset": "nrc01/054.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/054.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Breaker: 2",
+   "Powerful: 3",
+   "Stun: 1",
+   "Ally"
+  ],
+  "difficulty": 7,
+  "control": 4,
+  "block_modifier": 3,
+  "block_zone": "low",
+  "speed": 5,
+  "attack_zone": "low",
+  "damage": 8
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 55,
+  "numero_image": 55,
+  "type": "attack",
+  "name": "Curse Mark Bite",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "death",
+   "evil"
+  ],
+  "text": "response [card pool]: after 1 or more momentum is spent, your rival loses 1 health.",
+  "asset": "nrc01/055.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/055.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "EX: 2",
+   "Fury"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "high",
+  "speed": 4,
+  "attack_zone": "high",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 56,
+  "numero_image": 56,
+  "type": "attack",
+  "name": "Tongue Snake",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "death",
+   "evil"
+  ],
+  "text": "enhance, sacrifice 1 foundation: draw 2 cards",
+  "asset": "nrc01/056.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/056.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Weapon"
+  ],
+  "difficulty": 8,
+  "control": 4,
+  "block_modifier": 1,
+  "block_zone": "mid",
+  "speed": 6,
+  "attack_zone": "mid",
+  "damage": 9
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 57,
+  "numero_image": 57,
+  "type": "backup",
+  "name": "Sound Genin",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "death",
+   "evil"
+  ],
+  "text": "enhance, commit: this attack gets -2 speed. If its ranged it gets -3 speed instead.",
+  "asset": "nrc01/057.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/057.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Ally"
+  ],
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "low",
+  "vitality": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 58,
+  "numero_image": 58,
+  "type": "backup",
+  "name": "Sound Ninja Agents",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "death",
+   "evil"
+  ],
+  "text": "enhance, commit: Your Rival's next check gets -1. If failing that check would end the combat phase, your rival may commit 1 foundation to not end the combat phase.\nenhance, commit: This attack gets +1 damage.",
+  "asset": "nrc01/058.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/058.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Ally"
+  ],
+  "difficulty": 0,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "high",
+  "vitality": 2
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 59,
+  "numero_image": 59,
+  "type": "foundation",
+  "name": "Shed Skin",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "death",
+   "evil"
+  ],
+  "text": "outwit! Response, unflip, commit: before your would take 5 or more damage from an unblocked attack, that attack gets -5 damage. Remove this foundation.\nform, flip, sacrifice 1 backup: Draw 1 card.",
+  "asset": "nrc01/059.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/059.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Deflect: 3"
+  ],
+  "difficulty": 3,
+  "control": 4,
+  "block_modifier": 4,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 60,
+  "numero_image": 60,
+  "type": "character",
+  "name": "Shino Aburame",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "life",
+   "void"
+  ],
+  "text": "Enhance: your attack gets +X speed and +X damage, X is equal to the number of cards in each players' momentum. If your attack deals damage, each player spends 1 momentum.\nResponse, commit: after your rival plays an attack, seal 1 non-character card in their stage or card pool.",
+  "asset": "nrc01/060.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/060.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Team 8"
+  ],
+  "hand_size": 6,
+  "vitality": 31
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 61,
+  "numero_image": 61,
+  "type": "attack",
+  "name": "Plant Pheremone Beetle",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "life",
+   "void"
+  ],
+  "text": "response: after this attack is blocked, it does not count towards progressive difficulty this turn.\nResponse: after this attack deals damage, add the top card of your deck to your momentum.",
+  "asset": "nrc01/061.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/061.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Taunt",
+   "Ally",
+   "Punch"
+  ],
+  "difficulty": 3,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "high",
+  "speed": 2,
+  "attack_zone": "mid",
+  "damage": 3
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 62,
+  "numero_image": 62,
+  "type": "attack",
+  "name": "Flanking Insect Swarm",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "life",
+   "void"
+  ],
+  "text": "enhance: if this attack is completely blocked, it still deals 1 damage.",
+  "asset": "nrc01/062.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/062.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Ally",
+   "Charge"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "speed": 3,
+  "attack_zone": "low",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 63,
+  "numero_image": 63,
+  "type": "foundation",
+  "name": "Hungry For Chakra",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "life",
+   "void"
+  ],
+  "text": "enhance, flip: Each player spends 1 momentum, then adds the top card of their deck to their momentum.\nResponse, remove: After you take damage from an unblocked attack, your rival adds that attack to their momentum. Your rival must play a non-attack card as their next form or pass.",
+  "asset": "nrc01/063.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/063.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 64,
+  "numero_image": 64,
+  "type": "foundation",
+  "name": "Advising Concession",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "life",
+   "void"
+  ],
+  "text": "Enhance, remove: Until the end of this turn, cards cannot be played from the card pool.\nDeadlock First Form, flip: Each player adds the top 2 cards of their deck to their momentum.",
+  "asset": "nrc01/064.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/064.jpg",
+  "cube_copies": 3,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 65,
+  "numero_image": 65,
+  "type": "foundation",
+  "name": "Human Hive",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "life",
+   "void"
+  ],
+  "text": "Enhance [once per turn] Spend 1 momentum: if this attack deals damage, add it to its owners' momentum, then add the top card of your deck to your momentum.",
+  "asset": "nrc01/065.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/065.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Unique"
+  ],
+  "difficulty": 3,
+  "control": 6,
+  "block_modifier": 1,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 66,
+  "numero_image": 66,
+  "type": "foundation",
+  "name": "Stoicism",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "life",
+   "void"
+  ],
+  "text": "Response, flip: after you spend one or more momentum, flip 1 rival foundation.",
+  "asset": "nrc01/066.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/066.jpg",
+  "cube_copies": 4,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 67,
+  "numero_image": 67,
+  "type": "character",
+  "name": "Hinata Hyuga",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "life",
+   "order",
+   "water"
+  ],
+  "text": "enhance: (once per turn) Your attack cannot be partially blocked. You may change its zone.\nResponse: (once per turn) after an attack deals damage, choose a card in your card pool. That card does not count towards progressive difficulty this turn. Freeze 1 committed rival foundation",
+  "asset": "nrc01/067.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/067.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Team 8",
+   "Byakugan"
+  ],
+  "hand_size": 6,
+  "vitality": 32
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 68,
+  "numero_image": 68,
+  "type": "attack",
+  "name": "Chakra Node Strike",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "life",
+   "order",
+   "water"
+  ],
+  "text": "Enhance, spend 1 momentum: this attack cannot be completely blocked.\nEnhance, this attack gets +2 damage for each frozen rival foundation.",
+  "asset": "nrc01/068.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/068.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Punch"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 1,
+  "block_zone": "high",
+  "speed": 3,
+  "attack_zone": "mid",
+  "damage": 6
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 69,
+  "numero_image": 69,
+  "type": "attack",
+  "name": "Gentle Fist",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "life",
+   "order",
+   "water"
+  ],
+  "text": "enhance: your rival reveals a random card from their hand. You may change the zone of this attack.",
+  "asset": "nrc01/069.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/069.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Stun: 1",
+   "Punch"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "speed": 3,
+  "attack_zone": "low",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 70,
+  "numero_image": 70,
+  "type": "attack",
+  "name": "Desperate Charge",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "life",
+   "order",
+   "water"
+  ],
+  "text": "Enhance: if this attack is blocked, your rival commits and freezes 1 foundation.\nEnhance: if a player has cycled this game, this attack gains stun 2.",
+  "asset": "nrc01/070.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/070.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Stun: 1",
+   "Punch",
+   "Charge"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "speed": 4,
+  "attack_zone": "mid",
+  "damage": 3
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 71,
+  "numero_image": 71,
+  "type": "foundation",
+  "name": "Piercing Vision",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "life",
+   "order",
+   "water"
+  ],
+  "text": "form, flip: Commit 1 rival foundation.\nDeadlock first form, flip: Commit and freeze 2 rival foundations",
+  "asset": "nrc01/071.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/071.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 72,
+  "numero_image": 72,
+  "type": "foundation",
+  "name": "Hyuga Clan Heiress",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "life",
+   "order",
+   "water"
+  ],
+  "text": "response, commit: after you play an ability on an action card, your rival adds the top card of their deck to their card pool face down.\nEnhance: if the zone of this attack has been changed, it gets +1 speed and +1 damage.",
+  "asset": "nrc01/072.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/072.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Unique"
+  ],
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 1,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 73,
+  "numero_image": 73,
+  "type": "foundation",
+  "name": "Worried For Her Friends",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "life",
+   "order",
+   "water"
+  ],
+  "text": "response, flip, spend 1 momentum: before you would take damage from an unblocked attack, reduce its damage to 4.",
+  "asset": "nrc01/073.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/073.jpg",
+  "cube_copies": 4,
+  "difficulty": 1,
+  "control": 4,
+  "block_modifier": 2,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 74,
+  "numero_image": 74,
+  "type": "character",
+  "name": "Kankuro",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "earth",
+   "evil"
+  ],
+  "text": "First Form, sacrifice 1 foundation: Search your deck or discard pile for a copy of \"Crow\" and build it.\nFirst Form: Until your next turn, your rival's first attack must target a backup if you have one in your stage.",
+  "asset": "nrc01/074.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/074.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Sand"
+  ],
+  "hand_size": 6,
+  "vitality": 28
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 75,
+  "numero_image": 75,
+  "type": "attack",
+  "name": "I'll Break Everything But Your Neck",
+  "rarity": "ultra rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "earth",
+   "evil"
+  ],
+  "text": "Response [Hand] Spend 1 momentum, add this card to your card pool: After an attack targeting your backup resolves, try to play this attack from your card pool. It gets stun 2.",
+  "asset": "nrc01/075.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/075.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Throw"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 3,
+  "block_zone": "mid",
+  "speed": 2,
+  "attack_zone": "low",
+  "damage": 7
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 76,
+  "numero_image": 76,
+  "type": "attack",
+  "name": "Poison Dart",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "earth",
+   "evil"
+  ],
+  "text": "Enhance: if this attack deals damage, your rival commits 2 cards in their stage.",
+  "asset": "nrc01/076.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/076.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Ranged",
+   "Weapon",
+   "Stun: 1"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "high",
+  "speed": 5,
+  "attack_zone": "high",
+  "damage": 3
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 77,
+  "numero_image": 77,
+  "type": "foundation",
+  "name": "Proctor Impostor",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "earth",
+   "evil"
+  ],
+  "text": "Enhance, sacrifice 1 backup: This attack gets +1 speed and +2 damage.\nResponse, flip: after an attack is played, it gets -1 speed and -1 damage.",
+  "asset": "nrc01/077.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/077.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 78,
+  "numero_image": 78,
+  "type": "foundation",
+  "name": "Chakra Puppeteer",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "earth",
+   "evil"
+  ],
+  "text": "enhance, spend 1 momentum: a backup of your choice gains or loses 2 stamina.\nResponse, (once per turn, tenacious): after a backup leaves your stage, ready this foundation.",
+  "asset": "nrc01/078.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/078.jpg",
+  "cube_copies": 3,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 79,
+  "numero_image": 79,
+  "type": "backup",
+  "name": "Crow",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "earth",
+   "evil"
+  ],
+  "text": "Kankuro response, lose 1 stamina: after an attack is played, your rival loses 1 health.\nEnhance, flip: your rival flips 1 foundation. This ability cannot be played while crow is being attacked.",
+  "asset": "nrc01/079.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/079.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Unique",
+   "Tech"
+  ],
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 1,
+  "block_zone": "mid",
+  "vitality": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 80,
+  "numero_image": 80,
+  "type": "foundation",
+  "name": "Helping A Brother Out",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "earth",
+   "evil"
+  ],
+  "text": "response, after this card is destroyed during the combat phase, your rival loses 1 health. This cannot reduce their health below 1.",
+  "asset": "nrc01/080.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/080.jpg",
+  "cube_copies": 4,
+  "difficulty": 0,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 81,
+  "numero_image": 81,
+  "type": "character",
+  "name": "Kiba Inuzuka",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "fire",
+   "life"
+  ],
+  "text": "Response (once per turn): after you play a card, if it is the 2nd copy of that card you played this turn, add the top card of your deck to your momentum.\nEnhance (once per turn): Choose a face down card in your card pool. That card does not count towards progressive difficulty this turn.",
+  "asset": "nrc01/081.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/081.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Team 8"
+  ],
+  "hand_size": 6,
+  "vitality": 33
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 82,
+  "numero_image": 82,
+  "type": "attack",
+  "name": "Fang Over Fang",
+  "rarity": "ultra rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "fire",
+   "life"
+  ],
+  "text": "If two cards in your card pool share a name, this attack gets -2 difficulty.\nEnhance, spend 1 momentum: add 1 face down card from your card pool to your hand.",
+  "asset": "nrc01/082.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/082.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ally",
+   "Slam",
+   "Echo",
+   "Frenzy"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "high",
+  "speed": 4,
+  "attack_zone": "mid",
+  "damage": 3
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 83,
+  "numero_image": 83,
+  "type": "attack",
+  "name": "Dog Pack Tactics",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "fire",
+   "life"
+  ],
+  "text": "Enhance: draw 1 card. If your rival has 2 cards in their stage that share a name, draw 2 cards instead.",
+  "asset": "nrc01/083.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/083.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Ally"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "mid",
+  "speed": 4,
+  "attack_zone": "low",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 84,
+  "numero_image": 84,
+  "type": "attack",
+  "name": "Beast Form Strike",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "fire",
+   "life"
+  ],
+  "text": "enhance: if you have another low attack in your card pool, change this attack's zone to high and it gains echo.",
+  "asset": "nrc01/084.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/084.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Ally",
+   "Slam"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "speed": 4,
+  "attack_zone": "low",
+  "damage": 5
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 85,
+  "numero_image": 85,
+  "type": "foundation",
+  "name": "Loyal Companion",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "fire",
+   "life"
+  ],
+  "text": "Response, [card pool], Flip: After an attack is played, it gets -2 speed.\nEnhance, commit: you may block with this card from your stage during this attack.",
+  "asset": "nrc01/085.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/085.jpg",
+  "cube_copies": 4,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 86,
+  "numero_image": 86,
+  "type": "backup",
+  "name": "Akamaru",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "fire",
+   "life"
+  ],
+  "text": "If your character is Kiba Inuzuka, Once Per Turn abilities on your character card can be played twice per turn.\nEnhance, lose 2 stamina, commit: this ally attack gains echo.",
+  "asset": "nrc01/086.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/086.jpg",
+  "cube_copies": 2,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "high",
+  "vitality": 5
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 87,
+  "numero_image": 87,
+  "type": "foundation",
+  "name": "Sensitive Nose",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "fire",
+   "life"
+  ],
+  "text": "Enhance, flip: this attack gets -2 speed. If you have a face down card in your card pool it gets -4 speed instead.",
+  "asset": "nrc01/087.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/087.jpg",
+  "cube_copies": 4,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 88,
+  "numero_image": 88,
+  "type": "character",
+  "name": "Choji Akamichi",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "good",
+   "void"
+  ],
+  "text": "response: after you play a keyword ability, this attack gets +2 or -1 damage and your next check to play a foundation card gets +1.\nResponse, commit: after your rival plays an ability that modifies the damage of an attack, cancel it.",
+  "asset": "nrc01/088.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/088.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Team 10"
+  ],
+  "hand_size": 6,
+  "vitality": 32
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 89,
+  "numero_image": 89,
+  "type": "attack",
+  "name": "Expansion Jutsu Rollout",
+  "rarity": "ultra rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "good",
+   "void"
+  ],
+  "text": "If this card is added to your momentum, add it face up.\nEnhance [Momentum] discard 1 card: add this card to your hand.",
+  "asset": "nrc01/089.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/089.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Stun: 2",
+   "Deflect: 2",
+   "EX: 3",
+   "Slam"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "speed": 4,
+  "attack_zone": "mid",
+  "damage": 3
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 90,
+  "numero_image": 90,
+  "type": "attack",
+  "name": "Who Ya Callin Fat!?!?",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "good",
+   "void"
+  ],
+  "text": "Enhance: If this attack deals damage, your next attack gains Frenzy.\nDeadlock enhance: Ready 2 foundations.",
+  "asset": "nrc01/090.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/090.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Frenzy",
+   "Taunt"
+  ],
+  "difficulty": 3,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "mid",
+  "speed": 2,
+  "attack_zone": "mid",
+  "damage": 2
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 91,
+  "numero_image": 91,
+  "type": "foundation",
+  "name": "Always Snacking",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "good",
+   "void"
+  ],
+  "text": "Enhance, flip: This attack gets +2 damage. If a player has cycled this game, it gets +2 speed.",
+  "asset": "nrc01/091.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/091.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Breaker: 1"
+  ],
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 92,
+  "numero_image": 92,
+  "type": "foundation",
+  "name": "HAROOM",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "good",
+   "void"
+  ],
+  "text": "outwit! Response, unflip, commit: after your attack's damage is reduced due to a rival's effect, it gets +4 damage.",
+  "asset": "nrc01/092.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/092.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 4,
+  "block_modifier": 3,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 93,
+  "numero_image": 93,
+  "type": "foundation",
+  "name": "Family Squad Tradition",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "good",
+   "void"
+  ],
+  "text": "response, flip: after your rival plays an attack, it loses a keyword of your choice.\nResponse, flip: after you play a non-throw attack, it gains powerful 2.",
+  "asset": "nrc01/093.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/093.jpg",
+  "cube_copies": 4,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 94,
+  "numero_image": 94,
+  "type": "foundation",
+  "name": "Post-Match Recovery",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "good",
+   "void"
+  ],
+  "text": "enhance, commit: if this attacks damage is greater than its printed damage, it gets -3 damage.\nForm, (once per turn) Sacrifice 2 foundations: Build the top card of your discard pile face down.",
+  "asset": "nrc01/094.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/094.jpg",
+  "cube_copies": 3,
+  "difficulty": 4,
+  "control": 6,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 95,
+  "numero_image": 95,
+  "type": "character",
+  "name": "Temari of the Sand",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "evil",
+   "water"
+  ],
+  "text": "Response (once per turn): After this attack's speed is modified, if it is 0 or less, remove it.\nEnhance, flip 1 foundation: this attack gets -3 or +2 speed.",
+  "asset": "nrc01/095.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/095.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Sand"
+  ],
+  "hand_size": 7,
+  "vitality": 20
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 96,
+  "numero_image": 96,
+  "type": "attack",
+  "name": "Wind Slicer",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "evil",
+   "water"
+  ],
+  "text": "Enhance, flip 2 foundations: increase this attack's keyword ratings by 2.\nEnhance: Change this attack's damage to match its speed.",
+  "asset": "nrc01/096.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/096.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ranged",
+   "Weapon",
+   "EX: 1",
+   "Stun: 0"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 1,
+  "block_zone": "high",
+  "speed": 1,
+  "attack_zone": "high",
+  "damage": 2
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 97,
+  "numero_image": 97,
+  "type": "attack",
+  "name": "Establish Distance",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "evil",
+   "water"
+  ],
+  "text": "while this card is in your card pool, your rival's attacks get -2 speed.",
+  "asset": "nrc01/097.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/097.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Taunt",
+   "Breaker: 1"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "speed": 4,
+  "attack_zone": "mid",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 98,
+  "numero_image": 98,
+  "type": "attack",
+  "name": "Adapting Tactics",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "evil",
+   "water"
+  ],
+  "text": "first enhance [card pool], remove: this attack's speed becomes 3.",
+  "asset": "nrc01/098.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/098.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Stun: 1"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 3,
+  "block_zone": "mid",
+  "speed": 3,
+  "attack_zone": "mid",
+  "damage": 5
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 99,
+  "numero_image": 99,
+  "type": "foundation",
+  "name": "Ninja Tool Upkeep",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "evil",
+   "water"
+  ],
+  "text": "Response, commit: after an attack leaves the card pool during the combat phase, unflip 1 foundaton.\nFirst form, spend 1 momentum: Your attacks get +1 speed this turn.",
+  "asset": "nrc01/099.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/099.jpg",
+  "cube_copies": 2,
+  "difficulty": 3,
+  "control": 4,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 100,
+  "numero_image": 100,
+  "type": "foundation",
+  "name": "Swift Victory",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "evil",
+   "water"
+  ],
+  "text": "enhance: if your first attack this turn was not blocked, your attack gets +1 damage.\nEnhance, flip: this attack gets -3 speed.",
+  "asset": "nrc01/100.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/100.jpg",
+  "cube_copies": 4,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 101,
+  "numero_image": 101,
+  "type": "foundation",
+  "name": "Iron Fan Wave",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "evil",
+   "water"
+  ],
+  "text": "outwit! Response, unflip, commit: after your rival's attack recieves a speed bonus, it gets -4 speed.",
+  "asset": "nrc01/101.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/101.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Weapon"
+  ],
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 102,
+  "numero_image": 102,
+  "type": "character",
+  "name": "Ino Yamanaka",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "all",
+   "void"
+  ],
+  "text": "Form, commit: name a card. Your rival must discard a copy of that card, or reveal their hand that does not contain a copy of that card.\nenhance, [tenacious] mill 1: Look at the top card of your rival's deck.\nEnhance, [tenacious], spend 1 momentum: Ready your character.",
+  "asset": "nrc01/102.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/102.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Team 10"
+  ],
+  "hand_size": 6,
+  "vitality": 31
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 103,
+  "numero_image": 103,
+  "type": "attack",
+  "name": "Mind Control: Forced Concession",
+  "rarity": "ultra rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "all",
+   "void"
+  ],
+  "text": "Ino Response: Before the block step, your rival may remove a card from their hand. If they do, remove this attack. If they do not, they lose the game.\nResponse: after you block with this card, your rival discards 1 card.",
+  "asset": "nrc01/103.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/103.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Charge",
+   "Breaker: 1"
+  ],
+  "difficulty": 7,
+  "control": 4,
+  "block_modifier": 3,
+  "block_zone": "mid",
+  "speed": 1,
+  "attack_zone": "mid",
+  "damage": 0
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 104,
+  "numero_image": 104,
+  "type": "attack",
+  "name": "Hair Chakra Web",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "all",
+   "void"
+  ],
+  "text": "Enhance: add 1 card from your hand to your momentum.\nEnhance: if your rival has discarded a card this turn, this attack gets +3 damage.",
+  "asset": "nrc01/104.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/104.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Charge"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "speed": 4,
+  "attack_zone": "low",
+  "damage": 3
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 105,
+  "numero_image": 105,
+  "type": "foundation",
+  "name": "Kunoichi's Promise",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "all",
+   "void"
+  ],
+  "text": "Response, flip: Spend 1 momentum: after an attack is played, it gains flash.\nResponse, sacrifice: after your rival plays a non-character ability that would draw 1 or more cards, cancel it.",
+  "asset": "nrc01/105.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/105.jpg",
+  "cube_copies": 2,
+  "difficulty": 3,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 106,
+  "numero_image": 106,
+  "type": "foundation",
+  "name": "Picking Flowers",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "all",
+   "void"
+  ],
+  "text": "Response, flip: after you mill a card, add it to your hand.\nDeadlock response, remove: after your rival plays a non-character ability, cancel it.",
+  "asset": "nrc01/106.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/106.jpg",
+  "cube_copies": 4,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 107,
+  "numero_image": 107,
+  "type": "foundation",
+  "name": "Ino-Shika-Cho Formation",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "all",
+   "void"
+  ],
+  "text": "outwit! Unflip, commit: after your rival plays an attack, it gets -2 speed. Look at the top card of your deck.\nEnhance, flip: name a card type. Reveal the top card of your rival's deck. It that card matches the named card type, draw a card.",
+  "asset": "nrc01/107.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/107.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 4,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 108,
+  "numero_image": 108,
+  "type": "foundation",
+  "name": "Hiding In The Brush",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "all",
+   "void"
+  ],
+  "text": "enhance (once per turn, your turn): each player discards 1 card then draws 1 card.",
+  "asset": "nrc01/108.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/108.jpg",
+  "cube_copies": 3,
+  "difficulty": 0,
+  "control": 4,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 109,
+  "numero_image": 109,
+  "type": "character",
+  "name": "Tenten",
+  "rarity": "character",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "all",
+   "order"
+  ],
+  "text": "Response, Discard 1 card: after you play an attack, build an asset card from your discard pile with difficulty 1 or less.\nResponse, commit: after you block with an asset card, it gains breaker 2.",
+  "asset": "nrc01/109.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/109.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ninja",
+   "Team Guy"
+  ],
+  "hand_size": 7,
+  "vitality": 23
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 110,
+  "numero_image": 110,
+  "type": "attack",
+  "name": "Twin Scroll Summoning",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "all",
+   "order"
+  ],
+  "text": "response, after you sacrifice an asset during this attack, it gets +1 speed and +2 damage",
+  "asset": "nrc01/110.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/110.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ranged",
+   "Weapon",
+   "Echo"
+  ],
+  "difficulty": 4,
+  "control": 2,
+  "block_modifier": 1,
+  "block_zone": "high",
+  "speed": 4,
+  "attack_zone": "high",
+  "damage": 3
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 111,
+  "numero_image": 111,
+  "type": "asset",
+  "name": "Endless Weapons",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "all",
+   "order"
+  ],
+  "text": "response, commit: at the beginning of your rival's combat phase, commit 1 asset in their stage.\nEnhance, commit, sacrifice an asset: draw 2 cards, then put a card from your hand on top of your deck.",
+  "asset": "nrc01/111.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/111.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Weapon",
+   "Breaker: 2"
+  ],
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 112,
+  "numero_image": 112,
+  "type": "attack",
+  "name": "Spray of Shuriken",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "all",
+   "order"
+  ],
+  "text": "combo enhance: build 1 asset card from your card pool. \nEnhance: Draw 1 card. Discard 1 card unless you have 2 or more assets in your stage",
+  "asset": "nrc01/112.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/112.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Weapon",
+   "Combo (Asset)"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "speed": 3,
+  "attack_zone": "low",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 113,
+  "numero_image": 113,
+  "type": "foundation",
+  "name": "Ninja Tool Expert",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "all",
+   "order"
+  ],
+  "text": "enhance, remove: (tenacious) Add 1 weapon card from your discard pile to the top of your deck.\nDeadlock enhance, commit: your attack gets +3 speed.",
+  "asset": "nrc01/113.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/113.jpg",
+  "cube_copies": 4,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 114,
+  "numero_image": 114,
+  "type": "foundation",
+  "name": "Training To Beat Neji",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "all",
+   "order"
+  ],
+  "text": "enhance, flip, flip 1 asset: clear 1 card from your card pool.\nEnhance, remove (tenacious): if a player has cycled this game, build 1 card from your card pool face down.",
+  "asset": "nrc01/114.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/114.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 4,
+  "block_modifier": 1,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 115,
+  "numero_image": 115,
+  "type": "action",
+  "name": "Byakugan!",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "order",
+   "water"
+  ],
+  "text": "enhance: your rival reveals a card at random from their hand. You may change the zone of this attack.\nByakugan Response: after you play this card, clear it from your card pool.",
+  "asset": "nrc01/115.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/115.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Breaker: 1"
+  ],
+  "difficulty": 0,
+  "control": 4,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 116,
+  "numero_image": 116,
+  "type": "asset",
+  "name": "Kunai",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "infinity"
+  ],
+  "text": "enhance, sacrifice: your attack gets +2 damage, draw 1 card",
+  "asset": "nrc01/116.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/116.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Weapon"
+  ],
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 117,
+  "numero_image": 117,
+  "type": "asset",
+  "name": "Shuriken",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "infinity"
+  ],
+  "text": "enhance, sacrifice: your attack gets +2 speed, draw 1 card",
+  "asset": "nrc01/117.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/117.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Weapon"
+  ],
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 118,
+  "numero_image": 118,
+  "type": "asset",
+  "name": "Ichiraku Ramen",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "good-attuned"
+  ],
+  "text": "enhance, sacrifice: gain 2 health, build the top card of your deck face down committed",
+  "asset": "nrc01/118.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/118.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 119,
+  "numero_image": 119,
+  "type": "foundation",
+  "name": "Team Kakashi's Training",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "good-attuned"
+  ],
+  "text": "Enhance: If an attack card entered your discard pile from anywhere during this attack, this attack gets +1 damage.\nTeam 7 response, commit: after you discard a card to pay a cost, build the top card of your deck face down committed.",
+  "asset": "nrc01/119.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/119.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Unique"
+  ],
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 120,
+  "numero_image": 120,
+  "type": "foundation",
+  "name": "Team Guy's Youthful Energy",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "order-attuned"
+  ],
+  "text": "Response (once per turn), Commit 1 card in your stage: after an attack is blocked, your rival commits 1 foundation.\nTeam Guy Response: after you play a combo enhance, your attack gets +1 speed.",
+  "asset": "nrc01/120.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/120.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Unique"
+  ],
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 121,
+  "numero_image": 121,
+  "type": "foundation",
+  "name": "Team Asuma's Legacy",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "void-attuned"
+  ],
+  "text": "Response, remove: after your rival plays a response ability on a non-character card, cancel it.\nTeam 10 Response [once per turn]: after you use an outwit ability on a foundation, ready that foundation.",
+  "asset": "nrc01/121.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/121.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Unique"
+  ],
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 122,
+  "numero_image": 122,
+  "type": "foundation",
+  "name": "Team Kurenai's Persistence",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "life-attuned"
+  ],
+  "text": "Enhance, commit: this attack gets +1 or -1 damage for each card in your card pool.\nTeam 8 response [once per turn], flip 1 foundation: after your attack is completely blocked, it does not count towards progressive difficulty this turn.",
+  "asset": "nrc01/122.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/122.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Unique"
+  ],
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 123,
+  "numero_image": 123,
+  "type": "foundation",
+  "name": "Sand Ninja's Plot",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "evil-attuned"
+  ],
+  "text": "Enhance, commit: If your rival's first attack this turn did not deal damage, their next check to play a card gets -2. \nSand enhance (Once per turn), Flip 1 other foundation: Ready this foundation.",
+  "asset": "nrc01/123.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/123.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Unique"
+  ],
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 124,
+  "numero_image": 124,
+  "type": "attack",
+  "name": "Sand Jonin Assassin",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "death",
+   "evil"
+  ],
+  "text": "Response, after this attack resolves, clear it.",
+  "asset": "nrc01/124.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/124.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Weapon",
+   "Breaker: 2"
+  ],
+  "difficulty": 3,
+  "control": 2,
+  "block_modifier": 1,
+  "block_zone": "high",
+  "speed": 4,
+  "attack_zone": "high",
+  "damage": 3
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 125,
+  "numero_image": 125,
+  "type": "foundation",
+  "name": "Tailed Beast Host",
+  "rarity": "ultra rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "earth"
+  ],
+  "text": "Form, flip: Add the top card of your discard pile to your momentum.\nJinchuriki Response, remove: after you take 5 or more damage from an unblocked attack, add the top two cards of your deck to your momentum.",
+  "asset": "nrc01/125.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/125.jpg",
+  "cube_copies": 2,
+  "difficulty": 3,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 126,
+  "numero_image": 126,
+  "type": "attack",
+  "name": "Demon Brothers Ambush",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "evil",
+   "death",
+   "water"
+  ],
+  "text": "enhance, flip 1 foundation: this attack gets +2 damage",
+  "asset": "nrc01/126.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/126.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Weapon",
+   "Echo",
+   "Deadlock Stun: 2"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "speed": 4,
+  "attack_zone": "mid",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 127,
+  "numero_image": 127,
+  "type": "asset",
+  "name": "Heaven & Earth Scrolls",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "earth"
+  ],
+  "text": "form, sacrifice: unflip 1 foundation.\nEnhance, remove, remove another copy of this card: Clear up to 2 cards from either player's card pool.",
+  "asset": "nrc01/127.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/127.jpg",
+  "cube_copies": 4,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 128,
+  "numero_image": 128,
+  "type": "attack",
+  "name": "Ino Sakura Double Knockout",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "fire",
+   "void"
+  ],
+  "text": "If this attack is completely blocked, each player loses 2 health.\nWhen you completely block an attack with this card, each player loses 2 health.",
+  "asset": "nrc01/128.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/128.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Powerful: 2",
+   "Deadlock Breaker: 3",
+   "Punch",
+   "Punch"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 3,
+  "block_zone": "mid",
+  "speed": 5,
+  "attack_zone": "mid",
+  "damage": 5
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 129,
+  "numero_image": 129,
+  "type": "backup",
+  "name": "Konohamaru",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "good",
+   "order"
+  ],
+  "text": "Response, commit: after a player makes a check, if that check was modified, that player re-checks.\nEnhance, remove: build 1 foundation with difficulty 2 or less from your discard pile.",
+  "asset": "nrc01/129.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/129.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Ally",
+   "Unique"
+  ],
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "vitality": 2
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 130,
+  "numero_image": 130,
+  "type": "attack",
+  "name": "Summon: Ninja Toad",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "water",
+   "chaos"
+  ],
+  "text": "First enhance: your rival adds the top X cards of their deck to their card pool. X equals your momentum.",
+  "asset": "nrc01/130.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/130.jpg",
+  "cube_copies": 3,
+  "keywords": [
+   "Ally",
+   "Charge",
+   "Deflect: 2"
+  ],
+  "difficulty": 9,
+  "control": 4,
+  "block_modifier": 1,
+  "block_zone": "low",
+  "speed": 4,
+  "attack_zone": "high",
+  "damage": 10
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 131,
+  "numero_image": 131,
+  "type": "asset",
+  "name": "Genin Trading Cards",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "evil"
+  ],
+  "text": "first enhance, sacrifice: look at your rival's hand and the top card of both players' decks. You may change the zone of your attack.\nDeadlock first form: your attacks with printed difficulty 7 or greater have -2 difficulty this turn.",
+  "asset": "nrc01/131.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/131.jpg",
+  "cube_copies": 2,
+  "difficulty": 3,
+  "control": 5,
+  "block_modifier": 1,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 132,
+  "numero_image": 132,
+  "type": "foundation",
+  "name": "Written Exam",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "infinity"
+  ],
+  "text": "enhance, flip: draw 1 card",
+  "asset": "nrc01/132.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/132.jpg",
+  "cube_copies": 4,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 133,
+  "numero_image": 133,
+  "type": "foundation",
+  "name": "Mysterious Arrivals",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "water"
+  ],
+  "text": "enhance, flip: if you have played an ability on an action card this turn, draw 1 card.",
+  "asset": "nrc01/133.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/133.jpg",
+  "cube_copies": 4,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 134,
+  "numero_image": 134,
+  "type": "foundation",
+  "name": "Intense Rivalry",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "air",
+   "good"
+  ],
+  "text": "enhance, flip: each player draws 1 card. If your hand size is equal to your rival's, draw 1 card, otherwise, your rival discards 1 card.",
+  "asset": "nrc01/134.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/134.jpg",
+  "cube_copies": 4,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 135,
+  "numero_image": 135,
+  "type": "foundation",
+  "name": "Intro To Ninjutsu",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "infinity"
+  ],
+  "text": "After your rival plays an ability on their character card, draw 1 card.",
+  "asset": "nrc01/135.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/135.jpg",
+  "cube_copies": 4,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 136,
+  "numero_image": 136,
+  "type": "foundation",
+  "name": "Water Prison Jutsu",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "order",
+   "water",
+   "fire"
+  ],
+  "text": "enhance, flip: change the zone of this attack to MID.\nEnhance, flip: this attack gets -2 speed.",
+  "asset": "nrc01/136.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/136.jpg",
+  "cube_copies": 3,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 137,
+  "numero_image": 137,
+  "type": "foundation",
+  "name": "Sand Armor",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "death",
+   "life"
+  ],
+  "text": "after you play this card as a block, this attack is considered partially blocked.",
+  "asset": "nrc01/137.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/137.jpg",
+  "cube_copies": 3,
+  "difficulty": 0,
+  "control": 5,
+  "block_modifier": 0,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 138,
+  "numero_image": 138,
+  "type": "foundation",
+  "name": "Experimental Augments",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "evil",
+   "void"
+  ],
+  "text": "Response: After you block with this card, seal the blocked attack.\nEnhance, commit: If a player has cycled this game, add this card to your hand.",
+  "asset": "nrc01/138.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/138.jpg",
+  "cube_copies": 3,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 139,
+  "numero_image": 139,
+  "type": "foundation",
+  "name": "Leaf Jonin Intervention",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth",
+   "all",
+   "good"
+  ],
+  "text": "Response, Flip 1 foundation: after you partially block with this card, your rival must play a non-attack card as their next form or pass.\nEnhance, spend 1 momentum: add this card to your hand. you may change the zone of this attack.",
+  "asset": "nrc01/139.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/139.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 4,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 140,
+  "numero_image": 140,
+  "type": "attack",
+  "name": "Sonic Resonation Strike",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death"
+  ],
+  "text": "Response: After this attack is blocked, your rival sacrifices 1 foundation.\nResponse: After this attack deals damage, build the top card of your deck committed.",
+  "asset": "nrc01/140.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/140.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Slam"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "mid",
+  "speed": 3,
+  "attack_zone": "mid",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 141,
+  "numero_image": 141,
+  "type": "attack",
+  "name": "Senbon Rainstorm",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "water"
+  ],
+  "text": "Enhance, flip 1 foundation: ready 1 foundation.",
+  "asset": "nrc01/141.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/141.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Ranged",
+   "Weapon"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 3,
+  "block_zone": "high",
+  "speed": 4,
+  "attack_zone": "high",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 142,
+  "numero_image": 142,
+  "type": "attack",
+  "name": "Ink Clone Swarm",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "earth"
+  ],
+  "text": "",
+  "asset": "nrc01/142.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/142.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Echo",
+   "Deflect: 3"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 3,
+  "block_zone": "mid",
+  "speed": 3,
+  "attack_zone": "low",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 143,
+  "numero_image": 143,
+  "type": "attack",
+  "name": "Chakra Draining Grasp",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "void"
+  ],
+  "text": "response, [card pool], flip: after your rival plays a keyword ability, cancel it. If they spent 1 or more momentum to pay the cost of the ability, gain 1 health.",
+  "asset": "nrc01/143.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/143.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Stun: 1",
+   "Punch"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 3,
+  "block_zone": "mid",
+  "speed": 4,
+  "attack_zone": "mid",
+  "damage": 5
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 144,
+  "numero_image": 144,
+  "type": "attack",
+  "name": "I'll Break Your Neck",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "evil"
+  ],
+  "text": "Deadlock enhance: your rival's next check to play a card gets -3.",
+  "asset": "nrc01/144.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/144.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Throw"
+  ],
+  "difficulty": 6,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "high",
+  "speed": 4,
+  "attack_zone": "low",
+  "damage": 9
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 145,
+  "numero_image": 145,
+  "type": "attack",
+  "name": "Bellstrung Needles",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air"
+  ],
+  "text": "While this attack is in your card pool, your attacks get +1 speed. \nEnhance: this attack gets +1 speed for each attack in your card pool.",
+  "asset": "nrc01/145.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/145.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Ranged",
+   "Weapon"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "high",
+  "speed": 2,
+  "attack_zone": "high",
+  "damage": 5
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 146,
+  "numero_image": 146,
+  "type": "attack",
+  "name": "Defending Konoha",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "good"
+  ],
+  "text": "Response: after a foundation card enters your discard pile from your hand or deck during this attack's enhance step, add that card to your hand.",
+  "asset": "nrc01/146.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/146.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Slam"
+  ],
+  "difficulty": 6,
+  "control": 3,
+  "block_modifier": 1,
+  "block_zone": "low",
+  "speed": 5,
+  "attack_zone": "mid",
+  "damage": 0
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 147,
+  "numero_image": 147,
+  "type": "attack",
+  "name": "Fireball Jutsu",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "fire"
+  ],
+  "text": "",
+  "asset": "nrc01/147.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/147.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Powerful: 3",
+   "Ranged",
+   "Charge"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 1,
+  "block_zone": "high",
+  "speed": 5,
+  "attack_zone": "high",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 148,
+  "numero_image": 148,
+  "type": "attack",
+  "name": "Fakeout Ambush",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all"
+  ],
+  "text": "Enhance: look at the top card of your deck, you may mill 1.",
+  "asset": "nrc01/148.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/148.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Frenzy",
+   "Weapon"
+  ],
+  "difficulty": 3,
+  "control": 3,
+  "block_modifier": 1,
+  "block_zone": "mid",
+  "speed": 3,
+  "attack_zone": "high",
+  "damage": 3
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 149,
+  "numero_image": 149,
+  "type": "attack",
+  "name": "Shukaku, One Tailed Beast",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos"
+  ],
+  "text": "Enhance: your next check to play an attack gets +1\nDeadlock Enhance: draw 2 cards.",
+  "asset": "nrc01/149.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/149.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Ally",
+   "Slam"
+  ],
+  "difficulty": 7,
+  "control": 4,
+  "block_modifier": 1,
+  "block_zone": "low",
+  "speed": 7,
+  "attack_zone": "high",
+  "damage": 7
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 150,
+  "numero_image": 150,
+  "type": "attack",
+  "name": "Armor Cracking Haymaker",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "order"
+  ],
+  "text": "Enhance: name a card type. Reveal the top card of your deck. If it is the named type, add it to your hand.",
+  "asset": "nrc01/150.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/150.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Stun: 2",
+   "Punch"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "high",
+  "speed": 4,
+  "attack_zone": "mid",
+  "damage": 5
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 151,
+  "numero_image": 151,
+  "type": "attack",
+  "name": "Iruka's Dedication",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "life"
+  ],
+  "text": "response: after this attack deals damage, the next attack card you play this turn ignores progressive difficulty.",
+  "asset": "nrc01/151.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/151.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Weapon"
+  ],
+  "difficulty": 2,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "high",
+  "speed": 2,
+  "attack_zone": "mid",
+  "damage": 2
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 152,
+  "numero_image": 152,
+  "type": "foundation",
+  "name": "Genjutsu Release!",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "void"
+  ],
+  "text": "response, flip: after your rival plays an attack, players cannot spend momentum during this attack.\nDeadlock form, remove: Your rival discards their entire momentum. Your Rival may sacrifice 3 foundations to cancel this ability.",
+  "asset": "nrc01/152.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/152.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 153,
+  "numero_image": 153,
+  "type": "foundation",
+  "name": "Tournament Arc",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "infinity"
+  ],
+  "text": "response, commit 1 foundation: before you make a check to block with this card, change its block zone to the zone of this attack.",
+  "asset": "nrc01/153.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/153.jpg",
+  "cube_copies": 3,
+  "difficulty": 0,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 154,
+  "numero_image": 154,
+  "type": "action",
+  "name": "Launch The Invasion",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "evil",
+   "order",
+   "void"
+  ],
+  "text": "Form, spend 1 momentum: Commit 1 card in your rival's stage. If a player has cycled this game, remove this card.\nForm: your next attack has -3 difficulty.",
+  "asset": "nrc01/154.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/154.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 4,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 155,
+  "numero_image": 155,
+  "type": "action",
+  "name": "Substitution Jutsu",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "infinity"
+  ],
+  "text": "Response: After you block with this card, this attack deals no damage. You may spend 1 momentum, if you do, remove this card.",
+  "asset": "nrc01/155.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/155.jpg",
+  "cube_copies": 4,
+  "difficulty": 2,
+  "control": 4,
+  "block_modifier": 1,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 156,
+  "numero_image": 156,
+  "type": "asset",
+  "name": "Orochimaru's Curse Mark",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "evil",
+   "fire"
+  ],
+  "text": "At the start of your combat phase, spend 1 momentum and lose 2 health, then put a curse counter on this card.\nForm (once per turn): Your next attack gets +X speed and +X damage. X is the number of curse counters on this card.",
+  "asset": "nrc01/156.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/156.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Breaker: 1"
+  ],
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 157,
+  "numero_image": 157,
+  "type": "foundation",
+  "name": "Nine Tails Awakening",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "chaos",
+   "evil",
+   "good"
+  ],
+  "text": "Response: after you build this foundation during the combat phase, draw 1 card.\nResponse [card pool]: after an attack is played, build this card.\nEnhance, commit, spend 1 momentum: this attack gets +3 speed.",
+  "asset": "nrc01/157.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/157.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Unique"
+  ],
+  "difficulty": 4,
+  "control": 6,
+  "block_modifier": 3,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 158,
+  "numero_image": 158,
+  "type": "attack",
+  "name": "Shukaku Awakens",
+  "rarity": "ultra rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "earth",
+   "chaos"
+  ],
+  "text": "Enhance, commit your character: after this attack resolves, each player chooses 4 foundations in their stage and sacrifices the rest.",
+  "asset": "nrc01/158.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/158.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Fury"
+  ],
+  "difficulty": 9,
+  "control": 4,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "speed": 5,
+  "attack_zone": "mid",
+  "damage": 11
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 159,
+  "numero_image": 159,
+  "type": "action",
+  "name": "Secret Reaper Technique",
+  "rarity": "ultra rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "good",
+   "death"
+  ],
+  "text": "Response, remove: after your rival plays an ability, cancel it. You lose 10 health.\nResponse, after you play this card, seal the next attack played this turn.",
+  "asset": "nrc01/159.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/159.jpg",
+  "cube_copies": 2,
+  "keywords": [
+   "Breaker: 2"
+  ],
+  "difficulty": 1,
+  "control": 6,
+  "block_modifier": 3,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 160,
+  "numero_image": 160,
+  "type": "foundation",
+  "name": "\"Naruto Run\"",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "fire"
+  ],
+  "text": "Response, remove: after this card enters your discard pile during the enhance step, this attack gets +1 speed.",
+  "asset": "nrc01/160.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/160.jpg",
+  "cube_copies": 4,
+  "difficulty": 0,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 161,
+  "numero_image": 161,
+  "type": "attack",
+  "name": "Kakashi's Lightning Strike",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "order",
+   "chaos"
+  ],
+  "text": "Enhance: if you have played an action this turn, this attack gets +2 damage.\nEnhance: if a player has cycled this game, this attack gets +3 speed.",
+  "asset": "nrc01/161.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/161.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Charge"
+  ],
+  "difficulty": 4,
+  "control": 3,
+  "block_modifier": 2,
+  "block_zone": "low",
+  "speed": 4,
+  "attack_zone": "high",
+  "damage": 4
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 162,
+  "numero_image": 162,
+  "type": "attack",
+  "name": "The Power Of Youth!",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "good",
+   "all",
+   "earth"
+  ],
+  "text": "Enhance: if you have more face down foundations than your rival, flip 1 rival foundation.\nDeadlock enhance: flip 1 rival foundation.",
+  "asset": "nrc01/162.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/162.jpg",
+  "cube_copies": 4,
+  "keywords": [
+   "Punch",
+   "Powerful: 2"
+  ],
+  "difficulty": 5,
+  "control": 3,
+  "block_modifier": 1,
+  "block_zone": "low",
+  "speed": 3,
+  "attack_zone": "low",
+  "damage": 5
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 163,
+  "numero_image": 163,
+  "type": "asset",
+  "name": "Chopsticks",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "infinity"
+  ],
+  "text": "Response [Draft Pool]: Announce you are using chopsticks and reveal this card. Place chopsticks into your current draft pack. You may draft an additional card from this draft pack.\nEnhance, sacrifice chopsticks: ready 1 foundation.",
+  "asset": "nrc01/163.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/163.jpg",
+  "cube_copies": 2,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 164,
+  "numero_image": 164,
+  "type": "attack",
+  "name": "Summoning Scroll: Hydra",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "death"
+  ],
+  "text": "Enhance, remove 3 other cards from your card pool: Destroy 1 rival foundation.",
+  "asset": "nrc01/164.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/164.jpg",
+  "cube_copies": 4,
+  "difficulty": 8,
+  "control": 4,
+  "block_modifier": 2,
+  "block_zone": "mid",
+  "speed": 8,
+  "attack_zone": "mid",
+  "damage": 8
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 165,
+  "numero_image": 165,
+  "type": "foundation",
+  "name": "Orphan of The Mist",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "order",
+   "death",
+   "void"
+  ],
+  "text": "enhance (your turn), sacrifice 1 foundation: your rival commits 1 foundation.\nDeadlock enhance, sacrifice: your rival sacrifices 3 foundations.",
+  "asset": "nrc01/165.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/165.jpg",
+  "cube_copies": 4,
+  "difficulty": 2,
+  "control": 4,
+  "block_modifier": 2,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 166,
+  "numero_image": 166,
+  "type": "foundation",
+  "name": "High Block",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "infinity"
+  ],
+  "text": "blank",
+  "asset": "nrc01/166.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/166.jpg",
+  "cube_copies": 3,
+  "difficulty": 1,
+  "control": 6,
+  "block_modifier": 1,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 167,
+  "numero_image": 167,
+  "type": "foundation",
+  "name": "Meet Cute",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "air",
+   "chaos",
+   "fire"
+  ],
+  "text": "Enhance, flip, mill 3: your rival mill's 3, then each player adds 1 card from their discard pile to the top of their deck.",
+  "asset": "nrc01/167.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/167.jpg",
+  "cube_copies": 4,
+  "difficulty": 1,
+  "control": 5,
+  "block_modifier": 3,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 168,
+  "numero_image": 168,
+  "type": "foundation",
+  "name": "Low Block",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "infinity"
+  ],
+  "text": "blank",
+  "asset": "nrc01/168.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/168.jpg",
+  "cube_copies": 3,
+  "difficulty": 1,
+  "control": 6,
+  "block_modifier": 1,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 169,
+  "numero_image": 169,
+  "type": "foundation",
+  "name": "Small Town Thugs",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "fire",
+   "air",
+   "evil"
+  ],
+  "text": "enhance, sacrifice 1 foundation: your rival checks against a 6. If they fail, your attack gets +1 damage.",
+  "asset": "nrc01/169.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/169.jpg",
+  "cube_copies": 4,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 170,
+  "numero_image": 170,
+  "type": "foundation",
+  "name": "Trained With Passion",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "fire",
+   "life",
+   "earth"
+  ],
+  "text": "Enhance, commit: this attack gets -2 speed.\nEnhance, spend 1 momentum: ready this foundation.",
+  "asset": "nrc01/170.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/170.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "mid"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 171,
+  "numero_image": 171,
+  "type": "foundation",
+  "name": "Ocular Jutsu User",
+  "rarity": "common",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "fire",
+   "water"
+  ],
+  "text": "enhance, remove, discard 2 cards: add 1 action card from your discard pile to your hand.\nEnhance, flip: each player who has cycled this game removes the top 3 cards of their discard pile.",
+  "asset": "nrc01/171.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/171.jpg",
+  "cube_copies": 4,
+  "difficulty": 1,
+  "control": 4,
+  "block_modifier": 3,
+  "block_zone": "high"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 172,
+  "numero_image": 172,
+  "type": "foundation",
+  "name": "Jonin's Approval",
+  "rarity": "uncommon",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "all",
+   "chaos",
+   "water"
+  ],
+  "text": "response, commit: after your attack is blocked, your next check to play a card gets +2",
+  "asset": "nrc01/172.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/172.jpg",
+  "cube_copies": 3,
+  "difficulty": 2,
+  "control": 5,
+  "block_modifier": 2,
+  "block_zone": "low"
+ },
+ {
+  "extension_short": "nrc01",
+  "numero": 173,
+  "numero_image": 173,
+  "type": "foundation",
+  "name": "Kabuto's Betrayal",
+  "rarity": "rare",
+  "extension": "Naruto Cube",
+  "formats": [
+   "custom"
+  ],
+  "resources": [
+   "death",
+   "life",
+   "chaos"
+  ],
+  "text": "response, remove: after your rival plays their 3rd or greater foundation this turn, destroy 1 rival foundation.\nEnhance, flip: your rival sacrifices 1 foundation.",
+  "asset": "nrc01/173.jpg",
+  "image_url": "https://img.builduvs.com/nrc01/173.jpg",
+  "cube_copies": 2,
+  "difficulty": 3,
+  "control": 5,
+  "block_modifier": 1,
+  "block_zone": "mid"
+ }
+]

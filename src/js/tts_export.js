@@ -8,6 +8,8 @@ function randomGuid() {
 }
 
 function faceUrl(card) {
+  // Cards UVSUltra doesn't have (custom cards, src/js/custom.js) name their own art.
+  if (card.image_url) return card.image_url
   if (card.ultra_url_path) {
     // Drop `-preview` for the full-resolution image (e.g. 013-preview.jpg -> 013.jpg)
     return card.ultra_url_path
@@ -145,7 +147,7 @@ function makePile(nickname, cards, getPrefix, posX, faceDown) {
 // endpoint's manifest (scripts/gen-tts-manifest.mjs) stores only these, so the
 // edge function can rebuild a deck without bundling the whole card database.
 const TTS_CARD_FIELDS = [
-  'name', 'type', 'asset', 'ultra_url_path', 'extension_short',
+  'name', 'type', 'asset', 'image_url', 'ultra_url_path', 'extension_short',
   'numero_image', 'numero', 'card_number_image', 'card_number',
 ]
 

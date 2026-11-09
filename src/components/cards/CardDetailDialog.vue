@@ -110,7 +110,8 @@ function browse() {
 
 const copied = ref(false)
 function copyLink() {
-  copyToClipboard(location.origin + cardPath(card.value)).then(() => {
+  // resolve().href carries the router base, so a /naruto card links back there.
+  copyToClipboard(location.origin + router.resolve(cardPath(card.value)).href).then(() => {
     copied.value = true
     setTimeout(() => { copied.value = false }, 1500)
   })

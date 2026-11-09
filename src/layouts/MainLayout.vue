@@ -7,6 +7,7 @@ import DeckView from "src/components/deck/DeckView.vue";
 import NowBuilding from "src/components/deck/NowBuilding.vue";
 import NavCardSearch from "src/components/NavCardSearch.vue";
 import CardDetailDialog from "src/components/cards/CardDetailDialog.vue";
+import { custom } from "src/js/custom";
 
 const { hasDeck, hasMaybe } = storeToRefs(useDeckStore());
 
@@ -30,7 +31,9 @@ function toggleRightDrawer() {
 
 <template>
   <q-layout view="hhr lpR fFf">
-    <q-header reveal elevated class="bg-primary text-white">
+    <!-- Custom cards get their own colour and a standing notice, so nobody
+         mistakes them for real ones. -->
+    <q-header reveal elevated :class="custom ? 'bg-deep-orange-9 text-white' : 'bg-primary text-white'">
       <q-toolbar>
         <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
@@ -44,7 +47,7 @@ function toggleRightDrawer() {
               alt="logo"
             />
           </q-avatar>
-          <span class="gt-xs">BuildUVS</span>
+          <span class="gt-xs">{{ custom ? custom.title : "BuildUVS" }}</span>
         </q-toolbar-title>
         <!-- <NamePicker /> -->
         <NavCardSearch />
@@ -53,10 +56,34 @@ function toggleRightDrawer() {
              the deck from inside the drawer would otherwise strand it open. -->
         <NowBuilding v-if="hasDeck || hasMaybe || rightDrawerOpen" @click="toggleRightDrawer" />
       </q-toolbar>
+      <div v-if="custom" class="custom-notice">
+        Unofficial fan-made custom cards, not UniVersus product.
+        <!-- A plain link: the router can't leave its base. -->
+        <a href="/">Back to BuildUVS</a>
+      </div>
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" side="left" behavior="mobile" elevated>
-      <q-list>
+      <q-list v-if="custom">
+        <q-item clickable v-ripple to="/" exact :class="{ 'menu-active': route.path === '/' || isActive('/cards') }">
+          <q-item-section avatar><q-icon name="search" /></q-item-section>
+          <q-item-section>Card Search</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/deck" :class="{ 'menu-active': isActive('/deck') }">
+          <q-item-section avatar><q-icon name="style" /></q-item-section>
+          <q-item-section>Your Deck</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple to="/tiers" :class="{ 'menu-active': isActive('/tiers') }">
+          <q-item-section avatar><q-icon name="leaderboard" /></q-item-section>
+          <q-item-section>Tier Maker</q-item-section>
+        </q-item>
+        <q-separator />
+        <q-item clickable v-ripple href="/">
+          <q-item-section avatar><q-icon name="logout" /></q-item-section>
+          <q-item-section>Back to BuildUVS</q-item-section>
+        </q-item>
+      </q-list>
+      <q-list v-else>
         <q-item clickable v-ripple to="/" exact :class="{ 'menu-active': isActive('/') }">
           <q-item-section avatar><q-icon name="sports_esports" /></q-item-section>
           <q-item-section>Game Tracker</q-item-section>
@@ -123,6 +150,16 @@ function toggleRightDrawer() {
 }
 .menu-active :deep(.q-icon) {
   color: var(--q-primary);
+}
+.custom-notice {
+  padding: 4px 16px;
+  font-size: 0.85rem;
+  background: rgba(0, 0, 0, 0.25);
+}
+.custom-notice a {
+  color: inherit;
+  font-weight: 600;
+  margin-left: 6px;
 }
 </style>
 

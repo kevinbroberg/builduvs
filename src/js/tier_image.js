@@ -12,6 +12,7 @@ import { getCardImage } from 'src/js/image_helper'
 import { parseTierLabel } from 'src/js/tier_emoji'
 import { textOn } from 'src/js/tier_colors'
 import { avatarFrame, avatarColors, avatarLines, avatarFontSize, CARD_ASPECT } from 'src/js/card_avatar'
+import { custom } from 'src/js/custom'
 
 const WIDTH = 1080            // layout width in CSS px; the file is up to SCALE times this
 const SCALE = 2
@@ -323,7 +324,7 @@ export async function renderTierImage({ title, tiers, rowColor, mode, dark }, on
   ctx.fillStyle = theme.muted
   ctx.textAlign = 'right'
   ctx.textBaseline = 'alphabetic'
-  ctx.fillText('builduvs.com/tiers', WIDTH - PAD - 4, height - PAD - 2)
+  ctx.fillText(`builduvs.com${custom ? custom.base : ''}/tiers`, WIDTH - PAD - 4, height - PAD - 2)
 
   // Each face draws as soon as its art arrives and the art is let go, so a big list
   // never holds hundreds of full-size card images at once.

@@ -27,10 +27,12 @@
         <q-separator />
         <ToggleGroup name="Type" v-model:picks="selections.types" :options="typeOptions"/>
         <q-separator />
-        <ToggleGroup name="Legal in" v-model:picks="selections.legal_in" :options="legalInOptions">
-          <template v-slot:button="{selected}">{{ formatLabels[selected] }}</template>
-        </ToggleGroup>
-        <q-separator />
+        <template v-if="legalInOptions.length">
+          <ToggleGroup name="Legal in" v-model:picks="selections.legal_in" :options="legalInOptions">
+            <template v-slot:button="{selected}">{{ formatLabels[selected] }}</template>
+          </ToggleGroup>
+          <q-separator />
+        </template>
         <ToggleGroup name="Rarity" v-model:picks="selections.rarity" :options="rarityOptions" />
         <q-separator />
         <ToggleGroup name="Difficulty" v-model:picks="selections.difficulty" :options="difficulties" />
@@ -164,7 +166,7 @@ export default {
     async copyFilterLink() {
       let linkMHA = provider.mhaOnlySelected()
       let skips = linkMHA ? ["formats"] : []
-      let filterLink = location.origin + this.$route.path + '?' + provider.getFilterPath(skips)
+      let filterLink = location.origin + this.$router.resolve(this.$route.path).href + '?' + provider.getFilterPath(skips)
       await copyToClipboard(filterLink)
     },
     clearFilters() {

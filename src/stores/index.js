@@ -1,12 +1,17 @@
 import { store } from "quasar/wrappers";
 import { watch, toRaw, toRef } from "vue";
 import { createPinia } from "pinia";
+import { custom } from "src/js/custom";
 
 // Stores that are deliberately session-only and never written to localStorage.
 // The playtest board holds a full card object per physical card (~53KB for a 65-card
 // deck) and rewrites on every click; it is also a transient game state, not a document
 // worth resuming. Navigate away and the board is gone, by design.
 const EPHEMERAL_STORES = new Set(["playtest"]);
+
+// Each custom-cards project keeps its own decks and settings, so its cards never
+// show up in a real deck (or the deck library) and vice versa. See src/js/custom.js.
+const STORAGE_KEY = custom ? `builduvs_custom_${custom.id}_pinia` : "builduvs_pinia";
 
 function persistableState(state) {
   const out = {};
@@ -37,7 +42,7 @@ export default store((/* { ssrContext } */) => {
   });
 
   try {
-    const saved = window.localStorage.getItem("builduvs_pinia");
+    const saved = window.localStorage.getItem(STORAGE_KEY);
     if (saved) {
       const parsed = JSON.parse(saved);
       // Drop any slice left behind by an older build that did persist these.
@@ -46,7 +51,7 @@ export default store((/* { ssrContext } */) => {
     }
   } catch (e) {
     console.warn("Could not restore saved state:", e);
-    window.localStorage.removeItem("builduvs_pinia");
+    window.localStorage.removeItem(STORAGE_KEY);
   }
 
   // Cheap guard: the deep watcher also fires for ephemeral stores, so a playtest
@@ -64,7 +69,7 @@ export default store((/* { ssrContext } */) => {
       );
       if (json === lastWritten) return;
       lastWritten = json;
-      window.localStorage.setItem("builduvs_pinia", json);
+      window.localStorage.setItem(STORAGE_KEY, json);
     },
     { deep: true }
   );

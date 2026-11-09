@@ -2,6 +2,7 @@ import { route } from 'quasar/wrappers'
 import { createRouter, createMemoryHistory, createWebHistory, createWebHashHistory } from 'vue-router'
 import routes from './routes'
 import { setPageTitle } from 'src/js/page_title'
+import { custom } from 'src/js/custom'
 
 /*
  * If not building with SSR mode, you can
@@ -25,7 +26,8 @@ export default route(function (/* { store, ssrContext } */) {
     // Leave this as is and make changes in quasar.conf.js instead!
     // quasar.conf.js -> build -> vueRouterMode
     // quasar.conf.js -> build -> publicPath
-    history: createHistory(process.env.VUE_ROUTER_BASE)
+    // A custom-cards project runs the app under its own base (src/js/custom.js).
+    history: createHistory(custom ? custom.base : process.env.VUE_ROUTER_BASE)
   })
 
   // Base title from route meta. Content pages (deck, decklists) refine this

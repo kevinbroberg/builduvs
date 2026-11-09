@@ -1,3 +1,5 @@
+import { custom } from "src/js/custom";
+
 const routes = [
   {
     path: "/",
@@ -112,4 +114,51 @@ const routes = [
     ],
   },
 ];
-export default routes;
+
+// A custom-cards project (src/js/custom.js): card search, deck building and the
+// Tier Maker, at paths relative to its base (/naruto). Pages that read UniVersus
+// data other than the card pool (decklists, majors, precons) don't exist here.
+const customRoutes = [
+  {
+    path: "/",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "",
+        component: () => import("src/pages/CardHome.vue"),
+        props: (route) => ({ query: route.query }),
+        meta: { title: "Card Search" },
+      },
+      {
+        path: "/cards",
+        component: () => import("src/pages/CardHome.vue"),
+        props: (route) => ({ query: route.query }),
+        meta: { title: "Card Search" },
+      },
+      {
+        path: "/cards/:set/:number",
+        component: () => import("src/pages/CardHome.vue"),
+        props: (route) => ({ query: route.query }),
+        meta: { title: "Card Search" },
+      },
+      {
+        path: "/deck",
+        component: () => import("src/pages/DeckHome.vue"),
+        meta: { title: "Your Deck" },
+      },
+      {
+        path: "/tiers",
+        component: () => import("src/pages/TierMaker.vue"),
+        meta: { title: "Tier Maker" },
+      },
+      {
+        path: "/tiers/rank",
+        component: () => import("src/pages/TierMaker.vue"),
+        meta: { title: "Tier Maker" },
+      },
+      { path: "/:catchAll(.*)*", redirect: "/" },
+    ],
+  },
+];
+
+export default custom ? customRoutes : routes;

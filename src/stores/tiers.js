@@ -9,7 +9,9 @@ import { printingFormat, fitsFormat } from 'src/js/formats'
 // and a setup store's slice holds raw refs there, which JSON.stringify chokes on.
 // Keys added later get their defaults on load (stores/index.js, BUVS-0005).
 
-const FAIRY_TAIL = cards.find(c => c.extension_short === 'ft01')?.extension
+// The default pool's set. Custom cards (src/js/custom.js) have no Fairy Tail, so
+// they fall back to the pool's first (newest) set.
+const DEFAULT_SET = (cards.find(c => c.extension_short === 'ft01') ?? cards[0])?.extension
 
 // A tier's `rowColor` overrides the board-wide `rowColor` behind its cards; null
 // (or absent, in older saves) means "use the board's".
@@ -26,7 +28,7 @@ export const DEFAULT_TIERS = () => [
 // a hand-picked list, quick adds just join `cards`).
 export const DEFAULT_CRITERIA = () => ({
   types: ['character'],
-  sets: FAIRY_TAIL ? [FAIRY_TAIL] : [],
+  sets: DEFAULT_SET ? [DEFAULT_SET] : [],
   rarities: [],
   cards: null,
   extra: [],
@@ -38,14 +40,15 @@ export const POOL = 'pool'
 export const ALL_SETS = [...new Set(cards.map(c => c.extension))]
 
 // Quick picks for the setup page's set list: the sets each format draws from,
-// per the set table in src/js/formats.js.
+// per the set table in src/js/formats.js. Formats with no sets (all of them, in
+// custom cards) are left out rather than offered as empty picks.
 const setFormat = new Map(cards.map(c => [c.extension, printingFormat(c)]))
 const setsIn = format => ALL_SETS.filter(s => fitsFormat(setFormat.get(s), format))
-export const FORMAT_SETS = {
+export const FORMAT_SETS = Object.fromEntries(Object.entries({
   Standard: setsIn('standard'),
   HeroToo: setsIn('heroToo'),
   Retro: setsIn('retro'),
-}
+}).filter(([, sets]) => sets.length))
 
 // The cards a criteria object selects, one per name. `cards` runs newest set first,
 // so a reprint resolves to its latest printing (within the chosen sets and rarities).

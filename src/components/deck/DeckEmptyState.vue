@@ -4,6 +4,7 @@
 import { ref } from 'vue'
 import DeckDialog from './DeckDialog.vue'
 import AddCardsDialog from './AddCardsDialog.vue'
+import { custom } from 'src/js/custom'
 
 defineProps({ compact: Boolean })
 
@@ -16,7 +17,7 @@ const addCardsOpen = ref(false)
     <DeckDialog />
     <p class="empty-state__text">or start from scratch</p>
     <q-btn push icon="search" label="Add Cards" @click="addCardsOpen = true" />
-    <p class="empty-state__text">
+    <p v-if="!custom" class="empty-state__text">
       or browse
       <router-link to="/lists" class="locals-link">Local Championship decklists</router-link>
     </p>
