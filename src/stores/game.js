@@ -8,6 +8,11 @@ export const useGameStore = defineStore("game", {
     defaultDamage: 5,
     defaultZone: "mid",
 
+    // Life-total swipe sizes (magnitudes): swiping up adds swipeUpAmount,
+    // swiping down subtracts swipeDownAmount.
+    swipeUpAmount: 4,
+    swipeDownAmount: 3,
+
     // Player 1 state
     player1: {
       name: "Me",
@@ -61,6 +66,27 @@ export const useGameStore = defineStore("game", {
 
     decrementDefaultDamage() {
       this.defaultDamage--;
+    },
+
+    setSwipeUpAmount(value) {
+      this.swipeUpAmount = Math.max(1, value);
+    },
+
+    setSwipeDownAmount(value) {
+      this.swipeDownAmount = Math.max(1, value);
+    },
+
+    /**
+     * Applies a swipe gesture to a player's life total as one undoable step.
+     * @param {"player1"|"player2"} playerKey
+     * @param {"up"|"down"} direction
+     */
+    swipePlayer(playerKey, direction) {
+      const d = Damage.swipe(
+        direction === "up" ? this.swipeUpAmount : -this.swipeDownAmount
+      );
+      this[playerKey].health += d.value;
+      this[playerKey].history.push(d);
     },
 
     // ===== PLAYER NAME ACTIONS =====

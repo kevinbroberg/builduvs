@@ -15,6 +15,10 @@ export class Damage {
     return new Damage("tap", -1);
   }
 
+  static swipe(delta) {
+    return new Damage("swipe", delta);
+  }
+
   static unblocked(x) {
     return new Damage("hit", -x);
   }

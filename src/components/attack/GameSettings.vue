@@ -2,8 +2,10 @@
 import CounterBox from "src/components/attack/CounterBox.vue";
 import SimpleTypePicker from "src/components/filter/SimpleTypePicker.vue";
 import { useGameStore } from "src/stores/game";
+import { useDeckStore } from "src/stores/deck";
 
 const game = useGameStore();
+const deck = useDeckStore();
 
 function onP1Character(card) {
   if (card?.vitality) game.setPlayer1StartingHealth(card.vitality);
@@ -41,6 +43,7 @@ function goNextZone() {
             <SimpleTypePicker
               type="character"
               label="Pick character"
+              :initial="deck.face?.name"
               @update:choice="onP1Character"
             />
             <CounterBox
@@ -151,6 +154,43 @@ function goNextZone() {
               @down="game.decrementDefaultDamage()"
             >
               <h3 class="q-ma-none text-center">{{ game.defaultDamage }}</h3>
+            </CounterBox>
+          </div>
+        </div>
+      </q-card-section>
+    </q-card>
+
+    <!-- Life swipe sizes -->
+    <q-card flat bordered class="q-mt-md">
+      <q-card-section>
+        <div class="text-h6">Life swipe</div>
+        <div class="text-caption">
+          Swipe across a life total (bottom to top, or top to bottom) for a
+          bigger change in one step.
+        </div>
+      </q-card-section>
+      <q-card-section>
+        <div class="row q-col-gutter-md items-center">
+          <div class="col-6">
+            <CounterBox
+              @up="game.setSwipeUpAmount(game.swipeUpAmount + 1)"
+              @down="game.setSwipeUpAmount(game.swipeUpAmount - 1)"
+            >
+              <div class="text-h4 text-center q-pa-sm">
+                +{{ game.swipeUpAmount }}
+              </div>
+              <div class="text-caption text-center">Swipe up</div>
+            </CounterBox>
+          </div>
+          <div class="col-6">
+            <CounterBox
+              @up="game.setSwipeDownAmount(game.swipeDownAmount + 1)"
+              @down="game.setSwipeDownAmount(game.swipeDownAmount - 1)"
+            >
+              <div class="text-h4 text-center q-pa-sm">
+                −{{ game.swipeDownAmount }}
+              </div>
+              <div class="text-caption text-center">Swipe down</div>
             </CounterBox>
           </div>
         </div>

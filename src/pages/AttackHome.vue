@@ -69,6 +69,17 @@ const configDialog = ref(false);
       <h3>{{ currentDamage }}</h3>
     </CounterBox>
 
+    <q-btn
+      class="fab-reset-attack"
+      fab
+      color="positive"
+      icon="restore_page"
+      padding="md"
+      aria-label="Reset attack"
+      @click="resetAttack"
+    >
+      <q-tooltip>Reset attack</q-tooltip>
+    </q-btn>
     <q-fab
       class="fab"
       icon="menu"
@@ -78,12 +89,6 @@ const configDialog = ref(false);
       vertical-actions-align="right"
       padding="md"
     >
-      <q-fab-action
-        color="positive"
-        icon="restore_page"
-        label="Reset attack"
-        @click="resetAttack"
-      />
       <q-fab-action
         color="negative"
         icon="replay"
@@ -167,6 +172,14 @@ const configDialog = ref(false);
 .fab {
   position: fixed;
   right: 2vw;
+  bottom: 2vh;
+  z-index: 10;
+}
+/* Sits just left of the menu FAB (same size), so it stays put when the menu
+   opens upward. */
+.fab-reset-attack {
+  position: fixed;
+  right: calc(2vw + 72px);
   bottom: 2vh;
   z-index: 10;
 }

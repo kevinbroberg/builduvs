@@ -58,7 +58,14 @@ function unblocked() {
 
 <template>
   <div class="playerhealth">
-    <CounterBox class="health" @up="increment" @down="decrement">
+    <CounterBox
+      class="health"
+      swipe
+      @up="increment"
+      @down="decrement"
+      @swipe-up="game.swipePlayer(playerKey, 'up')"
+      @swipe-down="game.swipePlayer(playerKey, 'down')"
+    >
       <h2 class="text-center">{{ player.name }}<br />{{ player.health }}</h2>
     </CounterBox>
     <q-btn
