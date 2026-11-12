@@ -1,5 +1,6 @@
 <script setup>
 import { parseDeckText } from 'src/js/deck_text.js'
+import MissedCardLines from 'components/deck/MissedCardLines.vue'
 import { ref, computed, watch } from 'vue'
 import { useDialogPluginComponent } from 'quasar'
 import { useCardeioStore } from 'src/stores/cardeio'
@@ -131,11 +132,10 @@ watch(fileModel, (file) => {
 
 const showInputComponents = computed(() => !!text.value)
 
-function parseTextInto(vs) {
-  const { main, side } = parseDeckText(text.value)
-  for (const { card, qty } of main) for (let i = 0; i < qty; ++i) vs.increment(card)
-  for (const { card, qty } of side) for (let i = 0; i < qty; ++i) vs.incrementSide(card)
-}
+// Lines the last click couldn't match. While non-empty the dialog stays open
+// listing them, and the next click loads without them. Editing the text resets it.
+const missed = ref([])
+watch(text, () => { missed.value = [] })
 
 function emitParsed(vs, name) {
   onDialogOK({
@@ -147,8 +147,14 @@ function emitParsed(vs, name) {
 }
 
 function finalizeFromText() {
+  const { main, side, missed: unmatched } = parseDeckText(text.value)
+  if (unmatched.length && !missed.value.length) {
+    missed.value = unmatched
+    return
+  }
   const vs = createVirtualStore()
-  parseTextInto(vs)
+  for (const { card, qty } of main) for (let i = 0; i < qty; ++i) vs.increment(card)
+  for (const { card, qty } of side) for (let i = 0; i < qty; ++i) vs.incrementSide(card)
   emitParsed(vs)
 }
 </script>
@@ -168,10 +174,12 @@ function finalizeFromText() {
           :disable="loading"
         />
         <div v-if="loading" class="q-mt-sm text-caption text-grey">Fetching deck...</div>
+        <MissedCardLines :lines="missed" />
       </q-card-section>
 
       <q-card-actions align="right">
-        <q-btn color="primary" @click="finalizeFromText" v-if="showInputComponents" label="Load for comparison">
+        <q-btn color="primary" @click="finalizeFromText" v-if="showInputComponents"
+          :label="missed.length ? 'Load without them' : 'Load for comparison'">
           <q-tooltip>Loads this deck for comparison without replacing your current deck</q-tooltip>
         </q-btn>
         <q-btn color="primary" label="Cancel" @click="onDialogCancel" />

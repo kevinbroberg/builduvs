@@ -39,7 +39,17 @@ const norm = s => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '')
 
 const { byHydraId } = readJson('src/assets/card-crosswalk.json')
 const catalog = readJson('data/hydra-uvs-catalog.json')
-const hydraName = new Map(catalog.map(r => [r.id, r.name]))
+
+// Some Hydra names contain characters a one-card-per-line import can't carry.
+// FT01 stores its characters with a line break mid-name ("Natsu Dragneel,\nFire
+// Dragon Slayer"), and "Igneel's Protégé" has U+FFFD in place of each é. Hydra
+// appears to delete such characters from both sides before comparing (tested
+// against validate-text, 2026-11-12), so deleting them here gives a name it
+// matches: "Natsu Dragneel,Fire Dragon Slayer" (no space) and "Igneel's Protg".
+// "Happy, \nMagical Companion" comes out the same as our name, so it gets no
+// entry. Partial names ("Natsu Dragneel,") are not matched.
+const sendableName = name => name.replace(/[\r\n�]/g, '')
+const hydraName = new Map(catalog.map(r => [r.id, sendableName(r.name)]))
 
 // uvsId → Hydra name. Several Hydra rows can land on one of our cards: remastered
 // reprints (same name, either wins) and double-sided cards, which also have a

@@ -1,5 +1,6 @@
 <script setup>
 import { parseDeckText } from 'src/js/deck_text.js'
+import MissedCardLines from 'components/deck/MissedCardLines.vue'
 import { ref, computed, defineEmits, watch } from 'vue'
 import { useDialogPluginComponent } from 'quasar'
 import { useDeckStore } from 'src/stores/deck'
@@ -112,11 +113,21 @@ watch(fileModel, (file) => {
 
 const showInputComponents = computed(() => !!text.value)
 
+// Lines the last Finalize couldn't match. While non-empty the dialog stays open
+// listing them, and the next click loads without them. Editing the text resets it.
+const missed = ref([])
+watch(text, () => { missed.value = [] })
+
 function replaceVuexDeck() {
+  const { main, side, missed: unmatched } = parseDeckText(text.value)
+  if (unmatched.length && !missed.value.length) {
+    missed.value = unmatched
+    return
+  }
+
   // clear the previous contents
   $store.nuke()
 
-  const { main, side } = parseDeckText(text.value)
   for (const { card, qty } of main) for (let i = 0; i < qty; ++i) $store.increment(card)
   for (const { card, qty } of side) for (let i = 0; i < qty; ++i) $store.incrementSide(card)
 
@@ -146,11 +157,13 @@ function replaceVuexDeck() {
           :disable="loading"
         />
         <div v-if="loading" class="q-mt-sm text-caption text-grey">Fetching deck...</div>
+        <MissedCardLines :lines="missed" />
       </q-card-section>
 
       <!-- buttons example -->
       <q-card-actions align="right">
-        <q-btn color="primary" @click="replaceVuexDeck" v-if="showInputComponents" label="Finalize deck">
+        <q-btn color="primary" @click="replaceVuexDeck" v-if="showInputComponents"
+          :label="missed.length ? 'Load without them' : 'Finalize deck'">
           <q-tooltip>Loads the deck from text into this app</q-tooltip>
         </q-btn>
         <q-btn color="primary" label="Cancel" @click="onDialogCancel" />

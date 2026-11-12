@@ -5,6 +5,10 @@
     "ball might (i) (anime expo 2022)": {
       "uvsId": "mha04-240",
       "why": "Anime Expo 2022 reskin promo of All Might (VII). Same gameplay card, different art; we hold no record for the promo printing itself, so decklists resolve to the All Might (VII) printing they are actually playing."
+    },
+    "igneel's prot�g�": {
+      "uvsId": "ft01-118",
+      "why": "Hydra's catalog stores Igneel's Protégé (FT01/118) with U+FFFD in place of each é, so no normalization can match it to our 'Igneel's Protege'. The key keeps the U+FFFD characters on purpose, because it has to equal Hydra's name to map the vendor id."
     }
   }
 }

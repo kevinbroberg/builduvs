@@ -3,11 +3,13 @@
   import DeckEmptyState from './DeckEmptyState.vue'
   import DeckSummary from './DeckSummary.vue'
   import { useQuasar } from 'quasar'
+  import { useRoute } from 'vue-router'
 
   import { useDeckStore } from "src/stores/deck";
   import { storeToRefs } from "pinia";
 
   const $q = useQuasar()
+  const route = useRoute()
   import { getCardImage } from 'src/js/image_helper'
   import { openCardDetail } from 'src/js/card_detail'
   import {
@@ -52,6 +54,10 @@
       >
         <template #prepend><q-icon name="edit" size="18px" /></template>
       </q-input>
+      <!-- The drawer is a compact view; this opens the full deck page in the main area. -->
+      <q-btn v-if="route.path !== '/deck'" flat round dense icon="exit_to_app" color="primary" to="/deck">
+        <q-tooltip>Open the full deck page</q-tooltip>
+      </q-btn>
       <q-btn flat round dense icon="delete" color="negative" @click="trash">
         <q-tooltip>Wipe deck</q-tooltip>
       </q-btn>
